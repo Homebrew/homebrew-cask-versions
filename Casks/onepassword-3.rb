@@ -1,4 +1,4 @@
-class OnePassword3 < Cask
+class Onepassword3 < Cask
   url 'https://d13itkw33a7sus.cloudfront.net/dist/1P/mac/1Password-3.8.21.zip'
   homepage 'https://agilebits.com/onepassword'
   version '3.8.21'
