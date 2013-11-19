@@ -1,4 +1,4 @@
-class Dropbox < Cask
+class DropboxExperimental < Cask
   url 'https://dl-web.dropbox.com/u/17/Dropbox%202.5.37.dmg'
   homepage 'https://www.dropbox.com/'
   version '2.5.37'
