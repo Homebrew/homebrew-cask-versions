@@ -1,7 +1,7 @@
 class IntellijIdeaUltimateEap < Cask
-  url 'http://download.jetbrains.com/idea/ideaIU-133.162.dmg'
+  url 'http://download.jetbrains.com/idea/ideaIU-133.370.dmg'
   homepage 'https://www.jetbrains.com/idea/index.html'
-  version '133.162'
-  sha1 'c5f1e3781401084169ee5b70b3feddf53375b9fa'
-  link 'IntelliJ IDEA 13.app'
+  version '133.370'
+  sha1 'b3a25614c049a968ce321523746d27987164d4f5'
+  link 'IntelliJ IDEA 13 EAP.app'
 end
