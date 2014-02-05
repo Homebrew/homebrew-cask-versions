@@ -4,6 +4,7 @@ class SublimeTextDevRicon < Cask
   version 'build3061'
   sha1 'd91f29b38de0411f96e9c0c7da66b0527cb251fb'
   link 'Sublime Text.app'
+  binary 'Sublime Text.app/Contents/SharedSupport/bin/subl'
   after_install do
     ohai "Replacing icon..."
     system "curl --silent -L http://cl.ly/0v3X432S2I0l/Icon%20light.icns -o " + destination_path.join('Sublime\ Text.icns').to_s
