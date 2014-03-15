@@ -2,6 +2,6 @@ class Aquamacs25 < Cask
   url 'http://braeburn.aquamacs.org/releases/Aquamacs-Emacs-2.5.dmg'
   homepage 'http://aquamacs.org/'
   version '2.5'
-  sha1 '2d9052b94751b0454e109700ff8d0204d80310f4'
+  sha256 '5857848d8d46bba43d160c02393b098a370e2156608be24b288419f668210be9'
   link 'Aquamacs.app'
 end
