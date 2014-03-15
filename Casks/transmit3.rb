@@ -2,6 +2,6 @@ class Transmit3 < Cask
   url 'http://panic.com/museum/transmit/Transmit%203.7.zip'
   homepage 'https://www.panic.com/transmit'
   version '3.7'
-  sha1 '8843d797a32f39622d9c76be62af3ec2b7cf718c'
+  sha256 '311f4d0f559c966fe7e5a4a6e0327dfa7a4c06a9c942ec11d58e6ed210f4b689'
   link 'Transmit.app'
 end
