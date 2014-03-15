@@ -2,7 +2,7 @@ class TimemachineschedulerBeta < Cask
   url 'http://www.klieme.com/Downloads/TimeMachineScheduler/TimeMachineScheduler_4.0b3Full.zip'
   homepage 'http://www.klieme.com/TimeMachineScheduler.html'
   version '4.0b3(483)'
-  sha1 '0fd37298479db41329e12a748c9f6ba82ae5b4de'
+  sha256 '2cd1c172da73e7ff26ddfa71417dbf323a635b3eef2c8f3025edbaa2686880ba'
   nested_container 'TimeMachineScheduler_4.0b3.dmg'
   link 'TimeMachineScheduler.app'
 end
