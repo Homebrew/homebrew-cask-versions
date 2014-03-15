@@ -3,6 +3,6 @@ class Zephyros52 < Cask
   url 'https://raw.github.com/sdegutis/zephyros/master/Builds/Zephyros-5.2.app.tar.gz'
   homepage 'https://github.com/sdegutis/zephyros'
   version '5.2'
-  sha1 '78f337d3ee71f635f19233d8c55c95a73005c77f'
+  sha256 '7e6dc16d4639b27e0e3a20537bc6a36d0f11900027888d7b39d884d3668d04e3'
   link 'Zephyros.app'
 end
