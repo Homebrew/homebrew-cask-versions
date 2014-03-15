@@ -2,7 +2,7 @@ class SublimeText3 < Cask
   url 'http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203059.dmg'
   homepage 'http://www.sublimetext.com/3'
   version '3059'
-  sha1 '89577e08904ee14fa0fdd1b01cdbd38680a00138'
+  sha256 '057c12afed359ea93f996b2e73973fa8ea2bfb14a3e61a5e13b467c5c38d4ca5'
   link 'Sublime Text.app'
   binary 'Sublime Text.app/Contents/SharedSupport/bin/subl'
 end
