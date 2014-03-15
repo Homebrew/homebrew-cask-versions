@@ -2,6 +2,6 @@ class CocktailSnowleopard < Cask
   url 'http://usa.maintain.se/CocktailSLE.dmg'
   homepage 'http://maintain.se/cocktail'
   version '5.1'
-  sha1 '3ae07a713ae5e071358a21037e026ba519e34a52'
+  sha256 '0ade6b2aaa871fcafd143ebad228cd0ec471bbe43775d25e9277977d1b07fb77'
   link 'Cocktail.app'
 end
