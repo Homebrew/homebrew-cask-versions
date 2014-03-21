@@ -1,4 +1,4 @@
-class Java < Cask
+class Java7 < Cask
   url 'http://download.oracle.com/otn-pub/java/jdk/7u51-b13/jdk-7u51-macosx-x64.dmg',
       :cookies => {
                     'oraclelicense' => 'accept-securebackup-cookie'
