@@ -1,4 +1,4 @@
-class FirefoxESR < Cask
+class FirefoxEsrUs < Cask
   url 'https://download.mozilla.org/?product=firefox-24.4.0esr&os=osx&lang=en-US'
   homepage 'http://www.mozilla.org/en-US/firefox/organizations/faq/'
   version '24.4.0'
