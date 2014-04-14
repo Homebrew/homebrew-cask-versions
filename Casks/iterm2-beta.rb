@@ -1,7 +1,7 @@
 class Iterm2Beta < Cask
-  url 'http://www.iterm2.com/downloads/beta/iTerm2-1_0_0_20140112.zip'
+  url 'http://www.iterm2.com/downloads/beta/iTerm2-1_0_0_20140403.zip'
   homepage 'http://www.iterm2.com/'
-  version '1.0.0.20140112'
-  sha256 '0b435b5f40e189ecea662412f26143fc004b3cddd263f8f11e1d73f4471fa205'
+  version '1.0.0.20140403'
+  sha256 'b33fe4880489af93514109308427705c30ccd8661549c5eff143cc58bb961f03'
   link 'iTerm.app'
 end
