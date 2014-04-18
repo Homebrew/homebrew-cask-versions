@@ -1,7 +1,7 @@
 class OpenemuExperimental < Cask
-  url 'https://github.com/OpenEmu/OpenEmu/releases/download/v1.0/OpenEmu_1.0-experimental.zip'
+  url 'https://github.com/OpenEmu/OpenEmu/releases/download/v1.0.2/OpenEmu_1.0.2-experimental.zip'
   homepage 'http://openemu.org/'
-  version '1.0'
-  sha256 '04a3140fa21fc2988bb3664c4b9cf5e304f7dd9429d8453c124d677ccb58812b'
+  version '1.0.2'
+  sha256 '0914ea5b43b38fdebbbae51f3e080f244882d99b9d0c90d1a592f5c2023df107'
   link 'OpenEmu.app'
 end
