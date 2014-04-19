@@ -1,7 +1,7 @@
 class CommandLineToolsMountainLion < Cask
-  url 'http://devimages.apple.com/downloads/xcode/command_line_tools_for_xcode_os_x_mountain_lion_march_2014.dmg'
+  url 'http://devimages.apple.com/downloads/xcode/command_line_tools_for_osx_mountain_lion_april_2014.dmg'
   homepage 'https://developer.apple.com/xcode/downloads/'
-  version 'moutain_lion_march_2014'
-  sha256 'b96771c876f22a1961509fddd4a4730ab8f58502e2115c9e7f530ab668876022'
+  version 'mountain_lion_april_2014.dmg'
+  sha256 '2ce8cb402efe7a1fe104759d9f32bed3c9b5e9f9db591f047702ae5dc7f3d1ac'
   link 'Command Line Tools (Mountain Lion).mpkg'
 end
