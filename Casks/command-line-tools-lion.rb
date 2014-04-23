@@ -1,4 +1,4 @@
-class CommandLineToolsLion.rb < Cask
+class CommandLineToolsLion < Cask
   url 'http://devimages.apple.com/downloads/xcode/command_line_tools_for_xcode_os_x_lion_april_2013.dmg'
   homepage 'https://developer.apple.com/xcode/downloads/'
   version 'lion_april_2013'
