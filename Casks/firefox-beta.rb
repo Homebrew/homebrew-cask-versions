@@ -1,7 +1,7 @@
 class FirefoxBeta < Cask
-  url 'https://download.mozilla.org/?product=firefox-29.0b1&os=osx&lang=en-US'
+  url 'https://download.mozilla.org/?product=firefox-30.0b1&os=osx&lang=en-US'
   homepage 'https://www.mozilla.org/en-US/firefox/beta/'
-  version '29.0b1'
-  sha256 'f2894b188e1738360f269c1190370c3880c6886306486ba7da626ab2eeef6368'
+  version '30.0b1'
+  sha256 'fc27ec52d3f4c16537e87d909e7c5a7fa09c6e54143b63185e288bfddee3bfcf'
   link 'Firefox.app'
 end
