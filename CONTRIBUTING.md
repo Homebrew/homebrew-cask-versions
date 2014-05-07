@@ -13,6 +13,6 @@ contribute:
 
 ```bash
 github_user='<my-github-username>'
-cd $(brew --prefix)/Library/Taps/caskroom-versions
+cd $(brew --prefix)/Library/Taps/caskroom/homebrew-versions
 git remote add $github_user https://github.com/$github_user/homebrew-versions
 ```
