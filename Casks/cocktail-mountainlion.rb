@@ -2,6 +2,6 @@ class CocktailMountainlion < Cask
   url 'http://usa.maintain.se/CocktailMLE.dmg'
   homepage 'http://maintain.se/cocktail'
   version 'latest'
-  no_checksum
+  sha256 :no_check
   link 'Cocktail.app'
 end

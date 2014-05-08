@@ -7,6 +7,6 @@ class RustNightly < Cask
   homepage 'http://www.rust-lang.org/'
   version 'latest'
   install pkgname
-  no_checksum
+  sha256 :no_check
   uninstall :pkgutil => 'org.rust-lang.rust'
 end
