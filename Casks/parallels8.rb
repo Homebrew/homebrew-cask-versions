@@ -2,6 +2,6 @@ class Parallels8 < Cask
   url 'http://www.parallels.com/directdownload/pd8'
   homepage 'http://www.parallels.com/products/desktop/'
   version 'latest'
-  no_checksum
+  sha256 :no_check
   install 'Install.mpkg'
 end

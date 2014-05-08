@@ -2,7 +2,7 @@ class ParaviewLionPython27Nightly < Cask
   url 'http://www.paraview.org/paraview-downloads/download.php?submit=Download&version=nightly&type=binary&os=osx&downloadFile=ParaView-Darwin-64bit-Lion-Python27-NIGHTLY.dmg'
   homepage 'http://www.paraview.org/'
   version 'latest'
-  no_checksum
+  sha256 :no_check
   link 'paraview.app'
   caveats <<-EOS.undent
     This version of ParaView is for OS X Lion (10.7) or Mountain Lion (10.8)
