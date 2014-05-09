@@ -1,12 +1,12 @@
 class Java7 < Cask
-  url 'http://download.oracle.com/otn-pub/java/jdk/7u51-b13/jdk-7u51-macosx-x64.dmg',
+  url 'http://download.oracle.com/otn-pub/java/jdk/7u55-b13/jdk-7u55-macosx-x64.dmg',
       :cookies => {
                     'oraclelicense' => 'accept-securebackup-cookie'
                   }
   homepage 'http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html'
-  version '1.7.0_51'
-  sha256 '1312b0553bd37a232114637f05b036a6fd5d444e653adef7230ba141328f7734'
-  install 'JDK 7 Update 51.pkg'
+  version '1.7.0_55'
+  sha256 '0ec909208a75ec8c49b5eccf4c5b6314ef68a8131653c5097aba3e4f9199e03c'
+  install 'JDK 7 Update 55.pkg'
   after_install do
     system '/usr/bin/sudo', '-E', '--',
       '/usr/libexec/PlistBuddy', '-c', 'Add :JavaVM:JVMCapabilities: string BundledApp', "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Info.plist"
@@ -21,7 +21,7 @@ class Java7 < Cask
     system '/usr/bin/sudo', '-E', '--',
       '/bin/ln', '-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents", '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
   end
-  uninstall :pkgutil => 'com.oracle.jdk7u51',
+  uninstall :pkgutil => 'com.oracle.jdk7u55',
             :files => '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
   caveats <<-EOS.undent
     This Cask makes minor modifications to the JRE to prevent any packaged
