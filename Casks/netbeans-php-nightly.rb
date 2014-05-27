@@ -1,7 +1,12 @@
 class NetbeansPhpNightly < Cask
-  url 'http://bits.netbeans.org/download/trunk/nightly/latest/bundles/netbeans-trunk-nightly-201405090001-php-macosx.dmg'
   homepage 'https://netbeans.org/'
-  version '201405090001'
-  sha256 '77ae100aa581507f88b40392a13e0109742fda0b18c2ca226a0cc436c694841a'
-  install 'NetBeans Dev 201405090001.mpkg'
+  version '201405260001'
+  sha256 '310e50c21614ec748ddbc3657b3dc51634ec5831ae28a18d76cff1c2c29d0088'
+
+  url "http://bits.netbeans.org/download/trunk/nightly/latest/bundles/netbeans-trunk-nightly-#{version}-php-macosx.dmg"
+  install "NetBeans Dev #{version}.mpkg"
+
+  uninstall :files => [
+                       '/Applications/NetBeans'
+                      ]
 end
