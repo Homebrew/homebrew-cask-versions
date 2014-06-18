@@ -1,4 +1,4 @@
-class AdobePhotoshopCs < Cask
+class AdobePhotoshopCs6 < Cask
   url 'http://trials2.adobe.com/AdobeProducts/PHSP/13/osx10/Photoshop_13_LS16.dmg',
       :cookies => {
                     'MM_TRIALS' => '1234'
