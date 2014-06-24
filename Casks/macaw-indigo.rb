@@ -1,6 +1,6 @@
 class MacawIndigo < Cask
-  version '1.0.12'
-  sha256 '51f740a899b4605af5603bf4c8ea4f81a167bf7a41eebfaeeebaa132d5867bd2'
+  version '1.0.13.1'
+  sha256 'f523f371c1dd3ebfc3a083065c7056af3cb076ddb7c699c30a11627dba656892'
 
   url "http://indigo.macaw.co/#{version}/MacawIndigo#{version}.dmg"
   appcast 'http://indigo.macaw.co/appcast.xml'
