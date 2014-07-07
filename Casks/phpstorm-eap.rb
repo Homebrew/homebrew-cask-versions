@@ -1,7 +1,7 @@
 class PhpstormEap < Cask
-  url 'http://download.jetbrains.com/webide/PhpStorm-EAP-138.826.dmg'
+  url 'http://download.jetbrains.com/webide/PhpStorm-EAP-138.940.dmg'
   homepage 'http://confluence.jetbrains.com/display/PhpStorm/PhpStorm+Early+Access+Program'
-  version '138.826'
-  sha256 'c22869c4c1e4e0a83ab89e1e4cdafe5b2a6eead22d2ee3463a2b0fdb6113eb19'
+  version '138.940'
+  sha256 'd12edcd2e732b74853f1832e8f994a47670bccaed804f0aabdcac1f35ffc6cc3'
   link 'PhpStorm EAP.app'
 end
