@@ -1,5 +1,5 @@
-class OclintNighty < Cask
-  version 'nighty'
+class OclintNightly < Cask
+  version 'nightly'
   sha256 '1d901cf3091c280964c391c3184ca5ebc892a0446fdb3e64c25dbdae3eb8962a'
 
   url 'http://archives.oclint.org/nightly/oclint-0.9.dev.e350919-x86_64-darwin-12.4.0.tar.gz'
