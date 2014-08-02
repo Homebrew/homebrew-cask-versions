@@ -33,6 +33,3 @@ FileUtils.mkdir_p taps_dest
 HOMEBREW_PREFIX.join('bin').mkdir
 
 FileUtils.ln_s project_root, taps_dest/"homebrew-cask"
-
-# Common superclass for tests casks for when we need to filter them out
-class TestCask < Cask; end
