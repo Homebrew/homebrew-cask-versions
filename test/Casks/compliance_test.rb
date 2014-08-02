@@ -1,7 +1,7 @@
 require 'test_helper'
 
 describe "Casks" do
-  Cask.all.reject {|c| c.is_a?(TestCask) }.each do |cask|
+  Cask.all.each do |cask|
     describe "#{cask}" do
       it "passes audit" do
         audit = Cask::Audit.new(cask)
