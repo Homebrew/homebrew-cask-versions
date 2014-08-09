@@ -1,8 +1,8 @@
 class Jdownloader2 < Cask
-  if MacOS.version == :lion or MacOS.version == :mountain_lion or MacOS.version == :mavericks
-    url 'http://installer.jdownloader.org/JD2SilentSetup.dmg'
-  else
+  if MacOS.version < :lion
     url 'http://installer.jdownloader.org/JD2SilentSetup_10_6orlower.dmg'
+  else
+    url 'http://installer.jdownloader.org/JD2SilentSetup.dmg'
   end
   homepage 'http://jdownloader.org/download/offline'
   version 'latest'
