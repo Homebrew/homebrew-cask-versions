@@ -1,7 +1,7 @@
 class IntellijIdeaCommunityEap < Cask
-  url 'http://download.jetbrains.com/idea/ideaIC-138.777.dmg'
+  url 'http://download.jetbrains.com/idea/ideaIC-138.1283.4.dmg'
   homepage 'https://www.jetbrains.com/idea/index.html'
-  version '138.777'
-  sha256 '9614d8055051dc418bce905587c33b3d30e164d1eb873d3716b613627a2c52a2'
+  version '138.1283'
+  sha256 '103ae8874fbf3111a3f77efa5d5bffa9d897ec56d19688061554d09d01e24077'
   link 'IntelliJ IDEA 14 CE EAP.app'
 end
