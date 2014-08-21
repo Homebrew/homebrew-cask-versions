@@ -1,7 +1,7 @@
 class DropboxExperimental < Cask
-  url 'https://dl-web.dropbox.com/u/17/Dropbox%202.5.37.dmg'
+  url 'https://dl-web.dropbox.com/u/17/Dropbox%202.11.9.dmg'
   homepage 'https://www.dropbox.com/'
-  version '2.5.37'
-  sha256 '86048999911fcf756a2991c2d6346176ce244ccae4117cb6231580879682c10d'
+  version '2.11.9'
+  sha256 'd1aa49f96196baf8370c2d89570fc49fce7f420a61c6345298187f3e74cacc8f'
   link 'Dropbox.app'
 end
