@@ -3,5 +3,5 @@ class GoogleChromeBeta < Cask
   homepage 'https://www.google.com/intl/en/chrome/browser/beta.html'
   version 'latest'
   sha256 :no_check
-  link 'Google Chrome.app'
+  link 'Google Chrome Beta.app'
 end
