@@ -1,8 +1,8 @@
 class SublimeTextDev < Cask
-  url 'http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203062.dmg'
+  url 'http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203064.dmg'
   homepage 'http://www.sublimetext.com/3dev'
-  version 'Build 3062'
-  sha256 '641459fb786f3db59c0a99b2017c7eec1ccb7a0949764fc417e4c916a8b85264'
+  version 'Build 3064'
+  sha256 '727d14b2ba577c680a2d90645db16f6f736c545820fe90d44cc85ac6808c2f03'
   link 'Sublime Text.app'
   binary 'Sublime Text.app/Contents/SharedSupport/bin/subl'
   caveats do
