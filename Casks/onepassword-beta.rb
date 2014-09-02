@@ -1,7 +1,7 @@
 class OnepasswordBeta < Cask
-  url 'https://aws.cachefly.net/dist/1P/mac4/1Password-4.5.BETA-12.zip'
+  url 'https://aws.cachefly.net/dist/1P/mac4/1Password-4.5.BETA-18.zip'
   homepage 'https://agilebits.com/onepassword'
-  version '4.5.BETA-12'
-  sha256 'e112100ff55f30f44c80b4153e56ef5f9916df4d1fe170b5952a80856b93690c'
+  version '4.5.BETA-18'
+  sha256 'cffff2f5c9b8ea62b851f39c8b5741044a7cfaa1861344af0bf67c2e604a28ee'
   link '1Password 4.app'
 end
