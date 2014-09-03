@@ -1,7 +1,7 @@
 class FirefoxEsrCn < Cask
-  url 'https://download.mozilla.org/?product=firefox-31.0esr&os=osx&lang=zh-CN'
-  homepage 'http://www.mozilla.org/en-US/firefox/organizations/faq/'
-  version '31.0'
-  sha256 'b1a8bb972f94052813be5b78e8e8aa56357f87a953bd0cfb1686822494ea3488'
+  version '31.1.0'
+  sha256 'd8069f94f2ff584d6059f7bcdcb1db483a32ed8cffbe23d43647de18b83c6870'
+  url "http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest-esr/mac/zh-CN/Firefox%20#{version}esr.dmg"
+  homepage 'https://www.mozilla.org/zh-CN/firefox/desktop/'
   link 'Firefox.app'
 end
