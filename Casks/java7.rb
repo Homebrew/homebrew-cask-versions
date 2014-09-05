@@ -1,11 +1,13 @@
 class Java7 < Cask
+  version '1.7.0_67'
+  sha256 'fa6b9bcc18ed951726da29d04252879c4263891178087e90ea224e68dd624bd2'
+
   url 'http://download.oracle.com/otn-pub/java/jdk/7u67-b01/jdk-7u67-macosx-x64.dmg',
       :cookies => {
                     'oraclelicense' => 'accept-securebackup-cookie'
                   }
   homepage 'http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html'
-  version '1.7.0_67'
-  sha256 'fa6b9bcc18ed951726da29d04252879c4263891178087e90ea224e68dd624bd2'
+
   install 'JDK 7 Update 67.pkg'
   after_install do
     system '/usr/bin/sudo', '-E', '--',

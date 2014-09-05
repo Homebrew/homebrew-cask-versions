@@ -1,8 +1,10 @@
 class FluxBeta < Cask
-  url 'https://justgetflux.com/mac/fluxbeta.zip'
-  homepage 'https://justgetflux.com/'
   version 'latest'
   sha256 :no_check
+
+  url 'https://justgetflux.com/mac/fluxbeta.zip'
+  homepage 'https://justgetflux.com/'
+
   link 'Flux.app'
 
   after_install do
