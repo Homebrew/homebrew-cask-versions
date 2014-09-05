@@ -1,6 +1,6 @@
 # homebrew-cask-versions
 
-Here you'll find alternate versions of Casks for the [homebrew-cask](https://github.com/phinze/homebrew-cask)
+Here you'll find alternate versions of Casks for the [homebrew-cask](https://github.com/caskroom/homebrew-cask)
 project.
 
 # Usage
