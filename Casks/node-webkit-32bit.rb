@@ -1,6 +1,6 @@
 class NodeWebkit32bit < Cask
-  version '0.10.1'
-  sha256 '8add8b5b28eedf52f9b04919b0012a1437390bd65d1b32a10505c9b6d0fb751c'
+  version '0.10.4'
+  sha256 'd846fb0b35d86e029794051062d72e49f72eaf23831fdcea4da4577815f5d331'
 
   url "http://dl.node-webkit.org/v#{version}/node-webkit-v#{version}-osx-ia32.zip"
   homepage 'https://github.com/rogerwang/node-webkit'
