@@ -7,7 +7,7 @@ class BeyondCompare4Beta < Cask
 
   link 'Beyond Compare.app'
 
-  after_install do
+  postflight do
     # Don't ask to move the app bundle to /Applications
     system '/usr/bin/defaults', 'write', 'com.ScooterSoftware.BeyondCompare', 'moveToApplicationsFolderAlertSuppress', '-bool', 'true'
   end
