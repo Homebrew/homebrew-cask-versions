@@ -5,6 +5,6 @@ class Vagrant127 < Cask
   url 'http://files.vagrantup.com/packages/7ec0ee1d00a916f80b109a298bab08e391945243/Vagrant-1.2.7.dmg'
   homepage 'http://www.vagrantup.com'
 
-  install 'Vagrant.pkg'
+  pkg 'Vagrant.pkg'
   uninstall :script => { :executable => 'uninstall.tool', :input => %w[Yes] }
 end
