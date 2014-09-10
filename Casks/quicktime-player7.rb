@@ -5,7 +5,7 @@ class QuicktimePlayer7 < Cask
   url 'http://support.apple.com/downloads/DL923/en_US/QuickTimePlayer7.6.6_SnowLeopard.dmg'
   homepage 'http://support.apple.com/kb/dl923'
 
-  install 'QuickTimePlayer7.6.6_SnowLeopard.pkg'
+  pkg 'QuickTimePlayer7.6.6_SnowLeopard.pkg'
   uninstall :pkgutil => 'com.apple.pkg.QuickTimePlayer7.6.6_SnowLeopard',
             :files   => '/Applications/Utilities/QuickTime Player 7.app'
 end
