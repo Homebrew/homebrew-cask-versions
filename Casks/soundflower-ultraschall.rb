@@ -5,7 +5,7 @@ class SoundflowerUltraschall < Cask
   url "https://github.com/MariusE/Soundflower-Ultraschall-Edition/releases/download/#{version}/Soundflower-#{version}.dmg"
   homepage 'https://github.com/MariusE/Soundflower-Ultraschall-Edition'
 
-  install 'Soundflower.pkg', :allow_untrusted => true
+  pkg 'Soundflower.pkg', :allow_untrusted => true
   uninstall :pkgutil => 'com.cycling74.soundflower*',
             :files => '/Applications/Soundflower'
 end
