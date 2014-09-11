@@ -5,5 +5,5 @@ class Keyremap4macbookMountainlion < Cask
   url 'https://pqrs.org/macosx/keyremap4macbook/files/KeyRemap4MacBook-8.4.0.dmg'
   homepage 'https://pqrs.org/macosx/keyremap4macbook/'
 
-  install 'KeyRemap4MacBook.pkg'
+  pkg 'KeyRemap4MacBook.pkg'
 end

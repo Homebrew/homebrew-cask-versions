@@ -5,6 +5,6 @@ class MonoMdk327 < Cask
   url 'http://download.mono-project.com/archive/3.2.7/macos-10-x86/MonoFramework-MDK-3.2.7.macos10.xamarin.x86.pkg'
   homepage 'http://mono-project.com/'
 
-  install 'MonoFramework-MDK-3.2.7.macos10.xamarin.x86.pkg'
+  pkg 'MonoFramework-MDK-3.2.7.macos10.xamarin.x86.pkg'
   uninstall :pkgutil => 'com.xamarin.mono-MDK.pkg'
 end

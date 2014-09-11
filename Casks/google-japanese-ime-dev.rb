@@ -5,7 +5,7 @@ class GoogleJapaneseImeDev < Cask
   url 'https://dl.google.com/japanese-ime/dev/GoogleJapaneseInput.dmg'
   homepage 'https://www.google.co.jp/ime/'
 
-  install 'GoogleJapaneseInput.pkg'
+  pkg 'GoogleJapaneseInput.pkg'
   uninstall :pkgutil => 'com.google.pkg.GoogleJapaneseInput',
             :launchctl => [
                            'com.google.inputmethod.Japanese.Converter',
