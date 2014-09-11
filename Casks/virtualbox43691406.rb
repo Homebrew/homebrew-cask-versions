@@ -5,6 +5,6 @@ class Virtualbox43691406 < Cask
   url 'http://download.virtualbox.org/virtualbox/4.3.6/VirtualBox-4.3.6-91406-OSX.dmg'
   homepage 'http://www.virtualbox.org'
 
-  install 'VirtualBox.pkg'
+  pkg 'VirtualBox.pkg'
   uninstall :script => { :executable => 'VirtualBox_Uninstall.tool', :args => %w[--unattended] }
 end

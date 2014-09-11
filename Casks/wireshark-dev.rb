@@ -5,6 +5,6 @@ class WiresharkDev < Cask
   url 'http://www.wireshark.org/download/osx/Wireshark%201.11.3%20Intel%2064.dmg'
   homepage 'http://www.wireshark.org'
 
-  install 'Wireshark 1.11.3 Intel 64.pkg'
+  pkg 'Wireshark 1.11.3 Intel 64.pkg'
   uninstall :pkgutil => 'org.wireshark.*'
 end
