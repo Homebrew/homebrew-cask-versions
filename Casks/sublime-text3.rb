@@ -6,7 +6,7 @@ class SublimeText3 < Cask
   appcast 'http://www.sublimetext.com/updates/3/stable/appcast_osx.xml'
   homepage 'http://www.sublimetext.com/3'
 
-  link 'Sublime Text.app'
+  app 'Sublime Text.app'
   binary 'Sublime Text.app/Contents/SharedSupport/bin/subl'
   caveats do
     files_in_usr_local
