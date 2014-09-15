@@ -5,5 +5,5 @@ class IstatMenus4 < Cask
   url 'http://s3.amazonaws.com/bjango/files/istatmenus4/istatmenus4.22.zip'
   homepage 'http://bjango.com/mac/istatmenus/'
 
-  link 'iStat Menus.app'
+  app 'iStat Menus.app'
 end
