@@ -5,5 +5,5 @@ class DropboxExperimental < Cask
   url 'https://dl.dropboxusercontent.com/u/17/Dropbox%202.11.13.dmg'
   homepage 'https://www.dropbox.com/'
 
-  link 'Dropbox.app'
+  app 'Dropbox.app'
 end

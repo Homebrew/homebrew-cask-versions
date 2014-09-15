@@ -5,5 +5,5 @@ class CocktailSnowleopard < Cask
   url 'http://usa.maintain.se/CocktailSLE.dmg'
   homepage 'http://maintain.se/cocktail'
 
-  link 'Cocktail.app'
+  app 'Cocktail.app'
 end

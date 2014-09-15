@@ -5,5 +5,5 @@ class OperaDeveloper < Cask
   url 'http://get.geo.opera.com/pub/opera-developer/20.0.1353.0/mac/Opera_Developer_20.0.1353.0_Setup.dmg'
   homepage 'http://www.opera.com/developer'
 
-  link 'Opera Developer.app'
+  app 'Opera Developer.app'
 end

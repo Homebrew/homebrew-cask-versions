@@ -5,7 +5,7 @@ class ParaviewNightly < Cask
   url 'http://www.paraview.org/paraview-downloads/download.php?submit=Download&version=nightly&type=binary&os=osx&downloadFile=ParaView-Darwin-64bit-NIGHTLY.dmg'
   homepage 'http://www.paraview.org/'
 
-  link 'paraview.app'
+  app 'paraview.app'
     caveats <<-EOS.undent
     This version of Paraview should be installed if your system Python
     version is 2.7. If you are running OS X Lion (10.7) or Mountain

@@ -5,5 +5,5 @@ class OmnioutlinerProfessional3 < Cask
   url 'http://www.omnigroup.com/ftp/pub/software/MacOSX/10.4/OmniOutlinerPro-3.10.6.dmg'
   homepage 'http://www.omnigroup.com/omnioutliner/'
 
-  link 'OmniOutliner Professional.app'
+  app 'OmniOutliner Professional.app'
 end

@@ -5,5 +5,5 @@ class MiddleclickMountainlion < Cask
   url 'http://clement.beffa.org/labs/downloads/MiddleClick_ml.zip'
   homepage 'http://clement.beffa.org/labs/projects/middleclick'
 
-  link 'MiddleClick.app'
+  app 'MiddleClick.app'
 end

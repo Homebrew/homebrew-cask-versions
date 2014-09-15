@@ -5,5 +5,5 @@ class IntellijIdeaUltimate12 < Cask
   url 'http://download.jetbrains.com/idea/ideaIU-12.1.7.dmg'
   homepage 'https://www.jetbrains.com/idea/index.html'
 
-  link 'IntelliJ IDEA 12.app'
+  app 'IntelliJ IDEA 12.app'
 end

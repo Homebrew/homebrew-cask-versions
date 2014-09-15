@@ -5,5 +5,5 @@ class EmacsNightly < Cask
   url 'http://emacsformacosx.com/emacs-builds/Emacs-2013-11-19_01-33-37-115148-universal-10.6.8.dmg'
   homepage 'http://emacsformacosx.com/'
 
-  link 'Emacs.app'
+  app 'Emacs.app'
 end

@@ -5,5 +5,5 @@ class WebkitNightly < Cask
   url 'http://builds.nightly.webkit.org/files/trunk/mac/WebKit-SVN-r159487.dmg'
   homepage 'http://nightly.webkit.org/'
 
-  link 'WebKit.app'
+  app 'WebKit.app'
 end

@@ -5,5 +5,5 @@ class OpenemuExperimental < Cask
   url 'https://github.com/OpenEmu/OpenEmu/releases/download/v1.0.3/OpenEmu_1.0.3-experimental.zip'
   homepage 'http://openemu.org/'
 
-  link 'OpenEmu.app'
+  app 'OpenEmu.app'
 end
