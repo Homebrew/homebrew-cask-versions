@@ -5,5 +5,5 @@ class Subethaedit3 < Cask
   url 'http://subethaedit.net/downloads/SubEthaEdit-354.zip'
   homepage 'http://www.codingmonkeys.de/subethaedit/'
 
-  link 'SubEthaEdit.app'
+  app 'SubEthaEdit.app'
 end
