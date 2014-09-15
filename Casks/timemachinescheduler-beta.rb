@@ -6,5 +6,5 @@ class TimemachineschedulerBeta < Cask
   homepage 'http://www.klieme.com/TimeMachineScheduler.html'
 
   nested_container 'TimeMachineScheduler_4.0b3.dmg'
-  link 'TimeMachineScheduler.app'
+  app 'TimeMachineScheduler.app'
 end
