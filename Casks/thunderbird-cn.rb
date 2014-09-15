@@ -5,5 +5,5 @@ class ThunderbirdCn < Cask
   url "http://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/#{version}/mac/zh-CN/Thunderbird%20#{version}.dmg"
   homepage 'https://www.mozilla.org/zh-CN/thunderbird/'
 
-  link 'Thunderbird.app'
+  app 'Thunderbird.app'
 end
