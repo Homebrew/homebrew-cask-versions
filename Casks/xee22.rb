@@ -5,5 +5,5 @@ class Xee22 < Cask
   url 'https://xee.googlecode.com/files/Xee2.2.zip'
   homepage 'https://code.google.com/p/xee/'
 
-  link 'Xee.app'
+  app 'Xee.app'
 end
