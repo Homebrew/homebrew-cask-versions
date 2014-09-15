@@ -5,5 +5,5 @@ class OnyxSnowleopard < Cask
   url 'http://www.titanium.free.fr/download/106/OnyX.dmg'
   homepage 'http://www.titanium.free.fr/downloadonyx.php'
 
-  link 'OnyX.app'
+  app 'OnyX.app'
 end
