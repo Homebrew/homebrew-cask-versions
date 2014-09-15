@@ -5,5 +5,5 @@ class FirefoxEsrCn < Cask
   url "http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest-esr/mac/zh-CN/Firefox%20#{version}esr.dmg"
   homepage 'https://www.mozilla.org/zh-CN/firefox/desktop/'
 
-  link 'Firefox.app'
+  app 'Firefox.app'
 end
