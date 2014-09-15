@@ -5,7 +5,7 @@ class SublimeTextDev < Cask
   url 'http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203064.dmg'
   homepage 'http://www.sublimetext.com/3dev'
 
-  link 'Sublime Text.app'
+  app 'Sublime Text.app'
   binary 'Sublime Text.app/Contents/SharedSupport/bin/subl'
   caveats do
     files_in_usr_local
