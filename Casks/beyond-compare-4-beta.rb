@@ -5,7 +5,7 @@ class BeyondCompare4Beta < Cask
   url 'http://www.scootersoftware.com/BCompareOSX-4.0.0.17905.zip'
   homepage 'http://www.scootersoftware.com/beta.php'
 
-  link 'Beyond Compare.app'
+  app 'Beyond Compare.app'
 
   postflight do
     # Don't ask to move the app bundle to /Applications
