@@ -5,5 +5,5 @@ class MucommanderNightly < Cask
   url 'http://www.mucommander.com/download/nightly/mucommander-current.app.tar.gz'
   homepage 'http://www.mucommander.com/index.php'
 
-  link 'muCommander-0_9_0/muCommander.app'
+  app 'muCommander-0_9_0/muCommander.app'
 end
