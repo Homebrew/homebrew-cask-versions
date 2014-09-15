@@ -5,5 +5,5 @@ class ThunderbirdFr < Cask
   url 'http://download-installer.cdn.mozilla.net/pub/thunderbird/releases/24.6.0/mac/fr/Thunderbird%2024.6.0.dmg'
   homepage 'https://www.mozilla.org/fr/thunderbird/'
 
-  link 'Thunderbird.app'
+  app 'Thunderbird.app'
 end
