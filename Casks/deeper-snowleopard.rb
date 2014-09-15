@@ -5,5 +5,5 @@ class DeeperSnowleopard < Cask
   url 'http://www.titanium.free.fr/download/106/Deeper.dmg'
   homepage 'http://www.titanium.free.fr/downloaddeeper.php'
 
-  link 'Deeper.app'
+  app 'Deeper.app'
 end
