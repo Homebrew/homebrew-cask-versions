@@ -5,5 +5,5 @@ class AdiumBeta < Cask
   url 'https://adiumx.cachefly.net/Adium_1.5.10b3.dmg'
   homepage 'https://beta.adium.im/'
 
-  link 'Adium.app'
+  app 'Adium.app'
 end
