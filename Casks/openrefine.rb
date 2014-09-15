@@ -5,5 +5,5 @@ class Openrefine < Cask
   url 'https://github.com/OpenRefine/OpenRefine/releases/download/2.6-beta.1/openrefine-mac-2.6-beta.1.dmg'
   homepage 'http://openrefine.org/'
 
-  link 'OpenRefine.app'
+  app 'OpenRefine.app'
 end
