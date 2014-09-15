@@ -5,5 +5,5 @@ class DaisydiskSnowleopard < Cask
   url 'http://www.daisydiskapp.com/downloads/DaisyDisk_2_1_2.dmg'
   homepage 'http://www.daisydiskapp.com/'
 
-  link 'DaisyDisk.app'
+  app 'DaisyDisk.app'
 end
