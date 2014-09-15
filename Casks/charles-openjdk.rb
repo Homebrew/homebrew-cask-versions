@@ -5,5 +5,5 @@ class CharlesOpenjdk < Cask
   url 'http://www.charlesproxy.com/assets/release/3.9.2/charles-proxy-3.9.2-openjdk.dmg'
   homepage 'http://www.charlesproxy.com/'
 
-  link 'Charles.app'
+  app 'Charles.app'
 end

@@ -6,5 +6,5 @@ class Zephyros52 < Cask
   url 'https://raw.github.com/sdegutis/zephyros/master/Builds/Zephyros-5.2.app.tar.gz'
   homepage 'https://github.com/sdegutis/zephyros'
 
-  link 'Zephyros.app'
+  app 'Zephyros.app'
 end

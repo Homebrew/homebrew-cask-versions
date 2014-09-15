@@ -5,5 +5,5 @@ class MacvimMountainlion < Cask
   url 'https://github.com/eee19/macvim/releases/download/snapshot-72/MacVim-snapshot-72-Mountain-Lion.tbz'
   homepage 'http://code.google.com/p/macvim/'
 
-  link 'MacVim-snapshot-72/MacVim.app'
+  app 'MacVim-snapshot-72/MacVim.app'
 end

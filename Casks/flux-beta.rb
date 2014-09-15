@@ -5,7 +5,7 @@ class FluxBeta < Cask
   url 'https://justgetflux.com/mac/fluxbeta.zip'
   homepage 'https://justgetflux.com/'
 
-  link 'Flux.app'
+  app 'Flux.app'
 
   postflight do
     # Don't ask to move the app bundle to /Applications

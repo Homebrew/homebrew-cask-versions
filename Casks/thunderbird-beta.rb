@@ -5,5 +5,5 @@ class ThunderbirdBeta < Cask
   url 'https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/32.0b1/mac/en-US/Thunderbird%2032.0b1.dmg'
   homepage 'https://www.mozilla.org/en-US/thunderbird/all-beta.html'
 
-  link 'Thunderbird.app'
+  app 'Thunderbird.app'
 end

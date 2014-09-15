@@ -5,5 +5,5 @@ class UtorrentBeta < Cask
   url 'http://download-new.utorrent.com/endpoint/utmac/os/osx/track/beta/'
   homepage 'http://www.utorrent.com/'
 
-  link 'uTorrent.app'
+  app 'uTorrent.app'
 end

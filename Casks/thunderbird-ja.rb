@@ -5,5 +5,5 @@ class ThunderbirdJa < Cask
   url 'http://download-installer.cdn.mozilla.net/pub/thunderbird/releases/24.2.0/mac/ja-JP-mac/Thunderbird%2024.2.0.dmg'
   homepage 'http://www.mozilla.jp/thunderbird/'
 
-  link 'Thunderbird.app'
+  app 'Thunderbird.app'
 end

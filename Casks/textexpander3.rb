@@ -5,5 +5,5 @@ class Textexpander3 < Cask
   url 'http://cdn.smilesoftware.com/TextExpander_3.4.2.zip'
   homepage 'http://www.smilesoftware.com/TextExpander/index.html'
 
-  link 'TextExpander.app'
+  app 'TextExpander.app'
 end

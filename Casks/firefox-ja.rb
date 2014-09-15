@@ -5,5 +5,5 @@ class FirefoxJa < Cask
   url 'https://download.mozilla.org/?product=firefox-latest&os=osx&lang=ja-JP-mac'
   homepage 'http://www.mozilla.jp/firefox/'
 
-  link 'Firefox.app'
+  app 'Firefox.app'
 end

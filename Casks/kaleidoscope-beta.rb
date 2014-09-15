@@ -5,5 +5,5 @@ class KaleidoscopeBeta < Cask
   url 'http://cdn.kaleidoscopeapp.com/releases/Kaleidoscope-2.1.0-131.zip'
   homepage 'http://www.kaleidoscopeapp.com/'
 
-  link 'Kaleidoscope.app'
+  app 'Kaleidoscope.app'
 end

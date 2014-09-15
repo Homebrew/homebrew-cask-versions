@@ -5,5 +5,5 @@ class SequelProNightly < Cask
   url 'http://nightly.sequelpro.com/builds/Sequel_Pro_r0c2ea8b95e.dmg'
   homepage 'http://nightly.sequelpro.com/'
 
-  link 'Sequel Pro.app'
+  app 'Sequel Pro.app'
 end

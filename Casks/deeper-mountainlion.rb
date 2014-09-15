@@ -5,5 +5,5 @@ class DeeperMountainlion < Cask
   url 'http://joel.barriere.pagesperso-orange.fr/dl/108/Deeper.dmg'
   homepage 'http://www.titanium.free.fr/downloaddeeper.php'
 
-  link 'Deeper.app'
+  app 'Deeper.app'
 end

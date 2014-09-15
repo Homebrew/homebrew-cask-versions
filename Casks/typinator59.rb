@@ -5,5 +5,5 @@ class Typinator59 < Cask
   url 'http://www.ergonis.com/downloads/archive/typinator/Typinator59-Install.dmg'
   homepage 'http://www.ergonis.com/products/typinator/'
 
-  link 'Typinator.app'
+  app 'Typinator.app'
 end

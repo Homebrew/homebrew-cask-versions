@@ -5,5 +5,5 @@ class RubymineEap < Cask
   url 'http://download.jetbrains.com/ruby/RubyMine-138.1968.dmg'
   homepage 'http://confluence.jetbrains.com/display/RUBYDEV/RubyMine+EAP'
 
-  link 'RubyMine EAP.app'
+  app 'RubyMine EAP.app'
 end

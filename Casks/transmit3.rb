@@ -5,5 +5,5 @@ class Transmit3 < Cask
   url 'http://panic.com/museum/transmit/Transmit%203.7.zip'
   homepage 'https://www.panic.com/transmit'
 
-  link 'Transmit.app'
+  app 'Transmit.app'
 end

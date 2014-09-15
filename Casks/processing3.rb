@@ -5,5 +5,5 @@ class Processing3 < Cask
   url "http://download.processing.org/processing-#{version}-macosx.zip"
   homepage 'http://processing.org/'
 
-  link 'Processing.app'
+  app 'Processing.app'
 end

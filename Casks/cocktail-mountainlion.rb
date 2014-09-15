@@ -5,5 +5,5 @@ class CocktailMountainlion < Cask
   url 'http://usa.maintain.se/CocktailMLE.dmg'
   homepage 'http://maintain.se/cocktail'
 
-  link 'Cocktail.app'
+  app 'Cocktail.app'
 end

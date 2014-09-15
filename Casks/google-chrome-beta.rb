@@ -5,5 +5,5 @@ class GoogleChromeBeta < Cask
   url 'http://dl.google.com/chrome/mac/beta/googlechrome.dmg'
   homepage 'https://www.google.com/intl/en/chrome/browser/beta.html'
 
-  link 'Google Chrome.app'
+  app 'Google Chrome.app'
 end

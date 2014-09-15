@@ -5,5 +5,5 @@ class Keepassx0 < Cask
   url 'http://downloads.sourceforge.net/keepassx/KeePassX-0.4.3.dmg'
   homepage 'http://www.keepassx.org/'
 
-  link 'KeePassX.app'
+  app 'KeePassX.app'
 end
