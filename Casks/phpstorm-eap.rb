@@ -5,5 +5,5 @@ class PhpstormEap < Cask
   url 'http://download.jetbrains.com/webide/PhpStorm-EAP-138.2071.dmg'
   homepage 'http://confluence.jetbrains.com/display/PhpStorm/PhpStorm+Early+Access+Program'
 
-  link 'PhpStorm EAP.app'
+  app 'PhpStorm EAP.app'
 end
