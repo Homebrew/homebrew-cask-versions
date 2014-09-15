@@ -5,5 +5,5 @@ class CommandLineToolsLion < Cask
   url 'http://devimages.apple.com/downloads/xcode/command_line_tools_for_xcode_os_x_lion_april_2013.dmg'
   homepage 'https://developer.apple.com/xcode/downloads/'
 
-  link 'Command Line Tools (Lion).mpkg'
+  pkg 'Command Line Tools (Lion).mpkg'
 end
