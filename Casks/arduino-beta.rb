@@ -5,5 +5,5 @@ class ArduinoBeta < Cask
   url 'http://downloads.arduino.cc/arduino-1.5.7-macosx-java7-r2.zip'
   homepage 'http://arduino.cc/'
 
-  link 'Arduino.app'
+  app 'Arduino.app'
 end
