@@ -5,5 +5,5 @@ class Arq3 < Cask
   url 'http://www.haystacksoftware.com/arq/Arq_3.3.4.zip'
   homepage 'http://www.haystacksoftware.com/arq/'
 
-  link 'Arq.app'
+  app 'Arq.app'
 end
