@@ -5,5 +5,5 @@ class VoxLegacy < Cask
   url 'http://cloud.coppertino.com/vox/Vox_0.3b2.dmg'
   homepage 'http://coppertino.com/vox/'
 
-  link 'Vox.app'
+  app 'Vox.app'
 end
