@@ -5,5 +5,5 @@ class CommandLineToolsMountainLion < Cask
   url 'http://devimages.apple.com/downloads/xcode/command_line_tools_for_osx_mountain_lion_april_2014.dmg'
   homepage 'https://developer.apple.com/xcode/downloads/'
 
-  link 'Command Line Tools (Mountain Lion).mpkg'
+  pkg 'Command Line Tools (Mountain Lion).mpkg'
 end
