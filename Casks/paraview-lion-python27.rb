@@ -5,7 +5,7 @@ class ParaviewLionPython27 < Cask
   url 'http://www.paraview.org/paraview-downloads/download.php?submit=Download&version=v4.1&type=binary&os=osx&downloadFile=ParaView-4.1.0-Darwin-64bit-Lion-Python27.dmg'
   homepage 'http://www.paraview.org/'
 
-  link 'paraview.app'
+  app 'paraview.app'
   caveats <<-EOS.undent
     This version of ParaView is for OS X Lion (10.7) or Mountain Lion (10.8)
     and should be installed if the system Python version is 2.6. If your
