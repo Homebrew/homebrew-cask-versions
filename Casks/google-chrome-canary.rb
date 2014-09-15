@@ -5,5 +5,5 @@ class GoogleChromeCanary < Cask
   url 'https://storage.googleapis.com/chrome-canary/GoogleChromeCanary.dmg'
   homepage 'https://www.google.com/chrome/browser/canary.html'
 
-  link 'Google Chrome Canary.app'
+  app 'Google Chrome Canary.app'
 end
