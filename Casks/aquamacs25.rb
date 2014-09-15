@@ -5,5 +5,5 @@ class Aquamacs25 < Cask
   url 'http://braeburn.aquamacs.org/releases/Aquamacs-Emacs-2.5.dmg'
   homepage 'http://aquamacs.org/'
 
-  link 'Aquamacs.app'
+  app 'Aquamacs.app'
 end
