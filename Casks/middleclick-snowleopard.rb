@@ -5,5 +5,5 @@ class MiddleclickSnowleopard < Cask
   url 'http://clement.beffa.org/labs/downloads/MiddleClick.zip'
   homepage 'http://clement.beffa.org/labs/projects/middleclick'
 
-  link 'MiddleClick.app'
+  app 'MiddleClick.app'
 end
