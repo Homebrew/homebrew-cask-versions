@@ -5,5 +5,5 @@ class IntellijIdeaCommunityEap < Cask
   url 'http://download.jetbrains.com/idea/ideaIC-138.1696.2.dmg'
   homepage 'https://www.jetbrains.com/idea/index.html'
 
-  link 'IntelliJ IDEA 14 CE EAP.app'
+  app 'IntelliJ IDEA 14 CE EAP.app'
 end
