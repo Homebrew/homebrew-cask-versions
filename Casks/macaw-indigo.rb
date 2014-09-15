@@ -6,5 +6,5 @@ class MacawIndigo < Cask
   appcast 'http://indigo.macaw.co/appcast.xml'
   homepage 'http://indigo.macaw.co/'
 
-  link 'Macaw Indigo.app'
+  app 'Macaw Indigo.app'
 end
