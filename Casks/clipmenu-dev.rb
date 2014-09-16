@@ -5,5 +5,5 @@ class ClipmenuDev < Cask
   url 'http://dl.dropbox.com/u/1140644/clipmenu/ClipMenu_0.4.4a12.zip'
   homepage 'http://www.clipmenu.com/'
 
-  link 'ClipMenu.app'
+  app 'ClipMenu.app'
 end
