@@ -6,5 +6,5 @@ class SketchupPro < Cask
   url 'https://dl.trimble.com/sketchup/SketchUpPro-en.dmg'
   homepage 'http://www.sketchup.com/intl/en/'
 
-  link 'SketchUp 2014'
+  suite 'SketchUp 2014'
 end
