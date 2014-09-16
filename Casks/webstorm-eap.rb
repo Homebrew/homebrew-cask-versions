@@ -5,5 +5,5 @@ class WebstormEap < Cask
   url 'http://download-cf.jetbrains.com/webstorm/WebStorm-EAP-138.1988.dmg'
   homepage 'http://confluence.jetbrains.com/display/WI/WebStorm+9+EAP'
 
-  link 'Webstorm 9 EAP.app'
+  app 'Webstorm 9 EAP.app'
 end
