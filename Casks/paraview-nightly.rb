@@ -1,5 +1,5 @@
 class ParaviewNightly < Cask
-  version 'latest'
+  version :latest
   sha256 :no_check
 
   url 'http://www.paraview.org/paraview-downloads/download.php?submit=Download&version=nightly&type=binary&os=osx&downloadFile=ParaView-Darwin-64bit-NIGHTLY.dmg'
