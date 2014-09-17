@@ -1,5 +1,5 @@
 class DeeperLion < Cask
-  version 'latest'
+  version :latest
   sha256 :no_check
 
   url 'http://www.titanium.free.fr/download/107/Deeper.dmg'

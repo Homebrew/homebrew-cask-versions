@@ -1,5 +1,5 @@
 class DeeperMountainlion < Cask
-  version 'latest'
+  version :latest
   sha256 :no_check
 
   url 'http://joel.barriere.pagesperso-orange.fr/dl/108/Deeper.dmg'
