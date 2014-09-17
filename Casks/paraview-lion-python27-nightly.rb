@@ -1,5 +1,5 @@
 class ParaviewLionPython27Nightly < Cask
-  version 'latest'
+  version :latest
   sha256 :no_check
 
   url 'http://www.paraview.org/paraview-downloads/download.php?submit=Download&version=nightly&type=binary&os=osx&downloadFile=ParaView-Darwin-64bit-Lion-Python27-NIGHTLY.dmg'
