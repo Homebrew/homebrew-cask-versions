@@ -1,5 +1,5 @@
 class VlcNightly < Cask
-  version 'latest'
+  version :latest
   sha256 :no_check
 
   url 'http://nightlies.videolan.org/build/macosx-intel/last'
