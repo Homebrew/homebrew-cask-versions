@@ -1,5 +1,5 @@
 class GoogleChromeCanary < Cask
-  version 'latest'
+  version :latest
   sha256 :no_check
 
   url 'https://storage.googleapis.com/chrome-canary/GoogleChromeCanary.dmg'
