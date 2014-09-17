@@ -1,5 +1,5 @@
 class Jdownloader2 < Cask
-  version 'latest'
+  version :latest
   sha256 :no_check
 
   if MacOS.version < :lion
