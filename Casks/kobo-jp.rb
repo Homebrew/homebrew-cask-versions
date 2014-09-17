@@ -1,5 +1,5 @@
 class KoboJp < Cask
-  version 'latest'
+  version :latest
   sha256 :no_check
 
   url 'http://download.kobobooks.com/desktop/RakutenBooks/KoboSetup.dmg'

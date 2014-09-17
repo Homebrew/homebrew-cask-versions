@@ -1,5 +1,5 @@
 class Parallels8 < Cask
-  version 'latest'
+  version :latest
   sha256 :no_check
 
   url 'http://www.parallels.com/directdownload/pd8'

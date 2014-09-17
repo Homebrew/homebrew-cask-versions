@@ -1,5 +1,5 @@
 class FirefoxUx < Cask
-  version 'latest'
+  version :latest
   sha256 :no_check
 
   url 'https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-ux/firefox-32.0a1.en-US.mac.dmg'

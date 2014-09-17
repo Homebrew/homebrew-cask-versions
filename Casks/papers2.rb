@@ -1,5 +1,5 @@
 class Papers2 < Cask
-  version 'latest'
+  version :latest
   sha256 :no_check
 
   url 'http://www.papersapp.com/papers2/download'

@@ -1,5 +1,5 @@
 class Skitch1 < Cask
-  version 'latest'
+  version :latest
   sha256 :no_check
 
   url 'http://evernote.com/download/get.php?file=SkitchMac_v1'
