@@ -28,7 +28,7 @@ class Java7 < Cask
       '/bin/ln', '-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Home/jre/lib/server/libjvm.dylib", "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Home/bundle/Libraries/libserver.dylib"
   end
   uninstall :pkgutil => 'com.oracle.jdk7u67',
-            :files => '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
+            :delete => '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
   caveats <<-EOS.undent
     This Cask makes minor modifications to the JRE to prevent any packaged
     application issues.
