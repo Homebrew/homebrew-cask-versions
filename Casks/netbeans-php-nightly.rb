@@ -6,7 +6,5 @@ class NetbeansPhpNightly < Cask
   url "http://bits.netbeans.org/download/trunk/nightly/latest/bundles/netbeans-trunk-nightly-#{version}-php-macosx.dmg"
   pkg "NetBeans Dev #{version}.mpkg"
 
-  uninstall :files => [
-                       '/Applications/NetBeans'
-                      ]
+  uninstall :delete => '/Applications/NetBeans'
 end
