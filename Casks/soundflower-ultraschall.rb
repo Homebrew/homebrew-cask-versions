@@ -7,5 +7,5 @@ class SoundflowerUltraschall < Cask
 
   pkg 'Soundflower.pkg', :allow_untrusted => true
   uninstall :pkgutil => 'com.cycling74.soundflower*',
-            :files => '/Applications/Soundflower'
+            :delete => '/Applications/Soundflower'
 end
