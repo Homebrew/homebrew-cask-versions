@@ -7,5 +7,5 @@ class QuicktimePlayer7 < Cask
 
   pkg 'QuickTimePlayer7.6.6_SnowLeopard.pkg'
   uninstall :pkgutil => 'com.apple.pkg.QuickTimePlayer7.6.6_SnowLeopard',
-            :files   => '/Applications/Utilities/QuickTime Player 7.app'
+            :delete  => '/Applications/Utilities/QuickTime Player 7.app'
 end
