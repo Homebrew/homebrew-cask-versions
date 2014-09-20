@@ -1,8 +1,8 @@
 class ThunderbirdBeta < Cask
-  version '32.0b1'
-  sha256 '0f66e9cb452293e248d92c9a156c0b81c50e81ba1107922ab6f8b555934e83d3'
+  version '33.0b1'
+  sha256 '96db91d29cf5ec4e01e1c877eb804c9894e699e57c0d6d55219b1f53cbdb0dab'
 
-  url 'https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/32.0b1/mac/en-US/Thunderbird%2032.0b1.dmg'
+  url 'https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/33.0b1/mac/en-US/Thunderbird%2033.0b1.dmg'
   homepage 'https://www.mozilla.org/en-US/thunderbird/all-beta.html'
 
   app 'Thunderbird.app'
