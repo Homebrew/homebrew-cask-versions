@@ -9,7 +9,6 @@ class Jdownloader2 < Cask
   end
   homepage 'http://jdownloader.org/download/offline'
 
-  caskroom_only true
   caveats do
     manual_installer 'JDownloader Installer.app'
   end
