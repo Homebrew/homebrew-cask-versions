@@ -1,6 +1,6 @@
 class FirefoxEsrCn < Cask
-  version '31.1.0'
-  sha256 'd8069f94f2ff584d6059f7bcdcb1db483a32ed8cffbe23d43647de18b83c6870'
+  version '31.1.1'
+  sha256 'c596622c12480752efbfa45dbca25ce3c43079b89ca4c886cb35d5dec8727a9f'
 
   url "http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest-esr/mac/zh-CN/Firefox%20#{version}esr.dmg"
   homepage 'https://www.mozilla.org/zh-CN/firefox/desktop/'
