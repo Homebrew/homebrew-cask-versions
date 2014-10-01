@@ -4,6 +4,7 @@ class ParaviewLionPython27 < Cask
 
   url "http://www.paraview.org/paraview-downloads/download.php?submit=Download&version=v4.1&type=binary&os=osx&downloadFile=ParaView-#{version}-Darwin-64bit-Lion-Python27.dmg"
   homepage 'http://www.paraview.org/'
+  license :unknown
 
   app 'paraview.app'
   caveats <<-EOS.undent
