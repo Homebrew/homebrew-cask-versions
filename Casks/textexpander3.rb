@@ -4,6 +4,7 @@ class Textexpander3 < Cask
 
   url "http://cdn.smilesoftware.com/TextExpander_#{version}.zip"
   homepage 'http://www.smilesoftware.com/TextExpander/index.html'
+  license :unknown
 
   app 'TextExpander.app'
 end
