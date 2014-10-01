@@ -4,6 +4,7 @@ class FluxBeta < Cask
 
   url 'https://justgetflux.com/mac/fluxbeta.zip'
   homepage 'https://justgetflux.com/'
+  license :unknown
 
   app 'Flux.app'
 
