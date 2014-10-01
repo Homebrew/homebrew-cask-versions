@@ -4,6 +4,7 @@ class RubymineEap < Cask
 
   url "http://download.jetbrains.com/ruby/RubyMine-#{version}.dmg"
   homepage 'http://confluence.jetbrains.com/display/RUBYDEV/RubyMine+EAP'
+  license :unknown
 
   app 'RubyMine EAP.app'
 end
