@@ -4,6 +4,7 @@ class Processing3 < Cask
 
   url "http://download.processing.org/processing-#{version}-macosx.zip"
   homepage 'http://processing.org/'
+  license :unknown
 
   app 'Processing.app'
 end
