@@ -4,6 +4,7 @@ class FirefoxNightlyJa < Cask
 
   url "https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-mozilla-central-l10n/firefox-#{version}.ja-JP-mac.mac.dmg"
   homepage 'https://nightly.mozilla.org/'
+  license :oss
 
   app 'FirefoxNightly.app'
 end
