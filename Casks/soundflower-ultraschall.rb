@@ -6,6 +6,13 @@ class SoundflowerUltraschall < Cask
   homepage 'https://github.com/MariusE/Soundflower-Ultraschall-Edition'
 
   pkg 'Soundflower.pkg', :allow_untrusted => true
-  uninstall :pkgutil => 'com.cycling74.soundflower*',
-            :delete => '/Applications/Soundflower'
+  # early_script is a workaround for a slowly unloading kext, see private-eye cask
+  uninstall :early_script => {
+              :executable => '/sbin/kextunload',
+              :args => ['-b', 'com.Cycling74.driver.Soundflower'],
+              :must_succeed => false,
+            },
+            :pkgutil => 'com.cycling74.soundflower.*',
+            :delete => '/Applications/Soundflower',
+            :kext => 'com.Cycling74.driver.Soundflower'
 end
