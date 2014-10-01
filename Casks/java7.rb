@@ -7,6 +7,7 @@ class Java7 < Cask
                     'oraclelicense' => 'accept-securebackup-cookie'
                   }
   homepage 'http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html'
+  license :unknown
 
   pkg 'JDK 7 Update 67.pkg'
   postflight do

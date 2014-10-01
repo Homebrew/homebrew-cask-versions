@@ -4,6 +4,7 @@ class CocktailLion < Cask
 
   url 'http://usa.maintain.se/CocktailLionEdition.dmg'
   homepage 'http://maintain.se/cocktail'
+  license :unknown
 
   app 'Cocktail.app'
 end

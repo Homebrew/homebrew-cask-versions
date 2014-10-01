@@ -4,6 +4,7 @@ class OmnigraffleProfessional5 < Cask
 
   url "http://www.omnigroup.com/ftp/pub/software/MacOSX/10.6/OmniGrafflePro-#{version}.dmg"
   homepage 'http://www.omnigroup.com/products/omnigraffle'
+  license :closed
 
   app 'OmniGraffle Professional 5.app'
 end

@@ -4,6 +4,7 @@ class Keepassx0 < Cask
 
   url "http://downloads.sourceforge.net/keepassx/KeePassX-#{version}.dmg"
   homepage 'http://www.keepassx.org/'
+  license :oss
 
   app 'KeePassX.app'
 end

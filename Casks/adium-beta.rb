@@ -4,6 +4,7 @@ class AdiumBeta < Cask
 
   url "https://adiumx.cachefly.net/Adium_#{version}.dmg"
   homepage 'https://beta.adium.im/'
+  license :oss
 
   app 'Adium.app'
 end

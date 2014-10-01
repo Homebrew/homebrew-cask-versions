@@ -4,6 +4,7 @@ class Lightroom3 < Cask
 
   url 'http://download.adobe.com/pub/adobe/lightroom/mac/3.x/Lightroom_3_LS11_mac_3_3.dmg'
   homepage 'http://www.adobe.com/support/downloads/thankyou.jsp?ftpID=4927&fileID=4588'
+  license :closed
 
   pkg 'Adobe Lightroom 3.pkg'
 end

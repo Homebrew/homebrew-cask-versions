@@ -5,6 +5,7 @@ class MacawIndigo < Cask
   url "http://indigo.macaw.co/#{version}/MacawIndigo#{version}.dmg"
   appcast 'http://indigo.macaw.co/appcast.xml'
   homepage 'http://indigo.macaw.co/'
+  license :unknown
 
   app 'Macaw Indigo.app'
 end

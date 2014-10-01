@@ -4,6 +4,7 @@ class SmcfancontrolBeta < Cask
 
   url 'https://github.com/hholtmann/smcFanControl/releases/download/v2.5%C3%9F/smcFanControl_2_5beta.zip'
   homepage 'https://github.com/hholtmann/smcFanControl'
+  license :oss
 
   app 'smcFanControl.app'
 end

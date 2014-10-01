@@ -4,6 +4,7 @@ class FirefoxEsrUs < Cask
 
   url "https://download.mozilla.org/?product=firefox-#{version}esr-SSL&os=osx&lang=en-US"
   homepage 'https://www.mozilla.org/en-US/firefox/organizations/faq/'
+  license :oss
 
   app 'Firefox.app'
 end

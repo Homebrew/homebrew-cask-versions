@@ -4,6 +4,7 @@ class Lightroom4 < Cask
 
   url 'http://download.adobe.com/pub/adobe/lightroom/mac/4.x/Lightroom_4_LS11_mac_4_4.dmg'
   homepage 'http://www.adobe.com/support/downloads/thankyou.jsp?ftpID=5566&fileID=5578'
+  license :closed
 
   install 'Adobe Photoshop Lightroom 4.pkg'
   uninstall :pkgutil => 'com.adobe.Lightroom4'

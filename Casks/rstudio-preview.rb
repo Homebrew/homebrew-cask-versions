@@ -4,6 +4,7 @@ class RstudioPreview < Cask
 
   url "https://s3.amazonaws.com/rstudio-dailybuilds/RStudio-#{version}.dmg"
   homepage 'http://www.rstudio.com/ide/download/preview'
+  license :unknown
 
   app 'RStudio.app'
 end

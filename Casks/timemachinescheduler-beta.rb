@@ -4,6 +4,7 @@ class TimemachineschedulerBeta < Cask
 
   url 'http://www.klieme.com/Downloads/TimeMachineScheduler/TimeMachineScheduler_4.0b3Full.zip'
   homepage 'http://www.klieme.com/TimeMachineScheduler.html'
+  license :unknown
 
   nested_container 'TimeMachineScheduler_4.0b3.dmg'
   app 'TimeMachineScheduler.app'

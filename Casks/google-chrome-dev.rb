@@ -4,6 +4,7 @@ class GoogleChromeDev < Cask
 
   url 'http://dl.google.com/chrome/mac/dev/googlechrome.dmg'
   homepage 'https://www.google.com/chrome/'
+  license :closed
 
   app 'Google Chrome.app'
 end

@@ -4,6 +4,7 @@ class HandbrakecliNightly < Cask
 
   url 'http://download.handbrake.fr/nightly/HandBrake-6419svn-MacOSX.6_CLI_x86_64.dmg'
   homepage 'http://handbrake.fr'
+  license :unknown
 
   binary 'HandBrakeCLI'
 end

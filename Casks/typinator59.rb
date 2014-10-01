@@ -4,6 +4,7 @@ class Typinator59 < Cask
 
   url 'http://www.ergonis.com/downloads/archive/typinator/Typinator59-Install.dmg'
   homepage 'http://www.ergonis.com/products/typinator/'
+  license :unknown
 
   app 'Typinator.app'
 end

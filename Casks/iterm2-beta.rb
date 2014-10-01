@@ -4,6 +4,7 @@ class Iterm2Beta < Cask
 
   url 'http://www.iterm2.com/downloads/beta/iTerm2-1_0_0_20140629.zip'
   homepage 'http://www.iterm2.com/'
+  license :oss
 
   app 'iTerm.app'
 end
