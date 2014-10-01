@@ -4,6 +4,7 @@ class Openrefine < Cask
 
   url "https://github.com/OpenRefine/OpenRefine/releases/download/#{version}/openrefine-mac-#{version}.dmg"
   homepage 'http://openrefine.org/'
+  license :oss
 
   app 'OpenRefine.app'
 end
