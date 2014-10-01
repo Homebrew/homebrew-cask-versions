@@ -4,6 +4,7 @@ class EvernoteBeta < Cask
 
   url 'http://cdn1.evernote.com/mac-smd/prerelease/Evernote_BETA_5.6.0_Beta_6_450650.zip'
   homepage 'https://evernote.com/'
+  license :unknown
 
   app 'Evernote.app'
 end
