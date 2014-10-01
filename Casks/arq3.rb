@@ -4,6 +4,7 @@ class Arq3 < Cask
 
   url "http://www.haystacksoftware.com/arq/Arq_#{version}.zip"
   homepage 'http://www.haystacksoftware.com/arq/'
+  license :unknown
 
   app 'Arq.app'
 end
