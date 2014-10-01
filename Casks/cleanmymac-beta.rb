@@ -5,6 +5,7 @@ class CleanmymacBeta < Cask
   url 'http://dl.devmate.com/com.macpaw.CleanMyMac2/beta/CleanMyMac2.zip'
   appcast 'http://updateinfo.devmate.com/com.macpaw.CleanMyMac2/beta/updates.xml'
   homepage 'http://macpaw.com/cleanmymac'
+  license :unknown
 
   app 'CleanMyMac 2.app'
 end

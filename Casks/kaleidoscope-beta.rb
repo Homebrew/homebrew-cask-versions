@@ -4,6 +4,7 @@ class KaleidoscopeBeta < Cask
 
   url "http://cdn.kaleidoscopeapp.com/releases/Kaleidoscope-#{version}-131.zip"
   homepage 'http://www.kaleidoscopeapp.com/'
+  license :unknown
 
   app 'Kaleidoscope.app'
 end

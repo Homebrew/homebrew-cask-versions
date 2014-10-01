@@ -4,6 +4,7 @@ class Xee22 < Cask
 
   url "https://xee.googlecode.com/files/Xee#{version}.zip"
   homepage 'https://code.google.com/p/xee/'
+  license :oss
 
   app 'Xee.app'
 end

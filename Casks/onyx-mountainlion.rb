@@ -4,6 +4,7 @@ class OnyxMountainlion < Cask
 
   url 'http://joel.barriere.pagesperso-orange.fr/dl/108/OnyX.dmg'
   homepage 'http://www.titanium.free.fr/downloadonyx.php'
+  license :unknown
 
   app 'OnyX.app'
 end

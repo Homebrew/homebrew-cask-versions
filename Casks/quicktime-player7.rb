@@ -4,6 +4,7 @@ class QuicktimePlayer7 < Cask
 
   url "http://support.apple.com/downloads/DL923/en_US/QuickTimePlayer#{version}_SnowLeopard.dmg"
   homepage 'http://support.apple.com/kb/dl923'
+  license :closed
 
   pkg "QuickTimePlayer#{version}_SnowLeopard.pkg"
   uninstall :pkgutil => "com.apple.pkg.QuickTimePlayer#{version}_SnowLeopard",

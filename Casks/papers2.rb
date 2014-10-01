@@ -4,6 +4,7 @@ class Papers2 < Cask
 
   url 'http://www.papersapp.com/papers2/download'
   homepage 'http://www.papersapp.com/mac/'
+  license :unknown
 
   app 'Papers2.app'
 end

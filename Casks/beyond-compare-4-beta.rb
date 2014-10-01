@@ -4,6 +4,7 @@ class BeyondCompare4Beta < Cask
 
   url "http://www.scootersoftware.com/BCompareOSX-#{version}.zip"
   homepage 'http://www.scootersoftware.com/beta.php'
+  license :unknown
 
   app 'Beyond Compare.app'
 

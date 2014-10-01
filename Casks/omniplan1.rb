@@ -4,6 +4,7 @@ class Omniplan1 < Cask
 
   url "http://www.omnigroup.com/ftp/pub/software/MacOSX/10.4/OmniPlan-#{version}.dmg"
   homepage 'http://www.omnigroup.com/products/omniplan/'
+  license :unknown
 
   app 'OmniPlan.app'
 end

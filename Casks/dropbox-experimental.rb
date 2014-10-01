@@ -4,6 +4,7 @@ class DropboxExperimental < Cask
 
   url "https://dl.dropboxusercontent.com/u/17/Dropbox%20#{version}.dmg"
   homepage 'https://www.dropbox.com/'
+  license :unknown
 
   app 'Dropbox.app'
 end

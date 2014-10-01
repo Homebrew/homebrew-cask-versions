@@ -4,6 +4,7 @@ class Aquamacs25 < Cask
 
   url "http://braeburn.aquamacs.org/releases/Aquamacs-Emacs-#{version}.dmg"
   homepage 'http://aquamacs.org/'
+  license :oss
 
   app 'Aquamacs.app'
 end

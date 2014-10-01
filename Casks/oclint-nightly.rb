@@ -4,6 +4,7 @@ class OclintNightly < Cask
 
   url 'http://archives.oclint.org/nightly/oclint-0.9.dev.648e9af-x86_64-darwin-12.4.0.tar.gz'
   homepage 'http://oclint.org'
+  license :unknown
 
   binary 'oclint-0.9.dev.648e9af/bin/oclint'
   binary 'oclint-0.9.dev.648e9af/bin/oclint-json-compilation-database'

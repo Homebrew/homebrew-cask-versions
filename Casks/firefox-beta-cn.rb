@@ -4,6 +4,7 @@ class FirefoxBetaCn < Cask
 
   url "https://download.mozilla.org/?product=firefox-#{version}&os=osx&lang=zh-CN"
   homepage 'https://www.mozilla.org/zh-CN/firefox/beta/'
+  license :oss
 
   app 'Firefox.app'
 end

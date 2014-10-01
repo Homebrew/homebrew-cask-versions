@@ -4,6 +4,7 @@ class VmwareFusion6 < Cask
 
   url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-#{version}-light.dmg"
   homepage 'http://www.vmware.com/products/fusion/'
+  license :closed
 
   binary 'VMware Fusion.app/Contents/Library/vmrun'
   app 'VMware Fusion.app'

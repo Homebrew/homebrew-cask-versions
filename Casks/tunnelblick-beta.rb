@@ -4,6 +4,7 @@ class TunnelblickBeta < Cask
 
   url "http://downloads.sourceforge.net/project/tunnelblick/All%20files/Tunnelblick_#{version}.dmg"
   homepage 'https://code.google.com/p/tunnelblick/'
+  license :oss
 
   app 'Tunnelblick.app'
 end

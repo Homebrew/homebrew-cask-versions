@@ -4,6 +4,7 @@ class PhpstormEap < Cask
 
   url "http://download.jetbrains.com/webide/PhpStorm-EAP-#{version}.dmg"
   homepage 'http://confluence.jetbrains.com/display/PhpStorm/PhpStorm+Early+Access+Program'
+  license :unknown
 
   app 'PhpStorm EAP.app'
 end

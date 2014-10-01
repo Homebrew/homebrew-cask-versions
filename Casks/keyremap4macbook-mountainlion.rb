@@ -4,6 +4,7 @@ class Keyremap4macbookMountainlion < Cask
 
   url "https://pqrs.org/macosx/keyremap4macbook/files/KeyRemap4MacBook-#{version}.dmg"
   homepage 'https://pqrs.org/macosx/keyremap4macbook/'
+  license :unknown
 
   pkg 'KeyRemap4MacBook.pkg'
 end

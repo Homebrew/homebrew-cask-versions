@@ -8,6 +8,7 @@ class Jdownloader2 < Cask
     url 'http://installer.jdownloader.org/JD2SilentSetup.dmg'
   end
   homepage 'http://jdownloader.org/download/offline'
+  license :unknown
 
   caveats do
     manual_installer 'JDownloader Installer.app'

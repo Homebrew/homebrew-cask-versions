@@ -4,6 +4,7 @@ class ClipmenuDev < Cask
 
   url "http://dl.dropbox.com/u/1140644/clipmenu/ClipMenu_#{version}.zip"
   homepage 'http://www.clipmenu.com/'
+  license :unknown
 
   app 'ClipMenu.app'
 end
