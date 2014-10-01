@@ -4,6 +4,7 @@ class Parallels8 < Cask
 
   url 'http://www.parallels.com/directdownload/pd8'
   homepage 'http://www.parallels.com/products/desktop/'
+  license :closed
 
   pkg 'Install.mpkg'
 end
