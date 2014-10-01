@@ -5,6 +5,7 @@ class Zephyros52 < Cask
 
   url "https://raw.github.com/sdegutis/zephyros/master/Builds/Zephyros-#{version}.app.tar.gz"
   homepage 'https://github.com/sdegutis/zephyros'
+  license :oss
 
   app 'Zephyros.app'
 end
