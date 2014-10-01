@@ -4,6 +4,7 @@ class WebstormEap < Cask
 
   url "http://download-cf.jetbrains.com/webstorm/WebStorm-EAP-#{version}.dmg"
   homepage 'http://confluence.jetbrains.com/display/WI/WebStorm+9+EAP'
+  license :unknown
 
   app 'Webstorm 9 EAP.app'
 end
