@@ -4,6 +4,7 @@ class AdobeReaderFr < Cask
 
   url "http://ardownload.adobe.com/pub/adobe/reader/mac/11.x/#{version}/fr_FR/AdbeRdr11000_fr_FR.dmg"
   homepage 'http://get.adobe.com/fr/reader/'
+  license :closed
 
   pkg 'Adobe Reader XI Installer.pkg'
   uninstall :pkgutil => 'com.adobe.acrobat.reader.11000.*'
