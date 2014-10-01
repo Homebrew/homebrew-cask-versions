@@ -4,6 +4,7 @@ class WiresharkDev < Cask
 
   url "http://www.wireshark.org/download/osx/Wireshark%20#{version}%20Intel%2064.dmg"
   homepage 'http://www.wireshark.org'
+  license :unknown
 
   pkg "Wireshark #{version} Intel 64.pkg"
   uninstall :pkgutil => 'org.wireshark.*'
