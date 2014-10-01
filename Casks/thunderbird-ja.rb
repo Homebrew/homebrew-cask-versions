@@ -4,6 +4,7 @@ class ThunderbirdJa < Cask
 
   url "https://download.mozilla.org/?product=thunderbird-#{version}&os=osx&lang=ja-JP-mac"
   homepage 'http://www.mozilla.jp/thunderbird/'
+  license :oss
 
   app 'Thunderbird.app'
 end
