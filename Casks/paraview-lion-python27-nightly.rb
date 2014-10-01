@@ -4,6 +4,7 @@ class ParaviewLionPython27Nightly < Cask
 
   url 'http://www.paraview.org/paraview-downloads/download.php?submit=Download&version=nightly&type=binary&os=osx&downloadFile=ParaView-Darwin-64bit-Lion-Python27-NIGHTLY.dmg'
   homepage 'http://www.paraview.org/'
+  license :unknown
 
   app 'paraview.app'
   caveats <<-EOS.undent
