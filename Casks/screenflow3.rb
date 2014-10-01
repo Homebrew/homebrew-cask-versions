@@ -4,6 +4,7 @@ class Screenflow3 < Cask
 
   url "http://www.telestream.net/download-files/screenflow/3-0/ScreenFlow-#{version}.dmg"
   homepage 'http://www.telestream.net/screenflow/'
+  license :unknown
 
   app 'ScreenFlow.app'
 end
