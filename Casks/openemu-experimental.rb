@@ -4,6 +4,7 @@ class OpenemuExperimental < Cask
 
   url "https://github.com/OpenEmu/OpenEmu/releases/download/v#{version}/OpenEmu_#{version}-experimental.zip"
   homepage 'http://openemu.org/'
+  license :oss
 
   app 'OpenEmu.app'
 end
