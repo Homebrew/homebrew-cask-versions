@@ -4,6 +4,7 @@ class Vagrant127 < Cask
 
   url "http://files.vagrantup.com/packages/7ec0ee1d00a916f80b109a298bab08e391945243/Vagrant-#{version}.dmg"
   homepage 'http://www.vagrantup.com'
+  license :unknown
 
   pkg 'Vagrant.pkg'
   uninstall :script => { :executable => 'uninstall.tool', :input => %w[Yes] }
