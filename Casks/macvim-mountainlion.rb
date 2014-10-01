@@ -4,6 +4,7 @@ class MacvimMountainlion < Cask
 
   url 'https://github.com/eee19/macvim/releases/download/snapshot-72/MacVim-snapshot-72-Mountain-Lion.tbz'
   homepage 'http://code.google.com/p/macvim/'
+  license :oss
 
   app 'MacVim-snapshot-72/MacVim.app'
 end
