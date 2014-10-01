@@ -4,6 +4,7 @@ class OnepasswordBeta < Cask
 
   url "https://aws.cachefly.net/dist/1P/mac4/1Password-#{version}.zip"
   homepage 'https://agilebits.com/onepassword'
+  license :closed
 
   app '1Password 4.app'
 end
