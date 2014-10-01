@@ -4,6 +4,7 @@ class EclipseJee < Cask
 
   url 'http://download.eclipse.org/technology/epp/downloads/release/kepler/SR1/eclipse-jee-kepler-SR1-macosx-cocoa-x86_64.tar.gz'
   homepage 'http://eclipse.org'
+  license :unknown
 
   app 'eclipse/Eclipse.app'
 end
