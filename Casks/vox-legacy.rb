@@ -4,6 +4,7 @@ class VoxLegacy < Cask
 
   url "http://cloud.coppertino.com/vox/Vox_#{version}.dmg"
   homepage 'http://coppertino.com/vox/'
+  license :unknown
 
   app 'Vox.app'
 end
