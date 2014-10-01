@@ -4,6 +4,7 @@ class Gcc481Linux64 < Cask
 
   url "http://crossgcc.rts-software.org/download/gcc-#{version}-for-linux32-linux64/gcc-#{version}-for-linux64.dmg"
   homepage 'http://crossgcc.rts-software.org/doku.php?id=start'
+  license :oss
 
   pkg "gcc-#{version}-for-linux64.pkg"
 end
