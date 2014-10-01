@@ -4,6 +4,7 @@ class IntellijIdeaUltimateEap < Cask
 
   url "http://download.jetbrains.com/idea/ideaIU-#{version}.dmg"
   homepage 'https://www.jetbrains.com/idea/index.html'
+  license :unknown
 
   app 'IntelliJ IDEA 14 EAP.app'
 end
