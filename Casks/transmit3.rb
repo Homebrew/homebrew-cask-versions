@@ -4,6 +4,7 @@ class Transmit3 < Cask
 
   url "http://panic.com/museum/transmit/Transmit%20#{version}.zip"
   homepage 'https://www.panic.com/transmit'
+  license :unknown
 
   app 'Transmit.app'
 end
