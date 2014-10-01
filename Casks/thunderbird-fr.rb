@@ -4,6 +4,7 @@ class ThunderbirdFr < Cask
 
   url "http://download-installer.cdn.mozilla.net/pub/thunderbird/releases/#{version}/mac/fr/Thunderbird%20#{version}.dmg"
   homepage 'https://www.mozilla.org/fr/thunderbird/'
+  license :oss
 
   app 'Thunderbird.app'
 end
