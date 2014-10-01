@@ -4,6 +4,7 @@ class CharlesOpenjdk < Cask
 
   url "http://www.charlesproxy.com/assets/release/#{version}/charles-proxy-#{version}-openjdk.dmg"
   homepage 'http://www.charlesproxy.com/'
+  license :unknown
 
   app 'Charles.app'
 end
