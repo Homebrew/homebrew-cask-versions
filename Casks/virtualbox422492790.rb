@@ -4,6 +4,7 @@ class Virtualbox422492790 < Cask
 
   url "http://download.virtualbox.org/virtualbox/4.2.24/VirtualBox-#{version}-OSX.dmg"
   homepage 'http://www.virtualbox.org'
+  license :unknown
 
   pkg 'VirtualBox.pkg'
   uninstall :script => { :executable => 'VirtualBox_Uninstall.tool', :args => %w[--unattended] }
