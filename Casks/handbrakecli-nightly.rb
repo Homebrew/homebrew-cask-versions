@@ -1,10 +1,10 @@
 class HandbrakecliNightly < Cask
-  version '6419svn'
-  sha256 '3fcd67ddda23ba406789f0f00c9d501fd85a6c6348385ba6da8550db0fcfefb2'
+  version '6430svn'
+  sha256 'e62a9c051a00a00bdb09a76e624014a9c79c3cd387c9982f030282e11b1e1f1d'
 
-  url 'http://download.handbrake.fr/nightly/HandBrake-6419svn-MacOSX.6_CLI_x86_64.dmg'
+  url "http://download.handbrake.fr/nightly/HandBrake-#{version}-MacOSX.6_CLI_x86_64.dmg"
   homepage 'http://handbrake.fr'
-  license :unknown
+  license :gpl
 
   binary 'HandBrakeCLI'
 end
