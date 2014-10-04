@@ -1,7 +1,10 @@
 class ArduinoBeta < Cask
-  url 'http://downloads.arduino.cc/arduino-1.5.6-r2-macosx.zip'
+  version '1.5.8'
+  sha256 'f5678cf9146031af52519d79dfcb16a81aa9c7eb68e516b34c679139048fb000'
+
+  url 'http://downloads.arduino.cc/arduino-1.5.8-macosx-java7.zip'
   homepage 'http://arduino.cc/'
-  version '1.5.6-r2'
-  sha256 '8389fc8f2ec59e262ac04dbfd27ce0b61f26d6a4aa1bb3d6f9d8389c97e93d39'
-  link 'Arduino.app'
+  license :unknown
+
+  app 'Arduino.app'
 end
