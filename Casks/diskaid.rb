@@ -4,7 +4,7 @@ class Diskaid < Cask
 
   url 'http://imazing.com/downloads/DiskAid_6_7_6.dmg'
   homepage 'http://imazing.com/diskaid'
-  license :unknown
+  license :commercial
 
   app 'DiskAid.app'
 end
