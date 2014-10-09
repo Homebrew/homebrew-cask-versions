@@ -6,6 +6,6 @@ class TimemachineschedulerBeta < Cask
   homepage 'http://www.klieme.com/TimeMachineScheduler.html'
   license :unknown
 
-  nested_container 'TimeMachineScheduler_4.0b3.dmg'
+  container :nested => 'TimeMachineScheduler_4.0b3.dmg'
   app 'TimeMachineScheduler.app'
 end
