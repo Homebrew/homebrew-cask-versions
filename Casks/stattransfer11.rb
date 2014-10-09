@@ -1,4 +1,4 @@
-class StatTransfer11 < Cask
+class Stattransfer11 < Cask
   version '11'
   sha256 'a2226e03a0281665454918b45531c8fc2938ba7590ae63802fa76dd749230631'
 
@@ -6,5 +6,6 @@ class StatTransfer11 < Cask
   homepage 'https://stattransfer.com/'
   license :commercial
 
-  pkg 'st_installer#{version}.pkg'
+  pkg "st_installer#{version}.pkg"
+  uninstall :pkgutil => "com.circlesys.pkg.st_installer#{version}"
 end
