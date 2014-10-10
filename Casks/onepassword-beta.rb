@@ -1,10 +1,10 @@
 class OnepasswordBeta < Cask
-  version '4.5.BETA-28'
-  sha256 '68141d5179b1b60e308e1c0693a67dd264e412a890d39584634ee83d6f36a6ef'
+  version '5.0.BETA-1'
+  sha256 '16756d7735a8926cf9a528aa773ccf64823ff0135ed2465d584192e217fe0a2c'
 
   url "https://cache.agilebits.com/dist/1P/mac4/1Password-#{version}.zip"
   homepage 'https://agilebits.com/onepassword/mac'
   license :closed
 
-  app '1Password 4.app'
+  app '1Password 5.app'
 end
