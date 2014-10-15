@@ -1,15 +1,15 @@
 class Java7 < Cask
-  version '1.7.0_67'
-  sha256 'fa6b9bcc18ed951726da29d04252879c4263891178087e90ea224e68dd624bd2'
+  version '1.7.0_71'
+  sha256 '70a18547b529a111c4e5cf133532082e142908819b0d61e273c21dee86fcc87a'
 
-  url 'http://download.oracle.com/otn-pub/java/jdk/7u67-b01/jdk-7u67-macosx-x64.dmg',
+  url 'http://download.oracle.com/otn-pub/java/jdk/7u71-b14/jdk-7u71-macosx-x64.dmg',
       :cookies => {
                     'oraclelicense' => 'accept-securebackup-cookie'
                   }
   homepage 'http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html'
   license :unknown
 
-  pkg 'JDK 7 Update 67.pkg'
+  pkg 'JDK 7 Update 71.pkg'
   postflight do
     system '/usr/bin/sudo', '-E', '--',
       '/usr/libexec/PlistBuddy', '-c', 'Add :JavaVM:JVMCapabilities: string BundledApp', "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Info.plist"
@@ -28,7 +28,7 @@ class Java7 < Cask
     system '/usr/bin/sudo', '-E', '--',
       '/bin/ln', '-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Home/jre/lib/server/libjvm.dylib", "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Home/bundle/Libraries/libserver.dylib"
   end
-  uninstall :pkgutil => 'com.oracle.jdk7u67',
+  uninstall :pkgutil => 'com.oracle.jdk7u71',
             :delete => '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
   caveats <<-EOS.undent
     This Cask makes minor modifications to the JRE to prevent any packaged
