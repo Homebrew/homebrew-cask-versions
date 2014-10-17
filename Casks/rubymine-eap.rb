@@ -1,6 +1,6 @@
 class RubymineEap < Cask
-  version '138.1968'
-  sha256 'ffefa3d5a547909fcd6b76f1a1172771fe28072c79b1d2a6fe180330a64af467'
+  version '139.106'
+  sha256 '40e2543a568c4191bb51ed1b51f4b5264360219ac1d1472820e2b968b4b88924'
 
   url "http://download.jetbrains.com/ruby/RubyMine-#{version}.dmg"
   homepage 'http://confluence.jetbrains.com/display/RUBYDEV/RubyMine+EAP'
