@@ -1,6 +1,6 @@
 class FirefoxAurora < Cask
-  version '34.0a2'
-  sha256 'a9f79375224c8edd978478a7ce3c8633c51ec76afc67d507cecf17dc7056278c'
+  version '35.0a2'
+  sha256 '36e201fe9772d89c68f6555a78748657748da2a902b8334d11bbd2b35f6c720f'
 
   url "https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-mozilla-aurora/firefox-#{version}.en-US.mac.dmg"
   homepage 'https://www.mozilla.org/en-US/firefox/aurora/'
