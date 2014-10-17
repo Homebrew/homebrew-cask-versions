@@ -1,4 +1,4 @@
-class Parallels < Cask
+class Parallels9 < Cask
   version '9.0.24237.1028877'
   sha256 'da71645ff1f0076ab5b2f8fa5eefb63bcd921e5f52161fd4dd85e6fb19ae2c57'
 
