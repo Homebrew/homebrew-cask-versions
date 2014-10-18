@@ -1,9 +1,9 @@
 class IntellijIdeaUltimateEap < Cask
-  version '14-PublicPreview'
-  sha256 '4995c98608506c02348b4dfc0507a6a791c9db0ee555916edfe2fef9aa2dc85a'
+  version '139.69.2'
+  sha256 '708d453e36fd34df86f9a13d6aa7765cad060ba03b41bdc24f3aef98b7c7fc0d'
 
   url "http://download.jetbrains.com/idea/ideaIU-#{version}.dmg"
-  homepage 'https://www.jetbrains.com/idea/index.html'
+  homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+14+EAP'
   license :unknown
 
   app 'IntelliJ IDEA 14 EAP.app'
