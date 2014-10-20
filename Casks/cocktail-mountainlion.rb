@@ -1,5 +1,5 @@
 class CocktailMountainlion < Cask
-  version :latest
+  version '6.9'
   sha256 :no_check
 
   url 'http://usa.maintain.se/CocktailMLE.dmg'
