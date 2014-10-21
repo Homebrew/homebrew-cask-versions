@@ -10,7 +10,5 @@ class Jdownloader2 < Cask
   homepage 'http://jdownloader.org/download/offline'
   license :unknown
 
-  caveats do
-    manual_installer 'JDownloader Installer.app'
-  end
+  installer :manual => 'JDownloader Installer.app'
 end
