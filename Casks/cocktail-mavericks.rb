@@ -1,5 +1,5 @@
 class CocktailMavericks < Cask
-  version '7.6.1'
+  version :latest
   sha256 :no_check
 
   url 'http://usa.maintain.se/CocktailME.dmg'

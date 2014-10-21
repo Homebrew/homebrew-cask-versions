@@ -1,5 +1,5 @@
 class CocktailLion < Cask
-  version '5.6'
+  version :latest
   sha256 :no_check
 
   url 'http://usa.maintain.se/CocktailLionEdition.dmg'
