@@ -6,7 +6,5 @@ class LittleSnitchNightly < Cask
   homepage 'http://www.obdev.at/products/littlesnitch/index.html'
   license :unknown
 
-  caveats do
-    manual_installer 'Little Snitch Installer.app'
-  end
+  installer :manual => 'Little Snitch Installer.app'
 end
