@@ -6,7 +6,5 @@ class HearthstoneEu < Cask
   homepage 'http://eu.battle.net/hearthstone/en/'
   license :unknown
 
-  caveats do
-    manual_installer 'Hearthstone-Setup-enGB.app'
-  end
+  installer :manual => 'Hearthstone-Setup-enGB.app'
 end
