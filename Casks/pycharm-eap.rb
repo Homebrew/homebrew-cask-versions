@@ -1,6 +1,6 @@
 class PycharmEap < Cask
-  version '138.2401'
-  sha256 '801378fffeee50f0933a309a1187f94f0bd49a3f9fc861c8144c78b57d224f38'
+  version '139.113'
+  sha256 '2df8db23f5da041e6c30c787c6cf4fc2864f197d639aba05785fc49009750c67'
 
   url "http://download.jetbrains.com/python/pycharm-professional-#{version}.dmg"
   homepage 'http://confluence.jetbrains.com/display/PYH/JetBrains+PyCharm+Preview+(EAP)'
