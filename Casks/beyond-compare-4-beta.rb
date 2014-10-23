@@ -1,6 +1,6 @@
 class BeyondCompare4Beta < Cask
-  version '4.0.0.17905'
-  sha256 'f67490c52cf13343d9fda55f864519f94d13fe2c1faa8b81ee18ab026bee093e'
+  version '4.0.0.18847'
+  sha256 'cb9987b62ac68a2493b7bc5678125fbf1b8919796bc82718ddd23958768fd457'
 
   url "http://www.scootersoftware.com/BCompareOSX-#{version}.zip"
   homepage 'http://www.scootersoftware.com/beta.php'
