@@ -1,6 +1,6 @@
 class HandbrakecliNightly < Cask
-  version '6452svn'
-  sha256 'cce4733a704bab3d0314d8950b98c2cdce4ed47e4e838727f8e996a3f5cfa537'
+  version '6469svn'
+  sha256 '0eb150843aa2a7f2f23ad1c9359478e1843f26fc12d50a0c55a8fc92f0a7d398'
 
   url "http://download.handbrake.fr/nightly/HandBrake-#{version}-MacOSX.6_CLI_x86_64.dmg"
   homepage 'http://handbrake.fr'
