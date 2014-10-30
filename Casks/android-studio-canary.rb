@@ -1,4 +1,4 @@
-class AndroidStudio < Cask
+class AndroidStudioCanary < Cask
   version '0.8.14'
   sha256 '05eb79f0c4025f510ff02d7205157eb94d42074a2d89c8a5ba4cbead1187948f'
 
