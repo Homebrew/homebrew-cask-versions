@@ -1,8 +1,8 @@
 class SlackBeta < Cask
-  version '0.60 (1700)'
-  sha256 '9245059fdad7914ec911eea121bcca5ccf716ea7b2fbeadc707e618692db89a1'
+  version '0.69 (2350)'
+  sha256 '7a6be7418e27970b38f20c8e2516386e346e7b731ee814d15f5a40794b440cdd'
 
-  url 'https://rink.hockeyapp.net/api/2/apps/06bd6493684f65a3b8f47aca92c9006e/app_versions/8?format=zip&avtoken=06be73491158dac7555587b2b79f9897a8b4827d'
+  url 'https://rink.hockeyapp.net/api/2/apps/06bd6493684f65a3b8f47aca92c9006e/app_versions/14?format=zip&avtoken=991dc9c0a3318d490712fb26e821ff2ab0a5fe24'
   homepage 'https://slack.com/'
   license :closed
 
