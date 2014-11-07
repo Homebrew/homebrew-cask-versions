@@ -1,4 +1,4 @@
-class IntellijIdeaCommunityEap < Cask
+class IntellijIdeaCeEap < Cask
   version '139.223.8'
   sha256 '4d0defb89f74288e9f26153b787f4a142504df01d83e96dfa749e01f791de57f'
 
