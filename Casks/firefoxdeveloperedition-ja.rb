@@ -1,4 +1,4 @@
-class FirefoxAuroraJa < Cask
+class FirefoxdevelopereditionJa < Cask
   version '33.0a2'
   sha256 'ea56c43a6e93789765af356ce812c64a51cb9d0da33d21bef6d4aed54428a1a7'
 
