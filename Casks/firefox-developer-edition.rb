@@ -1,4 +1,4 @@
-class Firefoxdeveloperedition < Cask
+class FirefoxDeveloperEdition < Cask
   version '35.0a2'
   sha256 '9d5d504229aa30c96f528713df098cb6436df33fdb329243ccbb0a68b5cba4d5'
 
