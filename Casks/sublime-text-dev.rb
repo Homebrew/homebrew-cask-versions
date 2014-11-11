@@ -1,8 +1,8 @@
 class SublimeTextDev < Cask
-  version 'Build 3064'
-  sha256 '727d14b2ba577c680a2d90645db16f6f736c545820fe90d44cc85ac6808c2f03'
+  version 'Build 3066'
+  sha256 '89916ed41a5de64e7257a5161d529925f3c8e2613a8e2d417111cb72740cac9c'
 
-  url 'http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203064.dmg'
+  url 'http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203066.dmg'
   homepage 'http://www.sublimetext.com/3dev'
   license :closed
 
