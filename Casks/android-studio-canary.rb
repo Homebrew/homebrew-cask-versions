@@ -1,8 +1,8 @@
 class AndroidStudioCanary < Cask
-  version '0.8.13'
-  sha256 '8718a91fead9d90e24272d39a9140b131c2c411d38d1e26dc825cd0c5fd41e15'
+  version '0.8.14'
+  sha256 '05eb79f0c4025f510ff02d7205157eb94d42074a2d89c8a5ba4cbead1187948f'
 
-  url "http://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-ide-135.1404660-mac.zip"
+  url "http://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-ide-135.1538390-mac.zip"
   homepage 'http://tools.android.com/download/studio'
   license :unknown
 
