@@ -1,4 +1,4 @@
-class VmwareFusion6 < Cask
+cask :v1 => 'vmware-fusion6' do
   version '6.0.5-2209127'
   sha256 '7036242845e1ebfeb0c3c430a45b2ebe519a33ec5cdc8955fa4ca03117946693'
 
