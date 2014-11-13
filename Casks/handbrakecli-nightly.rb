@@ -1,4 +1,4 @@
-class HandbrakecliNightly < Cask
+cask :v1 => 'handbrakecli-nightly' do
   version '6507svn'
   sha256 'a68c96f1e4fdfd9207f319d69831d5f0499ad67df240314dfc0d7e51fe3a10fe'
 
