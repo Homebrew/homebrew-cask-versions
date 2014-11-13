@@ -1,4 +1,4 @@
-class DeeperMountainlion < Cask
+cask :v1 => 'deeper-mountainlion' do
   version :latest
   sha256 :no_check
 
