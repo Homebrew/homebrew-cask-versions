@@ -1,4 +1,4 @@
-class EvernoteBeta < Cask
+cask :v1 => 'evernote-beta' do
   version '5.6beta6'
   sha256 '4cdd361c873ce94ba5b3abfe98d967267644f99be700c1af1a2c56b2bfe06f54'
 
