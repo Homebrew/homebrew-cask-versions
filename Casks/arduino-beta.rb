@@ -1,4 +1,4 @@
-class ArduinoBeta < Cask
+cask :v1 => 'arduino-beta' do
   version '1.5.7-r2'
   sha256 'd58697e5b5b8877c5072e43f7f1c5a0fde3a917f864a231ef173b019774a552a'
 
