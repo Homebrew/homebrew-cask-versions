@@ -1,4 +1,4 @@
-class OperaBeta < Cask
+cask :v1 => 'opera-beta' do
   version '25.0.1614.35'
   sha256 '058680c29a05a4b8f10f19b0d6fc73eb2d0645325e73177ac7522aa77e712be8'
 
