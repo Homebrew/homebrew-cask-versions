@@ -1,4 +1,4 @@
-class FirefoxNightlyJa < Cask
+cask :v1 => 'firefox-nightly-ja' do
   version '36.0a1'
   sha256 '7a80d602e7a59e90577a94a9dbe3290fa2a56e660f73c937d34555c418fed847'
 
