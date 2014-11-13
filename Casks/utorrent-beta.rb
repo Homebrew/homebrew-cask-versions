@@ -1,4 +1,4 @@
-class UtorrentBeta < Cask
+cask :v1 => 'utorrent-beta' do
   version :latest
   sha256 :no_check
 
