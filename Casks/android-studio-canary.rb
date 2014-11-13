@@ -1,4 +1,4 @@
-class AndroidStudioCanary < Cask
+cask :v1 => 'android-studio-canary' do
   version '0.8.13'
   sha256 '8718a91fead9d90e24272d39a9140b131c2c411d38d1e26dc825cd0c5fd41e15'
 
