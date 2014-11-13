@@ -1,4 +1,4 @@
-class WebkitNightly < Cask
+cask :v1 => 'webkit-nightly' do
   version 'r159487'
   sha256 '6d59673fdac0c380f66c1da6ae5742377b68add2f0bb33737bd7e1cec7ba821c'
 
