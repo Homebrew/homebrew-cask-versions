@@ -1,4 +1,4 @@
-class RstudioPreview < Cask
+cask :v1 => 'rstudio-preview' do
   version '0.98.1079'
   sha256 'f504400b9cb6d01f7504beedc6ad41b1b10ca8bab8a238eacfe3989cce0b0c9e'
 
