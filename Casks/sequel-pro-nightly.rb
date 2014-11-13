@@ -1,4 +1,4 @@
-class SequelProNightly < Cask
+cask :v1 => 'sequel-pro-nightly' do
   version '4293'
   sha256 '8d75ee4c5198de7bfde6a3fb5578812c1dbe13e08f6451dc219f31fc0d3ef722'
 
