@@ -1,4 +1,4 @@
-class OperaDeveloper < Cask
+cask :v1 => 'opera-developer' do
   version '20.0.1353.0'
   sha256 '13aab747e6634140361a50fcecc1ac33e3944e113d0bf724246e3d75e9f9a409'
 
