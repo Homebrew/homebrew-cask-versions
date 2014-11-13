@@ -1,4 +1,4 @@
-class SizeupX11 < Cask
+cask :v1 => 'sizeup-x11' do
   version :latest
   sha256 :no_check
 
