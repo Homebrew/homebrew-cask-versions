@@ -1,4 +1,4 @@
-class MacawIndigo < Cask
+cask :v1 => 'macaw-indigo' do
   version '1.5.4.0'
   sha256 'a98bc077cff020951fed2fc04e47b4182cd1c93b9882a53f89955b9b4f7a37f7'
 
