@@ -1,4 +1,4 @@
-class MiddleclickSnowleopard < Cask
+cask :v1 => 'middleclick-snowleopard' do
   version :latest
   sha256 :no_check
 
