@@ -1,4 +1,4 @@
-class DropboxExperimental < Cask
+cask :v1 => 'dropbox-experimental' do
   version '2.11.37'
   sha256 '259f288f5c117d261994f8041c993befe4206e9029eb79da8be3a564b045db49'
 
