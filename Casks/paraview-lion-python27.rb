@@ -1,4 +1,4 @@
-class ParaviewLionPython27 < Cask
+cask :v1 => 'paraview-lion-python27' do
   version '4.1.0'
   sha256 '8784481c90b58b0c6158e21b7f978a7d78caa67c63d28d6d5d770ef43f0ad890'
 
