@@ -1,4 +1,4 @@
-class OclintNightly < Cask
+cask :v1 => 'oclint-nightly' do
   version 'nightly'
   sha256 'b37aa6e04fe7545d7daf7a93c0afd49998946ee918ea5bb1782dd17e0deb4c2f'
 

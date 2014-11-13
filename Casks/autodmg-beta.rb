@@ -1,4 +1,4 @@
-class AutodmgBeta < Cask
+cask :v1 => 'autodmg-beta' do
   version '1.5b359'
   sha256 'a0eb343fe44df8d347cbb29ab3f07f45847e649eeb295162787cf729e17d274e'
 

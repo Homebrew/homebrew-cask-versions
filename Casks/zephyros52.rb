@@ -1,4 +1,4 @@
-class Zephyros52 < Cask
+cask :v1 => 'zephyros52' do
   # version 5.2 is necessary for OSX 10.8 and older.
   version '5.2'
   sha256 '7e6dc16d4639b27e0e3a20537bc6a36d0f11900027888d7b39d884d3668d04e3'

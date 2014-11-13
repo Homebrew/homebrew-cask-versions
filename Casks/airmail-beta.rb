@@ -1,4 +1,4 @@
-class AirmailBeta < Cask
+cask :v1 => 'airmail-beta' do
   version :latest
   sha256 :no_check
 

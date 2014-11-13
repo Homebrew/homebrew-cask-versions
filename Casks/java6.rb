@@ -1,4 +1,4 @@
-class Java6 < Cask
+cask :v1 => 'java6' do
   version '1.6.0_65'
   sha256 '97bc9b3c47af1f303710c8b15f2bcaedd6b40963c711a18da8eac1e49690a8a0'
 

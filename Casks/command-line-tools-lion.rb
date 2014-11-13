@@ -1,4 +1,4 @@
-class CommandLineToolsLion < Cask
+cask :v1 => 'command-line-tools-lion' do
   version 'lion_april_2013'
   sha256 '20a3e1965c685c6c079ffe89b168c3975c9a106c4b33b89aeac93c8ffa4e0523'
 

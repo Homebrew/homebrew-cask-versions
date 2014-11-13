@@ -1,4 +1,4 @@
-class Diskaid < Cask
+cask :v1 => 'diskaid' do
   version '6.7.6'
   sha256 '59845b1343ab6d8d52802ed4348dfcfedfbb5fa7fd9d59e245599ea50bdfd0db'
 

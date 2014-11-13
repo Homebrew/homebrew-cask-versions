@@ -1,4 +1,4 @@
-class Jdownloader2 < Cask
+cask :v1 => 'jdownloader2' do
   version :latest
   sha256 :no_check
 

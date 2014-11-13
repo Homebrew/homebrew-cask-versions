@@ -1,4 +1,4 @@
-class OnyxSnowleopard < Cask
+cask :v1 => 'onyx-snowleopard' do
   version '2.4.0'
   sha256 '188c15090988b379dce9f0fafa7b686c6eff2ada147cde150b16e1ae01e4e9e4'
 

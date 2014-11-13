@@ -1,4 +1,4 @@
-class GoogleJapaneseImeDev < Cask
+cask :v1 => 'google-japanese-ime-dev' do
   version 'dev'
   sha256 'd3f786d3462e0294f29bc1f8998163489f812a1ae650661e9a26a92b731c2ef8'
 

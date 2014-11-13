@@ -1,4 +1,4 @@
-class OpenofficeFr < Cask
+cask :v1 => 'openoffice-fr' do
   version '4.0.1'
   sha256 'e8d61fe93acf484c564ddc44638f314cdaa2c6e99d6a055386df9d9e3d0e6e6d'
 

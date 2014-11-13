@@ -1,4 +1,4 @@
-class FirefoxJa < Cask
+cask :v1 => 'firefox-ja' do
   version :latest
   sha256 :no_check
 

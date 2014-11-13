@@ -1,4 +1,4 @@
-class NetbeansPhpNightly < Cask
+cask :v1 => 'netbeans-php-nightly' do
   homepage 'https://netbeans.org/'
   license :unknown
   version '201405260001'

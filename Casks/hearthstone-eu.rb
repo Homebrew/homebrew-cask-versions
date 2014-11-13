@@ -1,4 +1,4 @@
-class HearthstoneEu < Cask
+cask :v1 => 'hearthstone-eu' do
   version :latest
   sha256 :no_check
 

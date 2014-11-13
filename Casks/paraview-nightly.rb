@@ -1,4 +1,4 @@
-class ParaviewNightly < Cask
+cask :v1 => 'paraview-nightly' do
   version :latest
   sha256 :no_check
 

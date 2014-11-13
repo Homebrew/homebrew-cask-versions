@@ -1,4 +1,4 @@
-class SoundflowerUltraschall < Cask
+cask :v1 => 'soundflower-ultraschall' do
   version '1.0'
   sha256 '6e37689eb27db942189e18b970916c1d4576026cac9668fceed214201dc25149'
 

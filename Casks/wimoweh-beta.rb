@@ -1,4 +1,4 @@
-class WimowehBeta < Cask
+cask :v1 => 'wimoweh-beta' do
   version '0.66-beta'
   sha256 '8be363dc4764299df68220da67cf08d6f913fbf1bfe14059cd47bf99728d97fc'
 

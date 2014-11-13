@@ -1,4 +1,4 @@
-class GoogleChromeCanary < Cask
+cask :v1 => 'google-chrome-canary' do
   version :latest
   sha256 :no_check
 

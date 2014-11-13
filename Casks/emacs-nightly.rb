@@ -1,4 +1,4 @@
-class EmacsNightly < Cask
+cask :v1 => 'emacs-nightly' do
   version '24.3.50r115148'
   sha256 '903e0f8acb5e3e84e46f1787d85b17b4be88ec7956d17adb6b7918c5f2bdf2cc'
 

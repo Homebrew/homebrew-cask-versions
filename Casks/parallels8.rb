@@ -1,4 +1,4 @@
-class Parallels8 < Cask
+cask :v1 => 'parallels8' do
   version :latest
   sha256 :no_check
 

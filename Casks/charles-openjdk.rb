@@ -1,4 +1,4 @@
-class CharlesOpenjdk < Cask
+cask :v1 => 'charles-openjdk' do
   version '3.9.2'
   sha256 '40e34c96ff6fff028031865b56d158225f17bf0758f4a2e7d0d28c92fb30504e'
 
