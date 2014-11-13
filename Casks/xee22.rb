@@ -1,4 +1,4 @@
-class Xee22 < Cask
+cask :v1 => 'xee22' do
   version '2.2'
   sha256 '9cc173b24cfa76185a48f050c587690917f104f6a165d52ffc67e52793385f1c'
 
