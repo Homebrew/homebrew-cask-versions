@@ -1,4 +1,4 @@
-class Iterm2Nightly < Cask
+cask :v1 => 'iterm2-nightly' do
   version :latest
   sha256 :no_check
 
