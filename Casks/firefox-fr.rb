@@ -1,4 +1,4 @@
-class FirefoxFr < Cask
+cask :v1 => 'firefox-fr' do
   version :latest
   sha256 :no_check
 
