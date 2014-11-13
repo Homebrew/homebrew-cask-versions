@@ -1,4 +1,4 @@
-class SketchupPro < Cask
+cask :v1 => 'sketchup-pro' do
   version :latest
   sha256 :no_check
 
