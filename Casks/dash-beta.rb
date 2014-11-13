@@ -1,4 +1,4 @@
-class DashBeta < Cask
+cask :v1 => 'dash-beta' do
   version '2.2.1'
   sha256 '2a652e850c1d9bd99977b6bc2b842ff7eeb07ba401a1bceab43d6998a60f6756'
 
