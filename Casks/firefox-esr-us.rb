@@ -1,4 +1,4 @@
-class FirefoxEsrUs < Cask
+cask :v1 => 'firefox-esr-us' do
   version '31.0'
   sha256 'a6fe27ebcafcf130aa906ab4a93a7898b81ea7d69f13cc24eeaba57a47fe8f4d'
 
