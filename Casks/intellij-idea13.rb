@@ -9,7 +9,7 @@ class IntellijIdea13 < Cask
   app 'IntelliJ IDEA 13.app'
 
   postflight do
-    system '/usr/libexec/PlistBuddy', '-c', 'Set :JVMOptions:JVMVersion 1.6+', "#{destination_path}/IntelliJ IDEA 13.app/Contents/Info.plist"
+    system '/usr/libexec/PlistBuddy', '-c', 'Set :JVMOptions:JVMVersion 1.6+', "#{staged_path}/IntelliJ IDEA 13.app/Contents/Info.plist"
   end
 
   zap :delete => [
