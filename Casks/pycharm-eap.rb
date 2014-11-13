@@ -1,4 +1,4 @@
-class PycharmEap < Cask
+cask :v1 => 'pycharm-eap' do
   version '139.113'
   sha256 '2df8db23f5da041e6c30c787c6cf4fc2864f197d639aba05785fc49009750c67'
 
