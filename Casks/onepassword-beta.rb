@@ -1,4 +1,4 @@
-class OnepasswordBeta < Cask
+cask :v1 => 'onepassword-beta' do
   version '5.0.BETA-1'
   sha256 '16756d7735a8926cf9a528aa773ccf64823ff0135ed2465d584192e217fe0a2c'
 
