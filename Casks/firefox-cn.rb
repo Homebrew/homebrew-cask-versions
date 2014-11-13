@@ -1,4 +1,4 @@
-class FirefoxCn < Cask
+cask :v1 => 'firefox-cn' do
   version :latest
   sha256 :no_check
 
