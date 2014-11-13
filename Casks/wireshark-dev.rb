@@ -1,4 +1,4 @@
-class WiresharkDev < Cask
+cask :v1 => 'wireshark-dev' do
   version '1.11.3'
   sha256 '6a7acafd344b4db8073e94dbb16c34a7e89ab1ed419011a73e2f64370e0bf8e4'
 
