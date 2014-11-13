@@ -1,4 +1,4 @@
-class FirefoxBetaCn < Cask
+cask :v1 => 'firefox-beta-cn' do
   version '32.0b1'
   sha256 '782e468b0277fd38f57205acf88f7dc3266b0f751ff40859d4772b8f22c7f13a'
 
