@@ -1,4 +1,4 @@
-class Truecrypt71a < Cask
+cask :v1 => 'truecrypt71a' do
   version '7.1a'
   sha256 '04db58b737c05bb6b0b83f1cb37a29edec844b59ff223b9e213ee1f4e287f586'
 

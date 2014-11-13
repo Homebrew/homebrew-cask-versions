@@ -1,4 +1,4 @@
-class VlcNightly < Cask
+cask :v1 => 'vlc-nightly' do
   version :latest
   sha256 :no_check
 

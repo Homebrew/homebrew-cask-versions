@@ -1,4 +1,4 @@
-class Papers2 < Cask
+cask :v1 => 'papers2' do
   version :latest
   sha256 :no_check
 

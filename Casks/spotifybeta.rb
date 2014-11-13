@@ -1,4 +1,4 @@
-class Spotifybeta < Cask
+cask :v1 => 'spotifybeta' do
   version '1.0.0.588.g5dffdc66-3237'
   sha256 '918101254dd8177dc66e2642edf65500ce3f13ef4ce089925fef5f77529979ab'
 

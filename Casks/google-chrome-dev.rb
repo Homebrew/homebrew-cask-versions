@@ -1,4 +1,4 @@
-class GoogleChromeDev < Cask
+cask :v1 => 'google-chrome-dev' do
   version :latest
   sha256 :no_check
 

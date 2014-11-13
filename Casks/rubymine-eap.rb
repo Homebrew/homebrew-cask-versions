@@ -1,4 +1,4 @@
-class RubymineEap < Cask
+cask :v1 => 'rubymine-eap' do
   version '139.262'
   sha256 'e255b6a0f94fee55e72c9969919619c3431bf6507e678e0ac9303edc0d441072'
 

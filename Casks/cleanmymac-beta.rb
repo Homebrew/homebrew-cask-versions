@@ -1,4 +1,4 @@
-class CleanmymacBeta < Cask
+cask :v1 => 'cleanmymac-beta' do
   version :latest
   sha256 :no_check
 

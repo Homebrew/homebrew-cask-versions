@@ -1,4 +1,4 @@
-class FirefoxNightly < Cask
+cask :v1 => 'firefox-nightly' do
   version :latest
   sha256 :no_check
 

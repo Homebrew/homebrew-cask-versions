@@ -1,4 +1,4 @@
-class SmcfancontrolBeta < Cask
+cask :v1 => 'smcfancontrol-beta' do
   version '2.5ß'
   sha256 '5f40f1a914a35f6b0a549530ca8d3b4b677f48489e32a83d17577d94c75ac1af'
 

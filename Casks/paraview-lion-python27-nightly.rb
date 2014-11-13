@@ -1,4 +1,4 @@
-class ParaviewLionPython27Nightly < Cask
+cask :v1 => 'paraview-lion-python27-nightly' do
   version :latest
   sha256 :no_check
 

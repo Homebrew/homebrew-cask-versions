@@ -1,4 +1,4 @@
-class MacvimMountainlion < Cask
+cask :v1 => 'macvim-mountainlion' do
   version '7.4-72'
   sha256 'f01eb54f73d7d8b750886b706468f234af3d34f9a08f5625cbef20113514f4e5'
 
