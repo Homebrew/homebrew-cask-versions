@@ -1,4 +1,4 @@
-class Tower1 < Cask
+cask :v1 => 'tower1' do
   version :latest
   sha256 :no_check
 
