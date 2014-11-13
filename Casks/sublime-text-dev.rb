@@ -1,4 +1,4 @@
-class SublimeTextDev < Cask
+cask :v1 => 'sublime-text-dev' do
   version 'Build 3066'
   sha256 '89916ed41a5de64e7257a5161d529925f3c8e2613a8e2d417111cb72740cac9c'
 
