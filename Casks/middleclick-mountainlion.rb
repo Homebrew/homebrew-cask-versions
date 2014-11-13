@@ -1,4 +1,4 @@
-class MiddleclickMountainlion < Cask
+cask :v1 => 'middleclick-mountainlion' do
   version :latest
   sha256 :no_check
 
