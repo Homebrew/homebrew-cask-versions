@@ -1,4 +1,4 @@
-class ThunderbirdIt < Cask
+cask :v1 => 'thunderbird-it' do
   version '31.2.0'
   sha256 '28bacc4d40ddc1d81eacb4b921006737a58fa69732b5afcbe596a4ec5709bc90'
 
