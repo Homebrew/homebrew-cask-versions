@@ -30,10 +30,8 @@ cask :v1 => 'parallels9' do
                          '~/Library/Preferences/com.parallels.Parallels.plist',
                         ]
 
-
   caveats <<-EOS.undent
     The first time you run Parallels Desktop, you will need to enter your
     password in order to complete the installation.
-
-    EOS
+  EOS
 end
