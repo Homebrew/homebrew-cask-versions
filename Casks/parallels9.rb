@@ -1,20 +1,39 @@
 cask :v1 => 'parallels9' do
-  version '9.0.24237.1028877'
-  sha256 'da71645ff1f0076ab5b2f8fa5eefb63bcd921e5f52161fd4dd85e6fb19ae2c57'
+  version '9.0.24251.1052177'
+  sha256 'd6efe77b6893bfd24ea4d275f1bc417feffb2a899a364ecbb91a25064b9e1c0d'
 
-  url "http://download.parallels.com/desktop/v9/update2.hotfix2/ParallelsDesktop-#{version}.dmg"
+  url "http://download.parallels.com/desktop/v9/update3/ParallelsDesktop-#{version}.dmg"
   homepage 'http://www.parallels.com/products/desktop/'
-  license :unknown
+  license :commercial
 
-  pkg 'Install.mpkg'
+  app 'Parallels Desktop.app'
 
-  uninstall :pkgutil => 'com.parallels.pkg.virtualization.bundle',
-            :kext    => [
-                         'com.parallels.kext.usbconnect',
-                         'com.parallels.kext.hypervisor',
-                         'com.parallels.kext.hidhook',
-                         'com.parallels.kext.netbridge',
-                         'com.parallels.kext.vnic',
+  postflight do
+    # Set the file to visible, since it was hidden in the dmg
+    system '/usr/bin/SetFile', '-a', 'v', destination_path.join("Parallels Desktop.app")
+  end
+
+  uninstall :delete => [
+                         '/usr/bin/prl_convert',
+                         '/usr/bin/prl_disk_tool',
+                         '/usr/bin/prl_perf_ctl',
+                         '/usr/bin/prlctl',
+                         '/usr/bin/prlsrvctl',
+                       ]
+  zap       :delete => [
+                         '~/.parallels_settings',
+                         '~/Library/Caches/com.parallels.desktop.console',
+                         '~/Library/Preferences/com.parallels.desktop.console.LSSharedFileList.plist',
+                         '~/Library/Preferences/com.parallels.desktop.console.plist',
+                         '~/Library/Preferences/com.parallels.Parallels Desktop Statistics.plist',
+                         '~/Library/Preferences/com.parallels.Parallels Desktop.plist',
+                         '~/Library/Preferences/com.parallels.Parallels.plist',
                         ]
-  zap       :delete  => '~/.parallels_settings'
+
+
+  caveats <<-EOS.undent
+    The first time you run Parallels Desktop, you will need to enter your
+    password in order to complete the installation.
+
+    EOS
 end
