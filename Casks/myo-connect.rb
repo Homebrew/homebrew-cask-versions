@@ -10,6 +10,6 @@ cask :v1 => 'myo-connect' do
   app 'Myo Connect.app'
 
   zap :delete=> [
-  	             '~/Library/Preferences/com.thalmic.Myo Connect.plist'
-  	            ]
+                '~/Library/Preferences/com.thalmic.Myo Connect.plist'
+                ]
 end
