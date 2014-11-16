@@ -1,10 +1,10 @@
 cask :v1 => 'firefoxdeveloperedition' do
-  version '35.0a2'
-  sha256 'ee13e28aa50c0bc6c58f86bbd2f2a8b4fef3a71aeb5536b4b80f131e93a463db'
+  version :latest
+  sha256 :no_check
 
-  url "https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-mozilla-aurora/firefox-#{version}.en-US.mac.dmg"
+  url "https://download.mozilla.org/?product=firefox-aurora-latest-ssl&os=osx&lang=en-US"
   homepage 'https://www.mozilla.org/en-US/firefox/developer/'
-  license :oss
+  license :mpl
 
   app 'FirefoxDeveloperEdition.app'
 end
