@@ -1,6 +1,6 @@
 cask :v1 => 'charles-openjdk' do
-  version '3.9.2'
-  sha256 '40e34c96ff6fff028031865b56d158225f17bf0758f4a2e7d0d28c92fb30504e'
+  version '3.9.3'
+  sha256 '817dd2ba6167682563ca62c32dfa32afefab95f7d26f5625c2f82bee7d849e58'
 
   url "http://www.charlesproxy.com/assets/release/#{version}/charles-proxy-#{version}-openjdk.dmg"
   homepage 'http://www.charlesproxy.com/'
