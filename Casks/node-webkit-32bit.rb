@@ -6,5 +6,5 @@ cask :v1 => 'node-webkit-32bit' do
   homepage 'https://github.com/rogerwang/node-webkit'
   license :oss
 
-  caskroom_only true
+  stage_only true
 end
