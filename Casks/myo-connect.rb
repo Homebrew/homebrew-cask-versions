@@ -1,8 +1,8 @@
 cask :v1 => 'myo-connect' do
-  version '0.6.0'
-  sha256 'a259b2812285d104ea0f9f48b8a550e1a674ec2377591d950578e185e2b02d5d'
+  version '0.7.0'
+  sha256 '61924ae6a813f33328f6275d37047ba7379c503d52be323e177b6f44220ce7fa'
 
-  url 'https://s3.amazonaws.com/thalmicdownloads/mac/0.6.0/MyoConnect.dmg'
+  url 'https://s3.amazonaws.com/thalmicdownloads/mac/0.7.0/MyoConnect.dmg'
   homepage 'https://developer.thalmic.com'
   license :unknown
   tags :vendor => 'Thalmic Labs'
