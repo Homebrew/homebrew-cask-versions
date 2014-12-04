@@ -9,7 +9,6 @@ cask :v1 => 'flux-beta' do
   app 'Flux.app'
 
   postflight do
-    # Don't ask to move the app bundle to /Applications
-    system '/usr/bin/defaults', 'write', 'org.herf.Flux', 'moveToApplicationsFolderAlertSuppress', '-bool', 'true'
+    suppress_move_to_applications
   end
 end
