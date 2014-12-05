@@ -11,6 +11,8 @@ cask :v1 => 'arduino-beta' do
 
     sha256 'f5678cf9146031af52519d79dfcb16a81aa9c7eb68e516b34c679139048fb000'
     url "http://arduino.cc/download.php?f=/arduino-#{version}-macosx-java7.zip"
+
+    caveats "Version #{version} for Java 7 is experimental: if you experience problems running it please download the Java 6 version (http://arduino.cc/download.php?f=/arduino-#{version}-macosx.zip) and install it manually."
   end
 
   homepage 'http://arduino.cc/'
