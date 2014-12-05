@@ -18,5 +18,5 @@ cask :v1 => 'arduino-beta' do
   homepage 'http://arduino.cc/'
   license :unknown
 
-  app 'Arduino-Beta.app'
+  app 'Arduino.app'
 end
