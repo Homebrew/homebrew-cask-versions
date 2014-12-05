@@ -2,15 +2,14 @@ cask :v1 => 'paraview-nightly' do
   version :latest
   sha256 :no_check
 
-  url 'http://www.paraview.org/paraview-downloads/download.php?submit=Download&version=nightly&type=binary&os=osx&downloadFile=ParaView-Darwin-64bit-NIGHTLY.dmg'
+  if MacOS.version < :mavericks
+    url 'http://www.paraview.org/paraview-downloads/download.php?submit=Download&version=nightly&type=binary&os=osx&downloadFile=ParaView-Darwin-64bit-Lion-Python27-NIGHTLY.dmg'
+  else
+    url 'http://www.paraview.org/paraview-downloads/download.php?submit=Download&version=nightly&type=binary&os=osx&downloadFile=ParaView-Darwin-64bit-NIGHTLY.dmg'
+  end
+
   homepage 'http://www.paraview.org/'
   license :unknown
 
   app 'paraview.app'
-    caveats <<-EOS.undent
-    This version of Paraview should be installed if your system Python
-    version is 2.7. If you are running OS X Lion (10.7) or Mountain
-    Lion (10.8) and your system Python version is 2.6, please instead
-    pkg paraview-nightly-lion-python27.
-   EOS
 end
