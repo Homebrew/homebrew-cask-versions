@@ -7,8 +7,4 @@ cask :v1 => 'android-studio-canary' do
   license :unknown
 
   app 'Android Studio.app'
-
-  postflight do
-    plist_set(':JVMOptions:JVMVersion', '1.6+')
-  end
 end
