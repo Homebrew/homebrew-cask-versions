@@ -1,4 +1,4 @@
-cask :v1 => 'onepassword3' do
+cask :v1 => '1password3' do
   version '3.8.21'
   sha256 'f8dd3b0b4acf6474ac9ba39b8f3fd2f98961064fb266243a62ceb59eb564c889'
 
