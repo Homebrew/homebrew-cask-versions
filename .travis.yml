@@ -2,7 +2,6 @@ language: objective-c
 
 # todo
 #
-# test with Ruby 1.9, but allow failure
 # test with Ruby 2.1, but allow failure
 #
 
