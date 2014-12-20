@@ -1,10 +1,12 @@
 cask :v1 => 'camtwist-beta' do
   version '3.0beta'
-  sha256 'bef72de07368de34c58a3bca31efeac388f129c02661a3d62a745be17e729679'
+  sha256 'c0a241a0313b8b1aa3530efa4fba058b4cfa3cacea41df815738dafddbf7897b'
 
   url 'http://camtwiststudio.com/beta/CamTwist_3.0.dmg'
   homepage 'http://camtwiststudio.com/'
   license :unknown
+
+  app 'Manual Install/CamTwist/CamTwist.app'
 
   uninstall :script => { :executable => 'Manual Install/CamTwist/uninstall.command' }
 end
