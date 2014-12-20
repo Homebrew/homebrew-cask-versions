@@ -4,6 +4,7 @@ cask :v1 => 'intellij-idea-ce-eap' do
 
   url "http://download.jetbrains.com/idea/ideaIC-#{version}.dmg"
   homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+14+EAP'
+  license :unknown # todo: change license and remove this comment; ':unknown' is a machine-generated placeholder
 
   app 'IntelliJ IDEA 14 CE EAP.app'
 end
