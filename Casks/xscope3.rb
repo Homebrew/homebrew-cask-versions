@@ -5,6 +5,7 @@ cask :v1 => 'xscope3' do
   url 'https://iconfactory.com/assets/software/xscope/xScope-3.6.3.zip'
   appcast 'http://iconfactory.com/appcasts/xScope/appcast.xml'
   homepage 'http://iconfactory.com/software/xscope'
+  license :unknown # todo: change license and remove this comment; ':unknown' is a machine-generated placeholder
 
   app 'xScope.app'
 end
