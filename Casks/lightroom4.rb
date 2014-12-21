@@ -6,6 +6,6 @@ cask :v1 => 'lightroom4' do
   homepage 'http://www.adobe.com/support/downloads/thankyou.jsp?ftpID=5566&fileID=5578'
   license :closed
 
-  install 'Adobe Photoshop Lightroom 4.pkg'
+  pkg 'Adobe Photoshop Lightroom 4.pkg'
   uninstall :pkgutil => 'com.adobe.Lightroom4'
 end
