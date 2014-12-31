@@ -1,7 +1,7 @@
 cask :v1 => 'arduino-beta' do
   version '1.5.8'
 
-  if MacOS.version < :lion
+  if MacOS.release <= :snow_leopard
     depends_on :java => '6'
 
     sha256 'c69f870f99ccaf2abb3618845559daea9ef8c52a68ff42b5e21ae3a69cf845fa'
