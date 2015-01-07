@@ -1,10 +1,10 @@
 cask :v1 => 'screenflow4' do
-  version '4.5.3'
-  sha256 '48209b7fd5387e07c63bd4502ad073dde96460ee30e1a8b19fe2977e8b274914'
+  version '4.5.4'
+  sha256 'e6f142e5fdc30556ec01d7973b194927cbdcda341d9d673b30fff9ad6d12b790'
 
   url "http://www.telestream.net/download-files/screenflow/4-5/ScreenFlow-#{version}.dmg"
   homepage 'http://www.telestream.net/screenflow/'
-  license :unknown
+  license :commercial
 
   app 'ScreenFlow.app'
 end
