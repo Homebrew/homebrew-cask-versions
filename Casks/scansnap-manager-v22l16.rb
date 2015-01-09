@@ -9,9 +9,6 @@ cask :v1 => 'scansnap-manager-v22l16' do
 
   pkg 'ScanSnap_V22L16.pkg'
 
-  depends_on :cask => 'scansnap-manager-v22l11'
-  caveats 'Make sure cask `scansnap-manager-v22l11` is installed before installing this update.'
-
   uninstall :pkgutil => 'jp.co.pfu.ScanSnap.V22L16',
             :quit => [
               'jp.co.ScanSnap.Scan2PrintBundle',
@@ -27,4 +24,5 @@ cask :v1 => 'scansnap-manager-v22l16' do
               'jp.co.pfu.ScanSnap.V10L10'
             ]
 
+  depends_on :cask => 'scansnap-manager-v22l11'
 end
