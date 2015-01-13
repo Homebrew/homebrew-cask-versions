@@ -20,7 +20,7 @@ cask :v1 => 'jenkins-lts' do
                                 jenkins
                                 homebrew/versions/jenkins-lts
                                },
-                 :cask    => 'caskroom/versions/jenkins-lts'
+                 :cask    => 'jenkins'
 
   caveats <<-EOS.undent
     #{token} requires Java. You can install the latest version with
