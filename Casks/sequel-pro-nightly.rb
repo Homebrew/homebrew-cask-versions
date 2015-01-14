@@ -1,8 +1,8 @@
 cask :v1 => 'sequel-pro-nightly' do
-  version '4293'
-  sha256 '8d75ee4c5198de7bfde6a3fb5578812c1dbe13e08f6451dc219f31fc0d3ef722'
+  version 'f2bb1116a2'
+  sha256 '975bdb032b65edfe50826845de141dca8fa7682c38a9a377ff354589d6b86958'
 
-  url 'http://nightly.sequelpro.com/builds/Sequel_Pro_r0c2ea8b95e.dmg'
+  url 'http://nightly.sequelpro.com/builds/Sequel_Pro_rf2bb1116a2.dmg'
   homepage 'http://nightly.sequelpro.com/'
   license :unknown
 
