@@ -1,10 +1,10 @@
 cask :v1 => 'firefox-nightly-ja' do
-  version '36.0a1'
-  sha256 '7a80d602e7a59e90577a94a9dbe3290fa2a56e660f73c937d34555c418fed847'
+  version '38.0a1'
+  sha256 '666a6a38572f0d452458f0da0992636b09ce3cb9f42288cffcc3450085f0f4fe'
 
   url "https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-mozilla-central-l10n/firefox-#{version}.ja-JP-mac.mac.dmg"
   homepage 'https://nightly.mozilla.org/'
-  license :oss
+  license :mpl
 
   app 'FirefoxNightly.app'
 end
