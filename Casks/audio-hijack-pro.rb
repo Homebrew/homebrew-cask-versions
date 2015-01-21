@@ -7,7 +7,10 @@ cask :v1 => 'audio-hijack-pro' do
   homepage 'http://www.rogueamoeba.com/audiohijackpro/'
   license :commercial
 
-  depends_on :macos => [:lion, :mountain_lion]
-
   app 'Audio Hijack Pro.app'
+
+  depends_on :macos => %w{
+                          :lion,
+                          :mountain_lion
+                         }
 end
