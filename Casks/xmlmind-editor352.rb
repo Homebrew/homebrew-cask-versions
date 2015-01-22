@@ -7,7 +7,13 @@ cask :v1 => 'xmlmind-editor352' do
   homepage 'http://www.xmlmind.com/xmleditor/'
   license :commercial
 
-  depends_on :cask => 'java6'
-
   app 'xxe-std-3_5_2/XMLEditor.app'
+
+  caveats <<-EOS.undent
+    #{token} may require Java 6 (an older version), available from the
+    caskroom-versions repository via
+
+      brew cask install caskroom/versions/java6
+
+  EOS
 end
