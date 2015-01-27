@@ -6,7 +6,7 @@ cask :v1 => 'scansnap-manager-s300m-s510m' do
   name 'ScanSnap Manager for Fujitsu ScanSnap S300M'
   name 'ScanSnap Manager for Fujitsu ScanSnap S510M'
   homepage 'http://www.fujitsu.com/global/support/computing/peripheral/scanners/software/mac-mg22-eol.html'
-  license :commercial
+  license :gratis
 
   pkg 'ScanSnap_V22L16.pkg'
 
