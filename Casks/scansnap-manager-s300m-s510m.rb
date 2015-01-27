@@ -3,8 +3,8 @@ cask :v1 => 'scansnap-manager-s300m-s510m' do
   sha256 'e67ce69636883acbdaaec40bb02d8f774c383aaa1c834a08c305a990c8a49436'
 
   url 'http://www.fujitsu.com/downloads/IMAGE/driver/ss/ScanSnap_V22L16.dmg'
-  name 'ScanSnap Manager for Fujitsu ScanSnap S300M (OS X 10.6+)'
-  name 'ScanSnap Manager for Fujitsu ScanSnap S510M (OS X 10.6+)'
+  name 'ScanSnap Manager for Fujitsu ScanSnap S300M'
+  name 'ScanSnap Manager for Fujitsu ScanSnap S510M'
   homepage 'http://www.fujitsu.com/global/support/computing/peripheral/scanners/software/mac-mg22-eol.html'
   license :commercial
 
@@ -26,4 +26,5 @@ cask :v1 => 'scansnap-manager-s300m-s510m' do
             ]
 
   depends_on :cask => 'scansnap-manager-s300m-s500m-s510m-fi-5110eoxm-legacy'
+  depends_on :macos => '>= :snow_leopard'
 end
