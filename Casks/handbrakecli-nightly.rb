@@ -6,7 +6,7 @@ cask :v1 => 'handbrakecli-nightly' do
   homepage 'http://handbrake.fr'
   license :gpl
 
-  depends_on :macos => '>= :snow_leopard'
-
   binary 'HandBrakeCLI'
+
+  depends_on :macos => '>= :snow_leopard'
 end
