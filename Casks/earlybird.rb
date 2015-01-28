@@ -1,6 +1,6 @@
 cask :v1 => 'earlybird' do
   version '37.0a2'
-  sha256 'da335ece743f9211be7274e39a432cf4f1ec0886172cb0a731bd28489110964d'
+  sha256 :no_check  # required as upstream package is updated in-placea
 
   url "https://ftp.mozilla.org/pub/mozilla.org/thunderbird/nightly/latest-earlybird/thunderbird-#{version}.en-US.mac.dmg"
   name 'Earlybird'
