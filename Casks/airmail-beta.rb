@@ -6,5 +6,5 @@ cask :v1 => 'airmail-beta' do
   homepage 'http://airmailapp.com/beta/'
   license :unknown
 
-  app 'AirMail Beta.app'
+  app 'AirMail 2 Beta.app'
 end
