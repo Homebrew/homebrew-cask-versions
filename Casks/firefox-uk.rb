@@ -1,4 +1,4 @@
-cask :v1 => 'firefox-de' do
+cask :v1 => 'firefox-uk' do
   version :latest
   sha256 :no_check
 
