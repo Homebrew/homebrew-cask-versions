@@ -1,8 +1,8 @@
 cask :v1 => 'sublime-text-dev' do
-  version '3067'
-  sha256 '19fea5cc5dad89a31f1b751bb7c358ffd7acdc4bc7b8c5b957631743a523a261'
+  version 'Build 3066'
+  sha256 '89916ed41a5de64e7257a5161d529925f3c8e2613a8e2d417111cb72740cac9c'
 
-  url "http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%20#{version}.dmg"
+  url 'http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203066.dmg'
   homepage 'http://www.sublimetext.com/3dev'
   license :closed
 
