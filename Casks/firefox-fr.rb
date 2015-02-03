@@ -3,8 +3,17 @@ cask :v1 => 'firefox-fr' do
   sha256 :no_check
 
   url 'https://download.mozilla.org/?product=firefox-latest&os=osx&lang=fr'
-  homepage 'http://www.mozilla.org/fr/firefox/new/'
-  license :oss
+  
+  name 'Firefox'
+  name 'Mozilla Firefox'
+  homepage 'https://www.mozilla.org/fr/firefox/new'
+  license :mpl
+  tags :vendor => 'Firefox'
 
   app 'Firefox.app'
+
+  zap :delete => [
+                  '~/Library/Application Support/Firefox',
+                  '~/Library/Caches/Firefox',
+                 ]
 end
