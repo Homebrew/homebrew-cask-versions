@@ -1,10 +1,10 @@
-cask :v1 => 'firefox-de' do
+cask :v1 => 'firefox-ru' do
   version :latest
   sha256 :no_check
 
-  url 'https://download.mozilla.org/?product=firefox-latest&os=osx&lang=de'
+  url 'https://download.mozilla.org/?product=firefox-latest&os=osx&lang=ru'
   name 'Firefox'
-  homepage 'https://www.mozilla.org/de/firefox/desktop'
+  homepage 'https://www.mozilla.org/ru/firefox/desktop'
   license :mpl
   tags :vendor => 'Mozilla'
 
