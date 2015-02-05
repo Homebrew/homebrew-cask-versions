@@ -10,7 +10,7 @@ cask :v1 => 'audio-hijack-pro' do
   app 'Audio Hijack Pro.app'
 
   depends_on :macos => %w{
-                          :lion,
+                          :lion
                           :mountain_lion
                          }
 end
