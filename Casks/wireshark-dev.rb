@@ -1,8 +1,8 @@
 cask :v1 => 'wireshark-dev' do
-  version '1.99.1'
-  sha256 '493d4fc48c60898f6bced96eeb0b1e340c9ca28b07bbced04ed69e553f16713f'
+  version '1.99.2'
+  sha256 '8d05f1cdca29369f31762380fb655fe4cb837ad860b18ef6bf0384499a9e7104'
 
-  url "http://www.wireshark.org/download/osx/Wireshark%20#{version}%20Intel%2064.dmg"
+  url "https://2.na.dl.wireshark.org/osx/Wireshark%20#{version}%20Intel%2064.dmg"
   homepage 'http://www.wireshark.org'
   license :unknown
 
