@@ -1,10 +1,10 @@
 cask :v1 => 'emacs-nightly' do
-  version '24.3.50r115148'
-  sha256 '903e0f8acb5e3e84e46f1787d85b17b4be88ec7956d17adb6b7918c5f2bdf2cc'
+  version '25.0.50.1-dcec731'
+  sha256 'f60d2612f0eb23a195917ef492853bb99427d40d3223e590201b1fe0eae04c5c'
 
-  url 'http://emacsformacosx.com/emacs-builds/Emacs-2013-11-19_01-33-37-115148-universal-10.6.8.dmg'
+  url 'http://emacsformacosx.com/emacs-builds/Emacs-2015-02-08_01-40-36-dcec731-universal.dmg'
   homepage 'http://emacsformacosx.com/'
-  license :oss
+  license :gpl
 
   app 'Emacs.app'
 end
