@@ -1,6 +1,6 @@
 cask :v1 => 'spotifybeta' do
-  version '1.0.0.909.ge4845795-1223'
-  sha256 '9279b76b13185d2cba4afcbf19464a97229b3a50620fbfff4311fef8cf9b8c50'
+  version '1.0.0.974.ga39487e3-1439'
+  sha256 '55ab8ed9446654f007a8dc1782f26d836b3ddd585a6dbc36b19148f7d624c18b'
 
   url "http://download.spotify.com/beta/spotify-app-#{version}.dmg"
   name 'Spotify Beta'
