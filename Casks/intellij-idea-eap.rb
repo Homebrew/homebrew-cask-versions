@@ -1,9 +1,9 @@
 cask :v1 => 'intellij-idea-eap' do
-  version '140.2285.5'
-  sha256 'f6ac5ba4ad73eaa7c072c4c4c52b26f7c65f3fbc4f520c2cf9fbe902aedd1751'
+  version '139.872.1'
+  sha256 'f9ea80b72d0d1aa78685cda89eb6e7a1719636901957193b167fb884e40e47c4'
 
   url "http://download-cf.jetbrains.com/idea/ideaIU-#{version}.dmg"
-  homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+14.1+EAP'
+  homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+14+EAP'
   license :commercial
 
   app 'IntelliJ IDEA 14 EAP.app'

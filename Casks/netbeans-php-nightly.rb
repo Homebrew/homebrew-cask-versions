@@ -1,10 +1,10 @@
 cask :v1 => 'netbeans-php-nightly' do
   homepage 'https://netbeans.org/'
   license :unknown
-  version '201502110001'
-  sha256 'c8cda323f4b0c03bc639e1f39633f5b8ba9278da712520fc4b7f6328622f9b70'
+  version '201501160001'
+  sha256 'b34dcb7a3980dce45a7a0a69501bde386a0405f738e12b2799606f6e304aa2c0'
 
-  url "http://bits.netbeans.org/download/trunk/nightly/latest/bundles/netbeans-trunk-nightly-#{version}-cpp-macosx.dmg"
+  url "http://bits.netbeans.org/download/trunk/nightly/latest/bundles/netbeans-trunk-nightly-#{version}-php-macosx.dmg"
   pkg "NetBeans Dev #{version}.mpkg"
 
   uninstall :delete => '/Applications/NetBeans'
