@@ -1,8 +1,8 @@
 cask :v1 => 'firefox-beta-de' do
-  version '36.0b7'
-  sha256 'b23a64b74a2d8f4a8c03e5d88a5b1a7710d810115f8610c333f8d06d3cb23e74'
+  version '37.0b2'
+  sha256 '140dd45ca602d25be58e97921e43bfd35cc2baba46adfab63fcb966135e26232'
 
-  url "https://download.mozilla.org/?product=firefox-#{version}&os=osx&lang=de"
+  url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=de"
   homepage 'https://www.mozilla.org/de/firefox/beta/'
   license :mpl
 
