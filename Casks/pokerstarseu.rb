@@ -6,7 +6,7 @@ cask :v1 => 'pokerstars-eu' do
   homepage 'http://www.pokerstars.com/'
   license :freemium
 
-  app 'PokerStars.app'
+  app 'PokerStarsEU.app'
 
   zap :delete => [
                   '~/Library/Preferences/com.pokerstars.eu.user.ini',
