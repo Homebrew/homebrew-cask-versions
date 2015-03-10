@@ -1,4 +1,4 @@
-cask :v1 => 'pokerstars-eu' do
+cask :v1 => 'pokerstarseu' do
   version :latest
   sha256 :no_check
 
