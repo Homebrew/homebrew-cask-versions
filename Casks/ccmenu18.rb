@@ -1,4 +1,4 @@
-cask :v1 => 'ccmenu' do
+cask :v1 => 'ccmenu18' do
   version '1.8'
   sha256 'e2d36083388b4c68c1dff396393f4d3b2df614ff09deca1fdd9bbba286f7faa5'
 
