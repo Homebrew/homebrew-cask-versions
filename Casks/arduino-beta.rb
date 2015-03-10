@@ -1,16 +1,16 @@
 cask :v1 => 'arduino-beta' do
-  version '1.5.8'
+  version '1.6.1'
 
   if MacOS.release <= :snow_leopard
     depends_on :java => '6'
 
-    sha256 'c69f870f99ccaf2abb3618845559daea9ef8c52a68ff42b5e21ae3a69cf845fa'
+    sha256 'c84734a1d5b76641e12484be7a1a99c006173d939c730fd04085faa02323e7af'
     url "http://arduino.cc/download.php?f=/arduino-#{version}-macosx.zip"
   else
     depends_on :java => '7'
 
-    sha256 'f5678cf9146031af52519d79dfcb16a81aa9c7eb68e516b34c679139048fb000'
-    url "http://arduino.cc/download.php?f=/arduino-#{version}-macosx-java7.zip"
+    sha256 'c71cad988acf8923cd190d778b469b4ebbdab3f3776fa80237b25bd7af3b7ccb'
+    url "http://downloads.arduino.cc/arduino-#{version}-macosx-java-latest.zip"
 
     caveats <<-EOS.undent
       Version #{version} for Java 7+ is experimental (see http://arduino.cc/en/Main/Software).
