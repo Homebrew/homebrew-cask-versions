@@ -6,9 +6,9 @@ cask :v1 => 'clipmenu-alpha' do
   url "https://dl.dropbox.com/u/1140644/clipmenu/ClipMenu-#{version}.dmg"
   name 'ClipMenu'
   homepage 'http://www.clipmenu.com/'
-  license :unknown    # todo: change license and remove this comment; ':unknown' is a machine-generated placeholder
-  
+  license :mit
+
   app 'ClipMenu.app'
-  
-  depends_on :macos => '>= :yosemite'
+
+  depends_on :macos => '>= :mavericks'
 end
