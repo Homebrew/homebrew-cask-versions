@@ -4,7 +4,7 @@ cask :v1 => 'torbrowser-de' do
 
   url "https://www.torproject.org/dist/torbrowser/#{version}/TorBrowser-#{version}-osx32_de.dmg"
   gpg "#{url}.asc",
-      :key_id => '416f061063fee659'
+      :key_id => '4e2c6e8793298290'
   homepage 'https://www.torproject.org/projects/torbrowser.html'
   license :oss
 
