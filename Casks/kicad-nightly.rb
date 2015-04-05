@@ -1,4 +1,4 @@
-cask :v1 => 'kicad' do
+cask :v1 => 'kicad-nightly' do
   version 'r5572.20150404-034315'
   sha256 '08bdff67c5c851154b58ff8556c70dbe986f1899e557ff6bf23ab7f658ac696c'
 
