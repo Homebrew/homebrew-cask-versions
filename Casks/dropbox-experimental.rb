@@ -1,6 +1,6 @@
 cask :v1 => 'dropbox-experimental' do
-  version '3.5.50'
-  sha256 'f53b17e0b1dd601a84517121a29b57e626d53350629f0006e2088e9d44603e3c'
+  version '3.5.53'
+  sha256 '7a883a185ffc819b9815bb649d955f376c6388727a3924b00ba8be0a45740b3d'
 
   url "https://dl.dropboxusercontent.com/u/17/Dropbox%20#{version}.dmg"
   homepage 'https://www.dropboxforum.com/hc/communities/public/questions/202197889-Experimental-Build-3-5-50'
