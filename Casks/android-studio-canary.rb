@@ -6,7 +6,7 @@ cask :v1 => 'android-studio-canary' do
   homepage 'http://tools.android.com/download/studio'
   license :apache
 
-  app 'Android Studio.app'
+  app 'Android Studio.app', :target => 'Android Studio Canary.app'
 
   caveats <<-EOS.undent
     If you have Java 7 or above installed, you may want to use it as Android Studio JDK, for example:
