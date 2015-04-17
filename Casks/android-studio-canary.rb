@@ -7,13 +7,13 @@ cask :v1 => 'android-studio-canary' do
   homepage 'http://tools.android.com/download/studio'
   license :apache
 
-  app 'Android Studio.app', :target => 'Android Studio Canary.app'
+  app 'Android Studio.app', :target => 'Android Studio Beta.app'
 
   caveats <<-EOS.undent
     If you have Java 7 or above installed, you may want to use it as Android Studio JDK, for example:
 
     export STUDIO_JDK=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk
 
-    Please take a look at this post: http://tools.android.com/recent/androidstudio12beta3available
+    Please take a look at this post: http://tools.android.com/recent/androidstudio1rc3_releasecandidate3released
   EOS
 end
