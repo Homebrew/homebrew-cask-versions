@@ -1,10 +1,10 @@
 cask :v1 => 'torbrowser-ar' do
-  version '4.0.8'
-  sha256 '817c7a62e3c2643a9b6ee964a2cd8f6e03f1079270d5ac140b2191546db23e38'
+  version '4.5'
+  sha256 'f36db7b68966079ca68eac548ebe7b7e8a364d808ae68132c09dce9d6553c9f9'
 
-  url "https://www.torproject.org/dist/torbrowser/#{version}/TorBrowser-#{version}-osx32_ar.dmg"
+  url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-osx64_ar.dmg"
   gpg "#{url}.asc",
-      :key_id => '4e2c6e8793298290'
+      :key_id => 'ef6e286dda85ea2a4ba7de684e2c6e8793298290'
   homepage 'https://www.torproject.org/projects/torbrowser.html'
   license :oss
 
