@@ -1,8 +1,8 @@
 cask :v1 => 'python33' do
-  version '3.4.3'
+  version '3.3.5'
   sha256 '7e59f823f82da5ec7e2af4449a5e33c09f5b755a8acd9cec98371da8c2b2b52b'
 
-  url "https://www.python.org/ftp/python/#{version}/python-#{version}-macosx10.6.pkg"
+  url "https://www.python.org/ftp/python/#{version}/python-#{version}-macosx10.6.dmg"
   homepage 'https://www.python.org/'
   license :oss
 
