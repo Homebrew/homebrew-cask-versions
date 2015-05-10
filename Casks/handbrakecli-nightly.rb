@@ -1,9 +1,9 @@
 cask :v1 => 'handbrakecli-nightly' do
-  version '7105svn'
-  sha256 '302b9310b11a7397fcf68b608d62ad592d71241c357638e346883711d41fa014'
+  version '7168svn'
+  sha256 '297b32cb22386bcbbddfc4cb1cdf4048e17aaa583f9fae0792292b971231c2ec'
 
   url "http://download.handbrake.fr/nightly/HandBrake-#{version}-MacOSX.6_CLI_x86_64.dmg"
-  homepage 'http://handbrake.fr'
+  homepage 'https://handbrake.fr'
   license :gpl
 
   binary 'HandBrakeCLI'
