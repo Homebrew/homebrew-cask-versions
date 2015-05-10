@@ -1,12 +1,13 @@
 cask :v1 => 'android-studio-canary' do
-  version '1.0.0-rc4'
-  sha256 'eb945124105341729b4d4a4cec07332827f0ec601484e91593825db703b64635'
+  version '1.2.0.8'
+  sha256 '0efab53a2b5510f9164987b363ec02a60382a55d3de9c2e0308d233e3ca26507'
 
-  url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-ide-135.1626825-mac.zip"
+  url "http://dl.google.com/dl/android/studio/ide-zips/1.2.0.8/android-studio-ide-141.1845774-mac.zip"
+       
   homepage 'http://tools.android.com/download/studio'
   license :apache
 
-  app 'Android Studio.app'
+  app 'Android Studio.app', :target => 'Android Studio Beta.app'
 
   caveats <<-EOS.undent
     If you have Java 7 or above installed, you may want to use it as Android Studio JDK, for example:
