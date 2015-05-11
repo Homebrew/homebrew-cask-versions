@@ -3,7 +3,7 @@ cask :v1 => 'python26' do
   sha256 'f3683e71af5cd96dfd838c76ef7011ca0521562fb2f0d8c30a43dffe62d57c49'
 
   url "https://www.python.org/ftp/python/#{version}/python-#{version}-macosx10.3.dmg"
-  homepage 'http://www.python.org/'
+  homepage 'https://www.python.org/'
   license :oss
 
   pkg 'Python.mpkg'
