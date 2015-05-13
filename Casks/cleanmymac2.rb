@@ -5,6 +5,10 @@ cask :v1 => 'cleanmymac2' do
   # devmate.com is the official download host per the vendor homepage
   url 'https://dl.devmate.com/com.macpaw.CleanMyMac2/2.3.5/1427986644/CleanMyMac2-2.3.5.zip'
   appcast 'http://updates.devmate.com/com.macpaw.CleanMyMac2.xml'
+  name 'CleanMyMac'
+  homepage 'https://macpaw.com/cleanmymac'
+  license :commercial
+  
   app 'CleanMyMac 2.app'
 
   uninstall :launchctl => 'com.macpaw.CleanMyMac2.Agent'
@@ -21,8 +25,4 @@ cask :v1 => 'cleanmymac2' do
     '~/Library/Preferences/com.macpaw.CleanMyMac2.KnowledgeBase.plist',
     '~/Library/Preferences/com.macpaw.CleanMyMac2.plist',
   ]
-
-  name 'CleanMyMac'
-  homepage 'https://macpaw.com/cleanmymac'
-  license :commercial
 end
