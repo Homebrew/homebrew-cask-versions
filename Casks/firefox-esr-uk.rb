@@ -1,10 +1,11 @@
 cask :v1 => 'firefox-esr-uk' do
-  version '31.5.0'
-  sha256 '60a56a5ca27fba10c5cb336aeadc75996d410e039aeb3ef738bdc82a5fdb4aa1'
+  version '38.0'
+  sha256 '66697d73b9d9c138953c7933fdcfdb5ac37535c35506526c441832ac2a1730c0'
 
   url "https://download.mozilla.org/?product=firefox-#{version}esr-SSL&os=osx&lang=uk"
   homepage 'https://www.mozilla.org/uk/firefox/organizations/'
   license :mpl
+  tags :vendor => 'Mozilla'
 
   app 'Firefox.app'
 end
