@@ -1,10 +1,11 @@
 cask :v1 => 'firefox-beta-ru' do
-  version '37.0b7'
-  sha256 'aa321d108121d10e17f31e5309543de49b9d59c53f0bc09e5bb44469f472c7e9'
+  version '38.0.5b1'
+  sha256 '46f75be229783b3378ca9f893db852426b7c57f1256c843d680b724709cd2f2f'
 
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=ru"
   homepage 'https://www.mozilla.org/ru/firefox/channel/#beta'
   license :mpl
+  tags :vendor => 'Mozilla'
 
   app 'Firefox.app'
 end
