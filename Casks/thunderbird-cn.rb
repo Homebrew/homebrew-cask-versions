@@ -1,10 +1,11 @@
 cask :v1 => 'thunderbird-cn' do
-  version '31.3.0'
-  sha256 'b7fb163224143dc1cda73c4fed8b5e18758b248e208a01e83fbdc98c9f120c1b'
+  version '31.6.0'
+  sha256 'fbc95c8a169d5a8bf7b998b8017608a8e42a9232ddce7ae2c443c09112c783a9'
 
-  url "ftp://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/#{version}/mac/zh-CN/Thunderbird%20#{version}.dmg"
+  url "https://download.mozilla.org/?product=thunderbird-#{version}&os=osx&lang=zh-CN"
   homepage 'https://www.mozilla.org/zh-CN/thunderbird/'
-  license :oss
+  license :mpl
+  tags :vendor => 'Mozilla'
 
   app 'Thunderbird.app'
 end
