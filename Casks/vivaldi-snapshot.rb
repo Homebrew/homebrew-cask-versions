@@ -1,6 +1,6 @@
 cask :v1 => 'vivaldi-snapshot' do
-  version '1.0.174.8'
-  sha256 'd363a3208176f276128866561fa3f3c055d0545e896de269163d4010fae66bf4'
+  version '1.0.178.2'
+  sha256 '975689112f958e0086deb5ff9831613a0be51f99fe2360ad7043a7533357b559'
 
   url "https://vivaldi.com/download/download.php?f=Vivaldi.#{version}.dmg"
   name 'Vivaldi'
