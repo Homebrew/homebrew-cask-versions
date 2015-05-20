@@ -1,6 +1,6 @@
 cask :v1 => 'webstorm-eap' do
-  version '141.224'
-  sha256 '262841715a4db53a4c2f1db268c16905875e933ab8d45e730894f2a888b80a88'
+  version '141.1108'
+  sha256 'ba572e9784a50c01bc750206781927812fc32c380a4fc697175325477228e971'
 
   url "http://download.jetbrains.com/webstorm/WebStorm-EAP-#{version}.dmg"
   homepage 'https://confluence.jetbrains.com/display/WI/WebStorm+10+EAP'
