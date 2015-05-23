@@ -9,5 +9,5 @@ cask :v1 => 'libreoffice-beta' do
   homepage 'https://www.libreoffice.org/'
   license :mpl
 
-  app 'LibreOffice.app'
+  app 'LibreOfficeDev.app'
 end
