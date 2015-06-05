@@ -1,8 +1,8 @@
 cask :v1 => 'appcode-eap' do
-  version '3.1.0'
-  sha256 'e642a32107c9b6f0d2a9923ece6c50875f0fc66f6341ca8765af4c1696d65f65'
+  version '3.2.0'
+  sha256 '2dd8a0a9246067ae6e092b9934cbadac6730a74fe400c8929b09792a0c0cda83'
 
-  url 'http://download.jetbrains.com/objc/AppCode-139.261.dmg'
+  url 'http://download.jetbrains.com/objc/AppCode-141.1399.2.dmg'
   homepage 'http://confluence.jetbrains.com/display/OBJC/AppCode+EAP'
   license :commercial
 
