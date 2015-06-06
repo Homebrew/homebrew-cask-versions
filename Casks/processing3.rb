@@ -3,8 +3,11 @@ cask :v1 => 'processing3' do
   sha256 '1eb6df0322354ffd1a4805048b2b1102f9b397e49fba54fa6b993b0fe01e9d09'
 
   url "http://download.processing.org/processing-#{version}-macosx.zip"
+  name 'Processing'
   homepage 'http://processing.org/'
   license :gpl
 
   app 'Processing.app'
+
+  zap :delete => '~/Library/Processing/preferences.txt'
 end
