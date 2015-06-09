@@ -5,6 +5,8 @@ cask :v1 => 'java6' do
   url 'http://support.apple.com/downloads/DL1572/en_US/JavaForOSX2014-001.dmg'
   homepage 'http://support.apple.com/kb/DL1572'
   license :unknown
+  depends_on :macos => '<= :yosemite'
+
 
   pkg 'JavaForOSX.pkg'
   uninstall :pkgutil => 'com.apple.pkg.JavaForMacOSX107'
