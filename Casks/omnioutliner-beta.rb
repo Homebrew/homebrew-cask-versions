@@ -1,8 +1,8 @@
 cask :v1 => 'omnioutliner-beta' do
-  version '4.2.x-r233347'
-  sha256 '5d889468f569853496a4a426a6fddc84befc665e501ae89a8e67535805b0c475'
+  version '4.3.x-r235551'
+  sha256 '8584a222621871aa178d27ab5ebba3da042f1ef8b269390148c5e26fe0b8bc50'
 
-  url "http://omnistaging.omnigroup.com/omnioutliner-4/releases/OmniOutliner-#{version}-Test.dmg"
+  url "http://omnistaging.omnigroup.com/omnioutliner-4/releases/OmniOutliner-#{version.sub(%r{.*-},'')}-Test.dmg"
   name 'OmniOutliner'
   homepage 'http://omnistaging.omnigroup.com/omnioutliner-4/'
   license :commercial
