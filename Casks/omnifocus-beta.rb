@@ -1,6 +1,6 @@
 cask :v1 => 'omnifocus-beta' do
-  version '2.2.x-r235338'
-  sha256 '56196c7d5f09b84ea8cb68901f165a00238c9016e2d94539babc04a3f6ae79bd'
+  version '2.2.x-r235511'
+  sha256 '5f11983b2d4ec9e447a5b69dd3c09e70a100f9434fd6bcb8ad98f4bfe82f071c'
 
   url "http://omnistaging.omnigroup.com/omnifocus-2.2.x/releases/OmniFocus-#{version}-Test.dmg"
   name 'OmniFocus'
