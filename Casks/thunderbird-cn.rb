@@ -1,8 +1,9 @@
 cask :v1 => 'thunderbird-cn' do
-  version '31.6.0'
-  sha256 'fbc95c8a169d5a8bf7b998b8017608a8e42a9232ddce7ae2c443c09112c783a9'
+  version '38.0.1'
+  sha256 'bece5e8fa9ba80bb34f95b31727be2b5d1ce3c35b42220e774b4e35fe984b8f5'
 
   url "https://download.mozilla.org/?product=thunderbird-#{version}&os=osx&lang=zh-CN"
+  name 'Mozilla Thunderbird'
   homepage 'https://www.mozilla.org/zh-CN/thunderbird/'
   license :mpl
   tags :vendor => 'Mozilla'
