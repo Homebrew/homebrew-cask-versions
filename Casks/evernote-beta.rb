@@ -1,6 +1,6 @@
 cask :v1 => 'evernote-beta' do
-  version 'BETA_6.0.6_Beta_1_451237'
-  sha256 'c4e81b59523a29f869916ee3c24c0bcbe41005fe4deabbc6c7cc590a21c05ac3'
+  version 'BETA_6.0.9_Beta_2_451485'
+  sha256 '24564a436ba77d253846e33487596d454106247467a79d23298c1f4d73dd7fcd'
 
   url "http://cdn1.evernote.com/mac-smd/prerelease/Evernote_#{version}.zip"
   homepage 'https://evernote.com/'
