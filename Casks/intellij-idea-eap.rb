@@ -1,19 +1,19 @@
 cask :v1 => 'intellij-idea-eap' do
-  version '141.1531.2'
-  sha256 '66fe6dcc84508cac655cac251975e69075ed1b0a80e9bf2baaa02b2a0b33c98d'
+  version '142.2491.4'
+  sha256 'a7ce7ec03940b775963cfaf69b2e39bae23a98746691ef9e84b59c8c00d494ff'
 
-  url "http://download-cf.jetbrains.com/idea/ideaIU-#{version}.dmg"
-  homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+14.1+EAP'
+  url "https://download.jetbrains.com/idea/ideaIU-#{version}-custom-jdk-bundled.dmg"
+  name 'IntelliJ IDEA EAP'
+  homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+15+EAP'
   license :commercial
 
-  app 'IntelliJ IDEA 14 EAP.app'
-
-  postflight do
-    plist_set(':JVMOptions:JVMVersion', '1.6+')
-  end
+  app 'IntelliJ IDEA 15 EAP.app'
 
   zap :delete => [
-                  '~/Library/Application Support/IntelliJIdea14',
-                  '~/Library/Preferences/IntelliJIdea14',
+		  '~/Library/Preferences/com.jetbrains.intellij.plist',
+                  '~/Library/Application Support/IntelliJIdea15',
+                  '~/Library/Preferences/IntelliJIdea15',
+                  '~/Library/Caches/IntelliJIdea15',
+                  '~/Library/Logs/IntelliJIdea15',
                  ]
 end
