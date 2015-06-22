@@ -1,6 +1,6 @@
 cask :v1 => 'libreoffice-beta' do
-  version '5.0.0.0.beta1'
-  sha256 'f932b8d3fc8bf86a6aba5363982d3d14197f176325b2ffe4ce69bea5938288b7'
+  version '5.0.0.0.beta3'
+  sha256 '522d74ab04d357807139210c86a321dd5e02bf84026f624740c229eb3ab8b355'
 
   url "https://download.documentfoundation.org/libreoffice/testing/#{version.split('.0.beta')[0]}/mac/x86_64/LibreOfficeDev_#{version}_MacOS_x86-64.dmg"
   gpg "#{url}.asc",
