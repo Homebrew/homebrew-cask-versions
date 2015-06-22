@@ -8,29 +8,29 @@ cask :v1 => 'java-beta' do
                   }
   name 'Java'
   name 'Java Standard Edition Development Kit'
-  homepage 'http://www.oracle.com/technetwork/licenses/ea-license-152003.html'
+  homepage 'https://jdk8.java.net/'
   license :gratis
 
   pkg 'JDK 8 Update 60.pkg'
   postflight do
     system '/usr/bin/sudo', '-E', '--',
-      '/usr/libexec/PlistBuddy', '-c', 'Add :JavaVM:JVMCapabilities: string BundledApp', "/Library/Java/JavaVirtualMachines/jdk#{version.sub(/u|b/,"")}.jdk/Contents/Info.plist"
+      '/usr/libexec/PlistBuddy', '-c', 'Add :JavaVM:JVMCapabilities: string BundledApp', "/Library/Java/JavaVirtualMachines/jdk#{version.sub(/b/,"")}.jdk/Contents/Info.plist"
     system '/usr/bin/sudo', '-E', '--',
-      '/usr/libexec/PlistBuddy', '-c', 'Add :JavaVM:JVMCapabilities: string JNI',        "/Library/Java/JavaVirtualMachines/jdk#{version.sub(/u|b/,"")}.jdk/Contents/Info.plist"
+      '/usr/libexec/PlistBuddy', '-c', 'Add :JavaVM:JVMCapabilities: string JNI',        "/Library/Java/JavaVirtualMachines/jdk#{version.sub(/b/,"")}.jdk/Contents/Info.plist"
     system '/usr/bin/sudo', '-E', '--',
-      '/usr/libexec/PlistBuddy', '-c', 'Add :JavaVM:JVMCapabilities: string WebStart',   "/Library/Java/JavaVirtualMachines/jdk#{version.sub(/u|b/,"")}.jdk/Contents/Info.plist"
+      '/usr/libexec/PlistBuddy', '-c', 'Add :JavaVM:JVMCapabilities: string WebStart',   "/Library/Java/JavaVirtualMachines/jdk#{version.sub(/b/,"")}.jdk/Contents/Info.plist"
     system '/usr/bin/sudo', '-E', '--',
-      '/usr/libexec/PlistBuddy', '-c', 'Add :JavaVM:JVMCapabilities: string Applets',    "/Library/Java/JavaVirtualMachines/jdk#{version.sub(/u|b/,"")}.jdk/Contents/Info.plist"
+      '/usr/libexec/PlistBuddy', '-c', 'Add :JavaVM:JVMCapabilities: string Applets',    "/Library/Java/JavaVirtualMachines/jdk#{version.sub(/b/,"")}.jdk/Contents/Info.plist"
     system '/usr/bin/sudo', '-E', '--',
       '/bin/rm', '-rf', '--', '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
     system '/usr/bin/sudo', '-E', '--',
-      '/bin/ln', '-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk#{version.sub(/u|b/,"")}.jdk/Contents", '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
+      '/bin/ln', '-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk#{version.sub(/b/,"")}.jdk/Contents", '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
     system '/usr/bin/sudo', '-E', '--',
-      '/bin/ln', '-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk#{version.sub(/u|b/,"")}.jdk/Contents/Home", '/Library/Java/Home'
+      '/bin/ln', '-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk#{version.sub(/b/,"")}.jdk/Contents/Home", '/Library/Java/Home'
     system '/usr/bin/sudo', '-E', '--',
-      '/bin/mkdir', '-p', '--', "/Library/Java/JavaVirtualMachines/jdk#{version.sub(/u|b/,"")}.jdk/Contents/Home/bundle/Libraries"
+      '/bin/mkdir', '-p', '--', "/Library/Java/JavaVirtualMachines/jdk#{version.sub(/b/,"")}.jdk/Contents/Home/bundle/Libraries"
     system '/usr/bin/sudo', '-E', '--',
-      '/bin/ln', '-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk#{version.sub(/u|b/,"")}.jdk/Contents/Home/jre/lib/server/libjvm.dylib", "/Library/Java/JavaVirtualMachines/jdk#{version.sub(/u|b/,"")}.jdk/Contents/Home/bundle/Libraries/libserver.dylib"
+      '/bin/ln', '-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk#{version.sub(/b/,"")}.jdk/Contents/Home/jre/lib/server/libjvm.dylib", "/Library/Java/JavaVirtualMachines/jdk#{version.sub(/b/,"")}.jdk/Contents/Home/bundle/Libraries/libserver.dylib"
   end
 
   uninstall :pkgutil => [
@@ -72,7 +72,7 @@ cask :v1 => 'java-beta' do
     Installing this Cask means you have AGREED to the Oracle Binary Code
     License Agreement for Java SE at
 
-      http://www.oracle.com/technetwork/java/javase/terms/license/index.html
+      http://www.oracle.com/technetwork/licenses/ea-license-152003.html
   EOS
 end
 
