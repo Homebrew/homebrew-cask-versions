@@ -1,6 +1,6 @@
 cask :v1 => 'phpstorm-eap' do
-  version '141.1619'
-  sha256 '2010ccfcc3562473ec5daeb316740de32143a0e023fa22f28e48eb7a163b0629'
+  version '141.1717'
+  sha256 'af6087323b15205d10ede18e4aea176c6dab569adc47d0eb00d4de07ad88693d'
 
   url "http://download.jetbrains.com/webide/PhpStorm-EAP-#{version}.dmg"
   homepage 'http://confluence.jetbrains.com/display/PhpStorm/PhpStorm+Early+Access+Program'
