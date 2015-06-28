@@ -1,6 +1,6 @@
 cask :v1 => 'intellij-idea-bundled-jdk' do
-  version '14.1.1'
-  sha256 'fef01bad9a244a92c78a21969980829b101236ec11a9fd5c779dd344a4c9f7e3'
+  version '14.1.4'
+  sha256 '3a718cbe0276c55f8028f7aca5c84413a144fc56befc9f816f514c264f167593'
 
   url "https://download.jetbrains.com/idea/ideaIU-#{version}-custom-jdk-bundled.dmg"
   name 'IntelliJ IDEA'
