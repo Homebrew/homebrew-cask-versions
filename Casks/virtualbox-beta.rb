@@ -1,11 +1,16 @@
 cask :v1 => 'virtualbox-beta' do
-  version '5.0.0_RC1-100731'
-  sha256 '9cd0923966b83a0447b1bc4ea397971f3b1908ec974bb517637cf1e3a975573b'
+  version '5.0.0_RC2-101271'
+  sha256 '6ab15a281b30d60cf245aad3ef66deb72e87deacbcbfc660dfbbc5b8e7c8543d'
 
   url "http://download.virtualbox.org/virtualbox/#{version.split('-')[0]}/VirtualBox-#{version}-OSX.dmg"
   homepage 'http://www.virtualbox.org'
   license :gpl
+  tags :vendor => 'Oracle'
 
   pkg 'VirtualBox.pkg'
-  uninstall :script => { :executable => 'VirtualBox_Uninstall.tool', :args => %w[--unattended] }
+  binary '/Applications/VirtualBox.app/Contents/MacOS/VBoxManage'
+  binary '/Applications/VirtualBox.app/Contents/MacOS/VBoxHeadless'
+
+  uninstall :script => { :executable => 'VirtualBox_Uninstall.tool', :args => %w[--unattended] },
+            :pkgutil => 'org.virtualbox.pkg.*'
 end
