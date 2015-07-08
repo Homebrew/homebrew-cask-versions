@@ -1,6 +1,6 @@
 cask :v1 => 'blender-daily' do
-  version '2.75-80f344f'
-  sha256 '5815d43f9c6f22f90a7a78eed3076e93a9ea0dfa377251ec28ed85f127f03a55'
+  version '2.75-de6b4dc'
+  sha256 '7df180e65c520f28d2cc10fc684b525d624cbd09285d18ee14cb016489f9f2e0'
 
   url "https://builder.blender.org/download/blender-#{version}-OSX-10.6-x86_64.zip"
   name 'Blender'
