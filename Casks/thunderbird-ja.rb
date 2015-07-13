@@ -1,6 +1,6 @@
 cask :v1 => 'thunderbird-ja' do
-  version '38.0.1'
-  sha256 'b93ebff39a0a846c15bff5e7975ced5d2b0f43ce98f5469cc342e1a5db7ccab8'
+  version '38.1.0'
+  sha256 '471cf51893bdfd22fd6af37b3d3a72a6cc805cd4079f01737a32519f4e195f19'
 
   url "https://download.mozilla.org/?product=thunderbird-#{version}&os=osx&lang=ja-JP-mac"
   name 'Mozilla Thunderbird'
