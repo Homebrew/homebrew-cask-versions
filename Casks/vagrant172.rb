@@ -12,4 +12,3 @@ cask :v1 => 'vagrant172' do
   uninstall :script => { :executable => 'uninstall.tool', :input => %w[Yes] },
             :pkgutil => 'com.vagrant.vagrant'
 end
-
