@@ -1,6 +1,6 @@
 cask :v1 => 'phpstorm-eap' do
-  version '141.1717'
-  sha256 'af6087323b15205d10ede18e4aea176c6dab569adc47d0eb00d4de07ad88693d'
+  version '141.2017'
+  sha256 'f0ec9828aab591159531cdeb815dcf976d9707bb126a84daa4554809c9fc34b2'
 
   url "http://download.jetbrains.com/webide/PhpStorm-EAP-#{version}.dmg"
   homepage 'http://confluence.jetbrains.com/display/PhpStorm/PhpStorm+Early+Access+Program'
@@ -13,8 +13,9 @@ cask :v1 => 'phpstorm-eap' do
   end
 
   zap :delete => [
-                  '~/Library/Application Support/WebIde80',
-                  '~/Library/Preferences/WebIde80',
+                  '~/Library/Application Support/WebIde90',
+                  '~/Library/Caches/WebIde90',
+                  '~/Library/Preferences/WebIde90',
                   '~/Library/Preferences/com.jetbrains.PhpStorm-EAP.plist',
                  ]
 end
