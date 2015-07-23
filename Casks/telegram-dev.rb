@@ -1,6 +1,6 @@
 cask :v1 => 'telegram-dev' do
-  version '0.8.40.dev'
-  sha256 '8ab0de90a581da1685e8ff3224ccf286dd74bb2dde241a69917f1eafd55d8e66'
+  version '0.8.41.dev'
+  sha256 '42823fa351267b6daabd90f5531b6882f64857286ab13102aea11a4cb721b385'
 
   # tdesktop.com is the official download host per the vendor homepage
   url "https://updates.tdesktop.com/tmac/tsetup.#{version}.dmg"
