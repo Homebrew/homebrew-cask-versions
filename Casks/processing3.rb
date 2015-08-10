@@ -1,6 +1,6 @@
 cask :v1 => 'processing3' do
-  version '3.0b1'
-  sha256 '1c8a164af73a66e00f24e935bf65339892e4dae118388135cc70436d94183bac'
+  version '3.0b2'
+  sha256 '5d0184e4e078244ac16627c3134c7cf37b87805a6623532cc907df33922b87ae'
 
   url "http://download.processing.org/processing-#{version}-macosx.zip"
   name 'Processing'
