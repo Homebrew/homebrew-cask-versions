@@ -1,8 +1,8 @@
 cask :v1 => 'firefox-esr' do
-  version '38.0.1'
-  sha256 '04bda1d76edc6d92faf418f464f969067fa73e4f0b52d966363db6af18ccd274'
+  version '38.2.0'
+  sha256 '183a133cade74188081f378b3365f2db52a541048be08b61fb07f2d8fb0b262e'
 
-  url "https://download.mozilla.org/?product=firefox-#{version}esr-SSL&os=osx&lang=en-US"
+  url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/#{version}esr/mac/en-US/Firefox%20#{version}esr.dmg"
   homepage 'https://www.mozilla.org/en-US/firefox/organizations/'
   license :mpl
   tags :vendor => 'Mozilla'
