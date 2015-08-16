@@ -1,6 +1,6 @@
 cask :v1 => 'torbrowser-es' do
-  version '4.5.3'
-  sha256 '7c03a90fd61d6889ec50a9fc8d4f2dd14c2355306470eb8d09c5ed3aaeac57de'
+  version '5.0'
+  sha256 '038692695e28c0bf5840d504145bc9a24c5d1a3f3038c6736c11d0ffa63ba92e'
 
   url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-osx64_es-ES.dmg"
   gpg "#{url}.asc",
