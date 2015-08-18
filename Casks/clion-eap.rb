@@ -1,13 +1,13 @@
 cask :v1 => 'clion-eap' do
-  version '141.2346.5'
-  sha256 '147649e1c721f0ec29285287793a4c7acdc7f6abbd01e2fbe97c1ad944ff5fa7'
+  version '141.2347.10'
+  sha256 'd4dcdae1fbeb7008fa7e919676d1ba690791dc540df698658db2bde1056ba343'
 
   url "https://download.jetbrains.com/cpp/CLion-#{version}.dmg"
   name 'CLion'
   homepage 'https://www.jetbrains.com/clion'
   license :commercial
 
-  app 'CLion EAP.app'
+  app 'CLion.app'
 
   zap :delete => [
                   '~/Library/Preferences/com.jetbrains.CLion.plist',
