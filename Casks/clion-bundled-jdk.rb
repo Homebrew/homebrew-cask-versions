@@ -1,6 +1,6 @@
 cask :v1 => 'clion-bundled-jdk' do
-  version '1.0.5'
-  sha256 '113104a05880e91ab9b2a85dca6c9055c1dfa051ed54f5239119aaf0b99f99da'
+  version '1.1'
+  sha256 'ce852e9d6626965b5e40e9da98efd48e0734ad1de712e84bacca3b9a78994361'
 
   url "https://download.jetbrains.com/cpp/CLion-#{version}-custom-jdk-bundled.dmg"
   name 'CLion'
@@ -11,10 +11,10 @@ cask :v1 => 'clion-bundled-jdk' do
 
   zap :delete => [
                   '~/Library/Preferences/com.jetbrains.CLion.plist',
-                  '~/Library/Preferences/clion10',
-                  '~/Library/Application Support/clion10',
-                  '~/Library/Caches/clion10',
-                  '~/Library/Logs/clion10',
+                  '~/Library/Preferences/clion11',
+                  '~/Library/Application Support/clion11',
+                  '~/Library/Caches/clion11',
+                  '~/Library/Logs/clion11',
                  ]
 
   conflicts_with :cask => 'clion'
