@@ -1,6 +1,6 @@
 cask :v1 => 'thunderbird-beta' do
-  version '38.0b6'
-  sha256 '4701cd01c71f2b2db27c92abba37e272186a31188843f6646284a4ab3b9377bf'
+  version '40.0b1'
+  sha256 'e90832ab7fa2e3bca4ff8e09480faaf96e660e42252f8d1c2fbf275b88613df6'
 
   url "https://download.mozilla.org/?product=thunderbird-#{version}&os=osx&lang=en-US"
   name 'Mozilla Thunderbird'
