@@ -1,13 +1,13 @@
 cask :v1 => 'appcode-eap' do
-  version '141.2454.1'
-  sha256 '2bdd017c5ee03fa206839fcdd79cb17cea92ca13005224b933c9f2b0007216db'
+  version '141.2455.5'
+  sha256 'd3b03735359c7342c005bd97a3bbc816ab1b86b7e12398f4177b797bc695b436'
 
   url "https://download.jetbrains.com/objc/AppCode-#{version}.dmg"
   name 'AppCode'
   homepage 'https://confluence.jetbrains.com/display/OBJC/AppCode+EAP'
   license :commercial
 
-  app 'AppCode EAP.app'
+  app 'AppCode.app'
 
   zap :delete => [
                   '~/Library/Preferences/com.jetbrains.AppCode-EAP.plist',
