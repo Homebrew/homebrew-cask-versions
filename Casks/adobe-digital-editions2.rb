@@ -9,5 +9,6 @@ cask :v1 => 'adobe-digital-editions2' do
 
   pkg 'Digital Editions 2.0 Installer.pkg', :allow_untrusted => true
 
-  uninstall :pkgutil => 'com.adobe.adobedigitaleditions.app', :delete => '/Applications/Adobe Digital Editions.app'
+  uninstall :pkgutil => 'com.adobe.adobedigitaleditions.app', 
+            :delete => '/Applications/Adobe Digital Editions.app'
 end
