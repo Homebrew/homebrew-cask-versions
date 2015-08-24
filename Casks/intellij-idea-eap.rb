@@ -1,6 +1,6 @@
 cask :v1 => 'intellij-idea-eap' do
-  version '142.3553.1'
-  sha256 'a59ad3aaa9884df6e2f375b87fc4a1edbbb37e33a9fcbfd56d5aea7aee9ab700'
+  version '142.4083.2'
+  sha256 '0455e1abaaf6fae1459d34e381394d0aac2089cf800343cdd221ed9c99618097'
 
   url "https://download.jetbrains.com/idea/ideaIU-#{version}-custom-jdk-bundled.dmg"
   name 'IntelliJ IDEA EAP'
