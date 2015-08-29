@@ -4,7 +4,7 @@ cask :v1 => 'clion-eap' do
 
   url "https://download.jetbrains.com/cpp/CLion-#{version}.dmg"
   name 'CLion'
-  homepage 'https://www.jetbrains.com/clion'
+  homepage 'https://confluence.jetbrains.com/display/CLION/Early+Access+Program'
   license :commercial
 
   app 'CLion.app'
@@ -18,4 +18,14 @@ cask :v1 => 'clion-eap' do
                  ]
 
   conflicts_with :cask => 'clion-eap-bundled-jdk'
+  caveats <<-EOS.undent
+    #{token} requires Java 6 like any other IntelliJ-based IDE.
+    You can install it with
+
+      brew cask install caskroom/homebrew-versions/java6
+
+    The vendor (JetBrains) doesn't support newer versions of Java (yet)
+    due to several critical issues, see details at
+    https://intellij-support.jetbrains.com/entries/27854363
+  EOS
 end
