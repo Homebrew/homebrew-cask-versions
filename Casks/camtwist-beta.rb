@@ -3,10 +3,12 @@ cask :v1 => 'camtwist-beta' do
   sha256 'c0a241a0313b8b1aa3530efa4fba058b4cfa3cacea41df815738dafddbf7897b'
 
   url 'http://camtwiststudio.com/beta/CamTwist_3.0.dmg'
+  name 'CamTwist'
   homepage 'http://camtwiststudio.com/'
-  license :unknown
+  license :gratis
 
   pkg 'CamTwist.pkg'
 
-  uninstall :script => { :executable => 'Manual Install/CamTwist/uninstall.command' }
+  uninstall :script => { :executable => 'Manual Install/CamTwist/uninstall.command' },
+            :pkgutil => 'com.allocinit.camtwist.*'
 end
