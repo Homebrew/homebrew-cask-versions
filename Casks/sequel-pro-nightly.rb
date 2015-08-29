@@ -7,5 +7,9 @@ cask :v1 => 'sequel-pro-nightly' do
   homepage 'http://nightly.sequelpro.com/'
   license :mit
 
+  depends_on :macos => '>= :leopard'
+
   app 'Sequel Pro.app'
+
+  zap :delete => '~/Library/Application Support/Sequel Pro/Data'
 end
