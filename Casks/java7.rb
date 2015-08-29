@@ -6,8 +6,10 @@ cask :v1 => 'java7' do
       :cookies => {
                     'oraclelicense' => 'accept-securebackup-cookie'
                   }
+  name 'Java'
+  name 'Java Standard Edition Development Kit'
   homepage 'http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html'
-  license :unknown
+  license :gratis
 
   pkg 'JDK 7 Update 79.pkg'
   postflight do
@@ -30,6 +32,14 @@ cask :v1 => 'java7' do
   end
   uninstall :pkgutil => 'com.oracle.jdk7u79',
             :delete => '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
+            
+  zap       :delete => [
+                        '~/Library/Application Support/Oracle/Java',
+                        '~/Library/Caches/com.oracle.java.Java-Updater',
+                        '~/Library/Caches/net.java.openjdk.cmd',
+                       ],
+            :rmdir  => '~/Library/Application Support/Oracle/'
+
   caveats <<-EOS.undent
     This Cask makes minor modifications to the JRE to prevent any packaged
     application issues.
