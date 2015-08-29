@@ -3,8 +3,9 @@ cask :v1 => 'evernote-beta' do
   sha256 '24564a436ba77d253846e33487596d454106247467a79d23298c1f4d73dd7fcd'
 
   url "http://cdn1.evernote.com/mac-smd/prerelease/Evernote_#{version}.zip"
+  name 'Evernote'
   homepage 'https://evernote.com/'
-  license :unknown
+  license :gratis
 
   app 'Evernote.app'
 end
