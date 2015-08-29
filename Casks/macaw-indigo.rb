@@ -1,6 +1,6 @@
 cask :v1 => 'macaw-indigo' do
-  version '1.5.13.1'
-  sha256 'ad87a7e547e5f66b5e60d43b7e3fff7e37935fc1b37d160ed9800125c964ffd8'
+  version '1.5.15.3'
+  sha256 '6f284ca20a7259c76ad8695e9b0522d374dd9e4d61657d39066b9ce9e9c2faea'
 
   url "http://indigo.macaw.co/#{version}/MacawIndigo#{version}.dmg"
   appcast 'http://indigo.macaw.co/appcast.xml',
