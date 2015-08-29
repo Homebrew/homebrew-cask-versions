@@ -3,6 +3,7 @@ cask :v1 => 'charles-applejava' do
   sha256 'ab848f02d034860aa1ded7758c629a79dac70a79ef6b380d4d98169d36998c26'
 
   url "http://www.charlesproxy.com/assets/release/#{version.gsub(/b\d$/, '')}/charles-proxy-#{version}-applejava.dmg"
+  name 'Charles'
   homepage 'http://www.charlesproxy.com/download/'
   license :commercial
 
