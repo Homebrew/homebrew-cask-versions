@@ -1,8 +1,8 @@
 cask :v1 => 'sketch-beta' do
-  version '3.3.2'
-  sha256 'd85fb4b25dcc281a4211b73a668cf9aa25caa3fb9e50875b4d6fafec65ad1bc1'
+  version '3.4'
+  sha256 '009d91cd2690ed32fb60b28cb98f30422b91d0717a1332df060b28c27d73acca'
 
-  url 'https://rink.hockeyapp.net/api/2/apps/0172d48cceec171249a8d850fb16276b/app_versions/95?format=zip&avtoken=cf895f8e545b066b458d504fe4e3d8eeecc732db'
+  url 'https://dl0tgz6ee3upo.cloudfront.net/production/app/builds/005/842/902/original/ae580fbb47df864a3157526dbd9db1f9/Sketch_Beta.zip'
   homepage 'http://bohemiancoding.com/sketch/beta/'
   license :commercial
 
