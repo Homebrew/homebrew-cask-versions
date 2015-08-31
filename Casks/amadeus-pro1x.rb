@@ -5,7 +5,7 @@ cask :v1 => 'amadeus-pro1x' do
   url 'http://www.hairersoft.com/Downloads/AmadeusProOld.zip'
   name 'Amadeus Pro'
   homepage 'http://www.hairersoft.com/pro.html'
-  license :unknown
+  license :commercial
 
   app 'Amadeus Pro.app'
 end
