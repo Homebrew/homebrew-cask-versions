@@ -3,7 +3,7 @@ cask :v1 => 'affinity-photo-beta' do
   sha256 :no_check
 
   # amazonaws.com is the official download host per the vendor homepage
-  url 'https://s3.amazonaws.com/affinity-beta/download/Affinity+Photo+Beta.dmg'
+  url 'http://s3.amazonaws.com/affinity-beta/download/Affinity+Photo+Customer+Beta.dmg'
   name 'Affinity Photo'
   homepage 'https://affinity.serif.com/en-us/photo/'
   license :commercial
