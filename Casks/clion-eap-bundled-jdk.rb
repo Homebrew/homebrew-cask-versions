@@ -4,7 +4,7 @@ cask :v1 => 'clion-eap-bundled-jdk' do
 
   url "https://download.jetbrains.com/cpp/CLion-#{version}-custom-jdk-bundled.dmg"
   name 'CLion'
-  homepage 'https://www.jetbrains.com/clion'
+  homepage 'https://confluence.jetbrains.com/display/CLION/Early+Access+Program'
   license :commercial
 
   app 'CLion.app'
