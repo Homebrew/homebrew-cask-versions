@@ -1,10 +1,20 @@
 cask :v1 => 'pycharm-eap' do
-  version '141.1075'
-  sha256 'ec9c79b709142364b5315dd0d98fc9b9a9ee0d2c15fe9745e1e4fceb35620578'
+  version '141.2569'
+  sha256 '4bc042c0726fbe4ac738dd34cc3a59d52b14404ae5d32420b736ada57737017b'
 
   url "http://download.jetbrains.com/python/pycharm-professional-#{version}.dmg"
+  name 'PyCharm'
   homepage 'http://confluence.jetbrains.com/display/PYH/JetBrains+PyCharm+Preview+(EAP)'
-  license :unknown
+  license :commercial
 
-  app 'PyCharm 4.5 EAP.app'
+  app 'PyCharm.app'
+
+  zap :delete => [
+                  '~/Library/Preferences/com.jetbrains.pycharm.plist',
+                  '~/Library/Preferences/PyCharm40',
+                  '~/Library/Application Support/PyCharm40',
+                  '~/Library/Caches/PyCharm40',
+                  '~/Library/Logs/PyCharm40',
+                  '/usr/local/bin/charm',
+                 ]
 end
