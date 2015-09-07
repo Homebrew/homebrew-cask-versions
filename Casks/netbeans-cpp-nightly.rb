@@ -1,6 +1,6 @@
 cask :v1 => 'netbeans-cpp-nightly' do
-  version '201509060314'
-  sha256 'f2117b2bc675c39be55432831b09c680dfb60679219927326dfda2519261f458'
+  version '201509070002'
+  sha256 '39ae95386d6e4ba4ca78b14497b0dcaeb7644402ef7becc3e00e51103e8a79a3'
 
   url "http://bits.netbeans.org/download/trunk/nightly/latest/bundles/netbeans-trunk-nightly-#{version}-cpp-macosx.dmg"
   homepage 'https://netbeans.org/'
