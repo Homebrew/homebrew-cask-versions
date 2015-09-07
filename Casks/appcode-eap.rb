@@ -17,7 +17,11 @@ cask :v1 => 'appcode-eap' do
                   '~/Library/Logs/AppCode32',
                  ]
 
-  conflicts_with :cask => 'appcode-eap-bundled-jdk'
+  conflicts_with :cask => [
+                           'appcode',
+                           'appcode-bundled-jdk',
+                           'appcode-eap-bundled-jdk',
+                          ]
 
   caveats <<-EOS.undent
     #{token} requires Java 6 like any other IntelliJ-based IDE.
@@ -28,5 +32,8 @@ cask :v1 => 'appcode-eap' do
     The vendor (JetBrains) doesn't support newer versions of Java (yet)
     due to several critical issues, see details at
     https://intellij-support.jetbrains.com/entries/27854363
+    
+    To use existing newer Java at your own risk,
+    add JVMVersion=1.6+ to ~/Library/Preferences/IntelliJIdea14/idea.properties
   EOS
 end
