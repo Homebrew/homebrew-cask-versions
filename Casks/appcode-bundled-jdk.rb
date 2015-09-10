@@ -1,16 +1,16 @@
-cask :v1 => 'appcode-eap-bundled-jdk' do
-  version '141.2455.5'
-  sha256 '1ded90abb827e4bf4282a558376e1b0852cf94eac622afffc185cde878db4c73'
-
+cask :v1 => 'appcode-bundled-jdk' do
+  version '3.2'
+  sha256 'd617f919f9dcb0033c74f3168efb705d6fb2fa5471368df4ef68fc1c18f10a35'
+  
   url "https://download.jetbrains.com/objc/AppCode-#{version}-custom-jdk-bundled.dmg"
   name 'AppCode'
-  homepage 'https://confluence.jetbrains.com/display/OBJC/AppCode+EAP'
+  homepage 'https://www.jetbrains.com/objc/'
   license :commercial
 
   app 'AppCode.app'
 
   zap :delete => [
-                  '~/Library/Preferences/com.jetbrains.AppCode-EAP.plist',
+                  '~/Library/Preferences/com.jetbrains.AppCode.plist',
                   '~/Library/Preferences/AppCode32',
                   '~/Library/Application Support/AppCode32',
                   '~/Library/Caches/AppCode32',
@@ -20,6 +20,6 @@ cask :v1 => 'appcode-eap-bundled-jdk' do
   conflicts_with :cask => [
                            'appcode',
                            'appcode-eap',
-                           'appcode-bundled-jdk',
+                           'appcode-eap-bundled-jdk',
                           ]
 end
