@@ -1,11 +1,11 @@
 cask :v1 => 'timemachinescheduler-beta' do
-  version '4.0b3(483)'
-  sha256 '2cd1c172da73e7ff26ddfa71417dbf323a635b3eef2c8f3025edbaa2686880ba'
+  version '4.0b8(510)'
+  sha256 '8f05280e3375c6d7d7a7767ed3ae4be2c69b6c7826153b8ec28f566b51404d59'
 
-  url 'http://www.klieme.com/Downloads/TimeMachineScheduler/TimeMachineScheduler_4.0b3Full.zip'
+  url 'http://www.klieme.com/Downloads/TimeMachineScheduler/TimeMachineScheduler_4.0b8Full.zip'
   homepage 'http://www.klieme.com/TimeMachineScheduler.html'
   license :unknown
 
-  container :nested => 'TimeMachineScheduler_4.0b3.dmg'
+  container :nested => 'TimeMachineScheduler_4.0b8.dmg'
   app 'TimeMachineScheduler.app'
 end
