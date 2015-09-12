@@ -1,10 +1,10 @@
 cask :v1 => 'omnifocus-beta' do
-  version '2.2.x-r241602'
-  sha256 '72c8e43de504ba18450d8c04cefefeea8e90bb81561b8c52869c2ce91ed61ae8'
+  version 'r243022'
+  sha256 '4afcc45844522d63b787f7f346bfa81094aecce790cec8b4b9fbedbafcc217c3'
 
-  url "http://omnistaging.omnigroup.com/omnifocus-2.2.x/releases/OmniFocus-#{version}-Test.dmg"
+  url "http://omnistaging.omnigroup.com/omnifocus-2.x/releases/OmniFocus-#{version}-Test.dmg"
   name 'OmniFocus'
-  homepage 'http://omnistaging.omnigroup.com/omnifocus-2.2.x/'
+  homepage 'http://omnistaging.omnigroup.com/omnifocus-2.x/'
   license :commercial
 
   app 'OmniFocus.app'
