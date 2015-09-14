@@ -1,6 +1,6 @@
 cask :v1 => 'sublime-text3' do
-  version 'Build 3095'
-  sha256 'f03b7af33cc20dbff863b35016f77803239168e2bd3691b756a3e4729cb5e5c2'
+  version 'Build 3083'
+  sha256 'fe6dd8d8192fdb01988f99289e5bc1d9a4e66cf67548e144002051c23369a5ff'
 
   # rackcdn.com is the official download host per the vendor homepage
   url "http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20#{version.sub(' ', '%20')}.dmg"
