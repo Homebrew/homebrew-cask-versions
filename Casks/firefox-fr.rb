@@ -1,8 +1,8 @@
 cask :v1 => 'firefox-fr' do
-  version :latest
-  sha256 :no_check
+  version '40.0.3'
+  sha256 '410e5f3815bb9ebd7addeefb597cf2c3b156765649f088f4d4d8173c2d968da2'
 
-  url 'https://download.mozilla.org/?product=firefox-latest&os=osx&lang=fr'
+  url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=fr"
   name 'Firefox'
   homepage 'https://www.mozilla.org/fr/firefox/new'
   license :mpl
