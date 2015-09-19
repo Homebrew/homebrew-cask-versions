@@ -2,7 +2,7 @@ cask :v1 => 'phpstorm-eap' do
   version '142.4912'
   sha256 '399f96606592a33ecc7969853d824f04dba9fe36013d43e176e56570124b841d'
 
-  url "http://download.jetbrains.com/webide/PhpStorm-EAP-#{version}.dmg"
+  url "https://download.jetbrains.com/webide/PhpStorm-EAP-#{version}.dmg"
   name 'PhpStorm EAP'
   homepage 'https://confluence.jetbrains.com/display/PhpStorm/PhpStorm+Early+Access+Program'
   license :commercial
