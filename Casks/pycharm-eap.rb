@@ -1,6 +1,6 @@
 cask :v1 => 'pycharm-eap' do
-  version '141.2569'
-  sha256 '4bc042c0726fbe4ac738dd34cc3a59d52b14404ae5d32420b736ada57737017b'
+  version '142.4957'
+  sha256 '8307c816a4fcd48a012c955d051aec34553c7204025a3920519d748e5770e7d1'
 
   url "http://download.jetbrains.com/python/pycharm-professional-#{version}.dmg"
   name 'PyCharm'
@@ -11,10 +11,10 @@ cask :v1 => 'pycharm-eap' do
 
   zap :delete => [
                   '~/Library/Preferences/com.jetbrains.pycharm.plist',
-                  '~/Library/Preferences/PyCharm40',
-                  '~/Library/Application Support/PyCharm40',
-                  '~/Library/Caches/PyCharm40',
-                  '~/Library/Logs/PyCharm40',
+                  '~/Library/Preferences/PyCharm50',
+                  '~/Library/Application Support/PyCharm50',
+                  '~/Library/Caches/PyCharm50',
+                  '~/Library/Logs/PyCharm50',
                   '/usr/local/bin/charm',
                  ]
 end
