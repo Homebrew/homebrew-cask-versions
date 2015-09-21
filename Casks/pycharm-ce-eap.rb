@@ -1,6 +1,6 @@
 cask :v1 => 'pycharm-ce-eap' do
-  version '141.2569'
-  sha256 'b42161a213316ee6cc3c0fc95f2c8316ddbdda7e3b2d771aa9ae6b520d43d156'
+  version '142.4957'
+  sha256 '17d50688993b914a72487934914353ef396f8baedec0acb0a79d5ce11c4a2dba'
 
   url "http://download.jetbrains.com/python/pycharm-community-#{version}.dmg"
   name 'PyCharm Community Edition'
@@ -11,10 +11,10 @@ cask :v1 => 'pycharm-ce-eap' do
 
   zap :delete => [
                   '~/Library/Preferences/com.jetbrains.pycharm.plist',
-                  '~/Library/Preferences/PyCharm40',
-                  '~/Library/Application Support/PyCharm40',
-                  '~/Library/Caches/PyCharm40',
-                  '~/Library/Logs/PyCharm40',
+                  '~/Library/Preferences/PyCharm50',
+                  '~/Library/Application Support/PyCharm50',
+                  '~/Library/Caches/PyCharm50',
+                  '~/Library/Logs/PyCharm50',
                   '/usr/local/bin/charm',
                  ]
 end
