@@ -7,7 +7,7 @@ cask :v1 => 'clion-eap' do
   homepage 'https://confluence.jetbrains.com/display/CLION/Early+Access+Program'
   license :commercial
 
-  app 'CLion.app'
+  app 'CLion EAP.app'
 
   zap :delete => [
                   '~/Library/Preferences/com.jetbrains.CLion.plist',
