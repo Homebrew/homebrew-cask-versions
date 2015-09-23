@@ -1,12 +1,12 @@
 cask :v1 => 'scala-ide-milestone' do
-  version '4.0.0-rc4'
+  version '4.2.0-rc3'
 
   if Hardware::CPU.is_32_bit?
     url "http://downloads.typesafe.com/scalaide-pack/#{version}-luna-211-20141210/scala-SDK-#{version}-2.11-macosx.cocoa.x86.zip"
-    sha256 '767564ede971095f91c265f05c96daca0816722d5784f490bd326b9a7b6c222e'
+    sha256 'c23ed7572771fe330b1aef1827f2a32a63a1b1619d8bf1af8df7108ec9e38bf7'
   else
     url "http://downloads.typesafe.com/scalaide-pack/#{version}-luna-211-20141210/scala-SDK-#{version}-2.11-macosx.cocoa.x86_64.zip"
-    sha256 'd39854dafd0a6b573e8491f4e44abac75d78154cf1226fa52ac2e2ce246ef0ae'
+    sha256 '9a49e95bf938509bf9717558c97e61b86bb0ff790b3dca1043883cdbab870808'
   end
 
   name 'Scala IDE'
