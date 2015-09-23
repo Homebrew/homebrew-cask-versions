@@ -3,6 +3,7 @@ cask :v1 => 'google-chrome-dev' do
   sha256 :no_check
 
   url 'https://dl.google.com/chrome/mac/dev/googlechrome.dmg'
+  name 'Google Chrome'
   homepage 'https://www.google.com/chrome/browser/desktop/index.html?extra=devchannel'
   license :gratis
   tags :vendor => 'Google'
