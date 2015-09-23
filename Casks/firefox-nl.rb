@@ -1,6 +1,6 @@
 cask :v1 => 'firefox-nl' do
-  version '40.0.3'
-  sha256 '4ebca181b5dd79cd5a4188b486e848469c36ee78680fe95566cecb358b44724d'
+  version '41.0'
+  sha256 '28183d1c7be86ba2d9b8f3189daeb12d3a4b10014355a98774366d504c25cf7b'
 
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=nl"
   name 'Firefox'
