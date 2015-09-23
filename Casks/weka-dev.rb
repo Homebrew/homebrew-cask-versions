@@ -1,6 +1,6 @@
 cask :v1 => 'weka-dev' do
-  version '3.7.12'
-  sha256 '3b208053a7feb8297dbcb48b5c951cff18d68859c6962b8b73fe3649b2b60c8e'
+  version '3.7.13'
+  sha256 'ca8b73d9978b9f9e8a280fef3fe9f1edfd16e2f0aff3b26ad4ace367310f79c9'
 
   # sourceforge.net is the official download host per the vendor homepage
   url "http://downloads.sourceforge.net/sourceforge/weka/weka-#{version.gsub('.','-')}-oracle-jvm.dmg"
