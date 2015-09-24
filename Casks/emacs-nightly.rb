@@ -1,6 +1,6 @@
 cask :v1 => 'emacs-nightly' do
-  version '2015-09-22_01-41-15-bfa1aa8'
-  sha256 'f1eb05822ec187867df8d14299b4364b0cc87f7af95abf7c5c2e2049bfa87365'
+  version '2015-09-23_01-41-14-325200a'
+  sha256 'dfe0dddf3c9b3ad5376e1d74b01078bb38133fb6c73b85b00feee312c10659b5'
 
   url "http://emacsformacosx.com/emacs-builds/Emacs-#{version}-universal.dmg"
   name 'Emacs for Mac OS X'
