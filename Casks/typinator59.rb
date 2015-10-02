@@ -4,7 +4,7 @@ cask :v1 => 'typinator59' do
 
   url 'http://www.ergonis.com/downloads/archive/typinator/Typinator59-Install.dmg'
   homepage 'http://www.ergonis.com/products/typinator/'
-  license :unknown
+  license :commercial
 
   app 'Typinator.app'
 end
