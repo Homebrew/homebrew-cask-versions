@@ -1,6 +1,6 @@
 cask :v1 => 'wimoweh-beta' do
-  version '1.1.52.BETA'
-  sha256 'ab7e8a298a1b8bb5bdfb6e96865eb77cec6391df2292d0f3b8851ca54215c0e1'
+  version '1.1.54.BETA'
+  sha256 '7867b5601dbe39c1038eeffc812343f9f4908596475d52b0b38a1d1212e019a7'
 
   url "https://www.serialangels.co.uk/sa-content/uploads/2015/08/Wimoweh.#{version}_.zip"
   homepage 'http://www.serialangels.co.uk/index.php/wimoweh/'
