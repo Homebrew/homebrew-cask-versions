@@ -1,6 +1,6 @@
 cask :v1 => 'totalfinder-beta' do
-  version '1.7.1'
-  sha256 '32a5c8be84ef5bc305e582085f455b09c502fd6e447c4fdb08fba0eba9cc51de'
+  version '1.7.3'
+  sha256 '3a9ea45c2a4abdfd186ddb6a2363ee6037a9b2307de8bea475c63ff3116adfe9'
 
   url "http://downloads.binaryage.com/TotalFinder-#{version}.dmg"
   homepage 'http://totalfinder.binaryage.com/beta-changes'
