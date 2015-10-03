@@ -1,6 +1,6 @@
 cask :v1 => 'a-better-finder-rename-beta' do
   version '10'
-  sha256 'df4208eb01c25434b5c93c65ae82c12b2bab893a63d5c286f8c89cf4ae7b7137'
+  sha256 '7a103b11efbd649f646fe93435cb07b6bc9b93024c177921109e327960566fda'
 
   url "http://www.publicspace.net/download/ABFRX#{version}.dmg"
   name 'A Better Finder Rename'
