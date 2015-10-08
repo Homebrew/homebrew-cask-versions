@@ -22,16 +22,21 @@ cask :v1 => 'java7' do
     system '/usr/bin/sudo', '-E', '--',
       '/usr/libexec/PlistBuddy', '-c', 'Add :JavaVM:JVMCapabilities: string Applets',    "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Info.plist"
     system '/usr/bin/sudo', '-E', '--',
-      '/bin/rm', '-rf', '--', '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
-    system '/usr/bin/sudo', '-E', '--',
-      '/bin/ln', '-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents", '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
-    system '/usr/bin/sudo', '-E', '--',
       '/bin/mkdir', '-p', '--', "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Home/bundle/Libraries"
     system '/usr/bin/sudo', '-E', '--',
       '/bin/ln', '-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Home/jre/lib/server/libjvm.dylib", "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Home/bundle/Libraries/libserver.dylib"
+    if MacOS.release <= :mavericks
+      system '/usr/bin/sudo', '-E', '--',
+        '/bin/rm', '-rf', '--', '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
+      system '/usr/bin/sudo', '-E', '--',
+        '/bin/ln', '-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents", '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
+    end
   end
+
   uninstall :pkgutil => 'com.oracle.jdk7u79',
-            :delete => '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
+            :delete => [
+                          MacOS.release <= :mavericks ? '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK' : ''
+                       ].keep_if { |v| !v.empty? }
             
   zap       :delete => [
                         '~/Library/Application Support/Oracle/Java',
