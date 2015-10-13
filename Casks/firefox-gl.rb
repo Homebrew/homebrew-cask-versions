@@ -1,6 +1,6 @@
 cask :v1 => 'firefox-gl' do
-  version '41.0'
-  sha256 'b0914b8d5e2309843fe0e9c296bc66a68c6e5a47eab13ede3b3e8f6261b63ade'
+  version '41.0.1'
+  sha256 '7c3aa54ab2ed2f997f7ded034b37e1a3248c2d93e78273f20e701f5997a79b25'
 
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=gl"
   name 'Firefox'
