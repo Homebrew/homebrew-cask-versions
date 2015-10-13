@@ -8,5 +8,5 @@ cask :v1 => 'vagrant143' do
   license :mit
 
   pkg 'Vagrant.pkg'
-  uninstall :script => 'uninstall.tool', :input => %w[Yes]
+  uninstall :script => { :executable => 'uninstall.tool', :input => %w[Yes] }
 end
