@@ -1,8 +1,8 @@
 cask :v1 => 'android-studio-canary' do
-  version '1.4.0.10'
-  sha256 'a97d00384a4e2b045e793203f1407cba3ea37fa08bbffdbef8fbd1a8a2b27da0'
+  version '1.5.0.0'
+  sha256 '7fe3bd0c2f5ef2f9cf8ccef039b3d4df840200736c4f8613bc192530ac98e3ec'
 
-  url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-ide-141.2288178-mac.zip"
+  url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-ide-141.2314126-mac.zip"
   name 'Android Studio Canary'
   homepage 'https://sites.google.com/a/android.com/tools/download/studio/canary'
   license :apache
