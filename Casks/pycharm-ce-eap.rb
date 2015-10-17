@@ -1,11 +1,11 @@
 cask :v1 => 'pycharm-ce-eap' do
-  version '143.165'
-  sha256 'e606e70a4bfc01401b8045c7a3a86641b5e94d7444a5cd2e4fd8ca91770a378d'
+  version '143.308'
+  sha256 '7ef7f11d8334ec9ccda424de73c98d6498c439de9495f8240e386be1fd68abd8'
 
   url "http://download.jetbrains.com/python/pycharm-community-#{version}-jdk-bundled.dmg"
   name 'PyCharm Community Edition'
   homepage 'http://confluence.jetbrains.com/display/PYH/JetBrains+PyCharm+Preview+(EAP)'
-  license :commercial
+  license :apache
 
   app 'PyCharm CE.app'
 
@@ -17,4 +17,6 @@ cask :v1 => 'pycharm-ce-eap' do
                   '~/Library/Logs/PyCharm50',
                   '/usr/local/bin/charm',
                  ]
+
+  conflicts_with :cask => 'pycharm-ce'
 end
