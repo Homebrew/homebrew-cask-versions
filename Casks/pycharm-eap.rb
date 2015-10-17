@@ -1,6 +1,6 @@
 cask :v1 => 'pycharm-eap' do
-  version '143.165'
-  sha256 '7e985025ec3441340535e45293bd10aed5e7e6bcf915caddb3dca36ba296974b'
+  version '143.308'
+  sha256 'c6264bc88887238ed7c1c47947ccecd502a79ca0cd26a6369959819fa8ff22a8'
 
   url "http://download.jetbrains.com/python/pycharm-professional-#{version}-jdk-bundled.dmg"
   name 'PyCharm'
@@ -17,4 +17,6 @@ cask :v1 => 'pycharm-eap' do
                   '~/Library/Logs/PyCharm50',
                   '/usr/local/bin/charm',
                  ]
+
+  conflicts_with :cask => 'pycharm'
 end
