@@ -1,6 +1,6 @@
 cask :v1 => 'royal-tsx-beta' do
-  version '2.1.1.5'
-  sha256 '57e2482389c62b9b2c3e8e8923dc144931d0a03a812b3809288c0ed1d95ffb80'
+  version '2.2.0.1000'
+  sha256 '4f46388d574cc4b4bcc8881b5fdb086d0c8ea47a6cc5563ebe6cc4a84795d363'
 
   url "http://v2.royaltsx.com/updates/royaltsx_#{version}.dmg"
   name 'Royal TSX'
