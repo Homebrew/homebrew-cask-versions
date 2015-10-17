@@ -1,8 +1,8 @@
 cask :v1 => 'oclint-nightly' do
-  version '0.9.dev.603daa8'
-  sha256 '3cd8a5e5430d454b59bed6887ce521a523342e739b67390593b0c3bb5a5366be'
+  version '0.9.dev.d18b401'
+  sha256 '6c14a116b1a87139f5b646f1e2119ba0aef717cb68853f1060c69d2197547d06'
 
-  url "http://archives.oclint.org/nightly/oclint-#{version}-x86_64-darwin-14.4.0.tar.gz"
+  url "http://archives.oclint.org/nightly/oclint-#{version}-x86_64-darwin-14.5.0.tar.gz"
   name 'OCLint'
   homepage 'http://oclint.org'
   license :oss
