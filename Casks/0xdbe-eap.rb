@@ -1,8 +1,8 @@
 cask :v1 => '0xdbe-eap' do
   version '143.109.1'
-  sha256 'ba64935b858b8a90af9a27c77494b02025433ffce4dfac7105e51b3917323554'
+  sha256 '53b106c54610f3af6ed5cb1ad196f961ab5d9cc378fe6f20c317a72914cb3ecd'
 
-  url "https://download.jetbrains.com/dbe/0xdbe-#{version}.dmg"
+  url "https://download.jetbrains.com/dbe/0xdbe-#{version}-custom-jdk-bundled.dmg"
   name '0xDBE EAP'
   name '0xDBE'
   homepage 'https://confluence.jetbrains.com/display/DBE/0xDBE+1.0+EAP'
