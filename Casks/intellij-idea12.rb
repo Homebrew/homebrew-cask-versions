@@ -4,7 +4,7 @@ cask :v1 => 'intellij-idea12' do
 
   url "http://download.jetbrains.com/idea/ideaIU-#{version}.dmg"
   homepage 'https://www.jetbrains.com/idea/index.html'
-  license :unknown
+  license :commercial
 
   app 'IntelliJ IDEA 12.app'
 end
