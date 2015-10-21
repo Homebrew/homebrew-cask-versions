@@ -1,5 +1,5 @@
 cask :v1 => 'atom-beta' do
-  version '1.1.0-beta'
+  version '1.1.0-beta1'
   sha256 'd4e48931854cd2c3aa7118372baaab1d6a79364eec472543b0f18bacff37776d'
 
   # github.com is the official download host per the vendor homepage
