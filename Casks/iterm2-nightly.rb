@@ -1,6 +1,6 @@
 cask :v1 => 'iterm2-nightly' do
-  version '2_9_20151006'
-  sha256 '1b066544e3c2507c0ec43d6999ed5b450589651fc519f490dc289fb1a4a3d936'
+  version '2_9_20151020'
+  sha256 '978ad84847776c8eb46b591abb7c9f3db45376fc22ee0554d08258c1a03abe32'
 
   url "https://www.iterm2.com/downloads/nightly/iTerm2-#{version}-nightly.zip"
   appcast 'https://iterm2.com/appcasts/nightly.xml'
