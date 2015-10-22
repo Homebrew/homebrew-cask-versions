@@ -1,6 +1,6 @@
 cask :v1 => 'appcode-eap' do
-  version '143.249.10'
-  sha256 'f7205e34d8e9ecd88aafc06b7a01c6c07c6502ab84508985eafc7f2251ec7a5b'
+  version '143.379.12'
+  sha256 '47e35032feff60745400564a9dcf6ea27b676badf820ef59d1e4b3dda200524a'
 
   url "https://download.jetbrains.com/objc/AppCode-#{version}-custom-jdk-bundled.dmg"
   name 'AppCode'
