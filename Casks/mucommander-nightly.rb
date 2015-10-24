@@ -1,5 +1,5 @@
 cask :v1 => 'mucommander-nightly' do
-  version '0.9.1-nighly'
+  version '0.9.1-nightly'
   sha256 '020df01bfc2d8aff20933f47fd80443d20b702e18f7a6a562c2bc25b15e9bc15'
 
   url 'http://www.mucommander.com/download/nightly/mucommander-current.app.tar.gz'
