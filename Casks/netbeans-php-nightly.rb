@@ -1,6 +1,6 @@
 cask :v1 => 'netbeans-php-nightly' do
-  version '201510230002'
-  sha256 'b9055497944604d8785628b53dcae8e6ba8da33633be8766fc91ba642778f305'
+  version '201510250002'
+  sha256 'c522e7e540d98463278f8ecf4caa9f4826f8cd13255189cf9c6b8ead3320fa8e'
 
   url "http://bits.netbeans.org/download/trunk/nightly/latest/bundles/netbeans-trunk-nightly-#{version}-cpp-macosx.dmg"
   name 'NetBeans IDE for PHP'
