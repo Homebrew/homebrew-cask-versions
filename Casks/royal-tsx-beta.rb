@@ -6,7 +6,7 @@ cask :v1 => 'royal-tsx-beta' do
   name 'Royal TSX'
   appcast 'http://v2.royaltsx.com/updates_beta.php'
   homepage 'http://www.royaltsx.com'
-  license :freemium
+  license :gratis
 
   app 'Royal TSX.app'
 end
