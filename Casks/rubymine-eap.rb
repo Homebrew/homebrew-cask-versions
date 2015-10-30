@@ -1,6 +1,6 @@
 cask :v1 => 'rubymine-eap' do
-  version '143.366'
-  sha256 '2060585b77d7956d42254737c07ca044fe4188666c43493e29026e881d483c1f'
+  version '8.0.0-RC'
+  sha256 'efd03e25658b37d2b94e78b9fb6717ee7a33aa7f90f1ec20f1752a19829f38df'
 
   url "https://download.jetbrains.com/ruby/RubyMine-#{version}-custom-jdk-bundled.dmg"
   name 'RubyMine EAP'
