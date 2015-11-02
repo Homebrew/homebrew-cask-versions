@@ -1,8 +1,8 @@
 cask :v1 => 'phpstorm-bundled-jdk' do
-  version '9.0.2'
-  sha256 '38030261bb8ee17e0238b92f7d1f49671e6dc54b2b69aeaf25cbd20b94f0c479'
+  version '10.0'
+  sha256 '6651185b3dace3f9a89046573558cd9223729de2abe90821aa1c2eae146d9dc5'
 
-  url "http://download-cf.jetbrains.com/webide/PhpStorm-#{version}-custom-jdk-bundled.dmg"
+  url "https://download.jetbrains.com/webide/PhpStorm-#{version}-custom-jdk-bundled.dmg"
   name 'PhpStorm'
   homepage 'https://www.jetbrains.com/phpstorm/'
   license :commercial
@@ -10,8 +10,8 @@ cask :v1 => 'phpstorm-bundled-jdk' do
   app 'PhpStorm.app'
 
   zap :delete => [
-                  '~/Library/Application Support/WebIde90',
-                  '~/Library/Preferences/WebIde90',
+                  '~/Library/Application Support/WebIde100',
+                  '~/Library/Preferences/WebIde100',
                   '~/Library/Preferences/com.jetbrains.PhpStorm.plist',
                  ]
 end
