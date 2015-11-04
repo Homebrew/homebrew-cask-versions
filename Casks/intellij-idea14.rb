@@ -10,6 +10,8 @@ cask :v1 => 'intellij-idea14' do
 
   zap :delete => [
                   '~/Library/Application Support/IntelliJIdea14',
+                  '~/Library/Caches/IntelliJIdea14',
+                  '~/Library/Logs/IntelliJIdea14',
                   '~/Library/Preferences/IntelliJIdea14',
                  ]
 
