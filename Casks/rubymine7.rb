@@ -18,5 +18,5 @@ cask :v1 => 'rubymine7' do
                   '/usr/local/bin/mine',
                  ]
 
-  conflicts_with :cask => 'rubymine',
+  conflicts_with :cask => 'rubymine'
 end
