@@ -1,6 +1,6 @@
 cask :v1 => 'julia-nightly' do
-  version '0.5.0-137abf537d'
-  sha256 'c78990d050cb14a2f7bd66eaba8973ba40a4b3930e7c088c4e04703d02a4ef36'
+  version '0.5.0-e6cb310f0a'
+  sha256 '13abfa698b416c811a7cae0f33f1b06f8c5fa6c5a61106332b7408b5d6c6de16'
 
   # amazonaws.com is the official download host per vendor homepage
   url "https://s3.amazonaws.com/julianightlies/bin/osx/x64/#{version.sub(%r{(\d+\.\d+).*},'\1')}/julia-#{version}-osx.dmg"
