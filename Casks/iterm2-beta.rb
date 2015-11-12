@@ -1,8 +1,8 @@
 cask :v1 => 'iterm2-beta' do
-  version '2.9.20151001'
-  sha256 '0bfb7fa52a69103f2d1779b3c0af9f443dbd5a249ea83f522a452d84dd605b23'
+  version '2.9.20151111'
+  sha256 'fb1c566412656c4e9f5cfdc892a1ea960d0b3124479fd4c60dc65ce48ee37c2e'
 
-  url 'https://iterm2.com/downloads/beta/iTerm2-2_9_20151001.zip'
+  url 'https://iterm2.com/downloads/beta/iTerm2-2_9_20151111.zip'
   name 'iTerm2'
   homepage 'https://www.iterm2.com/'
   license :gpl
