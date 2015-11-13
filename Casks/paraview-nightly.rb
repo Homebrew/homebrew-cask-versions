@@ -1,15 +1,10 @@
 cask :v1 => 'paraview-nightly' do
-  version :latest
-  sha256 :no_check
+  version '4.4.0-297-g4780cde'
+  sha256 '292a8336bf7d1960183498f958bf2c5942d8127800faf7236827dfbdf1411ebc'
 
-  if MacOS.release < :mavericks
-    url 'http://www.paraview.org/paraview-downloads/download.php?submit=Download&version=nightly&type=binary&os=osx&downloadFile=ParaView-Darwin-64bit-Lion-Python27-NIGHTLY.dmg'
-  else
-    url 'http://www.paraview.org/paraview-downloads/download.php?submit=Download&version=nightly&type=binary&os=osx&downloadFile=ParaView-Darwin-64bit-NIGHTLY.dmg'
-  end
-
+  url "http://www.paraview.org/paraview-downloads/download.php?submit=Download&version=nightly&type=all&os=all&downloadFile=ParaView-#{version}-Qt4-OpenGL2-OSX10.7-64bit.dmg"
   homepage 'http://www.paraview.org/'
-  license :unknown
+  license :bsd
 
   app 'paraview.app'
 end
