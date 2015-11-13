@@ -5,7 +5,7 @@ cask :v1 => 'transmit3' do
   url "http://panic.com/museum/transmit/Transmit%20#{version}.zip"
   name 'Transmit'
   homepage 'https://www.panic.com/transmit'
-  license :unknown    # todo: change license and remove this comment; ':unknown' is a machine-generated placeholder
+  license :commercial
 
   app 'Transmit.app'
 
