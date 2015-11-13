@@ -5,7 +5,7 @@ cask :v1 => 'mpeg-streamclip-beta' do
   url "http://www.squared5.com/svideo/MPEG_Streamclip_#{version}.dmg"
   name 'MPEG Streamclip'
   homepage 'http://www.squared5.com/'
-  license :unknown    # todo: change license and remove this comment; ':unknown' is a machine-generated placeholder
+  license :gratis
 
   app 'MPEG Streamclip.app'
 end
