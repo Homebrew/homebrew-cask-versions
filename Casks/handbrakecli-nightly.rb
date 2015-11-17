@@ -1,6 +1,6 @@
 cask :v1 => 'handbrakecli-nightly' do
-  version '20151112180931-476421b'
-  sha256 '848f9b4cfc4155da35c709d460cd20bb8dfa5b701fd064aaed83c9f9db13b08c'
+  version '20151116073140-7bf2842'
+  sha256 '297354b5f7483b27d9c77c559b3d8771e012abc6a2275a1fa5a00b110c59d4a2'
 
   url "http://download.handbrake.fr/nightly/HandBrakeCLI-#{version}-master-osx.dmg"
   name 'HandBrake'
