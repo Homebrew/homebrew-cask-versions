@@ -1,6 +1,6 @@
 cask :v1 => 'sequel-pro-nightly' do
-  version 'rfdef91b45a'
-  sha256 'ff82cb9218250cfc1b4a573ea67cf49f4be1cb886f6aefd0ee35250fb06d1551'
+  version 'r1f7684a8d0'
+  sha256 '0bbfd3597ef1622518391099c4a1b92ca1e3a3ac5081231fcd4a9214472302c6'
 
   url "http://nightly.sequelpro.com/builds/Sequel_Pro_#{version}.dmg"
   name 'Sequel Pro'
