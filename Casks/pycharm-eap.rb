@@ -1,6 +1,6 @@
 cask :v1 => 'pycharm-eap' do
-  version '143.526'
-  sha256 '84d3b91d6da6fb079af57e56be38ebaef66adacd8dcccede6b1825cb4dbebacc'
+  version '143.869.1'
+  sha256 '8ad1192368b02b1539ca54bca2aaa53df22d7470e3882ef58e606d5b6b0bdc9c'
 
   url "http://download.jetbrains.com/python/pycharm-professional-#{version}-jdk-bundled.dmg"
   name 'PyCharm'
