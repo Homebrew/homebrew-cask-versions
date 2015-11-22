@@ -1,6 +1,6 @@
 cask :v1 => '0xdbe-eap' do
-  version '143.732.5'
-  sha256 '97390a9c4f64c66e9c94cceb591e5c13e4381f50f06a76be90f875fa3bb282ac'
+  version '143.898.1'
+  sha256 '71a4a6db67b591d68cbb59d731e79496910e8e7714c203c5900ab1dc96fe5307'
 
   url "https://download.jetbrains.com/dbe/0xdbe-#{version}-custom-jdk-bundled.dmg"
   name '0xDBE EAP'
