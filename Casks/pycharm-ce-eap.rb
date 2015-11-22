@@ -1,6 +1,6 @@
 cask :v1 => 'pycharm-ce-eap' do
-  version '143.526'
-  sha256 '882bc418457041f305917e86b444321842990549b15d91699dbcf988e585a899'
+  version '143.869.1'
+  sha256 '8ff8f90652e713ce13db034c6b6c3801f8c927b399567c9d0bb1a68cacdaaffa'
 
   url "http://download.jetbrains.com/python/pycharm-community-#{version}-jdk-bundled.dmg"
   name 'PyCharm Community Edition'
