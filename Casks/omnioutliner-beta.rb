@@ -1,6 +1,6 @@
 cask :v1 => 'omnioutliner-beta' do
-  version '4.4.x-r247831'
-  sha256 '587c0cee55c2459fb1ad03aeee46eaa5a9cdb02ebde20b298356ac27e10dc262'
+  version '4.4.x-r250030'
+  sha256 '2b8c51ef4d5321b7701858264ea5f0da8358281259d8a1c94d1ac0d55792ba7e'
 
   url "http://omnistaging.omnigroup.com/omnioutliner-4/releases/OmniOutliner-#{version}-Test.dmg"
   name 'OmniOutliner'
