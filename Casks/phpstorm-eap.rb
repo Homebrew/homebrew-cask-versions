@@ -1,6 +1,6 @@
 cask :v1 => 'phpstorm-eap' do
-  version '143.790'
-  sha256 'df29923e1d9e95df63390c96d988f19f6f25e9e62042cfb3c7f6a2e396ce29bb'
+  version '143.1044'
+  sha256 '3c0f6e2113789f86a24d9548172ab04195f364f6f3ab9e645b7fa0c51538ac9f'
 
   url "https://download.jetbrains.com/webide/PhpStorm-EAP-#{version}-custom-jdk-bundled.dmg"
   name 'PhpStorm EAP'
