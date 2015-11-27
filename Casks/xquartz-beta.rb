@@ -1,6 +1,6 @@
 cask :v1 => 'xquartz-beta' do
-  version '2.7.8_rc1'
-  sha256 '95b11b49d9c100c5a04d129172ad8073b2b2fa6b4baab239645706f25ddd127f'
+  version '2.7.9_beta1'
+  sha256 '13b026a1bcd02eff988be1875e40fea5d73bc9e39972d9e586687d647b198906'
 
   url "https://xquartz.macosforge.org/downloads/SL/XQuartz-#{version}.dmg"
   appcast 'http://xquartz-dl.macosforge.org/sparkle/beta.xml',
