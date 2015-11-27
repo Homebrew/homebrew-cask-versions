@@ -11,7 +11,7 @@ cask :v1 => 'java7' do
   homepage 'http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html'
   license :gratis
 
-  pkg 'JDK 7 Update 79.pkg'
+  pkg 'JDK 7 Update 80.pkg'
   postflight do
     system '/usr/bin/sudo', '-E', '--',
       '/usr/libexec/PlistBuddy', '-c', 'Add :JavaVM:JVMCapabilities: string BundledApp', "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Info.plist"
@@ -33,7 +33,7 @@ cask :v1 => 'java7' do
     end
   end
 
-  uninstall :pkgutil => 'com.oracle.jdk7u79',
+  uninstall :pkgutil => 'com.oracle.jdk7u80',
             :delete => [
                           MacOS.release <= :mavericks ? '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK' : ''
                        ].keep_if { |v| !v.empty? }
