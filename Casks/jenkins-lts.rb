@@ -1,6 +1,6 @@
 cask :v1 => 'jenkins-lts' do
-  version '1.625.1'
-  sha256 '073f6e101a767f8e32b4cffe3373cc6943c40568ef2b84dcaf29a26947a8d6c5'
+  version '1.625.2'
+  sha256 '11b1a9f748b67cca6000cf809106ac173d7c0e829418d27999f9b35b9e07cc00'
 
   url "http://mirrors.jenkins-ci.org/osx-stable/jenkins-#{version}.pkg"
   name 'Jenkins'
