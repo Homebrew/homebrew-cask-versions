@@ -12,7 +12,7 @@ cask :v1 => 'go14' do
     pkg "go#{version}.darwin-amd64.pkg"
   end
 
-  name 'Go 1.4'
+  name 'Go'
   homepage 'https://golang.org/'
   license :bsd
 
