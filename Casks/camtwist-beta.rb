@@ -1,11 +1,13 @@
 cask :v1 => 'camtwist-beta' do
-  version '3.0beta'
-  sha256 'c0a241a0313b8b1aa3530efa4fba058b4cfa3cacea41df815738dafddbf7897b'
+  version '3.1'
+  sha256 'ecd19d1f3c126d5397ed4f0a5de53920a2b27baab47acc06754632ebc6e7c545'
 
-  url 'http://camtwiststudio.com/beta/CamTwist_3.0.dmg'
+  url "http://camtwiststudio.com/beta/CamTwist_#{version}.dmg"
   name 'CamTwist'
   homepage 'http://camtwiststudio.com/'
   license :gratis
+  
+  depends_on :macos => '>= :lion'
 
   pkg 'CamTwist.pkg'
 
