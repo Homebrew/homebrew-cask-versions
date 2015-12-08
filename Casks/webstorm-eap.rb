@@ -1,6 +1,6 @@
 cask :v1 => 'webstorm-eap' do
-  version '143.870.2'
-  sha256 '91569c549f9aa1edf5a1a243c2f76923c28aad6b54bd5a349bf9ebb4de3427e7'
+  version '143.1183.13'
+  sha256 '324bf9298ffbab922a8f764f7cdbd1b8d0a2a602cd829bb767217bc7b6a8d4cd'
 
   url "http://download.jetbrains.com/webstorm/WebStorm-#{version}-custom-jdk-bundled.dmg"
   name 'WebStorm'
