@@ -1,6 +1,6 @@
 cask :v1 => 'atom-beta' do
-  version '1.3.0-beta6'
-  sha256 '6137216b17c6df735f16a6de15cbda72fa96d9bd50ef2f789c9e3bc8f94d12f0'
+  version '1.4.0-beta0'
+  sha256 '29d764c24d6c799dd760b4e62604c8ffbbb30c80bc258b6df7e90ee8fd97eb9d'
 
   # github.com is the official download host per the vendor homepage
   url "https://github.com/atom/atom/releases/download/v#{version}/atom-mac.zip"
