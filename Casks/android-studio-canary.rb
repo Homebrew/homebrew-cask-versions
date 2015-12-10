@@ -1,8 +1,8 @@
 cask :v1 => 'android-studio-canary' do
-  version '2.0.0.0'
-  sha256 '61aea6fe29dfd65af2b8dc3a010ca8bbc7db2b881b2a62ee3d4600e67fd96a41'
+  version '2.0.0.1-143.2461418'
+  sha256 '606fdfdf9c8a16cbaecf223afff8b3a8e247e949b75e7e6ede695d77b34e2fb6'
 
-  url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-ide-143.2443734-mac.zip"
+  url "https://dl.google.com/dl/android/studio/ide-zips/#{version.sub(%r{-.*},'')}/android-studio-ide-#{version.sub(%r{.*?-},'')}-mac.zip"
   name 'Android Studio Canary'
   homepage 'https://sites.google.com/a/android.com/tools/download/studio/canary'
   license :apache
@@ -13,6 +13,7 @@ cask :v1 => 'android-studio-canary' do
     #{token} requires Java. You can install the latest version with
     brew cask install java
   EOS
+  
   zap :delete => [
     '~/Library/Preferences/AndroidStudio*',
     '~/Library/Preferences/com.google.android.studio.plist',
