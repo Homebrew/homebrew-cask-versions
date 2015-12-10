@@ -1,6 +1,6 @@
 cask :v1 => 'kicad-nightly' do
-  version 'r6347.20151205-034522'
-  sha256 'd1fc8a34d86500d15a019b5f7ae8acdd32ffa2b7508295fe7691b8faeeaa73d0'
+  version 'r6353.20151208-034416'
+  sha256 '99c3ad5751501a0615c2a15cbc6ec1a7317ec2b0ad8bbd969aea49352e3072d7'
 
   url "http://downloads.kicad-pcb.org/osx/kicad-#{version}.dmg"
   name 'KiCad'
