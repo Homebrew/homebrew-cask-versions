@@ -1,5 +1,5 @@
 cask :v1 => 'firefox-nightly' do
-  version '45.0a1'
+  version '46.0a1'
   sha256 :no_check # required as upstream package is updated in-place
 
   url "https://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-#{version}.en-US.mac.dmg"
