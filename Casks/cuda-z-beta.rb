@@ -1,10 +1,11 @@
 cask 'cuda-z-beta' do
-  version '0.10.244-SVN'
-  sha256 'd449e55f0c3c6110df03efe978c37891698d8a0d1eebc9dc76954bc8384e6ef3'
+  version '0.11.259-SVN'
+  sha256 '93e15644136fa7a04d6ad77d47afe3baaf5728f32d0d1814e5e01b7df4021b23'
 
   url "https://downloads.sourceforge.net/project/cuda-z/cuda-z/Beta/CUDA-Z-#{version}.dmg"
+  name 'CUDA-Z'
   homepage 'http://cuda-z.sourceforge.net'
-  license :oss
+  license :gpl
 
   app 'Cuda-Z.app'
 end
