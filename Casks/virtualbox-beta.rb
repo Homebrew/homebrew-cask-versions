@@ -3,6 +3,7 @@ cask 'virtualbox-beta' do
   sha256 '62f933115498e51ddf5f2dab47dc1eebb42eb78ea1a7665cb91c53edacc847c6'
 
   url "http://download.virtualbox.org/virtualbox/#{version.split('-')[0]}/VirtualBox-#{version}-OSX.dmg"
+  name 'VirtualBox'
   homepage 'http://www.virtualbox.org'
   license :gpl
   tags :vendor => 'Oracle'
