@@ -1,9 +1,9 @@
 cask 'sketch-beta' do
-  version '3.4'
-  sha256 'f4329183d84c8954748e9c70b26d11f187100f3bd9a62a85eb69a2e90d510d8a'
+  version '3.4.4'
+  sha256 'd07b61e926a8a98f43b760fe10150aaf39ec66ad6fe370fac70fdbbb95923f1e'
 
-  # cloudfront.net is the official download host per the vendor homepage
-  url 'https://dl0tgz6ee3upo.cloudfront.net/production/app/builds/006/587/790/original/f683c0a5877f048cbe57429c71ffe36b/Sketch_Beta.zip'
+  # hockeyapp.net is the official download host per the vendor homepage
+  url 'https://rink.hockeyapp.net/api/2/apps/0172d48cceec171249a8d850fb16276b/app_versions/164?format=zip&avtoken=1bf9ed78e68e54974eb9cc9516a216ba82c3f245'
   homepage 'http://bohemiancoding.com/sketch/beta/'
   license :commercial
 
