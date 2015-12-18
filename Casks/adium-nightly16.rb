@@ -1,4 +1,4 @@
-cask :v1 => 'adium-nightly16' do
+cask 'adium-nightly16' do
   version '1.6hgr5915'
   sha256 '70619777433df646a7251a10eb74baecdc5a47be085cd83d35f3750fcfea9e1b'
 

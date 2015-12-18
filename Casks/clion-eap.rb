@@ -1,4 +1,4 @@
-cask :v1 => 'clion-eap' do
+cask 'clion-eap' do
   version '144.2151.8'
   sha256 '909e9955647fe102bf1f83aa3c4bcb91961426674904e1b9072e7eecdaffb74c'
 

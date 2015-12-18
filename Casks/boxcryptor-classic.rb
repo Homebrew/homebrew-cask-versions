@@ -1,4 +1,4 @@
-cask :v1 => 'boxcryptor-classic' do
+cask 'boxcryptor-classic' do
   version :latest
   sha256 :no_check
 

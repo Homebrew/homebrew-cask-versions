@@ -1,4 +1,4 @@
-cask :v1 => 'wimoweh-beta' do
+cask 'wimoweh-beta' do
   version '1.1.54.BETA'
   sha256 '7867b5601dbe39c1038eeffc812343f9f4908596475d52b0b38a1d1212e019a7'
 

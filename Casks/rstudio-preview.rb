@@ -1,4 +1,4 @@
-cask :v1 => 'rstudio-preview' do
+cask 'rstudio-preview' do
   version :latest
   sha256 :no_check
 

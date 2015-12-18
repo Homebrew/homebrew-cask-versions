@@ -1,4 +1,4 @@
-cask :v1 => 'dbeaver-community' do
+cask 'dbeaver-community' do
   version '3.5.6'
   sha256 '416b55adfa76a8d31a652126ad543107866e1e233d1e162fd437591ceaf0e9df'
 

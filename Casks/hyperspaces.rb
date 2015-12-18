@@ -1,4 +1,4 @@
-cask :v1 => 'hyperspaces' do
+cask 'hyperspaces' do
   version '1.1.1'
   sha256 '9ea53ac06f0ecc5ed23b4fb6c61f0a9d4eb2d3141ff3a169315ef725a5522253'
 

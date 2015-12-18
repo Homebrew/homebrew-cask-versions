@@ -1,4 +1,4 @@
-cask :v1 => 'affinity-designer-beta' do
+cask 'affinity-designer-beta' do
   version :latest
   sha256 :no_check
 

@@ -1,4 +1,4 @@
-cask :v1 => 'tower-beta' do
+cask 'tower-beta' do
   version '2.3.2-299'
   sha256 '2778bb1c98417b694bf0b72908c3d88c3b055ac959b6a1366186c0b789a2f20a'
 

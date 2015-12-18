@@ -1,4 +1,4 @@
-cask :v1 => 'boot2docker-status-beta' do
+cask 'boot2docker-status-beta' do
   version '1.1.0.beta2'
   sha256 'ce16ce45def874edacc719ff5ef6b79655011adbb3284da13bc3fef7e09dbcd2'
 

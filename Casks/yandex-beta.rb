@@ -1,4 +1,4 @@
-cask :v1 => 'yandex-beta' do
+cask 'yandex-beta' do
   version :latest
   sha256 :no_check
 

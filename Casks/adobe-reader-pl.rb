@@ -1,4 +1,4 @@
-cask :v1 => 'adobe-reader-pl' do
+cask 'adobe-reader-pl' do
   version '11.0.00'
   sha256 'cfeeef917cec3175ab7673c9afd9df081794d952c5e919e29a962df21e041b37'
 

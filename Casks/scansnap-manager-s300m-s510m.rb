@@ -1,4 +1,4 @@
-cask :v1 => 'scansnap-manager-s300m-s510m' do
+cask 'scansnap-manager-s300m-s510m' do
   version '2.2L16'
   sha256 'e67ce69636883acbdaaec40bb02d8f774c383aaa1c834a08c305a990c8a49436'
 

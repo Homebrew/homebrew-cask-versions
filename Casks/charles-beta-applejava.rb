@@ -1,4 +1,4 @@
-cask :v1 => 'charles-beta-applejava' do
+cask 'charles-beta-applejava' do
   version '3.11.3b4'
   sha256 '5bba5bbfdbed53925ab37a9cc1df943fd5dec8a63ac4f90a4966625baf7f43ce'
 

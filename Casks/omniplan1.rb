@@ -1,4 +1,4 @@
-cask :v1 => 'omniplan1' do
+cask 'omniplan1' do
   version '1.7'
   sha256 '62cd16d91e9833bf2fcff7f083114572e5374f5516f8127c34a2a9444b58cccf'
 

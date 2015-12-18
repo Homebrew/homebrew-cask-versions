@@ -1,4 +1,4 @@
-cask :v1 => 'appcode-eap' do
+cask 'appcode-eap' do
   version '3.3.2-RC'
   sha256 '8278cc789a001b00c2038641572f864f0f9db8f99c88bd074132a5fcd7e1d012'
 

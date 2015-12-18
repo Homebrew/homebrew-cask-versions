@@ -1,4 +1,4 @@
-cask :v1 => 'java-beta' do
+cask 'java-beta' do
   version '1.8.0_72-b05'
   sha256 'e507e19e4300a5478a9c50eec2db50e4e69a9106fca19a15fcb42287bd6131a9'
 

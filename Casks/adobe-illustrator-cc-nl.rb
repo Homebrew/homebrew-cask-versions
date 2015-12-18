@@ -1,4 +1,4 @@
-cask :v1 => 'adobe-illustrator-cc-nl' do
+cask 'adobe-illustrator-cc-nl' do
   version :latest
   sha256 :no_check
 

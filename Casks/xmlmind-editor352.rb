@@ -1,4 +1,4 @@
-cask :v1 => 'xmlmind-editor352' do
+cask 'xmlmind-editor352' do
   version '3.5.2'
   sha256 '94465404d8ebd0e4487231e0d55ba2e0431c6108e5cd81ad7bf0618d75fc3c6d'
 

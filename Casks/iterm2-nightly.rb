@@ -1,4 +1,4 @@
-cask :v1 => 'iterm2-nightly' do
+cask 'iterm2-nightly' do
   version '2_9_20151213'
   sha256 '2d071af597ee2535cd2a32088532054ecc6ee75d8f3cf2036213b9a8cf0c3e4e'
 

@@ -1,4 +1,4 @@
-cask :v1 => 'lightroom4' do
+cask 'lightroom4' do
   version '4.4'
   sha256 'fb94bd221041e2e846d9eb269587a179253b5e36560a20f499a5891f85e77aa3'
 

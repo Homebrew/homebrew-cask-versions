@@ -1,4 +1,4 @@
-cask :v1 => 'adobe-photoshop-lightroom571' do
+cask 'adobe-photoshop-lightroom571' do
   version '5.7.1'
   sha256 '155a91e2c90927a05ccaa244a99fed4784fa7cf26d08c634f5f111629f6b0418'
 

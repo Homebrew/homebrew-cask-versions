@@ -1,4 +1,4 @@
-cask :v1 => 'torbrowser-zh' do
+cask 'torbrowser-zh' do
   version '5.0.5'
   sha256 '63262c34c96c08a553b810fbc21c3e957db16f3fb770c93ae2e2f92db41b3d2e'
 

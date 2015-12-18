@@ -1,4 +1,4 @@
-cask :v1 => 'camtwist-beta' do
+cask 'camtwist-beta' do
   version '3.1'
   sha256 'ecd19d1f3c126d5397ed4f0a5de53920a2b27baab47acc06754632ebc6e7c545'
 

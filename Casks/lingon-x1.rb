@@ -1,4 +1,4 @@
-cask :v1 => 'lingon-x1' do
+cask 'lingon-x1' do
   version :latest
   sha256 :no_check
 

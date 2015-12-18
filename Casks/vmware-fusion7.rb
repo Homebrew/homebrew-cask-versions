@@ -1,4 +1,4 @@
-cask :v1 => 'vmware-fusion7' do
+cask 'vmware-fusion7' do
   version '7.1.3-3204469'
   sha256 '9ba3e002cc2ed3d3adc96b8b748d49c72069acac35f0fcc71ceaa7729895da17'
 

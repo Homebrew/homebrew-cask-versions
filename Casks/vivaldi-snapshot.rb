@@ -1,4 +1,4 @@
-cask :v1 => 'vivaldi-snapshot' do
+cask 'vivaldi-snapshot' do
   version '1.0.344.34'
   sha256 '977552ccca2d50c1ea0ff0c087a4238e6d3781e64d6c64bb32baf2eebf1af736'
 

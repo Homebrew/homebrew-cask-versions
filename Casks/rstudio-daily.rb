@@ -1,4 +1,4 @@
-cask :v1 => 'rstudio-daily' do
+cask 'rstudio-daily' do
   version :latest
   sha256 :no_check
 

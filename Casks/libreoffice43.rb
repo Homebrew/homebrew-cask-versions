@@ -1,4 +1,4 @@
-cask :v1 => 'libreoffice43' do
+cask 'libreoffice43' do
   version '4.3.7.2'
   sha256 'ad8cb940218ac52e240a7e26e6b079da31eb6f6205da732802b445d474353e8f'
 

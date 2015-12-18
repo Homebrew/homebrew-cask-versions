@@ -1,4 +1,4 @@
-cask :v1 => 'virtualbox432698988' do
+cask 'virtualbox432698988' do
   version '4.3.26-98988'
   sha256 '3efddddbed7648d5bdfe11a7a341591d05135cda7298792d93334a5faa83d124'
 

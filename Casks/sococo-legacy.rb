@@ -1,4 +1,4 @@
-cask :v1 => 'sococo-legacy' do
+cask 'sococo-legacy' do
   version '3.5.17_14261'
   sha256 '77d453cdc4bde06344c11bf48ab17604886cf4f68ae7270d12b9158327d1dea0'
 

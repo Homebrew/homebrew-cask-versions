@@ -1,4 +1,4 @@
-cask :v1 => 'pycharm-ce-eap' do
+cask 'pycharm-ce-eap' do
   version '143.1453.1'
   sha256 '86d09b9d4969d7704ac77d9dbc2bbe437a45983fb4598198c9abce5f7fc589f3'
 

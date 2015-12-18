@@ -1,4 +1,4 @@
-cask :v1 => 'paraview-nightly' do
+cask 'paraview-nightly' do
   version '4.4.0-297-g4780cde'
   sha256 '292a8336bf7d1960183498f958bf2c5942d8127800faf7236827dfbdf1411ebc'
 

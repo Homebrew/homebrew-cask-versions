@@ -1,4 +1,4 @@
-cask :v1 => 'jce-unlimited-strength-policy6' do
+cask 'jce-unlimited-strength-policy6' do
   version '1.6'
   sha256 'd0c2258c3364120b4dbf7dd1655c967eee7057ac6ae6334b5ea8ceb8bafb9262'
 

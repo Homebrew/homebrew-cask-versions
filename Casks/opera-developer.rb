@@ -1,4 +1,4 @@
-cask :v1 => 'opera-developer' do
+cask 'opera-developer' do
   version '36.0.2072.0'
   sha256 'ef4dbb8d9743af82521aeafc908f574c5cf8d5d56b9360de888d253a27c1e3f7'
 

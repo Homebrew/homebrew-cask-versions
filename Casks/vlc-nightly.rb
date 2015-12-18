@@ -1,4 +1,4 @@
-cask :v1 => 'vlc-nightly' do
+cask 'vlc-nightly' do
   version :latest
   sha256 :no_check
 

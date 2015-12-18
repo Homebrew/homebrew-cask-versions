@@ -1,4 +1,4 @@
-cask :v1 => '0xdbe-eap' do
+cask '0xdbe-eap' do
   version '143.1301.4'
   sha256 'eefcf8b6e0d7aef9bbdada3282e6957f39da49a1fa5b56efc6bfe77325ede644'
 

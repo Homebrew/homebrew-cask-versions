@@ -1,4 +1,4 @@
-cask :v1 => 'sketchup-pro' do
+cask 'sketchup-pro' do
   version :latest
   sha256 :no_check
 

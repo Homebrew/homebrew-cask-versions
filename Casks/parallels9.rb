@@ -1,4 +1,4 @@
-cask :v1 => 'parallels9' do
+cask 'parallels9' do
   version '9.0.24251.1052177'
   sha256 'd6efe77b6893bfd24ea4d275f1bc417feffb2a899a364ecbb91a25064b9e1c0d'
 

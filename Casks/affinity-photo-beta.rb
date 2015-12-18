@@ -1,4 +1,4 @@
-cask :v1 => 'affinity-photo-beta' do
+cask 'affinity-photo-beta' do
   version :latest
   sha256 :no_check
 

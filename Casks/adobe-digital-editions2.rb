@@ -1,4 +1,4 @@
-cask :v1 => 'adobe-digital-editions2' do
+cask 'adobe-digital-editions2' do
   version '2.0.1'
   sha256 'dcaec3e2cbb2faa7720a2ff06d13af4fe0433cdf991c76eeeed28cb0019b69c0' 
 

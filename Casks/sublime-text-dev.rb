@@ -1,4 +1,4 @@
-cask :v1 => 'sublime-text-dev' do
+cask 'sublime-text-dev' do
   version '3095'
   sha256 'f03b7af33cc20dbff863b35016f77803239168e2bd3691b756a3e4729cb5e5c2'
 

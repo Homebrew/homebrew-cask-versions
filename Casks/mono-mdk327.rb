@@ -1,4 +1,4 @@
-cask :v1 => 'mono-mdk327' do
+cask 'mono-mdk327' do
   version '3.2.7'
   sha256 '261a9ed737f2e8185149857c1a8238bf26a32e7e28ae412c668841fcd77ebfcb'
 

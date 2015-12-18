@@ -1,4 +1,4 @@
-cask :v1 => 'omnioutliner3' do
+cask 'omnioutliner3' do
   version :latest
   sha256 :no_check
 

@@ -1,4 +1,4 @@
-cask :v1 => 'audacity210' do
+cask 'audacity210' do
   version '2.1.0'
   sha256 '0485ab70a86ab6d500b9365b24d279f10971b9260f0b537142b48832f8f84389'
 
