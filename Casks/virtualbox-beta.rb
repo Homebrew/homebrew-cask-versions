@@ -1,6 +1,6 @@
 cask 'virtualbox-beta' do
-  version '5.0.0_RC2-101271'
-  sha256 '6ab15a281b30d60cf245aad3ef66deb72e87deacbcbfc660dfbbc5b8e7c8543d'
+  version '5.0.10-104061'
+  sha256 '62f933115498e51ddf5f2dab47dc1eebb42eb78ea1a7665cb91c53edacc847c6'
 
   url "http://download.virtualbox.org/virtualbox/#{version.split('-')[0]}/VirtualBox-#{version}-OSX.dmg"
   homepage 'http://www.virtualbox.org'
