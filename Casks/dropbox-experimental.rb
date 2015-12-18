@@ -1,10 +1,15 @@
 cask 'dropbox-experimental' do
-  version '3.13.43'
-  sha256 'f50154b7ae4977472776a00a2fb5c2154c210dd048b33a3d68a6b19c09f733c1'
+  version '3.13.45'
+  sha256 'd247b687b7ccb6e47527487f0e2a5edac21c87174f9deed8b5360ecf5e010850'
 
   url "https://dl.dropboxusercontent.com/u/17/Dropbox%20#{version}.dmg"
-  homepage 'https://www.dropboxforum.com/hc/en-us/community/posts/203866863-Experimental-Build-3-13-42'
+  name 'Dropbox'
+  homepage 'https://www.dropboxforum.com/hc/en-us/community/posts/204648876-Experimental-Build-3-13-45'
   license :gratis
 
   app 'Dropbox.app'
+  
+  uninstall :login_item => 'Dropbox'
+  
+  zap :delete => '~/.dropbox'
 end
