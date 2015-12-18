@@ -1,4 +1,4 @@
-cask :v1 => 'emacs-nightly' do
+cask 'emacs-nightly' do
   version '2015-12-09_01-41-29-6148555'
   sha256 'ad4945bf88ae13bbe629806622aae30127067980ad03bb4881798564343b0024'
 

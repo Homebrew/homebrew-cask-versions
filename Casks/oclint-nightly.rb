@@ -1,4 +1,4 @@
-cask :v1 => 'oclint-nightly' do
+cask 'oclint-nightly' do
   version '0.9.dev.d18b401'
   sha256 '6c14a116b1a87139f5b646f1e2119ba0aef717cb68853f1060c69d2197547d06'
 

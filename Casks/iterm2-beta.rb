@@ -1,4 +1,4 @@
-cask :v1 => 'iterm2-beta' do
+cask 'iterm2-beta' do
   version '2.9.20151111'
   sha256 'fb1c566412656c4e9f5cfdc892a1ea960d0b3124479fd4c60dc65ce48ee37c2e'
 

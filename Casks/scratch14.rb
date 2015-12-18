@@ -1,4 +1,4 @@
-cask :v1 => 'scratch14' do
+cask 'scratch14' do
   version '1.4'
   sha256 '0d1dbeba8af8bc36028cde1da3374b1abd9daee549287ba86a0738a6b92da441'
 

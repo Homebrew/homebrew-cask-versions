@@ -1,4 +1,4 @@
-cask :v1 => 'spyder-py2' do
+cask 'spyder-py2' do
   version '2.3.7'
   sha256 'f1bbc488a884decaa695dadded870b2679f32470dcdf687b7fab186328088187'
 

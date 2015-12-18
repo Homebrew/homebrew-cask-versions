@@ -1,4 +1,4 @@
-cask :v1 => 'screenflow3' do
+cask 'screenflow3' do
   version '3.0'
   sha256 '88e72cc2a07fdb93aa6d20e7ea81ba7c3536a1ab325f6a92316a81ddf6e3dcf2'
 

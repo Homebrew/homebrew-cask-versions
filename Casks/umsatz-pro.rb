@@ -1,4 +1,4 @@
-cask :v1 => 'umsatz-pro' do
+cask 'umsatz-pro' do
   version :latest
   sha256 :no_check
 

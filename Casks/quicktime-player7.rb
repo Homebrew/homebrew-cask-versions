@@ -1,4 +1,4 @@
-cask :v1 => 'quicktime-player7' do
+cask 'quicktime-player7' do
   version '7.6.6'
   sha256 '954c2376d2d747821614dc802249cf3c708a4792abed08945d7261de3894e759'
 

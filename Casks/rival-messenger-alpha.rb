@@ -1,4 +1,4 @@
-cask :v1 => 'rival-messenger-alpha' do
+cask 'rival-messenger-alpha' do
   version :latest
   sha256 :no_check
 

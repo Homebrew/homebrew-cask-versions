@@ -1,4 +1,4 @@
-cask :v1 => 'earlybird' do
+cask 'earlybird' do
   version '43.0a2'
   sha256 :no_check  # required as upstream package is updated in-placea
 

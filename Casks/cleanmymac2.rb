@@ -1,4 +1,4 @@
-cask :v1 => 'cleanmymac2' do
+cask 'cleanmymac2' do
   version '2.3.5'
   sha256 '16e192edcf58f25c6763349ef0e5194268bec4d000912b64b34f5897b4784097'
 

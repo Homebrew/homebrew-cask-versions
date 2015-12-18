@@ -1,4 +1,4 @@
-cask :v1 => 'trillian-beta' do
+cask 'trillian-beta' do
   version :latest
   sha256 :no_check
 

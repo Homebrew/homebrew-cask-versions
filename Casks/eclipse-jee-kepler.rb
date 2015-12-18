@@ -1,4 +1,4 @@
-cask :v1 => 'eclipse-jee-kepler' do
+cask 'eclipse-jee-kepler' do
   version '4.3.2'
   sha256 'd18c5b4249a782a36c2d7bb377871393acd5dd552a195fc49b5b944f04874fbf'
 

@@ -1,4 +1,4 @@
-cask :v1 => 'java7' do
+cask 'java7' do
   version '1.7.0_80'
   sha256 '2b9deef240a7f07d08541da01bbd60cbf93bf713efd5997e586ba23ec4f5089e'
 

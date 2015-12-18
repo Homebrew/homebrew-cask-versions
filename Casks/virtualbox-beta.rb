@@ -1,4 +1,4 @@
-cask :v1 => 'virtualbox-beta' do
+cask 'virtualbox-beta' do
   version '5.0.0_RC2-101271'
   sha256 '6ab15a281b30d60cf245aad3ef66deb72e87deacbcbfc660dfbbc5b8e7c8543d'
 

@@ -1,4 +1,4 @@
-cask :v1 => 'world-of-tanks-kr' do
+cask 'world-of-tanks-kr' do
   version :latest
   sha256 :no_check
 

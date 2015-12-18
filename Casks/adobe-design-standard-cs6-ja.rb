@@ -1,4 +1,4 @@
-cask :v1 => 'adobe-design-standard-cs6-ja' do
+cask 'adobe-design-standard-cs6-ja' do
   version :latest
   sha256 :no_check
 

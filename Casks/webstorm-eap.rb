@@ -1,4 +1,4 @@
-cask :v1 => 'webstorm-eap' do
+cask 'webstorm-eap' do
   version '143.1183.13'
   sha256 '324bf9298ffbab922a8f764f7cdbd1b8d0a2a602cd829bb767217bc7b6a8d4cd'
 

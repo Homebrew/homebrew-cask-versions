@@ -1,4 +1,4 @@
-cask :v1 => 'netbeans-cpp-nightly' do
+cask 'netbeans-cpp-nightly' do
   version '201512160002'
   sha256 '59d1dd923f5ccc29e411fe6053a8d29c97b42bd57ccd2497cfc21437d98eef1b'
 

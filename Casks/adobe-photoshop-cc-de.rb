@@ -1,4 +1,4 @@
-cask :v1 => 'adobe-photoshop-cc-de' do
+cask 'adobe-photoshop-cc-de' do
   version :latest
   sha256 :no_check
 

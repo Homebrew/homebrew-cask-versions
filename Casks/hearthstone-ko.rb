@@ -1,4 +1,4 @@
-cask :v1 => 'hearthstone-ko' do
+cask 'hearthstone-ko' do
   version :latest
   sha256 :no_check
 

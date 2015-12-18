@@ -1,4 +1,4 @@
-cask :v1 => 'phpstorm-eap' do
+cask 'phpstorm-eap' do
   version '143.1480'
   sha256 '5dc310e8439376b2a267700b66dc53b85a94b876c1b4899e32773fdc68e9b0a8'
 

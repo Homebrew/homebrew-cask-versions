@@ -1,4 +1,4 @@
-cask :v1 => 'blender-daily' do
+cask 'blender-daily' do
   version '2.76-5f0cf67'
   sha256 '36bafcd538cbe3ba3fa77f88020f7fe6123a1e45fcc229cd31d646e3137f01eb'
 

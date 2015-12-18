@@ -1,4 +1,4 @@
-cask :v1 => 'clipmenu-dev' do
+cask 'clipmenu-dev' do
   version '0.4.4a12'
   sha256 '05232fc411db989702527f1939b619df2482ed09c2a59363cc5a750e0f544652'
 

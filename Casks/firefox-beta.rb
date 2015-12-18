@@ -1,4 +1,4 @@
-cask :v1 => 'firefox-beta' do
+cask 'firefox-beta' do
   version '43.0b9'
   sha256 '082f04994da3f65995879f40770399e31a1b7110e46358f21e620399ec6f5e24'
 

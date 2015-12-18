@@ -1,4 +1,4 @@
-cask :v1 => 'wireshark1' do
+cask 'wireshark1' do
   version '1.12.8'
   sha256 '9eade167a2054e8b71fc6e9ce154422a14ed70a40e15d842ef6dfbf9d96152ec'
 

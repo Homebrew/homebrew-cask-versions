@@ -1,4 +1,4 @@
-cask :v1 => 'airparrot1' do
+cask 'airparrot1' do
   version :latest
   sha256 :no_check
 

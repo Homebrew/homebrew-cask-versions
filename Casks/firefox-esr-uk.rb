@@ -1,4 +1,4 @@
-cask :v1 => 'firefox-esr-uk' do
+cask 'firefox-esr-uk' do
   version '38.4.0'
   sha256 '02aac6a4a86c99cd0d16309bd26a40a969bcd9a87d819babb5c133e684cf67b3'
 

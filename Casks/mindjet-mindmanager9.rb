@@ -1,4 +1,4 @@
-cask :v1 => 'mindjet-mindmanager9' do
+cask 'mindjet-mindmanager9' do
   version '9.6.510'
   sha256 '23e2e2e3f712bc9d58b4a826abc3fb50ffac0134e93c4db9e055fa4874fe12d1'
 

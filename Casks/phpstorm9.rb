@@ -1,4 +1,4 @@
-cask :v1 => 'phpstorm9' do
+cask 'phpstorm9' do
   version '9.0.2'
   sha256 '7995e951d442cb9203ed1e8ae491407a1b514828cef10bb9c7840880cbfacec2'
 

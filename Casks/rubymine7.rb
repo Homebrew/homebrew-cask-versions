@@ -1,4 +1,4 @@
-cask :v1 => 'rubymine7' do
+cask 'rubymine7' do
   version '7.1.4'
   sha256 'ec503be6a441850702c5e332c459ccb2ed71e1a337f82b01587377f76a4f379e'
 

@@ -1,4 +1,4 @@
-cask :v1 => 'mozart2' do
+cask 'mozart2' do
   version '2.0.0'
   sha256 '4f077b0658557e532bfa7519977ce9870c55350a1cb395ef77bcab623c70ee04'
 

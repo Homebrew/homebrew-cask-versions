@@ -1,4 +1,4 @@
-cask :v1 => 'rubymine-eap' do
+cask 'rubymine-eap' do
   version '143.1183.12'
   sha256 '586b8327feb053b05d8f50aa9526cc7d10400ed3006c8151ab767fbf20fae419'
 

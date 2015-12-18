@@ -1,4 +1,4 @@
-cask :v1 => 'sketch-beta' do
+cask 'sketch-beta' do
   version '3.4'
   sha256 'f4329183d84c8954748e9c70b26d11f187100f3bd9a62a85eb69a2e90d510d8a'
 

@@ -1,4 +1,4 @@
-cask :v1 => 'sequel-pro-nightly' do
+cask 'sequel-pro-nightly' do
   version 'r7364a3bad2'
   sha256 '1bbac0eb592502fbe624855b5ffee2861580663a1300047da274191d55abf259'
 

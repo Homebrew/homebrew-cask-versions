@@ -1,4 +1,4 @@
-cask :v1 => 'adobe-indesign-cc-fr' do
+cask 'adobe-indesign-cc-fr' do
   version :latest
   sha256 :no_check
 

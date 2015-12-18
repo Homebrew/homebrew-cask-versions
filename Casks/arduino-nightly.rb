@@ -1,4 +1,4 @@
-cask :v1 => 'arduino-nightly' do
+cask 'arduino-nightly' do
   version :latest
   sha256 :no_check
 

@@ -1,4 +1,4 @@
-cask :v1 => 'adobe-master-collection-cs6' do
+cask 'adobe-master-collection-cs6' do
   version :latest
   sha256 :no_check
 

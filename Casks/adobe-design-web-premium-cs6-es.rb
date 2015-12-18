@@ -1,4 +1,4 @@
-cask :v1 => 'adobe-design-web-premium-cs6-es' do
+cask 'adobe-design-web-premium-cs6-es' do
   version :latest
   sha256 :no_check
 

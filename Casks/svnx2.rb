@@ -1,4 +1,4 @@
-cask :v1 => 'svnx2' do
+cask 'svnx2' do
   version '2.0b2'
   sha256 'f8d5f5a57eaaeed5904669fc5cde3773a6d05578bf331264cf1eac4c7b26ae2d'
 

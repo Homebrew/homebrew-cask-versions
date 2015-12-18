@@ -1,4 +1,4 @@
-cask :v1 => 'xquartz-beta' do
+cask 'xquartz-beta' do
   version '2.7.9_beta1'
   sha256 '13b026a1bcd02eff988be1875e40fea5d73bc9e39972d9e586687d647b198906'
 

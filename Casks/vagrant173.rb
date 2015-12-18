@@ -1,4 +1,4 @@
-cask :v1 => 'vagrant173' do
+cask 'vagrant173' do
   version '1.7.3'
   sha256 '3c6078d8ce9a9c01589b089034f0afcbe2f4908a7f77a1471360fc8011a18dc8'
 

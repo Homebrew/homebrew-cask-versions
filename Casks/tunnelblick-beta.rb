@@ -1,4 +1,4 @@
-cask :v1 => 'tunnelblick-beta' do
+cask 'tunnelblick-beta' do
   version '3.6beta14_build_4441'
   sha256 '3c72a667b5999b7bfd239dda464309aba741415875b3cca4321c4eb08b203f46'
 

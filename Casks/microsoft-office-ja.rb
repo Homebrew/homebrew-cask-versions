@@ -1,4 +1,4 @@
-cask :v1 => 'microsoft-office-ja' do
+cask 'microsoft-office-ja' do
   version :latest
   sha256 :no_check
 

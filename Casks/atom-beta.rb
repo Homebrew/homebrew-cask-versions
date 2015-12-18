@@ -1,4 +1,4 @@
-cask :v1 => 'atom-beta' do
+cask 'atom-beta' do
   version '1.4.0-beta0'
   sha256 '29d764c24d6c799dd760b4e62604c8ffbbb30c80bc258b6df7e90ee8fd97eb9d'
 

@@ -1,4 +1,4 @@
-cask :v1 => 'adobe-production-premium-cs6-fr' do
+cask 'adobe-production-premium-cs6-fr' do
   version :latest
   sha256 :no_check
 

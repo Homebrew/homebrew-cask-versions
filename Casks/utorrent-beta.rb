@@ -1,4 +1,4 @@
-cask :v1 => 'utorrent-beta' do
+cask 'utorrent-beta' do
   version :latest
   sha256 :no_check
 

@@ -1,4 +1,4 @@
-cask :v1 => 'mpeg-streamclip-beta' do
+cask 'mpeg-streamclip-beta' do
   version '1.9.3b8'
   sha256 '42459e262e46df81228ef3859aba102d9368be3a5710514a3055dd9f49c2f234'
 

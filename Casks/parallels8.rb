@@ -1,4 +1,4 @@
-cask :v1 => 'parallels8' do
+cask 'parallels8' do
   version '8.0.18619.1001606'
   sha256 '5b87b2c240e71176cad5097ed7f1928598c9e001da4ad1d8a4516708908c4305'
 

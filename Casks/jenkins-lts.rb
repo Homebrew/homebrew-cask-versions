@@ -1,4 +1,4 @@
-cask :v1 => 'jenkins-lts' do
+cask 'jenkins-lts' do
   version '1.625.3'
   sha256 '2ccb607dc9007a974cf4794e8ee4c6dc2e057d17b427379ed2c076cb9ac58c18'
 

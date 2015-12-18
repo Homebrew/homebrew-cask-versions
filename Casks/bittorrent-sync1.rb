@@ -1,4 +1,4 @@
-cask :v1 => 'bittorrent-sync1' do
+cask 'bittorrent-sync1' do
   version '1.4.111'
   sha256 '1c7df900e4a64d7f349605b3406c183399fb09a6b96278ae04817e2fcce0acf4'
 
