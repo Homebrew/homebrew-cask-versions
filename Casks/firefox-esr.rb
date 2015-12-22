@@ -1,6 +1,6 @@
 cask 'firefox-esr' do
-  version '38.5.0'
-  sha256 '751ad18028b8b74d11430d1f77ebae1fba3a315f27433478d8c9d7cd5f3d5780'
+  version '38.5.1'
+  sha256 'f1f3051548ea0041416be3a26be73ca6c57ec2ef89305a87f5237dc2fb3f295c'
 
   url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/#{version}esr/mac/en-US/Firefox%20#{version}esr.dmg"
   name 'Firefox'
