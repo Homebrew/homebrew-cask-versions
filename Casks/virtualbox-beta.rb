@@ -1,10 +1,10 @@
 cask 'virtualbox-beta' do
-  version '5.0.10-104061'
-  sha256 '62f933115498e51ddf5f2dab47dc1eebb42eb78ea1a7665cb91c53edacc847c6'
+  version '5.0.11-104721'
+  sha256 'c190f66421211b6f0ccbfc67740bf442f5e9ed2c95202846a8873a8f6f8e7af5'
 
   url "http://download.virtualbox.org/virtualbox/#{version.split('-')[0]}/VirtualBox-#{version}-OSX.dmg"
   name 'VirtualBox'
-  homepage 'http://www.virtualbox.org'
+  homepage 'https://www.virtualbox.org/wiki/Testbuilds'
   license :gpl
   tags :vendor => 'Oracle'
 
