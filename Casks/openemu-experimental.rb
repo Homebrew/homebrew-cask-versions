@@ -1,6 +1,6 @@
 cask 'openemu-experimental' do
-  version '1.0.4'
-  sha256 '23b99cf31a11f84e1110c6ce9bf503b6b479583e5229987b6c663bacfed73f06'
+  version '2.0'
+  sha256 '24e08655a21032d61ad62652f5f4d6ac748e41628e74265426df1672559b1ebc'
 
   # github.com is the official download host per the vendor homepage
   url "https://github.com/OpenEmu/OpenEmu/releases/download/v#{version}/OpenEmu_#{version}-experimental.zip"
