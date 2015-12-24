@@ -7,7 +7,6 @@ cask 'affinity-photo-beta' do
   name 'Affinity Photo'
   homepage 'https://affinity.serif.com/en-us/photo/'
   license :commercial
-  tags :vendor => 'Serif'
 
   app 'Affinity Photo Beta.app'
 end

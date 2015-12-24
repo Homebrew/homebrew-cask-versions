@@ -6,7 +6,6 @@ cask 'virtualbox-beta' do
   name 'VirtualBox'
   homepage 'https://www.virtualbox.org/wiki/Testbuilds'
   license :gpl
-  tags :vendor => 'Oracle'
 
   pkg 'VirtualBox.pkg'
   binary '/Applications/VirtualBox.app/Contents/MacOS/VBoxManage'

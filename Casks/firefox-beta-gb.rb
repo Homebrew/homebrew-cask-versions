@@ -6,7 +6,6 @@ cask 'firefox-beta-gb' do
   name 'Firefox'
   homepage 'https://www.mozilla.org/en-GB/firefox/beta/'
   license :mpl
-  tags :vendor => 'Mozilla'
 
   app 'Firefox.app'
 

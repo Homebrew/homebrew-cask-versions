@@ -7,7 +7,6 @@ cask 'affinity-designer-beta' do
   name 'Affinity Designer'
   homepage 'https://affinity.serif.com/en-us/'
   license :commercial
-  tags :vendor => 'Serif'
 
   app 'Affinity Designer Beta.app'
 end

@@ -7,7 +7,6 @@ cask 'openoffice-fr' do
   name 'OpenOffice'
   homepage 'https://www.openoffice.org/fr/Telecharger/'
   license :apache
-  tags :vendor => 'Apache'
 
   app 'OpenOffice.app'
 

@@ -7,7 +7,6 @@ cask 'yandex-beta' do
   name 'Custo'
   homepage 'https://browser.yandex.ru/beta/'
   license :commercial
-  tags :vendor => 'Yandex'
 
   app 'Yandex.app'
 end

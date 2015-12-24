@@ -6,7 +6,6 @@ cask 'thunderbird-ja' do
   name 'Mozilla Thunderbird'
   homepage 'https://www.mozilla.jp/thunderbird/'
   license :mpl
-  tags :vendor => 'Mozilla'
 
   app 'Thunderbird.app'
 end

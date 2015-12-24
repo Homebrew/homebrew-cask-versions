@@ -7,7 +7,6 @@ cask 'cycling74-max6' do
   name 'Max'
   homepage 'https://cycling74.com'
   license :commercial
-  tags :vendor => 'Cycling ‘74'
 
   pkg "Max #{version.sub(%r{^(\d+\.\d+).*},'\1')} Installer.pkg"
 

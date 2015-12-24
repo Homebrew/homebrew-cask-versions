@@ -7,7 +7,6 @@ cask 'firefox-esr-uk' do
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/uk/firefox/organizations/'
   license :mpl
-  tags :vendor => 'Mozilla'
 
   app 'Firefox.app'
   

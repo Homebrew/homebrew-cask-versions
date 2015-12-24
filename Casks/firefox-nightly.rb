@@ -7,7 +7,6 @@ cask 'firefox-nightly' do
   name 'Mozilla Firefox'
   homepage 'https://nightly.mozilla.org/'
   license :mpl
-  tags :vendor => 'Mozilla'
 
   app 'FirefoxNightly.app'
 

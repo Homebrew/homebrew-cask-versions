@@ -5,7 +5,6 @@ cask 'google-chrome-canary' do
   url 'https://storage.googleapis.com/chrome-canary/GoogleChromeCanary.dmg'
   homepage 'https://www.google.com/chrome/browser/canary.html?platform=mac'
   license :gratis
-  tags :vendor => 'Google'
 
   app 'Google Chrome Canary.app'
 
