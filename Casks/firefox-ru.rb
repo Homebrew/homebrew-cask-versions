@@ -3,10 +3,9 @@ cask 'firefox-ru' do
   sha256 '060b74fd90dafbb4dcfac34a10613ad0ace410c2a1696180c12691fd432ad048'
 
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=ru"
-  name 'Firefox'
+  name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/ru/firefox/desktop'
   license :mpl
-  tags :vendor => 'Mozilla'
 
   app 'Firefox.app'
 

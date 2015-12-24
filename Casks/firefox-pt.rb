@@ -3,10 +3,9 @@ cask 'firefox-pt' do
   sha256 '7f14555a63fe2b9aeb4f28a670135de8572b8a5f0460fdc9e2d7532661f4e95a'
 
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=pt-BR"
-  name 'Firefox'
+  name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/pt/firefox/new'
   license :mpl
-  tags :vendor => 'Mozilla'
 
   app 'Firefox.app'
 

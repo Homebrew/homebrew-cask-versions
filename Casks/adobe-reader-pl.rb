@@ -6,7 +6,6 @@ cask 'adobe-reader-pl' do
   name 'Adobe Reader'
   homepage 'http://www.adobe.com/pl/products/reader.html'
   license :gratis
-  tags :vendor => 'Adobe'
 
   pkg 'Adobe Reader XI Installer.pkg'
 

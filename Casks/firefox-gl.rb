@@ -3,10 +3,9 @@ cask 'firefox-gl' do
   sha256 '417fa915dbe47c8970e88fe2f60913a4775406f055276aac7dbfae5dc1aac4e7'
 
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=gl"
-  name 'Firefox'
+  name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/gl/firefox/new'
   license :mpl
-  tags :vendor => 'Mozilla'
 
   app 'Firefox.app'
 

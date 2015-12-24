@@ -6,7 +6,6 @@ cask 'vmware-fusion6' do
   name 'VMware Fusion'
   homepage 'https://www.vmware.com/products/fusion/'
   license :commercial
-  tags :vendor => 'VMware'
 
   binary 'VMware Fusion.app/Contents/Library/vmrun'
   app 'VMware Fusion.app'

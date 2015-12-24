@@ -6,7 +6,6 @@ cask 'adobe-reader-pt' do
   name 'Adobe Reader'
   homepage 'http://www.adobe.com/br/products/reader.html'
   license :gratis
-  tags :vendor => 'Adobe'
 
   pkg 'Adobe Reader XI Installer.pkg'
   uninstall :pkgutil => "com.adobe.acrobat.reader.#{version.gsub('.', '')}.*",

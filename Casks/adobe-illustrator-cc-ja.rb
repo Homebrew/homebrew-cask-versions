@@ -8,7 +8,6 @@ cask 'adobe-illustrator-cc-ja' do
   name 'Adobe Illustrator CC 2015'
   homepage 'https://www.adobe.com/products/illustrator.html'
   license :commercial
-  tags :vendor => 'Adobe'
 
   preflight do
     deployment_xml = "#{staged_path}/Adobe Illustrator CC 2015/Deployment/deployment.xml"

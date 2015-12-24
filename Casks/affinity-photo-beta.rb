@@ -4,10 +4,9 @@ cask 'affinity-photo-beta' do
 
   # amazonaws.com is the official download host per the vendor homepage
   url 'http://s3.amazonaws.com/affinity-beta/download/Affinity+Photo+Customer+Beta.dmg'
-  name 'Affinity Photo'
+  name 'Serif Affinity Photo'
   homepage 'https://affinity.serif.com/en-us/photo/'
   license :commercial
-  tags :vendor => 'Serif'
 
   app 'Affinity Photo Beta.app'
 end

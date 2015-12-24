@@ -4,10 +4,9 @@ cask 'cycling74-max6' do
 
   # amazonaws.com is the official download host per the vendor homepage
   url "https://akiaj5esl75o5wbdcv2a-maxmspjitter.s3.amazonaws.com/Max#{version.sub('-','_').gsub('.','')}.dmg"
-  name 'Max'
+  name 'Cycling ‘74 Max'
   homepage 'https://cycling74.com'
   license :commercial
-  tags :vendor => 'Cycling ‘74'
 
   pkg "Max #{version.sub(%r{^(\d+\.\d+).*},'\1')} Installer.pkg"
 

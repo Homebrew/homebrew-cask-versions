@@ -4,10 +4,9 @@ cask 'openoffice-fr' do
 
   # sourceforge.net is the official download host per the vendor homepage
   url "http://downloads.sourceforge.net/project/openofficeorg.mirror/#{version}/binaries/fr/Apache_OpenOffice_#{version}_MacOS_x86-64_install_fr.dmg"
-  name 'OpenOffice'
+  name 'Apache OpenOffice'
   homepage 'https://www.openoffice.org/fr/Telecharger/'
   license :apache
-  tags :vendor => 'Apache'
 
   app 'OpenOffice.app'
 

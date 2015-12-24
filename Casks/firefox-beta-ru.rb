@@ -3,10 +3,9 @@ cask 'firefox-beta-ru' do
   sha256 '86e76ecdf0965b17dd222456095abd0f42f74f0e57deccb8c1c7981e0b763f6f'
 
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=ru"
-  name 'Firefox'
+  name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/ru/firefox/channel/#beta'
   license :mpl
-  tags :vendor => 'Mozilla'
 
   app 'Firefox.app'
 

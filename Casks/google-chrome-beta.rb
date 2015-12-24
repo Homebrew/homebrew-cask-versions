@@ -6,7 +6,6 @@ cask 'google-chrome-beta' do
   name 'Google Chrome'
   homepage 'https://www.google.com/chrome/browser/beta.html?platform=mac&extra=betachannel'
   license :gratis
-  tags :vendor => 'Google'
 
   app 'Google Chrome.app'
 
