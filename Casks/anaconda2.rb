@@ -3,7 +3,7 @@ cask 'anaconda2' do
   sha256 'f4bd45a21e0dff106e36d11cfd532f2b5050d3b792cc0627ab231089341d2040'
 
   url "https://repo.continuum.io/archive/Anaconda2-#{version}-MacOSX-x86_64.sh"
-  name 'Anaconda2'
+  name 'Continuum Analytics Anaconda2'
   homepage 'https://www.continuum.io/why-anaconda'
   license :gratis
 
