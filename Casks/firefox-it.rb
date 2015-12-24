@@ -3,7 +3,7 @@ cask 'firefox-it' do
   sha256 '90451b7ee9240bae2e74b9dc78bec5fb390ed1d52f6c7c464824ce7ec3c6929d'
 
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=it"
-  name 'Firefox'
+  name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/it/firefox/desktop'
   license :mpl
 
