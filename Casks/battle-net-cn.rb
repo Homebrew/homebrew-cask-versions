@@ -4,7 +4,7 @@ cask 'battle-net-cn' do
 
   # blizzard.com is the official download host per the vendor homepage
   url 'http://www.battlenet.com.cn/download/getInstaller?os=mac&installer=Battle.net-Setup-zhCN.zip'
-  name 'Battle.net'
+  name 'Blizzard Battle.net'
   homepage 'http://www.battlenet.com.cn/zh/'
   license :commercial
 
