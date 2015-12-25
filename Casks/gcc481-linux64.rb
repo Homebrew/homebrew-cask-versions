@@ -7,4 +7,6 @@ cask 'gcc481-linux64' do
   license :oss
 
   pkg "gcc-#{version}-for-linux64.pkg"
+  
+  uninstall :pkgutil => 'fr.ec-nantes.irccyn.molinaro.gcc-4.8.1-for-linux64'
 end
