@@ -11,4 +11,6 @@ cask 'openemu-experimental' do
   license :oss
 
   app 'OpenEmu.app'
+  
+  depends_on :macos => '>= :el_capitan'
 end
