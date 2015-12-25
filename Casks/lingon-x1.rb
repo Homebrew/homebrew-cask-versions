@@ -3,7 +3,8 @@ cask 'lingon-x1' do
   sha256 :no_check
 
   url 'http://www.peterborgapps.com/downloads/LingonX.zip'
-  appcast 'http://www.peterborgapps.com/updates/lingonx-appcast.xml'
+  appcast 'http://www.peterborgapps.com/updates/lingonx-appcast.xml',
+          :sha256 => 'a509f4c6a8596bd10c90f4d750ab2c81098360f82eac7a3744066c23becf4972'
   homepage 'http://www.peterborgapps.com/lingon/'
   license :commercial
 
