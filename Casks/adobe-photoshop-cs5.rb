@@ -12,7 +12,7 @@ cask 'adobe-photoshop-cs5' do
     :user_agent => :fake,
     :cookies => { 'MM_TRIALS' => '1234' }
   name 'Adobe Photoshop CS5' # name must exactly match directory in dmg!
-  homepage 'http://www.adobe.com/mena_en/products/creativesuite.html'
+  homepage 'https://www.adobe.com/mena_en/products/creativesuite.html'
   license :commercial
 
   # staged_path not available in Installer/Uninstall Stanza, workaround by nesting with preflight/postflight

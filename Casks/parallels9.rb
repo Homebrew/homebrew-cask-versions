@@ -3,7 +3,7 @@ cask 'parallels9' do
   sha256 'd6efe77b6893bfd24ea4d275f1bc417feffb2a899a364ecbb91a25064b9e1c0d'
 
   url "http://download.parallels.com/desktop/v9/update3/ParallelsDesktop-#{version}.dmg"
-  homepage 'http://www.parallels.com/products/desktop/'
+  homepage 'https://www.parallels.com/products/desktop/'
   license :commercial
 
   app 'Parallels Desktop.app'

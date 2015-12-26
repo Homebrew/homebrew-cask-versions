@@ -4,7 +4,7 @@ cask 'omnipresence-beta' do
 
   url "http://omnistaging.omnigroup.com/omnipresence/releases/OmniPresence-#{version}-Test.dmg"
   name 'OmniPresence Beta'
-  homepage 'http://www.omnigroup.com/omnipresence'
+  homepage 'https://www.omnigroup.com/omnipresence'
   license :commercial
 
   app 'OmniPresence.app'

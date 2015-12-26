@@ -4,7 +4,7 @@ cask 'omnioutliner3' do
 
   url 'http://omnigroup.com/download/latest/omnioutliner-3'
   name 'OmniOutliner'
-  homepage 'http://www.omnigroup.com/omnioutliner/'
+  homepage 'https://www.omnigroup.com/omnioutliner/'
   license :commercial
 
   app 'OmniOutliner.app'

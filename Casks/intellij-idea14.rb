@@ -2,7 +2,7 @@ cask 'intellij-idea14' do
   version '14.1.5'
   sha256 '50941026863e2d43f4c8dcc1c02f749c096c2d0bcf53943220314f0898efec24'
 
-  url "http://download.jetbrains.com/idea/ideaIU-#{version}.dmg"
+  url "https://download.jetbrains.com/idea/ideaIU-#{version}.dmg"
   homepage 'https://www.jetbrains.com/idea/index.html'
   license :commercial
 

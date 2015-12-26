@@ -3,8 +3,8 @@ cask 'cleanmymac2' do
   sha256 '16e192edcf58f25c6763349ef0e5194268bec4d000912b64b34f5897b4784097'
 
   # devmate.com is the official download host per the appcast feed
-  url "http://dl.devmate.com/com.macpaw.CleanMyMac2/#{version.sub(%r{-.*$},'')}/#{version.sub(%r{.*?-},'')}/CleanMyMac#{version.to_i}-#{version.sub(%r{-.*$},'')}.zip"
-  appcast "http://updates.devmate.com/com.macpaw.CleanMyMac#{version.to_i}.xml"
+  url "https://dl.devmate.com/com.macpaw.CleanMyMac2/#{version.sub(%r{-.*$},'')}/#{version.sub(%r{.*?-},'')}/CleanMyMac#{version.to_i}-#{version.sub(%r{-.*$},'')}.zip"
+  appcast "https://updates.devmate.com/com.macpaw.CleanMyMac#{version.to_i}.xml"
   name 'CleanMyMac'
   homepage 'https://macpaw.com/cleanmymac'
   license :commercial

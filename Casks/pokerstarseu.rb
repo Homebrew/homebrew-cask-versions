@@ -2,9 +2,9 @@ cask 'pokerstarseu' do
   version :latest
   sha256 :no_check
 
-  url 'http://www.pokerstars.eu/PokerStarsEU.app.zip'
+  url 'https://www.pokerstars.eu/PokerStarsEU.app.zip'
   name 'PokerStars'
-  homepage 'http://www.pokerstars.com/'
+  homepage 'https://www.pokerstars.com/'
   license :freemium
 
   app 'PokerStarsEU.app'

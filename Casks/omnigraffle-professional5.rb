@@ -3,7 +3,7 @@ cask 'omnigraffle-professional5' do
   sha256 '396a4adaadb82d651ea6ec8b141c9e5f5b0b5f53c6edee5e7806a896783892c9'
 
   url "http://www.omnigroup.com/ftp/pub/software/MacOSX/10.6/OmniGrafflePro-#{version}.dmg"
-  homepage 'http://www.omnigroup.com/products/omnigraffle'
+  homepage 'https://www.omnigroup.com/products/omnigraffle'
   license :closed
 
   app 'OmniGraffle Professional 5.app'

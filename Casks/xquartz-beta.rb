@@ -3,10 +3,10 @@ cask 'xquartz-beta' do
   sha256 '13b026a1bcd02eff988be1875e40fea5d73bc9e39972d9e586687d647b198906'
 
   url "https://xquartz.macosforge.org/downloads/SL/XQuartz-#{version}.dmg"
-  appcast 'http://xquartz-dl.macosforge.org/sparkle/beta.xml',
+  appcast 'https://xquartz-dl.macosforge.org/sparkle/beta.xml',
           :sha256 => '9792f0d6abd547e523f6ca33c4dd3847134bc3d46d77ac91b93fe932d6123568'
   name 'XQuartz'
-  homepage 'http://xquartz.macosforge.org/'
+  homepage 'https://xquartz.macosforge.org/'
   license :oss
 
   pkg 'XQuartz.pkg'

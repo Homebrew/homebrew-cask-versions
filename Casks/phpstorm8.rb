@@ -2,8 +2,8 @@ cask 'phpstorm8' do
   version '8.0.3'
   sha256 '6c9b36ebfed67f5ec2e6a96f2f61826653b312686ecd8a298e0e2ca3e3a09559'
 
-  url "http://download.jetbrains.com/webide/PhpStorm-#{version}.dmg"
-  homepage 'http://www.jetbrains.com/phpstorm/'
+  url "https://download.jetbrains.com/webide/PhpStorm-#{version}.dmg"
+  homepage 'https://www.jetbrains.com/phpstorm/'
   license :commercial
 
   app 'PhpStorm.app'

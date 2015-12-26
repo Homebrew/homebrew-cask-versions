@@ -6,7 +6,7 @@ cask 'fantastical1' do
   appcast 'https://flexibits.com/fantastical/appcast.php',
     :sha256 => '3d789ff8dd91c8ebc1b63d2811ec17e0a950433b03605d8c10eef010733cf79a'
   name 'Fantastical'
-  homepage 'http://flexibits.com/fantastical'
+  homepage 'https://flexibits.com/fantastical'
   license :freemium
   
   app 'Fantastical.app'

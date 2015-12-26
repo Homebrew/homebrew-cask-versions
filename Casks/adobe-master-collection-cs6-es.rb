@@ -12,7 +12,7 @@ cask 'adobe-master-collection-cs6-es' do
     :user_agent => :fake,
     :cookies => { 'MM_TRIALS' => '1234' }
   name 'Adobe CS6 Master Collection' # name must exactly match directory in dmg!
-  homepage 'http://www.adobe.com/mena_en/products/creativesuite.html'
+  homepage 'https://www.adobe.com/mena_en/products/creativesuite.html'
   license :commercial
 
   # staged_path not available in Installer/Uninstall Stanza, workaround by nesting with preflight/postflight

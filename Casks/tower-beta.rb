@@ -7,7 +7,7 @@ cask 'tower-beta' do
   appcast 'https://updates.fournova.com/updates/tower2-mac/beta',
           :sha256 => '541daa645ca6bb84cdd8f9affa1420d4efe551d8beb2a272d16c0b54ad6bbe27'
   name 'Tower'
-  homepage 'http://www.git-tower.com/'
+  homepage 'https://www.git-tower.com/'
   license :commercial
 
   app 'Tower.app'

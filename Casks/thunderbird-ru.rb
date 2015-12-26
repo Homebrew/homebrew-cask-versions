@@ -4,7 +4,7 @@ cask 'thunderbird-ru' do
 
   url "https://download.mozilla.org/?product=thunderbird-#{version}&os=osx&lang=ru"
   name 'Mozilla Thunderbird'
-  homepage 'http://www.mozilla.org/ru/thunderbird/'
+  homepage 'https://www.mozilla.org/ru/thunderbird/'
   license :mpl
 
   app 'Thunderbird.app'
