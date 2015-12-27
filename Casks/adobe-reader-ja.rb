@@ -4,7 +4,7 @@ cask 'adobe-reader-ja' do
   major_version = version.split('.')[0]
 
   url "http://ardownload.adobe.com/pub/adobe/reader/mac/#{major_version}.x/#{version}/ja_JP/AdbeRdr#{version.gsub('.', '')}_ja_JP.dmg"
-  homepage 'http://www.adobe.com/jp/products/reader.html'
+  homepage 'https://www.adobe.com/jp/products/reader.html'
   license :closed
 
   pkg 'Adobe Reader XI Installer.pkg'

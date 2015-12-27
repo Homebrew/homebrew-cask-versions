@@ -5,7 +5,7 @@ cask 'mozart2' do
   # sourceforge.net is the official download host per the vendor homepage
   url "http://downloads.sourceforge.net/sourceforge/mozart-oz/mozart2-#{version}-x86_64-darwin.dmg"
   name 'Mozart'
-  homepage 'http://mozart.github.io/'
+  homepage 'https://mozart.github.io/'
   license :oss
 
   app 'Mozart2.app'

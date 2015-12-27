@@ -4,7 +4,7 @@ cask 'adobe-reader-pt' do
 
   url "http://ardownload.adobe.com/pub/adobe/reader/mac/#{version.to_i}.x/#{version}/pt_BR/AdbeRdr#{version.gsub('.', '')}_pt_BR.dmg"
   name 'Adobe Reader'
-  homepage 'http://www.adobe.com/br/products/reader.html'
+  homepage 'https://www.adobe.com/br/products/reader.html'
   license :gratis
 
   pkg 'Adobe Reader XI Installer.pkg'

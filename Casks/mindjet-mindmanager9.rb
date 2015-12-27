@@ -4,7 +4,7 @@ cask 'mindjet-mindmanager9' do
 
   url "http://download.mindjet.com/Mindjet_MindManager_Mac_#{version}.dmg"
   name 'Mindjet MindManager 9'
-  homepage 'http://www.mindjet.com/mindmanager/'
+  homepage 'https://www.mindjet.com/mindmanager/'
   license :commercial
 
   app 'Mindjet MindManager.app'

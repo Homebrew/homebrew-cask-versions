@@ -2,9 +2,9 @@ cask 'quickbooks-desktop2014' do
   version '2014'
   sha256 '1bf5daa4ca99a6e55cc065fa3e3109bfc5f51e793645e7d40a65eaaf4ac43176'
 
-  url "http://http-download.intuit.com/http.intuit/Downloads/#{version}/Latest/QuickBooksProMac#{version}.dmg"
+  url "https://http-download.intuit.com/http.intuit/Downloads/#{version}/Latest/QuickBooksProMac#{version}.dmg"
   name 'QuickBooks Desktop'
-  homepage 'http://quickbooks.intuit.com/mac/'
+  homepage 'https://quickbooks.intuit.com/mac/'
   license :commercial
 
   app "QuickBooks #{version}.app"

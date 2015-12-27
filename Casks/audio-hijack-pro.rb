@@ -4,7 +4,7 @@ cask 'audio-hijack-pro' do
 
   url "https://rogueamoeba.com/legacy/downloads/AudioHijackPro-#{version.gsub('.','')}.zip"
   name 'Audio Hijack Pro'
-  homepage 'http://www.rogueamoeba.com/audiohijackpro/'
+  homepage 'https://www.rogueamoeba.com/audiohijackpro/'
   license :commercial
 
   app 'Audio Hijack Pro.app'
