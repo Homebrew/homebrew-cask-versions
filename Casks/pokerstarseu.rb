@@ -7,6 +7,8 @@ cask 'pokerstarseu' do
   homepage 'https://www.pokerstars.com/'
   license :freemium
 
+  auto_updates true
+
   app 'PokerStarsEU.app'
 
   zap :delete => [
