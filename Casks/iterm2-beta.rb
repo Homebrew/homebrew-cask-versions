@@ -7,6 +7,8 @@ cask 'iterm2-beta' do
   homepage 'https://www.iterm2.com/'
   license :gpl
 
+  auto_updates true
+
   app 'iTerm.app'
 
   zap :delete => '~/Library/Preferences/com.googlecode.iterm2.plist'
