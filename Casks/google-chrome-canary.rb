@@ -7,6 +7,8 @@ cask 'google-chrome-canary' do
   homepage 'https://www.google.com/chrome/browser/canary.html?platform=mac'
   license :gratis
 
+  auto_updates true
+
   app 'Google Chrome Canary.app'
 
   zap :delete => [
