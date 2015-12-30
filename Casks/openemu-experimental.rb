@@ -10,6 +10,8 @@ cask 'openemu-experimental' do
   homepage 'http://openemu.org/'
   license :oss
 
+  depends_on :macos => '>= :el_capitan'
+
   app 'OpenEmu.app'
 
   zap :delete => [
@@ -40,6 +42,4 @@ cask 'openemu-experimental' do
                   '~/Library/Preferences/org.openemu.VisualBoyAdvance.plist',
                   '~/Library/Saved Application State/org.openemu.OpenEmu.savedState'
                  ]
-
-  depends_on :macos => '>= :el_capitan'
 end
