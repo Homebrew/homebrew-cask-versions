@@ -7,7 +7,7 @@ cask 'camtwist-beta' do
   homepage 'http://camtwiststudio.com/'
   license :gratis
   
-  depends_on :macos => '>= :lion'
+  depends_on :macos => '>= 10.10'
 
   pkg 'CamTwist.pkg'
 
