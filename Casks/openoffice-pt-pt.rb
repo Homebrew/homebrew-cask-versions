@@ -1,4 +1,4 @@
-cask 'openoffice-pt' do
+cask 'openoffice-pt-pt' do
   version '4.1.2'
   sha256 '74941d0310000b95521d1a2019c2acecbb2a6177a6066cf34cb40e1915415faf'
 
