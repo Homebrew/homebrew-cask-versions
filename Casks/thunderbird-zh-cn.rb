@@ -1,4 +1,4 @@
-cask 'thunderbird-cn' do
+cask 'thunderbird-zh-cn' do
   version '38.5.0'
   sha256 '99b738399d8e82a808258b6397cbaa7a2a1a25e1d417cadb4fd95ba3f4cc26b1'
 
