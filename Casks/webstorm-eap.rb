@@ -1,21 +1,21 @@
 cask 'webstorm-eap' do
-  version '143.1183.13'
-  sha256 '324bf9298ffbab922a8f764f7cdbd1b8d0a2a602cd829bb767217bc7b6a8d4cd'
+  version '144.2608.3'
+  sha256 '82321c08e717c1f1202a53fc8d6ae591bb6123f81b237c078dc1f223a5fb4969'
 
-  url "http://download.jetbrains.com/webstorm/WebStorm-#{version}-custom-jdk-bundled.dmg"
+  url "http://download.jetbrains.com/webstorm/WebStorm-EAP-#{version}.dmg"
   name 'WebStorm'
-  homepage 'https://confluence.jetbrains.com/display/WI/WebStorm+11+EAP'
+  homepage 'https://confluence.jetbrains.com/display/WI/WebStorm+EAP'
   license :commercial
 
-  app 'WebStorm 11 EAP.app'
+  app 'WebStorm EAP.app'
   binary 'WebStorm.app/Contents/MacOS/webstorm'
 
   zap :delete => [
-                  '~/.WebStorm11',
+                  '~/.WebStorm12',
                   '~/Library/Preferences/com.jetbrains.webstorm.plist',
-                  '~/Library/Preferences/WebStorm11',
-                  '~/Library/Application Support/WebStorm11',
-                  '~/Library/Caches/WebStorm11',
-                  '~/Library/Logs/WebStorm11',
+                  '~/Library/Preferences/WebStorm12',
+                  '~/Library/Application Support/WebStorm12',
+                  '~/Library/Caches/WebStorm12',
+                  '~/Library/Logs/WebStorm12',
                  ]
 end
