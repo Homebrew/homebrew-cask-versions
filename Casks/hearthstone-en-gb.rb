@@ -1,4 +1,4 @@
-cask 'hearthstone-eu' do
+cask 'hearthstone-en-gb' do
   version :latest
   sha256 :no_check
 
