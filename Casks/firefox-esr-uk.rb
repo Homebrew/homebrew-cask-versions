@@ -3,7 +3,6 @@ cask 'firefox-esr-uk' do
   sha256 '02aac6a4a86c99cd0d16309bd26a40a969bcd9a87d819babb5c133e684cf67b3'
 
   url "https://download.mozilla.org/?product=firefox-#{version}esr-SSL&os=osx&lang=uk"
-  name 'Firefox'
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/uk/firefox/organizations/'
   license :mpl
