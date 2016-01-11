@@ -3,7 +3,6 @@ cask 'firefox-beta' do
   sha256 'c5a2a9e41b3a2bf0fd1bbb49ed43d15205b6d09cd6701c20ca2e8560e73934fd'
 
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=en-US"
-  name 'Firefox'
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/en-US/firefox/channel/#beta'
   license :mpl

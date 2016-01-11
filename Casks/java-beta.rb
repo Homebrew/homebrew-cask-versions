@@ -4,7 +4,6 @@ cask 'java-beta' do
 
   url 'http://download.java.net/jdk8u72/archive/b05/binaries/jdk-8u72-ea-bin-b05-macosx-x86_64-26_oct_2015.dmg',
       :cookies => { 'oraclelicense' => 'accept-securebackup-cookie' }
-  name 'Java'
   name 'Java Standard Edition Development Kit'
   homepage 'https://jdk8.java.net/download.html'
   license :gratis

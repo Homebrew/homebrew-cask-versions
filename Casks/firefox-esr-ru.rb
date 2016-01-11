@@ -3,7 +3,6 @@ cask 'firefox-esr-ru' do
   sha256 '5c1226b4acd02713a9e166004ba8e55aa6300c59078e1d84c34ac19f81edac0a'
 
   url "https://download.mozilla.org/?product=firefox-#{version}esr-SSL&os=osx&lang=ru"
-  name 'Firefox'
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/ru/firefox/organizations/'
   license :mpl

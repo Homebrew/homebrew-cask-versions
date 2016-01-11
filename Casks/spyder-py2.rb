@@ -4,7 +4,6 @@ cask 'spyder-py2' do
 
   # bitbucket.org is the official download host per the vendor homepage
   url "https://bitbucket.org/spyder-ide/spyderlib/downloads/spyder-#{version}-py2.7.dmg"
-  name 'Spyder'
   name 'Spyder-Py2'
   homepage 'https://github.com/spyder-ide/spyder'
   license :mit

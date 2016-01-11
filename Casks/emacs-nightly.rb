@@ -3,7 +3,6 @@ cask 'emacs-nightly' do
   sha256 '7e2a3dd2a5972e2615635c36561acf3fe68073fe5da0bec585cb4f2a7ce63d9f'
 
   url "http://emacsformacosx.com/emacs-builds/Emacs-#{version}-universal.dmg"
-  name 'Emacs for Mac OS X'
   name 'Emacs'
   homepage 'http://emacsformacosx.com/'
   license :gpl

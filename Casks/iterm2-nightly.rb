@@ -6,7 +6,6 @@ cask 'iterm2-nightly' do
   appcast 'https://iterm2.com/appcasts/nightly.xml',
           :sha256 => '74e804add307c0eba9dd52a3cfa8eda633cfbfe839f09956ff06306c9b1fcadc'
   name 'iTerm2'
-  name 'iTerm 2'
   homepage 'https://www.iterm2.com/'
   license :gpl
 

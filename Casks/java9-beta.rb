@@ -4,7 +4,6 @@ cask 'java9-beta' do
 
   url 'http://download.java.net/jdk9/archive/96/binaries/jdk-9-ea+96_osx-x64_bin.dmg',
       :cookies => { 'oraclelicense' => 'accept-securebackup-cookie' }
-  name 'Java'
   name 'Java Standard Edition Development Kit'
   homepage 'https://jdk9.java.net/download/'
   license :gratis

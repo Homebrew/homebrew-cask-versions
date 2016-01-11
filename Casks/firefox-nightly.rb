@@ -3,7 +3,6 @@ cask 'firefox-nightly' do
   sha256 :no_check # required as upstream package is updated in-place
 
   url "https://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-#{version}.en-US.mac.dmg"
-  name 'Firefox'
   name 'Mozilla Firefox'
   homepage 'https://nightly.mozilla.org/'
   license :mpl
