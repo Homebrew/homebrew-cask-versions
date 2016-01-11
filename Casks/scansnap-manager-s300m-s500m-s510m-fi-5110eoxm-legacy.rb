@@ -3,10 +3,7 @@ cask 'scansnap-manager-s300m-s500m-s510m-fi-5110eoxm-legacy' do
   sha256 '63d22a3ea7b01a32b0064bacad74dd82359ed366f5039d0fb6519e78cfee5beb'
 
   url 'http://www.fujitsu.com/downloads/IMAGE/driver/ss/ScanSnap_V22L11.dmg'
-  name 'ScanSnap Manager for Fujitsu ScanSnap S300M'
-  name 'ScanSnap Manager for Fujitsu ScanSnap S500M'
-  name 'ScanSnap Manager for Fujitsu ScanSnap S510M'
-  name 'ScanSnap Manager for Fujitsu ScanSnap fi-5110EOXM'
+  name 'ScanSnap Manager for Fujitsu ScanSnap fi-5110EOXM, S300M, S500M, s501M'
   homepage 'https://www.fujitsu.com/global/support/computing/peripheral/scanners/software/mac.html'
   license :gratis
 
