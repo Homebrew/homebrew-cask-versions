@@ -4,7 +4,7 @@ cask 'pdfpenpro' do
 
   url "https://dl.smilesoftware.com/com.smileonmymac.PDFpenPro/#{version.before_comma}/#{version.after_comma}/PDFpenPro-#{version.before_comma}.zip"
   appcast 'https://updates.smilesoftware.com/com.smileonmymac.PDFpenPro.xml',
-          :sha256 => 'b8c849323edd962b2a62c51bc861a3aed3aeb743ec5f059083c5a6df16b442a6'
+          :sha256 => '247e84eb90cb0793ad613c628dab5aa62e1dee36fd2cac4a24d37e7d4f31f0c5'
   name 'PDFpenPro'
   homepage 'https://www.smilesoftware.com/PDFpenPro/'
   license :commercial
