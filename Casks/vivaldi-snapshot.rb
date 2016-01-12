@@ -4,7 +4,7 @@ cask 'vivaldi-snapshot' do
 
   url "https://vivaldi.com/download/snapshot/Vivaldi.#{version}.dmg"
   appcast 'https://update.vivaldi.com/update/1.0/mac/appcast.xml',
-          :sha256 => '9542a4a3fd672965f938f996793d4a459624bfc956af9f7d302604a699ef2f47'
+          :sha256 => 'e88253ae777589ebf57b6e5921d531c91c7789d6bdab7fcd9156d45635723b41'
   name 'Vivaldi'
   homepage 'https://vivaldi.com'
   license :gratis
