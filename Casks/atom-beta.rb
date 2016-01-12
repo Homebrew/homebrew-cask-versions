@@ -10,6 +10,7 @@ cask 'atom-beta' do
   homepage 'https://atom.io/beta'
   license :mit
 
+  auto_updates true
   depends_on :macos => '>= :mountain_lion'
 
   app 'Atom Beta.app'
