@@ -1,10 +1,11 @@
 cask 'xquartz-beta' do
-  version '2.7.9_beta1'
-  sha256 '13b026a1bcd02eff988be1875e40fea5d73bc9e39972d9e586687d647b198906'
+  version '2.7.9_rc2'
+  sha256 '12d89785484f634220fdf6bd23a9594d46db68fe3e719dabf82bc53009d8a192'
 
-  url "https://xquartz.macosforge.org/downloads/SL/XQuartz-#{version}.dmg"
+  # bintray.com is the official download host per the appcast feed
+  url "https://dl.bintray.com/xquartz/downloads/XQuartz-#{version}.dmg"
   appcast 'https://xquartz-dl.macosforge.org/sparkle/beta.xml',
-          :sha256 => '9792f0d6abd547e523f6ca33c4dd3847134bc3d46d77ac91b93fe932d6123568'
+          :sha256 => '9e721161434da9d5a29c29b0e61c6b8339e4059dcf79d41b79b53c7bc6e58123'
   name 'XQuartz'
   homepage 'https://xquartz.macosforge.org/'
   license :oss
