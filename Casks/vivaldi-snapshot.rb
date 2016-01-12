@@ -1,10 +1,10 @@
 cask 'vivaldi-snapshot' do
-  version '1.0.357.5'
-  sha256 'c389d4bf96067b52b1a5761d5c464cc5941c48f9c12d0061fda5b1a6a5c028dc'
+  version '1.0.365.3'
+  sha256 'c734929c0238eb1901ee9bc210bb73a5c960871c078cfa8228bba9cce023ceda'
 
   url "https://vivaldi.com/download/snapshot/Vivaldi.#{version}.dmg"
   appcast 'https://update.vivaldi.com/update/1.0/mac/appcast.xml',
-          :sha256 => 'e64548d87462e3da813d582d7038d12a9196d97ea31df16ee2d311f55b4eb350'
+          :sha256 => '9542a4a3fd672965f938f996793d4a459624bfc956af9f7d302604a699ef2f47'
   name 'Vivaldi'
   homepage 'https://vivaldi.com'
   license :gratis
