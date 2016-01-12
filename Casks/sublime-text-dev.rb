@@ -5,7 +5,7 @@ cask 'sublime-text-dev' do
   # rackcdn.com is the official download host per the vendor homepage
   url "http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%20#{version}.dmg"
   appcast 'https://www.sublimetext.com/updates/3/dev/appcast_osx.xml',
-          :sha256 => '8398448b199518ad8c1e3dd8737f9a87df3a3af70b1fd211a0b9ab778009775a'
+          :sha256 => 'c850ebbe33c8dc1a435626abb68777910ff77cd6428136c264cca97b281f40b3'
   name 'Sublime Text'
   homepage 'https://www.sublimetext.com/3dev'
   license :closed
