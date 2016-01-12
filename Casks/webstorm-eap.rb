@@ -2,7 +2,7 @@ cask 'webstorm-eap' do
   version '144.2608.3'
   sha256 '82321c08e717c1f1202a53fc8d6ae591bb6123f81b237c078dc1f223a5fb4969'
 
-  url "http://download.jetbrains.com/webstorm/WebStorm-EAP-#{version}.dmg"
+  url "https://download.jetbrains.com/webstorm/WebStorm-EAP-#{version}.dmg"
   name 'WebStorm'
   homepage 'https://confluence.jetbrains.com/display/WI/WebStorm+EAP'
   license :commercial
