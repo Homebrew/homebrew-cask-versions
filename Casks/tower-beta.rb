@@ -5,7 +5,7 @@ cask 'tower-beta' do
   # amazonaws.com is the official download host per the vendor homepage
   url "https://fournova-app-updates.s3.amazonaws.com/apps/tower2-mac/299-6e9850db/Tower-2-#{version}.zip"
   appcast 'https://updates.fournova.com/updates/tower2-mac/beta',
-          :sha256 => '541daa645ca6bb84cdd8f9affa1420d4efe551d8beb2a272d16c0b54ad6bbe27'
+          :sha256 => 'f7af8e4f5290a904072c28bdfa0bd82dcd67b99a855a78e355c24241c6617935'
   name 'Tower'
   homepage 'https://www.git-tower.com/'
   license :commercial

@@ -9,7 +9,7 @@ cask 'macvim-kaoriya' do
 
   url "https://github.com/splhack/macvim-kaoriya/releases/download/#{version.sub(%r{.*-},'')}/MacVim-KaoriYa-#{version.sub(%r{.*-},'')}.dmg"
   appcast 'https://raw.githubusercontent.com/splhack/macvim-kaoriya/master/latest.xml',
-          :sha256 => '63356168d3b86c86ee5db2c3c473a2402715acd4fc705a4fe390d32adde6877b'
+          :sha256 => '18f601f678fe948da50f53e8143d279915f78c89b2f9553457fd3ae2f8d0b6aa'
 
   name 'MacVim KaoriYa'
   homepage 'https://github.com/splhack/macvim-kaoriya'

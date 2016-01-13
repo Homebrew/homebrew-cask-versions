@@ -4,7 +4,7 @@ cask 'dupeguru-pe' do
 
   url "https://download.hardcoded.net/dupeguru_pe_osx_#{version.dots_to_underscores}.dmg"
   appcast 'https://www.hardcoded.net/updates/dupeguru_pe.appcast',
-          :sha256 => '8177a1f729d412b97f5ac2d5cf52f221c5167cdac1cca62e7601726c12a4dff9'
+          :sha256 => 'e4231cd13e1f317f9e7dce07d2ace620e1be324568a74c08790b0dd4cf96f66a'
   name 'dupeGuru Picture Edition'
   homepage 'https://www.hardcoded.net/dupeguru_pe/'
   license :bsd
