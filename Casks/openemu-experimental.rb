@@ -5,7 +5,7 @@ cask 'openemu-experimental' do
   # github.com is the official download host per the vendor homepage
   url "https://github.com/OpenEmu/OpenEmu/releases/download/v#{version}/OpenEmu_#{version}-experimental.zip"
   appcast 'https://github.com/OpenEmu/OpenEmu/releases.atom',
-          :sha256 => '5fdc3cf529fcab93c900732f8fd3b09c909a4a6e144f517c97343c27c907e24d'
+          :checkpoint => '5fdc3cf529fcab93c900732f8fd3b09c909a4a6e144f517c97343c27c907e24d'
   name 'OpenEmu'
   homepage 'http://openemu.org/'
   license :oss

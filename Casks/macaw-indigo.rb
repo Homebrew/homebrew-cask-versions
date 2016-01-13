@@ -4,7 +4,7 @@ cask 'macaw-indigo' do
 
   url "http://indigo.macaw.co/#{version}/MacawIndigo#{version}.dmg"
   appcast 'http://indigo.macaw.co/appcast.xml',
-          :sha256 => 'edbeacf73c56b690aa98a6aedb82c1892c4d79b4bc0a3b87a6094765699793ff'
+          :checkpoint => 'edbeacf73c56b690aa98a6aedb82c1892c4d79b4bc0a3b87a6094765699793ff'
   homepage 'http://indigo.macaw.co/'
   license :commercial
 
