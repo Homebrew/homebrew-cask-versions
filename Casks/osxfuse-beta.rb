@@ -3,7 +3,7 @@ cask 'osxfuse-beta' do
   sha256 '0065c58a352e014885ca472fdbe3ac703061d1fb32e4c682c7eb9a019ddf84c0'
 
   url "https://github.com/osxfuse/osxfuse/releases/download/osxfuse-#{version}/osxfuse-#{version}.dmg"
-  appcast 'https://github.com/atom/electron/releases.atom',
+  appcast 'https://github.com/osxfuse/osxfuse/releases.atom',
           :checkpoint => '6a2e04eaf5fc1471e119b84f89215e3b8af98a51a47ab264ff5ec0098fc7b965'
   name 'OSXFUSE'
   homepage 'https://osxfuse.github.io/'
