@@ -1,10 +1,10 @@
 cask 'dropbox-experimental' do
-  version '3.13.45'
-  sha256 'd247b687b7ccb6e47527487f0e2a5edac21c87174f9deed8b5360ecf5e010850'
+  version '3.13.52'
+  sha256 '8041458d8c46be7ec3aa4d44d3e7bd05c86c01570a50dd5e68e7c64331243449'
 
   url "https://dl.dropboxusercontent.com/u/17/Dropbox%20#{version}.dmg"
   name 'Dropbox'
-  homepage 'https://www.dropboxforum.com/hc/en-us/community/posts/204648876-Experimental-Build-3-13-45'
+  homepage 'https://www.dropboxforum.com/hc/en-us/community/posts/204448313-Experimental-Build-3-13-52'
   license :gratis
 
   app 'Dropbox.app'
