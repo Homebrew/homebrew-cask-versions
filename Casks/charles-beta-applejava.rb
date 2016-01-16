@@ -1,6 +1,6 @@
 cask 'charles-beta-applejava' do
-  version '3.11.3b4'
-  sha256 '5bba5bbfdbed53925ab37a9cc1df943fd5dec8a63ac4f90a4966625baf7f43ce'
+  version '3.11.3b5'
+  sha256 'd2ed58fc2e5d4a77c79932819edadb127f4963ea71b2c3843fc13946a02c0410'
 
   url "https://www.charlesproxy.com/assets/release/#{version.gsub(/b\d$/, '')}/charles-proxy-#{version}-applejava.dmg"
   name 'Charles'
