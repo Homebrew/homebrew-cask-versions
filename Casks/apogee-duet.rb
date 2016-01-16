@@ -3,7 +3,7 @@ cask 'apogee-duet' do
   sha256 '441302c1931ee474e36172dd87ad9b26781a96b3b7ad8e18abe587bebad17ce3'
 
   url "http://www.apogeedigital.com/drivers/Duet_#{version}.dmg"
-  name 'Apogee Duet Software Installer'
+  name 'Apogee Duet'
   homepage 'www.apogeedigital.com/support/software-downloads#tab-id-8'
   license :gratis
 
