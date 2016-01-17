@@ -10,10 +10,10 @@ cask 'intellij-idea-eap' do
   app 'IntelliJ IDEA 16 EAP.app'
 
   zap :delete => [
-		  '~/Library/Preferences/com.jetbrains.intellij.plist',
-                  '~/Library/Application Support/IntelliJIdea16',
-                  '~/Library/Preferences/IntelliJIdea16',
-                  '~/Library/Caches/IntelliJIdea16',
-                  '~/Library/Logs/IntelliJIdea16',
+                   '~/Library/Preferences/com.jetbrains.intellij.plist',
+                   '~/Library/Application Support/IntelliJIdea16',
+                   '~/Library/Preferences/IntelliJIdea16',
+                   '~/Library/Caches/IntelliJIdea16',
+                   '~/Library/Logs/IntelliJIdea16',
                  ]
 end

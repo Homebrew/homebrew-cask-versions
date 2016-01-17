@@ -7,25 +7,21 @@ cask 'macvim-kaoriya' do
     sha256 '65917eac17422bef99e4d8c725f8a701d336d7e377231b25e4d53945146f90a2'
   end
 
-  url "https://github.com/splhack/macvim-kaoriya/releases/download/#{version.sub(%r{.*-},'')}/MacVim-KaoriYa-#{version.sub(%r{.*-},'')}.dmg"
+  url "https://github.com/splhack/macvim-kaoriya/releases/download/#{version.sub(%r{.*-}, '')}/MacVim-KaoriYa-#{version.sub(%r{.*-}, '')}.dmg"
   appcast 'https://raw.githubusercontent.com/splhack/macvim-kaoriya/master/latest.xml',
           :checkpoint => '6ead50ae50df4feef5f1e985b9295e19c30c13992cb6794afa991a7f9d5d23f0'
-
   name 'MacVim KaoriYa'
   homepage 'https://github.com/splhack/macvim-kaoriya'
   license :oss
 
-  app 'MacVim.app'
   depends_on :macos => '>= :lion'
+
+  app 'MacVim.app'
+
   mvim = 'MacVim.app/Contents/MacOS/mvim'
   executables = %w[macvim-askpass mvim mvimdiff mview mvimex gvim gvimdiff gview gvimex]
   executables += %w[vi vim vimdiff view vimex] if ARGV.include? '--override-system-vim'
   executables.each { |e| binary mvim, :target => e }
-
-  zap :delete => [
-                  '~/Library/Preferences/org.vim.MacVim.LSSharedFileList.plist',
-                  '~/Library/Preferences/org.vim.MacVim.plist',
-                 ]
 
   postflight do
     system 'ruby',
@@ -34,6 +30,11 @@ cask 'macvim-kaoriya' do
            %q[sub %r[`dirname "\$0"`(?=(?:/\.\.){3})], '$(cd $(dirname $(readlink $0 || echo $0));pwd)'],
            staged_path.join(mvim)
   end
+
+  zap :delete => [
+                   '~/Library/Preferences/org.vim.MacVim.LSSharedFileList.plist',
+                   '~/Library/Preferences/org.vim.MacVim.plist',
+                 ]
 
   caveats do
     files_in_usr_local

@@ -8,8 +8,8 @@ cask 'dropbox-experimental' do
   license :gratis
 
   app 'Dropbox.app'
-  
+
   uninstall :login_item => 'Dropbox'
-  
+
   zap :delete => '~/.dropbox'
 end

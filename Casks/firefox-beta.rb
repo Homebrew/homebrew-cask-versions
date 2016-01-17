@@ -10,8 +10,8 @@ cask 'firefox-beta' do
   app 'Firefox.app'
 
   zap :delete => [
-                  '~/Library/Application Support/Firefox',
-                  '~/Library/Caches/Firefox',
+                   '~/Library/Application Support/Firefox',
+                   '~/Library/Caches/Firefox',
                  ]
 
   caveats <<-EOS.undent

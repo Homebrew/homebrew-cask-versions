@@ -8,11 +8,11 @@ cask 'little-snitch-nightly' do
   license :commercial
 
   installer :manual => 'Little Snitch Installer.app'
-  
+
   zap :delete => [
-                  '~/Library/Preferences/at.obdev.LittleSnitchNetworkMonitor.plist',
-                  '~/Library/Application Support/Little Snitch/rules.usr.xpl',
-                  '~/Library/Application Support/Little Snitch/configuration.xpl',
-                  '~/Library/Application Support/Little Snitch/configuration.user.xpl',
+                   '~/Library/Preferences/at.obdev.LittleSnitchNetworkMonitor.plist',
+                   '~/Library/Application Support/Little Snitch/rules.usr.xpl',
+                   '~/Library/Application Support/Little Snitch/configuration.xpl',
+                   '~/Library/Application Support/Little Snitch/configuration.user.xpl',
                  ]
 end

@@ -3,9 +3,9 @@ cask 'opera-beta' do
   sha256 '6f20c576e2920b8e821cea4efd0138966ae34d17fbf51bae9e6cbc2d3c2941e9'
 
   url "https://get.geo.opera.com/pub/opera-beta/#{version}/mac/Opera_beta_#{version}_Setup.dmg"
-  name "Opera Beta"
+  name 'Opera Beta'
   homepage 'http://www.opera.com/computer/beta'
-  license :unknown
+  license :unknown # TODO: change license and remove this comment; ':unknown' is a machine-generated placeholder
 
   app 'Opera Beta.app'
 end

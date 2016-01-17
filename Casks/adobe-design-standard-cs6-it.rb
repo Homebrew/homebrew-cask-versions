@@ -9,8 +9,8 @@ cask 'adobe-design-standard-cs6-it' do
   # https://helpx.adobe.com/x-productkb/policy-pricing/cs6-product-downloads.html
 
   url 'http://trials2.adobe.com/AdobeProducts/DSGN/CS6/osx10/DesignStandard_CS6_LS4.dmg',
-    :user_agent => :fake,
-    :cookies => { 'MM_TRIALS' => '1234' }
+      :user_agent => :fake,
+      :cookies    => { 'MM_TRIALS' => '1234' }
   name 'Adobe CS6 Design Standard' # name must exactly match directory in dmg!
   homepage 'https://www.adobe.com/mena_en/products/creativesuite.html'
   license :commercial

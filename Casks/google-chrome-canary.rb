@@ -12,18 +12,18 @@ cask 'google-chrome-canary' do
   app 'Google Chrome Canary.app'
 
   zap :delete => [
-                  '~/Library/Application Support/Google/Chrome Canary',
-                  '~/Library/Caches/Google/Chrome Canary',
-                  '~/Library/Caches/com.google.Chrome',
-                  '~/Library/Caches/com.google.Chrome.helper.EH',
-                  '~/Library/Caches/com.google.Keystone.Agent',
-                  '~/Library/Caches/com.google.SoftwareUpdate',
-                  '~/Library/Google/GoogleSoftwareUpdate',
-                  '~/Library/Logs/GoogleSoftwareUpdateAgent.log',
+                   '~/Library/Application Support/Google/Chrome Canary',
+                   '~/Library/Caches/Google/Chrome Canary',
+                   '~/Library/Caches/com.google.Chrome',
+                   '~/Library/Caches/com.google.Chrome.helper.EH',
+                   '~/Library/Caches/com.google.Keystone.Agent',
+                   '~/Library/Caches/com.google.SoftwareUpdate',
+                   '~/Library/Google/GoogleSoftwareUpdate',
+                   '~/Library/Logs/GoogleSoftwareUpdateAgent.log',
                  ],
       :rmdir  => [
-                  '~/Library/Caches/Google',
-                  '~/Library/Google',
+                   '~/Library/Caches/Google',
+                   '~/Library/Google',
                  ]
 
   caveats <<-EOS.undent

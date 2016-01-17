@@ -9,8 +9,8 @@ cask 'adobe-photoshop-cs5' do
   # https://helpx.adobe.com/creative-suite/kb/cs5-product-downloads.html
 
   url 'http://trials2.adobe.com/dlm/AdobeProducts/PHSP/12/osx10/Photoshop_12_LS1.dmg',
-    :user_agent => :fake,
-    :cookies => { 'MM_TRIALS' => '1234' }
+      :user_agent => :fake,
+      :cookies    => { 'MM_TRIALS' => '1234' }
   name 'Adobe Photoshop CS5' # name must exactly match directory in dmg!
   homepage 'https://www.adobe.com/mena_en/products/creativesuite.html'
   license :commercial
@@ -28,10 +28,10 @@ cask 'adobe-photoshop-cs5' do
   # deployment file. launching the uninstall app will not work in silent mode.
   # keeping the code here and commented out in case there's a way.
 
-  #uninstall_preflight do
+  # uninstall_preflight do
   #  system '/usr/bin/killall', '-kill', 'SafariNotificationAgent'
   #  system '/usr/bin/sudo', '-E', '--', "/Library/Application Support/Adobe/Uninstall/{15FEDA5F-141C-4127-8D7E-B962D1742728}.app/Contents/MacOS/Uninstall Product", "--mode=silent", "--deploymentFile=#{staged_path}/Adobe CS6 Design Standard/deploy/uninstall-en_US.xml"
-  #end
+  # end
 
   caveats 'Installation or Uninstallation may fail with Exit Code 19 (Conflicting Processes running) if Browsers, Safari Notification Service or SIMBL Services (e.g. Flashlight) are running or Adobe Creative Cloud or any other Adobe Products are already installed. See Logs in /Library/Logs/Adobe/Installers if Installation or Uninstallation fails, to identifify the conflicting processes.'
 end

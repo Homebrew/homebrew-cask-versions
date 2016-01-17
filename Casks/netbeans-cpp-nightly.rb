@@ -6,7 +6,7 @@ cask 'netbeans-cpp-nightly' do
   name 'NetBeans IDE for C/C++'
   homepage 'https://netbeans.org/'
   license :oss
-  
+
   pkg "NetBeans Dev #{version}.mpkg"
 
   uninstall :delete => '/Applications/NetBeans'

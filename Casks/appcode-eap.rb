@@ -7,15 +7,15 @@ cask 'appcode-eap' do
   homepage 'https://confluence.jetbrains.com/display/OBJC/AppCode+EAP'
   license :commercial
 
+  conflicts_with :cask => 'appcode'
+
   app 'AppCode EAP.app'
 
   zap :delete => [
-                  '~/Library/Preferences/com.jetbrains.AppCode-EAP.plist',
-                  '~/Library/Preferences/AppCode33',
-                  '~/Library/Application Support/AppCode33',
-                  '~/Library/Caches/AppCode33',
-                  '~/Library/Logs/AppCode33',
+                   '~/Library/Preferences/com.jetbrains.AppCode-EAP.plist',
+                   '~/Library/Preferences/AppCode33',
+                   '~/Library/Application Support/AppCode33',
+                   '~/Library/Caches/AppCode33',
+                   '~/Library/Logs/AppCode33',
                  ]
-
-  conflicts_with :cask => 'appcode'
 end
