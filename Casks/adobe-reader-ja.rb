@@ -4,6 +4,7 @@ cask 'adobe-reader-ja' do
   major_version = version.split('.')[0]
 
   url "http://ardownload.adobe.com/pub/adobe/reader/mac/#{major_version}.x/#{version}/ja_JP/AdbeRdr#{version.gsub('.', '')}_ja_JP.dmg"
+  name 'Adobe Reader'
   homepage 'https://www.adobe.com/jp/products/reader.html'
   license :closed
 
