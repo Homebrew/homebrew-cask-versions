@@ -4,10 +4,12 @@ cask 'adobe-photoshop-cc-es' do
 
   url 'http://trials3.adobe.com/AdobeProducts/PHSP/16/osx10/Photoshop_16_LS20.dmg',
       :user_agent => :fake,
-      :cookies => { 'MM_TRIALS' => '1234' }
+      :cookies    => { 'MM_TRIALS' => '1234' }
   name 'Adobe Photoshop CC 2015'
   homepage 'https://www.adobe.com/products/photoshop.html'
   license :commercial
+
+  conflicts_with :cask => 'adobe-photoshop-cc'
 
   preflight do
     file = File.open "#{staged_path}/uninstall.xml", 'w'
@@ -26,7 +28,6 @@ cask 'adobe-photoshop-cc-es' do
     file.close
 
     system '/usr/bin/sudo', '-E', '--', "#{staged_path}/Adobe Photoshop CC 2015/Install.app/Contents/MacOS/Install", '--mode=silent', "--deploymentFile=#{staged_path}/Adobe\ Photoshop\ CC\ 2015/Deployment/es_ES_Deployment.xml"
-
   end
 
   uninstall_preflight do
@@ -34,6 +35,4 @@ cask 'adobe-photoshop-cc-es' do
   end
 
   uninstall :rmdir => '/Applications/Utilities/Adobe Installers'
-
-  conflicts_with :cask => 'adobe-photoshop-cc'
 end

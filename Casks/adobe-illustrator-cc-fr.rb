@@ -4,10 +4,12 @@ cask 'adobe-illustrator-cc-fr' do
 
   url 'http://trials3.adobe.com/AdobeProducts/ILST/19/osx10-64/Illustrator_19_LS20.dmg',
       :user_agent => :fake,
-      :cookies => { 'MM_TRIALS' => '1234' }
+      :cookies    => { 'MM_TRIALS' => '1234' }
   name 'Adobe Illustrator CC 2015'
   homepage 'https://www.adobe.com/products/illustrator.html'
   license :commercial
+
+  conflicts_with :cask => 'adobe-illustrator-cc'
 
   preflight do
     deployment_xml = "#{staged_path}/Adobe Illustrator CC 2015/Deployment/deployment.xml"
@@ -25,6 +27,4 @@ cask 'adobe-illustrator-cc-fr' do
   end
 
   uninstall :rmdir => '/Applications/Utilities/Adobe Installers'
-
-  conflicts_with :cask => 'adobe-illustrator-cc'
 end

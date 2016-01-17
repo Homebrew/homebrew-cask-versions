@@ -9,6 +9,6 @@ cask 'rstudio-preview' do
   license :affero
 
   app 'RStudio.app'
-  
+
   zap :delete => '~/.rstudio-desktop'
 end

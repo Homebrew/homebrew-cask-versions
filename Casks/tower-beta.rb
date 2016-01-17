@@ -14,9 +14,9 @@ cask 'tower-beta' do
   binary 'Tower.app/Contents/MacOS/gittower'
 
   zap :delete => [
-                  '~/Library/Application Support/com.fournova.Tower2',
-                  '~/Library/Caches/com.fournova.Tower2',
-                  '~/Library/Preferences/com.fournova.Tower2.plist',
+                   '~/Library/Application Support/com.fournova.Tower2',
+                   '~/Library/Caches/com.fournova.Tower2',
+                   '~/Library/Preferences/com.fournova.Tower2.plist',
                  ]
 
   caveats do

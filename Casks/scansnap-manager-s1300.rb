@@ -7,9 +7,9 @@ cask 'scansnap-manager-s1300' do
   homepage 'https://www.fujitsu.com/global/support/computing/peripheral/scanners/software/s1300m-setup.html'
   license :gratis
 
-  pkg 'Scansnap Manager.pkg'
-  
-  uninstall :pkgutil => 'jp.co.pfu.ScanSnap.V10L10'
-
   depends_on :macos => '>= :tiger'
+
+  pkg 'Scansnap Manager.pkg'
+
+  uninstall :pkgutil => 'jp.co.pfu.ScanSnap.V10L10'
 end

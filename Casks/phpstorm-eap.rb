@@ -10,12 +10,11 @@ cask 'phpstorm-eap' do
   app 'PhpStorm EAP.app'
 
   zap :delete => [
-                  '~/Library/Application Support/WebIde100',
-                  '~/Library/Caches/WebIde100',
-                  '~/Library/Logs/WebIde100',
-                  '~/Library/Preferences/WebIde100',
-                  '~/Library/Preferences/com.jetbrains.PhpStorm-EAP.plist',
-                  '~/.WebIde100',
+                   '~/Library/Application Support/WebIde100',
+                   '~/Library/Caches/WebIde100',
+                   '~/Library/Logs/WebIde100',
+                   '~/Library/Preferences/WebIde100',
+                   '~/Library/Preferences/com.jetbrains.PhpStorm-EAP.plist',
+                   '~/.WebIde100',
                  ]
-
 end

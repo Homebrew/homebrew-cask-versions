@@ -10,19 +10,19 @@ cask 'sublime-text3' do
   homepage 'https://www.sublimetext.com/3'
   license :closed
 
+  conflicts_with :cask => 'caskroom/versions/sublime-text-dev'
+
   app 'Sublime Text.app'
   binary 'Sublime Text.app/Contents/SharedSupport/bin/subl'
 
   uninstall :quit => 'com.sublimetext.3'
 
   zap :delete => [
-                  '~/Library/Application Support/Sublime Text 3',
-                  '~/Library/Caches/com.sublimetext.3',
-                  '~/Library/Preferences/com.sublimetext.3.plist',
-                  '~/Library/Saved Application State/com.sublimetext.3.savedState'
+                   '~/Library/Application Support/Sublime Text 3',
+                   '~/Library/Caches/com.sublimetext.3',
+                   '~/Library/Preferences/com.sublimetext.3.plist',
+                   '~/Library/Saved Application State/com.sublimetext.3.savedState',
                  ]
-
-  conflicts_with :cask => 'caskroom/versions/sublime-text-dev'
 
   caveats do
     files_in_usr_local

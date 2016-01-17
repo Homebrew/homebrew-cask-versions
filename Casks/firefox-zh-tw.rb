@@ -10,7 +10,7 @@ cask 'firefox-zh-tw' do
   app 'Firefox.app'
 
   zap :delete => [
-                  '~/Library/Application Support/Firefox',
-                  '~/Library/Caches/Firefox',
+                   '~/Library/Application Support/Firefox',
+                   '~/Library/Caches/Firefox',
                  ]
 end

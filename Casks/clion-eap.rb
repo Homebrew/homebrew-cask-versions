@@ -10,10 +10,10 @@ cask 'clion-eap' do
   app 'CLion EAP.app'
 
   zap :delete => [
-                  '~/Library/Preferences/com.jetbrains.CLion-EAP.plist',
-                  '~/Library/Preferences/CLion15',
-                  '~/Library/Application Support/CLion15',
-                  '~/Library/Caches/CLion15',
-                  '~/Library/Logs/CLion15',
-  ]
+                   '~/Library/Preferences/com.jetbrains.CLion-EAP.plist',
+                   '~/Library/Preferences/CLion15',
+                   '~/Library/Application Support/CLion15',
+                   '~/Library/Caches/CLion15',
+                   '~/Library/Logs/CLion15',
+                 ]
 end

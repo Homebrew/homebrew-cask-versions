@@ -2,7 +2,7 @@ cask 'parallels10' do
   version '10.3.0-29227'
   sha256 '71654e1c7f311d9c95f4b78686ebcfcbbb8006fcb57cab39ac817b50c6eed2e3'
 
-  url "http://download.parallels.com/desktop/v#{version[/^\w+/]}/#{version.sub(/-.*$/, '')}/ParallelsDesktop-#{version}.dmg"
+  url "http://download.parallels.com/desktop/v#{version[%r{^\w+}]}/#{version.sub(%r{-.*$}, '')}/ParallelsDesktop-#{version}.dmg"
   name 'Parallels Desktop'
   homepage 'https://www.parallels.com/products/desktop/'
   license :commercial
@@ -21,6 +21,7 @@ cask 'parallels10' do
                          '/usr/bin/prlctl',
                          '/usr/bin/prlsrvctl',
                        ]
+
   zap       :delete => [
                          '~/.parallels_settings',
                          '~/Library/Caches/com.parallels.desktop.console',
@@ -29,5 +30,5 @@ cask 'parallels10' do
                          '~/Library/Preferences/com.parallels.Parallels Desktop Statistics.plist',
                          '~/Library/Preferences/com.parallels.Parallels Desktop.plist',
                          '~/Library/Preferences/com.parallels.Parallels.plist',
-                        ]
+                       ]
 end

@@ -9,12 +9,12 @@ cask 'tunnelblick-beta' do
   homepage 'https://tunnelblick.net'
   license :gpl
 
+  depends_on :macos => '>= :tiger'
+
   app 'Tunnelblick.app'
 
   uninstall :launchctl => 'net.tunnelblick.tunnelblick.LaunchAtLogin',
             :quit      => 'net.tunnelblick.tunnelblick'
-
-  depends_on :macos => '>= :tiger'
 
   caveats <<-EOS.undent
     For security reasons, #{token} must be installed to /Applications,

@@ -5,13 +5,15 @@ cask 'adobe-reader-de' do
   url "http://ardownload.adobe.com/pub/adobe/reader/mac/#{version.to_i}.x/#{version}/de_DE/AdbeRdr#{version.gsub('.', '')}_de_DE.dmg"
   name 'Adobe Reader'
   homepage 'https://www.adobe.com/de/products/reader.html'
-  license :unknown
+  license :unknown # TODO: change license and remove this comment; ':unknown' is a machine-generated placeholder
 
   pkg 'Adobe Reader XI Installer.pkg'
+
   uninstall :pkgutil => "com.adobe.acrobat.reader.#{version.gsub('.', '')}.*",
-            :delete => '/Applications/Adobe Reader.app'
+            :delete  => '/Applications/Adobe Reader.app'
+
   zap       :delete => [
-                        "~/Library/Application Support/Adobe/Acrobat/#{version.sub(%r{(\d+)\.(\d+).*},'\1.\2')}",
-                        '~/Library/Preferences/com.adobe.Reader.plist',
+                         "~/Library/Application Support/Adobe/Acrobat/#{version.sub(%r{(\d+)\.(\d+).*}, '\1.\2')}",
+                         '~/Library/Preferences/com.adobe.Reader.plist',
                        ]
 end

@@ -8,7 +8,7 @@ cask 'clipmenu-alpha' do
   homepage 'http://www.clipmenu.com/'
   license :mit
 
-  app 'ClipMenu.app'
-
   depends_on :macos => '>= :mavericks'
+
+  app 'ClipMenu.app'
 end

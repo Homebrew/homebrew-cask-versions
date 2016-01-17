@@ -7,9 +7,9 @@ cask 'vmware-fusion6' do
   homepage 'https://www.vmware.com/products/fusion/'
   license :commercial
 
-  binary 'VMware Fusion.app/Contents/Library/vmrun'
   app 'VMware Fusion.app'
-  
+  binary 'VMware Fusion.app/Contents/Library/vmrun'
+
   uninstall_preflight do
     system '/usr/bin/sudo', '-E', '--',
            '/usr/sbin/chown', '-R', '--', "#{Etc.getpwuid(Process.euid).name}:staff", "#{staged_path}/VMware Fusion.app"

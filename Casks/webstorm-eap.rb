@@ -11,11 +11,11 @@ cask 'webstorm-eap' do
   binary 'WebStorm.app/Contents/MacOS/webstorm'
 
   zap :delete => [
-                  '~/.WebStorm12',
-                  '~/Library/Preferences/com.jetbrains.webstorm.plist',
-                  '~/Library/Preferences/WebStorm12',
-                  '~/Library/Application Support/WebStorm12',
-                  '~/Library/Caches/WebStorm12',
-                  '~/Library/Logs/WebStorm12',
+                   '~/.WebStorm12',
+                   '~/Library/Preferences/com.jetbrains.webstorm.plist',
+                   '~/Library/Preferences/WebStorm12',
+                   '~/Library/Application Support/WebStorm12',
+                   '~/Library/Caches/WebStorm12',
+                   '~/Library/Logs/WebStorm12',
                  ]
 end

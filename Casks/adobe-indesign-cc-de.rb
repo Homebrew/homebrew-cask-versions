@@ -4,10 +4,12 @@ cask 'adobe-indesign-cc-de' do
 
   url 'http://trials3.adobe.com/AdobeProducts/IDSN/11/osx10/InDesign_11_LS20.dmg',
       :user_agent => :fake,
-      :cookies => { 'MM_TRIALS' => '1234' }
+      :cookies    => { 'MM_TRIALS' => '1234' }
   name 'Adobe InDesign CC 2015'
   homepage 'https://www.adobe.com/products/indesign.html'
   license :commercial
+
+  conflicts_with :cask => 'adobe-indesign-cc'
 
   preflight do
     deployment_xml = "#{staged_path}/Adobe InDesign CC 2015/deploy/install.xml"
@@ -25,6 +27,4 @@ cask 'adobe-indesign-cc-de' do
   end
 
   uninstall :rmdir => '/Applications/Utilities/Adobe Installers'
-
-  conflicts_with :cask => 'adobe-indesign-cc'
 end
