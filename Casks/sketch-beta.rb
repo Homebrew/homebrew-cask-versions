@@ -4,6 +4,7 @@ cask 'sketch-beta' do
 
   # hockeyapp.net is the official download host per the vendor homepage
   url 'https://rink.hockeyapp.net/api/2/apps/0172d48cceec171249a8d850fb16276b/app_versions/164?format=zip&avtoken=1bf9ed78e68e54974eb9cc9516a216ba82c3f245'
+  name 'Sketch'
   homepage 'http://bohemiancoding.com/sketch/beta/'
   license :commercial
 
