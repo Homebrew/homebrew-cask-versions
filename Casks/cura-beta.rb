@@ -9,5 +9,5 @@ cask 'cura-beta' do
 
   app 'Cura.app'
 
-  zap :delete => '~/.cura'
+  zap delete: '~/.cura'
 end

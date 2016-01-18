@@ -3,13 +3,13 @@ cask 'adobe-photoshop-cc-de' do
   sha256 :no_check
 
   url 'http://trials3.adobe.com/AdobeProducts/PHSP/16/osx10/Photoshop_16_LS20.dmg',
-      :user_agent => :fake,
-      :cookies    => { 'MM_TRIALS' => '1234' }
+      user_agent: :fake,
+      cookies:    { 'MM_TRIALS' => '1234' }
   name 'Adobe Photoshop CC 2015'
   homepage 'https://www.adobe.com/products/photoshop.html'
   license :commercial
 
-  conflicts_with :cask => 'adobe-photoshop-cc'
+  conflicts_with cask: 'adobe-photoshop-cc'
 
   preflight do
     file = File.open "#{staged_path}/uninstall.xml", 'w'
@@ -34,5 +34,5 @@ cask 'adobe-photoshop-cc-de' do
     system '/usr/bin/sudo', '-E', '--', "#{staged_path}/Adobe Photoshop CC 2015/Install.app/Contents/MacOS/Install", '--mode=silent', "--deploymentFile=#{staged_path}/uninstall.xml"
   end
 
-  uninstall :rmdir => '/Applications/Utilities/Adobe Installers'
+  uninstall rmdir: '/Applications/Utilities/Adobe Installers'
 end

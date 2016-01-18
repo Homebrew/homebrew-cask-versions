@@ -9,7 +9,7 @@ cask 'dropbox-experimental' do
 
   app 'Dropbox.app'
 
-  uninstall :login_item => 'Dropbox'
+  uninstall login_item: 'Dropbox'
 
-  zap :delete => '~/.dropbox'
+  zap delete: '~/.dropbox'
 end

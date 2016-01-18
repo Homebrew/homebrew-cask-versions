@@ -9,8 +9,8 @@ cask 'adobe-photoshop-cs5' do
   # https://helpx.adobe.com/creative-suite/kb/cs5-product-downloads.html
 
   url 'http://trials2.adobe.com/dlm/AdobeProducts/PHSP/12/osx10/Photoshop_12_LS1.dmg',
-      :user_agent => :fake,
-      :cookies    => { 'MM_TRIALS' => '1234' }
+      user_agent: :fake,
+      cookies:    { 'MM_TRIALS' => '1234' }
   name 'Adobe Photoshop CS5' # name must exactly match directory in dmg!
   homepage 'https://www.adobe.com/mena_en/products/creativesuite.html'
   license :commercial

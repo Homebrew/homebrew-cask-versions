@@ -7,8 +7,8 @@ cask 'adobe-digital-editions2' do
   homepage 'https://www.adobe.com/solutions/ebook/digital-editions.html'
   license :gratis
 
-  pkg 'Digital Editions 2.0 Installer.pkg', :allow_untrusted => true
+  pkg 'Digital Editions 2.0 Installer.pkg', allow_untrusted: true
 
-  uninstall :pkgutil => 'com.adobe.adobedigitaleditions.app',
-            :delete  => '/Applications/Adobe Digital Editions.app'
+  uninstall pkgutil: 'com.adobe.adobedigitaleditions.app',
+            delete:  '/Applications/Adobe Digital Editions.app'
 end

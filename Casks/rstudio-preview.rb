@@ -10,5 +10,5 @@ cask 'rstudio-preview' do
 
   app 'RStudio.app'
 
-  zap :delete => '~/.rstudio-desktop'
+  zap delete: '~/.rstudio-desktop'
 end

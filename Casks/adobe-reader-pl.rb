@@ -9,12 +9,12 @@ cask 'adobe-reader-pl' do
 
   pkg 'Adobe Reader XI Installer.pkg'
 
-  uninstall :pkgutil => "com.adobe.acrobat.reader.#{version.gsub('.', '')}.*",
-            :delete  => '/Applications/Adobe Reader.app'
+  uninstall pkgutil: "com.adobe.acrobat.reader.#{version.gsub('.', '')}.*",
+            delete:  '/Applications/Adobe Reader.app'
 
-  zap       :delete => [
-                         "~/Library/Application Support/Adobe/Acrobat/#{version.sub(%r{(\d+)\.(\d+).*}, '\1.\2')}",
-                         '~/Library/Preferences/com.adobe.Reader.plist',
-                         '~/Library/Caches/com.adobe.Reader',
-                       ]
+  zap       delete: [
+                      "~/Library/Application Support/Adobe/Acrobat/#{version.sub(%r{(\d+)\.(\d+).*}, '\1.\2')}",
+                      '~/Library/Preferences/com.adobe.Reader.plist',
+                      '~/Library/Caches/com.adobe.Reader',
+                    ]
 end

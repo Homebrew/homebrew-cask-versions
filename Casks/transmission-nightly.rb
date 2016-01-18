@@ -9,11 +9,11 @@ cask 'transmission-nightly' do
 
   app 'Transmission.app'
 
-  zap :delete => [
-                   '~/Library/Application Support/Transmission',
-                   '~/Library/Preferences/org.m0k.transmission.plist',
-                   '~/Library/Preferences/org.m0k.transmission.LSSharedFileList.plist',
-                   '~/Library/Caches/org.m0k.transmission',
-                   '~/Library/Saved Application State/org.m0k.transmission.savedState',
-                 ]
+  zap delete: [
+                '~/Library/Application Support/Transmission',
+                '~/Library/Preferences/org.m0k.transmission.plist',
+                '~/Library/Preferences/org.m0k.transmission.LSSharedFileList.plist',
+                '~/Library/Caches/org.m0k.transmission',
+                '~/Library/Saved Application State/org.m0k.transmission.savedState',
+              ]
 end

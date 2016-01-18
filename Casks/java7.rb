@@ -3,9 +3,9 @@ cask 'java7' do
   sha256 '2b9deef240a7f07d08541da01bbd60cbf93bf713efd5997e586ba23ec4f5089e'
 
   url 'http://download.oracle.com/otn-pub/java/jdk/7u80-b15/jdk-7u80-macosx-x64.dmg',
-      :cookies => {
-                    'oraclelicense' => 'accept-securebackup-cookie',
-                  }
+      cookies: {
+                 'oraclelicense' => 'accept-securebackup-cookie',
+               }
   name 'Java Standard Edition Development Kit'
   homepage 'http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html'
   license :gratis
@@ -33,17 +33,17 @@ cask 'java7' do
     end
   end
 
-  uninstall :pkgutil => 'com.oracle.jdk7u80',
-            :delete  => [
-                          MacOS.release <= :mavericks ? '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK' : '',
-                        ].keep_if { |v| !v.empty? }
+  uninstall pkgutil: 'com.oracle.jdk7u80',
+            delete:  [
+                       MacOS.release <= :mavericks ? '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK' : '',
+                     ].keep_if { |v| !v.empty? }
 
-  zap       :delete => [
-                         '~/Library/Application Support/Oracle/Java',
-                         '~/Library/Caches/com.oracle.java.Java-Updater',
-                         '~/Library/Caches/net.java.openjdk.cmd',
-                       ],
-            :rmdir  => '~/Library/Application Support/Oracle/'
+  zap       delete: [
+                      '~/Library/Application Support/Oracle/Java',
+                      '~/Library/Caches/com.oracle.java.Java-Updater',
+                      '~/Library/Caches/net.java.openjdk.cmd',
+                    ],
+            rmdir:  '~/Library/Application Support/Oracle/'
 
   caveats <<-EOS.undent
     This Cask makes minor modifications to the JRE to prevent any packaged

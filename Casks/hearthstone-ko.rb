@@ -7,5 +7,5 @@ cask 'hearthstone-ko' do
   homepage 'http://kr.battle.net/hearthstone/ko/'
   license :unknown # TODO: change license and remove this comment; ':unknown' is a machine-generated placeholder
 
-  installer :manual => 'Hearthstone-Setup-koKR.app'
+  installer manual: 'Hearthstone-Setup-koKR.app'
 end

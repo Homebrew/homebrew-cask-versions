@@ -11,8 +11,8 @@ cask 'pokerstarseu' do
 
   app 'PokerStarsEU.app'
 
-  zap :delete => [
-                   '~/Library/Preferences/com.pokerstars.eu.user.ini',
-                   '~/Library/Preferences/com.pokerstars.PokerStarsEU.plist',
-                 ]
+  zap delete: [
+                '~/Library/Preferences/com.pokerstars.eu.user.ini',
+                '~/Library/Preferences/com.pokerstars.PokerStarsEU.plist',
+              ]
 end

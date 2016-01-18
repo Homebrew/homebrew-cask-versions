@@ -3,7 +3,7 @@ cask 'java-beta' do
   sha256 'e507e19e4300a5478a9c50eec2db50e4e69a9106fca19a15fcb42287bd6131a9'
 
   url 'http://download.java.net/jdk8u72/archive/b05/binaries/jdk-8u72-ea-bin-b05-macosx-x86_64-26_oct_2015.dmg',
-      :cookies => { 'oraclelicense' => 'accept-securebackup-cookie' }
+      cookies: { 'oraclelicense' => 'accept-securebackup-cookie' }
   name 'Java Standard Edition Development Kit'
   homepage 'https://jdk8.java.net/download.html'
   license :gratis
@@ -31,17 +31,17 @@ cask 'java-beta' do
     end
   end
 
-  uninstall :pkgutil => 'com.oracle.jdk8u72',
-            :delete  => [
-                          MacOS.release <= :mavericks ? '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK' : '',
-                        ].keep_if { |v| !v.empty? }
+  uninstall pkgutil: 'com.oracle.jdk8u72',
+            delete:  [
+                       MacOS.release <= :mavericks ? '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK' : '',
+                     ].keep_if { |v| !v.empty? }
 
-  zap       :delete => [
-                         '~/Library/Application Support/Oracle/Java',
-                         '~/Library/Caches/com.oracle.java.Java-Updater',
-                         '~/Library/Caches/net.java.openjdk.cmd',
-                       ],
-            :rmdir  => '~/Library/Application Support/Oracle/'
+  zap       delete: [
+                      '~/Library/Application Support/Oracle/Java',
+                      '~/Library/Caches/com.oracle.java.Java-Updater',
+                      '~/Library/Caches/net.java.openjdk.cmd',
+                    ],
+            rmdir:  '~/Library/Application Support/Oracle/'
 
   caveats <<-EOS.undent
     This Cask makes minor modifications to the JRE to prevent any packaged

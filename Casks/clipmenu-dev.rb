@@ -10,8 +10,8 @@ cask 'clipmenu-dev' do
 
   app 'ClipMenu.app'
 
-  zap :delete => [
-                   '~/Library/Application Support/ClipMenu',
-                   '~/Library/Preferences/com.naotaka.ClipMenu.plist',
-                 ]
+  zap delete: [
+                '~/Library/Application Support/ClipMenu',
+                '~/Library/Preferences/com.naotaka.ClipMenu.plist',
+              ]
 end

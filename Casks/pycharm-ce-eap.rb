@@ -7,16 +7,16 @@ cask 'pycharm-ce-eap' do
   homepage 'https://confluence.jetbrains.com/display/PYH/JetBrains+PyCharm+Preview+(EAP)'
   license :apache
 
-  conflicts_with :cask => 'pycharm-ce'
+  conflicts_with cask: 'pycharm-ce'
 
   app 'PyCharm CE.app'
 
-  zap :delete => [
-                   '~/Library/Preferences/com.jetbrains.pycharm.plist',
-                   '~/Library/Preferences/PyCharm50',
-                   '~/Library/Application Support/PyCharm50',
-                   '~/Library/Caches/PyCharm50',
-                   '~/Library/Logs/PyCharm50',
-                   '/usr/local/bin/charm',
-                 ]
+  zap delete: [
+                '~/Library/Preferences/com.jetbrains.pycharm.plist',
+                '~/Library/Preferences/PyCharm50',
+                '~/Library/Application Support/PyCharm50',
+                '~/Library/Caches/PyCharm50',
+                '~/Library/Logs/PyCharm50',
+                '/usr/local/bin/charm',
+              ]
 end

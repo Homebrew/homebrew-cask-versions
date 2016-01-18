@@ -11,6 +11,6 @@ cask 'virtualbox-beta' do
   binary '/Applications/VirtualBox.app/Contents/MacOS/VBoxManage'
   binary '/Applications/VirtualBox.app/Contents/MacOS/VBoxHeadless'
 
-  uninstall :script  => { :executable => 'VirtualBox_Uninstall.tool', :args => %w[--unattended] },
-            :pkgutil => 'org.virtualbox.pkg.*'
+  uninstall script:  { executable: 'VirtualBox_Uninstall.tool', args: %w[--unattended] },
+            pkgutil: 'org.virtualbox.pkg.*'
 end

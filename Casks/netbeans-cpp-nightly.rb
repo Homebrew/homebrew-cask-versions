@@ -9,5 +9,5 @@ cask 'netbeans-cpp-nightly' do
 
   pkg "NetBeans Dev #{version}.mpkg"
 
-  uninstall :delete => '/Applications/NetBeans'
+  uninstall delete: '/Applications/NetBeans'
 end
