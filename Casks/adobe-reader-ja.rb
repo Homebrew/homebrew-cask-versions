@@ -11,6 +11,6 @@ cask 'adobe-reader-ja' do
 
   pkg 'Adobe Reader XI Installer.pkg'
 
-  uninstall :pkgutil => "com.adobe.acrobat.reader.#{major_version}.*",
-            :delete  => '/Applications/Adobe Reader.app'
+  uninstall pkgutil: "com.adobe.acrobat.reader.#{major_version}.*",
+            delete:  '/Applications/Adobe Reader.app'
 end

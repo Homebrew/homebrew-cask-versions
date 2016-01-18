@@ -11,5 +11,5 @@ cask 'iterm2-beta' do
 
   app 'iTerm.app'
 
-  zap :delete => '~/Library/Preferences/com.googlecode.iterm2.plist'
+  zap delete: '~/Library/Preferences/com.googlecode.iterm2.plist'
 end

@@ -9,12 +9,12 @@ cask 'intellij-idea-ce-eap' do
 
   app 'IntelliJ IDEA 16 CE EAP.app'
 
-  zap :delete => [
-                   '~/Library/Application Support/IdeaIC16',
-                   '~/Library/Caches/IdeaIC16',
-                   '~/Library/Logs/IdeaIC16',
-                   '~/Library/Preferences/com.jetbrains.intellij.ce.plist',
-                   '~/Library/Preferences/IdeaIC16',
-                   '~/Library/Saved Application State/com.jetbrains.intellij.ce.savedState',
-                 ]
+  zap delete: [
+                '~/Library/Application Support/IdeaIC16',
+                '~/Library/Caches/IdeaIC16',
+                '~/Library/Logs/IdeaIC16',
+                '~/Library/Preferences/com.jetbrains.intellij.ce.plist',
+                '~/Library/Preferences/IdeaIC16',
+                '~/Library/Saved Application State/com.jetbrains.intellij.ce.savedState',
+              ]
 end

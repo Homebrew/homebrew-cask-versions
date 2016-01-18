@@ -8,10 +8,10 @@ cask 'julia-nightly' do
   homepage 'http://julialang.org'
   license :mit
 
-  depends_on :macos => '>= :lion'
+  depends_on macos: '>= :lion'
 
   app "Julia-#{version.sub(%r{(.+)-(.+)}, '\1-dev-\2')}.app"
   binary "Julia-#{version.sub(%r{(.+)-(.+)}, '\1-dev-\2')}.app/Contents/Resources/julia/bin/julia"
 
-  zap :delete => '~/.julia'
+  zap delete: '~/.julia'
 end

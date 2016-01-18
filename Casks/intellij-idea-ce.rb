@@ -9,12 +9,12 @@ cask 'intellij-idea-ce' do
 
   app 'IntelliJ IDEA 15 CE.app'
 
-  zap :delete => [
-                   '~/Library/Application Support/IdeaIC15',
-                   '~/Library/Preferences/IdeaIC15',
-                   '~/Library/Caches/IdeaIC15',
-                   '~/Library/Logs/IdeaIC15',
-                 ]
+  zap delete: [
+                '~/Library/Application Support/IdeaIC15',
+                '~/Library/Preferences/IdeaIC15',
+                '~/Library/Caches/IdeaIC15',
+                '~/Library/Logs/IdeaIC15',
+              ]
 
   caveats do
     depends_on_java

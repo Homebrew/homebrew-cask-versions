@@ -7,7 +7,7 @@ cask 'libreoffice-beta' do
   homepage 'https://www.libreoffice.org/download/pre-releases/'
   license :mpl
   gpg "#{url}.asc",
-      :key_id => 'c2839ecad9408fbe9531c3e9f434a1efafeeaea3'
+      key_id: 'c2839ecad9408fbe9531c3e9f434a1efafeeaea3'
 
   app 'LibreOfficeDev.app'
 end

@@ -9,9 +9,9 @@ cask 'adium-beta' do
 
   app 'Adium.app'
 
-  zap :delete => [
-                   '~/Library/Caches/Adium',
-                   '~/Library/Caches/com.adiumX.adiumX',
-                   '~/Library/Preferences/com.adiumX.adiumX.plist',
-                 ]
+  zap delete: [
+                '~/Library/Caches/Adium',
+                '~/Library/Caches/com.adiumX.adiumX',
+                '~/Library/Preferences/com.adiumX.adiumX.plist',
+              ]
 end

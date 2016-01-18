@@ -5,7 +5,7 @@ cask 'xquartz-beta' do
   # bintray.com is the official download host per the appcast feed
   url "https://dl.bintray.com/xquartz/downloads/XQuartz-#{version}.dmg"
   appcast 'https://xquartz-dl.macosforge.org/sparkle/beta.xml',
-          :checkpoint => 'a3b3271fa3b8dbb7302f9360e7e22552f31955c9416360a0d0d31db5b69623ab'
+          checkpoint: 'a3b3271fa3b8dbb7302f9360e7e22552f31955c9416360a0d0d31db5b69623ab'
   name 'XQuartz'
   homepage 'https://xquartz.macosforge.org/'
   license :oss
@@ -25,19 +25,19 @@ cask 'xquartz-beta' do
     system 'defaults', 'write', 'org.macosforge.xquartz.X11', 'SUFeedURL', 'http://xquartz.macosforge.org/downloads/sparkle/beta.xml'
   end
 
-  uninstall :quit      => 'org.macosforge.xquartz.X11',
-            :launchctl => 'org.macosforge.xquartz.*',
-            :pkgutil   => 'org.macosforge.xquartz.pkg',
-            :delete    => '/opt/X11/'
+  uninstall quit:      'org.macosforge.xquartz.X11',
+            launchctl: 'org.macosforge.xquartz.*',
+            pkgutil:   'org.macosforge.xquartz.pkg',
+            delete:    '/opt/X11/'
 
-  zap       :delete => [
-                         '~/Library/Caches/org.macosforge.xquartz.X11',
-                         '~/Library/Logs/X11',
-                         '~/Library/Logs/X11.org.macosforge.xquartz.log',
-                         '~/Library/Logs/X11.org.macosforge.xquartz.log.old',
-                         '~/Library/Preferences/org.macosforge.xquartz.X11.plist',
-                         '~/Library/Saved Application State/org.macosforge.xquartz.X11.savedState',
-                         '~/.Xauthority',
-                       ],
-            :rmdir  => '~/.fonts'
+  zap       delete: [
+                      '~/Library/Caches/org.macosforge.xquartz.X11',
+                      '~/Library/Logs/X11',
+                      '~/Library/Logs/X11.org.macosforge.xquartz.log',
+                      '~/Library/Logs/X11.org.macosforge.xquartz.log.old',
+                      '~/Library/Preferences/org.macosforge.xquartz.X11.plist',
+                      '~/Library/Saved Application State/org.macosforge.xquartz.X11.savedState',
+                      '~/.Xauthority',
+                    ],
+            rmdir:  '~/.fonts'
 end

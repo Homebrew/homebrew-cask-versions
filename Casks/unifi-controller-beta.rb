@@ -9,5 +9,5 @@ cask 'unifi-controller-beta' do
 
   pkg 'Unifi.pkg'
 
-  uninstall :pkgutil => 'com.ubnt.UniFi'
+  uninstall pkgutil: 'com.ubnt.UniFi'
 end

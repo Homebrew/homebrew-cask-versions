@@ -4,7 +4,7 @@ cask 'osxfuse-beta' do
 
   url "https://github.com/osxfuse/osxfuse/releases/download/osxfuse-#{version}/osxfuse-#{version}.dmg"
   appcast 'https://github.com/osxfuse/osxfuse/releases.atom',
-          :checkpoint => '6a2e04eaf5fc1471e119b84f89215e3b8af98a51a47ab264ff5ec0098fc7b965'
+          checkpoint: '6a2e04eaf5fc1471e119b84f89215e3b8af98a51a47ab264ff5ec0098fc7b965'
   name 'OSXFUSE'
   homepage 'https://osxfuse.github.io/'
   license :bsd
@@ -15,8 +15,8 @@ cask 'osxfuse-beta' do
     set_ownership ['/usr/local/include', '/usr/local/lib']
   end
 
-  uninstall :pkgutil => 'com.github.osxfuse.pkg.Core|com.github.osxfuse.pkg.PrefPane',
-            :kext    => 'com.github.osxfuse.filesystems.osxfusefs'
+  uninstall pkgutil: 'com.github.osxfuse.pkg.Core|com.github.osxfuse.pkg.PrefPane',
+            kext:    'com.github.osxfuse.filesystems.osxfusefs'
 
   caveats do
     reboot

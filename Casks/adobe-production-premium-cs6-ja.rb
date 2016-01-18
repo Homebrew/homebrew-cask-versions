@@ -9,8 +9,8 @@ cask 'adobe-production-premium-cs6-ja' do
   # https://helpx.adobe.com/x-productkb/policy-pricing/cs6-product-downloads.html
 
   url 'http://trials2.adobe.com/AdobeProducts/STVD/CS6/osx10/ProductionPremium_CS6_LS7.dmg',
-      :user_agent => :fake,
-      :cookies    => { 'MM_TRIALS' => '1234' }
+      user_agent: :fake,
+      cookies:    { 'MM_TRIALS' => '1234' }
   name 'Adobe CS6 Production Premium' # name must exactly match directory in dmg!
   homepage 'https://www.adobe.com/mena_en/products/creativesuite.html'
   license :commercial

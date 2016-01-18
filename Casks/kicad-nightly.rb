@@ -8,5 +8,5 @@ cask 'kicad-nightly' do
   license :gpl
 
   suite 'Kicad'
-  artifact 'kicad', :target => Pathname.new(File.expand_path('~')).join('Library/Application Support/kicad')
+  artifact 'kicad', target: Pathname.new(File.expand_path('~')).join('Library/Application Support/kicad')
 end

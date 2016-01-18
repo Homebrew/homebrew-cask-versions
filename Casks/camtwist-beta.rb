@@ -7,10 +7,10 @@ cask 'camtwist-beta' do
   homepage 'http://camtwiststudio.com/'
   license :gratis
 
-  depends_on :macos => '>= 10.10'
+  depends_on macos: '>= 10.10'
 
   pkg 'CamTwist.pkg'
 
-  uninstall :script  => { :executable => 'Manual Install/CamTwist/uninstall.command' },
-            :pkgutil => 'com.allocinit.camtwist.*'
+  uninstall script:  { executable: 'Manual Install/CamTwist/uninstall.command' },
+            pkgutil: 'com.allocinit.camtwist.*'
 end

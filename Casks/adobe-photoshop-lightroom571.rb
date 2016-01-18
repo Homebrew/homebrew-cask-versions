@@ -9,12 +9,12 @@ cask 'adobe-photoshop-lightroom571' do
 
   pkg "Adobe Photoshop Lightroom #{version.to_i}.pkg"
 
-  uninstall :pkgutil => "com.adobe.Lightroom#{version.to_i}",
-            :quit    => "com.adobe.Lightroom#{version.to_i}",
-            :delete  => "/Applications/Adobe Photoshop Lightroom #{version.to_i}.app"
+  uninstall pkgutil: "com.adobe.Lightroom#{version.to_i}",
+            quit:    "com.adobe.Lightroom#{version.to_i}",
+            delete:  "/Applications/Adobe Photoshop Lightroom #{version.to_i}.app"
 
-  zap       :delete => [
-                         '~/Library/Application Support/Adobe/Lightroom',
-                         "~/Library/Preferences/com.adobe.Lightroom#{version.to_i}.plist",
-                       ]
+  zap       delete: [
+                      '~/Library/Application Support/Adobe/Lightroom',
+                      "~/Library/Preferences/com.adobe.Lightroom#{version.to_i}.plist",
+                    ]
 end

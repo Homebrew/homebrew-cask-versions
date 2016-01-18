@@ -10,5 +10,5 @@ cask 'openoffice-fr' do
 
   app 'OpenOffice.app'
 
-  zap :delete => '~/Library/Application Support/OpenOffice'
+  zap delete: '~/Library/Application Support/OpenOffice'
 end

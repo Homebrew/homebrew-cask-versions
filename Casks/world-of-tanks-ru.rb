@@ -10,5 +10,5 @@ cask 'world-of-tanks-ru' do
 
   app 'World of Tanks.app'
 
-  zap :delete => '~/Documents/World_of_Tanks'
+  zap delete: '~/Documents/World_of_Tanks'
 end

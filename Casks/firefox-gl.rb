@@ -9,8 +9,8 @@ cask 'firefox-gl' do
 
   app 'Firefox.app'
 
-  zap :delete => [
-                   '~/Library/Application Support/Firefox',
-                   '~/Library/Caches/Firefox',
-                 ]
+  zap delete: [
+                '~/Library/Application Support/Firefox',
+                '~/Library/Caches/Firefox',
+              ]
 end

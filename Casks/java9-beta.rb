@@ -3,7 +3,7 @@ cask 'java9-beta' do
   sha256 '0073bdd7eb9091b465ede8a818df016523fad420339e0b4ba2b9f92914fc0a71'
 
   url 'http://download.java.net/jdk9/archive/96/binaries/jdk-9-ea+96_osx-x64_bin.dmg',
-      :cookies => { 'oraclelicense' => 'accept-securebackup-cookie' }
+      cookies: { 'oraclelicense' => 'accept-securebackup-cookie' }
   name 'Java Standard Edition Development Kit'
   homepage 'https://jdk9.java.net/download/'
   license :gratis
@@ -31,17 +31,17 @@ cask 'java9-beta' do
     end
   end
 
-  uninstall :pkgutil => 'com.oracle.jdk9',
-            :delete  => [
-                          MacOS.release <= :mavericks ? '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK' : '',
-                        ].keep_if { |v| !v.empty? }
+  uninstall pkgutil: 'com.oracle.jdk9',
+            delete:  [
+                       MacOS.release <= :mavericks ? '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK' : '',
+                     ].keep_if { |v| !v.empty? }
 
-  zap       :delete => [
-                         '~/Library/Application Support/Oracle/Java',
-                         '~/Library/Caches/com.oracle.java.Java-Updater',
-                         '~/Library/Caches/net.java.openjdk.cmd',
-                       ],
-            :rmdir  => '~/Library/Application Support/Oracle/'
+  zap       delete: [
+                      '~/Library/Application Support/Oracle/Java',
+                      '~/Library/Caches/com.oracle.java.Java-Updater',
+                      '~/Library/Caches/net.java.openjdk.cmd',
+                    ],
+            rmdir:  '~/Library/Application Support/Oracle/'
 
   caveats <<-EOS.undent
     This Cask makes minor modifications to the JRE to prevent any packaged

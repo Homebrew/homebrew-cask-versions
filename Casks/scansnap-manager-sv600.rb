@@ -7,9 +7,9 @@ cask 'scansnap-manager-sv600' do
   homepage 'https://www.fujitsu.com/global/support/computing/peripheral/scanners/software/'
   license :gratis
 
-  depends_on :macos => '>= :lion'
+  depends_on macos: '>= :lion'
 
   pkg 'ScanSnap Manager.pkg'
 
-  uninstall :pkgutil => 'jp.co.pfu.ScanSnap.*'
+  uninstall pkgutil: 'jp.co.pfu.ScanSnap.*'
 end
