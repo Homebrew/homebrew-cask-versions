@@ -7,8 +7,8 @@ cask 'webstorm-eap' do
   homepage 'https://confluence.jetbrains.com/display/WI/WebStorm+EAP'
   license :commercial
 
-  app 'WebStorm EAP.app'
-  binary 'WebStorm.app/Contents/MacOS/webstorm'
+  app 'WebStorm 12 EAP.app'
+  binary 'WebStorm 12 EAP.app/Contents/MacOS/webstorm'
 
   zap delete: [
                 '~/.WebStorm12',
