@@ -1,14 +1,14 @@
 cask 'webstorm-eap' do
-  version '144.2608.3'
-  sha256 '82321c08e717c1f1202a53fc8d6ae591bb6123f81b237c078dc1f223a5fb4969'
+  version '144.2925.4'
+  sha256 'fa100e8b91553484df066839b27a9b8740448557bcc155f6829db8d5e5c3d8fb'
 
   url "https://download.jetbrains.com/webstorm/WebStorm-EAP-#{version}.dmg"
   name 'WebStorm'
   homepage 'https://confluence.jetbrains.com/display/WI/WebStorm+EAP'
   license :commercial
 
-  app 'WebStorm EAP.app'
-  binary 'WebStorm.app/Contents/MacOS/webstorm'
+  app 'WebStorm 12 EAP.app'
+  binary 'WebStorm 12 EAP.app/Contents/MacOS/webstorm'
 
   zap delete: [
                 '~/.WebStorm12',
