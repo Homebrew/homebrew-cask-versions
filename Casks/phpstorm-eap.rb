@@ -1,8 +1,8 @@
 cask 'phpstorm-eap' do
-  version '143.1480'
-  sha256 '5dc310e8439376b2a267700b66dc53b85a94b876c1b4899e32773fdc68e9b0a8'
+  version '144.3168'
+  sha256 '5b9a0b1584badbf155c627a2ff6c8c9dfcad3e907e4b127c41fc1ed3a9d41bec'
 
-  url "https://download.jetbrains.com/webide/PhpStorm-EAP-#{version}-custom-jdk-bundled.dmg"
+  url "https://download.jetbrains.com/webide/PhpStorm-EAP-#{version}.dmg"
   name 'PhpStorm EAP'
   homepage 'https://confluence.jetbrains.com/display/PhpStorm/PhpStorm+Early+Access+Program'
   license :commercial
