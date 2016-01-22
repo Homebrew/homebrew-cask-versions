@@ -1,6 +1,6 @@
 cask 'intellij-idea-ce-eap' do
-  version '144.2925.2'
-  sha256 '2dacc14f5c1854ba830205624c56c32f53ba6dc200b02e0dddf04133fed1af2c'
+  version '144.3143.6'
+  sha256 '34f7051dbfbf4373b741ea9909022d8e9a8c8dc2bf43ec749c6ae97618fe5e6b'
 
   url "https://download.jetbrains.com/idea/ideaIC-#{version}.dmg"
   name 'IntelliJ IDEA EAP :: CE'
