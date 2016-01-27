@@ -1,6 +1,6 @@
 cask 'firefox-pt-br' do
-  version '43.0.4'
-  sha256 '8bf9ec3e3dc1611f6ce1850d115eb26f7c0e08813865f770b160b07cb7b99f7c'
+  version '44.0'
+  sha256 'ac051632a72358323f66d20ed009d17918c3ae0bd3594fb3cecc569801b71d57'
 
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=pt-BR"
   name 'Mozilla Firefox'
