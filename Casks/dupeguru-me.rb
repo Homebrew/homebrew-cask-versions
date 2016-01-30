@@ -4,7 +4,7 @@ cask 'dupeguru-me' do
 
   url "https://download.hardcoded.net/dupeguru_me_osx_#{version.dots_to_underscores}.dmg"
   appcast 'https://www.hardcoded.net/updates/dupeguru_me.appcast',
-          checkpoint: 'f723dcab61cd784e37771b074817f6758463271c4179ce372609405996febc5e'
+          checkpoint: 'f24c7a70b7d68be92d0da5c577e479911c98a4700c866a93fc639c365df3839e'
   name 'dupeGuru Music Edition'
   homepage 'https://www.hardcoded.net/dupeguru_me/'
   license :bsd
