@@ -5,7 +5,7 @@ cask 'xquartz-beta' do
   # bintray.com is the official download host per the appcast feed
   url "https://dl.bintray.com/xquartz/downloads/XQuartz-#{version}.dmg"
   appcast 'https://xquartz-dl.macosforge.org/sparkle/beta.xml',
-          checkpoint: 'a3b3271fa3b8dbb7302f9360e7e22552f31955c9416360a0d0d31db5b69623ab'
+          checkpoint: '34402ffb743f418fd9b3c06468a750e17961ade4a6e01f6c8d0635bb26a108cb'
   name 'XQuartz'
   homepage 'https://xquartz.macosforge.org/'
   license :oss
