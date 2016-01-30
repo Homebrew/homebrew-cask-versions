@@ -1,11 +1,10 @@
 cask 'sublime-text-dev' do
-  version '3095'
-  sha256 'f03b7af33cc20dbff863b35016f77803239168e2bd3691b756a3e4729cb5e5c2'
+  version '3099'
+  sha256 '779c6a7601fed19867ed285b390fb960fe64473f4112bc2822b479310f7f6665'
 
-  # rackcdn.com is the official download host per the vendor homepage
-  url "http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%20#{version}.dmg"
+  url "https://download.sublimetext.com/Sublime%20Text%20Build%20#{version}.dmg"
   appcast 'https://www.sublimetext.com/updates/3/dev/appcast_osx.xml',
-          checkpoint: 'c850ebbe33c8dc1a435626abb68777910ff77cd6428136c264cca97b281f40b3'
+          checkpoint: '6a0d9015872259ff6d97063ca1157c8a2168b248d099e8b0d5991bdd3a5522d6'
   name 'Sublime Text'
   homepage 'https://www.sublimetext.com/3dev'
   license :closed
