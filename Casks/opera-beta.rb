@@ -1,6 +1,6 @@
 cask 'opera-beta' do
-  version '35.0.2066.23'
-  sha256 '6f20c576e2920b8e821cea4efd0138966ae34d17fbf51bae9e6cbc2d3c2941e9'
+  version '35.0.2066.35'
+  sha256 '2329202ea5551b4128c08cff9d4d187fe5f3da1dadc32ac6b27cad8b76665b0d'
 
   url "https://get.geo.opera.com/pub/opera-beta/#{version}/mac/Opera_beta_#{version}_Setup.dmg"
   name 'Opera Beta'
