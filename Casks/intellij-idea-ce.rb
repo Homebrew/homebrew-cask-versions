@@ -15,8 +15,4 @@ cask 'intellij-idea-ce' do
                 '~/Library/Caches/IdeaIC15',
                 '~/Library/Logs/IdeaIC15',
               ]
-
-  caveats do
-    depends_on_java
-  end
 end
