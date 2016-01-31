@@ -9,8 +9,4 @@ cask 'pycharm-ce' do
   license :apache
 
   app 'PyCharm CE.app'
-
-  caveats do
-    depends_on_java
-  end
 end
