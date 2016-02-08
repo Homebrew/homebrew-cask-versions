@@ -1,6 +1,6 @@
 cask 'torbrowser-fr' do
-  version '5.5'
-  sha256 'f5a72a9d94afa9cef71378213c2ca8936cef1d3f8427d7e67fc1b802df43d015'
+  version '5.5.1'
+  sha256 '0bcaa7b5a592e5133ea905ebb9cc17221237c95f149a9ee5e2c4af57d23c2eb9'
 
   url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-osx64_fr.dmg"
   name 'Tor Browser'
