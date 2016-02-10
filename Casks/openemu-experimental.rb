@@ -2,7 +2,7 @@ cask 'openemu-experimental' do
   version '2.0.1'
   sha256 'ccaa4027bfe80a9ecc819018b9b96439d3ddbccc37f1c6a00132cf839a93a663'
 
-  # github.com is the official download host per the vendor homepage
+  # github.com/OpenEmu/OpenEmu was verified as official when first introduced to the cask
   url "https://github.com/OpenEmu/OpenEmu/releases/download/v#{version}/OpenEmu_#{version}-experimental.zip"
   appcast 'https://github.com/OpenEmu/OpenEmu/releases.atom',
           checkpoint: 'e702f4ceb76ea7f0c12611a944073993f0d3cc32f00aa44149f44c409d0d6540'
