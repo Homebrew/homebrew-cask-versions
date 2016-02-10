@@ -1,5 +1,5 @@
 cask 'atom-beta' do
-  version '1.5.0-beta3'
+  version '1.6.0-beta0'
   sha256 'f6302ce5b505e4186d7a0fee41690868eab0dee038bf9926d973c3d1766fb70d'
 
   # github.com is the official download host per the vendor homepage
