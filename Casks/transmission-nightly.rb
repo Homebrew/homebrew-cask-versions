@@ -1,8 +1,8 @@
 cask 'transmission-nightly' do
-  version '14675'
-  sha256 '9c108a3760c9fc736a4cedce616b94f53dc3f8ea008aecabf34191acbb245ab1'
+  version '14679,6403'
+  sha256 '9cf31f8c71c81e86d6e71c377e650acfb38242ebe7098178607caeece3ad60c8'
 
-  url "https://build.transmissionbt.com/job/trunk-mac/lastSuccessfulBuild/artifact/release/Transmission-#{version}.dmg"
+  url "https://build.transmissionbt.com/job/trunk-mac/#{version.after_comma}/artifact/release/Transmission-#{version.before_comma}.dmg"
   name 'Transmission'
   homepage 'http://www.transmissionbt.com/'
   license :gpl
