@@ -3,7 +3,7 @@ cask 'sketchup-pro' do
   sha256 :no_check
 
   # downloads can be found at http://www.sketchup.com/download/all
-  # trimble.com is the official download host per the vendor homepage
+  # trimble.com/sketchup was verified as official when first introduced to the cask
   url 'https://dl.trimble.com/sketchup/SketchUpPro-en.dmg'
   name 'SketchUp'
   homepage 'https://www.sketchup.com/intl/en/'
