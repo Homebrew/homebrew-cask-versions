@@ -1,8 +1,8 @@
 cask 'firefox-esr-zh-cn' do
-  version '38.4.0'
-  sha256 '7a2094e6483990906cd316309e03ec404f50de1077ea0f4332ecf649bad7e3ac'
+  version '38.6.1'
+  sha256 '21b4627fa774199453f22ef3877b7cd2926850ed8cdfb8a19498674c7eb45483'
 
-  url "https://download.mozilla.org/?product=firefox-#{version}esr-SSL&os=osx&lang=zh-CN"
+  url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/#{version}esr/mac/zh-CN/Firefox%20#{version}esr.dmg"
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/zh-CN/firefox/organizations/'
   license :mpl
