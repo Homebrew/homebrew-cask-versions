@@ -9,5 +9,5 @@ cask 'bitbar-beta' do
   homepage 'https://github.com/matryer/bitbar/'
   license :mit
 
-  app 'bitbar.app'
+  app 'BitBar Beta.app'
 end
