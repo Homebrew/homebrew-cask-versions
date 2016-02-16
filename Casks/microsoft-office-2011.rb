@@ -29,6 +29,7 @@ cask 'microsoft-office-2011' do
                        '/Library/Preferences/com.microsoft.office.licensing.plist',
                        '/Library/Preferences/com.microsoft.outlook.databasedaemon.plist',
                        '/Library/Preferences/com.microsoft.outlook.officereminders.plist',
+                       '/Library/Fonts/Microsoft',
                        '~/Library/Application Support/Microsoft/Office',
                        '~/Library/Preferences/com.microsoft.Excel.plist',
                        '~/Library/Preferences/com.microsoft.Outlook.plist',
