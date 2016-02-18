@@ -1,6 +1,6 @@
 cask 'thunderbird-it' do
-  version '38.5.1'
-  sha256 'd164a6da1dfcbdb33930a40be733e74d739fb5c7561916f919ee05b1da84ec3d'
+  version '38.6.0'
+  sha256 '1f1b262a4472e7df656d9685b0ca72fb55972bd36482ab1286c8cadcf75c1180'
 
   url "https://download.mozilla.org/?product=thunderbird-#{version}&os=osx&lang=it"
   name 'Mozilla Thunderbird'
