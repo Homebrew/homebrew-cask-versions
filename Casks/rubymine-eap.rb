@@ -1,8 +1,8 @@
 cask 'rubymine-eap' do
-  version '143.1183.12'
-  sha256 '586b8327feb053b05d8f50aa9526cc7d10400ed3006c8151ab767fbf20fae419'
+  version '144.4199.20'
+  sha256 'd62d3d795d4914992d17c44a7a69d8854bcaeeb786b204b93df3ef1953548b1d'
 
-  url "https://download.jetbrains.com/ruby/RubyMine-#{version}-custom-jdk-bundled.dmg"
+  url "https://download.jetbrains.com/ruby/RubyMine-#{version}.dmg"
   name 'RubyMine EAP'
   homepage 'https://confluence.jetbrains.com/display/RUBYDEV/RubyMine+EAP'
   license :commercial
