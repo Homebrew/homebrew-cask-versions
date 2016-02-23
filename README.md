@@ -25,7 +25,7 @@ $ brew cask install iterm2-beta
 
 You may wish to consider hosting your own [tap](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/How-to-Create-and-Maintain-a-Tap.md) for casks you wish to personally support that do not meet the above standards.
 
-For this repo, rules for consideration are (following our [nomenclature](https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md#finding-a-home-for-your-cask)):
+For this repo, rules for consideration are (following our [nomenclature](https://github.com/caskroom/homebrew-cask/blob/master/doc/development/adding_a_cask.md#finding-a-home-for-your-cask)):
 
 + Include the latest minor version of legacy versions of commercial and freemium software.
 + Legacy versions of commercial and freemium software are restricted to a maximum of five casks.
