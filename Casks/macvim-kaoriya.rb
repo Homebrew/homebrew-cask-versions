@@ -8,8 +8,8 @@ cask 'macvim-kaoriya' do
   end
 
   url "https://github.com/splhack/macvim-kaoriya/releases/download/#{version.after_colon}/MacVim-KaoriYa-#{version.after_colon}.dmg"
-  appcast 'https://raw.githubusercontent.com/splhack/macvim-kaoriya/master/latest.xml',
-          checkpoint: 'b6d9b1e536eab1f8b5f9b0425a4bda8c79b8ac4a539461dadad2ac299790fbae'
+  appcast 'https://github.com/splhack/macvim-kaoriya/releases.atom',
+          checkpoint: 'b9ded0e72e925a9d5cd264bc690ba167a26ce8177cb4ed2ca1fa387f73dac7df'
   name 'MacVim KaoriYa'
   homepage 'https://github.com/splhack/macvim-kaoriya'
   license :oss
