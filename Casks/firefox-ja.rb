@@ -1,6 +1,6 @@
 cask 'firefox-ja' do
-  version '44.0.2'
-  sha256 '780bf7a35b954b409116387d5ee7673a1ca56200381adbbdb1b5373e29dc75a2'
+  version '45.0'
+  sha256 'b79a89101b7fabfe8adb89307c49af5353613e21b9fed05120c344c08b773e09'
 
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=ja-JP-mac"
   name 'Mozilla Firefox'
