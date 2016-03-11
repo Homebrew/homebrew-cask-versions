@@ -9,7 +9,7 @@ cask 'pycharm-eap' do
 
   conflicts_with cask: 'pycharm'
 
-  app 'PyCharm.app'
+  app 'PyCharm 5.1 EAP.app'
 
   zap delete: [
                 '~/Library/Preferences/com.jetbrains.pycharm.plist',
