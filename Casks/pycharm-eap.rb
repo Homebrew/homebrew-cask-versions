@@ -1,8 +1,8 @@
 cask 'pycharm-eap' do
-  version '143.1453.1'
-  sha256 '2d4a004a589790a692eb18b23abc887fb385dcb49607251656e3de1200e1d51b'
+  version '145.184.12'
+  sha256 'f4a46bd64ac258d2686923f78e17e85c21d0097a412a585fd14c28dbc08c20d5'
 
-  url "https://download.jetbrains.com/python/pycharm-professional-#{version}-jdk-bundled.dmg"
+  url "https://download.jetbrains.com/python/pycharm-professional-#{version}.dmg"
   name 'PyCharm'
   homepage 'https://confluence.jetbrains.com/display/PYH/JetBrains+PyCharm+Preview+(EAP)'
   license :commercial
