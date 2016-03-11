@@ -1,8 +1,8 @@
 cask 'pycharm-ce-eap' do
-  version '143.1453.1'
-  sha256 '86d09b9d4969d7704ac77d9dbc2bbe437a45983fb4598198c9abce5f7fc589f3'
+  version '145.184.12'
+  sha256 '9e579016cd670649bfa24717cf336dafa2b59c48077cdf4d9a9e2b2efcd3bdf1'
 
-  url "https://download.jetbrains.com/python/pycharm-community-#{version}-jdk-bundled.dmg"
+  url "https://download.jetbrains.com/python/pycharm-community-#{version}.dmg"
   name 'PyCharm Community Edition'
   homepage 'https://confluence.jetbrains.com/display/PYH/JetBrains+PyCharm+Preview+(EAP)'
   license :apache
