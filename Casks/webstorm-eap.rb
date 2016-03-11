@@ -7,15 +7,15 @@ cask 'webstorm-eap' do
   homepage 'https://confluence.jetbrains.com/display/WI/WebStorm+EAP'
   license :commercial
 
-  app 'WebStorm 12 EAP.app'
-  binary 'WebStorm 12 EAP.app/Contents/MacOS/webstorm'
+  app 'WebStorm 2016 EAP.app'
+  binary 'WebStorm 2016 EAP.app/Contents/MacOS/webstorm'
 
   zap delete: [
-                '~/.WebStorm12',
+                '~/.WebStorm2016.1',
                 '~/Library/Preferences/com.jetbrains.webstorm.plist',
-                '~/Library/Preferences/WebStorm12',
-                '~/Library/Application Support/WebStorm12',
-                '~/Library/Caches/WebStorm12',
-                '~/Library/Logs/WebStorm12',
+                '~/Library/Preferences/WebStorm2016.1',
+                '~/Library/Application Support/WebStorm2016.1',
+                '~/Library/Caches/WebStorm2016.1',
+                '~/Library/Logs/WebStorm2016.1',
               ]
 end
