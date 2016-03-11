@@ -1,6 +1,6 @@
 cask 'rubymine-eap' do
-  version '145.61.16'
-  sha256 'e9ab3ae69cfb73c82b99f509ba0c19724129b9d3c67de33a6b8dfd14defca42f'
+  version '145.184.8'
+  sha256 'b9de2b0543d3d47932666788b86fc67e9cd5951526d62b1220370bf9209d6e4a'
 
   url "https://download.jetbrains.com/ruby/RubyMine-#{version}.dmg"
   name 'RubyMine EAP'
@@ -12,7 +12,7 @@ cask 'rubymine-eap' do
   zap delete: [
                 '~/Library/Preferences/com.jetbrains.rubymine-EAP.plist',
                 '~/Library/Preferences/RubyMine70',
-                '~/Library/Application Support/RubyMine70',
+                '~/Library/Application Support/RubyMine-EAP',
                 '~/Library/Caches/RubyMine70',
                 '~/Library/Logs/RubyMine70',
                 '/usr/local/bin/mine',
