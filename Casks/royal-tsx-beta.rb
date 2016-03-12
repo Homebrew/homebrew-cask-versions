@@ -4,7 +4,7 @@ cask 'royal-tsx-beta' do
 
   # royalapplications.com was verified as official when first introduced to the cask
   url "https://royaltsx-v#{version.major}.royalapplications.com/updates/royaltsx_#{version}.dmg"
-  appcast "http://v#{version.major}.royaltsx.com/updates_beta.php",
+  appcast "https://royaltsx-v#{version.major}.royalapplications.com/updates_beta.php",
           checkpoint: 'f9bb37d06e78d9c74afdb99a2db1eee6fbc95367f221e73b257adfe372d83d24'
   name 'Royal TSX'
   homepage 'http://www.royaltsx.com'
