@@ -1,13 +1,13 @@
 cask 'intellij-idea-ce-eap' do
-  version '145.256.33'
-  sha256 '447a5948b498097ffd4737a68d022962557ff607bfc37d990851360dd67344fc'
+  version '145.596.7'
+  sha256 '24dd5a9a8476770a83b166558553e5bb103131449e0447a8bba00fee630e77a4'
 
   url "https://download.jetbrains.com/idea/ideaIC-#{version}.dmg"
   name 'IntelliJ IDEA EAP :: CE'
-  homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+16+EAP'
+  homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+2016.1+EAP'
   license :apache
 
-  app 'IntelliJ IDEA 2016 CE EAP.app'
+  app 'IntelliJ IDEA 2016.1 CE EAP.app'
 
   zap delete: [
                 '~/Library/Application Support/IdeaIC2016.1',
