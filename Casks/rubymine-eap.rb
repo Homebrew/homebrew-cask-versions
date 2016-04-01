@@ -10,11 +10,11 @@ cask 'rubymine-eap' do
   app 'RubyMine.app'
 
   zap delete: [
-                '~/Library/Preferences/com.jetbrains.rubymine-EAP.plist',
-                '~/Library/Preferences/RubyMine80',
-                '~/Library/Application Support/RubyMine-EAP',
-                '~/Library/Caches/RubyMine70',
-                '~/Library/Logs/RubyMine70',
+                '~/Library/Preferences/com.jetbrains.rubymine.plist',
+                "~/Library/Preferences/RubyMine#{version.major_minor}",
+                '~/Library/Application Support/RubyMine',
+                "~/Library/Caches/RubyMine#{version.major_minor}",
+                "~/Library/Logs/RubyMine#{version.major_minor}",
                 '/usr/local/bin/mine',
               ]
 end
