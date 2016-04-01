@@ -1,22 +1,24 @@
 cask 'pycharm-ce-eap' do
-  version '145.256.43'
-  sha256 '60184759139eab623dc95da26719d793332434f7b4bfec0174613c35b91e6f63'
+  version '2016.1.1,145.597.11'
+  sha256 '2fa86d695a2f4f161ea84a9c215de2b3de2cf054fa9ed6493fd9b8a228aab8c5'
 
-  url "https://download.jetbrains.com/python/pycharm-community-#{version}.dmg"
+  url "https://download.jetbrains.com/python/pycharm-community-#{version.after_comma}.dmg"
   name 'PyCharm Community Edition'
   homepage 'https://confluence.jetbrains.com/display/PYH/JetBrains+PyCharm+Preview+(EAP)'
   license :apache
 
   conflicts_with cask: 'pycharm-ce'
 
-  app 'PyCharm CE 5.1 EAP.app'
+  app "PyCharm CE #{version.major_minor_patch} EAP.app"
+
+  uninstall delete: '/usr/local/bin/charm'
 
   zap delete: [
-                '~/Library/Preferences/com.jetbrains.pycharm.plist',
-                '~/Library/Preferences/PyCharm50',
-                '~/Library/Application Support/PyCharm50',
-                '~/Library/Caches/PyCharm50',
-                '~/Library/Logs/PyCharm50',
-                '/usr/local/bin/charm',
+                "~/.PyCharm#{version.major_minor}",
+                # TODO: expand/glob for '~/Library/Preferences/jetbrains.pycharm.*.plist',
+                "~/Library/Preferences/PyCharm#{version.major_minor}",
+                "~/Library/Application Support/PyCharm#{version.major_minor}",
+                "~/Library/Caches/PyCharm#{version.major_minor}",
+                "~/Library/Logs/PyCharm#{version.major_minor}",
               ]
 end
