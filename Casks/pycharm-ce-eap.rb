@@ -9,7 +9,7 @@ cask 'pycharm-ce-eap' do
 
   conflicts_with cask: 'pycharm-ce'
 
-  app "PyCharm CE #{version.major_minor_patch} EAP.app"
+  app "PyCharm CE #{version.before_comma} EAP.app"
 
   uninstall delete: '/usr/local/bin/charm'
 
