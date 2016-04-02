@@ -1,21 +1,31 @@
 cask 'webstorm-eap' do
-  version '145.596.9'
-  sha256 'fae5fc7baf973f2d4f1b378ff411c7d4b4c2fdcf8c8bb0faff58b8342758cfb2'
+  version '2016.1.1'
+  sha256 '63540be270ef19adf5b40f3c9b00cf0cabc9f61d2341c97d84c5d35b04cb68ba'
 
-  url "https://download.jetbrains.com/webstorm/WebStorm-EAP-#{version}.dmg"
+  url "https://download.jetbrains.com/webstorm/WebStorm-#{version}.dmg"
   name 'WebStorm'
   homepage 'https://confluence.jetbrains.com/display/WI/WebStorm+EAP'
   license :commercial
 
-  app 'WebStorm 2016.1 EAP.app'
-  binary 'WebStorm 2016.1 EAP.app/Contents/MacOS/webstorm'
+  app 'WebStorm.app'
+
+  uninstall delete: '/usr/local/bin/wstorm'
 
   zap delete: [
-                '~/.WebStorm2016.1',
-                '~/Library/Preferences/com.jetbrains.webstorm.plist',
-                '~/Library/Preferences/WebStorm2016.1',
-                '~/Library/Application Support/WebStorm2016.1',
-                '~/Library/Caches/WebStorm2016.1',
-                '~/Library/Logs/WebStorm2016.1',
+                "~/.WebStorm#{version.major_minor}",
+                # TODO: expand/glob for '~/Library/Preferences/jetbrains.webstorm.*.plist',
+                "~/Library/Preferences/WebStorm#{version.major_minor}",
+                "~/Library/Application Support/WebStorm#{version.major_minor}",
+                "~/Library/Caches/WebStorm#{version.major_minor}",
+                "~/Library/Logs/WebStorm#{version.major_minor}",
               ]
+
+  # remove this when this cask is updated to an EAP release
+  caveats <<-EOS.undent
+    There is currently no EAP preview release. Instead, the latest stable
+    version will be installed.
+    To receive future EAP releases via the IDE's built-in update system, go to
+       Preferences > Appearance & Behavior > System Settings > Updates
+    and select the Early Access Program channel.
+  EOS
 end
