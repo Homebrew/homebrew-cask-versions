@@ -7,7 +7,7 @@ cask 'datagrip-eap' do
   homepage 'https://confluence.jetbrains.com/display/DBE/DataGrip+2016.1+EAP'
   license :commercial
 
-  app "Datagrip #{version.major_minor_patch} EAP.app"
+  app "Datagrip #{version.before_comma} EAP.app"
 
   zap delete: [
                 "~/.DataGrip#{version.major_minor}", # TODO: confirm this one
