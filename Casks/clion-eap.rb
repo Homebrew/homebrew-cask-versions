@@ -1,6 +1,6 @@
 cask 'clion-eap' do
-  version '2016.1'
-  sha256 'c791636f23c273dd07bbcab4f2495a3532501ec2ec3975c7c80cc3b915686be4'
+  version '2016.1.1'
+  sha256 '27982da69f182e5a1aa14579a1d7a5df4b1d44d26e6667e8ae8c52e1efde73f0'
 
   url "https://download.jetbrains.com/cpp/CLion-#{version}.dmg"
   name 'CLion'
@@ -19,4 +19,9 @@ cask 'clion-eap' do
                 "~/Library/Caches/CLion#{version.major_minor}",
                 "~/Library/Logs/CLion#{version.major_minor}",
               ]
+
+  caveats <<-EOS.undent
+    Please manually change to the EAP update channel via:
+       Preferences > Appearance & Behavior > System Settings > Updates
+    EOS
 end
