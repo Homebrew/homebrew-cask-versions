@@ -1,20 +1,29 @@
 cask 'phpstorm-eap' do
-  version '145.256.26'
-  sha256 '8aff563659260a19d2c5dc22e2aece9022bc32d3711c36ce33bd973e59d1e398'
+  version '2016.1'
+  sha256 'b30a67f22cfd331eec5599b4ae5957e10fb9f75b45e48a7ffd638adf77b2810d'
 
-  url "https://download.jetbrains.com/webide/PhpStorm-EAP-#{version}.dmg"
-  name 'PhpStorm EAP'
+  url "https://download.jetbrains.com/webide/PhpStorm-#{version}.dmg"
+  name 'PhpStorm'
   homepage 'https://confluence.jetbrains.com/display/PhpStorm/PhpStorm+Early+Access+Program'
   license :commercial
 
-  app 'PhpStorm EAP.app'
+  conflicts_with cask: 'phpstorm'
+
+  app 'PhpStorm.app'
+
+  uninstall delete: '/usr/local/bin/pstorm'
 
   zap delete: [
-                '~/Library/Application Support/WebIde100',
-                '~/Library/Caches/WebIde100',
-                '~/Library/Logs/WebIde100',
-                '~/Library/Preferences/WebIde100',
-                '~/Library/Preferences/com.jetbrains.PhpStorm-EAP.plist',
-                '~/.WebIde100',
+                "~/.PhpStorm#{version.major_minor}",
+                # TODO: expand/glob for '~/Library/Preferences/jetbrains.phpstorm.*.plist',
+                "~/Library/Preferences/PhpStorm#{version.major_minor}",
+                "~/Library/Caches/PhpStorm#{version.major_minor}",
+                "~/Library/Logs/PhpStorm#{version.major_minor}",
+                "~/Library/Application Support/PhpStorm#{version.major_minor}",
               ]
+
+  caveats <<-EOS.undent
+    Please manually change to the EAP update channel via:
+       Preferences > Appearance & Behavior > System Settings > Updates
+    EOS
 end
