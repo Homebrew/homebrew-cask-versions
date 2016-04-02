@@ -22,8 +22,12 @@ cask 'phpstorm-eap' do
                 "~/Library/Application Support/PhpStorm#{version.major_minor}",
               ]
 
+  # remove this when this cask is updated to an EAP release
   caveats <<-EOS.undent
-    Please manually change to the EAP update channel via:
+    There is currently no EAP preview release. Instead, the latest stable
+    version will be installed.
+    To receive future EAP releases via the IDE's built-in update system, go to
        Preferences > Appearance & Behavior > System Settings > Updates
-    EOS
+    and select the Early Access Program channel.
+  EOS
 end
