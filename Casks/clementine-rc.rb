@@ -10,12 +10,9 @@ cask 'clementine-rc' do
   homepage 'https://www.clementine-player.org/'
   license :gpl
 
-  conflicts_with cask: 'caskroom/clementine'
+  conflicts_with cask: 'caskroom/cask/clementine'
 
   app 'Clementine.app'
-  binary 'Clementine.app/Contents/MacOS/clementine'
-
-  uninstall quit: 'org.clementine-player.Clementine'
 
   zap delete: [
                 '~/Library/Application Support/Clementine',
