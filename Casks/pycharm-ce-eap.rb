@@ -1,15 +1,15 @@
 cask 'pycharm-ce-eap' do
-  version '2016.1.1,145.597.11'
-  sha256 '2fa86d695a2f4f161ea84a9c215de2b3de2cf054fa9ed6493fd9b8a228aab8c5'
+  version '2016.1.2'
+  sha256 'e68b9fa401500311bcc3cbbcbd6b3ab02849dcac3bdb6864389aec17c6c7e992'
 
-  url "https://download.jetbrains.com/python/pycharm-community-#{version.after_comma}.dmg"
+  url "https://download.jetbrains.com/python/pycharm-community-#{version}.dmg"
   name 'PyCharm Community Edition'
   homepage 'https://confluence.jetbrains.com/display/PYH/JetBrains+PyCharm+Preview+(EAP)'
   license :apache
 
   conflicts_with cask: 'pycharm-ce'
 
-  app "PyCharm CE #{version.before_comma} EAP.app"
+  app 'PyCharm CE.app'
 
   uninstall delete: '/usr/local/bin/charm'
 
@@ -21,4 +21,13 @@ cask 'pycharm-ce-eap' do
                 "~/Library/Caches/PyCharm#{version.major_minor}",
                 "~/Library/Logs/PyCharm#{version.major_minor}",
               ]
+
+  # remove this when this cask is updated to an EAP release
+  caveats <<-EOS.undent
+    There is currently no EAP preview release. Instead, the latest stable
+    version will be installed.
+    To receive future EAP releases via the IDE's built-in update system, go to
+       Preferences > Appearance & Behavior > System Settings > Updates
+    and select the Early Access Program channel.
+  EOS
 end
