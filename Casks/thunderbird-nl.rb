@@ -1,6 +1,6 @@
 cask 'thunderbird-nl' do
-  version '38.7.1'
-  sha256 '5303593adc1d9f71f2faa1e2beba173c5a29a12cf32a96533abe9783e49dca3d'
+  version '38.7.2'
+  sha256 '3084b1ff6e0a2d1f90bebb13ea3c4e099306f0da0f8e39dcf64f546307d4431a'
 
   url "https://download.mozilla.org/?product=thunderbird-#{version}&os=osx&lang=nl"
   name 'Mozilla Mozilla Thunderbird'
