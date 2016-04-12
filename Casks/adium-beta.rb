@@ -1,6 +1,6 @@
 cask 'adium-beta' do
-  version '1.5.11b2'
-  sha256 'e7690718f14defa3bc08cd3949a4eab52e942abd47f7ac2ce7157ed7295658c6'
+  version '1.5.11b3'
+  sha256 '999e1931a52dc327b3a6e8492ffa9df724a837c88ad9637a501be2e3b6710078'
 
   url "https://adiumx.cachefly.net/Adium_#{version}.dmg"
   name 'Adium'
