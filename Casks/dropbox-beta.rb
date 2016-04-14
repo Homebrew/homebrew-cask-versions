@@ -1,6 +1,6 @@
-cask 'dropbox-experimental' do
-  version '3.13.52'
-  sha256 '8041458d8c46be7ec3aa4d44d3e7bd05c86c01570a50dd5e68e7c64331243449'
+cask 'dropbox-beta' do
+  version '3.17.32'
+  sha256 '51783b80db28aae208d317362fa5541f41aa9a88ef285ccd591ac7d1a6a249c2'
 
   url "https://dl.dropboxusercontent.com/u/17/Dropbox%20#{version}.dmg"
   name 'Dropbox'
