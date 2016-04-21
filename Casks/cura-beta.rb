@@ -1,8 +1,8 @@
 cask 'cura-beta' do
-  version '15.06.03'
-  sha256 '60c2fe1c5d7b5e738b7906e67ee66b6ba80a9d0a91f98cd6704af039afa2f732'
+  version '2.1.0'
+  sha256 '074a50f06be491de79e1bdb37669a6923d6f99390d9d7e62bf400a3d7913e0b5'
 
-  url "https://software.ultimaker.com/15.06/Cura-#{version}-Darwin.dmg"
+  url "https://software.ultimaker.com/Cura_open_beta/Cura-#{version}-Darwin.dmg"
   name 'Cura'
   homepage 'https://ultimaker.com/en/products/software'
   license :oss
