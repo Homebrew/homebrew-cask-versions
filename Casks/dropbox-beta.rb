@@ -1,10 +1,10 @@
 cask 'dropbox-beta' do
-  version '3.17.32'
-  sha256 '51783b80db28aae208d317362fa5541f41aa9a88ef285ccd591ac7d1a6a249c2'
+  version '3.19.33'
+  sha256 'b0c4af26aa11157dbff86921df2f5a9e7ee83336eb9eb479223ccc82fa739320'
 
   url "https://dl.dropboxusercontent.com/u/17/Dropbox%20#{version}.dmg"
   name 'Dropbox'
-  homepage 'https://www.dropboxforum.com/hc/en-us/community/posts/204448313-Experimental-Build-3-13-52'
+  homepage 'https://www.dropboxforum.com/hc/en-us/community/posts/206565816-Beta-Build-3-19-33'
   license :gratis
 
   app 'Dropbox.app'
