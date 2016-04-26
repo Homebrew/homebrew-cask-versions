@@ -1,6 +1,6 @@
 cask 'weka-dev' do
-  version '3.7.13'
-  sha256 'ca8b73d9978b9f9e8a280fef3fe9f1edfd16e2f0aff3b26ad4ace367310f79c9'
+  version '3.9.0'
+  sha256 'cfa2151304f58367b1fffa7dfde947d2351dcff4c5d7d2aebec1d8f0bb726520'
 
   # sourceforge.net/sourceforge/weka was verified as official when first introduced to the cask
   url "http://downloads.sourceforge.net/sourceforge/weka/weka-#{version.gsub('.', '-')}-oracle-jvm.dmg"
