@@ -19,13 +19,4 @@ cask 'appcode-eap' do
                 "~/Library/Caches/AppCode#{version.major_minor}",
                 "~/Library/Logs/AppCode#{version.major_minor}",
               ]
-
-  # remove this when this cask is updated to an EAP release
-  caveats <<-EOS.undent
-    There is currently no EAP preview release. Instead, the latest stable
-    version will be installed.
-    To receive future EAP releases via the IDE's built-in update system, go to
-       Preferences > Appearance & Behavior > System Settings > Updates
-    and select the Early Access Program channel.
-  EOS
 end
