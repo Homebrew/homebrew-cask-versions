@@ -1,6 +1,6 @@
 cask 'dropbox-beta' do
-  version '3.19.33'
-  sha256 'b0c4af26aa11157dbff86921df2f5a9e7ee83336eb9eb479223ccc82fa739320'
+  version '3.19.34'
+  sha256 '724491bc6f14940aa883e82665845b72716a57d4235b3b837f87cd5ac0a01143'
 
   url "https://dl.dropboxusercontent.com/u/17/Dropbox%20#{version}.dmg"
   name 'Dropbox'
