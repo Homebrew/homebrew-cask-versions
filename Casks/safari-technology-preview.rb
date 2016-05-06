@@ -7,7 +7,7 @@ cask 'safari-technology-preview' do
   homepage 'https://developer.apple.com/safari/technology-preview/'
   license :gratis
 
-  pkg 'Safari Technology Preview for OS X El Capitan.pkg'
+  pkg 'Safari Technology Preview.pkg'
 
   uninstall delete: '/Applications/Safari Technology Preview.app'
 
