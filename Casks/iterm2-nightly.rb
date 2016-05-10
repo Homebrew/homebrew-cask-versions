@@ -1,10 +1,10 @@
 cask 'iterm2-nightly' do
-  version '2.9.20160506'
-  sha256 '8742ef81ec7c26577836961e20e21e442d0e05516ac7f1a6b8ce48a5f51c926e'
+  version '2.9.20160510'
+  sha256 '002b9076e08ae9c4697b6b049898e68479d7563ff8f7ee3833ed7588363ed016'
 
   url "https://iterm2.com/downloads/nightly/iTerm2-#{version.dots_to_underscores}-nightly.zip"
   appcast 'https://iterm2.com/appcasts/nightly.xml',
-          checkpoint: 'd73af923ab572d559eec09922ffcafe2ea1b8bbab1b736f9faf534d8899bc9e4'
+          checkpoint: '5356a706674151f323800c9e2b50f561badda5aa744774abe761a3c8c0a59b27'
   name 'iTerm2'
   homepage 'https://www.iterm2.com/'
   license :gpl
