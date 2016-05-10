@@ -8,12 +8,7 @@ cask 'chirp-daily' do
   license :oss
 
   depends_on arch: :intel
+  depends_on cask: 'caskroom/cask/kk7ds-python-runtime'
 
   app "chirp-daily-#{version}.app"
-
-  caveats <<-EOS.undent
-    #{token} also requires the KK7DS Python Runtime as described at
-
-      http://chirp.danplanet.com/projects/chirp/wiki/Download#CHIRP-Downloads
-  EOS
 end
