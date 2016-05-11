@@ -1,6 +1,6 @@
 cask 'firefox-beta' do
-  version '47.0b3'
-  sha256 '7fd27d9a10a4cf0a5d7dd6f8517c9c64285b0cb26a17d62da4af821357e8b439'
+  version '47.0b4'
+  sha256 '782ec50536559adbb4e0ef90b4040cbbaf085d7bf491e04d5a2f8033878fbbf0'
 
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=en-US"
   name 'Mozilla Firefox'
