@@ -1,6 +1,6 @@
 cask 'appcode-eap' do
-  version '2016.1.2-RC'
-  sha256 '9708c42e2ebfecb7e96e80e964f5e1929b280d94fb622aa3be77ccdb4d5b50eb'
+  version '2016.1.2'
+  sha256 '24188b9b99f2d5afa85665711b33cf8cfc439916d5f822e41d7dba31115060c9'
 
   url "https://download.jetbrains.com/objc/AppCode-#{version}.dmg"
   name 'AppCode'
@@ -19,4 +19,13 @@ cask 'appcode-eap' do
                 "~/Library/Caches/AppCode#{version.major_minor}",
                 "~/Library/Logs/AppCode#{version.major_minor}",
               ]
+
+  # remove this when this cask is updated to an EAP release
+  caveats <<-EOS.undent
+    There is currently no EAP preview release. Instead, the latest stable
+    version '2016.1.2'
+    To receive future EAP releases via the IDE's built-in update system, go to
+       Preferences > Appearance & Behavior > System Settings > Updates
+    and select the Early Access Program channel.
+  EOS
 end
