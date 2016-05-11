@@ -7,7 +7,7 @@ cask 'intellij-idea-ce-eap' do
   homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+2016.1+EAP'
   license :apache
 
-  app 'IntelliJ IDEA 2016.1 CE EAP.app'
+  app 'IntelliJ IDEA CE.app'
 
   zap delete: [
                 '~/Library/Application Support/IdeaIC2016.1',

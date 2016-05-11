@@ -7,7 +7,7 @@ cask 'intellij-idea-eap' do
   homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+2016.1+EAP'
   license :commercial
 
-  app 'IntelliJ IDEA 2016.1 EAP.app'
+  app 'IntelliJ IDEA.app'
 
   zap delete: [
                 '~/Library/Preferences/com.jetbrains.intellij.plist',
