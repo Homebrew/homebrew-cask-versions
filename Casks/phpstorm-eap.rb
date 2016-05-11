@@ -1,13 +1,13 @@
 cask 'phpstorm-eap' do
-  version '2016.1.1,145.844.5'
-  sha256 'e339ff19d9458262c80386b0bbf74004887e286d4c6149df83332c29e9f8a29c'
+  version '2016.1.1'
+  sha256 '1c88786b44d14d87878fb905ce3db4105bb60d1680643f90406608a945aed4eb'
 
-  url "https://download.jetbrains.com/webide/PhpStorm-EAP-#{version.after_comma}.dmg"
-  name 'PhpStorm EAP'
+  url "https://download.jetbrains.com/webide/PhpStorm-#{version}.dmg"
+  name 'PhpStorm'
   homepage 'https://confluence.jetbrains.com/display/PhpStorm/PhpStorm+Early+Access+Program'
   license :commercial
 
-  app "PhpStorm #{version.before_comma} EAP.app"
+  app 'PhpStorm.app'
 
   uninstall delete: '/usr/local/bin/pstorm'
 
@@ -19,4 +19,13 @@ cask 'phpstorm-eap' do
                 "~/Library/Logs/PhpStorm#{version.major_minor}",
                 "~/Library/Application Support/PhpStorm#{version.major_minor}",
               ]
+
+  # remove this when this cask is updated to an EAP release
+  caveats <<-EOS.undent
+    There is currently no EAP preview release. Instead, the latest stable
+    version '2016.1.2'
+    To receive future EAP releases via the IDE's built-in update system, go to
+       Preferences > Appearance & Behavior > System Settings > Updates
+    and select the Early Access Program channel.
+  EOS
 end
