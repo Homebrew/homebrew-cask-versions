@@ -23,7 +23,7 @@ cask 'phpstorm-eap' do
   # remove this when this cask is updated to an EAP release
   caveats <<-EOS.undent
     There is currently no EAP preview release. Instead, the latest stable
-    version '2016.1.2'
+    version will be installed.
     To receive future EAP releases via the IDE's built-in update system, go to
        Preferences > Appearance & Behavior > System Settings > Updates
     and select the Early Access Program channel.
