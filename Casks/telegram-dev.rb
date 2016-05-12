@@ -1,6 +1,6 @@
 cask 'telegram-dev' do
-  version '0.9.46.alpha'
-  sha256 '6eac9eb01b9c1dda323771291b8ad4b319800d7b00a93b5ad3d7080323d0030a'
+  version '0.9.48'
+  sha256 '34fd43368f13507f954ed42a382f28305e38f2a6643c90d621519184b44399c4'
 
   url "https://updates.tdesktop.com/tmac/tsetup.#{version}.dmg"
   name 'Telegram'
