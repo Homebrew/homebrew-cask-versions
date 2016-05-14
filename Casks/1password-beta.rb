@@ -1,6 +1,6 @@
 cask '1password-beta' do
-  version '6.3.BETA-17'
-  sha256 '38e569051addc3943a16ba5093917d6c2fc44918d2e115a295413b5be53d8906'
+  version '6.3.BETA-19'
+  sha256 '5ab254bd91f9392a060e7570bfc815550a89ad1adabd11745e7dbc552ee60c7e'
 
   url "https://cache.agilebits.com/dist/1P/mac4/1Password-#{version}.zip"
   name '1Password'
