@@ -19,6 +19,5 @@ cask 'porting-kit-legacy' do
                 '~/Library/Caches/edu.ufrj.vitormm.Porting-Kit-Legacy',
                 '~/Library/Cookies/edu.ufrj.vitormm.Porting-Kit-Legacy.binarycookies',
                 '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/edu.ufrj.vitormm.porting-kit-legacy.sfl',
-              ],
-      rmdir:  '~/Applications/Porting Kit Legacy.app'
+              ]
 end
