@@ -7,6 +7,7 @@ cask 'porting-kit-legacy' do
   homepage 'http://portingkit.com/'
   license :gratis
 
+  conflicts_with cask: 'caskroom/cask/orting-kit'
   depends_on macos: '<= :mountain_lion'
 
   app 'Porting Kit Legacy.app'
