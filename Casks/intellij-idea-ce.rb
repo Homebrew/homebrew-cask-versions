@@ -1,6 +1,6 @@
 cask 'intellij-idea-ce' do
-  version '2016.1.2'
-  sha256 'f5cf4c7574e4001f08ff8132dd2ec3ef6d3348b98b280b24b2f533a999cceaef'
+  version '2016.1.2b'
+  sha256 '21d2a850ac5da0dfa0197cee85b31d797136629d82cc84d914ca91d503c1d0a1'
 
   url "https://download.jetbrains.com/idea/ideaIC-#{version}.dmg"
   name 'IntelliJ IDEA Community Edition'
@@ -9,10 +9,13 @@ cask 'intellij-idea-ce' do
 
   app 'IntelliJ IDEA CE.app'
 
+  uninstall delete: '/usr/local/bin/idea'
+
   zap delete: [
-                '~/Library/Application Support/IdeaIC#{version.major_minor}',
-                '~/Library/Preferences/IdeaIC#{version.major_minor}',
-                '~/Library/Caches/IdeaIC#{version.major_minor}',
-                '~/Library/Logs/IdeaIC#{version.major_minor}',
+                "/~.IdeaIC#{version.major_minor}",
+                "~/Library/Application Support/IdeaIC#{version.major_minor}",
+                "~/Library/Preferences/IdeaIC#{version.major_minor}",
+                "~/Library/Caches/IdeaIC#{version.major_minor}",
+                "~/Library/Logs/IdeaIC#{version.major_minor}",
               ]
 end
