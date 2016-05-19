@@ -7,7 +7,7 @@ cask 'intellij-idea-eap' do
   homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+2016.2+EAP'
   license :commercial
 
-  app 'IntelliJ IDEA.app'
+  app 'IntelliJ IDEA 2016.2 EAP.app'
 
   uninstall delete: '/usr/local/bin/idea'
 
