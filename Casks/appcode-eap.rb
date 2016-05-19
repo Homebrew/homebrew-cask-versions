@@ -12,8 +12,6 @@ cask 'appcode-eap' do
   app 'AppCode 2016.1.3 EAP.app'
 
   zap delete: [
-                "~/.Appcode#{version.major_minor}",
-                # TODO: expand/glob for '~/Library/Preferences/jetbrains.appcode.*.plist',
                 "~/Library/Preferences/AppCode#{version.major_minor}",
                 "~/Library/Application Support/AppCode#{version.major_minor}",
                 "~/Library/Caches/AppCode#{version.major_minor}",
