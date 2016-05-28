@@ -1,11 +1,13 @@
 cask 'intellij-idea-eap' do
-  version '162.74.16'
-  sha256 'ef71c2da569fb952c62a6f0986cb11a850dec987e227f8a8506df4a016d61bf9'
+  version '162.426.1'
+  sha256 '0a0d22076e80b02c8113d8b407896e7316920e7924ba1301f8db37ec5fc03c79'
 
   url "https://download.jetbrains.com/idea/ideaIU-#{version}.dmg"
   name 'IntelliJ IDEA EAP'
   homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+2016.2+EAP'
   license :commercial
+
+  conflicts_with cask: 'intellij-idea'
 
   app 'IntelliJ IDEA 2016.2 EAP.app'
 
