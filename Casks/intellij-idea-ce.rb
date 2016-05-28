@@ -4,6 +4,7 @@ cask 'intellij-idea-ce' do
 
   url "https://download.jetbrains.com/idea/ideaIC-#{version}.dmg"
   name 'IntelliJ IDEA Community Edition'
+  name 'IntelliJ IDEA CE'
   homepage 'https://www.jetbrains.com/idea/'
   license :apache
 
