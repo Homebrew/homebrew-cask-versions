@@ -19,6 +19,5 @@ cask 'intellij-idea-eap' do
                 "~/Library/Logs/IntelliJIdea#{version.major_minor}",
                 "~/Library/Application Support/IntelliJIdea#{version.major_minor}",
                 "~/Library/Preferences/IntelliJIdea#{version.major_minor}",
-                # TODO: expand/glob for '~/Library/Preferences/jetbrains.intellij.*.plist',
               ]
 end
