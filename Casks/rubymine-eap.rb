@@ -1,31 +1,23 @@
 cask 'rubymine-eap' do
-  version '2016.1.1'
-  sha256 '9fa6bb7a95acd5821bab2c43f9e83a95e68508be250f1fae05288414716094c5'
+  version '145.1503.19'
+  sha256 '0e937f877249dbbc5c54ea16c62c6981b521eeaffa0ffd26fccac68f145be762'
 
   url "https://download.jetbrains.com/ruby/RubyMine-#{version}.dmg"
-  name 'RubyMine'
+  name 'RubyMine EAP'
   homepage 'https://confluence.jetbrains.com/display/RUBYDEV/Early+Access+Program'
   license :commercial
 
   conflicts_with cask: 'rubymine'
 
-  app 'RubyMine.app'
+  app 'RubyMine EAP.app'
+
+  uninstall delete: '/usr/local/bin/mine'
 
   zap delete: [
-                "~/.RubyMine#{version.major_minor}",
-                # TODO: expand/glob for '~/Library/Preferences/jetbrains.rubymine.*.plist',
-                "~/Library/Preferences/RubyMine#{version.major_minor}",
-                "~/Library/Application Support/RubyMine#{version.major_minor}",
-                "~/Library/Caches/RubyMine#{version.major_minor}",
-                "~/Library/Logs/RubyMine#{version.major_minor}",
+                '~/.RubyMine2016.1',
+                '~/Library/Preferences/RubyMine2016.1',
+                '~/Library/Application Support/RubyMine2016.1',
+                '~/Library/Caches/RubyMine2016.1',
+                '~/Library/Logs/RubyMine2016.1',
               ]
-
-  # remove this when this cask is updated to an EAP release
-  caveats <<-EOS.undent
-    There is currently no EAP preview release. Instead, the latest stable
-    version will be installed.
-    To receive future EAP releases via the IDE's built-in update system, go to
-       Preferences > Appearance & Behavior > System Settings > Updates
-    and select the Early Access Program channel.
-  EOS
 end
