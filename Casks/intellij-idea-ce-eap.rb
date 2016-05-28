@@ -4,8 +4,11 @@ cask 'intellij-idea-ce-eap' do
 
   url "https://download.jetbrains.com/idea/ideaIC-#{version}.dmg"
   name 'IntelliJ IDEA Community Edition EAP'
+  name 'IntelliJ IDEA CE EAP'
   homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+2016.2+EAP'
   license :apache
+
+  conflicts_with cask: 'intellij-idea-ce'
 
   app 'IntelliJ IDEA 2016.2 CE EAP.app'
 
