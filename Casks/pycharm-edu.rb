@@ -9,4 +9,12 @@ cask 'pycharm-edu' do
   license :apache
 
   app 'PyCharm Edu.app'
+
+  zap delete: [
+                "~/.PyCharmEdu#{version.major_minor.no_dots}",
+                "~/Library/Preferences/PyCharmEdu#{version.major_minor.no_dots}",
+                "~/Library/Application Support/PyCharmEdu#{version.major_minor.no_dots}",
+                "~/Library/Caches/PyCharmEdu#{version.major_minor.no_dots}",
+                "~/Library/Logs/PyCharmEdu#{version.major_minor.no_dots}",
+              ]
 end
