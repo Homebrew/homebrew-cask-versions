@@ -3,15 +3,16 @@ cask 'datagrip-eap' do
   sha256 '78976fcf73155e3e4b0f0defae550ddf7af6517d656d199e53f7f10dd89e02fb'
 
   url "https://download.jetbrains.com/datagrip/datagrip-#{version}.dmg"
-  name 'Datagrip'
+  name 'DataGrip'
   homepage 'https://confluence.jetbrains.com/display/DBE/DataGrip+2016.1+EAP'
   license :commercial
 
-  app 'Datagrip.app'
+  conflicts_with cask: 'datagrip'
+
+  app 'DataGrip.app'
 
   zap delete: [
-                "~/.DataGrip#{version.major_minor}", # TODO: confirm this one
-                # TODO: expand/glob for '~/Library/Preferences/jetbrains.datagrip.*.plist',
+                "~/.DataGrip#{version.major_minor}",
                 "~/Library/Preferences/DataGrip#{version.major_minor}",
                 "~/Library/Application Support/DataGrip#{version.major_minor}",
                 "~/Library/Caches/DataGrip#{version.major_minor}",
