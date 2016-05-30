@@ -1,6 +1,6 @@
 cask 'android-studio-canary' do
-  version '2.2.0.0,145.2878421'
-  sha256 '1c8f72c1ff3b11f7aefd859b1dcd226c6a26996b0d50867afb16b20b8528db83'
+  version '2.2.0.1,145.2915834'
+  sha256 '80c4277262743c2eed23a61a7d491d10ee46553cbe3207e1e369f1e1455d8a33'
 
   url "https://dl.google.com/dl/android/studio/ide-zips/#{version.before_comma}/android-studio-ide-#{version.after_comma}-mac.zip"
   name 'Android Studio Canary'
