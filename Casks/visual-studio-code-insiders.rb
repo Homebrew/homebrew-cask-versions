@@ -12,7 +12,7 @@ cask 'visual-studio-code-insiders' do
   auto_updates true
 
   app 'Visual Studio Code - Insiders.app'
-  binary 'Visual Studio Code - Insiders.app/Contents/Resources/app/bin/code'
+  binary "#{appdir}/Visual Studio Code - Insiders.app/Contents/Resources/app/bin/code"
 
   zap delete: [
                 '~/Library/Application Support/Code - Insiders',

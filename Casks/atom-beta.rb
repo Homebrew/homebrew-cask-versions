@@ -14,8 +14,8 @@ cask 'atom-beta' do
   depends_on macos: '>= :mountain_lion'
 
   app 'Atom Beta.app'
-  binary 'Atom Beta.app/Contents/Resources/app/apm/node_modules/.bin/apm', target: 'apm'
-  binary 'Atom Beta.app/Contents/Resources/app/atom.sh', target: 'atom-beta'
+  binary "#{appdir}/Atom Beta.app/Contents/Resources/app/apm/node_modules/.bin/apm", target: 'apm'
+  binary "#{appdir}/Atom Beta.app/Contents/Resources/app/atom.sh", target: 'atom-beta'
 
   postflight do
     suppress_move_to_applications

@@ -11,7 +11,7 @@ cask 'julia-nightly' do
   depends_on macos: '>= :lion'
 
   app "Julia-#{version.sub(%r{(.+)-(.+)}, '\1-dev-\2')}.app"
-  binary "Julia-#{version.sub(%r{(.+)-(.+)}, '\1-dev-\2')}.app/Contents/Resources/julia/bin/julia"
+  binary "#{appdir}/Julia-#{version.sub(%r{(.+)-(.+)}, '\1-dev-\2')}.app/Contents/Resources/julia/bin/julia"
 
   zap delete: '~/.julia'
 end

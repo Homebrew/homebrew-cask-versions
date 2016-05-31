@@ -18,7 +18,7 @@ cask 'macvim-kaoriya' do
 
   app 'MacVim.app'
 
-  mvim = 'MacVim.app/Contents/MacOS/mvim'
+  mvim = "#{appdir}/MacVim.app/Contents/MacOS/mvim"
   executables = %w[macvim-askpass mvim mvimdiff mview mvimex gvim gvimdiff gview gvimex]
   executables += %w[vi vim vimdiff view vimex] if ARGV.include? '--override-system-vim'
   executables.each { |e| binary mvim, target: e }
