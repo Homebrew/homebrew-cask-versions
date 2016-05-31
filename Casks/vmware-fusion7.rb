@@ -8,11 +8,11 @@ cask 'vmware-fusion7' do
   license :commercial
 
   app 'VMware Fusion.app'
-  binary 'VMware Fusion.app/Contents/Library/vmnet-cfgcli'
-  binary 'VMware Fusion.app/Contents/Library/vmnet-cli'
-  binary 'VMware Fusion.app/Contents/Library/vmrun'
-  binary 'VMware Fusion.app/Contents/Library/vmware-vdiskmanager'
-  binary 'VMware Fusion.app/Contents/Library/VMware OVF Tool/ovftool'
+  binary "#{appdir}/VMware Fusion.app/Contents/Library/vmnet-cfgcli"
+  binary "#{appdir}/VMware Fusion.app/Contents/Library/vmnet-cli"
+  binary "#{appdir}/VMware Fusion.app/Contents/Library/vmrun"
+  binary "#{appdir}/VMware Fusion.app/Contents/Library/vmware-vdiskmanager"
+  binary "#{appdir}/VMware Fusion.app/Contents/Library/VMware OVF Tool/ovftool"
 
   uninstall_preflight do
     set_ownership "#{staged_path}/VMware Fusion.app"

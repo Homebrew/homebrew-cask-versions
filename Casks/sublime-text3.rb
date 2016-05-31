@@ -12,7 +12,7 @@ cask 'sublime-text3' do
   conflicts_with cask: 'caskroom/versions/sublime-text-dev'
 
   app 'Sublime Text.app'
-  binary 'Sublime Text.app/Contents/SharedSupport/bin/subl'
+  binary "#{appdir}/Sublime Text.app/Contents/SharedSupport/bin/subl"
 
   uninstall quit: 'com.sublimetext.3'
 

@@ -8,7 +8,7 @@ cask 'vmware-fusion6' do
   license :commercial
 
   app 'VMware Fusion.app'
-  binary 'VMware Fusion.app/Contents/Library/vmrun'
+  binary "#{appdir}/VMware Fusion.app/Contents/Library/vmrun"
 
   uninstall_preflight do
     system '/usr/bin/sudo', '-E', '--',
