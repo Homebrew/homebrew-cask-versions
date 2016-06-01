@@ -1,4 +1,4 @@
-cask 'omnigraffle-5' do
+cask 'omnigraffle5' do
   version '5.4.4'
   sha256 '7bcc64093f46bd4808b1a4cb86cf90c0380a5c5ffffd55ce8f742712818558df'
 
