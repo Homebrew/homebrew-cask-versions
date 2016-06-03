@@ -1,6 +1,6 @@
 cask 'emacs-nightly' do
-  version '2016-05-28_01-41-42-66cd9187e396abfa7220d6a8f8d1a7064ef20b1e'
-  sha256 '2049b76c6c5d01b27184ffd387352ab83291bdeb6790631f22b4acff03ae8982'
+  version '2016-06-02_01-41-42-6b985764f07ae164d8142ba64774f2beb2856ca8'
+  sha256 'e0911e3682b256f14a04d9dec39be2b395f734964a6f7c9a30cbab2589bb7c38'
 
   url "http://emacsformacosx.com/emacs-builds/Emacs-#{version}-universal.dmg"
   name 'Emacs'
