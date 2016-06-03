@@ -1,22 +1,23 @@
 cask 'phpstorm-eap' do
-  version '162.426.10'
-  sha256 '51d3ea269a17e88e585455303cf3bede4f4954bca358204d149185167b188828'
+  version '162.646.18'
+  sha256 '97c8abe25e3a1c1585eef717b2bc648c5c67e5f9a9d169623bf53a83bbaffba6'
 
   url "https://download.jetbrains.com/webide/PhpStorm-EAP-#{version}.dmg"
   name 'PhpStorm EAP'
   homepage 'https://confluence.jetbrains.com/display/PhpStorm/PhpStorm+Early+Access+Program'
   license :commercial
 
+  conflicts_with cask: 'phpstorm'
+
   app 'PhpStorm 2016.2 EAP.app'
 
   uninstall delete: '/usr/local/bin/pstorm'
 
   zap delete: [
-                "~/.PhpStorm#{version.major_minor}",
-                # TODO: expand/glob for '~/Library/Preferences/jetbrains.phpstorm.*.plist',
-                "~/Library/Preferences/PhpStorm#{version.major_minor}",
-                "~/Library/Caches/PhpStorm#{version.major_minor}",
-                "~/Library/Logs/PhpStorm#{version.major_minor}",
-                "~/Library/Application Support/PhpStorm#{version.major_minor}",
+                '~/.PhpStorm2016.2',
+                '~/Library/Preferences/PhpStorm2016.2',
+                '~/Library/Caches/PhpStorm2016.2',
+                '~/Library/Logs/PhpStorm2016.2',
+                '~/Library/Application Support/PhpStorm2016.2',
               ]
 end
