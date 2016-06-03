@@ -12,6 +12,6 @@ cask 'vmware-fusion6' do
 
   uninstall_preflight do
     system '/usr/bin/sudo', '-E', '--',
-           '/usr/sbin/chown', '-R', '--', "#{Etc.getpwuid(Process.euid).name}:staff", "#{staged_path}/VMware Fusion.app"
+           '/usr/sbin/chown', '-R', '--', "#{Etc.getpwuid(Process.euid).name}:staff", "#{appdir}/VMware Fusion.app"
   end
 end
