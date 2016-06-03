@@ -1,15 +1,15 @@
 cask 'appcode-eap' do
-  version '2016.1.3-RC'
-  sha256 '73b20e180646aeb7dfbc2a5038493bce81b35140b4a9910dec7e5ad127191de1'
+  version '162.646.13'
+  sha256 '7f7d429eff152d43b2fc36865bf09674a13747a16ad47826400c6449a2e0f12e'
 
   url "https://download.jetbrains.com/objc/AppCode-#{version}.dmg"
-  name 'AppCode'
+  name 'AppCode EAP'
   homepage 'https://confluence.jetbrains.com/display/OBJC/AppCode+EAP'
   license :commercial
 
   conflicts_with cask: 'appcode'
 
-  app 'AppCode 2016.1.3 EAP.app'
+  app 'AppCode 2016.2 EAP.app'
 
   zap delete: [
                 "~/.Appcode#{version.major_minor}",
