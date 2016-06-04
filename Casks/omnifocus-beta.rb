@@ -1,6 +1,6 @@
 cask 'omnifocus-beta' do
-  version '2.4.x-r253971'
-  sha256 '899c6f3338a5a25b7d147c6a1109f2c707161aabe180a6c06e6943a292700fc4'
+  version '2.5.x-r260369'
+  sha256 '268baee0cc0129eb755c54c52e2207c6c239a6864d41844284ed65cb7c36b01b'
 
   url "https://omnistaging.omnigroup.com/omnifocus/releases/OmniFocus-#{version}-Test.dmg"
   name 'OmniFocus'
