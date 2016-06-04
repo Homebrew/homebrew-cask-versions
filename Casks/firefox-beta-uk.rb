@@ -1,8 +1,8 @@
 cask 'firefox-beta-uk' do
-  version '47.0b9'
-  sha256 '3c9556321f541941c0c5a869cab0eb315aa4c3b9084effc6b3c76020569e4417'
+  version '48.0a2'
+  sha256 '184a7b02ced4978d65fa60e236948381cf5e3a879d8a979e0041e5cfe2e6c175'
 
-  url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=uk"
+  url 'https://download.mozilla.org/?product=firefox-aurora-latest-l10n&os=osx&lang=uk'
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/uk/firefox/channel/#beta'
   license :mpl
