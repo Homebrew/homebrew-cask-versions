@@ -1,8 +1,8 @@
 cask 'java9-beta' do
-  version '1.9-ea-b116'
-  sha256 'a8f4910b4c39eaf39574c23f9a8cd0a6052d59ce99b6c2b1a34de828a385ca2c'
+  version '1.9,121'
+  sha256 '9490a6dc220fa55f78849f0a6d17ced2b786284e9424e73016c520df1933490f'
 
-  url 'http://www.java.net/download/java/jdk9/archive/116/binaries/jdk-9-ea+116_osx-x64_bin.dmg',
+  url "http://www.java.net/download/java/jdk#{version.before_comma.minor}/archive/#{version.after_comma}/binaries/jdk-#{version.before_comma.minor}-ea+#{version.after_comma}_osx-x64_bin.dmg",
       cookies: { 'oraclelicense' => 'accept-securebackup-cookie' }
   name 'Java Standard Edition Development Kit'
   homepage 'https://jdk9.java.net/download/'
