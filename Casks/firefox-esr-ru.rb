@@ -1,6 +1,6 @@
 cask 'firefox-esr-ru' do
-  version '45.0'
-  sha256 '2ba35b286d72ab8f5dba491c9d7e78308d428d560c2de58ef25112c2a5e0fae4'
+  version '45.2.0'
+  sha256 '724e55be9c0211f5de63b8a7be3c580792ecb208038ce0835f0338e0e0bb0b5d'
 
   url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/#{version}esr/mac/ru/Firefox%20#{version}esr.dmg"
   name 'Mozilla Firefox'
