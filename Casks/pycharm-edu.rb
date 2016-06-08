@@ -11,7 +11,6 @@ cask 'pycharm-edu' do
   app 'PyCharm Edu.app'
 
   zap delete: [
-                "~/.PyCharmEdu#{version.major_minor.no_dots}",
                 "~/Library/Preferences/PyCharmEdu#{version.major_minor.no_dots}",
                 "~/Library/Application Support/PyCharmEdu#{version.major_minor.no_dots}",
                 "~/Library/Caches/PyCharmEdu#{version.major_minor.no_dots}",

@@ -14,7 +14,6 @@ cask 'rubymine-eap' do
   uninstall delete: '/usr/local/bin/mine'
 
   zap delete: [
-                '~/.RubyMine2016.2',
                 '~/Library/Preferences/RubyMine2016.2',
                 '~/Library/Application Support/RubyMine2016.2',
                 '~/Library/Caches/RubyMine2016.2',

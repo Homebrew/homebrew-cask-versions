@@ -15,7 +15,6 @@ cask 'intellij-idea-ce-eap' do
   uninstall delete: '/usr/local/bin/idea'
 
   zap delete: [
-                "/~.IdeaIC#{version.major_minor}",
                 "~/Library/Application Support/IdeaIC#{version.major_minor}",
                 "~/Library/Preferences/IdeaIC#{version.major_minor}",
                 "~/Library/Caches/IdeaIC#{version.major_minor}",
