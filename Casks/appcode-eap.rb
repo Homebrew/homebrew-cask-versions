@@ -12,7 +12,6 @@ cask 'appcode-eap' do
   app 'AppCode 2016.2 EAP.app'
 
   zap delete: [
-                "~/.Appcode#{version.major_minor}",
                 "~/Library/Preferences/AppCode#{version.major_minor}",
                 "~/Library/Application Support/AppCode#{version.major_minor}",
                 "~/Library/Caches/AppCode#{version.major_minor}",

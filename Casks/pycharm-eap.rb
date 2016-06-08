@@ -14,7 +14,6 @@ cask 'pycharm-eap' do
   uninstall delete: '/usr/local/bin/charm'
 
   zap delete: [
-                '~/.PyCharm2016.2',
                 '~/Library/Preferences/PyCharm2016.2',
                 '~/Library/Application Support/PyCharm2016.2',
                 '~/Library/Caches/PyCharm2016.2',

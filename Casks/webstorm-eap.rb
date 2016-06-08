@@ -14,7 +14,6 @@ cask 'webstorm-eap' do
   uninstall delete: '/usr/local/bin/wstorm'
 
   zap delete: [
-                '~/.WebStorm2016.2',
                 "~/Library/Preferences/WebStorm#{version.before_comma}",
                 "~/Library/Application Support/WebStorm#{version.before_comma}",
                 "~/Library/Caches/WebStorm#{version.before_comma}",

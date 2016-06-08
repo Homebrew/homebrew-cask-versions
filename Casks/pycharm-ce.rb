@@ -15,7 +15,6 @@ cask 'pycharm-ce' do
   uninstall delete: '/usr/local/bin/charm'
 
   zap delete: [
-                "~/.PyCharm#{version.major_minor}",
                 "~/Library/Caches/PyCharm#{version.major_minor}",
                 "~/Library/Preferences/PyCharm#{version.major_minor}",
                 "~/Library/Logs/PyCharm#{version.major_minor}",

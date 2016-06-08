@@ -12,7 +12,6 @@ cask 'mps-eap' do
   app "MPS #{version.major_minor} EAP.app"
 
   zap delete: [
-                "~/MPSSamples.#{version.major_minor}",
                 "~/Library/Application Support/MPS#{version.major_minor.no_dots}",
                 "~/Library/Preferences/MPS#{version.major_minor.no_dots}",
                 "~/Library/Caches/MPS#{version.major_minor.no_dots}",

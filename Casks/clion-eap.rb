@@ -12,7 +12,6 @@ cask 'clion-eap' do
   app 'CLion 2016.2 EAP.app'
 
   zap delete: [
-                '~/.CLion2016.2',
                 '~/Library/Preferences/CLion2016.2',
                 '~/Library/Application Support/CLion2016.2',
                 '~/Library/Caches/CLion2016.2',

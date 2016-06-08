@@ -14,7 +14,6 @@ cask 'phpstorm-eap' do
   uninstall delete: '/usr/local/bin/pstorm'
 
   zap delete: [
-                '~/.PhpStorm2016.2',
                 '~/Library/Preferences/PhpStorm2016.2',
                 '~/Library/Caches/PhpStorm2016.2',
                 '~/Library/Logs/PhpStorm2016.2',
