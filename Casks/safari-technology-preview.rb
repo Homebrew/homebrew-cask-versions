@@ -2,7 +2,7 @@ cask 'safari-technology-preview' do
   version :latest
   sha256 :no_check
 
-  url 'https://secure-appldnld.apple.com/STP/SafariTechnologyPreview.dmg'
+  url 'http://appldnld.apple.com/STP/SafariTechnologyPreview.dmg'
   name 'Safari Technology Preview'
   homepage 'https://developer.apple.com/safari/technology-preview/'
   license :gratis
