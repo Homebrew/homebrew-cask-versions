@@ -1,8 +1,8 @@
 cask 'iterm2-beta' do
-  version '3.0.0'
-  sha256 '78388bc20032511748fa21273acd9b75e253d7aa6b580b95347da5cd09a7b4f3'
+  version '3.0.1'
+  sha256 '3c1ebd790986b3230c7f382b2bcd897280f32c074d09fd4ec3afbf853f320f5e'
 
-  url "https://iterm2.com/downloads/beta/iTerm2-#{version.dots_to_underscores}.zip"
+  url "https://iterm2.com/downloads/beta/iTerm2-#{version.dots_to_underscores}-preview.zip"
   name 'iTerm2'
   homepage 'https://www.iterm2.com/'
   license :gpl
