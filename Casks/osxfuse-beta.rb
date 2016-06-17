@@ -10,7 +10,7 @@ cask 'osxfuse-beta' do
   homepage 'https://osxfuse.github.io/'
   license :bsd
 
-  pkg "Extras/FUSE for OS X #{version}.pkg"
+  pkg "Extras/FUSE for macOS #{version}.pkg"
 
   postflight do
     set_ownership ['/usr/local/include', '/usr/local/lib']
