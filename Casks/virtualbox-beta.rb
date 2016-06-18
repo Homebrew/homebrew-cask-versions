@@ -3,8 +3,8 @@ cask 'virtualbox-beta' do
     version '4.3.32-103443'
     sha256 '08defbf310b7ba5852fa8dd951438bb9b1528bb1544211568861986110e807f7'
   else
-    version '5.1.0_BETA1,107766'
-    sha256 '53115e26301ded36758cd7a4f328ed800aae88884e493bd3049a94ef627a45ec'
+    version '5.1.0_BETA3,108118'
+    sha256 '558097b92900b09c0ded5c93d11d77b615eb9efc8b667b817849f60c66bf0d66'
   end
 
   url "http://download.virtualbox.org/virtualbox/#{version.before_comma}/VirtualBox-#{version.before_comma}-#{version.after_comma}-OSX.dmg"
