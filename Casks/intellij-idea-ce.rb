@@ -8,8 +8,6 @@ cask 'intellij-idea-ce' do
   homepage 'https://www.jetbrains.com/idea/'
   license :apache
 
-  conflicts_with cask: 'intellij-idea-ce-eap'
-
   app 'IntelliJ IDEA CE.app'
 
   uninstall delete: '/usr/local/bin/idea'

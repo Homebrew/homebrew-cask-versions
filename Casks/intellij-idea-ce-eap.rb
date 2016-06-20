@@ -8,8 +8,6 @@ cask 'intellij-idea-ce-eap' do
   homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+2016.2+EAP'
   license :apache
 
-  conflicts_with cask: 'intellij-idea-ce'
-
   app 'IntelliJ IDEA 2016.2 CE EAP.app'
 
   uninstall delete: '/usr/local/bin/idea'
