@@ -1,6 +1,6 @@
 cask 'dropbox-beta' do
-  version '5.3.20'
-  sha256 '354a9e70923c0f0a9b0553dbe4925596d663d9c465f661add72d1dde2f6caa40'
+  version '6.3.13'
+  sha256 'a497b1fdbb0fce59b1b61dec63a317e923de3aaec3c18f3bd6520be000bb5b2e'
 
   url "https://clientupdates.dropboxstatic.com/client/Dropbox%20#{version}.dmg"
   name 'Dropbox'
