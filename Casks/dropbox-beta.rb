@@ -4,7 +4,7 @@ cask 'dropbox-beta' do
 
   url "https://clientupdates.dropboxstatic.com/client/Dropbox%20#{version}.dmg"
   name 'Dropbox'
-  homepage 'https://www.dropboxforum.com/hc/en-us/community/posts/206873686-Beta-Build-5-3-20'
+  homepage 'https://www.dropboxforum.com/hc/en-us/community/posts/207018766-Beta-Build-6-3-13'
   license :gratis
 
   app 'Dropbox.app'
