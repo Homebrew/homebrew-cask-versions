@@ -8,6 +8,8 @@ cask 'intellij-idea-ce-eap' do
   homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+2016.2+EAP'
   license :apache
 
+  auto_updates true
+
   app 'IntelliJ IDEA 2016.2 CE EAP.app'
 
   uninstall delete: '/usr/local/bin/idea'
