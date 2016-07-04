@@ -1,6 +1,6 @@
 cask 'webstorm-eap' do
-  version '2016.2,162.844.4'
-  sha256 'eabb43def172f15d42c8f8ba1350cb78d19723214253e8d4f1583552dc8aebfe'
+  version '2016.2,162.1120.12'
+  sha256 'b6ecfd6e33c49fd4e7a85d73d37371ff3b078ab67fc6e2335c256e0581f58534'
 
   url "https://download.jetbrains.com/webstorm/WebStorm-EAP-#{version.after_comma}.dmg"
   name 'WebStorm EAP'
