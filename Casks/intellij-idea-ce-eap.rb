@@ -9,8 +9,9 @@ cask 'intellij-idea-ce-eap' do
   license :apache
 
   auto_updates true
+  conflicts_with cask: 'intellij-idea-ce'
 
-  app 'IntelliJ IDEA 2016.2 CE EAP.app'
+  app 'IntelliJ IDEA CE.app'
 
   uninstall delete: '/usr/local/bin/idea'
 
