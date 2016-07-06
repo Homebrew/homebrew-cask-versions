@@ -1,6 +1,6 @@
 cask 'hirundo' do
-  version '0.8.7'
-  sha256 '390ca5159e11ac1c081c69d0e1ff4caa952940b591e604ab9f793e3388301563'
+  version '0.9.6'
+  sha256 'fa33093fba1ec4eae5cd1bc9864508c544bacec8a7745c3e12691e959e1b9337'
 
   url "https://stylemac.com/hirundo/versions/#{version}/Hirundo-#{version}.tgz"
   name 'Hirundo'
