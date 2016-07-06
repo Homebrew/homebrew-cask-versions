@@ -8,8 +8,9 @@ cask 'intellij-idea-eap' do
   license :commercial
 
   auto_updates true
+  conflicts_with cask: 'intellij-idea'
 
-  app 'IntelliJ IDEA 2016.2 EAP.app'
+  app 'IntelliJ IDEA.app'
 
   uninstall delete: '/usr/local/bin/idea'
 
