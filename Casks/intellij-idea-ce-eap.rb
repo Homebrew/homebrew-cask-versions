@@ -9,7 +9,6 @@ cask 'intellij-idea-ce-eap' do
   license :apache
 
   auto_updates true
-  conflicts_with cask: 'intellij-idea-ce'
 
   app 'IntelliJ IDEA CE.app'
 
