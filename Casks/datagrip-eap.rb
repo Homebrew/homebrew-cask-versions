@@ -1,10 +1,10 @@
 cask 'datagrip-eap' do
-  version '2016.1.1'
-  sha256 '78976fcf73155e3e4b0f0defae550ddf7af6517d656d199e53f7f10dd89e02fb'
+  version '162.1121.36'
+  sha256 'a88ef7b6b8e42a58e9ef38ebac663e1e5c2a10e6a1d56f63a2e9474e41d1764e'
 
   url "https://download.jetbrains.com/datagrip/datagrip-#{version}.dmg"
   name 'DataGrip'
-  homepage 'https://confluence.jetbrains.com/display/DBE/DataGrip+2016.1+EAP'
+  homepage 'https://confluence.jetbrains.com/display/DBE/DataGrip+2016.2+EAP'
   license :commercial
 
   conflicts_with cask: 'datagrip'
@@ -12,18 +12,9 @@ cask 'datagrip-eap' do
   app 'DataGrip.app'
 
   zap delete: [
-                "~/Library/Preferences/DataGrip#{version.major_minor}",
-                "~/Library/Application Support/DataGrip#{version.major_minor}",
-                "~/Library/Caches/DataGrip#{version.major_minor}",
-                "~/Library/Logs/DataGrip#{version.major_minor}",
+                '~/Library/Preferences/DataGrip2016.2',
+                '~/Library/Application Support/DataGrip2016.2',
+                '~/Library/Caches/DataGrip2016.2',
+                '~/Library/Logs/DataGrip2016.2',
               ]
-
-  # remove this when this cask is updated to an EAP release
-  caveats <<-EOS.undent
-    There is currently no EAP preview release. Instead, the latest stable
-    version will be installed.
-    To receive future EAP releases via the IDE's built-in update system, go to
-       Preferences > Appearance & Behavior > System Settings > Updates
-    and select the Early Access Program channel.
-  EOS
 end
