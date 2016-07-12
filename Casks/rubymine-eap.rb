@@ -1,6 +1,6 @@
 cask 'rubymine-eap' do
-  version '162.646.16'
-  sha256 '2c2456da5d5d9ffa2152c0e4bd3269445107253adfab4e32e2bdc34c33cdc25f'
+  version '162.1236.5'
+  sha256 '767e19c4a26ea283859e8837f15fefdd18bcab8175af65babb29776eaef418f9'
 
   url "https://download.jetbrains.com/ruby/RubyMine-#{version}.dmg"
   name 'RubyMine EAP'
@@ -9,7 +9,7 @@ cask 'rubymine-eap' do
 
   conflicts_with cask: 'rubymine'
 
-  app 'RubyMine 2016.2 EAP.app'
+  app 'RubyMine EAP.app'
 
   uninstall delete: '/usr/local/bin/mine'
 
