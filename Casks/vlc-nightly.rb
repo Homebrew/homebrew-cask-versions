@@ -7,5 +7,7 @@ cask 'vlc-nightly' do
   homepage 'https://www.videolan.org/vlc/'
   license :oss
 
+  depends_on macos: '>= :lion'
+
   app 'vlc-3.0.0-git/VLC.app'
 end
