@@ -7,5 +7,7 @@ cask 'hirundo' do
   homepage 'https://stylemac.com/hirundo/'
   license :commercial
 
+  depends_on macos: '>= :el_capitan'
+
   app 'Hirundo.app'
 end
