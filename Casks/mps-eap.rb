@@ -1,6 +1,6 @@
 cask 'mps-eap' do
-  version '3.4-EAP2'
-  sha256 'db180433e0bad30817ca1c28519786a71126e2fe0b58ba4bc920d8ce558bca59'
+  version '3.4-EAP3'
+  sha256 'b704505634ff55612104c33f4896f7c6b72c99c1f7c701fc35310b3f7d6801ce'
 
   url "http://download.jetbrains.com/mps/#{version.major_minor.no_dots}/MPS-#{version}-macos-jdk-bundled.dmg"
   name 'JetBrains MPS EAP'
