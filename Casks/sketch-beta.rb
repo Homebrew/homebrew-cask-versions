@@ -1,11 +1,11 @@
 cask 'sketch-beta' do
-  version '39,31652'
-  sha256 '9d2c0f787816d6d5ad23661d8dadaad0117814b9985fef7c35c8e81f1067af09'
+  version '39,31667'
+  sha256 '17bac9222fe203754a4b366b74c3b147c182e05aef8f16e157d78528586978df'
 
   # hockeyapp.net/api/2/apps/0172d48cceec171249a8d850fb16276b was verified as official when first introduced to the cask
   url "https://rink.hockeyapp.net/api/2/apps/0172d48cceec171249a8d850fb16276b/app_versions/#{version.after_comma}?format=zip"
   appcast 'https://rink.hockeyapp.net/api/2/apps/0172d48cceec171249a8d850fb16276b',
-          checkpoint: '68457fc69eb3b64e1e1ee50063999c2285795766b9a2789650b18a6856e40c44'
+          checkpoint: '5e65b9fc7bdfed9cd5869fb00567b52f8d4a0330808b36d0e0e34206009d43c2'
   name 'Sketch'
   homepage 'http://bohemiancoding.com/sketch/beta/'
   license :commercial
