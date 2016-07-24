@@ -14,10 +14,7 @@ cask 'adobe-indesign-cc-ja' do
   preflight do
     deployment_xml = "#{staged_path}/Adobe InDesign CC 2015/deploy/install.xml"
 
-    File.open(deployment_xml) do |xml_before|
-      contents = xml_before.read.gsub!('>en_US<', '>ja_JP<')
-      File.open(deployment_xml, 'w+') { |xml_after| xml_after.write(contents) }
-    end
+    IO.write(deployment_xml, IO.read(deployment_xml).gsub('>en_US<', '>ja_JP<'))
 
     system '/usr/bin/sudo', '-E', '--', "#{staged_path}/Adobe InDesign CC 2015/Install.app/Contents/MacOS/Install", '--mode=silent', "--deploymentFile=#{deployment_xml}"
   end
