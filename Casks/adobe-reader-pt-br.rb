@@ -2,7 +2,7 @@ cask 'adobe-reader-pt-br' do
   version '11.0.00'
   sha256 '432b83f2d895c42c496226214e5b700e1ee078bc03b4501500b9a783d63e4dad'
 
-  url "http://ardownload.adobe.com/pub/adobe/reader/mac/#{version.to_i}.x/#{version}/pt_BR/AdbeRdr#{version.gsub('.', '')}_pt_BR.dmg"
+  url "http://ardownload.adobe.com/pub/adobe/reader/mac/#{version.major}.x/#{version}/pt_BR/AdbeRdr#{version.gsub('.', '')}_pt_BR.dmg"
   name 'Adobe Reader'
   homepage 'https://www.adobe.com/br/products/reader.html'
   license :gratis

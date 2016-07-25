@@ -2,7 +2,7 @@ cask 'adobe-photoshop-lightroom600' do
   version '6.0'
   sha256 '5c36e5fa76b8676144c4bba9790fe4c597daf350b2195a2088346b097f46a95f'
 
-  url "http://trials3.adobe.com/AdobeProducts/LTRM/#{version.to_i}/osx10/Lightroom_#{version.to_i}_LS11.dmg",
+  url "http://trials3.adobe.com/AdobeProducts/LTRM/#{version.major}/osx10/Lightroom_#{version.major}_LS11.dmg",
       user_agent: :fake,
       cookies:    { 'MM_TRIALS' => '1234' }
   name 'Adobe Photoshop Lightroom'
@@ -27,7 +27,7 @@ cask 'adobe-photoshop-lightroom600' do
 
   zap       delete: [
                       '~/Library/Application Support/Adobe/Lightroom',
-                      "~/Library/Preferences/com.adobe.Lightroom#{version.to_i}.plist",
+                      "~/Library/Preferences/com.adobe.Lightroom#{version.major}.plist",
                     ]
 
   caveats 'Installation or Uninstallation may fail with Exit Code 19 (Conflicting Processes running) if Browsers, Safari Notification Service or SIMBL Services are running or Adobe Creative Cloud or any other Adobe Products are already installed. See Logs in /Library/Logs/Adobe/Installers if Installation or Uninstallation fails, to identify the conflicting processes.'
