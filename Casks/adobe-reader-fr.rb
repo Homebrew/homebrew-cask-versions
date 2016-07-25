@@ -2,7 +2,7 @@ cask 'adobe-reader-fr' do
   version '11.0.00'
   sha256 '528b3fae5b712d3bb115c5ca47e507eaa2f34008b6c8a1aab542aac8770b7f77'
 
-  url "http://ardownload.adobe.com/pub/adobe/reader/mac/#{version.to_i}.x/#{version}/fr_FR/AdbeRdr#{version.gsub('.', '')}_fr_FR.dmg"
+  url "http://ardownload.adobe.com/pub/adobe/reader/mac/#{version.major}.x/#{version}/fr_FR/AdbeRdr#{version.gsub('.', '')}_fr_FR.dmg"
   name 'Adobe Reader'
   homepage 'https://www.adobe.com/fr/products/reader.html'
   license :unknown # TODO: change license and remove this comment; ':unknown' is a machine-generated placeholder

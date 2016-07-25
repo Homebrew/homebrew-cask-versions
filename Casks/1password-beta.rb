@@ -9,7 +9,7 @@ cask '1password-beta' do
 
   auto_updates true
 
-  app "1Password #{version.to_i}.app"
+  app "1Password #{version.major}.app"
 
   zap delete: [
                 '~/Library/Application Scripts/2BUA8C4S2C.com.agilebits.onepassword-osx-helper',
