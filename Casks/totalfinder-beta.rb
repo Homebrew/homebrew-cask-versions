@@ -6,7 +6,7 @@ cask 'totalfinder-beta' do
   name 'TotalFinder'
   homepage 'http://totalfinder.binaryage.com'
   license :commercial
-  
+
   depends_on macos: '>= :mavericks'
 
   pkg 'TotalFinder.pkg'
