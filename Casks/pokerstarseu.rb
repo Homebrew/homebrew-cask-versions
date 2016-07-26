@@ -4,7 +4,7 @@ cask 'pokerstarseu' do
 
   url 'https://www.pokerstars.eu/PokerStarsEU.app.zip'
   name 'PokerStars'
-  homepage 'https://www.pokerstars.com/'
+  homepage 'https://www.pokerstars.eu/'
   license :freemium
 
   auto_updates true
