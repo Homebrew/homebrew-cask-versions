@@ -1,6 +1,6 @@
 cask 'webkit-nightly' do
-  version 'r203696'
-  sha256 '3a97d1bb589c47e796b4cf77ba50b015f70d04eb54b3e6a93b10896f913016f8'
+  version 'r203731'
+  sha256 'e507602ef1c301cb289d19a19abd207dc0230a353e121f1ca644498a93d94f6c'
 
   url "http://builds.nightly.webkit.org/files/trunk/mac/WebKit-SVN-#{version}.dmg"
   name 'WebKit Nightly'
