@@ -8,6 +8,4 @@ cask 'thebrain9' do
   license :commercial
 
   app 'TheBrain 9.app'
-
-  uninstall delete: '/Applications/TheBrain 9.app'
 end
