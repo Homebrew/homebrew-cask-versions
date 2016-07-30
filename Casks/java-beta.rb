@@ -1,14 +1,14 @@
 cask 'java-beta' do
-  version '1.8.0_76-b04'
-  sha256 '3ef01e4bb28f70d91611b5cbf3aabc9995ce07b2e2aa4fa92c44dcc9590dc8e0'
+  version '1.8.0_112-b04'
+  sha256 'dc14ae0b55ab4306dc3bd0547dc6fcc23b7565831fbaa4b71ccb2ac989aafdad'
 
-  url 'http://download.java.net/jdk8u76/archive/b04/binaries/jdk-8u76-ea-bin-b04-macosx-x86_64-25_jan_2016.dmg',
+  url 'http://download.java.net/java/jdk8u112/archive/b04/binaries/jdk-8u112-ea-bin-b04-macosx-x86_64-25_jul_2016.dmg',
       cookies: { 'oraclelicense' => 'accept-securebackup-cookie' }
   name 'Java Standard Edition Development Kit'
   homepage 'https://jdk8.java.net/download.html'
   license :gratis
 
-  pkg 'JDK 8 Update 76.pkg'
+  pkg 'JDK 8 Update 112.pkg'
 
   postflight do
     system '/usr/bin/sudo', '-E', '--',
@@ -31,7 +31,7 @@ cask 'java-beta' do
     end
   end
 
-  uninstall pkgutil: 'com.oracle.jdk8u76',
+  uninstall pkgutil: 'com.oracle.jdk8u112',
             delete:  [
                        MacOS.release <= :mavericks ? '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK' : '',
                      ].keep_if { |v| !v.empty? }
