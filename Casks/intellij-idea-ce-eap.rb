@@ -1,6 +1,6 @@
 cask 'intellij-idea-ce-eap' do
-  version '2016.2.1-162.1447.7'
-  sha256 '0fccf89de4b9dd8ac3f6e1aba78d660cf1ff36c4bb3c26d054c0d5afc85c7a0c'
+  version '2016.2.1-162.1447.21'
+  sha256 'b821a1dc276fc5683dc8584146bac166a54a9668e70ca062551f0ebd4e674847'
 
   url "https://download.jetbrains.com/idea/ideaIC-#{version.sub(%r{.*?-}, '')}.dmg"
   name 'IntelliJ IDEA Community Edition EAP'
@@ -10,7 +10,7 @@ cask 'intellij-idea-ce-eap' do
 
   auto_updates true
 
-  app 'IntelliJ IDEA 2016.2.1 CE EAP.app'
+  app 'IntelliJ IDEA CE.app'
 
   uninstall delete: '/usr/local/bin/idea'
 
