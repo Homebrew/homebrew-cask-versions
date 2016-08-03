@@ -1,6 +1,6 @@
 cask 'firefox-ru' do
-  version '47.0.1'
-  sha256 '241aa3ec3a93a25622f820dc99f293974df30496c849883c5fc45cdca70b7033'
+  version '48.0'
+  sha256 '59943f7d6f459fc7cc42a613a6c690b91e846eec3ea548f74fd3786edeb28fcc'
 
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=ru"
   name 'Mozilla Firefox'
