@@ -8,6 +8,11 @@ cask 'vlc-nightly' do
   license :oss
 
   depends_on macos: '>= :lion'
+  container type: :dmg
 
-  app 'vlc-3.0.0-git/VLC.app'
+  # Renamed to prevent conflict with current VLC, if installed.
+  app 'VLC.app', target: 'VLC (Nightly).app'
+
+  caveats "As prerelease software, #{token} could be unstable, defective or not run at all."
+  caveats "While #{token} will install alonside a current VLC, they share preferences which could become corrupt and require resetting."
 end
