@@ -9,7 +9,7 @@ cask 'phpstorm-eap' do
 
   conflicts_with cask: 'phpstorm'
 
-  app 'PhpStorm 2016.2 EAP.app'
+  app 'PhpStorm 2016.2.1 EAP.app'
 
   uninstall delete: '/usr/local/bin/pstorm'
 
