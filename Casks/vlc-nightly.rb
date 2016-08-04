@@ -8,7 +8,6 @@ cask 'vlc-nightly' do
   license :oss
 
   depends_on macos: '>= :lion'
-  container type: :dmg
 
   app 'VLC.app'
 end
