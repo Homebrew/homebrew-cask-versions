@@ -9,5 +9,5 @@ cask 'vlc-nightly' do
 
   depends_on macos: '>= :lion'
 
-  app 'vlc-3.0.0-git/VLC.app'
+  app 'VLC.app'
 end
