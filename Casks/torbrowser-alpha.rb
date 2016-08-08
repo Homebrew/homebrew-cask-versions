@@ -10,9 +10,4 @@ cask 'torbrowser-alpha' do
       key_id: 'ef6e286dda85ea2a4ba7de684e2c6e8793298290'
 
   app 'TorBrowser.app'
-
-  caveats <<-EOS.undent
-    If you already have a version of TorBrowser installed this will overwrite your local settings.
-    It is recommended to use TorBrowser's built-in update mechanism after the first install to keep your settings.
-  EOS
 end
