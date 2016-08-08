@@ -1,6 +1,6 @@
 cask 'julia-nightly' do
-  version '0.5.0-ba46baf63f'
-  sha256 '7f66a1bb6cafe2dab3eb47f812a12fae5727ba6f9f122ea647bb7d654154390e'
+  version '0.6.0-d3df8e7c10'
+  sha256 '30ea165dea1aee7dbc8a8b82494216c7ced74fd4156e19f9fea693ee3f190146'
 
   # amazonaws.com/julianightlies was verified as official when first introduced to the cask
   url "https://s3.amazonaws.com/julianightlies/bin/osx/x64/#{version.sub(%r{(\d+\.\d+).*}, '\1')}/julia-#{version}-osx.dmg"
