@@ -1,6 +1,6 @@
 cask 'iterm2-beta' do
-  version '3.0.6'
-  sha256 '446653b3c2e1da38b58cc32860b84e98cddce765e7fc8170395b9026edf10bf3'
+  version '3.0.7'
+  sha256 'd4fae6dd9e7f3173791bd7b56bc4fd3520fb197a374776833735e0f95fd6fa20'
 
   url "https://iterm2.com/downloads/beta/iTerm2-#{version.dots_to_underscores}.zip"
   name 'iTerm2'
