@@ -16,4 +16,5 @@ if any_casks_modified; then
   run brew cask style "${modified_casks[@]}"
 fi
 
-run bundle exec rake test
+run brew cask audit Casks/*.rb
+run brew cask style Casks/*.rb
