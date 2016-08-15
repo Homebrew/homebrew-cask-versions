@@ -1,15 +1,15 @@
 cask 'intellij-idea-eap' do
-  version '2016.2.1-162.1447.21'
-  sha256 '552acc15a34d14193f1f43ada3a149e6b44853638e22585b6714a7a696af611e'
+  version '2016.2.2,162.1628.17'
+  sha256 '9edad926cf87d344da88248da36d8b831fa74a8aea9140ec4b4c3f5f145e4064'
 
-  url "https://download.jetbrains.com/idea/ideaIU-#{version.sub(%r{.*?-}, '')}.dmg"
+  url "https://download.jetbrains.com/idea/ideaIU-#{version.after_comma}.dmg"
   name 'IntelliJ IDEA EAP'
   homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+2016.2+EAP'
   license :commercial
 
   auto_updates true
 
-  app 'IntelliJ IDEA.app'
+  app "IntelliJ IDEA #{version.before_comma} EAP.app"
 
   uninstall delete: '/usr/local/bin/idea'
 
