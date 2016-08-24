@@ -1,6 +1,6 @@
 cask 'intellij-idea-ce' do
-  version '2016.2.1'
-  sha256 'eec7cf38d5d0749d04eb1c6275fac2ec1a26227e97e0ca5d0264352b06c63747'
+  version '2016.2.2'
+  sha256 '47641ade715a1fed88ab8d3656f9505e420d180a5df79cf469b21217ba6c99f6'
 
   url "https://download.jetbrains.com/idea/ideaIC-#{version}.dmg"
   name 'IntelliJ IDEA Community Edition'
