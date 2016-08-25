@@ -7,5 +7,5 @@ cask 'mongodb-compass-beta' do
   homepage 'https://www.mongodb.com/products/compass'
   license :commercial
 
-  app 'MongoDB Compass.app'
+  app 'MongoDB Compass Beta.app'
 end
