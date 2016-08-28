@@ -1,6 +1,6 @@
 cask 'pycharm-eap' do
-  version '162.646.12'
-  sha256 '52dec6f316b3d672537af337a32c7572802583a78100dad0d556b9f1dee0f88c'
+  version '162.1812.1'
+  sha256 '33a3a046ec6743b41b5899c404ae7e6fb3a076fe6063afa4190170171bf23878'
 
   url "https://download.jetbrains.com/python/pycharm-professional-#{version}.dmg"
   name 'PyCharm EAP'
