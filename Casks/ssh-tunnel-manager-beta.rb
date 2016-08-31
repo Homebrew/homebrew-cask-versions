@@ -5,7 +5,7 @@ cask 'ssh-tunnel-manager-beta' do
   # dl.devmate.com/org.tynsoe.sshtunnelmanager was verified as official when first introduced to the cask
   url 'https://dl.devmate.com/org.tynsoe.sshtunnelmanager/beta/SSHTunnelManager.zip'
   name 'SSH Tunnel Manager'
-  homepage 'http://projects.tynsoe.org/en/stm/'
+  homepage 'https://www.tynsoe.org/v2/stm/'
   license :gratis
 
   app 'SSH Tunnel Manager.app'
