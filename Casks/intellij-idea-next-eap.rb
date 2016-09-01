@@ -11,8 +11,6 @@ cask 'intellij-idea-next-eap' do
 
   app "IntelliJ IDEA #{version.before_comma} EAP.app"
 
-  uninstall delete: '/usr/local/bin/idea'
-
   zap delete: [
                 "~/Library/Caches/IntelliJIdea#{version.major_minor}",
                 "~/Library/Logs/IntelliJIdea#{version.major_minor}",

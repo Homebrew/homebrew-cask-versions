@@ -12,8 +12,6 @@ cask 'intellij-idea-next-ce-eap' do
 
   app "IntelliJ IDEA #{version.before_comma} CE EAP.app"
 
-  uninstall delete: '/usr/local/bin/idea'
-
   zap delete: [
                 "~/Library/Application Support/IdeaIC#{version.major_minor}",
                 "~/Library/Preferences/IdeaIC#{version.major_minor}",
