@@ -12,9 +12,9 @@ cask 'iterm2-nightly' do
   app 'iTerm.app'
 
   zap delete: [
-    '~/Library/Preferences/com.googlecode.iterm2.plist',
-    '~/Library/Caches/com.googlecode.iterm2',
-    '~/Library/Application Support/iTerm',
-    '~/Library/Application Support/iTerm2'
-  ]
+                '~/Library/Preferences/com.googlecode.iterm2.plist',
+                '~/Library/Caches/com.googlecode.iterm2',
+                '~/Library/Application Support/iTerm',
+                '~/Library/Application Support/iTerm2',
+              ]
 end
