@@ -1,6 +1,6 @@
 cask 'intellij-idea-eap' do
-  version '2016.2.3,162.1812.17'
-  sha256 '19955c3a22afed0471eeecea0b8fd173939e3d51a87d2d98264303f9638b99b0'
+  version '2016.2.4,162.2032.2'
+  sha256 '445bbf9c3fcd959217cdf75a1282be1042fb33995e60d28850f19bf40c7bd639'
 
   url "https://download.jetbrains.com/idea/ideaIU-#{version.after_comma}.dmg"
   name 'IntelliJ IDEA EAP'
