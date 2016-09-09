@@ -1,6 +1,6 @@
 cask 'pycharm-ce' do
-  version '2016.2.1'
-  sha256 '535200f94b1c12fa3fd9b12af21b8ccb4c759e1df3e8d6c1a241581c6ca11d02'
+  version '2016.2.3'
+  sha256 'c862aae3b6036e4ec41b22aaf2c4cec40562c64be0119b960b80b2dff64e6204'
 
   url "https://download.jetbrains.com/python/pycharm-community-#{version}.dmg"
   name 'Jetbrains PyCharm Community Edition'
