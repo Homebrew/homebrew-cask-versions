@@ -1,13 +1,29 @@
 cask 'microsoft-office-2011' do
-  version :latest
+  version '2011'
   sha256 :no_check
 
-  url 'http://officecdn.microsoft.com/pr/MacOffice2011/en-US/MicrosoftOffice2011.dmg'
+  language 'de' do
+    'de-DE'
+  end
+
+  language 'en', default: true do
+    'en-US'
+  end
+
+  language 'ja' do
+    'ja-JP'
+  end
+
+  url "http://officecdn.microsoft.com/pr/MacOffice#{version}/#{language}/MicrosoftOffice#{version}.dmg"
   name 'Microsoft Office 2011'
   homepage 'https://www.microsoft.com/mac'
   license :commercial
 
-  pkg 'Office Installer.pkg'
+  if language == 'ja-JP'
+    pkg 'Office インストーラー.pkg'
+  else
+    pkg 'Office Installer.pkg'
+  end
 
   uninstall pkgutil:   'com.microsoft.office.*',
             launchctl: 'com.microsoft.office.licensing.helper'
@@ -46,10 +62,20 @@ cask 'microsoft-office-2011' do
                        '~/Documents/Microsoft User Data/Office 2011 Identities',
                        '~/Documents/Microsoft User Data/Outlook Sound Sets',
                        '~/Documents/Microsoft User Data/Saved Attachments',
+                       '~/Documents/Microsoft-Benutzerdaten/Microsoft',
+                       '~/Documents/Microsoft-Benutzerdaten/Office 2011 Identities',
+                       '~/Documents/Microsoft-Benutzerdaten/Outlook Sound Sets',
+                       '~/Documents/Microsoft-Benutzerdaten/Saved Attachments',
+                       '~/Documents/Microsoft ユーザー データ/Microsoft',
+                       '~/Documents/Microsoft ユーザー データ/Office 2011 Identities',
+                       '~/Documents/Microsoft ユーザー データ/Outlook Sound Sets',
+                       '~/Documents/Microsoft ユーザー データ/Saved Attachments',
                      ],
             rmdir:   [
                        '/Library/Application Support/Microsoft',
                        '~/Library/Application Support/Microsoft',
                        '~/Documents/Microsoft User Data',
+                       '~/Documents/Microsoft-Benutzerdaten',
+                       '~/Documents/Microsoft ユーザー データ',
                      ]
 end
