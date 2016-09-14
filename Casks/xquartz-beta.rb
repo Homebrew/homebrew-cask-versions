@@ -1,11 +1,11 @@
 cask 'xquartz-beta' do
-  version '2.7.10_rc1'
-  sha256 'f91154cdaf1b3f8bf303a8d7fdc3ac8357578dc5dded6671a8f31f86977d0d9a'
+  version '2.7.10_rc2'
+  sha256 '030c336e8e5eea4b41657e28f3c560312f09d593446165c104032253cf466701'
 
   # bintray.com/xquartz was verified as official when first introduced to the cask
   url "https://dl.bintray.com/xquartz/downloads/XQuartz-#{version}.dmg"
-  appcast 'https://xquartz-dl.macosforge.org/sparkle/beta.xml',
-          checkpoint: '190e7ca981e0405e6233d5972e7d6bd27dbbc9e38186ff2d1a9aa55d51763780'
+  appcast 'https://www.xquartz.org/releases/sparkle/beta.xml',
+          checkpoint: '0ebe806773b51d96984798e64807b268540d89e51d19aa3c0ebd146961221515'
   name 'XQuartz'
   homepage 'http://www.xquartz.org/'
   license :oss
