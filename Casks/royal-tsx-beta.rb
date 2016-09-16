@@ -1,11 +1,11 @@
 cask 'royal-tsx-beta' do
-  version '3.0.0.32'
-  sha256 'e5f083614b10acb6df620dc3027e79d877f951a6b839334fbdbf02c817e348c4'
+  version '3.0.0.33'
+  sha256 '4f4909211f6b7f9726d84c73ed6d2813d9910dfc1778d376b5afcf7e536040c5'
 
   # royaltsx-v3.royalapplications.com was verified as official when first introduced to the cask
   url "https://royaltsx-v3.royalapplications.com/updates/royaltsx_#{version}.dmg"
   appcast 'https://royaltsx-v3.royalapplications.com/updates_beta.php',
-          checkpoint: 'ab0a50a19e6a35a425bb35b8bcb70b777492277d60832f9a505c66c858932113'
+          checkpoint: 'bd4e9be32ad025747402e78f06bae380bada18d6190b79303bf634b72e728a6f'
   name 'Royal TSX'
   homepage 'http://www.royaltsx.com'
   license :freemium
