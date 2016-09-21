@@ -1,6 +1,6 @@
 cask 'webstorm-eap' do
-  version 'EAP,163.3094.20'
-  sha256 '18a27998e2ce7e573e650b86ec79206500a65dc64401bc1092812ffe9fe1173d'
+  version 'EAP,163.4396.14'
+  sha256 '607f3f20cfba003842f93d7e4a9b4dcd9239cd42ec08c396176679543a825343'
 
   url "https://download.jetbrains.com/webstorm/WebStorm-#{version.before_comma}-#{version.after_comma}.dmg"
   name 'WebStorm EAP'
@@ -9,7 +9,7 @@ cask 'webstorm-eap' do
 
   conflicts_with cask: 'webstorm'
 
-  app 'WebStorm.app'
+  app 'WebStorm 2016.3 EAP.app'
 
   uninstall delete: '/usr/local/bin/wstorm'
 
