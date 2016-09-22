@@ -15,7 +15,7 @@ cask 'zulu7' do
            '/bin/mv', '-f', '--', "/Library/Java/JavaVirtualMachines/zulu-#{version.major}.jdk", "/Library/Java/JavaVirtualMachines/zulu-#{version.before_comma}.jdk"
     system '/usr/bin/sudo', '-E', '--',
            '/bin/ln', '-nsf', '--', "/Library/Java/JavaVirtualMachines/zulu-#{version.before_comma}.jdk", "/Library/Java/JavaVirtualMachines/zulu-#{version.major}.jdk"
-    if MacOS.release <= :mavericks
+    if MacOS.version <= :mavericks
       system '/usr/bin/sudo', '-E', '--',
              '/bin/rm', '-rf', '--', '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
       system '/usr/bin/sudo', '-E', '--',
@@ -27,7 +27,7 @@ cask 'zulu7' do
             delete:  [
                        "/Library/Java/JavaVirtualMachines/zulu-#{version.before_comma}.jdk",
                        "/Library/Java/JavaVirtualMachines/zulu-#{version.major}.jdk",
-                       MacOS.release <= :mavericks ? '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK' : '',
+                       MacOS.version <= :mavericks ? '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK' : '',
                      ].keep_if { |v| !v.empty? }
 
   caveats <<-EOS.undent

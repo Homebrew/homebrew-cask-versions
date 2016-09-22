@@ -1,5 +1,5 @@
 cask 'macvim-kaoriya' do
-  if MacOS.release <= :lion
+  if MacOS.version <= :lion
     version '7.4:20130911'
     sha256 'd9fc6e38de1852e4ef79e9ea78afa60e606bf45066cff031e349d65748cbfbce'
   else
