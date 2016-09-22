@@ -1,5 +1,5 @@
 cask 'virtualbox-beta' do
-  if MacOS.release <= :lion
+  if MacOS.version <= :lion
     version '4.3.32-103443'
     sha256 '08defbf310b7ba5852fa8dd951438bb9b1528bb1544211568861986110e807f7'
   else
