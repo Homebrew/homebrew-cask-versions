@@ -31,7 +31,7 @@ cask 'java9-beta' do
     end
   end
 
-  uninstall pkgutil: 'com.oracle.jdk9',
+  uninstall pkgutil: 'com.oracle.jdk-9',
             delete:  [
                        MacOS.version <= :mavericks ? '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK' : '',
                      ].keep_if { |v| !v.empty? }
