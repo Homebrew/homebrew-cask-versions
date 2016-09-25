@@ -1,9 +1,9 @@
 cask 'firefox-esr' do
-  version '45.3.0'
-  sha256 '553bb7f6a07e938d2fcb3ce08e4ad04b8448ed7a38048b680103a08c5000cf3d'
+  version '45.4.0'
+  sha256 '4e40d588b838709822bd3ccc1edbd13f055df8daf73d1024bcc6c9cbe07ef1e9'
 
   # mozilla.net was verified as official when first introduced to the cask
-  url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/#{version}esr/mac/en-US/Firefox%20#{version}esr.dmg"
+  url "https://download.mozilla.org/?product=firefox-#{version}esr-SSL&os=osx&lang=en-US"
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/en-US/firefox/organizations/'
   license :mpl
