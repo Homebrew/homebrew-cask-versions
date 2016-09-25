@@ -1,4 +1,4 @@
-cask 'multimarkdown-composer' do
+cask 'multimarkdown-composer-beta' do
   version '3.0b46'
   sha256 '673570ff77487dddbe19751a1ab83a2c77eeaa9e3242ac88eefe7b755bf4d636'
 
