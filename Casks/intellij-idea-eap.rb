@@ -1,6 +1,6 @@
 cask 'intellij-idea-eap' do
-  version '2016.2.4,162.2032.2'
-  sha256 '445bbf9c3fcd959217cdf75a1282be1042fb33995e60d28850f19bf40c7bd639'
+  version '2016.2.5,162.2228.6'
+  sha256 '5b36d44f222764e56a82150bfa81ae95b5774d29c4145248147af1202315d61c'
 
   url "https://download.jetbrains.com/idea/ideaIU-#{version.after_comma}.dmg"
   name 'IntelliJ IDEA EAP'
@@ -9,7 +9,7 @@ cask 'intellij-idea-eap' do
 
   auto_updates true
 
-  app 'IntelliJ IDEA.app'
+  app "IntelliJ IDEA #{version.before_comma} EAP.app"
 
   uninstall delete: '/usr/local/bin/idea'
 
