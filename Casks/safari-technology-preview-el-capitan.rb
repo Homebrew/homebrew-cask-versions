@@ -1,10 +1,10 @@
-cask 'safari-technology-preview' do
+cask 'safari-technology-preview-el-capitan' do
   version :latest
   sha256 :no_check
 
-  url 'http://appldnld.apple.com/STP/SafariTechnologyPreview.dmg'
+  url 'http://appldnld.apple.com/STP/031-81900-20160926-E7046BDA-8434-11E6-83C5-ADC333D2D062/SafariTechnologyPreview.dmg'
   name 'Safari Technology Preview'
-  homepage 'https://developer.apple.com/safari/technology-preview/'
+  homepage 'https://developer.apple.com/safari/download/'
   license :gratis
 
   pkg 'Safari Technology Preview.pkg'
