@@ -4,7 +4,7 @@ cask 'safari-technology-preview' do
 
   if MacOS.version <= :el_capitan
     url 'http://appldnld.apple.com/STP/031-81900-20160926-E7046BDA-8434-11E6-83C5-ADC333D2D062/SafariTechnologyPreview.dmg'
-  elsif MacOS.version >= :sierra
+  else MacOS.version >= :sierra
     url 'http://appldnld.apple.com/STP/031-81899-20160926-E7046BC6-8434-11E6-83C5-ACC333D2D062/SafariTechnologyPreview.dmg'
   end
   name 'Safari Technology Preview'
