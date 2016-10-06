@@ -2,7 +2,12 @@ cask 'vlc-nightly' do
   version :latest
   sha256 :no_check
 
-  url 'http://nightlies.videolan.org/build/macosx-intel/last'
+  url do
+    require 'open-uri'
+    base_url = 'http://nightlies.videolan.org/build/macosx-intel/last'
+    file = open(base_url).read.scan(%r{href="([^"]+.dmg)"}).flatten.first
+    "#{base_url}/#{file}"
+  end
   name 'VLC media player'
   homepage 'https://www.videolan.org/vlc/'
   license :oss
