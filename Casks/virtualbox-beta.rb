@@ -10,7 +10,6 @@ cask 'virtualbox-beta' do
   url "http://www.virtualbox.org/download/testcase/VirtualBox-#{version.before_comma}-#{version.after_comma}-OSX.dmg"
   name 'Oracle VirtualBox'
   homepage 'https://www.virtualbox.org/wiki/Testbuilds'
-  license :gpl
 
   auto_updates true
 

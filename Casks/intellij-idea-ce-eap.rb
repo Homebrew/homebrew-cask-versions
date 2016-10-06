@@ -6,7 +6,6 @@ cask 'intellij-idea-ce-eap' do
   name 'IntelliJ IDEA Community Edition EAP'
   name 'IntelliJ IDEA CE EAP'
   homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+2016.2+EAP'
-  license :apache
 
   auto_updates true
 

@@ -5,7 +5,6 @@ cask 'microsoft-office-2011' do
   url 'http://officecdn.microsoft.com/pr/MacOffice2011/en-US/MicrosoftOffice2011.dmg'
   name 'Microsoft Office 2011'
   homepage 'https://www.microsoft.com/mac'
-  license :commercial
 
   pkg 'Office Installer.pkg'
 

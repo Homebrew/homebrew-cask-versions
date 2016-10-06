@@ -13,7 +13,6 @@ cask 'adobe-cs6-master-collection' do
       cookies:    { 'MM_TRIALS' => '1234' }
   name 'Adobe CS6 Master Collection' # name must exactly match directory in dmg!
   homepage 'https://www.adobe.com/mena_en/products/creativesuite.html'
-  license :commercial
 
   # staged_path not available in Installer/Uninstall Stanza, workaround by nesting with preflight/postflight
   # see https://github.com/caskroom/homebrew-cask/pull/8887

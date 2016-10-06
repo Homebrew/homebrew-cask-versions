@@ -8,7 +8,6 @@ cask 'sourcetree-beta' do
           checkpoint: '92b3a42aefda67c270797d6131df693bea70a21bd25dd974a3dbaced938ddd41'
   name 'Atlassian SourceTree'
   homepage 'https://www.sourcetreeapp.com/'
-  license :gratis
 
   auto_updates true
   depends_on macos: '>= 10.10'

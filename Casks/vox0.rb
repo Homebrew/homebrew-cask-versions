@@ -5,7 +5,6 @@ cask 'vox0' do
   url "http://cloud.coppertino.com/vox/Vox_#{version}.dmg"
   name 'VOX'
   homepage 'http://coppertino.com/vox/'
-  license :gratis
 
   app 'Vox.app'
 end

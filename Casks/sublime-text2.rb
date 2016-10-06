@@ -7,7 +7,6 @@ cask 'sublime-text2' do
           checkpoint: '1f88d22b2ed5ba5a9213accf500ca8f1a9723b391fbbbc45ffb23cd98c98519c'
   name 'Sublime Text 2'
   homepage 'https://www.sublimetext.com/2'
-  license :closed
 
   app 'Sublime Text 2.app'
   binary "#{appdir}/Sublime Text 2.app/Contents/SharedSupport/bin/subl"

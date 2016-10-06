@@ -6,7 +6,6 @@ cask 'java-beta' do
       cookies: { 'oraclelicense' => 'accept-securebackup-cookie' }
   name 'Java Standard Edition Development Kit'
   homepage 'https://jdk8.java.net/download.html'
-  license :gratis
 
   pkg 'JDK 8 Update 122.pkg'
 

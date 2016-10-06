@@ -5,7 +5,6 @@ cask 'chirp-daily' do
   url "http://trac.chirp.danplanet.com/chirp_daily/daily-#{version}/chirp-daily-#{version}.app.zip"
   name 'CHIRP'
   homepage 'http://chirp.danplanet.com/projects/chirp/wiki/Home'
-  license :oss
 
   depends_on arch: :intel
   depends_on cask: 'caskroom/cask/kk7ds-python-runtime'

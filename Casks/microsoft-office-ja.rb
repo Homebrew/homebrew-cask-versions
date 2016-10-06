@@ -5,7 +5,6 @@ cask 'microsoft-office-ja' do
   url 'http://officecdn.microsoft.com/pr/MacOffice2011/ja-JP/MicrosoftOffice2011.dmg'
   name 'Microsoft Office for Japanese'
   homepage 'http://www.microsoft.com/mac'
-  license :commercial
 
   pkg 'Office インストーラー.pkg'
 

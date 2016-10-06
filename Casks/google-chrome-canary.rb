@@ -5,7 +5,6 @@ cask 'google-chrome-canary' do
   url 'https://dl.google.com/release2/q/canary/googlechrome.dmg'
   name 'Google Chrome Canary'
   homepage 'https://www.google.com/chrome/browser/canary.html?platform=mac'
-  license :gratis
 
   auto_updates true
 

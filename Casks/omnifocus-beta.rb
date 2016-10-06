@@ -5,7 +5,6 @@ cask 'omnifocus-beta' do
   url "https://omnistaging.omnigroup.com/omnifocus/releases/OmniFocus-#{version}-Test.dmg"
   name 'OmniFocus'
   homepage 'https://omnistaging.omnigroup.com/omnifocus/'
-  license :commercial
 
   app 'OmniFocus.app'
 

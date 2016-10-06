@@ -5,7 +5,6 @@ cask 'handbrakecli-nightly' do
   url "http://download.handbrake.fr/nightly/HandBrakeCLI-#{version}-master-osx.dmg"
   name 'HandBrake'
   homepage 'https://handbrake.fr'
-  license :gpl
 
   depends_on macos: '>= :lion'
 

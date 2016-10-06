@@ -5,7 +5,6 @@ cask 'telegram-desktop-dev' do
   url "https://updates.tdesktop.com/tmac/tsetup.#{version}.dmg"
   name 'Telegram'
   homepage 'https://tdesktop.com/'
-  license :gpl
 
   depends_on macos: '>= :mountain_lion'
 

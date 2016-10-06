@@ -6,7 +6,6 @@ cask 'rstudio-preview' do
   url "https://s3.amazonaws.com/rstudio-dailybuilds/RStudio-#{version}.dmg"
   name 'RStudio'
   homepage 'http://www.rstudio.com/ide/download/preview'
-  license :affero
 
   app 'RStudio.app'
 

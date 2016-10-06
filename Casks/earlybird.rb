@@ -6,7 +6,6 @@ cask 'earlybird' do
   name 'Earlybird'
   name 'Thunderbird Nightly'
   homepage 'https://www.mozilla.org/en-US/thunderbird/channel/'
-  license :mpl
 
   app 'Earlybird.app'
 end

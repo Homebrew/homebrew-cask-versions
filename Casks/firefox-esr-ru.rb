@@ -6,7 +6,6 @@ cask 'firefox-esr-ru' do
   url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/#{version}esr/mac/ru/Firefox%20#{version}esr.dmg"
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/ru/firefox/organizations/'
-  license :mpl
 
   app 'Firefox.app'
 

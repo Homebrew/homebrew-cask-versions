@@ -6,7 +6,6 @@ cask 'openrefine-dev' do
   url "https://github.com/OpenRefine/OpenRefine/releases/download/#{version}/openrefine-mac-#{version}.dmg"
   name 'OpenRefine'
   homepage 'http://openrefine.org/'
-  license :bsd
 
   app 'OpenRefine.app'
 end

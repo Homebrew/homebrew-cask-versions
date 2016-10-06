@@ -8,7 +8,6 @@ cask 'xquartz-beta' do
           checkpoint: 'd3d95e0e33881cf0bf15b51af88f780ac79ba1d3fabdf36c6545e8b07254804d'
   name 'XQuartz'
   homepage 'http://www.xquartz.org/'
-  license :oss
 
   pkg 'XQuartz.pkg'
 

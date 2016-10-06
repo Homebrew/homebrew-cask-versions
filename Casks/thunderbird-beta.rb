@@ -5,7 +5,6 @@ cask 'thunderbird-beta' do
   url "https://download.mozilla.org/?product=thunderbird-#{version}&os=osx&lang=en-US"
   name 'Mozilla Thunderbird'
   homepage 'https://www.mozilla.org/en-US/thunderbird/all-beta.html'
-  license :mpl
 
   app 'Thunderbird.app'
 end

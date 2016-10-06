@@ -5,7 +5,6 @@ cask 'unity523' do
   url "http://download.unity3d.com/download_unity/f3d16a1fa2dd/MacEditorInstaller/Unity-#{version}.pkg"
   name 'Unity Editor'
   homepage 'https://unity3d.com/unity/'
-  license :commercial
 
   pkg "Unity-#{version}.pkg"
 

@@ -6,7 +6,6 @@ cask 'cocoapods0' do
   url "https://github.com/CocoaPods/CocoaPods-app/releases/download/#{version}/CocoaPods.app-#{version}.tar.bz2"
   name 'CocoaPods.app'
   homepage 'https://cocoapods.org/'
-  license :mit
 
   container type: :tar
 

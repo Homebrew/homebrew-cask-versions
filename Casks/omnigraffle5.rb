@@ -5,7 +5,6 @@ cask 'omnigraffle5' do
   url "http://www.omnigroup.com/ftp1/pub/software/MacOSX/10.6/OmniGraffle-#{version}.dmg"
   name 'OmniGraffle 5'
   homepage 'https://www.omnigroup.com/omnigraffle/'
-  license :commercial
 
   app 'OmniGraffle 5.app'
 

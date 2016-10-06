@@ -10,7 +10,6 @@ cask 'adobe-photoshop-cs6' do
       cookies:    { 'MM_TRIALS' => '1234' }
   name 'Adobe Photoshop CS6' # name must match directory in dmg for later reference
   homepage 'https://helpx.adobe.com/x-productkb/policy-pricing/cs6-product-downloads.html'
-  license :commercial
 
   installer script: "#{staged_path}/#{name.join}/Install.app/Contents/MacOS/Install",
             args:   ['--mode=silent', "--deploymentFile=#{staged_path}/#{name.join}/Deployment/en_US_Deployment.xml"]

@@ -5,7 +5,6 @@ cask 'mpeg-streamclip-beta' do
   url "http://www.squared5.com/svideo/MPEG_Streamclip_#{version}.dmg"
   name 'MPEG Streamclip'
   homepage 'http://www.squared5.com/'
-  license :gratis
 
   app 'MPEG Streamclip.app'
 end

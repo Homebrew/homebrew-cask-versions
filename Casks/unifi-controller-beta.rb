@@ -5,7 +5,6 @@ cask 'unifi-controller-beta' do
   url "http://dl.ubnt.com/unifi/#{version}/UniFi.pkg"
   name 'Unifi Controller Beta'
   homepage 'https://community.ubnt.com/t5/UniFi-Wireless-Beta/bd-p/UniFi_Beta'
-  license :commercial
 
   pkg 'Unifi.pkg'
 

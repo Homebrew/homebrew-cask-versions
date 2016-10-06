@@ -5,7 +5,6 @@ cask 'battle-net-zh-cn' do
   url 'http://www.battlenet.com.cn/download/getInstaller?os=mac&installer=Battle.net-Setup-zhCN.zip'
   name 'Blizzard Battle.net'
   homepage 'http://www.battlenet.com.cn/zh/'
-  license :commercial
 
   installer manual: 'Battle.net-Setup-zhCN.app'
 

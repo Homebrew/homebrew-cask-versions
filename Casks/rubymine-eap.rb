@@ -5,7 +5,6 @@ cask 'rubymine-eap' do
   url "https://download.jetbrains.com/ruby/RubyMine-#{version.after_comma}.dmg"
   name 'RubyMine EAP'
   homepage 'https://confluence.jetbrains.com/display/RUBYDEV/Early+Access+Program'
-  license :commercial
 
   conflicts_with cask: 'rubymine'
 

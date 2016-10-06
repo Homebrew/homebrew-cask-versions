@@ -5,7 +5,6 @@ cask '1password-beta' do
   url "https://cache.agilebits.com/dist/1P/mac4/1Password-#{version}.zip"
   name '1Password'
   homepage 'https://agilebits.com/downloads'
-  license :commercial
 
   auto_updates true
 

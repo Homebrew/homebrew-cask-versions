@@ -6,7 +6,6 @@ cask 'air-video-server' do
   url "http://s3.amazonaws.com/AirVideo/Air+Video+Server+#{version}.dmg"
   name 'Air Video Server'
   homepage 'http://www.inmethod.com/air-video/'
-  license :gratis
 
   app 'Air Video Server.app'
 end

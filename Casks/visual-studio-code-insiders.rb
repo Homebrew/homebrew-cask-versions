@@ -7,7 +7,6 @@ cask 'visual-studio-code-insiders' do
   name 'Microsoft Visual Studio Code'
   name 'VS Code - Insiders'
   homepage 'https://code.visualstudio.com/insiders'
-  license :mit
 
   auto_updates true
 

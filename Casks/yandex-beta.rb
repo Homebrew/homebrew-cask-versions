@@ -6,7 +6,6 @@ cask 'yandex-beta' do
   name 'Yandex.Browser'
   name 'Custo'
   homepage 'https://browser.yandex.ru/beta/'
-  license :commercial
 
   app 'Yandex.app'
 end

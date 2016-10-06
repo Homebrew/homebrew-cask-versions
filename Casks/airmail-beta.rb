@@ -8,7 +8,6 @@ cask 'airmail-beta' do
           checkpoint: '462a02ccee368dae5324495bf3f5cb7ce9d9146b0c9ef4744638878e16beef73'
   name 'Airmail'
   homepage 'http://airmailapp.com/beta/'
-  license :commercial
 
   app 'Airmail Beta.app'
 end

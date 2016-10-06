@@ -8,7 +8,6 @@ cask 'osxfuse-beta' do
           checkpoint: 'c03f1a0c1c927f221f97ecee08b1fe6d957f3c81e1a75167654a14f7f54c7262'
   name 'OSXFUSE'
   homepage 'https://osxfuse.github.io/'
-  license :bsd
 
   pkg "Extras/FUSE for macOS #{version}.pkg"
 
