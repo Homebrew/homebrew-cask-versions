@@ -7,7 +7,6 @@ cask 'forklift-beta' do
           checkpoint: 'e9637840c3af9bb45202af5a3905eabd6f82e0f2e47f5a552cd65f308b5dab46'
   name 'ForkLift'
   homepage 'http://www.binarynights.com/'
-  license :commercial
 
   app 'ForkLift.app'
 

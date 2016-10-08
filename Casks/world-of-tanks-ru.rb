@@ -6,7 +6,6 @@ cask 'world-of-tanks-ru' do
   url 'http://redirect.wargaming.net/WoT/latest_mac_install_ru'
   name 'World Of Tanks'
   homepage 'http://worldoftanks.ru/'
-  license :gratis
 
   app 'World of Tanks.app'
 

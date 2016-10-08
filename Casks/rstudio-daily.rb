@@ -5,7 +5,6 @@ cask 'rstudio-daily' do
   url 'https://www.rstudio.org/download/latest/daily/desktop/mac/RStudio-latest.dmg'
   name 'RStudio'
   homepage 'https://www.rstudio.org/download/daily/desktop/mac/'
-  license :affero
 
   app 'RStudio.app'
 

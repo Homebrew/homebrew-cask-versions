@@ -5,7 +5,6 @@ cask 'appcode-eap' do
   url "https://download.jetbrains.com/objc/AppCode-#{version}.dmg"
   name 'AppCode EAP'
   homepage 'https://confluence.jetbrains.com/display/OBJC/AppCode+EAP'
-  license :commercial
 
   conflicts_with cask: 'appcode'
 

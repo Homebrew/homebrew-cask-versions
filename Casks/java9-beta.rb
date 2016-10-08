@@ -6,7 +6,6 @@ cask 'java9-beta' do
       cookies: { 'oraclelicense' => 'accept-securebackup-cookie' }
   name 'Java Standard Edition Development Kit'
   homepage 'https://jdk9.java.net/download/'
-  license :gratis
 
   pkg 'JDK 9.pkg'
 

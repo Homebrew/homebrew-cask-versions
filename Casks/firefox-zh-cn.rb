@@ -5,7 +5,6 @@ cask 'firefox-zh-cn' do
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=zh-CN"
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/zh-CN/firefox/desktop/'
-  license :mpl
 
   app 'Firefox.app'
 

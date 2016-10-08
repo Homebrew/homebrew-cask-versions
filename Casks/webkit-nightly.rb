@@ -5,7 +5,6 @@ cask 'webkit-nightly' do
   url "http://builds.nightly.webkit.org/files/trunk/mac/WebKit-SVN-#{version}.dmg"
   name 'WebKit Nightly'
   homepage 'https://webkit.org/downloads/'
-  license :oss
 
   app 'WebKit.app'
 end

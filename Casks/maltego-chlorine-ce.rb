@@ -5,7 +5,6 @@ cask 'maltego-chlorine-ce' do
   url "https://www.paterva.com/malv#{version.major}#{version.minor}/community/MaltegoCE.v#{version}.dmg"
   name 'Paterva Maltego'
   homepage 'https://www.paterva.com/web7/buy/maltego-clients/maltego-ce.php'
-  license :closed
 
   app "Maltego Chlorine CE v#{version.major_minor_patch}.app"
 end

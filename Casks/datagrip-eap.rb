@@ -5,7 +5,6 @@ cask 'datagrip-eap' do
   url "https://download.jetbrains.com/datagrip/datagrip-#{version}.dmg"
   name 'DataGrip'
   homepage 'https://confluence.jetbrains.com/display/DBE/DataGrip+2016.2+EAP'
-  license :commercial
 
   conflicts_with cask: 'datagrip'
 

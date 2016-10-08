@@ -8,7 +8,6 @@ cask 'weka-dev' do
           checkpoint: 'e2a5edf3ca7fdbae537211958eed3803e8d5a70a5e24de53d8b89038055d6f61'
   name 'Weka'
   homepage 'http://www.cs.waikato.ac.nz/ml/weka/'
-  license :gpl
 
   app "weka-#{version.dots_to_hyphens}-oracle-jvm.app"
 end

@@ -5,7 +5,6 @@ cask 'porting-kit-legacy' do
   url 'http://portingkit.com/kit/Porting%20Kit%20Legacy.zip'
   name 'Porting Kit Legacy'
   homepage 'http://portingkit.com/'
-  license :gratis
 
   conflicts_with cask: 'caskroom/cask/porting-kit'
   depends_on macos: '<= :mountain_lion'

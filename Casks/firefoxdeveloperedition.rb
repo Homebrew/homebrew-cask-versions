@@ -5,7 +5,6 @@ cask 'firefoxdeveloperedition' do
   url 'https://download.mozilla.org/?product=firefox-aurora-latest-ssl&os=osx&lang=en-US'
   name 'Mozilla Firefox Developer Edition'
   homepage 'https://www.mozilla.org/en-US/firefox/developer/'
-  license :mpl
 
   app 'FirefoxDeveloperEdition.app'
 end

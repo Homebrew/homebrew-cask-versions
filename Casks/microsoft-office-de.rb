@@ -5,7 +5,6 @@ cask 'microsoft-office-de' do
   url 'http://officecdn.microsoft.com/pr/MacOffice2011/de-DE/MicrosoftOffice2011.dmg'
   name 'Microsoft Office German'
   homepage 'http://www.microsoft.com/mac'
-  license :commercial
 
   pkg 'Office Installer.pkg'
 

@@ -5,7 +5,6 @@ cask 'firefoxnightly-uk' do
   url "https://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central-l10n/firefox-#{version}.uk.mac.dmg"
   name 'Mozilla Firefox'
   homepage 'https://nightly.mozilla.org/'
-  license :mpl
 
   app 'FirefoxNightly.app'
 

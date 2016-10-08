@@ -5,7 +5,6 @@ cask 'intellij-idea-eap' do
   url "https://download.jetbrains.com/idea/ideaIU-#{version.after_comma}.dmg"
   name 'IntelliJ IDEA EAP'
   homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+2016.2+EAP'
-  license :commercial
 
   auto_updates true
 

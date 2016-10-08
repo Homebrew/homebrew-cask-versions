@@ -7,7 +7,6 @@ cask 'cuda-z-beta' do
           checkpoint: '64c18ee82db789664bc5aefe2981c8f5672bf656a4ca8d6497a91d7c36ad5f1c'
   name 'CUDA-Z'
   homepage 'http://cuda-z.sourceforge.net'
-  license :gpl
 
   app 'Cuda-Z.app'
 end

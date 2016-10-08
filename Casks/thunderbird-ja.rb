@@ -6,7 +6,6 @@ cask 'thunderbird-ja' do
   url "https://download.mozilla.org/?product=thunderbird-#{version}&os=osx&lang=ja-JP-mac"
   name 'Mozilla Thunderbird'
   homepage 'https://www.mozilla.jp/thunderbird/'
-  license :mpl
 
   app 'Thunderbird.app'
 end

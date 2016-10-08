@@ -5,7 +5,6 @@ cask 'ableton-live-beta' do
   url "http://cdn2-downloads.ableton.com/channels/#{version}/ableton_live_beta_#{version.no_dots}_64.dmg"
   name 'Ableton Live Beta'
   homepage 'https://ableton.com/en/live'
-  license :commercial
 
   app "Ableton Live #{version.major_minor} Beta.app"
 

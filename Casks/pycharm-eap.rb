@@ -5,7 +5,6 @@ cask 'pycharm-eap' do
   url "https://download.jetbrains.com/python/pycharm-professional-#{version}.dmg"
   name 'PyCharm EAP'
   homepage 'https://confluence.jetbrains.com/display/PYH/JetBrains+PyCharm+Preview+(EAP)'
-  license :commercial
 
   conflicts_with cask: 'pycharm'
 

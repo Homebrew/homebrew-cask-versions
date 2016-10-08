@@ -5,7 +5,6 @@ cask 'scansnap-manager-s1300' do
   url 'http://www.fujitsu.com/downloads/IMAGE/driver/ss/mgr/m-s1300/ScanSnap.dmg'
   name 'ScanSnap Manager for Fujitsu ScanSnap S1300'
   homepage 'https://www.fujitsu.com/global/support/computing/peripheral/scanners/software/s1300m-setup.html'
-  license :gratis
 
   depends_on macos: '>= :tiger'
 

@@ -8,7 +8,6 @@ cask 'royal-tsx-beta' do
           checkpoint: 'bf00291a67cf04dca47de4d0f51021fafe4317a292fbee677c31984fb1b89ac5'
   name 'Royal TSX'
   homepage 'http://www.royaltsx.com'
-  license :freemium
 
   app 'Royal TSX.app'
 end

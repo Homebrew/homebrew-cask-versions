@@ -5,7 +5,6 @@ cask 'totals2' do
   url "http://www.kedisoft.com/dl/totals/Totals-#{version}.dmg"
   name 'Totals'
   homepage 'http://www.kedisoft.com/totals/'
-  license :commercial
 
   app 'Totals.app'
 end

@@ -8,7 +8,6 @@ cask 'spyder-py2' do
           checkpoint: 'cb54582f0a53c1226fa89099b928c7137f8465a66bac39c750e8b4b7714faca3'
   name 'Spyder-Py2'
   homepage 'https://github.com/spyder-ide/spyder'
-  license :mit
 
   app 'Spyder-Py2.app'
 end

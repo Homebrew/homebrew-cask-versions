@@ -5,7 +5,6 @@ cask 'mps-eap' do
   url "http://download.jetbrains.com/mps/#{version.major_minor.no_dots}/MPS-#{version}-macos-jdk-bundled.dmg"
   name 'JetBrains MPS EAP'
   homepage 'https://confluence.jetbrains.com/display/MPS/JetBrains+MPS+3.4+EAP+Download+Page'
-  license :apache
 
   conflicts_with cask: 'mps'
 

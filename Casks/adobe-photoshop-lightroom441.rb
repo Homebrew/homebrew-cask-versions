@@ -5,7 +5,6 @@ cask 'adobe-photoshop-lightroom441' do
   url "http://download.adobe.com/pub/adobe/lightroom/mac/#{version.major}.x/Lightroom_#{version.major}_LS11_mac_#{version.dots_to_underscores}.dmg"
   name 'Adobe Photoshop Lightroom'
   homepage 'https://www.adobe.com/products/photoshop-lightroom.html'
-  license :commercial
 
   pkg "Adobe Photoshop Lightroom #{version.major}.pkg"
 

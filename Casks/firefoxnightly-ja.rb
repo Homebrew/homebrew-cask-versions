@@ -5,7 +5,6 @@ cask 'firefoxnightly-ja' do
   url "https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central-l10n/firefox-#{version}.ja-JP-mac.mac.dmg"
   name 'Mozilla Firefox'
   homepage 'https://nightly.mozilla.org/'
-  license :mpl
 
   app 'FirefoxNightly.app'
 

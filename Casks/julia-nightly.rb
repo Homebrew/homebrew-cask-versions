@@ -6,7 +6,6 @@ cask 'julia-nightly' do
   url "https://s3.amazonaws.com/julianightlies/bin/osx/x64/#{version.sub(%r{(\d+\.\d+).*}, '\1')}/julia-#{version}-osx.dmg"
   name 'Julia'
   homepage 'http://julialang.org'
-  license :mit
 
   depends_on macos: '>= :lion'
 

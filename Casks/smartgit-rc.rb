@@ -5,7 +5,6 @@ cask 'smartgit-rc' do
   url "https://www.syntevo.com/downloads/smartgit/smartgit-macosx-#{version}.dmg"
   name 'SmartGit'
   homepage 'https://www.syntevo.com/smartgit/'
-  license :commercial
 
   app 'SmartGit.app'
   binary "#{appdir}/SmartGit.app/Contents/MacOS/SmartGit"

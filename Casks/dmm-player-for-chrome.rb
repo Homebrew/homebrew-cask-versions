@@ -5,7 +5,6 @@ cask 'dmm-player-for-chrome' do
   url "http://portalapp.dmm.com/silverlightplayer/dmm/m/#{version.dots_to_underscores}/DMMPlayerForChromeInstaller_#{version.dots_to_underscores}.pkg"
   name 'DMM Player for Chrome'
   homepage 'http://www.dmm.com/digital/info_for_chrome_user_html/'
-  license :gratis
 
   pkg "DMMPlayerForChromeInstaller_#{version.dots_to_underscores}.pkg"
 

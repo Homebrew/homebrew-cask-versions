@@ -5,7 +5,6 @@ cask 'phpstorm-eap' do
   url "https://download.jetbrains.com/webide/PhpStorm-EAP-#{version}.dmg"
   name 'PhpStorm EAP'
   homepage 'https://confluence.jetbrains.com/display/PhpStorm/PhpStorm+Early+Access+Program'
-  license :commercial
 
   conflicts_with cask: 'phpstorm'
 

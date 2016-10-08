@@ -7,7 +7,6 @@ cask 'dupeguru-pe' do
           checkpoint: 'dbeff4119e35f8f31699fffcf870f22410d268b614ea91ad52552a7641052e77'
   name 'dupeGuru Picture Edition'
   homepage 'https://www.hardcoded.net/dupeguru_pe/'
-  license :bsd
 
   app 'dupeGuru PE.app'
 end

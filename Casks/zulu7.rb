@@ -6,7 +6,6 @@ cask 'zulu7' do
       referer: 'http://www.azul.com/downloads/zulu/zulu-mac/'
   name 'Azul Zulu Java Standard Edition Development Kit'
   homepage 'http://www.azul.com/downloads/zulu/zulu-mac/'
-  license :gratis
 
   pkg "Double-Click to Install Zulu #{version.major}.pkg"
 
