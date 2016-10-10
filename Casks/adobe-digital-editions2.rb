@@ -5,7 +5,6 @@ cask 'adobe-digital-editions2' do
   url 'http://download.adobe.com/pub/adobe/digitaleditions/ADE_2.0_Installer.dmg'
   name 'Adobe Digital Editions 2.0.1'
   homepage 'https://www.adobe.com/solutions/ebook/digital-editions.html'
-  license :gratis
 
   pkg 'Digital Editions 2.0 Installer.pkg', allow_untrusted: true
 

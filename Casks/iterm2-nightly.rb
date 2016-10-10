@@ -7,7 +7,6 @@ cask 'iterm2-nightly' do
           checkpoint: '083908c06413f4aa9b12aa9945049401bf56e48e8755849c6a20d6b3288382f1'
   name 'iTerm2'
   homepage 'https://www.iterm2.com/'
-  license :gpl
 
   app 'iTerm.app'
 

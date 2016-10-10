@@ -5,7 +5,6 @@ cask 'charles-applejava' do
   url "https://www.charlesproxy.com/assets/release/#{version.gsub(%r{b\d$}, '')}/charles-proxy-#{version}-applejava.dmg"
   name 'Charles'
   homepage 'https://www.charlesproxy.com/download/'
-  license :commercial
 
   app 'Charles.app'
 

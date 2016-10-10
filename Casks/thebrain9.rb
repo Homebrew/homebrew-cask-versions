@@ -5,7 +5,6 @@ cask 'thebrain9' do
   url "http://updater.thebrain.com/files/TheBrain#{version}.dmg"
   name 'TheBrain 9'
   homepage 'http://www.thebrain.com/products/thebrain/thebrain9/'
-  license :commercial
 
   app 'TheBrain 9.app'
 end

@@ -6,7 +6,6 @@ cask 'clipmenu-alpha' do
   url "https://dl.dropbox.com/u/1140644/clipmenu/ClipMenu-#{version}.dmg"
   name 'ClipMenu'
   homepage 'http://www.clipmenu.com/'
-  license :mit
 
   depends_on macos: '>= :mavericks'
 

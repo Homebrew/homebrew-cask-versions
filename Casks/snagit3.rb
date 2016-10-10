@@ -5,7 +5,6 @@ cask 'snagit3' do
   url 'http://download.techsmith.com/snagitmac/enu/337/snagit.dmg'
   name 'Snagit'
   homepage 'https://www.techsmith.com/snagit.html'
-  license :commercial
 
   app 'Snagit.app'
 end

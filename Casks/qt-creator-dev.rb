@@ -5,7 +5,6 @@ cask 'qt-creator-dev' do
   url "http://download.qt.io/development_releases/qtcreator/#{version.major_minor}/#{version}/qt-creator-opensource-mac-x86_64-#{version}.dmg"
   name 'Qt Creator Dev'
   homepage 'https://www.qt.io/developers/'
-  license :gpl
 
   app 'Qt Creator.app'
 end

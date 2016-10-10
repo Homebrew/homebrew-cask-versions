@@ -7,7 +7,6 @@ cask 'sketchup-pro' do
   url 'https://dl.trimble.com/sketchup/SketchUpPro-en.dmg'
   name 'SketchUp'
   homepage 'https://www.sketchup.com/intl/en/'
-  license :unknown # TODO: change license and remove this comment; ':unknown' is a machine-generated placeholder
 
   suite 'SketchUp 2016'
 

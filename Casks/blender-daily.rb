@@ -5,7 +5,6 @@ cask 'blender-daily' do
   url "https://builder.blender.org/download/blender-#{version}-OSX-10.6-x86_64.zip"
   name 'Blender'
   homepage 'https://www.blender.org/'
-  license :gpl
 
   app 'Blender.app'
   app 'BlenderPlayer.app'

@@ -6,7 +6,6 @@ cask 'pycharm-ce-eap' do
   name 'Jetbrains PyCharm Community Edition EAP'
   name 'PyCharm CE EAP'
   homepage 'https://confluence.jetbrains.com/display/PYH/JetBrains+PyCharm+Preview+(EAP)'
-  license :apache
 
   conflicts_with cask: 'pycharm-ce'
 

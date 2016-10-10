@@ -5,7 +5,6 @@ cask 'sequel-pro-nightly' do
   url "https://sequelpro.com/Sequel_Pro_#{version}.dmg"
   name 'Sequel Pro'
   homepage 'http://nightly.sequelpro.com/'
-  license :mit
 
   depends_on macos: '>= :leopard'
 

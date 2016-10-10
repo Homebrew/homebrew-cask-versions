@@ -6,7 +6,6 @@ cask 'intellij-idea-ce' do
   name 'IntelliJ IDEA Community Edition'
   name 'IntelliJ IDEA CE'
   homepage 'https://www.jetbrains.com/idea/'
-  license :apache
 
   auto_updates true
 

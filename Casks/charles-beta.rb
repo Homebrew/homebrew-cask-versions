@@ -5,7 +5,6 @@ cask 'charles-beta' do
   url "https://www.charlesproxy.com/assets/release/#{version.gsub(%r{b\d$}, '')}/charles-proxy-#{version}.dmg"
   name 'Charles'
   homepage 'https://www.charlesproxy.com/download/beta/'
-  license :commercial
 
   depends_on macos: '>= :lion'
 

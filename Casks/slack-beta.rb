@@ -6,7 +6,6 @@ cask 'slack-beta' do
   url "https://slack-ssb-updates.global.ssl.fastly.net/mac_external_beta/Slack-#{version}-macOS.zip"
   name 'Slack'
   homepage 'https://slack.com/beta/osx'
-  license :gratis
 
   auto_updates true
 

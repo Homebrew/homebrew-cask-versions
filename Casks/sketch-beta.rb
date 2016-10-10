@@ -8,7 +8,6 @@ cask 'sketch-beta' do
           checkpoint: '5de61e3ed92e4cf25571cbe7a2c2c7650473ddd11f5284b5b173aea7027469c1'
   name 'Sketch'
   homepage 'http://bohemiancoding.com/sketch/beta/'
-  license :commercial
 
   app 'Sketch Beta.app'
 end

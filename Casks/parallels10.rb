@@ -5,7 +5,6 @@ cask 'parallels10' do
   url "http://download.parallels.com/desktop/v#{version[%r{^\w+}]}/#{version.sub(%r{-.*$}, '')}/ParallelsDesktop-#{version}.dmg"
   name 'Parallels Desktop'
   homepage 'https://www.parallels.com/products/desktop/'
-  license :commercial
 
   app 'Parallels Desktop.app'
 

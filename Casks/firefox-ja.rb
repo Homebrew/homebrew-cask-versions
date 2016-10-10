@@ -5,7 +5,6 @@ cask 'firefox-ja' do
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=ja-JP-mac"
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/ja/firefox/desktop/'
-  license :mpl
 
   app 'Firefox.app'
 

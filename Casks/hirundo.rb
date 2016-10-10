@@ -5,7 +5,6 @@ cask 'hirundo' do
   url "https://stylemac.com/hirundo/versions/#{version}/Hirundo-#{version}.tgz"
   name 'Hirundo'
   homepage 'https://stylemac.com/hirundo/'
-  license :commercial
 
   depends_on macos: '>= :el_capitan'
 

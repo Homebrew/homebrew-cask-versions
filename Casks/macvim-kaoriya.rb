@@ -12,7 +12,6 @@ cask 'macvim-kaoriya' do
           checkpoint: 'c7e4d41c7e982e81884856fa0e8e3e5eb3f80428d99874313d59b47d59d1065f'
   name 'MacVim KaoriYa'
   homepage 'https://github.com/splhack/macvim-kaoriya'
-  license :oss
 
   depends_on macos: '>= :lion'
 

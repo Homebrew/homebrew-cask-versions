@@ -5,7 +5,6 @@ cask 'cura-beta' do
   url "https://software.ultimaker.com/Cura_open_beta/Cura-#{version}-BETA-Darwin.dmg"
   name 'Cura'
   homepage 'https://ultimaker.com/en/products/software'
-  license :oss
 
   app 'Cura.app'
 

@@ -6,7 +6,6 @@ cask 'affinity-designer-beta' do
   url 'https://s3.amazonaws.com/affinity-beta/download/Affinity+Designer+Customer+Beta.dmg'
   name 'Serif Affinity Designer'
   homepage 'https://affinity.serif.com/en-us/'
-  license :commercial
 
   app 'Affinity Designer Beta.app'
 end

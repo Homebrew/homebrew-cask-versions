@@ -5,7 +5,6 @@ cask 'java6' do
   url 'https://support.apple.com/downloads/DL1572/en_US/javaforosx.dmg'
   name 'Java Standard Edition Development Kit'
   homepage 'https://support.apple.com/kb/DL1572'
-  license :unknown # TODO: change license and remove this comment; ':unknown' is a machine-generated placeholder
 
   pkg 'JavaForOSX.pkg'
 

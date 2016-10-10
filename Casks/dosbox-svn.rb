@@ -6,7 +6,6 @@ cask 'dosbox-svn' do
   url 'http://dl.dropbox.com/u/7737184/Dosbox/Dosbox-Snapshot.dmg'
   name 'DOSBox SVN'
   homepage 'https://www.dosbox.com/wiki/SVN_Builds#Plain.2Fvanilla.2Fclean_SVN_builds/'
-  license :gpl
 
   app 'DOSBoxSVN.app'
 end

@@ -5,7 +5,6 @@ cask 'camtwist-beta' do
   url "http://camtwiststudio.com/beta/CamTwist_#{version}.dmg"
   name 'CamTwist'
   homepage 'http://camtwiststudio.com/'
-  license :gratis
 
   depends_on macos: '>= 10.10'
 

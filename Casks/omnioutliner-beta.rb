@@ -5,7 +5,6 @@ cask 'omnioutliner-beta' do
   url "https://omnistaging.omnigroup.com/omnioutliner-4/releases/OmniOutliner-#{version}-Test.dmg"
   name 'OmniOutliner'
   homepage 'https://omnistaging.omnigroup.com/omnioutliner-4/'
-  license :commercial
 
   app 'OmniOutliner.app'
 end

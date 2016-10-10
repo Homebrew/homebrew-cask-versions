@@ -5,7 +5,6 @@ cask 'visual-paradigm-ce' do
   url "https://eu6.visual-paradigm.com/visual-paradigm/vpce#{version.before_comma}/#{version.after_comma}/Visual_Paradigm_CE_#{version.dots_to_underscores.gsub(',', '_')}_OSX_WithJRE.dmg"
   name 'Visual Paradigm'
   homepage 'https://www.visual-paradigm.com/'
-  license :unknown # TODO: change license and remove this comment; ':unknown' is a machine-generated placeholder
 
   installer script: "Visual Paradigm CE #{version.before_comma} Installer.app/Contents/MacOS/JavaApplicationStub",
             args:   ['-q'],

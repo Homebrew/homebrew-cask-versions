@@ -7,7 +7,6 @@ cask 'pgadmin3' do
   url "https://ftp.postgresql.org/pub/pgadmin3/release/v#{version}/osx/pgadmin3-#{version}.dmg"
   name 'pgAdmin'
   homepage 'https://pgadmin.org/'
-  license :oss
   gpg "#{url}.sig",
       key_id: 'e0c4ceeb826b1fda4fb468e024adfaaf698f1519'
 

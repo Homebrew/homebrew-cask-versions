@@ -6,7 +6,6 @@ cask 'adium-beta' do
   url "https://adiumx.cachefly.net/Adium_#{version}.dmg"
   name 'Adium'
   homepage 'https://beta.adium.im/'
-  license :gpl
 
   app 'Adium.app'
 

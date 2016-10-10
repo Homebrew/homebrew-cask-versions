@@ -6,7 +6,6 @@ cask 'pycharm-edu' do
   name 'Jetbrains PyCharm Educational Edition'
   name 'PyCharm Edu'
   homepage 'https://www.jetbrains.com/pycharm-edu/'
-  license :apache
 
   app 'PyCharm Edu.app'
 

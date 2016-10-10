@@ -6,7 +6,6 @@ cask 'clipmenu-dev' do
   url "https://dl.dropbox.com/u/1140644/clipmenu/ClipMenu_#{version}.zip"
   name 'ClipMenu'
   homepage 'http://www.clipmenu.com/'
-  license :gratis
 
   app 'ClipMenu.app'
 

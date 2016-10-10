@@ -5,7 +5,6 @@ cask 'dash2' do
   url "https://kapeli.com/downloads/v#{version.major}/Dash.zip"
   name 'Dash'
   homepage 'https://kapeli.com/dash'
-  license :commercial
 
   app 'Dash.app'
 
