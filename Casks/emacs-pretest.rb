@@ -7,7 +7,6 @@ cask 'emacs-pretest' do
           checkpoint: 'dd33e548cd86328cfd8e9524640c5596e2897276ed1735878da86eaa677288ad'
   name 'Emacs'
   homepage 'https://emacsformacosx.com/'
-  license :gpl
 
   app 'Emacs.app'
 end

@@ -6,7 +6,6 @@ cask 'multimarkdown-composer-beta' do
   url "http://files.fletcherpenney.net.s3.amazonaws.com/MultiMarkdown%20Composer%20%28Non-Sandboxed%29-#{version}.zip"
   name 'MultiMarkdown Composer'
   homepage 'http://support.multimarkdown.com/kb/future-plans/where-can-i-download-the-beta-for-v3'
-  license :commercial
 
   app 'MultiMarkdown Composer.app'
 end

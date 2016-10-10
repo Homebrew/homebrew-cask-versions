@@ -5,7 +5,6 @@ cask 'vmware-fusion7' do
   url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-#{version}.dmg"
   name 'VMware Fusion'
   homepage 'https://www.vmware.com/products/fusion/'
-  license :commercial
 
   app 'VMware Fusion.app'
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmnet-cfgcli"

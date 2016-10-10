@@ -5,7 +5,6 @@ cask 'wimoweh-beta' do
   url "https://www.serialangels.co.uk/sa-content/uploads/2015/08/Wimoweh.#{version}_.zip"
   name 'Wimoweh'
   homepage 'http://www.serialangels.co.uk/index.php/wimoweh/'
-  license :unknown # TODO: change license and remove this comment; ':unknown' is a machine-generated placeholder
 
   app 'Wimoweh.app'
 end

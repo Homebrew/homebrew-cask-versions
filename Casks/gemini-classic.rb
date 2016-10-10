@@ -8,7 +8,6 @@ cask 'gemini-classic' do
           checkpoint: '8746733eba43d74853ec04ad49467f7be9bcfcb62d047eac5a2af25aab554367'
   name 'MacPaw Gemini'
   homepage 'https://macpaw.com/gemini-classic'
-  license :commercial
 
   app 'MacPaw Gemini.app'
 

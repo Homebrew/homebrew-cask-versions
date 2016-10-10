@@ -7,7 +7,6 @@ cask 'adobe-photoshop-lightroom600' do
       cookies:    { 'MM_TRIALS' => '1234' }
   name 'Adobe Photoshop Lightroom'
   homepage 'https://www.adobe.com/products/photoshop-lightroom.html'
-  license :commercial
 
   # staged_path not available in Installer/Uninstall Stanza, workaround by nesting with preflight/postflight
   # see https://github.com/caskroom/homebrew-cask/pull/8887

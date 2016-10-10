@@ -5,7 +5,6 @@ cask 'trillian-beta' do
   url 'https://www.trillian.im/get/mac/beta/'
   name 'Trillian'
   homepage 'https://www.trillian.im'
-  license :commercial
 
   app 'Trillian.app'
 end

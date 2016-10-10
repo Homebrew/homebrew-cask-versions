@@ -7,7 +7,6 @@ cask 'emacs-nightly' do
           checkpoint: 'e99da4f3923fdfcd3a28efae9fae7e624d070cc210bb45099ff570caef2eab00'
   name 'Emacs'
   homepage 'https://emacsformacosx.com/'
-  license :gpl
 
   app 'Emacs.app'
 end

@@ -9,7 +9,6 @@ cask 'libreoffice-dev' do
           checkpoint: '786aaf1616a2abb056f0c9318893f737a5b537b6481b85830af5b6f351f17f51'
   name 'LibreOfficeDev'
   homepage 'https://www.libreoffice.org/download/pre-releases/'
-  license :mpl
   gpg "#{url}.asc",
       key_id: 'c2839ecad9408fbe9531c3e9f434a1efafeeaea3'
 

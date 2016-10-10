@@ -6,7 +6,6 @@ cask 'mono-mdk-preview' do
   url "http://download.xamarin.com/roslyn-preview/MonoFramework-MDK-#{version}.macos10.xamarin.universal.pkg"
   name 'Mono'
   homepage 'http://mono-project.com'
-  license :oss
 
   pkg "MonoFramework-MDK-#{version}.macos10.xamarin.universal.pkg"
 

@@ -5,7 +5,6 @@ cask 'google-chrome-beta' do
   url 'https://dl.google.com/chrome/mac/beta/googlechrome.dmg'
   name 'Google Chrome'
   homepage 'https://www.google.com/chrome/browser/beta.html?platform=mac&extra=betachannel'
-  license :gratis
 
   app 'Google Chrome.app'
 

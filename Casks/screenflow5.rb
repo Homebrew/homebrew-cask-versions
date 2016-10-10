@@ -5,7 +5,6 @@ cask 'screenflow5' do
   url "https://www.telestream.net/download-files/screenflow/#{version.major_minor.dots_to_hyphens}/ScreenFlow-#{version}.dmg"
   name 'ScreenFlow'
   homepage 'https://www.telestream.net/screenflow/'
-  license :commercial
 
   auto_updates true
   depends_on macos: '>= :mavericks'

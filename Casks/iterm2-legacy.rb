@@ -6,7 +6,6 @@ cask 'iterm2-legacy' do
   url "https://iterm2.com/downloads/stable/iTerm2-#{version.dots_to_underscores}.zip"
   name 'iTerm2'
   homepage 'https://www.iterm2.com/'
-  license :gpl
 
   auto_updates true
   conflicts_with cask: 'iterm2'

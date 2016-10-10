@@ -5,7 +5,6 @@ cask 'virtualbox-extension-pack-beta' do
   url "http://www.virtualbox.org/download/testcase/Oracle_VM_VirtualBox_Extension_Pack-#{version.before_comma}-#{version.after_comma}.vbox-extpack"
   name 'Oracle VirtualBox Extension Pack'
   homepage 'https://www.virtualbox.org'
-  license :closed
 
   depends_on cask: 'virtualbox-beta'
   container type: :naked

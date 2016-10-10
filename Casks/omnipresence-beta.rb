@@ -5,7 +5,6 @@ cask 'omnipresence-beta' do
   url "http://omnistaging.omnigroup.com/omnipresence/releases/OmniPresence-#{version}-Test.dmg"
   name 'OmniPresence Beta'
   homepage 'https://www.omnigroup.com/omnipresence'
-  license :commercial
 
   depends_on macos: '>= :yosemite'
 

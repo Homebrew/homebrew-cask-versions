@@ -8,7 +8,6 @@ cask 'rhinoceroswip' do
           checkpoint: '03da618fc2af5b2357da7b0160ddce9816e1b4a1b4729bdb576a8959c758fd60'
   name 'Rhinoceros WIP'
   homepage 'http://www.rhino3d.com/download/rhino-for-mac/5/wip'
-  license :commercial
 
   auto_updates true
 

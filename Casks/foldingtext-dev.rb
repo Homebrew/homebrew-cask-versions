@@ -6,7 +6,6 @@ cask 'foldingtext-dev' do
   url 'https://foldingtext.s3.amazonaws.com/FoldingText-Dev.dmg'
   name 'FoldingText'
   homepage 'http://www.foldingtext.com'
-  license :commercial
 
   app 'FoldingText.app'
 end

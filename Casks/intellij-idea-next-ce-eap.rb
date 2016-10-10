@@ -6,7 +6,6 @@ cask 'intellij-idea-next-ce-eap' do
   name "IntelliJ IDEA #{version.major_minor} Community Edition EAP"
   name "IntelliJ IDEA #{version.major_minor} CE EAP"
   homepage "https://confluence.jetbrains.com/display/IDEADEV/IDEA+#{version.major_minor}+EAP"
-  license :apache
 
   auto_updates true
 

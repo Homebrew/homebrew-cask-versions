@@ -5,7 +5,6 @@ cask 'google-chrome-dev' do
   url 'https://dl.google.com/chrome/mac/dev/googlechrome.dmg'
   name 'Google Chrome'
   homepage 'https://www.google.com/chrome/browser/desktop/index.html?extra=devchannel'
-  license :gratis
 
   app 'Google Chrome.app'
 

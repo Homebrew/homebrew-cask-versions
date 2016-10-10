@@ -7,7 +7,6 @@ cask 'docker-beta' do
           checkpoint: '46939f839eb581b714c8351755e6b896b5e5157207c3c199c00f704c395393cc'
   name 'Docker for Mac Beta'
   homepage 'https://www.docker.com/products/docker'
-  license :gratis
 
   auto_updates true
 

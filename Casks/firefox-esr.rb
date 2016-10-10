@@ -25,7 +25,6 @@ cask 'firefox-esr' do
   name 'Mozilla Firefox ESR'
   name 'Mozilla Firefox Extended Support Release'
   homepage 'https://www.mozilla.org/firefox/organizations/'
-  license :mpl
 
   app 'Firefox.app'
 

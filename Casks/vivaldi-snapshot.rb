@@ -7,7 +7,6 @@ cask 'vivaldi-snapshot' do
           checkpoint: '4342dc87e20b41c7b97d394b4f9e055f5bcc7ccd6fa4a38b3af5af4cc87bc3c1'
   name 'Vivaldi'
   homepage 'https://vivaldi.com/'
-  license :gratis
 
   app 'Vivaldi.app'
 end

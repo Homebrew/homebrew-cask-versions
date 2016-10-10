@@ -39,7 +39,6 @@ cask 'firefox-beta' do
   url "https://ftp.mozilla.org/pub/firefox/releases/#{version}/mac/#{language}/Firefox%20#{version}.dmg"
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/firefox/channel/#beta'
-  license :mpl
 
   app 'Firefox.app'
 

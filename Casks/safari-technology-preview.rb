@@ -9,7 +9,6 @@ cask 'safari-technology-preview' do
   end
   name 'Safari Technology Preview'
   homepage 'https://developer.apple.com/safari/download/'
-  license :gratis
 
   pkg 'Safari Technology Preview.pkg'
 

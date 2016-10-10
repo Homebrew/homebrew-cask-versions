@@ -5,7 +5,6 @@ cask 'dbeaver-community' do
   url "http://dbeaver.jkiss.org/files/#{version}/dbeaver-ce-#{version}-macos.dmg"
   name 'DBeaver Community Edition'
   homepage 'http://dbeaver.jkiss.org/'
-  license :oss
 
   app 'Dbeaver.app'
 end
