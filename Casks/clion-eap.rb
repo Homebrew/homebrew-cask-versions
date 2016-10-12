@@ -1,6 +1,6 @@
 cask 'clion-eap' do
-  version '162.1889.3'
-  sha256 'dfceb0f2e836e239a862fb16fe6106f74df8f97b8dbb6d40e4a44f05686d9c54'
+  version '163.5644.7'
+  sha256 'fa960f8c7277642b37cec37a15dd4242157c84ff4ec7936037d846a41ed52de9'
 
   url "https://download.jetbrains.com/cpp/CLion-#{version}.dmg"
   name 'CLion EAP'
@@ -8,12 +8,12 @@ cask 'clion-eap' do
 
   conflicts_with cask: 'clion'
 
-  app 'CLion 2016.2.1 EAP.app'
+  app 'CLion 2016.3 EAP.app'
 
   zap delete: [
-                '~/Library/Preferences/CLion2016.2',
-                '~/Library/Application Support/CLion2016.2',
-                '~/Library/Caches/CLion2016.2',
-                '~/Library/Logs/CLion2016.2',
+                '~/Library/Preferences/CLion2016.3',
+                '~/Library/Application Support/CLion2016.3',
+                '~/Library/Caches/CLion2016.3',
+                '~/Library/Logs/CLion2016.3',
               ]
 end
