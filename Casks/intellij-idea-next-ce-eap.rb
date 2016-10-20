@@ -1,8 +1,8 @@
 cask 'intellij-idea-next-ce-eap' do
-  version '2016.3,163.6110.12'
-  sha256 'ae35cf4d9cc057bfdf447b3cb771e2e9b8ab0ed76e3434e43ffd6771809fa543'
+  version '2016.3,163.6512.17'
+  sha256 '3200510012a08ff0813100012e09a649b7695fa4f0d16c6c30bd86da76e4d66d'
 
-  url "https://download.jetbrains.com/idea/ideaIC-#{version.after_comma}.dmg"
+  url 'https://download.jetbrains.com/idea/ideaIC-2016.3-PublicPreview.dmg'
   name "IntelliJ IDEA #{version.major_minor} Community Edition EAP"
   name "IntelliJ IDEA #{version.major_minor} CE EAP"
   homepage "https://confluence.jetbrains.com/display/IDEADEV/IDEA+#{version.major_minor}+EAP"
