@@ -1,6 +1,6 @@
 cask 'java9-beta' do
-  version '1.9,138'
-  sha256 '444d8bfb5441e1e42d81b72dc10a720ee42712a998a9aba96e06417b3c80e861'
+  version '1.9,140'
+  sha256 '5624f056910e472b52ce371bf8c7e33971018829e4078b29faf028e7c17e4c5b'
 
   url "http://www.java.net/download/java/jdk#{version.before_comma.minor}/archive/#{version.after_comma}/binaries/jdk-#{version.before_comma.minor}-ea+#{version.after_comma}_osx-x64_bin.dmg",
       cookies: { 'oraclelicense' => 'accept-securebackup-cookie' }
