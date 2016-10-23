@@ -1,6 +1,6 @@
 cask 'slack-beta' do
-  version '2.2.6-beta1'
-  sha256 '7166abdf83772bcfc4ada304499dd6b1de0aafb4d9fdde0980a3a665e1d7c1d4'
+  version '2.3.0'
+  sha256 '21f8bcef54132e1d67d7e697d9805790f249ef3fe7b3f4f99007d138187d7990'
 
   # slack-ssb-updates.global.ssl.fastly.net was verified as official when first introduced to the cask
   url "https://slack-ssb-updates.global.ssl.fastly.net/mac_external_beta/Slack-#{version}-macOS.zip"
