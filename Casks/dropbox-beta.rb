@@ -1,11 +1,11 @@
 cask 'dropbox-beta' do
-  version '13.3.20'
-  sha256 '9878049e52e8794358ca0375249d73e6337b3fa986bfddee012541fd868c0e41'
+  version '14.3.17'
+  sha256 '8ff3430a77770e5c15c0e73dfb9a6a619d935a8e979bf1ec51d4e3f1b7a3b280'
 
   # dropboxstatic.com was verified as official when first introduced to the cask
   url "https://clientupdates.dropboxstatic.com/client/Dropbox%20#{version}.dmg"
   name 'Dropbox'
-  homepage 'https://www.dropboxforum.com/t5/Desktop-client-builds/Beta-Build-13-3-20/m-p/190627'
+  homepage 'https://www.dropboxforum.com/t5/Desktop-client-builds/Beta-Build-14-3-17/m-p/192187'
 
   app 'Dropbox.app'
 
