@@ -18,6 +18,10 @@ cask 'firefoxdeveloperedition' do
     'uk'
   end
 
+  language 'zh-TW' do
+    'zh-TW'
+  end
+
   language 'zh' do
     'zh-CN'
   end
