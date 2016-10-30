@@ -28,7 +28,6 @@ For this repo, rules are (following our [nomenclature](https://github.com/caskro
 + Include the latest minor version of legacy versions of commercial and freemium software.
 + Legacy versions of commercial and freemium software are restricted to a maximum of five casks.
 + Include beta, development, unstable, nightly, early access program, ….
-+ Include language and regional versions other than US english of casks already in [the main repo](https://github.com/caskroom/homebrew-versions).
 + Include alternative editions of casks already in the main repo (developer editions, community editions, pro editions, …).
 + Refuse legacy versions of gratis or open-source software, unless there is a clear demonstrable need for them.
 + Legacy versions of gratis or open-source software that were accepted should be removed after one year.
