@@ -7,7 +7,5 @@ cask 'unison240' do
   name 'Unison'
   homepage 'https://www.cis.upenn.edu/~bcpierce/unison/'
 
-  depends_on arch: :x86_64
-
   app 'Unison.app'
 end
