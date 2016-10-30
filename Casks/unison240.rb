@@ -4,7 +4,7 @@ cask 'unison240' do
 
   # unison-binaries.inria.fr was verified as official when first introduced to the cask
   url "http://unison-binaries.inria.fr/files/Unison-#{version}_x64.dmg"
-  name 'Panic Unison'
+  name 'Unison'
   homepage 'https://www.cis.upenn.edu/~bcpierce/unison/'
 
   depends_on arch: :x86_64
