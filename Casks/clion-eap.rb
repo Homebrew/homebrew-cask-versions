@@ -1,6 +1,6 @@
 cask 'clion-eap' do
-  version '163.6512.7'
-  sha256 'd2aa23b7960e9cc712a599bdf123990e253a58e52f879793694866eda0567f55'
+  version '163.6957.27'
+  sha256 'c0dbaf67f2fe85200c8a86297af700cb3bb37978f78aa1aafdc4bb37e3085623'
 
   url "https://download.jetbrains.com/cpp/CLion-#{version}.dmg"
   name 'CLion EAP'
