@@ -8,14 +8,14 @@ cask 'phpstorm-eap' do
 
   conflicts_with cask: 'phpstorm'
 
-  app 'PhpStorm #{version.major_minor} EAP.app'
+  app "PhpStorm #{version.major_minor} EAP.app"
 
   uninstall delete: '/usr/local/bin/pstorm'
 
   zap delete: [
-                '~/Library/Preferences/PhpStorm#{version.major_minor}',
-                '~/Library/Caches/PhpStorm#{version.major_minor}',
-                '~/Library/Logs/PhpStorm#{version.major_minor}',
-                '~/Library/Application Support/PhpStorm#{version.major_minor}',
+                "~/Library/Preferences/PhpStorm#{version.major_minor}",
+                "~/Library/Caches/PhpStorm#{version.major_minor}",
+                "~/Library/Logs/PhpStorm#{version.major_minor}",
+                "~/Library/Application Support/PhpStorm#{version.major_minor}",
               ]
 end
