@@ -1,8 +1,8 @@
 cask 'webstorm-eap' do
-  version 'EAP,163.7342.11'
-  sha256 '39f957758af3d4db0140fead88d107c9b310cb743675520080c07c73801999f7'
+  version 'RC,2016.3'
+  sha256 'a5ca297846ba9403e8db07c9c638890f81553719b8e075d8e15ec6743f662a11'
 
-  url "https://download.jetbrains.com/webstorm/WebStorm-#{version.before_comma}-#{version.after_comma}.dmg"
+  url "https://download.jetbrains.com/webstorm/WebStorm-#{version.after_comma}-#{version.before_comma}.dmg"
   name 'WebStorm EAP'
   homepage 'https://confluence.jetbrains.com/display/WI/WebStorm+EAP'
 
