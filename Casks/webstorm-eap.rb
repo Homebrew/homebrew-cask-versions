@@ -8,7 +8,7 @@ cask 'webstorm-eap' do
 
   conflicts_with cask: 'webstorm'
 
-  app 'WebStorm 2016.3 EAP.app'
+  app 'WebStorm.app'
 
   uninstall delete: '/usr/local/bin/wstorm'
 
