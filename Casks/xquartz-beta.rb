@@ -7,7 +7,7 @@ cask 'xquartz-beta' do
   appcast 'https://www.xquartz.org/releases/sparkle/beta.xml',
           checkpoint: 'f73813abf47116cf3426d4955590ef6e196b73b4a65179e76ec5fabd5124a2c9'
   name 'XQuartz'
-  homepage 'http://www.xquartz.org/'
+  homepage 'https://www.xquartz.org/'
 
   pkg 'XQuartz.pkg'
 
