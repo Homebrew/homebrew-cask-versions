@@ -67,7 +67,7 @@ cask 'firefox-esr' do
   end
 
   language 'zh' do
-    sha256 'd6b9f8c0a722b2ddb2138b13c5964d77cf29052f0553024e16ff391d2f5328ef'
+    sha256 'ad0f9cc7e6d7908e6e9785c1a60178af554118c543f311f4061dd58783096df2'
     'zh-CN'
   end
 
