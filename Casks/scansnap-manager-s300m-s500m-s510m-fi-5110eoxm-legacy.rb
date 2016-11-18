@@ -4,7 +4,7 @@ cask 'scansnap-manager-s300m-s500m-s510m-fi-5110eoxm-legacy' do
 
   url 'http://www.fujitsu.com/downloads/IMAGE/driver/ss/ScanSnap_V22L11.dmg'
   name 'ScanSnap Manager for Fujitsu ScanSnap fi-5110EOXM, S300M, S500M, s501M'
-  homepage 'https://www.fujitsu.com/global/support/computing/peripheral/scanners/software/mac.html'
+  homepage 'https://www.fujitsu.com/global/support/products/computing/peripheral/scanners/scansnap/software/'
 
   depends_on macos: [:tiger, :leopard]
 
