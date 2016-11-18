@@ -18,7 +18,7 @@ cask 'thunderbird-beta' do
 
   url "https://ftp.mozilla.org/pub/thunderbird/releases/#{version}/mac/#{language}/Thunderbird%20#{version}.dmg"
   name 'Mozilla Thunderbird'
-  homepage 'https://www.mozilla.org/en-US/thunderbird/all-beta.html'
+  homepage 'https://www.mozilla.org/en-US/thunderbird/beta/all/'
 
   app 'Thunderbird.app'
 end
