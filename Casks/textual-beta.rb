@@ -4,7 +4,7 @@ cask 'textual-beta' do
 
   url 'https://www.codeux.com/textual/downloads/Textual-Beta.zip'
   name 'Textual'
-  homepage 'https://help.codeux.com/textual/Release-Notes:-Version-6.0.0.kb'
+  homepage 'https://help.codeux.com/textual/release-notes/Release-Notes:-Version-6.0.0.kb'
 
   app 'Textual.app'
 end
