@@ -6,7 +6,7 @@ cask 'xamarin-studio-preview' do
   appcast 'https://static.xamarin.com/installer_assets/v3/Mac/Universal/InstallationManifest.xml',
           checkpoint: '14727c4cd976ca3d96a7a9c362bebd064a49c4f24d32296d33767e3a76b4a685'
   name 'Xamarin Studio Preview'
-  homepage 'https://xamarin.com/studio'
+  homepage 'https://www.xamarin.com/studio'
 
   app 'Xamarin Studio.app'
 end
