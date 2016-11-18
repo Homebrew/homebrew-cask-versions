@@ -5,7 +5,7 @@ cask 'pycharm-ce' do
   url "https://download.jetbrains.com/python/pycharm-community-#{version}.dmg"
   name 'Jetbrains PyCharm Community Edition'
   name 'PyCharm CE'
-  homepage 'https://www.jetbrains.com/pycharm'
+  homepage 'https://www.jetbrains.com/pycharm/'
 
   conflicts_with cask: 'pycharm-ce-eap'
 
