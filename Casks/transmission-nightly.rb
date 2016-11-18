@@ -4,7 +4,7 @@ cask 'transmission-nightly' do
 
   url "https://build.transmissionbt.com/job/trunk-mac/lastSuccessfulBuild/artifact/release/Transmission-#{version}.dmg"
   name 'Transmission'
-  homepage 'https://www.transmissionbt.com'
+  homepage 'https://transmissionbt.com/'
 
   app 'Transmission.app'
 
