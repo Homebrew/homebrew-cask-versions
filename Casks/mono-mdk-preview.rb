@@ -5,7 +5,7 @@ cask 'mono-mdk-preview' do
   # download.xamarin.com was verified as official when first introduced to the cask
   url "http://download.xamarin.com/roslyn-preview/MonoFramework-MDK-#{version}.macos10.xamarin.universal.pkg"
   name 'Mono'
-  homepage 'http://mono-project.com'
+  homepage 'http://www.mono-project.com/'
 
   pkg "MonoFramework-MDK-#{version}.macos10.xamarin.universal.pkg"
 
