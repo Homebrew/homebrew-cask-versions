@@ -4,7 +4,7 @@ cask 'vmware-fusion6' do
 
   url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-#{version}-light.dmg"
   name 'VMware Fusion'
-  homepage 'https://www.vmware.com/products/fusion/'
+  homepage 'https://www.vmware.com/products/fusion.html'
 
   app 'VMware Fusion.app'
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmrun"
