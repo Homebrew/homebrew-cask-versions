@@ -4,7 +4,7 @@ cask 'cura-beta' do
 
   url "https://software.ultimaker.com/Cura_open_beta/Cura-#{version}-BETA-Darwin.dmg"
   name 'Cura'
-  homepage 'https://ultimaker.com/en/products/software'
+  homepage 'https://ultimaker.com/en/products/cura-software'
 
   app 'Cura.app'
 

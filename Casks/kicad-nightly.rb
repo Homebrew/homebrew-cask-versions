@@ -4,7 +4,7 @@ cask 'kicad-nightly' do
 
   url "http://downloads.kicad-pcb.org/osx/nightly/kicad-#{version}-c4osx.dmg"
   name 'KiCad'
-  homepage 'http://www.kicad-pcb.org/'
+  homepage 'http://kicad-pcb.org/'
 
   suite 'Kicad-apps', target: 'Kicad'
   artifact 'kicad', target: "#{ENV['HOME']}/Library/Application Support/kicad"

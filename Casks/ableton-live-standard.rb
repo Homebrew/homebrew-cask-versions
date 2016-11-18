@@ -4,7 +4,7 @@ cask 'ableton-live-standard' do
 
   url "http://cdn2-downloads.ableton.com/channels/#{version}/ableton_live_standard_#{version}_64.dmg"
   name 'Ableton Live Standard'
-  homepage 'https://ableton.com/en/live'
+  homepage 'https://www.ableton.com/en/live/'
 
   app "Ableton Live #{version.major} Standard.app"
 

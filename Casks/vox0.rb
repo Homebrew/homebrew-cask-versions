@@ -4,7 +4,7 @@ cask 'vox0' do
 
   url "http://cloud.coppertino.com/vox/Vox_#{version}.dmg"
   name 'VOX'
-  homepage 'http://coppertino.com/vox/'
+  homepage 'http://coppertino.com/'
 
   app 'Vox.app'
 end
