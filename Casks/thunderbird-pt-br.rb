@@ -4,7 +4,7 @@ cask 'thunderbird-pt-br' do
 
   url "https://download.mozilla.org/?product=thunderbird-#{version}&os=osx&lang=pt-BR"
   name 'Mozilla Thunderbird'
-  homepage 'https://www.mozilla.org/pt/thunderbird/'
+  homepage 'https://www.mozilla.org/pt-BR/thunderbird/'
 
   app 'Thunderbird.app'
 end
