@@ -7,7 +7,7 @@ cask 'sketch-beta' do
   appcast 'https://rink.hockeyapp.net/api/2/apps/0172d48cceec171249a8d850fb16276b',
           checkpoint: 'db7d6e094e6ff5245999b5ceefa270e494c6fb027e81a318bf0aa7678bdd7eae'
   name 'Sketch'
-  homepage 'http://bohemiancoding.com/sketch/beta/'
+  homepage 'https://www.sketchapp.com/beta/'
 
   app 'Sketch Beta.app'
 end
