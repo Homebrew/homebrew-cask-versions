@@ -6,7 +6,7 @@ cask 'sketchup-pro' do
   # trimble.com/sketchup was verified as official when first introduced to the cask
   url 'https://dl.trimble.com/sketchup/SketchUpPro-en.dmg'
   name 'SketchUp'
-  homepage 'http://www.sketchup.com/intl/en/'
+  homepage 'http://www.sketchup.com/'
 
   suite 'SketchUp 2016'
 
