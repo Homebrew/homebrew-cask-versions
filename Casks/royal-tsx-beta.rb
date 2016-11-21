@@ -6,7 +6,7 @@ cask 'royal-tsx-beta' do
   appcast 'https://royaltsx-v3.royalapplications.com/updates_beta.php',
           checkpoint: '02c95d7afc4631c1adf9eff8d4d9337a0d381a8062ef8cbc5dea2f990b0f5caa'
   name 'Royal TSX'
-  homepage 'https://www.royalapplications.com/ts/osx/features/'
+  homepage 'https://www.royalapplications.com/ts/osx/features'
 
   app 'Royal TSX.app'
 end
