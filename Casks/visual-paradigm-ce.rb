@@ -6,7 +6,7 @@ cask 'visual-paradigm-ce' do
   name 'Visual Paradigm'
   homepage 'https://www.visual-paradigm.com/'
 
-  installer script: "Visual Paradigm CE #{version.before_comma} Installer.app/Contents/MacOS/JavaApplicationStub",
+  installer script: "Visual Paradigm CE.app/Contents/MacOS/JavaApplicationStub",
             args:   ['-q'],
             sudo:   false
 
