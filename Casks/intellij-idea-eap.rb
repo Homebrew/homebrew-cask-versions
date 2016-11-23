@@ -1,10 +1,10 @@
 cask 'intellij-idea-eap' do
-  version '2016.2.5,162.2228.14'
-  sha256 'fb62223368adeb237e925c528be919452114516b9be8f220eda6918b1d597216'
+  version '2016.3,163.7743.44'
+  sha256 'd2b3a583f6bec919c7d260a0faeaccd55b34b7d10dc268a1dfe5b38eeaeb55a1'
 
   url "https://download.jetbrains.com/idea/ideaIU-#{version.after_comma}.dmg"
   name 'IntelliJ IDEA EAP'
-  homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+2016.2+EAP'
+  homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+2016.3+EAP'
 
   auto_updates true
 
