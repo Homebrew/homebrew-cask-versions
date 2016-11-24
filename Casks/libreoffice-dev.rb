@@ -12,5 +12,5 @@ cask 'libreoffice-dev' do
   gpg "#{url}.asc",
       key_id: 'c2839ecad9408fbe9531c3e9f434a1efafeeaea3'
 
-  app 'LibreOfficeDev.app', target: 'LibreOffice.app'
+  app 'LibreOfficeDev.app'
 end
