@@ -1,21 +1,21 @@
 cask 'appcode-eap' do
-  version '163.6110.27'
-  sha256 '40d7c080eca4273f00d1c651947d26c629034429f0b1a0778da2699d6efa8d41'
+  version '2016.3,RC'
+  sha256 'fdefc83c44377536bea93df729d1e9833dcee504f3a19f218d178d26b87a66b9'
 
-  url "https://download.jetbrains.com/objc/AppCode-#{version}.dmg"
+  url "https://download.jetbrains.com/objc/AppCode-#{version.before_comma}-#{version.after_comma}.dmg"
   name 'AppCode EAP'
   homepage 'https://confluence.jetbrains.com/display/OBJC/AppCode+EAP'
 
   conflicts_with cask: 'appcode'
 
-  app 'AppCode 2016.3 EAP.app'
+  app "AppCode #{version.before_comma} EAP.app"
 
   zap delete: [
-                '~/Library/Application Support/AppCode2016.3',
+                "~/Library/Application Support/AppCode#{version.before_comma}",
                 '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.jetbrains.appcode-eap.sfl',
-                '~/Library/Caches/AppCode2016.3',
-                '~/Library/Logs/AppCode2016.3',
-                '~/Library/Preferences/AppCode2016.3',
+                "~/Library/Caches/AppCode#{version.before_comma}",
+                "~/Library/Logs/AppCode#{version.before_comma}",
+                "~/Library/Preferences/AppCode#{version.before_comma}",
                 '~/Library/Preferences/com.jetbrains.AppCode-EAP.plist',
                 '~/Library/Saved Application State/com.jetbrains.AppCode-EAP.savedState',
               ]
