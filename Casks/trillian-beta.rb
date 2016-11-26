@@ -4,7 +4,7 @@ cask 'trillian-beta' do
 
   url 'https://www.trillian.im/get/mac/beta/'
   name 'Trillian'
-  homepage 'https://www.trillian.im'
+  homepage 'https://www.trillian.im/'
 
   app 'Trillian.app'
 end
