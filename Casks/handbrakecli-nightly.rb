@@ -4,7 +4,7 @@ cask 'handbrakecli-nightly' do
 
   url "http://download.handbrake.fr/nightly/HandBrakeCLI-#{version}-master-osx.dmg"
   name 'HandBrake'
-  homepage 'https://handbrake.fr'
+  homepage 'https://handbrake.fr/'
 
   depends_on macos: '>= :lion'
 
