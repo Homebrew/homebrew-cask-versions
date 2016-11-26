@@ -4,7 +4,7 @@ cask 'discord-ptb' do
 
   url "https://cdn-ptb.discordapp.com/apps/osx/#{version}/DiscordPTB.dmg"
   name 'Discord PTB'
-  homepage 'https://discordapp.com'
+  homepage 'https://discordapp.com/'
 
   app 'Discord PTB.app'
 
