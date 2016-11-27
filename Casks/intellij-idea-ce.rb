@@ -18,5 +18,7 @@ cask 'intellij-idea-ce' do
                 "~/Library/Preferences/IdeaIC#{version.major_minor}",
                 "~/Library/Caches/IdeaIC#{version.major_minor}",
                 "~/Library/Logs/IdeaIC#{version.major_minor}",
+                '~/Library/Preferences/com.jetbrains.intellij.ce.plist',
+                '~/Library/Saved Application State/com.jetbrains.intellij.ce.savedState',
               ]
 end
