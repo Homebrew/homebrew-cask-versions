@@ -1,0 +1,10 @@
+cask 'palemoon' do
+  version '27.0.0'
+  sha256 '59504762c6935b35ca33b06f31cb799cb5dedfb9ca04a527dd83dab0991b01c1'
+
+  url "https://mac.palemoon.org/dist/palemoon-#{version}.mac64.dmg"
+  name 'Pale Moon'
+  homepage 'https://www.palemoon.org/'
+
+  app 'PaleMoon.app'
+end
