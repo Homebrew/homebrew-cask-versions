@@ -1,7 +1,7 @@
 cask 'pgadmin3' do
   # note: "3" is not a version number, but indicates a different vendor
-  version '1.22.1'
-  sha256 'fa34b5baf09cf597850101b2806fdf80490c88d6fbf652da3750856423051603'
+  version '1.22.2'
+  sha256 '35a140e5a15d2acbdd981819c6f891ad197af520914a26964920424621fe5c31'
 
   # ftp.postgresql.org/pub/pgadmin3 was verified as official when first introduced to the cask
   url "https://ftp.postgresql.org/pub/pgadmin3/release/v#{version}/osx/pgadmin3-#{version}.dmg"
