@@ -1,6 +1,6 @@
 cask 'rstudio-preview' do
-  version '1.0.44'
-  sha256 'ec571ee4d1415cc031f8f55873ca15e75949038fe680520799934e115138066a'
+  version '1.0.134'
+  sha256 'f85a7408d4f26c00e9cced9eac059fe67f6b82523fceabde221ced2ec4335bf6'
 
   # amazonaws.com/rstudio-dailybuilds was verified as official when first introduced to the cask
   url "https://s3.amazonaws.com/rstudio-dailybuilds/RStudio-#{version}.dmg"
