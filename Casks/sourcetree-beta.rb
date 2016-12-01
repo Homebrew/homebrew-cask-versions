@@ -12,8 +12,8 @@ cask 'sourcetree-beta' do
   auto_updates true
   depends_on macos: '>= 10.10'
 
-  app 'SourceTree Beta.app'
-  binary "#{appdir}/SourceTree Beta.app/Contents/Resources/stree"
+  app 'SourceTree-Beta.app'
+  binary "#{appdir}/SourceTree-Beta.app/Contents/Resources/stree"
 
   postflight do
     suppress_move_to_applications
