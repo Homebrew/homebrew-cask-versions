@@ -8,7 +8,7 @@ cask 'intellij-idea-next-ce-eap' do
 
   auto_updates true
 
-  app 'IntelliJ IDEA CE.app'
+  app 'IntelliJ IDEA 2016.3.1 CE EAP.app'
 
   uninstall delete: '/usr/local/bin/idea'
 
