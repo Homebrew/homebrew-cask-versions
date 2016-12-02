@@ -1,6 +1,6 @@
 cask 'phpstorm-eap' do
-  version '2016.3,163.7743.39'
-  sha256 '8e0204dd0b6dc39bd6ccd1fd7c80389463b284db8462f2a772f58b02ccb41280'
+  version '2016.3.1,163.9166.11'
+  sha256 '2aa42446f5738dd4ad3d7acac02458b8cc7d72820670611edeb61b30161f3d86'
 
   url "https://download.jetbrains.com/webide/PhpStorm-EAP-#{version.after_comma}.dmg"
   name 'PhpStorm EAP'
@@ -8,7 +8,7 @@ cask 'phpstorm-eap' do
 
   conflicts_with cask: 'phpstorm'
 
-  app "PhpStorm #{version.major_minor} EAP.app"
+  app "PhpStorm #{version.before_comma} EAP.app"
 
   uninstall delete: '/usr/local/bin/pstorm'
 
