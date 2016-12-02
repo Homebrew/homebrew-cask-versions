@@ -1,5 +1,5 @@
 cask 'java9-beta' do
-  version '1.9,142'
+  version '1.9,147'
   sha256 '38bb89657ee6e9b33b4b488382de5a1379033a7bfa2c3a0bf71d8151f29023d4'
 
   url "http://www.java.net/download/java/jdk#{version.before_comma.minor}/archive/#{version.after_comma}/binaries/jdk-#{version.before_comma.minor}-ea+#{version.after_comma}_osx-x64_bin.dmg",
