@@ -7,4 +7,11 @@ cask 'microsoft-remote-desktop-beta' do
   homepage 'https://rink.hockeyapp.net/apps/5e0c144289a51fca2d3bfa39ce7f2b06/'
 
   app 'Microsoft Remote Desktop Beta.app'
+  zap delete: [
+                '~/Library/Preferences/com.microsoft.rdc.osx.beta',
+                '~/Library/Caches/com.microsoft.rdc.osx.beta',
+                '~/Library/Application Support/com.microsoft.rdc.osx.beta',
+                '~/Library/Logs/Microsoft Remote Desktop Beta',
+                '~/Library/Application Support/Microsoft Remote Desktop Beta',
+              ]
 end
