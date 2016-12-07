@@ -1,21 +1,21 @@
 cask 'webstorm-eap' do
-  version '2016.3.2 EAP,163.9166.8'
-  sha256 'b22e658a8a8df9cbdeac77bd176f4f51e2ad3b48eb3d96a45fa49892ae520d91'
+  version 'RC,2016.3.2'
+  sha256 '0b9a84b355d24d799960ad356ae329afab678d36ba65498a983bc6813f6afc44'
 
-  url "https://download-cf.jetbrains.com/webstorm/WebStorm-EAP-#{version.after_comma}.dmg"
+  url "https://download.jetbrains.com/webstorm/WebStorm-#{version.after_comma}-#{version.before_comma}.dmg"
   name 'WebStorm EAP'
   homepage 'https://confluence.jetbrains.com/display/WI/WebStorm+EAP'
 
   conflicts_with cask: 'webstorm'
 
-  app "WebStorm #{version.before_comma}.app"
+  app 'WebStorm.app'
 
   uninstall delete: '/usr/local/bin/wstorm'
 
   zap delete: [
-                "~/Library/Preferences/WebStorm#{version.before_comma}",
-                "~/Library/Application Support/WebStorm#{version.before_comma}",
-                "~/Library/Caches/WebStorm#{version.before_comma}",
-                "~/Library/Logs/WebStorm#{version.before_comma}",
+                "~/Library/Preferences/WebStorm#{version.after_comma.major_minor}",
+                "~/Library/Application Support/WebStorm#{version.after_comma.major_minor}",
+                "~/Library/Caches/WebStorm#{version.after_comma.major_minor}",
+                "~/Library/Logs/WebStorm#{version.after_comma.major_minor}",
               ]
 end
