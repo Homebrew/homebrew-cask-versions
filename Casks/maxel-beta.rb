@@ -1,4 +1,4 @@
-cask 'maxel' do
+cask 'maxel-beta' do
   version '2.2,40'
   sha256 'a7d756ad64312d4d9ab1056259d2a55ab7245fc652bd0686671f67c15a3bd416'
 
