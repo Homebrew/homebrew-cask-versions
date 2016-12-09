@@ -6,6 +6,5 @@ cask 'josm-latest' do
   name 'josm latest'
   homepage 'https://josm.openstreetmap.de/'
 
-  # Renamed to avoid removing tested (stable) version of JOSM
-  app 'JOSM.app', target: 'JOSM-latest.app'
+  app 'JOSM.app'
 end
