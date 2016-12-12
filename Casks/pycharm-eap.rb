@@ -13,9 +13,9 @@ cask 'pycharm-eap' do
   uninstall delete: '/usr/local/bin/charm'
 
   zap delete: [
-                '~/Library/Preferences/PyCharm#{version.before_comma}',
-                '~/Library/Application Support/PyCharm#{version.before_comma}',
-                '~/Library/Caches/PyCharm#{version.before_comma}',
-                '~/Library/Logs/PyCharm#{version.before_comma}',
+                "~/Library/Preferences/PyCharm#{version.before_comma}",
+                "~/Library/Application Support/PyCharm#{version.before_comma}",
+                "~/Library/Caches/PyCharm#{version.before_comma}",
+                "~/Library/Logs/PyCharm#{version.before_comma}",
               ]
 end
