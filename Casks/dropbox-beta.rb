@@ -7,7 +7,7 @@ cask 'dropbox' do
   appcast 'https://www.dropbox.com/release_notes/rss.xml',
           checkpoint: 'e5f348f7f83a2c283a5e8bada332407fc200bbadaedc5f3a5d5ef7be39b25922'
   name 'Dropbox'
-  homepage 'https://www.dropbox.com/'
+  homepage 'https://www.dropboxforum.com/t5/Desktop-client-builds/bd-p/101003016'
 
   auto_updates true
 
