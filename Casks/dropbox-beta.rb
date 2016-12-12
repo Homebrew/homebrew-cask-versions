@@ -1,15 +1,26 @@
 cask 'dropbox-beta' do
-  version '14.3.17'
-  sha256 '8ff3430a77770e5c15c0e73dfb9a6a619d935a8e979bf1ec51d4e3f1b7a3b280'
+  version '16.3.27'
+  sha256 'b73f5b41c338727011212718c2a8e82333fc6f5c7853ed28b7b2be969c752e32'
 
-  # dropboxstatic.com was verified as official when first introduced to the cask
+  # clientupdates.dropboxstatic.com was verified as official when first introduced to the cask
   url "https://clientupdates.dropboxstatic.com/client/Dropbox%20#{version}.dmg"
+  appcast 'https://www.dropbox.com/release_notes/rss.xml',
+          checkpoint: 'e5f348f7f83a2c283a5e8bada332407fc200bbadaedc5f3a5d5ef7be39b25922'
   name 'Dropbox'
-  homepage 'https://www.dropboxforum.com/t5/Desktop-client-builds/Beta-Build-14-3-17/m-p/192187'
+  homepage 'https://www.dropboxforum.com/t5/Desktop-client-builds/bd-p/101003016'
 
   app 'Dropbox.app'
 
   uninstall login_item: 'Dropbox'
 
-  zap delete: '~/.dropbox'
+  zap delete: [
+                '~/.dropbox',
+                '~/Library/Application Scripts/com.getdropbox.dropbox.garcon',
+                '~/Library/Caches/CloudKit/com.apple.bird/iCloud.com.getdropbox.Dropbox',
+                '~/Library/Caches/com.getdropbox.dropbox',
+                '~/Library/Containers/com.getdropbox.dropbox.garcon',
+                '~/Library/Group Containers/com.getdropbox.dropbox.garcon',
+                '~/Library/Logs/Dropbox_debug.log',
+                '/Library/DropboxHelperTools',
+              ]
 end
