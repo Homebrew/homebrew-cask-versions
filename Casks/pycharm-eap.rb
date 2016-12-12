@@ -8,7 +8,7 @@ cask 'pycharm-eap' do
 
   conflicts_with cask: 'pycharm'
 
-  app 'PyCharm #{version.before_comma} EAP.app'
+  app "PyCharm #{version.before_comma} EAP.app"
 
   uninstall delete: '/usr/local/bin/charm'
 
