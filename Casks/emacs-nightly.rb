@@ -1,10 +1,10 @@
 cask 'emacs-nightly' do
-  version '2016-12-12_01-46-04-184ed36136d7d78a914979009db208518312137c'
-  sha256 '0168c61f30c11604b44606422e69bc977e599646358217079d4032bfc71a319c'
+  version '2016-12-13_01-45-21-dc833039179ee11dae9aeb15b7d75e7435f7f1c9'
+  sha256 '85950b2b3a44c897f25d20b9781eb00c5a4616226015dde680e5de8e827be856'
 
   url "https://emacsformacosx.com/emacs-builds/Emacs-#{version}-universal.dmg"
   appcast 'https://emacsformacosx.com/atom/daily',
-          checkpoint: '9a643b85f03e052b22d6cbb5204dd98bcc000aabb9197311990e149487d46247'
+          checkpoint: '884fba7a2a4fdd4d69668cf941b6c7ec778496d85088ec4c1538d7243f79c100'
   name 'Emacs'
   homepage 'https://emacsformacosx.com/'
 
