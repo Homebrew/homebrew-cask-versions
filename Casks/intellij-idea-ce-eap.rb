@@ -5,7 +5,7 @@ cask 'intellij-idea-ce-eap' do
   url "https://download.jetbrains.com/idea/ideaIC-#{version.after_comma}.dmg"
   name 'IntelliJ IDEA Community Edition EAP'
   name 'IntelliJ IDEA CE EAP'
-  homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+2016.2+EAP'
+  homepage 'https://confluence.jetbrains.com/display/IDEADEV/IDEA+2016.3+EAP'
 
   auto_updates true
 
