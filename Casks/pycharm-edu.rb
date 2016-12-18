@@ -1,6 +1,6 @@
 cask 'pycharm-edu' do
-  version '2.0.4'
-  sha256 'fc4682b4c31f2437e0d8634c1fb091e6276b0c6385225b66c514bf033588af80'
+  version '3.0.1'
+  sha256 '34f6f1003cee6b2612c69b07dac1b0319899a93a6da928b15d3ab5c882bcd14e'
 
   url "https://download.jetbrains.com/python/pycharm-edu-#{version}.dmg"
   name 'Jetbrains PyCharm Educational Edition'
