@@ -1,4 +1,4 @@
-cask 'minishift-unstable' do
+cask 'minishift-beta' do
   version '1.0.0-beta.1'
   sha256 '2d4020615bd86b814c678fedbf6072488101c26298a90fb081904c6913d88497'
 
