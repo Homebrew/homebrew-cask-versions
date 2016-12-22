@@ -8,9 +8,10 @@ cask 'minishift-unstable' do
   homepage 'https://github.com/minishift/minishift'
 
   depends_on arch: :x86_64
-  container type: :naked
+  depends_on formula: 'unar'
+  container type: :tar
 
-  binary 'minishift-#{version}-darwin-amd64/minishift', target: 'minishift'
+  binary 'minishift', target: 'minishift'
 
   postflight do
     set_permissions "#{staged_path}/minishift", '0755'
