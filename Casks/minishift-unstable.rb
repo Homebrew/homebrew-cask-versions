@@ -7,10 +7,6 @@ cask 'minishift-unstable' do
   name 'Minishift'
   homepage 'https://github.com/minishift/minishift'
 
-  depends_on arch: :x86_64
-  depends_on formula: 'unar'
-  container type: :tar
-
   binary 'minishift', target: 'minishift'
 
   postflight do
