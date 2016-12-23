@@ -62,7 +62,7 @@ cask 'firefox-beta' do
   end
 
   language 'zh-TW' do
-    sha256 '545097b35e153cb1bbcc866a6a4a6807b09877004411fcf846584fa0048623f0'
+    sha256 'bdc6056c9e6f988fb46eab937c26093b50e2cf897d787f2f93734d839e047ae2'
     'zh-TW'
   end
 
