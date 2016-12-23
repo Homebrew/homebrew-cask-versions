@@ -1,6 +1,6 @@
 cask 'intellij-idea-next-eap' do
-  version '2016.3.1,163.9166.7'
-  sha256 '50fd00d41dad8ab3dd3bd500b98f86ea1191b17bc52793fdfa120154c2d4d56f'
+  version '2017.1,171.1834.9'
+  sha256 '9cff1d8112b741b061d8dc75d0f8d02ebb78ebd3f46c6adac67abb8bb0dfbd29'
 
   url "https://download.jetbrains.com/idea/ideaIU-#{version.after_comma}.dmg"
   name 'IntelliJ IDEA Next EAP'
