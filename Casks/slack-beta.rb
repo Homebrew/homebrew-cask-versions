@@ -1,9 +1,9 @@
 cask 'slack-beta' do
-  version '2.3.0'
-  sha256 '21f8bcef54132e1d67d7e697d9805790f249ef3fe7b3f4f99007d138187d7990'
+  version '2.3.4'
+  sha256 'f2ed659a8990330fbdd3564bc45cc2bba0ddaae784a1fdff83f68f6d0a8bc336'
 
-  # slack-ssb-updates.global.ssl.fastly.net was verified as official when first introduced to the cask
-  url "https://slack-ssb-updates.global.ssl.fastly.net/mac_external_beta/Slack-#{version}-macOS.zip"
+  # downloads.slack-edge.com was verified as official when first introduced to the cask
+  url "https://downloads.slack-edge.com/mac_releases_beta/Slack-#{version}-macOS.zip"
   name 'Slack'
   homepage 'https://slack.com/beta/osx'
 
