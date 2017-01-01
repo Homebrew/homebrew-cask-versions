@@ -1,10 +1,10 @@
 cask 'pycharm-eap' do
-  version '2016.3,163.6512.5'
-  sha256 '9a3503e9aa143ab548e1d6641db52773687f14a13a8c0a1825694d329dd41e73'
+  version '2017.1,171.2014.23'
+  sha256 '9d889c5a92b829fa97cb22f09b461839130f0b4bc97c4b71318d57eff90a5219'
 
   url "https://download.jetbrains.com/python/pycharm-professional-#{version.after_comma}.dmg"
   name 'PyCharm EAP'
-  homepage 'https://confluence.jetbrains.com/display/PYH/JetBrains+PyCharm+Preview+(EAP)'
+  homepage 'https://www.jetbrains.com/pycharm/nextversion/'
 
   conflicts_with cask: 'pycharm'
 
@@ -13,9 +13,9 @@ cask 'pycharm-eap' do
   uninstall delete: '/usr/local/bin/charm'
 
   zap delete: [
-                "~/Library/Preferences/PyCharm#{version.before_comma}",
                 "~/Library/Application Support/PyCharm#{version.before_comma}",
                 "~/Library/Caches/PyCharm#{version.before_comma}",
                 "~/Library/Logs/PyCharm#{version.before_comma}",
+                "~/Library/Preferences/PyCharm#{version.before_comma}",
               ]
 end
