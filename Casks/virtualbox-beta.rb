@@ -19,7 +19,7 @@ cask 'virtualbox-beta' do
 
   uninstall script:  {
                        executable: 'VirtualBox_Uninstall.tool',
-                       args: %w[--unattended],
+                       args:       %w[--unattended],
                      },
             pkgutil: 'org.virtualbox.pkg.*'
 
