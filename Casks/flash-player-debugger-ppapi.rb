@@ -1,6 +1,6 @@
 cask 'flash-player-debugger-ppapi' do
-  version '24.0.0.186'
-  sha256 '2907e49d4b0b50a83a2d77d419144499fa18cd78e0f2f2d322754c4fdbbb0ed8'
+  version '24.0.0.194'
+  sha256 '319c1499982939d84f28bded4d597eeef122b2141a8094420106cedab3d1986c'
 
   # macromedia.com was verified as official when first introduced to the cask
   url "https://fpdownload.macromedia.com/pub/flashplayer/updaters/#{version.major}/flashplayer_#{version.major}_ppapi_debug.dmg"
