@@ -1,10 +1,10 @@
 cask 'docker-beta' do
-  version '1.13.0.14875'
-  sha256 'a7bfc85ac9b07d96f2c8c2bc1bf5c6231ae0cbe4c2b371e68808744e72984587'
+  version '1.13.0.14969'
+  sha256 '7d380dd747f8967a7f5b533d25916321ba9df0e1e4b1f7ea7f6888224cd731a0'
 
   url "https://download.docker.com/mac/beta/#{version}/Docker.dmg"
   appcast 'https://download.docker.com/mac/beta/appcast.xml',
-          checkpoint: 'e6b2acbfb534df07d08653e41349de6b0180a503d4b44c1728e3d3b3f8fb74b6'
+          checkpoint: 'bd03b7d97db51e7e59accea371aceaa6afb4fffb29fdc6684ee5a7684ddaa689'
   name 'Docker for Mac Beta'
   homepage 'https://www.docker.com/products/docker'
 
