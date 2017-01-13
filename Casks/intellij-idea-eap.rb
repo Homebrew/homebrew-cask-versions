@@ -10,8 +10,6 @@ cask 'intellij-idea-eap' do
 
   app "IntelliJ IDEA #{version.before_comma} EAP.app"
 
-  uninstall delete: '/usr/local/bin/idea'
-
   zap delete: [
                 "~/Library/Application Support/IntelliJIdea#{version.major_minor}",
                 "~/Library/Caches/IntelliJIdea#{version.major_minor}",
