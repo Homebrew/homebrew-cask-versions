@@ -1,6 +1,6 @@
 cask 'intellij-idea-eap' do
-  version '2017.1,171.2272.14'
-  sha256 'd21c531a5f9835c3785b3d5fbf8734686f6fbc8bfa2f3b5eccf929eb2d2d3d49'
+  version '2016.3.3,163.11103.3'
+  sha256 '09b82844f85df9295b7512a828d1e0b19d938a244e7eac52dc06f9ae3da6be4f'
 
   url "https://download.jetbrains.com/idea/ideaIU-#{version.after_comma}.dmg"
   name 'IntelliJ IDEA EAP'
@@ -13,9 +13,9 @@ cask 'intellij-idea-eap' do
   uninstall delete: '/usr/local/bin/idea'
 
   zap delete: [
-                "~/Library/Application Support/IntelliJIdea#{version.major_minor}",
                 "~/Library/Caches/IntelliJIdea#{version.major_minor}",
                 "~/Library/Logs/IntelliJIdea#{version.major_minor}",
+                "~/Library/Application Support/IntelliJIdea#{version.major_minor}",
                 "~/Library/Preferences/IntelliJIdea#{version.major_minor}",
               ]
 end
