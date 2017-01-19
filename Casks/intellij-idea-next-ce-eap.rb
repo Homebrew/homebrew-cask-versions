@@ -1,6 +1,6 @@
 cask 'intellij-idea-next-ce-eap' do
-  version '2017.1,171.2272.14'
-  sha256 'c46f70cae677391d48b0c74123e80de70424607b598aeed136fb24754524d636'
+  version '2017.1,171.2455.10'
+  sha256 'bc9a309364854817b7f3147852f5fe5ee8052cd7025220c22936e3e5a13ef5c3'
 
   url "https://download.jetbrains.com/idea/ideaIC-#{version.after_comma}.dmg"
   name 'IntelliJ IDEA Next Community Edition EAP'
@@ -14,8 +14,8 @@ cask 'intellij-idea-next-ce-eap' do
 
   zap delete: [
                 "~/Library/Application Support/IdeaIC#{version.major_minor}",
-                "~/Library/Preferences/IdeaIC#{version.major_minor}",
                 "~/Library/Caches/IdeaIC#{version.major_minor}",
                 "~/Library/Logs/IdeaIC#{version.major_minor}",
+                "~/Library/Preferences/IdeaIC#{version.major_minor}",
               ]
 end
