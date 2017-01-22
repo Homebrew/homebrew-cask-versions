@@ -4,7 +4,7 @@ cask 'opera-neon' do
 
   url 'http://get.geo.opera.com/.private/OperaNeon.dmg'
   name 'Opera Neon'
-  homepage 'http://www.opera.com/computer/neon'
+  homepage 'https://www.opera.com/computer/neon'
 
   app 'Opera Neon.app'
 
