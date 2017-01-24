@@ -1,4 +1,4 @@
-cask 'pdfpenpro' do
+cask 'pdfpen-pro' do
   version '831.0,1483740107'
   sha256 '8edce0a326127243e93c7dd9029c15352b3d4e8ac07ca6817798ce41a448f042'
 
