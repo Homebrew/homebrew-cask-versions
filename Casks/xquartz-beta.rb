@@ -19,7 +19,7 @@ cask 'xquartz-beta' do
 
     # Load & start XServer to avoid the need of relogin
     system_command '/bin/launchctl', args: ['load', '/Library/LaunchAgents/org.macosforge.xquartz.startx.plist']
-    
+
     # Set automatic Updates for Beta Versions
     system_command '/usr/bin/defaults', args: ['write', 'org.macosforge.xquartz.X11', 'SUFeedURL', 'http://xquartz.macosforge.org/downloads/sparkle/beta.xml']
   end
