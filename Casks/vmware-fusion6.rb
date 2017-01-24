@@ -10,7 +10,6 @@ cask 'vmware-fusion6' do
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmrun"
 
   uninstall_preflight do
-    system '/usr/bin/sudo', '-E', '--',
-           '/usr/sbin/chown', '-R', '--', "#{Etc.getpwuid(Process.euid).name}:staff", "#{appdir}/VMware Fusion.app"
+    set_ownership "#{appdir}/VMware Fusion.app"
   end
 end
