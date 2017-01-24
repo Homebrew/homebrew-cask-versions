@@ -31,16 +31,25 @@ cask 'adobe-cs6-master-collection' do
                  'en_US'
                end
 
-    system '/usr/bin/killall', '-kill', 'SafariNotificationAgent'
-    system '/usr/bin/sudo', '-E', '--', "#{staged_path}/Adobe CS6 Master Collection/Install.app/Contents/MacOS/Install", '--mode=silent', "--deploymentFile=#{staged_path}/Adobe CS6 Master Collection/deploy/install-#{language}.xml"
+    system_command '/usr/bin/killall',
+                   args: ['-kill', 'SafariNotificationAgent']
+    system_command "#{staged_path}/Adobe CS6 Master Collection/Install.app/Contents/MacOS/Install",
+                   args: [
+                           '--mode=silent', "--deploymentFile=#{staged_path}/Adobe CS6 Master Collection/deploy/install-#{language}.xml"
+                         ],
+                   sudo: true
 
     FileUtils.cp "#{staged_path}/Adobe CS6 Master Collection/deploy/uninstall-en_US.xml", "#{staged_path}/uninstall.xml"
   end
 
   uninstall_preflight do
-    system '/usr/bin/killall', '-kill', 'SafariNotificationAgent'
-    system '/usr/bin/sudo', '-E', '--', "#{staged_path}/Adobe CS6 Master Collection/Install.app/Contents/MacOS/Install", '--mode=silent', "--deploymentFile=#{staged_path}/Adobe CS6 Master Collection/deploy/uninstall-en_US.xml"
-  end
+    system_command '/usr/bin/killall',
+                   args: ['-kill', 'SafariNotificationAgent']
+    system_command "#{staged_path}/Adobe CS6 Master Collection/Install.app/Contents/MacOS/Install",
+                   args: [
+                           '--mode=silent', "--deploymentFile=#{staged_path}/Adobe CS6 Master Collection/deploy/uninstall-en_US.xml"
+                         ],
+                   sudo: true
 
   caveats 'Installation or Uninstallation may fail with Exit Code 19 (Conflicting Processes running) if Browsers, Safari Notification Service or SIMBL Services (e.g. Flashlight) are running or Adobe Creative Cloud or any other Adobe Products are already installed. See Logs in /Library/Logs/Adobe/Installers if Installation or Uninstallation fails, to identifify the conflicting processes.'
 end
