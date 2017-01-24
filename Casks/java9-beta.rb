@@ -10,23 +10,32 @@ cask 'java9-beta' do
   pkg 'JDK 9.pkg'
 
   postflight do
-    system '/usr/bin/sudo', '-E', '--',
-           '/usr/libexec/PlistBuddy', '-c', 'Add :JavaVM:JVMCapabilities: string BundledApp', "/Library/Java/JavaVirtualMachines/jdk-#{version.minor}.jdk/Contents/Info.plist"
-    system '/usr/bin/sudo', '-E', '--',
-           '/usr/libexec/PlistBuddy', '-c', 'Add :JavaVM:JVMCapabilities: string JNI',        "/Library/Java/JavaVirtualMachines/jdk-#{version.minor}.jdk/Contents/Info.plist"
-    system '/usr/bin/sudo', '-E', '--',
-           '/usr/libexec/PlistBuddy', '-c', 'Add :JavaVM:JVMCapabilities: string WebStart',   "/Library/Java/JavaVirtualMachines/jdk-#{version.minor}.jdk/Contents/Info.plist"
-    system '/usr/bin/sudo', '-E', '--',
-           '/usr/libexec/PlistBuddy', '-c', 'Add :JavaVM:JVMCapabilities: string Applets',    "/Library/Java/JavaVirtualMachines/jdk-#{version.minor}.jdk/Contents/Info.plist"
-    system '/usr/bin/sudo', '-E', '--',
-           '/bin/mkdir', '-p', '--', "/Library/Java/JavaVirtualMachines/jdk-#{version.minor}.jdk/Contents/Home/bundle/Libraries"
-    system '/usr/bin/sudo', '-E', '--',
-           '/bin/ln', '-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk-#{version.minor}.jdk/Contents/Home/jre/lib/server/libjvm.dylib", "/Library/Java/JavaVirtualMachines/jdk-#{version.minor}.jdk/Contents/Home/bundle/Libraries/libserver.dylib"
+    system_command '/usr/libexec/PlistBuddy',
+                   args: ['-c', 'Add :JavaVM:JVMCapabilities: string BundledApp', "/Library/Java/JavaVirtualMachines/jdk#{version.minor}.jdk/Contents/Info.plist"],
+                   sudo: true
+    system_command '/usr/libexec/PlistBuddy',
+                   args: ['-c', 'Add :JavaVM:JVMCapabilities: string JNI', "/Library/Java/JavaVirtualMachines/jdk#{version.minor}.jdk/Contents/Info.plist"],
+                   sudo: true
+    system_command '/usr/libexec/PlistBuddy',
+                   args: ['-c', 'Add :JavaVM:JVMCapabilities: string WebStart', "/Library/Java/JavaVirtualMachines/jdk#{version.minor}.jdk/Contents/Info.plist"],
+                   sudo: true
+    system_command '/usr/libexec/PlistBuddy',
+                   args: ['-c', 'Add :JavaVM:JVMCapabilities: string Applets', "/Library/Java/JavaVirtualMachines/jdk#{version.minor}.jdk/Contents/Info.plist"],
+                   sudo: true
+    system_command '/bin/mkdir',
+                   args: ['-p', '--', "/Library/Java/JavaVirtualMachines/jdk#{version.minor}.jdk/Contents/Home/bundle/Libraries"],
+                   sudo: true
+    system_command '/bin/ln',
+                   args: ['-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk#{version.minor}.jdk/Contents/Home/jre/lib/server/libjvm.dylib", "/Library/Java/JavaVirtualMachines/jdk#{version.minor}.jdk/Contents/Home/bundle/Libraries/libserver.dylib"],
+                   sudo: true
+
     if MacOS.version <= :mavericks
-      system '/usr/bin/sudo', '-E', '--',
-             '/bin/rm', '-rf', '--', '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
-      system '/usr/bin/sudo', '-E', '--',
-             '/bin/ln', '-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk-#{version.minor}.jdk/Contents", '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
+      system_command '/bin/rm',
+                     args: ['-rf', '--', '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'],
+                     sudo: true
+      system_command '/bin/ln',
+                     args: ['-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk#{version.minor}.jdk/Contents", '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'],
+                     sudo: true
     end
   end
 
