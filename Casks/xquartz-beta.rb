@@ -15,13 +15,13 @@ cask 'xquartz-beta' do
     Pathname.new(File.expand_path('~')).join('Library', 'Logs').mkpath
 
     # Set default path to X11 to avoid the need of manual setup
-    system '/usr/bin/defaults', 'write', 'com.apple.applescript', 'ApplicationMap', '-dict-add', 'X11', 'file://localhost/Applications/Utilities/XQuartz.app/'
+    system_command '/usr/bin/defaults', args: ['write', 'com.apple.applescript', 'ApplicationMap', '-dict-add', 'X11', 'file://localhost/Applications/Utilities/XQuartz.app/']
 
     # Load & start XServer to avoid the need of relogin
-    system '/bin/launchctl', 'load', '/Library/LaunchAgents/org.macosforge.xquartz.startx.plist'
+    system_command '/bin/launchctl', args: ['load', '/Library/LaunchAgents/org.macosforge.xquartz.startx.plist']
 
     # Set automatic Updates for Beta Versions
-    system 'defaults', 'write', 'org.macosforge.xquartz.X11', 'SUFeedURL', 'http://xquartz.macosforge.org/downloads/sparkle/beta.xml'
+    system_command '/usr/bin/defaults', args: ['write', 'org.macosforge.xquartz.X11', 'SUFeedURL', 'http://xquartz.macosforge.org/downloads/sparkle/beta.xml']
   end
 
   uninstall quit:      'org.macosforge.xquartz.X11',
