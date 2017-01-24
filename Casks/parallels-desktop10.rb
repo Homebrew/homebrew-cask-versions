@@ -9,8 +9,10 @@ cask 'parallels-desktop10' do
   app 'Parallels Desktop.app'
 
   postflight do
-    # Set the file to visible, since it was hidden in the dmg
-    system '/usr/bin/SetFile', '-a', 'v', "#{appdir}/Parallels Desktop.app"
+    # Unhide the application
+    system_command '/usr/bin/chflags',
+                   args: ['nohidden', "#{appdir}/Parallels Desktop.app"],
+                   sudo: true
   end
 
   uninstall delete: [
