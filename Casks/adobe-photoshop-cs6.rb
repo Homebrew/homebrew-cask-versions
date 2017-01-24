@@ -15,7 +15,8 @@ cask 'adobe-photoshop-cs6' do
             args:   ['--mode=silent', "--deploymentFile=#{staged_path}/#{name.join}/Deployment/en_US_Deployment.xml"]
 
   preflight do
-    system '/usr/bin/killall', '-kill', 'SafariNotificationAgent'
+    system_command '/usr/bin/killall',
+                   args: ['-kill', 'SafariNotificationAgent']
   end
 
   uninstall_preflight do
