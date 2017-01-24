@@ -13,13 +13,23 @@ cask 'adobe-photoshop-lightroom600' do
   # and https://github.com/caskroom/homebrew-versions/pull/296
 
   preflight do
-    system '/usr/bin/killall', '-kill', 'SafariNotificationAgent'
-    system '/usr/bin/sudo', '-E', '--', "#{staged_path}/Install.app/Contents/MacOS/Install", '--mode=silent', "--deploymentFile=#{staged_path}/deploy/AdobeLightroom6.install.xml"
+    system_command '/usr/bin/killall',
+                   args: ['-kill', 'SafariNotificationAgent']
+    system_command "#{staged_path}/Install.app/Contents/MacOS/Install",
+                   args: [
+                           '--mode=silent', "--deploymentFile=#{staged_path}/deploy/AdobeLightroom6.install.xml"
+                         ],
+                   sudo: true
   end
 
   uninstall_preflight do
-    system '/usr/bin/killall', '-kill', 'SafariNotificationAgent'
-    system '/usr/bin/sudo', '-E', '--', "#{staged_path}/Install.app/Contents/MacOS/Install", '--mode=silent', "--deploymentFile=#{staged_path}/deploy/AdobeLightroom6.remove.xml"
+    system_command '/usr/bin/killall',
+                   args: ['-kill', 'SafariNotificationAgent']
+    system_command "#{staged_path}/Install.app/Contents/MacOS/Install",
+                   args: [
+                           '--mode=silent', "--deploymentFile=#{staged_path}/deploy/AdobeLightroom6.remove.xml"
+                         ],
+                   sudo: true
   end
 
   uninstall delete: '/Applications/Adobe Lightroom/Adobe Lightroom.app'
