@@ -50,6 +50,7 @@ cask 'adobe-cs6-master-collection' do
                            '--mode=silent', "--deploymentFile=#{staged_path}/Adobe CS6 Master Collection/deploy/uninstall-en_US.xml"
                          ],
                    sudo: true
+  end
 
   caveats 'Installation or Uninstallation may fail with Exit Code 19 (Conflicting Processes running) if Browsers, Safari Notification Service or SIMBL Services (e.g. Flashlight) are running or Adobe Creative Cloud or any other Adobe Products are already installed. See Logs in /Library/Logs/Adobe/Installers if Installation or Uninstallation fails, to identifify the conflicting processes.'
 end
