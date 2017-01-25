@@ -1,4 +1,4 @@
-cask 'adium-nightly16' do
+cask 'adium-nightly' do
   version '1.6hgr5946'
   sha256 'aa5f92647a256fff0b5098679bd4966db039769a0e8a094116fd06b0cb3dcfc2'
 
