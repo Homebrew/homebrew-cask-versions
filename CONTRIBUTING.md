@@ -4,7 +4,7 @@ All of the [instructions for contributing from the main repository](https://gith
 
 # Nightly Builds (Nightlies)
 
-For Casks that use nightlies, which are generally builds that are done once a day, the `version`, `sha256` and `url` will change frequently and hence the Cask will be constantly outdated. To alleviate having to regularly update a Cask for a nightly build, the use of a [`url do` block](https://github.com/caskroom/homebrew-cask/blob/master/doc/cask_language_reference/stanzas/url.md#using-a-block-to-defer-code-execution) in conjunction with `version :latest` and `sha256 :no_check` can help ensure that the latest version is always used.
+For Casks of [nightlies](https://en.wikipedia.org/wiki/Daily_build), `version`, `sha256`, and `url` change frequently, making the Cask constantly outdated. To alleviate having to regularly update them, the use of a [`url do` block](https://github.com/caskroom/homebrew-cask/blob/master/doc/cask_language_reference/stanzas/url.md#using-a-block-to-defer-code-execution) in conjunction with `version :latest` and `sha256 :no_check` is encouraged, to ensure the latest version is always fetched.
 
 See [this pull request for exist-db-nightly](https://github.com/caskroom/homebrew-versions/pull/3067) for an example of the procedure.
 
