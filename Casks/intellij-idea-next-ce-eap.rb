@@ -1,6 +1,6 @@
 cask 'intellij-idea-next-ce-eap' do
-  version '2017.1,171.2455.10'
-  sha256 'bc9a309364854817b7f3147852f5fe5ee8052cd7025220c22936e3e5a13ef5c3'
+  version '2017.1,171.2613.7'
+  sha256 '220f2d15723f8b0eec8089278a65f0402737df8a39f6b51e160d6e50055373f8'
 
   url "https://download.jetbrains.com/idea/ideaIC-#{version.after_comma}.dmg"
   name 'IntelliJ IDEA Next Community Edition EAP'
