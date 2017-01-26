@@ -9,6 +9,7 @@ For Casks of [nightlies](https://en.wikipedia.org/wiki/Daily_build), `version`, 
 See [this pull request for exist-db-nightly](https://github.com/caskroom/homebrew-versions/pull/3067) for an example of the procedure.
 
 Example ([exist-db-nightly.rb](https://github.com/caskroom/homebrew-versions/blob/16b3bab91ab5b9a69ef7c456441b0e0fced56516/Casks/exist-db-nightly.rb#L6#L14)):
+
 ```ruby
   url do
     require 'open-uri'
