@@ -1,14 +1,12 @@
 cask 'gpgtools-beta' do
-  version '2016.12b1'
-  sha256 '2bb29067e7f2705a51b22f23080ca767bba4735ce16711a7d950e582737e8aaf'
+  version '2017.1b2'
+  sha256 'f74fd4788cfa0820933499768fa7dfe1c0b295bbae9f43812dc3590923975de4'
 
   url "https://releases.gpgtools.org/GPG_Suite-#{version}.dmg"
-  appcast 'https://gpgtools.org/releases/gpgsuite/pre-appcast.xml',
-          checkpoint: 'b0e18b27c8464ec73f909ad47ac60cf66dc65ba8a1d534d4a3258d2ce399bb1f'
   name 'GPG Suite Beta'
   homepage 'https://gpgtools.org/'
   gpg "#{url}.sig",
-      key_url: 'https://gpgtools.org/GPGTools%2000D026C4.asc'
+      key_url: 'https://gpgtools.org/GPGTools-00D026C4.asc'
 
   auto_updates true
   conflicts_with cask: 'gpgtools'
