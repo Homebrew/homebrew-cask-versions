@@ -11,4 +11,10 @@ cask 'scansnap-manager-s1300' do
   pkg 'Scansnap Manager.pkg'
 
   uninstall pkgutil: 'jp.co.pfu.ScanSnap.V10L10'
+
+  caveats <<-EOS.undent
+    This version of ScanSnap Manager (v3.2L31) is not compatible with
+    macOS Sierra 10.12. Once installed launch ScanSnap Manager and click
+    Help->Online Update... to upgrade to a compatible version.
+  EOS
 end
