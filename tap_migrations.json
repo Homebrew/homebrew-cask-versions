@@ -17,6 +17,12 @@
   "pdfpenpro": "caskroom/cask",
   "pycharm-ce": "caskroom/cask",
   "pycharm-edu": "caskroom/cask",
+  "scansnap-manager-s1300.rb": "caskroom/drivers",
+  "scansnap-manager-s1500.rb": "caskroom/drivers",
+  "scansnap-manager-s300m-s500m-s510m-fi-5110eoxm-legacy.rb": "caskroom/drivers",
+  "scansnap-manager-s300m-s510m.rb": "caskroom/drivers",
+  "scansnap-manager-sv600.rb": "caskroom/drivers",
   "sketchup-pro": "caskroom/cask",
+  "unifi-controller-beta.rb": "caskroom/cask",
   "visual-paradigm-ce": "caskroom/cask"
 }
