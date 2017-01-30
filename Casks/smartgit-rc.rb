@@ -8,8 +8,4 @@ cask 'smartgit-rc' do
 
   app 'SmartGit.app'
   binary "#{appdir}/SmartGit.app/Contents/MacOS/SmartGit"
-
-  caveats do
-    files_in_usr_local
-  end
 end
