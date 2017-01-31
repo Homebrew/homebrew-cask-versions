@@ -11,5 +11,5 @@ cask 'wmail-pre-release' do
 
   conflicts_with cask: 'wmail'
 
-  app 'WMail pre-release.app'
+  app 'WMail.app', target: 'WMail pre-release.app'
 end
