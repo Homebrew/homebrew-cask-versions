@@ -17,8 +17,4 @@ cask 'tower-beta' do
                 '~/Library/Caches/com.fournova.Tower2',
                 '~/Library/Preferences/com.fournova.Tower2.plist',
               ]
-
-  caveats do
-    files_in_usr_local
-  end
 end
