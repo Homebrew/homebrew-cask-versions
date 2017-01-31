@@ -1,4 +1,4 @@
-cask 'wmail-pre-release' do
+cask 'wmail-prerelease' do
   version '2.0.9'
   sha256 '4978e60a7b92686d88c500aeda758893185183a5454c09d048801a487cac2a7a'
 
@@ -11,5 +11,5 @@ cask 'wmail-pre-release' do
 
   conflicts_with cask: 'wmail'
 
-  app 'WMail pre-release.app'
+  app 'WMail.app'
 end
