@@ -1,11 +1,11 @@
 cask 'dropbox-beta' do
-  version '19.3.10'
-  sha256 'fc966cd08c31c47c980af7e0065c331eb5514d0753d180cc2eb0488c9262c141'
+  version '20.3.16'
+  sha256 '32eacb5ccfecb4fe74c4aa542b46a6a979a7afc14bfeed69f1d3892ea15c92d7'
 
   # clientupdates.dropboxstatic.com was verified as official when first introduced to the cask
   url "https://clientupdates.dropboxstatic.com/client/Dropbox%20#{version}.dmg"
   appcast 'https://www.dropbox.com/release_notes/rss.xml',
-          checkpoint: '8ff3fbcd6b128f85c7b530010b8b42e24aba486303e976552f0ed975af077abf'
+          checkpoint: '2794637a8b028d903f0d27432291dce968886923a86325994156cf1206edec80'
   name 'Dropbox'
   homepage 'https://www.dropboxforum.com/t5/Desktop-client-builds/bd-p/101003016'
 

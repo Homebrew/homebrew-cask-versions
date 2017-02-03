@@ -1,6 +1,6 @@
 cask 'pycharm-ce-eap' do
-  version '2017.1,171.2455.3'
-  sha256 '5413d3a47e17a1d8ae696d99e782bd5459a16ce80bd63bc93bb9aea7eedc8319'
+  version '2017.1,171.2822.19'
+  sha256 '0e283eaedc781e4ad8aeea1aab677a8d1e7960f49f517b3de8357860f1b992c2'
 
   url "https://download.jetbrains.com/python/pycharm-community-#{version.after_comma}.dmg"
   name 'Jetbrains PyCharm Community Edition EAP'

@@ -17,8 +17,4 @@ cask 'sublime-text2' do
                 '~/Library/Caches/com.sublimetext.2',
                 '~/Library/Saved Application State/com.sublimetext.2.savedState',
               ]
-
-  caveats do
-    files_in_usr_local
-  end
 end
