@@ -4,7 +4,7 @@ cask 'gogland-eap' do
 
   url "https://download.jetbrains.com/go/gogland-#{version.after_comma}.dmg"
   name 'Gogland EAP'
-  homepage 'https://www.jetbrains.com/go'
+  homepage 'https://www.jetbrains.com/go/'
 
   conflicts_with cask: 'gogland'
 
