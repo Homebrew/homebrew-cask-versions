@@ -1,6 +1,6 @@
 cask 'dropbox-beta' do
-  version '20.3.16'
-  sha256 '32eacb5ccfecb4fe74c4aa542b46a6a979a7afc14bfeed69f1d3892ea15c92d7'
+  version '20.3.17'
+  sha256 '564096f757f3a54f3faa616ad11672fef07a1c947a7d10e2d902139cdf511d7a'
 
   # clientupdates.dropboxstatic.com was verified as official when first introduced to the cask
   url "https://clientupdates.dropboxstatic.com/client/Dropbox%20#{version}.dmg"
