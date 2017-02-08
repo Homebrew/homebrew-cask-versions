@@ -1,6 +1,6 @@
 cask 'phpstorm-eap' do
-  version '2017.1,171.2822.14'
-  sha256 'f73b196eff9ac4fcd596e4d9161b651fb66c7c9982eb7dd2f7ca4f53e4ba8fb7'
+  version '2017.1,171.3019.12'
+  sha256 'd2cdfe6e6bd9b6cb3315c5fe75dcf44d9672a6fdfc7e6e2f0ff3f80828ac322c'
 
   url "https://download.jetbrains.com/webide/PhpStorm-EAP-#{version.after_comma}.dmg"
   name 'PhpStorm EAP'
