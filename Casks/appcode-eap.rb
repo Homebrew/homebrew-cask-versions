@@ -1,8 +1,8 @@
 cask 'appcode-eap' do
-  version '2016.3,RC2'
-  sha256 '6aaf95a86aaa77160fac5602659d7552aae4bbe525f55a40ae5e79d3b80dca6d'
+  version '2017.1,171.2822.6'
+  sha256 'd0f21e7e6cc7d2353653e88dc12c94c7ef2895fa24dcd05a6136d49d0347c824'
 
-  url "https://download.jetbrains.com/objc/AppCode-#{version.before_comma}-#{version.after_comma}.dmg"
+  url "https://download.jetbrains.com/objc/AppCode-#{version.after_comma}.dmg"
   name 'AppCode EAP'
   homepage 'https://confluence.jetbrains.com/display/OBJC/AppCode+EAP'
 
