@@ -1,10 +1,10 @@
 cask 'gogland-eap' do
-  version '1.0,163.12024.20'
-  sha256 '616a4d268f7d9090199dc2f82438819bde91704b07af2e2dc31749155a0b6fd0'
+  version '1.0,163.12024.32'
+  sha256 '3c5010454b4526fbef4e9eeed7d01d084ac5dcaf6fceeff952c7243502478a3c'
 
   url "https://download.jetbrains.com/go/gogland-#{version.after_comma}.dmg"
   name 'Gogland EAP'
-  homepage 'https://www.jetbrains.com/go'
+  homepage 'https://www.jetbrains.com/go/'
 
   conflicts_with cask: 'gogland'
 

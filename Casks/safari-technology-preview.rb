@@ -5,7 +5,7 @@ cask 'safari-technology-preview' do
   if MacOS.version <= :el_capitan
     url 'http://appldnld.apple.com/STP/031-81900-20160926-E7046BDA-8434-11E6-83C5-ADC333D2D062/SafariTechnologyPreview.dmg'
   else
-    url 'https://secure-appldnld.apple.com/STP/031-95977-20170111-2BE113BA-E6C0-11E6-8F82-EDF6D45B5B9D/SafariTechnologyPreview.dmg'
+    url 'https://secure-appldnld.apple.com/STP/031-98194-20170208-718B1142-D9F2-11E6-9947-B4F4B59B175E/SafariTechnologyPreview.dmg'
   end
   name 'Safari Technology Preview'
   homepage 'https://developer.apple.com/safari/download/'
