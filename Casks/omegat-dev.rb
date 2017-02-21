@@ -9,7 +9,7 @@ cask 'omegat-dev' do
   name 'OmegaT Development'
   homepage 'http://www.omegat.org/'
 
-  app "OmegaT_#{version}_Beta_Mac_Signed/OmegaT.app", target: 'OmegaT Development.app'
+  app "OmegaT_#{version}_Beta_Mac_Signed/OmegaT.app"
 
   caveats do
     depends_on_java('8+')
