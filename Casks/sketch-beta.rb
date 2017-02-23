@@ -1,11 +1,11 @@
 cask 'sketch-beta' do
-  version '42,36780'
-  sha256 '2b9252e428fc9f566fe8c6ca18d262572de0c1acbd32d34fa93caada8aaa59e4'
+  version '43,38917'
+  sha256 'cb611bc3b72ef44b8132c5dca441d4c357b226b976abd8ed215f943bf20810da'
 
   # hockeyapp.net/api/2/apps/0172d48cceec171249a8d850fb16276b was verified as official when first introduced to the cask
   url "https://rink.hockeyapp.net/api/2/apps/0172d48cceec171249a8d850fb16276b/app_versions/#{version.after_comma}?format=zip"
   appcast 'https://rink.hockeyapp.net/api/2/apps/0172d48cceec171249a8d850fb16276b',
-          checkpoint: '8f6fa74c0b94823b5981bf2853e53d17f5e816a55de353cccd1d1e1f9953d071'
+          checkpoint: '3084bc784d632deb4d7ec9e6a020ffebf4b53ee69265f7d94377771e213a999a'
   name 'Sketch'
   homepage 'https://www.sketchapp.com/beta/'
 
