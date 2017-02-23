@@ -3,7 +3,7 @@ cask 'intellij-idea-next-eap' do
   sha256 '3e0b5db19f552ba1d5964c3702073849136200a058cd7731ec497bac13895bb2'
 
   url "https://download.jetbrains.com/idea/ideaIU-#{version.after_comma}.dmg"
-  name 'IntelliJ IDEA Ultimate Next EAP'
+  name 'IntelliJ IDEA Ultimate next version EAP'
   homepage 'https://www.jetbrains.com/idea/nextversion/'
 
   auto_updates true
