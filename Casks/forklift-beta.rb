@@ -6,7 +6,7 @@ cask 'forklift-beta' do
   appcast "http://update.binarynights.com/ForkLift#{version.major}/update.xml",
           checkpoint: '4a7c0ba4b19b53b06cf73fec1a4a4b8584066f993a6d74fdbd8581189883ab5e'
   name 'ForkLift'
-  homepage 'https://www.binarynights.com/'
+  homepage 'https://www.binarynights.com/forklift/'
 
   app 'ForkLift.app'
 
