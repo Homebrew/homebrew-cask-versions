@@ -11,7 +11,7 @@ cask 'toggldesktop-beta' do
 
   conflicts_with cask: [
                          'toggldesktop',
-                         'toggldesktop-beta',
+                         'toggldesktop-dev',
                        ]
 
   app 'TogglDesktop.app'
