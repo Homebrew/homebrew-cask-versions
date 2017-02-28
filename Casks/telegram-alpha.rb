@@ -10,6 +10,7 @@ cask 'telegram-alpha' do
   homepage 'https://macos.telegram.org/'
 
   auto_updates true
-
+  conflicts_with cask: 'telegram'
+  
   app 'Telegram.app'
 end
