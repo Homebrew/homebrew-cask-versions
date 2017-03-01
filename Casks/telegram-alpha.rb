@@ -7,10 +7,12 @@ cask 'telegram-alpha' do
   appcast 'https://rink.hockeyapp.net/api/2/apps/6ed2ac3049e1407387c2f1ffcb74e81f',
           checkpoint: '6cb12d7e9c70704880f07b308294bc008854ec4a7d0e13f50fc385cd07e2c62b'
   name 'Telegram for macOS'
+  name 'Telegram Swift'
   homepage 'https://macos.telegram.org/'
 
   auto_updates true
   conflicts_with cask: 'telegram'
+  depends_on macos: '>= :yosemite'
   
   app 'Telegram.app'
 end
