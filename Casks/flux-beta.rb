@@ -9,6 +9,7 @@ cask 'flux-beta' do
   homepage 'https://justgetflux.com/'
 
   auto_updates true
+  conflicts_with cask: 'flux'
 
   app 'Flux.app'
 
