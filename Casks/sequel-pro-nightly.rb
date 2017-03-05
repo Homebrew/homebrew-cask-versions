@@ -4,7 +4,7 @@ cask 'sequel-pro-nightly' do
 
   url "https://sequelpro.com/Sequel_Pro_#{version}.dmg"
   name 'Sequel Pro'
-  homepage 'https://sequelpro.com/nightly/'
+  homepage 'https://sequelpro.com/test-builds'
 
   depends_on macos: '>= :leopard'
 
