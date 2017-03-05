@@ -6,7 +6,7 @@ cask 'docker-beta' do
   appcast 'https://download.docker.com/mac/beta/appcast.xml',
           checkpoint: '35a2c3188a02bb52839ebb16e71273f104a676ab52ffae7323171960eb87c3aa'
   name 'Docker for Mac Beta'
-  homepage 'https://www.docker.com/products/docker'
+  homepage 'https://www.docker.com/community-edition'
 
   auto_updates true
 
