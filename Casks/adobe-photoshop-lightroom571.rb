@@ -6,7 +6,7 @@ cask 'adobe-photoshop-lightroom571' do
   name 'Adobe Photoshop Lightroom'
   homepage 'https://www.adobe.com/products/photoshop-lightroom.html'
 
-  pkg "Adobe Photoshop Lightroom #{version.major}.pkg"
+  pkg "Adobe Photoshop Lightroom #{version.major}.pkg", allow_untrusted: true
 
   uninstall pkgutil: "com.adobe.Lightroom#{version.major}",
             quit:    "com.adobe.Lightroom#{version.major}",
