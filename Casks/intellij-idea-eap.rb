@@ -1,8 +1,8 @@
 cask 'intellij-idea-eap' do
-  version '2016.3.5,163.13906.16'
-  sha256 '136e679a751c4a098b2c7195efa526f8b3b51b010a96f568c875986b8eb11a71'
+  version '2016.3.5,163.13906.18'
+  sha256 '4417df3aa9fba7c75af371b51d734759b2d555930404b2063866b4e869ae3b79'
 
-  url "https://download.jetbrains.com/idea/ideaIU-#{version.after_comma}.dmg"
+  url "https://download.jetbrains.com/idea/ideaIU-#{version.before_comma}.dmg"
   name 'IntelliJ IDEA Ultimate EAP'
   homepage "https://confluence.jetbrains.com/display/IDEADEV/IDEA+#{version.major_minor}+EAP"
 
