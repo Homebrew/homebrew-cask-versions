@@ -8,7 +8,7 @@ cask 'intellij-idea-eap' do
 
   auto_updates true
 
-  app 'IntelliJ IDEA 2017.1 EAP.app'
+  app "IntelliJ IDEA #{version.before_comma} EAP.app"
 
   uninstall delete: '/usr/local/bin/idea'
 
