@@ -10,8 +10,7 @@ cask 'anaconda2' do
   container type: :naked
 
   installer script: "Anaconda2-#{version}-MacOSX-x86_64.sh",
-            args:   ['-b'],
-            sudo:   false
+            args:   ['-b']
 
   preflight do
     set_permissions "#{staged_path}/Anaconda2-#{version}-MacOSX-x86_64.sh", '+x'
