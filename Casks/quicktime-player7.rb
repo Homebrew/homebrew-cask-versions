@@ -1,5 +1,4 @@
 cask 'quicktime-player7' do
-  # note: "7" is specified to differiante from the next iteration, QuickTime Player X
   version '7.6.6'
   sha256 '954c2376d2d747821614dc802249cf3c708a4792abed08945d7261de3894e759'
 
