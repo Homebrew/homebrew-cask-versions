@@ -1,6 +1,6 @@
 cask 'datagrip-eap' do
-  version '2017.1,171.3691.11'
-  sha256 'af569a2689bd2d275f50b0f1388b91453540feedcd4d9a5a51f2d6d2bddc272b'
+  version '2017.1,171.3780.53'
+  sha256 '9cf100beb0c841266f6657eb8b4b5f81af4d75776f9690cf1df8a1744e963cec'
 
   url "https://download.jetbrains.com/datagrip/datagrip-#{version.after_comma}.dmg"
   name 'DataGrip'
