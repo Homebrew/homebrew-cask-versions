@@ -5,7 +5,7 @@ cask 'omegat-dev' do
   # downloads.sourceforge.net/omegat was verified as official when first introduced to the cask
   url "https://downloads.sourceforge.net/omegat/OmegaT%20-%20Latest/OmegaT%20#{version}/OmegaT_#{version}_Beta_Mac.zip"
   appcast 'https://sourceforge.net/projects/omegat/rss?path=/OmegaT%20-%20Latest',
-          checkpoint: '66d1d12c29bf7aa884131ecac2e6f500d91d1585943b70b713b8cb1b180d0219'
+          checkpoint: '7775eec68c7ea509552572bd1304925c654554cac557ee3d0ea5b3cba6522a0e'
   name 'OmegaT Development'
   homepage 'http://www.omegat.org/'
 
