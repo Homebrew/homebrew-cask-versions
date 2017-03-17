@@ -1,4 +1,4 @@
-cask 'intellij-idea-next-eap' do
+cask 'intellij-idea-eap-nextversion' do
   version '2017.1,171.3780.52'
   sha256 '699ff2dfe76e6b13de19246ccc1746f14fd512ef731ea535ecd60369364798a3'
 
