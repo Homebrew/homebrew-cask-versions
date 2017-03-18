@@ -1,6 +1,6 @@
 cask 'kicad-nightly' do
-  version '20170221-033125.ca7f1d5'
-  sha256 '28b1cfc5df5dd25890944da60839a91e90d5cec18d29937c813846f42c03ccd0'
+  version '20170317-103813.9ddb4fe'
+  sha256 '278c4681c34db682a6a12ad62554c375ceb3bf0534041919d81ebf1f14cc0d90'
 
   url "http://downloads.kicad-pcb.org/osx/nightly/kicad-#{version}-c4osx.dmg"
   name 'KiCad'
