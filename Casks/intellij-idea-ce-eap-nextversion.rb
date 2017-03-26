@@ -4,7 +4,7 @@ cask 'intellij-idea-ce-eap-nextversion' do
 
   url "https://download.jetbrains.com/idea/ideaIC-#{version.after_comma}.dmg"
   name 'IntelliJ IDEA Community Edition next version EAP'
-  homepage 'https://www.jetbrains.com/idea/nextversion/'
+  homepage 'https://www.jetbrains.com/idea/whatsnew/'
 
   auto_updates true
 
