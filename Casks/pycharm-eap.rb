@@ -4,7 +4,7 @@ cask 'pycharm-eap' do
 
   url "https://download.jetbrains.com/python/pycharm-professional-#{version.after_comma}.dmg"
   name 'PyCharm EAP'
-  homepage 'https://www.jetbrains.com/pycharm/nextversion/'
+  homepage 'https://www.jetbrains.com/pycharm/whatsnew/'
 
   conflicts_with cask: 'pycharm'
 

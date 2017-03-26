@@ -4,7 +4,7 @@ cask 'datagrip-eap' do
 
   url "https://download.jetbrains.com/datagrip/datagrip-#{version.after_comma}.dmg"
   name 'DataGrip'
-  homepage 'https://www.jetbrains.com/datagrip/nextversion/'
+  homepage 'https://www.jetbrains.com/datagrip/whatsnew/'
 
   conflicts_with cask: 'datagrip'
 
