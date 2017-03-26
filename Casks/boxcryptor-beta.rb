@@ -4,7 +4,7 @@ cask 'boxcryptor-beta' do
 
   url 'https://www.boxcryptor.com/l/download-macosx-beta'
   name 'Boxcryptor'
-  homepage 'https://www.boxcryptor.com/en'
+  homepage 'https://www.boxcryptor.com/en/'
 
   depends_on macos: '>= :lion'
 
