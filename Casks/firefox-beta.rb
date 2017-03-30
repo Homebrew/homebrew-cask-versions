@@ -74,6 +74,8 @@ cask 'firefox-beta' do
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=#{language}"
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/firefox/channel/#beta'
+  
+  auto_updates true
 
   app 'Firefox.app'
 
