@@ -75,6 +75,8 @@ cask 'firefox-beta' do
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/firefox/channel/#beta'
 
+  auto_updates true
+
   app 'Firefox.app'
 
   zap delete: [
