@@ -7,7 +7,7 @@ cask 'java-beta' do
   name 'Java Standard Edition Development Kit'
   homepage 'https://jdk8.java.net/download.html'
 
-  pkg "JDK #{version.minor} Update #{version.split("_")[1].split("-")[0]}.pkg"
+  pkg "JDK #{version.minor} Update #{version.split('_')[1].split('-')[0]}.pkg"
 
   postflight do
     system_command '/usr/libexec/PlistBuddy',
