@@ -1,13 +1,13 @@
 cask 'java-beta' do
-  version '1.8.0_122-b04'
-  sha256 '01df7e767ede9bb17411c32dfd45349ae2bd6ca9d979b98e276294b9ad6eb6d6'
+  version '1.8.0_152-b02'
+  sha256 'a770c642f807f5f7f5f06598c2caef71611ee37a4ade976fdfab7ab15bfa7a15'
 
-  url 'http://download.java.net/java/jdk8u122/archive/b04/binaries/jdk-8u122-ea-bin-b04-macosx-x86_64-25_oct_2016.dmg',
+  url 'http://download.java.net/java/jdk8u152/archive/b02/binaries/jdk-8u152-ea-bin-b02-macosx-x86_64-27_mar_2017.dmg',
       cookies: { 'oraclelicense' => 'accept-securebackup-cookie' }
   name 'Java Standard Edition Development Kit'
   homepage 'https://jdk8.java.net/download.html'
 
-  pkg 'JDK 8 Update 122.pkg'
+  pkg "JDK #{version.minor} Update #{version.split("_")[1].split("-")[0]}.pkg"
 
   postflight do
     system_command '/usr/libexec/PlistBuddy',
