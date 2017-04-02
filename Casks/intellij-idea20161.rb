@@ -3,7 +3,7 @@ cask 'intellij-idea20161' do
   sha256 'c6ed2455cfeeb542c646e6a3d639d32e85ebe8ead87a0f3744dfa3c0a920e2f9'
 
   url "https://download.jetbrains.com/idea/ideaIU-#{version.before_comma}.dmg"
-  name 'IntelliJ IDEA Ultimate 2016.1.4'
+  name 'IntelliJ IDEA Ultimate'
   homepage 'https://www.jetbrains.com/idea/'
 
   auto_updates true
