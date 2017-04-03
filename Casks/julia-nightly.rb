@@ -5,7 +5,7 @@ cask 'julia-nightly' do
   # amazonaws.com/julianightlies was verified as official when first introduced to the cask
   url "https://s3.amazonaws.com/julianightlies/bin/osx/x64/#{version.sub(%r{(\d+\.\d+).*}, '\1')}/julia-#{version}-osx.dmg"
   name 'Julia'
-  homepage 'http://julialang.org/'
+  homepage 'https://julialang.org/'
 
   depends_on macos: '>= :lion'
 
