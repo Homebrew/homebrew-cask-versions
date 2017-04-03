@@ -7,7 +7,7 @@ cask 'firefoxdeveloperedition' do
   end
 
   language 'ja' do
-    sha256 '9edab5376f2aeca6f0279ee0e5069d427468d918d9eb41f4ee1d8f709a3c6f13'
+    sha256 'a3395260b5e88c5719ee72c8b8e69d4ae9fc15406e12514b1fb99de8eb75fff2'
     'ja-JP-mac'
   end
 
