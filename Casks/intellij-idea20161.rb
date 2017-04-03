@@ -1,4 +1,4 @@
-cask 'intellij-idea2016' do
+cask 'intellij-idea20161' do
   version '2016.1.4,145.2070'
   sha256 'c6ed2455cfeeb542c646e6a3d639d32e85ebe8ead87a0f3744dfa3c0a920e2f9'
 
