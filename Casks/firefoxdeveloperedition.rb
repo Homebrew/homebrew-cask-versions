@@ -2,7 +2,7 @@ cask 'firefoxdeveloperedition' do
   version '54.0a2'
 
   language 'en', default: true do
-    sha256 'b1df02574d0010913192a02d1299fe19585d05081b3431f1ddcba3918de9c7e7'
+    sha256 '8b7ab33655e388607f71267198f0f03de576dcc43f232231873fd8c2c224c649'
     'en-US'
   end
 
