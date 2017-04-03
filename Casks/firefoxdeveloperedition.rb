@@ -17,7 +17,7 @@ cask 'firefoxdeveloperedition' do
   end
 
   language 'uk' do
-    sha256 'e4724e560ee47b1792c89b65b4bc3684170ece5535046a4c71afef7bc0079f49'
+    sha256 '7a944a364b785058e760df52ad27d50ae4c70b4eee2cd32852f49ffdd55703e1'
     'uk'
   end
 
