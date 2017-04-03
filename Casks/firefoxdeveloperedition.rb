@@ -12,7 +12,7 @@ cask 'firefoxdeveloperedition' do
   end
 
   language 'ru' do
-    sha256 '6b0d5852a13d7281c74d0d696fe4506a1cab6ea83869b2959a09bae0e13ccdd2'
+    sha256 'c00bacb976dcd221eb06395993297db1f77aa97d09569d2378905d9b95e68a25'
     'ru'
   end
 
