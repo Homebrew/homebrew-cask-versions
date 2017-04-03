@@ -22,7 +22,7 @@ cask 'firefoxdeveloperedition' do
   end
 
   language 'zh-TW' do
-    sha256 '8d4f097b70623786d2ae53e7d055a4aa29249de01e3433d4b71e347e60921c53'
+    sha256 '1caf8635a2fd374491b9d4affc8eed31a5704f5d60fb74ce38476a637e176888'
     'zh-TW'
   end
 
