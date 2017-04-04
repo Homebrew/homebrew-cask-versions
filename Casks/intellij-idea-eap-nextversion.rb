@@ -10,7 +10,9 @@ cask 'intellij-idea-eap-nextversion' do
 
   app "IntelliJ IDEA #{version.before_comma} EAP.app"
 
-  uninstall delete: '/usr/local/bin/idea'
+  uninstall_postflight do
+    ENV['PATH'].split(File::PATH_SEPARATOR).map { |path| File.join(path, 'idea') }.each { |path| File.delete(path) if File.exist?(path) }
+  end
 
   zap delete: [
                 "~/Library/Application Support/IntelliJIdea#{version.major_minor}",

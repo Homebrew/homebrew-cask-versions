@@ -10,6 +10,10 @@ cask 'datagrip-eap' do
 
   app "DataGrip #{version.before_comma} EAP.app"
 
+  uninstall_postflight do
+    ENV['PATH'].split(File::PATH_SEPARATOR).map { |path| File.join(path, 'datagrip') }.each { |path| File.delete(path) if File.exist?(path) }
+  end
+
   zap delete: [
                 "~/Library/Application Support/DataGrip#{version.before_comma}",
                 "~/Library/Caches/DataGrip#{version.before_comma}",

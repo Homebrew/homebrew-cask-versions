@@ -11,7 +11,9 @@ cask 'intellij-idea-ce-eap' do
 
   app 'IntelliJ IDEA CE.app'
 
-  uninstall delete: '/usr/local/bin/idea'
+  uninstall_postflight do
+    ENV['PATH'].split(File::PATH_SEPARATOR).map { |path| File.join(path, 'idea') }.each { |path| File.delete(path) if File.exist?(path) }
+  end
 
   zap delete: [
                 "~/Library/Application Support/IdeaIC#{version.major_minor}",

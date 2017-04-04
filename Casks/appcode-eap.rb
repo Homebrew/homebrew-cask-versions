@@ -10,6 +10,10 @@ cask 'appcode-eap' do
 
   app "AppCode #{version.before_comma} EAP.app"
 
+  uninstall_postflight do
+    ENV['PATH'].split(File::PATH_SEPARATOR).map { |path| File.join(path, 'appcode') }.each { |path| File.delete(path) if File.exist?(path) }
+  end
+
   zap delete: [
                 "~/Library/Application Support/AppCode#{version.before_comma}",
                 '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.jetbrains.appcode-eap.sfl',

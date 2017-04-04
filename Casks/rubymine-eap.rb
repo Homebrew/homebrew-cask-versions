@@ -10,7 +10,9 @@ cask 'rubymine-eap' do
 
   app 'RubyMine EAP.app'
 
-  uninstall delete: '/usr/local/bin/mine'
+  uninstall_postflight do
+    ENV['PATH'].split(File::PATH_SEPARATOR).map { |path| File.join(path, 'mine') }.each { |path| File.delete(path) if File.exist?(path) }
+  end
 
   zap delete: [
                 "~/Library/Preferences/RubyMine#{version.major_minor}",
