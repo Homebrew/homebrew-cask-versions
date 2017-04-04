@@ -10,7 +10,9 @@ cask 'intellij-idea-eap' do
 
   app 'IntelliJ IDEA.app'
 
-  uninstall delete: '/usr/local/bin/idea'
+  uninstall_postflight do
+    ENV['PATH'].split(File::PATH_SEPARATOR).map { |path| File.join(path, 'idea') }.each { |path| File.delete(path) if File.exist?(path) }
+  end
 
   zap delete: [
                 "~/Library/Caches/IntelliJIdea#{version.major_minor}",

@@ -10,7 +10,9 @@ cask 'phpstorm-eap' do
 
   app "PhpStorm #{version.before_comma} EAP.app"
 
-  uninstall delete: '/usr/local/bin/pstorm'
+  uninstall_postflight do
+    ENV['PATH'].split(File::PATH_SEPARATOR).map { |path| File.join(path, 'pstorm') }.each { |path| File.delete(path) if File.exist?(path) }
+  end
 
   zap delete: [
                 "~/Library/Application Support/PhpStorm#{version.major_minor}",

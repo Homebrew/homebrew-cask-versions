@@ -10,6 +10,10 @@ cask 'clion-eap' do
 
   app 'CLion.app'
 
+  uninstall_postflight do
+    ENV['PATH'].split(File::PATH_SEPARATOR).map { |path| File.join(path, 'clion') }.each { |path| File.delete(path) if File.exist?(path) }
+  end
+
   zap delete: [
                 "~/Library/Application Support/CLion#{version.after_comma.major_minor}",
                 "~/Library/Caches/CLion#{version.after_comma.major_minor}",
