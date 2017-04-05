@@ -1,10 +1,10 @@
 cask 'royal-tsx-beta' do
-  version '3.1.4.1'
-  sha256 '56b166c0b5833f464203d391bbe0332bea1f192e9188e6d112958604e4d17b49'
+  version '3.1.4.2'
+  sha256 '1f6988982e3ba2154743ec94e9b1b9b7e8150be583bd2c391990133a9b733c46'
 
   url "https://royaltsx-v3.royalapplications.com/updates/royaltsx_#{version}.dmg"
   appcast 'https://royaltsx-v3.royalapplications.com/updates_beta.php',
-          checkpoint: '4ee67332e9d98ad0019094daac9574fbe13cacab88936040342c610e6428dcd3'
+          checkpoint: '150587b038a3f8d9f0ca3f7502255e7ca35ddb330a1de88f155b24af4cf1cd74'
   name 'Royal TSX'
   homepage 'https://www.royalapplications.com/ts/osx/features'
 
