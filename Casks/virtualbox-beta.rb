@@ -14,8 +14,6 @@ cask 'virtualbox-beta' do
   auto_updates true
 
   pkg 'VirtualBox.pkg'
-  binary '/Applications/VirtualBox.app/Contents/MacOS/VBoxManage'
-  binary '/Applications/VirtualBox.app/Contents/MacOS/VBoxHeadless'
 
   uninstall script:  {
                        executable: 'VirtualBox_Uninstall.tool',
