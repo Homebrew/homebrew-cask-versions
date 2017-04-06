@@ -1,6 +1,6 @@
 cask 'intellij-idea-eap-nextversion' do
-  version '2017.1.1,171.4073.17'
-  sha256 'cfed9056b542f33c3685fe9886e87b2977661fe10939a8521a555516739c76ca'
+  version '2017.1.1,171.4073.28'
+  sha256 '424190994adaf09ee5f9342eb7585cda7cc62ff84a40bf605778ff9f13a4680c'
 
   url "https://download.jetbrains.com/idea/ideaIU-#{version.after_comma}.dmg"
   name 'IntelliJ IDEA Ultimate next version EAP'
@@ -8,7 +8,7 @@ cask 'intellij-idea-eap-nextversion' do
 
   auto_updates true
 
-  app "IntelliJ IDEA #{version.before_comma} EAP.app"
+  app 'IntelliJ IDEA.app'
 
   uninstall_postflight do
     ENV['PATH'].split(File::PATH_SEPARATOR).map { |path| File.join(path, 'idea') }.each { |path| File.delete(path) if File.exist?(path) }
