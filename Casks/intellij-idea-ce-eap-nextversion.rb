@@ -1,6 +1,6 @@
 cask 'intellij-idea-ce-eap-nextversion' do
-  version '2017.1.1,171.4073.17'
-  sha256 '26405e7e4755f4387d6707f1f6047497fa3885df1cc1b4d03be82847c73317f1'
+  version '2017.1.1,171.4073.28'
+  sha256 'c895688e9e65dd02376fbc1a875d509f202bd40c6da4e7e899e3084e59ebe28c'
 
   url "https://download.jetbrains.com/idea/ideaIC-#{version.after_comma}.dmg"
   name 'IntelliJ IDEA Community Edition next version EAP'
@@ -8,7 +8,7 @@ cask 'intellij-idea-ce-eap-nextversion' do
 
   auto_updates true
 
-  app 'IntelliJ IDEA #{version.before_comma} CE EAP.app'
+  app 'IntelliJ IDEA CE.app'
 
   uninstall_postflight do
     ENV['PATH'].split(File::PATH_SEPARATOR).map { |path| File.join(path, 'idea') }.each { |path| File.delete(path) if File.exist?(path) }
