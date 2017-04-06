@@ -8,7 +8,7 @@ cask 'datagrip-eap' do
 
   conflicts_with cask: 'datagrip'
 
-  app "DataGrip #{version.before_comma} EAP.app"
+  app 'DataGrip.app'
 
   uninstall_postflight do
     ENV['PATH'].split(File::PATH_SEPARATOR).map { |path| File.join(path, 'datagrip') }.each { |path| File.delete(path) if File.exist?(path) }
