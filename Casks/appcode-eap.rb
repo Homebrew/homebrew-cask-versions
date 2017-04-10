@@ -1,6 +1,6 @@
 cask 'appcode-eap' do
-  version '2017.1,171.2822.6'
-  sha256 'd0f21e7e6cc7d2353653e88dc12c94c7ef2895fa24dcd05a6136d49d0347c824'
+  version '2017.1.1,171.4073.29'
+  sha256 '53969819f0b195edd5c3aa8da521afdf2d6dff59caf38dbf704a79e747352a51'
 
   url "https://download.jetbrains.com/objc/AppCode-#{version.after_comma}.dmg"
   name 'AppCode EAP'
@@ -15,11 +15,11 @@ cask 'appcode-eap' do
   end
 
   zap delete: [
-                "~/Library/Application Support/AppCode#{version.before_comma}",
+                "~/Library/Application Support/AppCode#{version.major_minor}",
                 '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.jetbrains.appcode-eap.sfl',
-                "~/Library/Caches/AppCode#{version.before_comma}",
-                "~/Library/Logs/AppCode#{version.before_comma}",
-                "~/Library/Preferences/AppCode#{version.before_comma}",
+                "~/Library/Caches/AppCode#{version.major_minor}",
+                "~/Library/Logs/AppCode#{version.major_minor}",
+                "~/Library/Preferences/AppCode#{version.major_minor}",
                 '~/Library/Preferences/com.jetbrains.AppCode-EAP.plist',
                 '~/Library/Saved Application State/com.jetbrains.AppCode-EAP.savedState',
               ]
