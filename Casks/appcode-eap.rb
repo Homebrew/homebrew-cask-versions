@@ -15,11 +15,11 @@ cask 'appcode-eap' do
   end
 
   zap delete: [
-                "~/Library/Application Support/AppCode#{version.before_comma}",
+                "~/Library/Application Support/AppCode#{version.major_minor}",
                 '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.jetbrains.appcode-eap.sfl',
-                "~/Library/Caches/AppCode#{version.before_comma}",
-                "~/Library/Logs/AppCode#{version.before_comma}",
-                "~/Library/Preferences/AppCode#{version.before_comma}",
+                "~/Library/Caches/AppCode#{version.major_minor}",
+                "~/Library/Logs/AppCode#{version.major_minor}",
+                "~/Library/Preferences/AppCode#{version.major_minor}",
                 '~/Library/Preferences/com.jetbrains.AppCode-EAP.plist',
                 '~/Library/Saved Application State/com.jetbrains.AppCode-EAP.savedState',
               ]
