@@ -9,8 +9,10 @@ cask 'anaconda2' do
   depends_on macos: '>= :lion'
   container type: :naked
 
-  installer script: "Anaconda2-#{version}-MacOSX-x86_64.sh",
-            args:   ['-b']
+  installer script: {
+                      executable: "Anaconda2-#{version}-MacOSX-x86_64.sh",
+                      args:       ['-b'],
+                    }
 
   preflight do
     set_permissions "#{staged_path}/Anaconda2-#{version}-MacOSX-x86_64.sh", '+x'
