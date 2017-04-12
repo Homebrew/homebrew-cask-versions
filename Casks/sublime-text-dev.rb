@@ -4,7 +4,7 @@ cask 'sublime-text-dev' do
 
   url "https://download.sublimetext.com/Sublime%20Text%20Build%20#{version}.dmg"
   appcast 'https://www.sublimetext.com/updates/3/dev/appcast_osx.xml',
-          checkpoint: '37a168bb4f145c484d66ec49c91790ba57cf8952ec4ae093d207eeb6aeb2bb93'
+          checkpoint: '882a5cd3f8a25ec79679548a2786a47f9380d1a14649693be8b93217dc76ad11'
   name 'Sublime Text'
   homepage 'https://www.sublimetext.com/3dev'
 
