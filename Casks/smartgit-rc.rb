@@ -1,8 +1,8 @@
 cask 'smartgit-rc' do
-  version '8-rc-1'
-  sha256 '43b9e2d125ddc583464a66e4f07a9ebd47d4422460f0c0f3e178f59e2678c8a7'
+  version '17.1-preview-6'
+  sha256 '3281cc8cb49de85d4312727f25c15605176ef2e3d3a7581d98d191169f79ebfb'
 
-  url "https://www.syntevo.com/downloads/smartgit/smartgit-macosx-#{version}.dmg"
+  url "https://www.syntevo.com/static/smart/download/smartgit/smartgit-macosx-#{version}.dmg"
   name 'SmartGit'
   homepage 'https://www.syntevo.com/smartgit/'
 
