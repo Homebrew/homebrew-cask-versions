@@ -1,6 +1,6 @@
 cask 'rubymine-eap' do
-  version '2017.1,171.3019.14'
-  sha256 'ff632a5f305e9954ee8b60e666b2ea551b6c46af8f2a584d950b79aed9e2200f'
+  version '2017.1.2,171.4249.6'
+  sha256 '325c4f854d188c7f2cdf079a4a5c90b49841287e451301cec713c34ba183ee11'
 
   url "https://download.jetbrains.com/ruby/RubyMine-#{version.after_comma}.dmg"
   name 'RubyMine EAP'
