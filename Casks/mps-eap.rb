@@ -1,10 +1,10 @@
 cask 'mps-eap' do
-  version '3.4-Preview'
-  sha256 '9973c8a8551ef8c607b47ea18927a6e76c445aaf7aa18d312043c936b7b04d8c'
+  version '3.4.4'
+  sha256 '068cad86ae8fa40674e3b663328587b466a4c3a0560b0789746e77953260030e'
 
   url "http://download.jetbrains.com/mps/#{version.major_minor.no_dots}/MPS-#{version}-macos-jdk-bundled.dmg"
   name 'JetBrains MPS EAP'
-  homepage 'https://confluence.jetbrains.com/display/MPS/JetBrains+MPS+3.4+EAP+Download+Page'
+  homepage 'https://confluence.jetbrains.com/display/MPS/JetBrains+MPS+3.4+Download+Page'
 
   conflicts_with cask: 'mps'
 
