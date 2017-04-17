@@ -11,8 +11,10 @@ cask 'adobe-photoshop-cs6' do
   name 'Adobe Photoshop CS6' # name must match directory in dmg for later reference
   homepage 'https://helpx.adobe.com/x-productkb/policy-pricing/cs6-product-downloads.html'
 
-  installer script: "#{staged_path}/#{name.join}/Install.app/Contents/MacOS/Install",
-            args:   ['--mode=silent', "--deploymentFile=#{staged_path}/#{name.join}/Deployment/en_US_Deployment.xml"]
+  installer script: {
+                      executable: "#{staged_path}/#{name.join}/Install.app/Contents/MacOS/Install",
+                      args:       ['--mode=silent', "--deploymentFile=#{staged_path}/#{name.join}/Deployment/en_US_Deployment.xml"],
+                    }
 
   preflight do
     system_command '/usr/bin/killall',
