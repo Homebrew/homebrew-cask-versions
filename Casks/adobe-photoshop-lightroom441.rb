@@ -9,8 +9,7 @@ cask 'adobe-photoshop-lightroom441' do
   pkg "Adobe Photoshop Lightroom #{version.major}.pkg", allow_untrusted: true
 
   uninstall pkgutil: "com.adobe.Lightroom#{version.major}",
-            quit:    "com.adobe.Lightroom#{version.major}",
-            delete:  "/Applications/Adobe Photoshop Lightroom #{version.major}.app"
+            quit:    "com.adobe.Lightroom#{version.major}"
 
   zap       delete: [
                       '~/Library/Application Support/Adobe/Lightroom',
