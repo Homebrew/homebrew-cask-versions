@@ -1,11 +1,11 @@
 cask 'electron-beta' do
-  version '1.6.6'
-  sha256 'c464773064ff706f02039aafda251f28678943c99bdc5f5a82d553317c14e4c2'
+  version '1.6.7'
+  sha256 'e52f45787a9046a589815a9726c2e3a2b440de11cebe851c678b179f0107172d'
 
   # github.com/electron/electron was verified as official when first introduced to the cask
   url "https://github.com/electron/electron/releases/download/v#{version}/electron-v#{version}-darwin-x64.zip"
   appcast 'https://github.com/electron/electron/releases.atom',
-          checkpoint: 'd0f3af25be0d6fa480d1d7f0801f7f7eaca632521f24c5339c767180b133b7a3'
+          checkpoint: 'e56438a8ed14c1ed15b4f5780d4fd6ea80f7a791edb8159d1e11aa67debde192'
   name 'Electron'
   homepage 'https://electron.atom.io/'
 
