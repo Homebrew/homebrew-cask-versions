@@ -1,8 +1,8 @@
 cask 'virtualbox-extension-pack-beta' do
-  version '5.1.10,112026'
-  sha256 '3982657fd4853bcbc79b9162e618545a479b65aca08e9ced43a904aeeba3ffa5'
+  version '5.1.21-114648'
+  sha256 '1ad585d8ca2d36bbe029c7f9b9b23db1aec1b1f7b5cbecd0329b2b786a07d5f4'
 
-  url "http://download.virtualbox.org/virtualbox/#{version.before_comma}/Oracle_VM_VirtualBox_Extension_Pack-#{version.before_comma}-#{version.after_comma}.vbox-extpack"
+  url "https://www.virtualbox.org/download/testcase/Oracle_VM_VirtualBox_Extension_Pack-#{version}.vbox-extpack"
   name 'Oracle VirtualBox Extension Pack'
   homepage 'https://www.virtualbox.org/'
 
@@ -15,7 +15,8 @@ cask 'virtualbox-extension-pack-beta' do
     system_command '/usr/local/bin/VBoxManage',
                    args: [
                            'extpack', 'install',
-                           '--replace', "#{staged_path}/Oracle_VM_VirtualBox_Extension_Pack-#{version.before_comma}-#{version.after_comma}.vbox-extpack"
+                           '--replace', "#{staged_path}/Oracle_VM_VirtualBox_Extension_Pack-#{version}.vbox-extpack",
+                           '--accept-license=715c7246dc0f779ceab39446812362b2f9bf64a55ed5d3a905f053cfab36da9e'
                          ],
                    sudo: true
   end
@@ -28,4 +29,11 @@ cask 'virtualbox-extension-pack-beta' do
                          ],
                    sudo: true
   end
+
+  caveats <<-EOS.undent
+    Installing this Cask means you have AGREED to the
+    VirtualBox Personal Use and Evaluation License at
+
+    https://www.virtualbox.org/wiki/VirtualBox_PUEL
+  EOS
 end
