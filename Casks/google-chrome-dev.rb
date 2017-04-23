@@ -6,7 +6,7 @@ cask 'google-chrome-dev' do
   name 'Google Chrome'
   homepage 'https://www.google.com/chrome/browser/desktop/index.html?extra=devchannel'
 
-  app 'Google Chrome.app'
+  app 'Google Chrome.app', target: 'Google Chrome Dev.app'
 
   zap delete: [
                 '~/Library/Application Support/Google/Chrome',
