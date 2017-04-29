@@ -1,8 +1,11 @@
 cask 'webkit-nightly' do
-  version 'r215681'
-  sha256 'd82105c3f7a441fc9658657b292abfe7818ff55a161a27e6e29d66cc997b9ba4'
+  version :latest
+  sha256 :no_check
 
-  url "https://builds-nightly.webkit.org/files/trunk/mac/WebKit-SVN-#{version}.dmg"
+  url do
+    require 'open-uri'
+    open('https://webkit.org/downloads/') { |landing_page| landing_page.read[%r{https:\/\/builds-nightly.webkit.org\/files\/trunk\/mac\/WebKit-SVN-r\d+.dmg}] }
+  end
   name 'WebKit Nightly'
   homepage 'https://webkit.org/downloads/'
 
