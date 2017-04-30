@@ -4,7 +4,7 @@ cask 'cuda-z-beta' do
 
   url "https://downloads.sourceforge.net/cuda-z/cuda-z/Beta/CUDA-Z-#{version}.dmg"
   appcast 'https://sourceforge.net/projects/cuda-z/rss?path=/cuda-z/Beta',
-          checkpoint: '64c18ee82db789664bc5aefe2981c8f5672bf656a4ca8d6497a91d7c36ad5f1c'
+          checkpoint: '2d7e1dd741e732c3a1f71d578db2871e4c9f0f7638e12bbf44469ca970d94aba'
   name 'CUDA-Z'
   homepage 'http://cuda-z.sourceforge.net/'
 
