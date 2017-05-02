@@ -1,6 +1,6 @@
 cask 'wine-staging' do
-  version '2.6'
-  sha256 'cf173740eba6725ee8fd56dac8c2e0abb2212887bfabc4216a454ae519b337b4'
+  version '2.7'
+  sha256 '769fbefbbc73c10d267946d0703cfff1ff95b0405f77713c6e30b86db3ca19d9'
 
   # dl.winehq.org/wine-builds/macosx was verified as official when first introduced to the cask
   url "https://dl.winehq.org/wine-builds/macosx/pool/winehq-staging-#{version}.pkg"
