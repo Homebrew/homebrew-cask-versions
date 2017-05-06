@@ -47,7 +47,7 @@ cask 'firefox-beta' do
   end
 
   language 'pt' do
-    sha256 'ea7f546e26439a255c5d1566a8f2f8ca6f82b2665a09628e031dee17104c3c19'
+    sha256 '5825fdacd63c6e38452366238408de1f968ee5fb6e62a19d9e705c27fa03c43d'
     'pt-PT'
   end
 
