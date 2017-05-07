@@ -4,7 +4,7 @@ cask 'emacs-pretest' do
 
   url "https://emacsformacosx.com/emacs-builds/Emacs-pretest-#{version}-universal.dmg"
   appcast 'https://emacsformacosx.com/atom/pretest',
-          checkpoint: 'ecd9fa682e6f59e932c2a7c3c94d48c81719ec700ef110de27499d569bf1e4bc'
+          checkpoint: 'ea71786763eedb4198a155cc3f0c7728f0757ea8dc3473c6494d7e8b99ec2ff8'
   name 'Emacs'
   homepage 'https://emacsformacosx.com/'
 
