@@ -4,7 +4,7 @@ cask 'iterm2-nightly' do
 
   url 'https://www.iterm2.com/nightly/latest'
   appcast 'https://iterm2.com/appcasts/nightly.xml',
-          checkpoint: '083908c06413f4aa9b12aa9945049401bf56e48e8755849c6a20d6b3288382f1'
+          checkpoint: '6bff955a041286a2564081923aee7da96064dede5d4a285cf09f5bf85481a6b0'
   name 'iTerm2'
   homepage 'https://www.iterm2.com/'
 
