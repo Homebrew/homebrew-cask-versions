@@ -5,7 +5,7 @@ cask 'libreoffice-dev' do
   # documentfoundation.org/libreoffice was verified as official when first introduced to the cask
   url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg"
   appcast 'https://download.documentfoundation.org/libreoffice/testing/',
-          checkpoint: '6ae229d1295dc90dc7210581619afee15922ff0b26c04ccdae768de3a8bf0880'
+          checkpoint: 'b620768fa6c590b77b62c28af8148cd2bed3a55b55eb1daf2bdb93b9acbf69e8'
   name 'LibreOffice Fresh Prerelease'
   homepage 'https://www.libreoffice.org/download/pre-releases/'
   gpg "#{url}.asc", key_id: 'c2839ecad9408fbe9531c3e9f434a1efafeeaea3'
