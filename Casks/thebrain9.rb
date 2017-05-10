@@ -4,7 +4,7 @@ cask 'thebrain9' do
 
   url "http://updater.thebrain.com/files/TheBrain#{version}.dmg"
   name 'TheBrain 9'
-  homepage 'https://www.thebrain.com/products/thebrain/thebrain9/'
+  homepage 'https://www.thebrain.com/index.php/products/thebrain/thebrain9/'
 
   app 'TheBrain 9.app'
 end
