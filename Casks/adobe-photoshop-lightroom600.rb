@@ -13,8 +13,12 @@ cask 'adobe-photoshop-lightroom600' do
   # and https://github.com/caskroom/homebrew-versions/pull/296
 
   preflight do
-    system_command '/usr/bin/killall',
-                   args: ['-kill', 'SafariNotificationAgent']
+    processes = system_command '/bin/launchctl', args: ['list']
+
+    if processes.stdout.lines.any? { |line| line =~ %r{^\d+\t\d\tcom.apple.SafariNotificationAgent$} }
+      system_command '/usr/bin/killall', args: ['-kill', 'SafariNotificationAgent']
+    end
+
     system_command "#{staged_path}/Install.app/Contents/MacOS/Install",
                    args: [
                            '--mode=silent', "--deploymentFile=#{staged_path}/deploy/AdobeLightroom6.install.xml"
@@ -23,8 +27,12 @@ cask 'adobe-photoshop-lightroom600' do
   end
 
   uninstall_preflight do
-    system_command '/usr/bin/killall',
-                   args: ['-kill', 'SafariNotificationAgent']
+    processes = system_command '/bin/launchctl', args: ['list']
+
+    if processes.stdout.lines.any? { |line| line =~ %r{^\d+\t\d\tcom.apple.SafariNotificationAgent$} }
+      system_command '/usr/bin/killall', args: ['-kill', 'SafariNotificationAgent']
+    end
+
     system_command "#{staged_path}/Install.app/Contents/MacOS/Install",
                    args: [
                            '--mode=silent', "--deploymentFile=#{staged_path}/deploy/AdobeLightroom6.remove.xml"
