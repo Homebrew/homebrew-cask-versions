@@ -10,4 +10,6 @@ cask 'airmail-beta' do
   homepage 'http://airmailapp.com/beta/'
 
   app 'Airmail Beta.app'
+
+  uninstall quit: 'it.bloop.airmail.beta11'
 end
