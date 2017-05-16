@@ -1,6 +1,6 @@
 cask 'kodi-development' do
-  version '20170418-5066f8f'
-  sha256 '989c6373ec99089d5a779411b64ecba652bff0a5ce8ee7ac20fc0c1445c31e7e'
+  version '20170514-a5f9821'
+  sha256 '97e0d447a7f645d7c19c3020a0fa6a1b0c60c38a7843fb83f28227b8f62a83b4'
 
   url "http://mirrors.kodi.tv/nightlies/osx/x86_64/Krypton/kodi-#{version}-Krypton-x86_64.dmg"
   name 'Kodi-Development'
