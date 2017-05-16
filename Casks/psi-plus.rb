@@ -5,7 +5,7 @@ cask 'psi-plus' do
   # downloads.sourceforge.net/psiplus/Mac-OS-X was verified as official when first introduced to the cask
   url "https://downloads.sourceforge.net/psiplus/Mac-OS-X/psi-plus-#{version.before_comma}-qt4-git-#{version.after_comma}-macosx.dmg"
   appcast 'https://sourceforge.net/projects/psiplus/rss',
-          checkpoint: 'c2997be42f402406e09df8a5bae045270400021852728c0cb2b6d8d119dfc0e8'
+          checkpoint: 'cbb2a4e79bc5f69cdc71918d4d90a8764c89f9ef9c1c07a942e181a77fdbcdb5'
   name 'Psi+'
   homepage 'http://psi-plus.com/'
 
