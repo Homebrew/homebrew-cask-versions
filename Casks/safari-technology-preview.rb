@@ -1,8 +1,8 @@
 cask 'safari-technology-preview' do
-  version '29'
-  sha256 'e352cbaa00841ffc0c7492a7d11d68a5dbc4b3c629442e72f0cc71d3a179de63'
+  version '30'
+  sha256 '11c5d782f72691a3dfb2d0b328879ec91c2d3a213587ba11ae31488a3ce10476'
 
-  url 'https://secure-appldnld.apple.com/STP/091-11341-20170503-44C314F0-2EDB-11E7-93E6-8F282DBC0DB3/SafariTechnologyPreview.dmg'
+  url 'https://secure-appldnld.apple.com/STP/091-12487-20170517-F2084E30-3A6D-11E7-B9EB-EBFD26FD6CB5/SafariTechnologyPreview.dmg'
   name 'Safari Technology Preview'
   homepage 'https://developer.apple.com/safari/download/'
 
