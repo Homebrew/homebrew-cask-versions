@@ -2,6 +2,10 @@ cask 'firefoxdeveloperedition' do
   version :latest
   sha256 :no_check
 
+  language 'de' do
+    'de'
+  end
+
   language 'en', default: true do
     'en-US'
   end
@@ -24,10 +28,6 @@ cask 'firefoxdeveloperedition' do
 
   language 'zh' do
     'zh-CN'
-  end
-
-  language 'de' do
-    'de'
   end
 
   url "https://download.mozilla.org/?product=firefox-aurora-latest-#{language == 'en-US' ? 'ssl' : 'l10n'}&os=osx&lang=#{language}"
