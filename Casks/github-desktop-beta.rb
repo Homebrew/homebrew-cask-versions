@@ -4,7 +4,7 @@ cask 'github-desktop-beta' do
 
   url 'https://central.github.com/deployments/desktop/desktop/latest/darwin'
   appcast 'https://github.com/desktop/desktop/releases.atom',
-          checkpoint: '003d5f31f2038dccab13d83f8ed48db8f4c9fd328e440d37e99b25724ee025bb'
+          checkpoint: 'ff14e8b0b38c303c01fe78a334f1345f582555c14c610cc527bacbd1e2712751'
   name 'GitHub Desktop'
   homepage 'https://desktop.github.com/'
 
