@@ -6,7 +6,7 @@ cask 'pgadmin3' do
   # ftp.postgresql.org/pub/pgadmin/pgadmin3 was verified as official when first introduced to the cask
   url "https://ftp.postgresql.org/pub/pgadmin/pgadmin3/v#{version}/osx/pgadmin3-#{version}.dmg"
   name 'pgAdmin'
-  homepage 'https://pgadmin.org/'
+  homepage 'https://www.pgadmin.org/'
   gpg "#{url}.sig",
       key_id: 'e0c4ceeb826b1fda4fb468e024adfaaf698f1519'
 
