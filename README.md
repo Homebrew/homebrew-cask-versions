@@ -19,7 +19,7 @@ $ brew cask install iterm2-beta
 
 ## Acceptable Casks
 
-[Similarly to `homebrew-versions`](https://github.com/Homebrew/homebrew-versions#acceptable-formulae), `caskroom/versions` is not intended to be used for all and any old versions you personally require for xyz project; casks submitted here should be expected to be used by a reasonable number of people and supported by contributors long-term.
+`caskroom/versions` is not intended to be used for all and any old versions you personally require for xyz project; casks submitted here should be expected to be used by a reasonable number of people and supported by contributors long-term.
 
 You may wish to consider hosting your own [tap](https://github.com/Homebrew/brew/blob/master/docs/How-to-Create-and-Maintain-a-Tap.md) for casks you wish to personally support that do not meet the above standards.
 
