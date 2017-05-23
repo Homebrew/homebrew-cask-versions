@@ -8,9 +8,29 @@ cask 'lilypond-dev' do
   homepage 'http://lilypond.org/'
 
   app 'LilyPond.app'
-  binary "#{appdir}/LilyPond.app/Contents/Resources/bin/lilypond"
-  binary "#{appdir}/LilyPond.app/Contents/Resources/bin/lilypond-book"
-  binary "#{appdir}/LilyPond.app/Contents/Resources/bin/convert-ly"
+
+  binaries = %w[
+               abc2ly
+               convert-ly
+               lilypond
+               lilypond-book
+               musicxml2ly
+             ]
+
+  binaries.each do |shimscript|
+    binary "#{staged_path}/#{shimscript}.wrapper.sh", target: shimscript
+  end
+
+  preflight do
+    binaries.each do |shimscript|
+      # shim script (https://github.com/caskroom/homebrew-cask/issues/18809)
+      IO.write "#{staged_path}/#{shimscript}.wrapper.sh", <<-EOS.undent
+          #!/bin/sh
+          exec '#{appdir}/LilyPond.app/Contents/Resources/bin/#{shimscript}' "$@"
+        EOS
+      set_permissions shimscript, '+x'
+    end
+  end
 
   zap delete: [
                 '~/Library/Preferences/org.lilypond.lilypond.plist',
