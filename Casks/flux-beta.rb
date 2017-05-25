@@ -13,10 +13,6 @@ cask 'flux-beta' do
 
   app 'Flux.app'
 
-  postflight do
-    suppress_move_to_applications
-  end
-
   uninstall login_item: 'Flux'
 
   zap delete: [

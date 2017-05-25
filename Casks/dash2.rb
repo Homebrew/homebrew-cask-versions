@@ -8,10 +8,6 @@ cask 'dash2' do
 
   app 'Dash.app'
 
-  postflight do
-    suppress_move_to_applications
-  end
-
   zap delete: [
                 '~/Library/Application Support/Dash',
                 '~/Library/Preferences/com.kapeli.dash.plist',

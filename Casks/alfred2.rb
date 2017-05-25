@@ -11,10 +11,6 @@ cask 'alfred2' do
 
   app 'Alfred 2.app'
 
-  postflight do
-    suppress_move_to_applications key: 'suppressMoveToApplications'
-  end
-
   uninstall quit:       'com.runningwithcrayons.Alfred-2',
             login_item: 'Alfred 2'
 
