@@ -15,10 +15,6 @@ cask 'sourcetree-beta' do
   app 'SourceTree-Beta.app'
   binary "#{appdir}/SourceTree-Beta.app/Contents/Resources/stree"
 
-  postflight do
-    suppress_move_to_applications
-  end
-
   uninstall launchctl: 'com.atlassian.SourceTreePrivilegedHelper2',
             quit:      'com.torusknot.SourceTreeNotMAS'
 

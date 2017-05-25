@@ -28,7 +28,6 @@ cask 'lilypond-dev' do
           #!/bin/sh
           exec '#{appdir}/LilyPond.app/Contents/Resources/bin/#{shimscript}' "$@"
         EOS
-      set_permissions shimscript, '+x'
     end
   end
 
