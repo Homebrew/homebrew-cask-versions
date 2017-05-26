@@ -1,8 +1,8 @@
 cask 'java-beta' do
-  version '1.8.0_152-b03'
-  sha256 'ed7c452d39a8bd1e2e7d316e72b5fda6d8558410b18b6ecfa1a5e347e058ad7a'
+  version '1.8.0_152-b04'
+  sha256 '5b7ed91e8cd5f851c2364baf3a2982467d4368624221ab5587c685c0163d9b73'
 
-  url 'http://download.java.net/java/jdk8u152/archive/b03/binaries/jdk-8u152-ea-bin-b03-macosx-x86_64-19_apr_2017.dmg',
+  url 'http://download.java.net/java/jdk8u152/archive/b04/binaries/jdk-8u152-ea-bin-b04-macosx-x86_64-16_may_2017.dmg',
       cookies: { 'oraclelicense' => 'accept-securebackup-cookie' }
   name 'Java Standard Edition Development Kit'
   homepage 'http://jdk.java.net/8/'
