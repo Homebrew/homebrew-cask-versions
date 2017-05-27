@@ -4,7 +4,7 @@ cask 'flash-ppapi-beta' do
 
   # macromedia.com was verified as official when first introduced to the cask
   url 'https://fpdownload.macromedia.com/pub/labs/flashruntimes/flashplayer/install_flash_player_osx_ppapi.dmg'
-  name 'Adobe Flash Player PPAPI (for Opera and Chromium based application)'
+  name 'Adobe Flash Player PPAPI (plugin for Opera and Chromium)'
   homepage 'http://labs.adobe.com/technologies/flashruntimes/flashplayer/'
 
   pkg 'Install Adobe Pepper Flash Player.app/Contents/Resources/Adobe Flash Player.pkg'
