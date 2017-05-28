@@ -9,6 +9,8 @@ cask 'jabref-beta' do
   name 'JabRef Beta'
   homepage 'https://www.jabref.org/'
 
+  conflicts_with cask: 'jabref'
+
   installer script: {
                       executable: 'JabRef Installer.app/Contents/MacOS/JavaApplicationStub',
                       args:       [
