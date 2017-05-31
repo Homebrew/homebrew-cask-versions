@@ -4,7 +4,7 @@ cask 'xamarin-studio-preview' do
 
   url "http://download.xamarin.com/roslyn-preview/XamarinStudio-#{version}.dmg"
   appcast 'https://xampubdl.blob.core.windows.net/static/installer_assets/v3/Mac/Universal/InstallationManifest.xml',
-          checkpoint: '477c85901ee0146c2f34467c8cfc1f3a94bcb96c5467bb8b5cfc1ed765b3676e'
+          checkpoint: '08fef545d50bd40a08d194b082bba6752cb27453d3381fd4c0504bdf18dd6ab2'
   name 'Xamarin Studio Preview'
   homepage 'https://www.xamarin.com/visual-studio-for-mac'
 
