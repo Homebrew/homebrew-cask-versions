@@ -1,6 +1,6 @@
 cask 'virtualbox-beta' do
-  version '5.1.23-115855'
-  sha256 '671c7dfc8f5e74c1f279b39e55ec928253d2a23370542db800c1adf958e43d87'
+  version '5.1.23-115901'
+  sha256 'e72b0ff3c0dbf88edc1f83273d5f7a75a25a95904c93607f2c9f2ce8ac27c18d'
 
   url "https://www.virtualbox.org/download/testcase/VirtualBox-#{version}-OSX.dmg"
   name 'Oracle VirtualBox'
