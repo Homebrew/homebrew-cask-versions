@@ -2,6 +2,10 @@ cask 'firefoxnightly' do
   version '55.0a1'
   sha256 :no_check # required as upstream package is updated in-place
 
+  language 'cs' do
+    'cs'
+  end
+
   language 'en', default: true do
     'en-US'
   end
@@ -20,7 +24,7 @@ cask 'firefoxnightly' do
 
   url "https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central#{language == 'en-US' ? '' : '-l10n'}/firefox-#{version}.#{language}.mac.dmg"
   name 'Mozilla Firefox'
-  homepage 'https://www.mozilla.org/en-US/firefox/channel/desktop/'
+  homepage 'https://www.mozilla.org/firefox/channel/desktop/#nightly'
 
   app 'FirefoxNightly.app'
 
