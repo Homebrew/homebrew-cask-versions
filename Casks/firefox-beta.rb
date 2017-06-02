@@ -1,6 +1,11 @@
 cask 'firefox-beta' do
   version '54.0b6'
 
+  language 'cs' do
+    sha256 '5bcd5ece0ac1923693a49771bfa8fa8ed7d32a41756b45338ab5e9a067014b3a'
+    'cs'
+  end
+
   language 'de' do
     sha256 '5777e9049438185f3a8dbb8fd7db3c79275d4b40dc090e483e43368d2ff1c177'
     'de'
@@ -72,7 +77,7 @@ cask 'firefox-beta' do
 
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=#{language}"
   name 'Mozilla Firefox'
-  homepage 'https://www.mozilla.org/firefox/channel/#beta'
+  homepage 'https://www.mozilla.org/firefox/channel/desktop/#beta'
 
   auto_updates true
 

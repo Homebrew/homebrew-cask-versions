@@ -1,6 +1,11 @@
 cask 'firefox-esr' do
   version '52.1.0'
 
+  language 'cs' do
+    sha256 'baedabffbfdcef9d3cf08d1971a7b1c83293345f74130d64af32202de9bf6e97'
+    'cs'
+  end
+
   language 'de' do
     sha256 'd59a72100c1bd6339f3bbc40fe211f0a9a3fc16e9b1b51c067885f7c3c247e1c'
     'de'
