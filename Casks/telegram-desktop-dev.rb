@@ -7,7 +7,6 @@ cask 'telegram-desktop-dev' do
   name 'Telegram'
   homepage 'https://desktop.telegram.org/'
 
-  auto_updates true
   conflicts_with cask: 'telegram-desktop'
   depends_on macos: '>= :mountain_lion'
 
