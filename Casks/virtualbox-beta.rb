@@ -10,6 +10,12 @@ cask 'virtualbox-beta' do
 
   pkg 'VirtualBox.pkg'
 
+  uninstall_preflight do
+    if File.exist?("#{HOMEBREW_PREFIX}/Caskroom/virtualbox-extension-pack-beta")
+      system_command 'brew', args: ['cask', 'uninstall', 'virtualbox-extension-pack-beta']
+    end
+  end
+
   uninstall script:  {
                        executable: 'VirtualBox_Uninstall.tool',
                        args:       %w[--unattended],
