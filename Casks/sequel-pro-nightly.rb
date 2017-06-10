@@ -1,8 +1,13 @@
 cask 'sequel-pro-nightly' do
-  version 'baa9d677f2'
-  sha256 '8d64c512b737642eea0383f2c83f48e5c877babfade0e7bf78048a653e79bf9b'
+  version :latest
+  sha256 :no_check
 
-  url "https://sequelpro.com/builds/Sequel-Pro-Build-#{version}.zip"
+  url do
+    require 'open-uri'
+    open('https://sequelpro.com/test-builds') do |page|
+      page.read[%r{https:\/\/sequelpro.com\/builds\/Sequel-Pro-Build-\w+.zip}]
+    end
+  end
   name 'Sequel Pro'
   homepage 'https://sequelpro.com/test-builds'
 
