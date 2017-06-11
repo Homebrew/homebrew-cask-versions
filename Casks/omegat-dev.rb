@@ -7,7 +7,7 @@ cask 'omegat-dev' do
   appcast 'https://sourceforge.net/projects/omegat/rss?path=/OmegaT%20-%20Latest',
           checkpoint: '7775eec68c7ea509552572bd1304925c654554cac557ee3d0ea5b3cba6522a0e'
   name 'OmegaT Development'
-  homepage 'http://www.omegat.org/'
+  homepage 'https://omegat.org/'
 
   app "OmegaT_#{version}_Beta_Mac_Signed/OmegaT.app"
 
