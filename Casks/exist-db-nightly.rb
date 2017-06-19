@@ -13,7 +13,7 @@ cask 'exist-db-nightly' do
     "#{base_url}/#{latest_build_filename}"
   end
   name 'eXist-db'
-  homepage 'http://exist-db.org/exist/apps/homepage/index.html'
+  homepage 'https://exist-db.org/exist/apps/homepage/index.html'
 
   app 'eXist-db.app'
 end
