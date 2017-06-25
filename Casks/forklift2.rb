@@ -6,6 +6,8 @@ cask 'forklift2' do
   name 'ForkLift'
   homepage 'https://www.binarynights.com/'
 
+  conflicts_with cask: 'forklift'
+
   app 'ForkLift.app'
 
   zap delete: [
