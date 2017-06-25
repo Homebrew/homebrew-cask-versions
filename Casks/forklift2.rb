@@ -11,7 +11,7 @@ cask 'forklift2' do
   app 'ForkLift.app'
 
   zap delete: [
-                '~/Library/Preferences/com.binarynights.ForkLift2.plist',
-                '~/Library/Caches/com.binarynights.ForkLift2',
+                "~/Library/Preferences/com.binarynights.ForkLift#{version.major}.plist",
+                "~/Library/Caches/com.binarynights.ForkLift#{version.major}",
               ]
 end
