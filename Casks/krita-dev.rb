@@ -1,4 +1,4 @@
-cask 'krita-devel' do
+cask 'krita-dev' do
   version '4.0.0-prealpha'
   sha256 'f63313ea07fcc1329d4d696153c5d6877940e5a23ec77d432075bd2e88fbe274'
 
@@ -7,7 +7,8 @@ cask 'krita-devel' do
   name 'Krita'
   homepage 'https://krita.org/'
 
+  conflicts_with cask: 'krita'
   depends_on macos: '>= :mavericks'
 
-  app 'Krita.app', target: 'Krita-devel.app'
+  app 'Krita.app'
 end
