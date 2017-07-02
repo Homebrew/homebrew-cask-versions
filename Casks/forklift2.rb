@@ -4,7 +4,7 @@ cask 'forklift2' do
 
   url "http://download.binarynights.com/ForkLift#{version}.zip"
   name 'ForkLift'
-  homepage 'https://www.binarynights.com/'
+  homepage 'https://www.binarynights.com/forklift/'
 
   conflicts_with cask: 'forklift'
 
