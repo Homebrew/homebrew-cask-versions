@@ -5,7 +5,7 @@ cask 'waltr1' do
   # devmate.com/com.softorino.Waltr was verified as official when first introduced to the cask
   url 'https://dl.devmate.com/com.softorino.Waltr/WALTR.zip'
   name 'WALTR'
-  homepage 'https://softorino.com/waltr'
+  homepage 'https://softorino.com/waltr/'
 
   app 'Waltr.app'
 end
