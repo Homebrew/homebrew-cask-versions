@@ -1,6 +1,6 @@
 cask 'adobe-air-beta' do
   version '26.0'
-  sha256 '916ce21b6180133de686f553c7fa492edc67541aebb657301859a3d0ce1195dc'
+  sha256 :no_check # required as upstream package is updated in-place
 
   # fpdownload.macromedia.com was verified as official when first introduced to the cask
   url 'https://fpdownload.macromedia.com/pub/labs/flashruntimes/air/AdobeAIR.dmg'
