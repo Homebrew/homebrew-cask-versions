@@ -12,7 +12,12 @@ cask 'docker-edge' do
 
   app 'Docker.app'
 
-  uninstall quit: 'com.docker.docker'
+  uninstall delete:    '/Library/PrivilegedHelperTools/com.docker.vmnetd',
+            launchctl: [
+                         'com.docker.helper',
+                         'com.docker.vmnetd',
+                       ],
+            quit:      'com.docker.docker'
 
   zap delete: [
                 '~/.docker',
