@@ -1,11 +1,11 @@
 cask 'sourcetree-beta' do
-  version '2.5.3b1'
-  sha256 'e2ed396cd9938f247b0231db1e98e9e85205698606cf2b5a9fafe3e910cb23f1'
+  version '2.6b1'
+  sha256 '243a8be2782bb1fe59a55ab092a3a14876c7ddb93a677850e0183e48ee7b229d'
 
   # atlassian.com was verified as official when first introduced to the cask
   url "https://downloads.atlassian.com/software/sourcetree/SourceTree_#{version}.zip"
   appcast 'https://www.sourcetreeapp.com/update/SparkleAppcastBeta.xml',
-          checkpoint: 'acde869179a03e9bc8547e7467d291b5d1f5c1d001f51d9274a9e76ca94ab426'
+          checkpoint: 'f407dfcd166367a0c8329184d79aabc8cfdc696917ac9b604847ca76e5d8579b'
   name 'Atlassian SourceTree'
   homepage 'https://www.sourcetreeapp.com/'
 
