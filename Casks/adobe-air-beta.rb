@@ -9,13 +9,13 @@ cask 'adobe-air-beta' do
 
   installer script: {
                       executable: 'Adobe AIR Installer.app/Contents/MacOS/Adobe AIR Installer',
-                      args:       %w[-silent],
+                      args:       ['-silent'],
                       sudo:       true,
                     }
 
   uninstall script: {
                       executable: 'Adobe AIR Installer.app/Contents/MacOS/Adobe AIR Installer',
-                      args:       %w[-uninstall],
+                      args:       ['-uninstall'],
                       sudo:       true,
                     },
             rmdir:  [
