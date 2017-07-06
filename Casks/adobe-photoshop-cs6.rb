@@ -29,7 +29,7 @@ cask 'adobe-photoshop-cs6' do
     uninstall_file.close
   end
 
-  uninstall signal: [%w[KILL SafariNotificationAgent]],
+  uninstall signal: ['KILL', 'SafariNotificationAgent'],
             script: {
                       executable: "#{name.join}/Install.app/Contents/MacOS/Install",
                       args:       ['--mode=silent', "--deploymentFile=#{staged_path}/#{name.join}/Deployment/en_US_Uninstall.xml"],
