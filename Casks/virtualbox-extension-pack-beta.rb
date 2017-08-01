@@ -1,6 +1,6 @@
 cask 'virtualbox-extension-pack-beta' do
-  version '5.1.25-117161'
-  sha256 '8079ca0328cfd071f0f71310f57af5f2bd6c789a7ecb23dacf30c2c226ef6f06'
+  version '5.1.27-117314'
+  sha256 'a9715ada0355cb0a7d0e50531beff9d7bc791ce9dcfb3dc980f7ff2586645055'
 
   url "https://www.virtualbox.org/download/testcase/Oracle_VM_VirtualBox_Extension_Pack-#{version}.vbox-extpack"
   name 'Oracle VirtualBox Extension Pack'
