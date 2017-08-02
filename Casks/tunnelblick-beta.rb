@@ -8,12 +8,27 @@ cask 'tunnelblick-beta' do
   name 'Tunnelblick'
   homepage 'https://tunnelblick.net/'
 
-  depends_on macos: '>= :tiger'
-
   app 'Tunnelblick.app'
 
-  uninstall launchctl: 'net.tunnelblick.tunnelblick.LaunchAtLogin',
+  uninstall_preflight do
+    set_ownership "#{appdir}/Tunnelblick.app"
+  end
+
+  uninstall launchctl: [
+                         'net.tunnelblick.tunnelblick.LaunchAtLogin',
+                         'net.tunnelblick.tunnelblick.tunnelblickd',
+                       ],
             quit:      'net.tunnelblick.tunnelblick'
+
+  zap delete: [
+                '~/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/net.tunnelblick.tunnelblick.help',
+                '~/Library/Caches/net.tunnelblick.tunnelblick',
+              ],
+      trash:  [
+                '/Library/Application Support/Tunnelblick',
+                '~/Library/Application Support/Tunnelblick',
+                '~/Library/Preferences/net.tunnelblick.tunnelblick.plist',
+              ]
 
   caveats <<-EOS.undent
     For security reasons, #{token} must be installed to /Applications,
