@@ -6,12 +6,14 @@ cask 'charles-beta' do
   name 'Charles'
   homepage 'https://www.charlesproxy.com/download/beta/'
 
-  depends_on macos: '>= :lion'
-
   app 'Charles.app'
 
-  zap delete: [
+  uninstall quit: 'com.xk72.Charles'
+
+  zap delete: '~/Library/Saved Application State/com.xk72.Charles.savedState',
+      trash:  [
                 '~/Library/Application Support/Charles',
+                '~/Library/Preferences/com.xk72.Charles.plist',
                 '~/Library/Preferences/com.xk72.charles.config',
               ]
 end
