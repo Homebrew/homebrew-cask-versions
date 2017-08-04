@@ -1,8 +1,8 @@
 cask 'virtualbox-extension-pack-beta' do
-  version '5.1.27-117332'
-  sha256 '36fee7fab02a63e972688c2564f969477c0419ed322ef93fd1703d25143f224e'
+  version '5.2.0_BETA1,117406'
+  sha256 'f06841783e44b07469f6338099dd2ee53bddd47e848df8f286d3d639b2e21687'
 
-  url "https://www.virtualbox.org/download/testcase/Oracle_VM_VirtualBox_Extension_Pack-#{version}.vbox-extpack"
+  url "http://download.virtualbox.org/virtualbox/#{version.before_comma}/Oracle_VM_VirtualBox_Extension_Pack-#{version.before_comma}-#{version.after_comma}.vbox-extpack"
   name 'Oracle VirtualBox Extension Pack'
   homepage 'https://www.virtualbox.org/'
 
@@ -15,7 +15,7 @@ cask 'virtualbox-extension-pack-beta' do
     system_command '/usr/local/bin/VBoxManage',
                    args: [
                            'extpack', 'install',
-                           '--replace', "#{staged_path}/Oracle_VM_VirtualBox_Extension_Pack-#{version}.vbox-extpack",
+                           '--replace', "#{staged_path}/Oracle_VM_VirtualBox_Extension_Pack-#{version.before_comma}-#{version.after_comma}.vbox-extpack",
                            '--accept-license=715c7246dc0f779ceab39446812362b2f9bf64a55ed5d3a905f053cfab36da9e'
                          ],
                    sudo: true
