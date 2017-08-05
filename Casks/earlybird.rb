@@ -1,5 +1,5 @@
 cask 'earlybird' do
-  version '56.0a1'
+  version '57.0a1'
   sha256 :no_check # required as upstream package is updated in-placea
 
   url "https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central/thunderbird-#{version}.en-US.mac.dmg"
