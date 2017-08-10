@@ -6,9 +6,11 @@ cask 'dotnet-sdk-preview' do
   name '.NET Core SDK Preview'
   homepage 'https://www.microsoft.com/net/core/preview#macos'
 
+  depends_on formula: 'openssl'
+
   pkg "dotnet-sdk-#{version}-osx-x64.pkg"
 
-  uninstall pkgutil: 'com.microsoft.dotnet.sharedframework.Microsoft.NETCore.App.2*',
+  uninstall pkgutil: 'com.microsoft.dotnet*',
             delete:  '/etc/paths.d/dotnet'
 
   zap trash: '~/.nuget'
