@@ -4,7 +4,7 @@ cask 'anaconda2' do
 
   url "https://repo.continuum.io/archive/Anaconda2-#{version}-MacOSX-x86_64.sh"
   name 'Continuum Analytics Anaconda2'
-  homepage 'https://www.continuum.io/why-anaconda'
+  homepage 'https://www.continuum.io/what-is-anaconda'
 
   depends_on macos: '>= :lion'
   container type: :naked
