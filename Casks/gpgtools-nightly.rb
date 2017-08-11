@@ -1,15 +1,19 @@
-cask 'gpgtools-beta' do
-  version '2017.1b3-v2'
-  sha256 'a29edb4f44abfb1608a6a957aca21e6cc21d1b2c5f400ea5008f2ac18cb8cbc1'
+cask 'gpgtools-nightly' do
+  version :latest
+  sha256 :no_check
 
-  url "https://releases.gpgtools.org/GPG_Suite-#{version}.dmg"
-  name 'GPG Suite Beta'
+  url do
+    require 'open-uri'
+    html = open('https://releases.gpgtools.org/nightlies/').read
+    html.match(%r{<td class='filename'><a href='(.*)'>})[1]
+  end
+  name 'GPG Suite Nightly'
   homepage 'https://gpgtools.org/'
   gpg "#{url}.sig",
       key_url: 'https://gpgtools.org/GPGTools-00D026C4.asc'
 
   auto_updates true
-  conflicts_with cask: ['gpgtools', 'gpgtools-nightly']
+  conflicts_with cask: ['gpgtools', 'gpgtools-beta']
 
   pkg 'Install.pkg'
 
