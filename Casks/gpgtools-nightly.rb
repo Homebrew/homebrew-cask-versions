@@ -7,7 +7,7 @@ cask 'gpgtools-nightly' do
     html = open('https://releases.gpgtools.org/nightlies/').read
     html.match(%r{<td class='filename'><a href='(.*)'>})[1]
   end
-  name 'GPG Suite Beta'
+  name 'GPG Suite Nightly'
   homepage 'https://gpgtools.org/'
   gpg "#{url}.sig",
       key_url: 'https://gpgtools.org/GPGTools-00D026C4.asc'
