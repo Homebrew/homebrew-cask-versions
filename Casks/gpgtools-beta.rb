@@ -9,7 +9,7 @@ cask 'gpgtools-beta' do
       key_url: 'https://gpgtools.org/GPGTools-00D026C4.asc'
 
   auto_updates true
-  conflicts_with cask: ['gpgtools', 'gpgtools-beta']
+  conflicts_with cask: ['gpgtools', 'gpgtools-nightly']
 
   pkg 'Install.pkg'
 
