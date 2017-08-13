@@ -1,4 +1,4 @@
-cask 'charles-applejava' do
+cask 'charles3' do
   version '3.12'
   sha256 'c1bdd06c6c429d12638d55c4f368758be458a8b7df4b7867b16c4e56d86b05c6'
 
