@@ -6,7 +6,6 @@ cask 'dotnet-preview' do
   name '.NET Core Preview'
   homepage 'https://www.microsoft.com/net/core/preview#macos'
 
-  depends_on formula: 'openssl'
   depends_on macos: '>= :sierra'
 
   pkg "dotnet-runtime-#{version}-osx-x64.pkg"
