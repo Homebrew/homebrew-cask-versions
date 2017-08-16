@@ -1,10 +1,10 @@
 cask 'virtualbox-beta' do
-  version '5.2.0_BETA1,117406'
-  sha256 'a9585dcae981c542e5f26525a464d2987cf26ecacbd212e598d51ca231513f9f'
+  version '5.2.0_BETA2,117563'
+  sha256 '9dd52a69134df7937da96d834ab92d9532393a33438257c176fc66bbb899c614'
 
   url "http://download.virtualbox.org/virtualbox/#{version.before_comma}/VirtualBox-#{version.before_comma}-#{version.after_comma}-OSX.dmg"
   appcast 'http://download.virtualbox.org/virtualbox/LATEST-BETA.TXT',
-          checkpoint: '2af71b046d16a13f3bb3e0e34e668b2acdc6cab8a4041113076d6c705a492546'
+          checkpoint: '4e9ae5d62ebfe2ab6e9fc1d7bd64c69f0c25b601b1c08ba92711adda7c6c0049'
   name 'Oracle VirtualBox'
   homepage 'https://www.virtualbox.org/wiki/Testbuilds'
 
