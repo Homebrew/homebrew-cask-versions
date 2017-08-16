@@ -1,11 +1,11 @@
 cask 'rhinoceroswip' do
-  version '5E140w'
-  sha256 '4cbbd60a4a0fd320f1e2d448bf937b2b1e7acc0968100f94b7883badadfec651'
+  version '5E169w'
+  sha256 '59bf6b0b0a267f1f7ac75233ea46ce8c5991b989fddd7830612c5a6c80c15938'
 
   # mcneel.com was verified as official when first introduced to the cask
   url "https://files.mcneel.com/Releases/Rhino/5.0/Mac/RhinoWIP_#{version}.dmg"
   appcast 'https://files.mcneel.com/rhino/5.0/mac/5CwipUpdates.xml',
-          checkpoint: 'f334e6a91c3dbec8ed8f23f428e0d1722845110ceee4aec10342f02d552681a2'
+          checkpoint: '9072380b64177c82c36f5635564582c8d085f6cf52aeb8977c514afcb9ded081'
   name 'Rhinoceros WIP'
   homepage 'https://www.rhino3d.com/download/rhino-for-mac/5/wip'
 
