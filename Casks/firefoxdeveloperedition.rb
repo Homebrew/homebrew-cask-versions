@@ -2,6 +2,10 @@ cask 'firefoxdeveloperedition' do
   version :latest
   sha256 :no_check
 
+  language 'cs' do
+    'cs'
+  end
+
   language 'de' do
     'de'
   end
