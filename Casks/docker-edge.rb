@@ -22,7 +22,6 @@ cask 'docker-edge' do
             quit:      'com.docker.docker'
 
   zap delete: [
-                '~/.docker',
                 '~/Library/Application Scripts/com.docker.helper',
                 '~/Library/Caches/KSCrashReports/Docker',
                 '~/Library/Caches/com.docker.docker',
@@ -30,8 +29,8 @@ cask 'docker-edge' do
                 '~/Library/Containers/com.docker.docker',
                 '~/Library/Containers/com.docker.helper',
                 '~/Library/Group Containers/group.com.docker',
-                '~/Library/Preferences/com.docker.docker.plist',
               ],
+      trash:  '~/Library/Preferences/com.docker.docker.plist',
       rmdir:  [
                 '~/Library/Caches/KSCrashReports',
                 '~/Library/Caches/com.plausiblelabs.crashreporter.data',
