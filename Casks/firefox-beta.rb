@@ -1,81 +1,360 @@
 cask 'firefox-beta' do
-  version '55.0b9'
-
-  language 'cs' do
-    sha256 'e48bd18be98fa2c57545ccf9dc845729637ab2c55d998d452fb168d1ee1d281b'
-    'cs'
-  end
-
-  language 'de' do
-    sha256 '5ef6219a92388a192488a3e105dd977d9f14c059d514356f223cc90090dd49a4'
-    'de'
-  end
-
-  language 'en-GB' do
-    sha256 '66d129e78c46ef330eaaff36c809e082d323c1df9350718ddf8b88ac0309db22'
-    'en-GB'
-  end
+  version :latest
+  sha256 :no_check
 
   language 'en', default: true do
-    sha256 'f6609700d62d9953f11205a03f9ee3fb16230a85793be224c33c869d54d7ab64'
     'en-US'
   end
 
-  language 'fr' do
-    sha256 'caf212221e936ea27b8e38d838ce4a8ab24b22780452d5f749b9fbd5e04b2fe2'
-    'fr'
+  language 'ach' do
+    'ach'
   end
 
-  language 'gl' do
-    sha256 '247b2457894e3c0ccee4d2c06ea16b60378373a70b70e147cfdc3ce5ea3215e4'
-    'gl'
+  language 'af' do
+    'af'
   end
 
-  language 'it' do
-    sha256 'fb628bac19a9d725f83ccb1f0dc7025d8fde8310bb0e25eb8e66eb553ddae1ff'
-    'it'
+  language 'sq' do
+    'sq'
   end
 
-  language 'ja' do
-    sha256 'a8bcbef86586093f65baa186fe8f001211998af9e2ff680f61d9ffebf42673a2'
-    'ja-JP-mac'
+  language 'ar' do
+    'ar'
   end
 
-  language 'nl' do
-    sha256 '7a9f37d766dd4e2b8474e43d4066fecea63a32cb0c792f5cde7b3d5bb686e059'
-    'nl'
+  language 'an' do
+    'an'
   end
 
-  language 'pl' do
-    sha256 '511bf2d6e37d452fe219e552907500b220da67f64ddb9f4b6356e3a67308fc23'
-    'pl'
+  language 'hy-AM' do
+    'hy-AM'
   end
 
-  language 'pt' do
-    sha256 'e244a76b3f2945f8a7c009960e88c5445e91db480b6ed6bcefb1fe6981c0b34a'
-    'pt-PT'
+  language 'as' do
+    'as'
   end
 
-  language 'ru' do
-    sha256 'a4d4f6d29c6509ea8e73035ebe9a51d4552bc6a996c32d8b1f669f5801438112'
-    'ru'
-  end
-  language 'uk' do
-    sha256 '5e9b2d8def40b6fb9cc9c8888cfb4d36b89f10f39c92e6332a995ab60aec55b1'
-    'uk'
+  language 'ast' do
+    'ast'
   end
 
-  language 'zh-TW' do
-    sha256 '63a52381583adcc5feddac686d9f38c8fb2073e74dfe37129d7fb1ccc392cedc'
-    'zh-TW'
+  language 'eu' do
+    'eu'
   end
 
-  language 'zh' do
-    sha256 '9bc66e197f6fc6fdc7e741e72e39e56c37a60cd005f51ebf55526e377d28189b'
+  language 'be' do
+    'be'
+  end
+
+  language 'bn-BD' do
+    'bn-BD'
+  end
+
+  language 'bn-IN' do
+    'bn-IN'
+  end
+
+  language 'bs' do
+    'bs'
+  end
+
+  language 'br' do
+    'br'
+  end
+
+  language 'bg' do
+    'bg'
+  end
+
+  language 'ca' do
+    'ca'
+  end
+
+  language 'zh-CN' do
     'zh-CN'
   end
 
-  url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=#{language}"
+  language 'zh-TW' do
+    'zh-TW'
+  end
+
+  language 'hr' do
+    'hr'
+  end
+
+  language 'cs' do
+    'cs'
+  end
+
+  language 'da' do
+    'da'
+  end
+
+  language 'nl' do
+    'nl'
+  end
+
+  language 'en-GB' do
+    'en-GB'
+  end
+
+  language 'en-ZA' do
+    'en-ZA'
+  end
+
+  language 'eo' do
+    'eo'
+  end
+
+  language 'et' do
+    'et'
+  end
+
+  language 'fi' do
+    'fi'
+  end
+
+  language 'fr' do
+    'fr'
+  end
+
+  language 'fy-NL' do
+    'fy-NL'
+  end
+
+  language 'ff' do
+    'ff'
+  end
+
+  language 'gd' do
+    'gd'
+  end
+
+  language 'gl' do
+    'gl'
+  end
+
+  language 'de' do
+    'de'
+  end
+
+  language 'el' do
+    'el'
+  end
+
+  language 'gu-IN' do
+    'gu-IN'
+  end
+
+  language 'he' do
+    'he'
+  end
+
+  language 'hi-IN' do
+    'hi-IN'
+  end
+
+  language 'hu' do
+    'hu'
+  end
+
+  language 'is' do
+    'is'
+  end
+
+  language 'id' do
+    'id'
+  end
+
+  language 'ea-IE' do
+    'ga-IE'
+  end
+
+  language 'it' do
+    'it'
+  end
+
+  language 'kn' do
+    'kn'
+  end
+
+  language 'kk' do
+    'kk'
+  end
+
+  language 'km' do
+    'km'
+  end
+
+  language 'ko' do
+    'ko'
+  end
+
+  language 'iv' do
+    'iv'
+  end
+
+  language 'lij' do
+    'lij'
+  end
+
+  language 'lt' do
+    'lt'
+  end
+
+  language 'dsb' do
+    'dsb'
+  end
+
+  language 'mk' do
+    'mk'
+  end
+
+  language 'mai' do
+    'mai'
+  end
+
+  language 'ms' do
+    'ms'
+  end
+
+  language 'ml' do
+    'ml'
+  end
+
+  language 'mr' do
+    'mr'
+  end
+
+  language 'nb-NO' do
+    'nb-NO'
+  end
+
+  language 'nn-NO' do
+    'nn-NO'
+  end
+
+  language 'or' do
+    'or'
+  end
+
+  language 'fa' do
+    'fa'
+  end
+
+  language 'pl' do
+    'pl'
+  end
+
+  language 'pt-BR' do
+    'pt-BR'
+  end
+
+  language 'pt-PT' do
+    'pt-PT'
+  end
+
+  language 'pa-IN' do
+    'pa-IN'
+  end
+
+  language 'ro' do
+    'ro'
+  end
+
+  language 'rm' do
+    'rm'
+  end
+
+  language 'ru' do
+    'ru'
+  end
+
+  language 'sr' do
+    'sr'
+  end
+
+  language 'si' do
+    'si'
+  end
+
+  language 'sk' do
+    'sk'
+  end
+
+  language 'sl' do
+    'sl'
+  end
+
+  language 'son' do
+    'son'
+  end
+
+  language 'es-AR' do
+    'es-AR'
+  end
+
+  language 'es-CL' do
+    'es-CL'
+  end
+
+  language 'es-MX' do
+    'es-MX'
+  end
+
+  language 'es-ES' do
+    'es-ES'
+  end
+
+  language 'sv-SE' do
+    'sv-SE'
+  end
+
+  language 'ta' do
+    'ta'
+  end
+
+  language 'te' do
+    'te'
+  end
+
+  language 'te' do
+    'te'
+  end
+
+  language 'th' do
+    'th'
+  end
+
+  language 'tr' do
+    'tr'
+  end
+
+  language 'uk' do
+    'uk'
+  end
+
+  language 'hsb' do
+    'hsb'
+  end
+
+  language 'uz' do
+    'uz'
+  end
+
+  language 'vi' do
+    'vi'
+  end
+
+  language 'cy' do
+    'cy'
+  end
+
+  language 'xh' do
+    'xh'
+  end
+
+  url "https://download.mozilla.org/?product=firefox-beta-latest&os=osx&lang=#{language}"
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/firefox/channel/desktop/#beta'
 
