@@ -5,7 +5,7 @@ cask 'iterm2-beta' do
 
   url "https://iterm2.com/downloads/beta/iTerm2-#{version.dots_to_underscores}.zip"
   appcast 'https://iterm2.com/appcasts/testing3.xml',
-          checkpoint: '1f5f58e0134568646392e173eff1974cf0044c8b561a913e742516e84cc1c1fd'
+          checkpoint: '3e72538422bcf49dacaf62123e72b279306689b3ee29cc72d9ebce7e7d05af76'
   name 'iTerm2'
   homepage 'https://www.iterm2.com/'
 
