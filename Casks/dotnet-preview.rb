@@ -4,7 +4,7 @@ cask 'dotnet-preview' do
 
   url "https://download.microsoft.com/download/7/C/3/7C310A63-13AC-49A4-9666-4CB26388F852/dotnet-runtime-#{version}-osx-x64.pkg"
   name '.NET Core Preview'
-  homepage 'https://www.microsoft.com/net/core/preview#macos'
+  homepage 'https://www.microsoft.com/net/core#macos'
 
   depends_on macos: '>= :sierra'
 
