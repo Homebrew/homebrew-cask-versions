@@ -1,10 +1,10 @@
 cask 'tunnelblick-beta' do
-  version '3.7.2beta03_build_4840'
-  sha256 'b489b3c94e5d3c689cac6d4e52e829efb18e19f0e5c0d6271b76a2e68f333064'
+  version '3.7.3beta02_build_4861'
+  sha256 '048b5aae85a0e464c2cddbf1473d21d47f9698d4fcd25dedbbe98f2b4062a545'
 
   url "https://tunnelblick.net/release/Tunnelblick_#{version}.dmg"
-  appcast 'https://www.tunnelblick.net/appcast.rss',
-          checkpoint: '91e22e98032e0143efb02618a5ea3cb1927c40d7e877bc609b2287da09da7a5c'
+  appcast 'https://github.com/Tunnelblick/Tunnelblick/releases.atom',
+          checkpoint: '340646a885d5388cb56ba925eb83db2cecdbbbbbccf0de29d9fbd82e5c3ab810'
   name 'Tunnelblick'
   homepage 'https://tunnelblick.net/'
 
