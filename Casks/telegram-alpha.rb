@@ -5,7 +5,7 @@ cask 'telegram-alpha' do
   # hockeyapp.net/api/2/apps/6ed2ac3049e1407387c2f1ffcb74e81f was verified as official when first introduced to the cask
   url "https://rink.hockeyapp.net/api/2/apps/6ed2ac3049e1407387c2f1ffcb74e81f/app_versions/#{version.after_comma}?format=zip"
   appcast 'https://rink.hockeyapp.net/api/2/apps/6ed2ac3049e1407387c2f1ffcb74e81f',
-          checkpoint: '2e0a7df14d9bf66bd575c0214404e1e7ea2c34a0cacf101c4a464e7eabfeef10'
+          checkpoint: '1295fb3991a49f0393b743774590c1d45a2ecfd1d2063d37cdeef54103053450'
   name 'Telegram for macOS'
   name 'Telegram Swift'
   homepage 'https://macos.telegram.org/'
