@@ -1,4 +1,4 @@
-cask 'mactex-nogs' do
+cask 'mactex-no-ghostscript' do
   version '20170524'
   sha256 '0caf76027c9e0534a0b636f2b880ace4a0463105a7ad5774ccacede761be8c2d'
 
@@ -8,6 +8,10 @@ cask 'mactex-nogs' do
           checkpoint: '2dd3e7c71fe586512a5241f2b26c24f93af3510d2bda2f56da1a404098b894ee'
   name 'MacTeX'
   homepage 'https://www.tug.org/mactex/'
+
+  depends_on formula: 'ghostscript'
+  conflicts_with cask: 'mactex'
+  conflicts_with cask: 'basictex'
 
   pkg "mactex-#{version}.pkg",
       choices: [
