@@ -21,12 +21,14 @@ cask 'safari-technology-preview' do
   zap delete: [
                 '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.apple.safaritechnologypreview.sfl',
                 '~/Library/Caches/com.apple.SafariTechnologyPreview',
+                '~/Library/Saved Application State/com.apple.SafariTechnologyPreview.savedState',
+                '~/Library/WebKit/com.apple.SafariTechnologyPreview',
+              ],
+      trash:  [
                 '~/Library/Preferences/com.apple.SafariTechnologyPreview.plist',
                 '~/Library/SafariTechnologyPreview',
-                '~/Library/Saved Application State/com.apple.SafariTechnologyPreview.savedState',
                 '~/Library/SyncedPreferences/com.apple.SafariTechnologyPreview-com.apple.Safari.UserRequests.plist',
                 '~/Library/SyncedPreferences/com.apple.SafariTechnologyPreview-com.apple.Safari.WebFeedSubscriptions.plist',
                 '~/Library/SyncedPreferences/com.apple.SafariTechnologyPreview.plist',
-                '~/Library/WebKit/com.apple.SafariTechnologyPreview',
               ]
 end
