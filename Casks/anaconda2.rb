@@ -11,16 +11,18 @@ cask 'anaconda2' do
 
   installer script: {
                       executable: "Anaconda2-#{version}-MacOSX-x86_64.sh",
-                      args:       ['-b'],
+                      args:       ['-b', '-p', "#{HOMEBREW_PREFIX}/anaconda2"],
+                      sudo:       true,
                     }
 
-  preflight do
-    set_permissions "#{staged_path}/Anaconda2-#{version}-MacOSX-x86_64.sh", '+x'
+  postflight do
+    set_ownership "#{HOMEBREW_PREFIX}/anaconda2"
   end
 
-  uninstall delete: '~/anaconda2'
+  uninstall delete: "#{HOMEBREW_PREFIX}/anaconda2"
 
   caveats do
-    path_environment_variable '~/anaconda2/bin'
+    path_environment_variable "#{HOMEBREW_PREFIX}/anaconda2/bin"
+    files_in_usr_local
   end
 end
