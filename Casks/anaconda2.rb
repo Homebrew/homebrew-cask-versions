@@ -19,7 +19,10 @@ cask 'anaconda2' do
     set_ownership "#{HOMEBREW_PREFIX}/anaconda2"
   end
 
-  uninstall delete: "#{HOMEBREW_PREFIX}/anaconda2"
+  uninstall delete: [
+                      "#{HOMEBREW_PREFIX}/anaconda2",
+                      '/Applications/Anaconda-Navigator.app',
+                    ]
 
   caveats do
     path_environment_variable "#{HOMEBREW_PREFIX}/anaconda2/bin"
