@@ -23,7 +23,7 @@ cask 'miniconda2' do
   uninstall delete: "#{HOMEBREW_PREFIX}/miniconda2"
 
   caveats do
-    path_environment_variable "#{HOMEBREW_PREFIX}/miniconda2"
+    path_environment_variable "#{HOMEBREW_PREFIX}/miniconda2/bin"
     files_in_usr_local
   end
 end
