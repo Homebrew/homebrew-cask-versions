@@ -12,12 +12,18 @@ cask 'miniconda2' do
 
   installer script: {
                       executable: 'Miniconda2-latest-MacOSX-x86_64.sh',
-                      args:       ['-b'],
+                      args:       ['-b', '-p', "#{HOMEBREW_PREFIX}/miniconda2"],
+                      sudo: 	     true,
                     }
 
-  uninstall delete: '~/miniconda2'
+  postflight do
+    set_ownership "#{HOMEBREW_PREFIX}/miniconda2"
+  end
+
+  uninstall delete: "#{HOMEBREW_PREFIX}/miniconda2"
 
   caveats do
-    path_environment_variable '~/miniconda2/bin'
+    path_environment_variable "#{HOMEBREW_PREFIX}/miniconda2/bin"
+    files_in_usr_local
   end
 end
