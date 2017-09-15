@@ -16,9 +16,11 @@ cask 'sublime-text-dev' do
   uninstall quit: 'com.sublimetext.3'
 
   zap delete: [
-                '~/Library/Application Support/Sublime Text 3',
                 '~/Library/Caches/com.sublimetext.3',
-                '~/Library/Preferences/com.sublimetext.3.plist',
                 '~/Library/Saved Application State/com.sublimetext.3.savedState',
+              ],
+      trash:  [
+                '~/Library/Application Support/Sublime Text 3',
+                '~/Library/Preferences/com.sublimetext.3.plist',
               ]
 end
