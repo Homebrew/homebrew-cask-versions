@@ -15,10 +15,12 @@ cask 'visual-studio-code-insiders' do
   binary "#{appdir}/Visual Studio Code - Insiders.app/Contents/Resources/app/bin/code"
 
   zap delete: [
-                '~/Library/Application Support/Code - Insiders',
                 '~/Library/Caches/Code - Insiders',
                 '~/Library/Caches/com.microsoft.VSCodeInsiders',
                 '~/Library/Caches/com.microsoft.VSCodeInsiders.ShipIt',
+              ],
+      trash:  [
+                '~/Library/Application Support/Code - Insiders',
                 '~/Library/Preferences/com.microsoft.VSCodeInsiders.helper.plist',
                 '~/Library/Preferences/com.microsoft.VSCodeInsiders.plist',
               ]
