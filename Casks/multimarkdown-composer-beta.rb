@@ -1,11 +1,11 @@
 cask 'multimarkdown-composer-beta' do
-  version '3.0b51'
-  sha256 'd1a6fa5a27b675d624d05509f43b8f6dc15ae9ff78985ea8df18f9988249cc23'
+  version '4.0,46'
+  sha256 '5bf77f1b77d11cd171234812c3b79075fc1b0ef7c79612be7e4ca255358a2193'
 
   # files.fletcherpenney.net.s3.amazonaws.com was verified as official when first introduced to the cask
-  url "http://files.fletcherpenney.net.s3.amazonaws.com/MultiMarkdown%20Composer%20%28Non-Sandboxed%29-#{version}.zip"
+  url "http://files.fletcherpenney.net.s3.amazonaws.com/MultiMarkdown%20Composer-#{version.before_comma}(#{version.after_comma}).zip"
   name 'MultiMarkdown Composer'
-  homepage 'http://support.multimarkdown.com/kb/future-plans/where-can-i-download-the-beta-for-v3'
+  homepage 'http://support.multimarkdown.com/kb/composer-v4/multimarkdown-composer-version-4-beta'
 
   app 'MultiMarkdown Composer.app'
 end
