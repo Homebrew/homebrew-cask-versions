@@ -44,12 +44,12 @@ cask 'java-beta' do
                        MacOS.version <= :mavericks ? '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK' : '',
                      ].keep_if { |v| !v.empty? }
 
-  zap       delete: [
-                      '~/Library/Application Support/Oracle/Java',
-                      '~/Library/Caches/com.oracle.java.Java-Updater',
-                      '~/Library/Caches/net.java.openjdk.cmd',
-                    ],
-            rmdir:  '~/Library/Application Support/Oracle/'
+  zap delete: [
+                '~/Library/Caches/com.oracle.java.Java-Updater',
+                '~/Library/Caches/net.java.openjdk.cmd',
+              ],
+      trash:  '~/Library/Application Support/Oracle/Java',
+      rmdir:  '~/Library/Application Support/Oracle/'
 
   caveats <<-EOS.undent
     This Cask makes minor modifications to the JRE to prevent any packaged
