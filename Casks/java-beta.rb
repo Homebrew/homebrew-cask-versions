@@ -1,32 +1,32 @@
 cask 'java-beta' do
-  version '1.8.0_152_b05'
-  sha256 '0ff18371bd0b9e6a5f8a1477fed5576aa7642414f43b12ec7b1c950d0ede22cb'
+  version '1.9,181'
+  sha256 '4d24a3260fc0e238cc67a40b72fbd733864f345dc5a59d2d796eeaebac00bc38'
 
-  url 'http://download.java.net/java/jdk8u152/archive/b05/binaries/jdk-8u152-ea-bin-b05-macosx-x86_64-20_jun_2017.dmg',
+  url "http://download.java.net/java/jdk#{version.before_comma.minor}/archive/#{version.after_comma}/binaries/jdk-#{version.before_comma.minor}+#{version.after_comma}_osx-x64_bin.dmg",
       cookies: { 'oraclelicense' => 'accept-securebackup-cookie' }
   name 'Java Standard Edition Development Kit'
-  homepage 'http://jdk.java.net/8/'
+  homepage 'http://jdk.java.net/9/'
 
-  pkg "JDK #{version.minor} Update #{version.split('_')[1].split('-')[0]}.pkg"
+  pkg 'JDK 9.pkg'
 
   postflight do
     system_command '/usr/libexec/PlistBuddy',
-                   args: ['-c', 'Add :JavaVM:JVMCapabilities: string BundledApp', "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Info.plist"],
+                   args: ['-c', 'Add :JavaVM:JVMCapabilities: string BundledApp', "/Library/Java/JavaVirtualMachines/jdk-#{version.minor}.jdk/Contents/Info.plist"],
                    sudo: true
     system_command '/usr/libexec/PlistBuddy',
-                   args: ['-c', 'Add :JavaVM:JVMCapabilities: string JNI', "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Info.plist"],
+                   args: ['-c', 'Add :JavaVM:JVMCapabilities: string JNI', "/Library/Java/JavaVirtualMachines/jdk-#{version.minor}.jdk/Contents/Info.plist"],
                    sudo: true
     system_command '/usr/libexec/PlistBuddy',
-                   args: ['-c', 'Add :JavaVM:JVMCapabilities: string WebStart', "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Info.plist"],
+                   args: ['-c', 'Add :JavaVM:JVMCapabilities: string WebStart', "/Library/Java/JavaVirtualMachines/jdk-#{version.minor}.jdk/Contents/Info.plist"],
                    sudo: true
     system_command '/usr/libexec/PlistBuddy',
-                   args: ['-c', 'Add :JavaVM:JVMCapabilities: string Applets', "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Info.plist"],
+                   args: ['-c', 'Add :JavaVM:JVMCapabilities: string Applets', "/Library/Java/JavaVirtualMachines/jdk-#{version.minor}.jdk/Contents/Info.plist"],
                    sudo: true
     system_command '/bin/mkdir',
-                   args: ['-p', '--', "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Home/bundle/Libraries"],
+                   args: ['-p', '--', "/Library/Java/JavaVirtualMachines/jdk-#{version.minor}.jdk/Contents/Home/bundle/Libraries"],
                    sudo: true
     system_command '/bin/ln',
-                   args: ['-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Home/jre/lib/server/libjvm.dylib", "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Home/bundle/Libraries/libserver.dylib"],
+                   args: ['-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk-#{version.minor}.jdk/Contents/Home/lib/server/libjvm.dylib", "/Library/Java/JavaVirtualMachines/jdk-#{version.minor}.jdk/Contents/Home/bundle/Libraries/libserver.dylib"],
                    sudo: true
 
     if MacOS.version <= :mavericks
@@ -34,12 +34,12 @@ cask 'java-beta' do
                      args: ['-rf', '--', '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'],
                      sudo: true
       system_command '/bin/ln',
-                     args: ['-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents", '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'],
+                     args: ['-nsf', '--', "/Library/Java/JavaVirtualMachines/jdk-#{version.minor}.jdk/Contents", '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'],
                      sudo: true
     end
   end
 
-  uninstall pkgutil: 'com.oracle.jdk8u122',
+  uninstall pkgutil: 'com.oracle.jdk-9',
             delete:  [
                        MacOS.version <= :mavericks ? '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK' : '',
                      ].keep_if { |v| !v.empty? }
