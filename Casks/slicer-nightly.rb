@@ -1,6 +1,6 @@
 cask 'slicer-nightly' do
-  version '4.7.0.26374,689893'
-  sha256 'e3d800bd652bd70f9d3906e2b1092e72c1b22aefef4b8ae25bc719664e33892d'
+  version '4.7.0.26384,690310'
+  sha256 'afacfed20e259a5fbe19656abb25164cb0c64ca6a743f21a6f223f8df2caa4fb'
 
   # slicer.kitware.com/midas3 was verified as official when first introduced to the cask
   url "http://slicer.kitware.com/midas3/download?bitstream=#{version.after_comma}"
