@@ -2,12 +2,12 @@ cask 'java-beta' do
   version '1.9,181'
   sha256 '4d24a3260fc0e238cc67a40b72fbd733864f345dc5a59d2d796eeaebac00bc38'
 
-  url "http://download.java.net/java/jdk#{version.before_comma.minor}/archive/#{version.after_comma}/binaries/jdk-#{version.before_comma.minor}+#{version.after_comma}_osx-x64_bin.dmg",
+  url "http://download.java.net/java/jdk#{version.minor}/archive/#{version.after_comma}/binaries/jdk-#{version.minor}+#{version.after_comma}_osx-x64_bin.dmg",
       cookies: { 'oraclelicense' => 'accept-securebackup-cookie' }
   name 'Java Standard Edition Development Kit'
-  homepage 'http://jdk.java.net/9/'
+  homepage "http://jdk.java.net/#{version.minor}/"
 
-  pkg 'JDK 9.pkg'
+  pkg "JDK #{version.minor}.pkg"
 
   postflight do
     system_command '/usr/libexec/PlistBuddy',
@@ -39,7 +39,7 @@ cask 'java-beta' do
     end
   end
 
-  uninstall pkgutil: 'com.oracle.jdk-9',
+  uninstall pkgutil: "com.oracle.jdk-#{version.minor}",
             delete:  [
                        MacOS.version <= :mavericks ? '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK' : '',
                      ].keep_if { |v| !v.empty? }
