@@ -1,4 +1,4 @@
-cask 'prince' do
+cask 'prince-latest' do
   version '20170907'
   sha256 '3c882cbbcdd646e27263105fce8079391d703c8243ad640b4b2db3364dadce5f'
 
