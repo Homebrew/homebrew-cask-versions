@@ -6,5 +6,7 @@ cask 'opera-developer' do
   name 'Opera Developer'
   homepage 'https://www.opera.com/computer/beta'
 
+  auto_updates true
+
   app 'Opera Developer.app'
 end
