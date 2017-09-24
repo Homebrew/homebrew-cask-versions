@@ -1,5 +1,5 @@
 cask 'firefoxnightly' do
-  version '57.0a1'
+  version '58.0a1'
   sha256 :no_check # required as upstream package is updated in-place
 
   language 'cs' do
