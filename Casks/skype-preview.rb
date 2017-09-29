@@ -7,5 +7,7 @@ cask 'skype-preview' do
   name 'Skype Preview'
   homepage 'https://www.skype.com/en/insider/'
 
+  conflicts_with cask: 'skype'
+
   app 'Skype.app'
 end
