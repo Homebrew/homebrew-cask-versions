@@ -1,4 +1,4 @@
-cask 'istat-menus' do
+cask 'istat-menus5' do
   version '5.32'
   sha256 :no_check # required as upstream package is updated in-place
 
