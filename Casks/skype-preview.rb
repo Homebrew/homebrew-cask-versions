@@ -7,5 +7,5 @@ cask 'skype-preview' do
   name 'Skype Preview'
   homepage 'https://www.skype.com/en/insider/'
 
-  app 'Skype Preview.app'
+  app 'Skype.app'
 end
