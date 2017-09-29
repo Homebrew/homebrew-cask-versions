@@ -1,8 +1,9 @@
 cask 'tunnelblick-beta' do
-  version '3.7.3beta03_build_4870'
+  version '3.7.3beta03,4870'
   sha256 '417a53255d7ed3585f7120375a150eb8cc9d33469b013b4b45ece0f8a3d4c957'
 
-  url "https://tunnelblick.net/release/Tunnelblick_#{version}.dmg"
+  # github.com/Tunnelblick/Tunnelblick/releases/download was verified as official when first introduced to the cask
+  url "https://github.com/Tunnelblick/Tunnelblick/releases/download/v#{version.before_comma}/Tunnelblick_#{version.before_comma}_build_#{version.after_comma}.dmg"
   appcast 'https://github.com/Tunnelblick/Tunnelblick/releases.atom',
           checkpoint: 'fa0cf73f0984b02830586bbca61531b55cfbe2faaf0a933443475eb38aee3782'
   name 'Tunnelblick'
