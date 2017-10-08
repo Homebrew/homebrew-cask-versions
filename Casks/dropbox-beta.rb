@@ -1,6 +1,6 @@
 cask 'dropbox-beta' do
-  version '36.3.19'
-  sha256 '7e0725d5b782fb03240e9a2e3c5039315f64794fbff201335d1e65ab070ebcaa'
+  version '37.3.25'
+  sha256 'cd1bf14d2f01e1652ae55d9e6b68fa070ca182ece20710ab9a3fb3c99a3adecd'
 
   # clientupdates.dropboxstatic.com was verified as official when first introduced to the cask
   url "https://clientupdates.dropboxstatic.com/client/Dropbox%20#{version}.dmg"
@@ -12,13 +12,22 @@ cask 'dropbox-beta' do
   uninstall login_item: 'Dropbox'
 
   zap delete: [
-                '~/.dropbox',
+                '/Library/DropboxHelperTools',
                 '~/Library/Application Scripts/com.getdropbox.dropbox.garcon',
                 '~/Library/Caches/CloudKit/com.apple.bird/iCloud.com.getdropbox.Dropbox',
+                '~/Library/Caches/com.dropbox.DropboxMacUpdate',
                 '~/Library/Caches/com.getdropbox.dropbox',
+                '~/Library/Caches/com.getdropbox.DropboxMetaInstaller',
                 '~/Library/Containers/com.getdropbox.dropbox.garcon',
                 '~/Library/Group Containers/com.getdropbox.dropbox.garcon',
                 '~/Library/Logs/Dropbox_debug.log',
-                '/Library/DropboxHelperTools',
+              ],
+      trash:  [
+                '~/.dropbox',
+                '~/Library/Application Support/Dropbox',
+                '~/Library/Dropbox',
+                '~/Library/Preferences/com.dropbox.DropboxMacUpdate.plist',
+                '~/Library/Preferences/com.dropbox.tungsten.helper.plist',
+                '~/Library/Preferences/com.getdropbox.dropbox.plist',
               ]
 end
