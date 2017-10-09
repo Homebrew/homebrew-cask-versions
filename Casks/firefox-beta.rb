@@ -85,7 +85,19 @@ cask 'firefox-beta' do
   app 'Firefox.app'
 
   zap delete: [
-                '~/Library/Application Support/Firefox',
+                '/Library/Logs/DiagnosticReports/firefox_*',
+                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.firefox.sfl',
                 '~/Library/Caches/Firefox',
+                '~/Library/Caches/Mozilla/updates/Applications/Firefox',
+              ],
+      trash:  [
+                '~/Library/Application Support/Firefox',
+                '~/Library/Preferences/org.mozilla.firefox.plist',
+              ],
+      rmdir:  [
+                '~/Library/Application Support/Mozilla', #  Don't trash, may also contain non-Firefox data
+                '~/Library/Caches/Mozilla/updates/Applications',
+                '~/Library/Caches/Mozilla/updates',
+                '~/Library/Caches/Mozilla',
               ]
 end
