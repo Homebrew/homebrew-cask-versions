@@ -1,18 +1,28 @@
 cask 'transmission-nightly' do
-  version '1e9b805b4d'
-  sha256 '17fe83206386a4de0bb6a372cffd8a255e2d151e586102526e149c26fbda68fd'
+  version :latest
+  sha256 :no_check
 
-  url "https://build.transmissionbt.com/job/trunk-mac/lastSuccessfulBuild/artifact/release/Transmission-#{version}.dmg"
+  url do
+    require 'open-uri'
+    base_url = 'https://build.transmissionbt.com/job/trunk-mac/lastSuccessfulBuild/artifact/release/'
+    file = open(base_url).read.scan(%r{href="([^"]+.dmg)"}).flatten.first
+    "#{base_url}#{file}"
+  end
   name 'Transmission'
   homepage 'https://transmissionbt.com/'
 
   app 'Transmission.app'
 
   zap delete: [
+                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.m0k.transmission.sfl',
+                '~/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/org.m0k.transmission.help',
+                '~/Library/Caches/org.m0k.transmission',
+                '~/Library/Cookies/org.m0k.transmission.binarycookies',
+                '~/Library/Preferences/org.m0k.transmission.LSSharedFileList.plist',
+                '~/Library/Saved Application State/org.m0k.transmission.savedState',
+              ],
+      trash:  [
                 '~/Library/Application Support/Transmission',
                 '~/Library/Preferences/org.m0k.transmission.plist',
-                '~/Library/Preferences/org.m0k.transmission.LSSharedFileList.plist',
-                '~/Library/Caches/org.m0k.transmission',
-                '~/Library/Saved Application State/org.m0k.transmission.savedState',
               ]
 end
