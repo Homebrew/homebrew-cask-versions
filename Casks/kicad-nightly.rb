@@ -1,8 +1,13 @@
 cask 'kicad-nightly' do
-  version '20170815-032730.0e41632'
-  sha256 '25113b5687670e145e419489cdb6317854b314c0c22dc7d6db1e3a5f4fe6e1a2'
+  version :latest
+  sha256 :no_check
 
-  url "http://downloads.kicad-pcb.org/osx/nightly/kicad-#{version}-c4osx.dmg"
+  url do
+    require 'open-uri'
+    base_url = 'http://downloads.kicad-pcb.org/osx/nightly/'
+    file = open(base_url).read.scan(%r{href="([^"]+.dmg)"}).flatten.last
+    "#{base_url}#{file}"
+  end
   name 'KiCad'
   homepage 'http://kicad-pcb.org/'
 
