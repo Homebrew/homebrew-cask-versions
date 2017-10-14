@@ -1,6 +1,6 @@
 cask 'virtualbox-extension-pack-beta' do
-  version '5.2.0_BETA3,118015'
-  sha256 '6801a5ec29eb82b680acbc45e000b6a96f2f38ccd24e6cde53f4a9030dbe578b'
+  version '5.2.0_RC1,118201'
+  sha256 'fd73ff4e6a1c8677c0252a94d21423d1e59191c3ab2df00891d37d559899f0c2'
 
   url "http://download.virtualbox.org/virtualbox/#{version.before_comma}/Oracle_VM_VirtualBox_Extension_Pack-#{version.before_comma}-#{version.after_comma}.vbox-extpack"
   appcast 'http://download.virtualbox.org/virtualbox/LATEST-BETA.TXT',
@@ -18,7 +18,7 @@ cask 'virtualbox-extension-pack-beta' do
                    args: [
                            'extpack', 'install',
                            '--replace', "#{staged_path}/Oracle_VM_VirtualBox_Extension_Pack-#{version.before_comma}-#{version.after_comma}.vbox-extpack",
-                           '--accept-license=715c7246dc0f779ceab39446812362b2f9bf64a55ed5d3a905f053cfab36da9e'
+                           '--accept-license=b674970f720eb020ad18926a9268607089cc1703908696d24a04aa870f34c8e8'
                          ],
                    sudo: true
   end
