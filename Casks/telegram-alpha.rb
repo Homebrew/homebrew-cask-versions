@@ -1,11 +1,11 @@
 cask 'telegram-alpha' do
-  version '3.5-107760,666'
-  sha256 '46f0a9708418c33458b485fb3c02baab1990fc04ee521baa700c0c1fabc4abb8'
+  version '3.5-107796,667'
+  sha256 '5e0c4e7a47de22e2ce85410a0769373bfce188c985f7ef17ed3cd4e8ab57685e'
 
   # hockeyapp.net/api/2/apps/6ed2ac3049e1407387c2f1ffcb74e81f was verified as official when first introduced to the cask
   url "https://rink.hockeyapp.net/api/2/apps/6ed2ac3049e1407387c2f1ffcb74e81f/app_versions/#{version.after_comma}?format=zip"
   appcast 'https://rink.hockeyapp.net/api/2/apps/6ed2ac3049e1407387c2f1ffcb74e81f',
-          checkpoint: '7fe4b5ef74003d67430377696ffad6f7d99310cf86f17be9d4b10276b729f367'
+          checkpoint: 'e4f2b259dd3ca75027ff28dfdf76e2b8efa3d835be1e97dc1b77114b2fb3bcaf'
   name 'Telegram for macOS'
   name 'Telegram Swift'
   homepage 'https://macos.telegram.org/'
