@@ -4,9 +4,11 @@ cask 'android-studio-canary' do
 
   url "https://dl.google.com/dl/android/studio/ide-zips/#{version.before_comma}/android-studio-ide-#{version.after_comma}-mac.zip"
   name 'Android Studio Canary'
-  homepage 'https://sites.google.com/a/android.com/tools/download/studio/canary'
+  homepage 'https://developer.android.com/studio/preview/'
 
-  app "Android Studio #{version.major_minor}.app"
+  conflicts_with cask: 'android-studio'
+
+  app 'Android Studio.app'
 
   zap delete: [
                 "~/Library/Application Support/AndroidStudioPreview#{version.major_minor}",
