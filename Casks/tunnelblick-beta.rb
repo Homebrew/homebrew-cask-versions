@@ -31,7 +31,7 @@ cask 'tunnelblick-beta' do
                 '~/Library/Preferences/net.tunnelblick.tunnelblick.plist',
               ]
 
-  caveats <<-EOS.undent
+  caveats <<~EOS
     For security reasons, #{token} must be installed to /Applications,
     and will request to be moved at launch.
   EOS
