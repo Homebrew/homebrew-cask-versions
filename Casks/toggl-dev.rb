@@ -1,4 +1,4 @@
-cask 'toggldesktop-dev' do
+cask 'toggl-dev' do
   version '7.4.71'
   sha256 'bfab01fe4f09017828d0c69bd3e4f11efc96abb417e1a1a766b92a218452f44a'
 
@@ -10,8 +10,8 @@ cask 'toggldesktop-dev' do
   homepage 'https://www.toggl.com/'
 
   conflicts_with cask: [
-                         'toggldesktop',
-                         'toggldesktop-beta',
+                         'toggl',
+                         'toggl-beta',
                        ]
 
   app 'TogglDesktop.app'
