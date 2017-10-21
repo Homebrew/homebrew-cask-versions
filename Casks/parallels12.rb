@@ -1,6 +1,6 @@
-cask 'parallels-desktop11' do
-  version '11.2.3-32663'
-  sha256 '8f62b21fa22ca4fc4c3fd005f462f38d161ac43d1513165375d4144bbf3ba3ad'
+cask 'parallels12' do
+  version '12.2.1-41615'
+  sha256 'd5aff59a541bf3483cbed9c740b3a740ba7ebb922fcee4a7ab90e2645ce49fcb'
 
   url "https://download.parallels.com/desktop/v#{version.major}/#{version}/ParallelsDesktop-#{version}.dmg"
   name 'Parallels Desktop'
@@ -25,11 +25,13 @@ cask 'parallels-desktop11' do
   end
 
   uninstall delete: [
-                      '/usr/bin/prl_convert',
-                      '/usr/bin/prl_disk_tool',
-                      '/usr/bin/prl_perf_ctl',
-                      '/usr/bin/prlctl',
-                      '/usr/bin/prlsrvctl',
+                      '/usr/local/bin/prl_convert',
+                      '/usr/local/bin/prl_disk_tool',
+                      '/usr/local/bin/prl_perf_ctl',
+                      '/usr/local/bin/prlcore2dmp',
+                      '/usr/local/bin/prlctl',
+                      '/usr/local/bin/prlexec',
+                      '/usr/local/bin/prlsrvctl',
                     ]
 
   zap       delete: [
