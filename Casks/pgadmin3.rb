@@ -7,8 +7,7 @@ cask 'pgadmin3' do
   url "https://ftp.postgresql.org/pub/pgadmin/pgadmin3/v#{version}/osx/pgadmin3-#{version}.dmg"
   name 'pgAdmin'
   homepage 'https://www.pgadmin.org/'
-  gpg "#{url}.sig",
-      key_id: 'e0c4ceeb826b1fda4fb468e024adfaaf698f1519'
+  gpg "#{url}.sig", key_id: 'e0c4ceeb826b1fda4fb468e024adfaaf698f1519'
 
   app 'pgAdmin3.app'
 
