@@ -19,6 +19,12 @@ cask 'adobe-cs6-design-standard' do
   # and https://github.com/caskroom/homebrew-versions/pull/296
 
   preflight do
+    processes = system_command '/bin/launchctl', args: ['list']
+
+    if processes.stdout.lines.any? { |line| line =~ %r{^\d+\t\d\tcom.apple.SafariNotificationAgent$} }
+      system_command '/usr/bin/killall', args: ['-kill', 'SafariNotificationAgent']
+    end
+
     language = case MacOS.language
                when %r{^de} then 'de_DE'
                when 'en-GB' then 'en_GB'
@@ -31,8 +37,6 @@ cask 'adobe-cs6-design-standard' do
                  'en_US'
                end
 
-    system_command '/usr/bin/killall',
-                   args: ['-kill', 'SafariNotificationAgent']
     system_command "#{staged_path}/Adobe CS6 Design Standard/Install.app/Contents/MacOS/Install",
                    args: [
                            '--mode=silent', "--deploymentFile=#{staged_path}/Adobe CS6 Design Standard/deploy/install-#{language}.xml"
@@ -43,8 +47,12 @@ cask 'adobe-cs6-design-standard' do
   end
 
   uninstall_preflight do
-    system_command '/usr/bin/killall',
-                   args: ['-kill', 'SafariNotificationAgent']
+    processes = system_command '/bin/launchctl', args: ['list']
+
+    if processes.stdout.lines.any? { |line| line =~ %r{^\d+\t\d\tcom.apple.SafariNotificationAgent$} }
+      system_command '/usr/bin/killall', args: ['-kill', 'SafariNotificationAgent']
+    end
+
     system_command "#{staged_path}/Adobe CS6 Design Standard/Install.app/Contents/MacOS/Install",
                    args: [
                            '--mode=silent', "--deploymentFile=#{staged_path}/uninstall.xml"
