@@ -17,8 +17,11 @@ cask 'adobe-photoshop-cs6' do
                     }
 
   preflight do
-    system_command '/usr/bin/killall',
-                   args: ['-kill', 'SafariNotificationAgent']
+    processes = system_command '/bin/launchctl', args: ['list']
+
+    if processes.stdout.lines.any? { |line| line =~ %r{^\d+\t\d\tcom.apple.SafariNotificationAgent$} }
+      system_command '/usr/bin/killall', args: ['-kill', 'SafariNotificationAgent']
+    end
   end
 
   uninstall_preflight do
