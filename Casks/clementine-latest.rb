@@ -7,13 +7,12 @@ cask 'clementine-latest' do
     last_modified_query = '?C=M;O=D'
     base_url = 'https://builds.clementine-player.org/mac/'
     file = open("#{base_url}#{last_modified_query}")
-             .read
-             .scan(%r{href="(clementine-[^"]+.dmg)"})
-             .flatten
-             .first
+           .read
+           .scan(%r{href="(clementine-[^"]+.dmg)"})
+           .flatten
+           .first
     "#{base_url}#{file}"
   end
-
   name 'Clementine'
   homepage 'https://www.clementine-player.org/'
 
