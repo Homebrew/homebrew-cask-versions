@@ -14,6 +14,7 @@ cask 'adobe-photoshop-cs6' do
   installer script: {
                       executable: "#{staged_path}/#{name.join}/Install.app/Contents/MacOS/Install",
                       args:       ['--mode=silent', "--deploymentFile=#{staged_path}/#{name.join}/Deployment/en_US_Deployment.xml"],
+                      sudo:       true,
                     }
 
   preflight do
@@ -36,6 +37,7 @@ cask 'adobe-photoshop-cs6' do
             script: {
                       executable: "#{name.join}/Install.app/Contents/MacOS/Install",
                       args:       ['--mode=silent', "--deploymentFile=#{staged_path}/#{name.join}/Deployment/en_US_Uninstall.xml"],
+                      sudo:       true,
                     }
 
   caveats 'Installation or Uninstallation may fail with Exit Code 19 (Conflicting Processes running) if Browsers, Safari Notification Service or SIMBL Services (e.g. Flashlight) are running or Adobe Creative Cloud or any other Adobe Products are already installed. See Logs in /Library/Logs/Adobe/Installers if Installation or Uninstallation fails, to identifify the conflicting processes.'
