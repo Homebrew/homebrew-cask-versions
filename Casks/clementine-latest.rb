@@ -1,8 +1,19 @@
 cask 'clementine-latest' do
-  version '1.3.1-388'
-  sha256 'd34a9ab5c71c3e84420d6ce7e2f7426455a125a3a9aa86b86806188b2ecc0eac'
+  version :latest
+  sha256 :no_check
 
-  url 'https://builds.clementine-player.org/mac/clementine-1.3.1-388-gf1b767f.dmg'
+  url do
+    require 'open-uri'
+    last_modified_query = '?C=M;O=D'
+    base_url = 'https://builds.clementine-player.org/mac/'
+    file = open("#{base_url}#{last_modified_query}")
+             .read
+             .scan(%r{href="(clementine-[^"]+.dmg)"})
+             .flatten
+             .first
+    "#{base_url}#{file}"
+  end
+
   name 'Clementine'
   homepage 'https://www.clementine-player.org/'
 
