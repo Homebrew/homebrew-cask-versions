@@ -10,6 +10,14 @@ cask 'clementine-latest' do
 
   app 'Clementine.app'
 
+  preflight do
+    set_permissions "#{staged_path}/Clementine.app", '0755'
+  end
+
+  postflight do
+    set_permissions "#{appdir}/Clementine.app", '0555'
+  end
+
   zap delete: [
                 '~/Library/Application Support/Clementine',
                 '~/Library/Caches/org.clementine-player.Clementine',
