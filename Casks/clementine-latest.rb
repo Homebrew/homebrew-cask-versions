@@ -28,10 +28,6 @@ cask 'clementine-latest' do
     set_permissions "#{staged_path}/Clementine.app", '0755'
   end
 
-  postflight do
-    set_permissions "#{appdir}/Clementine.app", '0555'
-  end
-
   zap delete: [
                 '~/Library/Caches/org.clementine-player.Clementine',
                 '~/Library/Saved Application State/org.clementine-player.Clementine.savedState',
