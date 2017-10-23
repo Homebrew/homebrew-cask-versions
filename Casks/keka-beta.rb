@@ -13,7 +13,6 @@ cask 'keka-beta' do
   conflicts_with cask: 'keka'
   depends_on macos: '>= :mountain_lion'
 
-
   app 'Keka.app'
 
   zap delete: [
