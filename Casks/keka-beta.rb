@@ -11,6 +11,7 @@ cask 'keka-beta' do
 
   auto_updates true
   depends_on macos: '>= :mountain_lion'
+  conflicts_with cask: 'keka'
 
   app 'Keka.app'
 
