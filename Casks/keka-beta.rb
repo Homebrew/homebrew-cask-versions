@@ -9,6 +9,7 @@ cask 'keka-beta' do
   name 'Keka'
   homepage 'http://www.kekaosx.com/'
 
+  auto_updates true
   depends_on macos: '>= :mountain_lion'
 
   app 'Keka.app'
