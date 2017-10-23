@@ -9,7 +9,7 @@ cask 'keka-beta' do
   name 'Keka'
   homepage 'http://www.kekaosx.com/'
 
-  depends_on macos: '>= :lion'
+  depends_on macos: '>= :mountain_lion'
 
   app 'Keka.app'
 
