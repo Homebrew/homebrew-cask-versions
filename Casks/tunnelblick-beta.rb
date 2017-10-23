@@ -7,7 +7,9 @@ cask 'tunnelblick-beta' do
   appcast 'https://github.com/Tunnelblick/Tunnelblick/releases.atom',
           checkpoint: 'a25382dc78399c7abe953184b050e12a2d398c7186d7b95d0cc50cafb30259b5'
   name 'Tunnelblick'
-  homepage 'https://tunnelblick.net/'
+  homepage 'https://www.tunnelblick.net/'
+
+  auto_updates true
 
   app 'Tunnelblick.app'
 
