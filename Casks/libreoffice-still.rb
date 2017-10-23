@@ -26,7 +26,7 @@ cask 'libreoffice-still' do
   binary shimscript, target: 'soffice'
 
   preflight do
-    IO.write shimscript, <<-EOS.undent
+    IO.write shimscript, <<~EOS
       #!/bin/sh
       '#{appdir}/LibreOffice.app/Contents/MacOS/soffice' "$@"
     EOS

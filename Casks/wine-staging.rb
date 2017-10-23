@@ -1,6 +1,6 @@
 cask 'wine-staging' do
-  version '2.18'
-  sha256 '817d6c25b00ebc1ba03e7f0f51a14232af32e7581cd000e4f6c5c0beaa9d5a4d'
+  version '2.19'
+  sha256 'afc1465a571ab765ade241d481cd4ffb7d9be0b5454901ab93478e68017118b6'
 
   # dl.winehq.org/wine-builds/macosx was verified as official when first introduced to the cask
   url "https://dl.winehq.org/wine-builds/macosx/pool/winehq-staging-#{version}.pkg"
@@ -27,7 +27,7 @@ cask 'wine-staging' do
                      ],
             delete:  '/Applications/Wine Staging.app'
 
-  caveats <<-EOS.undent
+  caveats <<~EOS
     #{token} installs support for running 64 bit applications in Wine, which is considered experimental.
     If you do not want 64 bit support, you should download and install the #{token} package manually.
   EOS

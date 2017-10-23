@@ -1,4 +1,4 @@
-cask 'github-desktop-beta' do
+cask 'github-beta' do
   version '1.0.5-beta0-93cfe3bf'
   sha256 '23ab2df5749bf882180e053444abbca48c17b3d7f63aca0096f7f2ae488ef7fa'
 
