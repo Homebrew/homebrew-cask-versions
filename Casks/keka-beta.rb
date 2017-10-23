@@ -10,8 +10,9 @@ cask 'keka-beta' do
   homepage 'http://www.kekaosx.com/'
 
   auto_updates true
-  depends_on macos: '>= :mountain_lion'
   conflicts_with cask: 'keka'
+  depends_on macos: '>= :mountain_lion'
+
 
   app 'Keka.app'
 
