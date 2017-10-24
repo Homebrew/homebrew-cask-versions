@@ -1,15 +1,21 @@
-cask 'gpgtools-beta' do
-  version '2017.1b3-v2'
-  sha256 'a29edb4f44abfb1608a6a957aca21e6cc21d1b2c5f400ea5008f2ac18cb8cbc1'
+cask 'gpg-suite-nightly' do
+  version :latest
+  sha256 :no_check
 
-  url "https://releases.gpgtools.org/GPG_Suite-#{version}.dmg"
-  name 'GPG Suite Beta'
+  url do
+    require 'open-uri'
+    html = open('https://releases.gpgtools.org/nightlies/').read
+    html.match(%r{<td class='filename'><a href='(.*)'>})[1]
+  end
+  name 'GPG Suite Nightly'
   homepage 'https://gpgtools.org/'
-  gpg "#{url}.sig",
-      key_url: 'https://gpgtools.org/GPGTools-00D026C4.asc'
+  gpg "#{url}.sig", key_url: 'https://gpgtools.org/GPGTools-00D026C4.asc'
 
   auto_updates true
-  conflicts_with cask: ['gpgtools', 'gpgtools-nightly']
+  conflicts_with cask: [
+                         'gpg-suite',
+                         'gpg-suite-beta',
+                       ]
 
   pkg 'Install.pkg'
 
@@ -38,10 +44,15 @@ cask 'gpgtools-beta' do
                          'org.gpgtools.macgpg2.shutdown-gpg-agent',
                          'org.gpgtools.macgpg2.updater',
                          'org.gpgtools.macgpg2.gpg-agent',
+                         'org.gpgtools.gpgmail.enable-bundles',
+                         'org.gpgtools.gpgmail.user-uuid-patcher',
+                         'org.gpgtools.gpgmail.uuid-patcher',
+                         'org.gpgtools.updater',
                        ],
             delete:    [
                          '/Library/Services/GPGServices.service',
                          '/Library/Mail/Bundles/GPGMail.mailbundle',
+                         '/Library/Mail/Bundles.gpgmail*',
                          '/Network/Library/Mail/Bundles/GPGMail.mailbundle',
                          '/usr/local/MacGPG2',
                          '/private/etc/paths.d/MacGPG2',
@@ -57,12 +68,14 @@ cask 'gpgtools-beta' do
                 '~/Library/Mail/Bundles/GPGMail.mailbundle',
                 '~/Library/PreferencePanes/GPGPreferences.prefPane',
                 '~/Library/LaunchAgents/org.gpgtools.*',
-                '~/Library/Preferences/org.gpgtools.*',
                 '~/Library/Containers/com.apple.mail/Data/Library/Preferences/org.gpgtools.*',
-                '~/Library/Application Support/GPGTools',
                 '~/Library/Frameworks/Libmacgpg.framework',
                 '~/Containers/com.apple.mail/Data/Library/Frameworks/Libmacgpg.framework',
                 '~/Library/Caches/org.gpgtools.gpg*',
+              ],
+      trash:  [
+                '~/Library/Application Support/GPGTools',
+                '~/Library/Preferences/org.gpgtools.*',
               ]
 
   caveats do
