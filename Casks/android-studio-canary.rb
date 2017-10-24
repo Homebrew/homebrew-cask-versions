@@ -7,9 +7,7 @@ cask 'android-studio-canary' do
   name 'Android Studio Canary'
   homepage 'https://developer.android.com/studio/preview/'
 
-  conflicts_with cask: 'android-studio'
-
-  app 'Android Studio.app'
+  app 'Android Studio.app', target: 'Android Studio Preview.app'
 
   zap delete: [
                 "~/Library/Application Support/AndroidStudioPreview#{version.major_minor}",
