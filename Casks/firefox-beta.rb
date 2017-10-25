@@ -96,14 +96,14 @@ cask 'firefox-beta' do
     'uk'
   end
 
-  language 'zh' do
-    sha256 '5a98659bfda3fb0feb4c67edf954d84278f15eb86905b5e53c3904c204a6f876'
-    'zh-CN'
-  end
-
   language 'zh-TW' do
     sha256 '93375078c41f8a135ac5968c6912a6199e539dd7c0961286bc0d1d94e4e8f9ba'
     'zh-TW'
+  end
+
+  language 'zh' do
+    sha256 '5a98659bfda3fb0feb4c67edf954d84278f15eb86905b5e53c3904c204a6f876'
+    'zh-CN'
   end
 
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=#{language}"
