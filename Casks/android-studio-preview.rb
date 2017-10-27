@@ -7,8 +7,7 @@ cask 'android-studio-preview' do
   name 'Android Studio Preview'
   homepage 'https://developer.android.com/studio/preview/'
 
-  # Renamed to avoid conflict with android-studio.
-  app "Android Studio #{version.major_minor} Preview.app", target: 'Android Studio Preview.app'
+  app "Android Studio #{version.major_minor} Preview.app"
 
   zap delete: [
                 "~/Library/Application Support/AndroidStudioPreview#{version.major_minor}",
