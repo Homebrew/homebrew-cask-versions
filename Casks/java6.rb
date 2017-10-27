@@ -1,6 +1,6 @@
 cask 'java6' do
-  version '1.6.0_65'
-  sha256 '8f40dbf821e21410feab4d9e2e533c42518897b7cac5edfad895e91016f918fc'
+  version '1.6.0_65-b14-468'
+  sha256 'a6ea47965542b5c06787f832f3ae5be65da6c6ed91664b0c0ed4994650d98244'
 
   url 'https://support.apple.com/downloads/DL1572/en_US/javaforosx.dmg'
   name 'Java Standard Edition Development Kit'
