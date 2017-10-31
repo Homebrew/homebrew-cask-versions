@@ -1,6 +1,6 @@
 cask 'slack-beta' do
-  version '2.8.1'
-  sha256 '330b3f826f0ba97ad28cffff18ea62f29a8ef12c42cf7525dc6ab85182a73f01'
+  version '3.0.0-beta2638bae9'
+  sha256 '1e3ed085e1ee4eb767cc9d9d7267c67dba41f75be9ff0c25e79c75982ae03aa2'
 
   # downloads.slack-edge.com was verified as official when first introduced to the cask
   url "https://downloads.slack-edge.com/mac_releases_beta/Slack-#{version}-macOS.zip"
