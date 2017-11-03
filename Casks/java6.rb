@@ -8,5 +8,9 @@ cask 'java6' do
 
   pkg 'JavaForOSX.pkg'
 
-  uninstall pkgutil: 'com.apple.pkg.JavaForMacOSX107'
+  uninstall pkgutil: [
+                       'com.apple.pkg.JavaForMacOSX107',
+                       'com.apple.pkg.JavaMDNS',
+                       'com.apple.pkg.JavaEssentials',
+                     ]
 end
