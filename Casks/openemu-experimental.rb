@@ -5,7 +5,7 @@ cask 'openemu-experimental' do
   # github.com/OpenEmu/OpenEmu was verified as official when first introduced to the cask
   url "https://github.com/OpenEmu/OpenEmu/releases/download/v#{version}/OpenEmu_#{version}-experimental.zip"
   appcast 'https://github.com/OpenEmu/OpenEmu/releases.atom',
-          checkpoint: 'd6afba37317ede3d0b2717c65f380aca59858f2ca965a5d1d0823e4154b5c765'
+          checkpoint: '8bddce9919d7fe75e087a84265428d1a87cdf29b99ab52aec36f67cbc32641de'
   name 'OpenEmu'
   homepage 'http://openemu.org/'
 
@@ -14,9 +14,13 @@ cask 'openemu-experimental' do
   app 'OpenEmu.app'
 
   zap delete: [
+                '~/Library/Caches/org.openemu.OpenEmu',
+                '~/Library/Saved Application State/org.openemu.OpenEmu.savedState',
+                '~/Library/Cookies/org.openemu.OpenEmu.binarycookies',
+              ],
+      trash:  [
                 '~/Library/Application Support/OpenEmu',
                 '~/Library/Application Support/org.openemu.OEXPCCAgent.Agents',
-                '~/Library/Caches/org.openemu.OpenEmu',
                 '~/Library/Preferences/org.openemu.Atari800.plist',
                 '~/Library/Preferences/org.openemu.Bliss.plist',
                 '~/Library/Preferences/org.openemu.CrabEmu.plist',
@@ -39,6 +43,6 @@ cask 'openemu-experimental' do
                 '~/Library/Preferences/org.openemu.TwoMbit.plist',
                 '~/Library/Preferences/org.openemu.VecXGL.plist',
                 '~/Library/Preferences/org.openemu.VisualBoyAdvance.plist',
-                '~/Library/Saved Application State/org.openemu.OpenEmu.savedState',
+                '~/Library/Preferences/org.openemu.mGBA.plist',
               ]
 end
