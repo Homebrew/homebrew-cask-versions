@@ -6,7 +6,7 @@ cask 'libreoffice-dev' do
   url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg"
   appcast 'https://download.documentfoundation.org/libreoffice/testing/',
           checkpoint: 'f47b16fab2f982d47a7796e68de3bf79e841cfbcc2f5d4f65ffab3d25b467771'
-  name 'LibreOffice Fresh Prerelease'
+  name 'LibreOffice Development Version'
   homepage 'https://www.libreoffice.org/download/pre-releases/'
   gpg "#{url}.asc", key_id: 'c2839ecad9408fbe9531c3e9f434a1efafeeaea3'
 
