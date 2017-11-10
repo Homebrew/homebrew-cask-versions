@@ -34,7 +34,6 @@ cask 'xquartz-beta' do
                          '/opt/X11',
                          '/private/etc/manpaths.d/40-XQuartz',
                          '/private/etc/paths.d/40-XQuartz',
-                         '/Applications/Utilities/XQuartz.app',
                        ]
 
   zap delete: [
