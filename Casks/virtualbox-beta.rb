@@ -26,8 +26,8 @@ cask 'virtualbox-beta' do
             pkgutil: 'org.virtualbox.pkg.*'
 
   zap delete: [
-                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.virtualbox.app.virtualbox.sfl',
-                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.virtualbox.app.virtualboxvm.sfl',
+                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.virtualbox.app.virtualbox.sfl*',
+                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.virtualbox.app.virtualboxvm.sfl*',
                 '~/Library/Saved Application State/org.virtualbox.app.VirtualBox.savedState',
                 '~/Library/Saved Application State/org.virtualbox.app.VirtualBoxVM.savedState',
               ],

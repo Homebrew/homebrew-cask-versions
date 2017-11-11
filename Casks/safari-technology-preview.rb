@@ -19,7 +19,7 @@ cask 'safari-technology-preview' do
   uninstall delete: '/Applications/Safari Technology Preview.app'
 
   zap delete: [
-                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.apple.safaritechnologypreview.sfl',
+                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.apple.safaritechnologypreview.sfl*',
                 '~/Library/Caches/com.apple.SafariTechnologyPreview',
                 '~/Library/Saved Application State/com.apple.SafariTechnologyPreview.savedState',
                 '~/Library/WebKit/com.apple.SafariTechnologyPreview',
