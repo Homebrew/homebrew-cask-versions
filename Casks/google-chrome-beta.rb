@@ -14,7 +14,6 @@ cask 'google-chrome-beta' do
                        ]
 
   zap delete: [
-                '/Library/Google',
                 '/Library/Caches/com.google.SoftwareUpdate.*',
                 '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.google.chrome.app.*.sfl*',
                 '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.google.chrome.sfl*',
@@ -38,6 +37,7 @@ cask 'google-chrome-beta' do
                 '~/Library/Preferences/com.google.Keystone.Agent.plist',
               ],
       rmdir:  [
+                '/Library/Google',
                 '~/Library/Application Support/Google',
                 '~/Library/Caches/Google',
                 '~/Library/Google',
