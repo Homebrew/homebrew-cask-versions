@@ -14,6 +14,8 @@ cask 'google-chrome-dev' do
                        ]
 
   zap delete: [
+                '/Library/Google/GoogleSoftwareUpdate',
+                '/Library/Google/Google Chrome Brand.plist',
                 '/Library/Caches/com.google.SoftwareUpdate.*',
                 '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.google.chrome.app.*.sfl*',
                 '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.google.chrome.sfl*',
