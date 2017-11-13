@@ -1,50 +1,50 @@
 cask 'firefoxdeveloperedition' do
-  version '57.0b13'
+  version '58.0b2'
 
   language 'cs' do
-    sha256 '21c1cd568631ffd4ff7a51cb7baf5e6b7a491656cd2d91f4f362617dcccbd7d6'
+    sha256 'd4a9cc40416efaabe584b09c1b32e6b6c90f6fffa98c8b35d4fe6b574943ba4c'
     'cs'
   end
 
   language 'de' do
-    sha256 'e28c254b18259965d70f75b3935385f1e29fba557ff0e5d13d86ad423163a711'
+    sha256 'eee4e09c32c6a4eb9a83a8c6af15d369903df826b00799c872d6cac69110938b'
     'de'
   end
 
   language 'en', default: true do
-    sha256 '497f588ad2093b5710a3be14685cab99f6e1e84bc8f9e277f62bf6596578c4b0'
+    sha256 '2ae2e94b9c8b1ee4a066b6d4bad6a695a1ab493044879d8c015f9aece21b5007'
     'en-US'
   end
 
   language 'ja' do
-    sha256 '6b8d9c69a0bf6d22a393712dc2e859cba57e83ea0e5f6bc6a16a00a573308e94'
+    sha256 '6004b8ca8971c784b0a221bbe27bb4fe56ceee370c833af54d7db9c93c6dc32f'
     'ja-JP-mac'
   end
 
   language 'ru' do
-    sha256 'eb679afce9e68ed225efe03cb457e686e30c98f5ef86a71a4b258ba8dd37a4fd'
+    sha256 '141b959e565df9ff2c6afbdcac09a417f92b20e474abf776c0b96f22fe762049'
     'ru'
   end
 
   language 'uk' do
-    sha256 '9897cdd1fc1c1ad9749a66b0c4f18f4252c0e3dd19cc549a05ccf37fc973c6b9'
+    sha256 'dc0da526c9ddb95fd7a564dcce77349959de908dac10f1e832b0f53a6cb1f170'
     'uk'
   end
 
   language 'zh-TW' do
-    sha256 '7bf36c51f3547fc63d432f5b7e9ffcda4229e410803f2deb4db55c5205a535ac'
+    sha256 '9ea0de65de8363bfa2538b74207d49d2982f138e172ce37e241f67c90b56235a'
     'zh-TW'
   end
 
   language 'zh' do
-    sha256 'd30f3ecfb91832feb333abdf2247122dfd3d878ee3c96f168b5c4f3c16c820fb'
+    sha256 '597034b440f7715b4e173c6e1d4c6e9a3063f84462182c431e7b0b62933d4daf'
     'zh-CN'
   end
 
   # download-installer.cdn.mozilla.net/pub/devedition/releases was verified as official when first introduced to the cask
   url "https://download-installer.cdn.mozilla.net/pub/devedition/releases/#{version}/mac/#{language}/Firefox%20#{version}.dmg"
   appcast 'https://download-installer.cdn.mozilla.net/pub/devedition/releases/',
-          checkpoint: '1e7430d4bd2499648cf51fa5c563d65e3dff7740d408bb868763ee5ade2e1dba'
+          checkpoint: '4843d5b6e9fe641161ee8e474bbeb1351b1d2c5561ca0f62078ab487b44a4f5a'
   name 'Mozilla Firefox Developer Edition'
   homepage 'https://www.mozilla.org/firefox/developer/'
 
