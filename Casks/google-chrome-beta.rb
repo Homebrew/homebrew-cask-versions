@@ -6,6 +6,11 @@ cask 'google-chrome-beta' do
   name 'Google Chrome'
   homepage 'https://www.google.com/chrome/browser/beta.html?platform=mac&extra=betachannel'
 
+  conflicts_with cask: [
+                         'google-chrome',
+                         'google-chrome-dev',
+                       ]
+
   app 'Google Chrome.app'
 
   uninstall launchctl: [
