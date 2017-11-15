@@ -7,6 +7,8 @@ cask 'dropbox-beta' do
   name 'Dropbox'
   homepage 'https://www.dropboxforum.com/t5/Desktop-client-builds/bd-p/101003016'
 
+  conflicts_with cask: 'dropbox'
+
   app 'Dropbox.app'
 
   uninstall login_item: 'Dropbox',
