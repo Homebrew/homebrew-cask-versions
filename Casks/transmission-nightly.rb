@@ -11,6 +11,8 @@ cask 'transmission-nightly' do
   name 'Transmission'
   homepage 'https://transmissionbt.com/'
 
+  conflicts_with cask: 'transmission'
+
   app 'Transmission.app'
 
   zap delete: [
