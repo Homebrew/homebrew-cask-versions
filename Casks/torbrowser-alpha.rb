@@ -7,6 +7,8 @@ cask 'torbrowser-alpha' do
   homepage 'https://www.torproject.org/projects/torbrowser.html'
   gpg "#{url}.asc", key_id: 'ef6e286dda85ea2a4ba7de684e2c6e8793298290'
 
+  conflicts_with cask: 'torbrowser'
+
   app 'TorBrowser.app'
 
   zap delete: '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.tor browser.sfl*',
