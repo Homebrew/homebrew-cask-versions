@@ -6,6 +6,11 @@ cask 'google-chrome-dev' do
   name 'Google Chrome'
   homepage 'https://www.google.com/chrome/browser/desktop/index.html?extra=devchannel'
 
+  conflicts_with cask: [
+                         'google-chrome',
+                         'google-chrome-beta',
+                       ]
+
   app 'Google Chrome.app'
 
   uninstall launchctl: [
