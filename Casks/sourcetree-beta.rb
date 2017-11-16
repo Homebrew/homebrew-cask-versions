@@ -10,7 +10,7 @@ cask 'sourcetree-beta' do
   homepage 'https://www.sourcetreeapp.com/'
 
   auto_updates true
-  depends_on macos: '>= 10.10'
+  depends_on macos: '>= :yosemite'
 
   app 'SourceTree-Beta.app'
   binary "#{appdir}/SourceTree-Beta.app/Contents/Resources/stree"

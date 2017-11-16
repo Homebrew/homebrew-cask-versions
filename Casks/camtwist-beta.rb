@@ -6,7 +6,7 @@ cask 'camtwist-beta' do
   name 'CamTwist'
   homepage 'http://camtwiststudio.com/'
 
-  depends_on macos: '>= 10.10'
+  depends_on macos: '>= :yosemite'
 
   pkg 'CamTwist.pkg'
 
