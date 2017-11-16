@@ -1,11 +1,13 @@
 cask 'dropbox-beta' do
-  version '39.3.48'
-  sha256 '02a8a0e00c0f94fa286900aee7fd39eedf5b4ad372f5c8f4cb5904fdcf8f3739'
+  version '40.3.43'
+  sha256 '3611278bec94b8959792b3203108b6cfbc1ecdc6a6c19dbfc701b8f59f69e7a2'
 
   # clientupdates.dropboxstatic.com was verified as official when first introduced to the cask
   url "https://clientupdates.dropboxstatic.com/client/Dropbox%20#{version}.dmg"
   name 'Dropbox'
   homepage 'https://www.dropboxforum.com/t5/Desktop-client-builds/bd-p/101003016'
+
+  conflicts_with cask: 'dropbox'
 
   app 'Dropbox.app'
 
