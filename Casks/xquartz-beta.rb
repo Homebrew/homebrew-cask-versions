@@ -9,6 +9,8 @@ cask 'xquartz-beta' do
   name 'XQuartz'
   homepage 'https://www.xquartz.org/'
 
+  conflicts_with cask: 'xquartz'
+
   pkg 'XQuartz.pkg'
 
   postflight do
