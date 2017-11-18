@@ -9,10 +9,10 @@ cask 'shimo3' do
 
   app 'Shimo.app'
 
-  zap delete: [
-                '~/Library/Application Support/Shimo',
-                '~/Library/Preferences/com.chungwasoft.Shimo.plist',
-                '~/Library/Caches/com.chungwasoft.Shimo',
-                '/Library/PrivilegedHelperTools/com.chungwasoft.shimo.helper',
-              ]
+  zap trash: [
+               '~/Library/Application Support/Shimo',
+               '~/Library/Preferences/com.chungwasoft.Shimo.plist',
+               '~/Library/Caches/com.chungwasoft.Shimo',
+               '/Library/PrivilegedHelperTools/com.chungwasoft.shimo.helper',
+             ]
 end

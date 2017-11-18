@@ -12,5 +12,5 @@ cask 'julia-nightly' do
   app "Julia-#{version.sub(%r{(.+)-(.+)}, '\1-dev-\2')}.app"
   binary "#{appdir}/Julia-#{version.sub(%r{(.+)-(.+)}, '\1-dev-\2')}.app/Contents/Resources/julia/bin/julia"
 
-  zap delete: '~/.julia'
+  zap trash: '~/.julia'
 end

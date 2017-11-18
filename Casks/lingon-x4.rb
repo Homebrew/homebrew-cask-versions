@@ -12,10 +12,10 @@ cask 'lingon-x4' do
 
   app 'Lingon X.app'
 
-  zap delete: [
-                '~/Library/Application Scripts/com.peterborgapps.LingonX4Agent',
-                '~/Library/Caches/com.peterborgapps.LingonX4',
-                '~/Library/Containers/com.peterborgapps.LingonX4Agent',
-                '~/Library/Preferences/com.peterborgapps.LingonX4.plist',
-              ]
+  zap trash: [
+               '~/Library/Application Scripts/com.peterborgapps.LingonX4Agent',
+               '~/Library/Caches/com.peterborgapps.LingonX4',
+               '~/Library/Containers/com.peterborgapps.LingonX4Agent',
+               '~/Library/Preferences/com.peterborgapps.LingonX4.plist',
+             ]
 end

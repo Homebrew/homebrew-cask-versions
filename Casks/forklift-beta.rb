@@ -18,16 +18,14 @@ cask 'forklift-beta' do
                          'com.binarynights.ForkLiftMini',
                        ]
 
-  zap delete: [
-                "~/Library/Caches/com.binarynights.ForkLift-#{version.major}",
-                "~/Library/Cookies/com.binarynights.ForkLift-#{version.major}.binarycookies",
-                '~/Library/Logs/ForkLift',
-                '~/Library/Logs/ForkLiftMini',
-                "~/Library/Saved Application State/com.binarynights.ForkLift-#{version.major}.savedState",
-              ],
-      trash:  [
-                '~/Library/Application Support/ForkLift',
-                "~/Library/Preferences/com.binarynights.ForkLift-#{version.major}.plist",
-                '~/Library/Preferences/com.binarynights.ForkLiftMini.plist',
-              ]
+  zap trash: [
+               '~/Library/Application Support/ForkLift',
+               "~/Library/Caches/com.binarynights.ForkLift-#{version.major}",
+               "~/Library/Cookies/com.binarynights.ForkLift-#{version.major}.binarycookies",
+               '~/Library/Logs/ForkLift',
+               '~/Library/Logs/ForkLiftMini',
+               "~/Library/Preferences/com.binarynights.ForkLift-#{version.major}.plist",
+               '~/Library/Preferences/com.binarynights.ForkLiftMini.plist',
+               "~/Library/Saved Application State/com.binarynights.ForkLift-#{version.major}.savedState",
+             ]
 end

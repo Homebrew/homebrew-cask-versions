@@ -27,12 +27,10 @@ cask 'clementine-latest' do
     set_permissions "#{staged_path}/Clementine.app", '0755'
   end
 
-  zap delete: [
-                '~/Library/Caches/org.clementine-player.Clementine',
-                '~/Library/Saved Application State/org.clementine-player.Clementine.savedState',
-              ],
-      trash:  [
-                '~/Library/Application Support/Clementine',
-                '~/Library/Preferences/org.clementine-player.Clementine.plist',
-              ]
+  zap trash: [
+               '~/Library/Application Support/Clementine',
+               '~/Library/Caches/org.clementine-player.Clementine',
+               '~/Library/Saved Application State/org.clementine-player.Clementine.savedState',
+               '~/Library/Preferences/org.clementine-player.Clementine.plist',
+             ]
 end

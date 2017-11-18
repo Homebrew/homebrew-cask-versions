@@ -11,10 +11,10 @@ cask 'sublime-text2' do
   app 'Sublime Text 2.app'
   binary "#{appdir}/Sublime Text 2.app/Contents/SharedSupport/bin/subl"
 
-  zap delete: [
-                '~/Library/Application Support/Sublime Text 2',
-                '~/Library/Preferences/com.sublimetext.2.plist',
-                '~/Library/Caches/com.sublimetext.2',
-                '~/Library/Saved Application State/com.sublimetext.2.savedState',
-              ]
+  zap trash: [
+               '~/Library/Application Support/Sublime Text 2',
+               '~/Library/Preferences/com.sublimetext.2.plist',
+               '~/Library/Caches/com.sublimetext.2',
+               '~/Library/Saved Application State/com.sublimetext.2.savedState',
+             ]
 end

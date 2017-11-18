@@ -13,12 +13,10 @@ cask 'clementine-rc' do
 
   app 'Clementine.app'
 
-  zap delete: [
-                '~/Library/Caches/org.clementine-player.Clementine',
-                '~/Library/Saved Application State/org.clementine-player.Clementine.savedState',
-              ],
-      trash:  [
-                '~/Library/Application Support/Clementine',
-                '~/Library/Preferences/org.clementine-player.Clementine.plist',
-              ]
+  zap trash: [
+               '~/Library/Application Support/Clementine',
+               '~/Library/Caches/org.clementine-player.Clementine',
+               '~/Library/Saved Application State/org.clementine-player.Clementine.savedState',
+               '~/Library/Preferences/org.clementine-player.Clementine.plist',
+             ]
 end

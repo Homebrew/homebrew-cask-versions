@@ -9,14 +9,14 @@ cask 'android-studio-preview' do
 
   app "Android Studio #{version.major_minor} Preview.app"
 
-  zap delete: [
-                "~/Library/Application Support/AndroidStudioPreview#{version.major_minor}",
-                "~/Library/Caches/AndroidStudioPreview#{version.major_minor}",
-                "~/Library/Logs/AndroidStudioPreview#{version.major_minor}",
-                "~/Library/Preferences/AndroidStudioPreview#{version.major_minor}",
-                '~/Library/Preferences/com.google.android.studio.plist',
-              ],
-      rmdir:  '~/AndroidStudioProjects'
+  zap trash: [
+               "~/Library/Application Support/AndroidStudioPreview#{version.major_minor}",
+               "~/Library/Caches/AndroidStudioPreview#{version.major_minor}",
+               "~/Library/Logs/AndroidStudioPreview#{version.major_minor}",
+               "~/Library/Preferences/AndroidStudioPreview#{version.major_minor}",
+               '~/Library/Preferences/com.google.android.studio.plist',
+             ],
+      rmdir: '~/AndroidStudioProjects'
 
   caveats do
     depends_on_java

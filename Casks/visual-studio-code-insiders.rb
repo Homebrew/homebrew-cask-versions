@@ -16,14 +16,12 @@ cask 'visual-studio-code-insiders' do
   app 'Visual Studio Code - Insiders.app'
   binary "#{appdir}/Visual Studio Code - Insiders.app/Contents/Resources/app/bin/code"
 
-  zap delete: [
-                '~/Library/Caches/Code - Insiders',
-                '~/Library/Caches/com.microsoft.VSCodeInsiders',
-                '~/Library/Caches/com.microsoft.VSCodeInsiders.ShipIt',
-              ],
-      trash:  [
-                '~/Library/Application Support/Code - Insiders',
-                '~/Library/Preferences/com.microsoft.VSCodeInsiders.helper.plist',
-                '~/Library/Preferences/com.microsoft.VSCodeInsiders.plist',
-              ]
+  zap trash: [
+               '~/Library/Application Support/Code - Insiders',
+               '~/Library/Caches/Code - Insiders',
+               '~/Library/Caches/com.microsoft.VSCodeInsiders',
+               '~/Library/Caches/com.microsoft.VSCodeInsiders.ShipIt',
+               '~/Library/Preferences/com.microsoft.VSCodeInsiders.helper.plist',
+               '~/Library/Preferences/com.microsoft.VSCodeInsiders.plist',
+             ]
 end

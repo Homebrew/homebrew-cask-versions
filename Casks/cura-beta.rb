@@ -8,5 +8,5 @@ cask 'cura-beta' do
 
   app 'Cura.app'
 
-  zap delete: '~/.cura'
+  zap trash: '~/.cura'
 end

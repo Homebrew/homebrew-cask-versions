@@ -8,9 +8,9 @@ cask 'hazel3' do
 
   prefpane 'Install Hazel.app/Contents/Resources/Hazel.prefPane'
 
-  zap delete: [
-                '~/Library/Application Support/Hazel',
-                '~/Library/Preferences/com.noodlesoft.Hazel.plist',
-                '~/Library/Preferences/com.noodlesoft.HazelHelper.plist',
-              ]
+  zap trash: [
+               '~/Library/Application Support/Hazel',
+               '~/Library/Preferences/com.noodlesoft.Hazel.plist',
+               '~/Library/Preferences/com.noodlesoft.HazelHelper.plist',
+             ]
 end

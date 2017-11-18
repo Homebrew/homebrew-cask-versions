@@ -8,5 +8,5 @@ cask 'omnigraffle5' do
 
   app 'OmniGraffle 5.app'
 
-  zap delete: '~/Library/Application Support/The Omni Group/OmniGraffle'
+  zap trash: '~/Library/Application Support/The Omni Group/OmniGraffle'
 end
