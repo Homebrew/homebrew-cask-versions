@@ -12,6 +12,8 @@ cask 'mi-beta' do
 
   app 'mi.app'
 
-  zap delete: '~/Library/Caches/net.mimikaki.mi',
-      trash:  '~/Library/Preferences/net.mimikaki.mi.plist'
+  zap trash: [
+               '~/Library/Caches/net.mimikaki.mi',
+               '~/Library/Preferences/net.mimikaki.mi.plist',
+             ]
 end

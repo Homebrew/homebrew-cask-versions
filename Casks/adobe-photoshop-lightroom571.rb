@@ -11,8 +11,8 @@ cask 'adobe-photoshop-lightroom571' do
   uninstall pkgutil: "com.adobe.Lightroom#{version.major}",
             quit:    "com.adobe.Lightroom#{version.major}"
 
-  zap delete: [
-                '~/Library/Application Support/Adobe/Lightroom',
-                "~/Library/Preferences/com.adobe.Lightroom#{version.major}.plist",
-              ]
+  zap trash: [
+               '~/Library/Application Support/Adobe/Lightroom',
+               "~/Library/Preferences/com.adobe.Lightroom#{version.major}.plist",
+             ]
 end

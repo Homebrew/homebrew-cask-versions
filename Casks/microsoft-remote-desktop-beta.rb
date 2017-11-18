@@ -10,11 +10,11 @@ cask 'microsoft-remote-desktop-beta' do
 
   app 'Microsoft Remote Desktop Beta.app'
 
-  zap delete: [
-                '~/Library/Preferences/com.microsoft.rdc.osx.beta',
-                '~/Library/Caches/com.microsoft.rdc.osx.beta',
-                '~/Library/Application Support/com.microsoft.rdc.osx.beta',
-                '~/Library/Logs/Microsoft Remote Desktop Beta',
-                '~/Library/Application Support/Microsoft Remote Desktop Beta',
-              ]
+  zap trash: [
+               '~/Library/Preferences/com.microsoft.rdc.osx.beta',
+               '~/Library/Caches/com.microsoft.rdc.osx.beta',
+               '~/Library/Application Support/com.microsoft.rdc.osx.beta',
+               '~/Library/Logs/Microsoft Remote Desktop Beta',
+               '~/Library/Application Support/Microsoft Remote Desktop Beta',
+             ]
 end

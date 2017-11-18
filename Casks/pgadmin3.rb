@@ -11,8 +11,8 @@ cask 'pgadmin3' do
 
   app 'pgAdmin3.app'
 
-  zap delete: [
-                '~/Library/Preferences/pgadmin3 Preferences',
-                '~/Library/Saved Application State/org.postgresql.pgadmin.savedState',
-              ]
+  zap trash: [
+               '~/Library/Preferences/pgadmin3 Preferences',
+               '~/Library/Saved Application State/org.postgresql.pgadmin.savedState',
+             ]
 end

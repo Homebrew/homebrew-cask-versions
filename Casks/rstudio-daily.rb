@@ -8,5 +8,5 @@ cask 'rstudio-daily' do
 
   app 'RStudio.app'
 
-  zap delete: '~/.rstudio-desktop'
+  zap trash: '~/.rstudio-desktop'
 end

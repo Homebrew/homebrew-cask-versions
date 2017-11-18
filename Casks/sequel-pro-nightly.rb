@@ -15,5 +15,5 @@ cask 'sequel-pro-nightly' do
 
   app 'Sequel Pro.app'
 
-  zap delete: '~/Library/Application Support/Sequel Pro/Data'
+  zap trash: '~/Library/Application Support/Sequel Pro/Data'
 end

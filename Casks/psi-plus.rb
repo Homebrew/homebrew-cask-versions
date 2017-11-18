@@ -13,9 +13,9 @@ cask 'psi-plus' do
 
   uninstall quit: 'com.googlecode.psi-dev'
 
-  zap delete: [
-                '~/Library/Saved Application State/com.googlecode.psi-dev.savedState',
-                '~/Library/Caches/Psi+',
-                '~/Library/Application Support/Psi+',
-              ]
+  zap trash: [
+               '~/Library/Saved Application State/com.googlecode.psi-dev.savedState',
+               '~/Library/Caches/Psi+',
+               '~/Library/Application Support/Psi+',
+             ]
 end

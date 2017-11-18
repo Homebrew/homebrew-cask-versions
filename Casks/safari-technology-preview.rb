@@ -18,17 +18,15 @@ cask 'safari-technology-preview' do
 
   uninstall delete: '/Applications/Safari Technology Preview.app'
 
-  zap delete: [
-                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.apple.safaritechnologypreview.sfl*',
-                '~/Library/Caches/com.apple.SafariTechnologyPreview',
-                '~/Library/Saved Application State/com.apple.SafariTechnologyPreview.savedState',
-                '~/Library/WebKit/com.apple.SafariTechnologyPreview',
-              ],
-      trash:  [
-                '~/Library/Preferences/com.apple.SafariTechnologyPreview.plist',
-                '~/Library/SafariTechnologyPreview',
-                '~/Library/SyncedPreferences/com.apple.SafariTechnologyPreview-com.apple.Safari.UserRequests.plist',
-                '~/Library/SyncedPreferences/com.apple.SafariTechnologyPreview-com.apple.Safari.WebFeedSubscriptions.plist',
-                '~/Library/SyncedPreferences/com.apple.SafariTechnologyPreview.plist',
-              ]
+  zap trash: [
+               '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.apple.safaritechnologypreview.sfl*',
+               '~/Library/Caches/com.apple.SafariTechnologyPreview',
+               '~/Library/Preferences/com.apple.SafariTechnologyPreview.plist',
+               '~/Library/SafariTechnologyPreview',
+               '~/Library/Saved Application State/com.apple.SafariTechnologyPreview.savedState',
+               '~/Library/SyncedPreferences/com.apple.SafariTechnologyPreview-com.apple.Safari.UserRequests.plist',
+               '~/Library/SyncedPreferences/com.apple.SafariTechnologyPreview-com.apple.Safari.WebFeedSubscriptions.plist',
+               '~/Library/SyncedPreferences/com.apple.SafariTechnologyPreview.plist',
+               '~/Library/WebKit/com.apple.SafariTechnologyPreview',
+             ]
 end

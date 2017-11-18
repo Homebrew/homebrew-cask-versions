@@ -10,10 +10,10 @@ cask 'charles-beta' do
 
   uninstall quit: 'com.xk72.Charles'
 
-  zap delete: '~/Library/Saved Application State/com.xk72.Charles.savedState',
-      trash:  [
-                '~/Library/Application Support/Charles',
-                '~/Library/Preferences/com.xk72.Charles.plist',
-                '~/Library/Preferences/com.xk72.charles.config',
-              ]
+  zap trash: [
+               '~/Library/Application Support/Charles',
+               '~/Library/Preferences/com.xk72.Charles.plist',
+               '~/Library/Preferences/com.xk72.charles.config',
+               '~/Library/Saved Application State/com.xk72.Charles.savedState',
+             ]
 end

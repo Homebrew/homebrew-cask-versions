@@ -12,9 +12,9 @@ cask 'tower-beta' do
   app 'Tower.app'
   binary "#{appdir}/Tower.app/Contents/MacOS/gittower"
 
-  zap delete: [
-                '~/Library/Application Support/com.fournova.Tower2',
-                '~/Library/Caches/com.fournova.Tower2',
-                '~/Library/Preferences/com.fournova.Tower2.plist',
-              ]
+  zap trash: [
+               '~/Library/Application Support/com.fournova.Tower2',
+               '~/Library/Caches/com.fournova.Tower2',
+               '~/Library/Preferences/com.fournova.Tower2.plist',
+             ]
 end

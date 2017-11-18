@@ -8,10 +8,10 @@ cask 'discord-ptb' do
 
   app 'Discord PTB.app'
 
-  zap delete: [
-                '~/Library/Preferences/com.hnc.DiscordPTB.plist',
-                '~/Library/Saved Application State/com.hnc.DiscordPTB.savedState',
-                '~/Library/Caches/com.hnc.DiscordPTB',
-                '~/Library/Application Support/com.hnc.DiscordPTB.ShipIt',
-              ]
+  zap trash: [
+               '~/Library/Preferences/com.hnc.DiscordPTB.plist',
+               '~/Library/Saved Application State/com.hnc.DiscordPTB.savedState',
+               '~/Library/Caches/com.hnc.DiscordPTB',
+               '~/Library/Application Support/com.hnc.DiscordPTB.ShipIt',
+             ]
 end

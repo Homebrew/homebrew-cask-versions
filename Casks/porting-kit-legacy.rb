@@ -11,12 +11,12 @@ cask 'porting-kit-legacy' do
 
   app 'Porting Kit Legacy.app'
 
-  zap delete: [
-                '~/Library/Preferences/edu.ufrj.vitormm.Porting-Kit-Legacy.plist',
-                '~/Library/Application Support/Porting-Kit-Legacy',
-                '~/Library/Saved Application State/edu.ufrj.vitormm.Porting-Kit-Legacy.savedState',
-                '~/Library/Caches/edu.ufrj.vitormm.Porting-Kit-Legacy',
-                '~/Library/Cookies/edu.ufrj.vitormm.Porting-Kit-Legacy.binarycookies',
-                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/edu.ufrj.vitormm.porting-kit-legacy.sfl*',
-              ]
+  zap trash: [
+               '~/Library/Preferences/edu.ufrj.vitormm.Porting-Kit-Legacy.plist',
+               '~/Library/Application Support/Porting-Kit-Legacy',
+               '~/Library/Saved Application State/edu.ufrj.vitormm.Porting-Kit-Legacy.savedState',
+               '~/Library/Caches/edu.ufrj.vitormm.Porting-Kit-Legacy',
+               '~/Library/Cookies/edu.ufrj.vitormm.Porting-Kit-Legacy.binarycookies',
+               '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/edu.ufrj.vitormm.porting-kit-legacy.sfl*',
+             ]
 end
