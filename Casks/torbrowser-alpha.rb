@@ -11,10 +11,10 @@ cask 'torbrowser-alpha' do
 
   app 'TorBrowser.app'
 
-  zap delete: '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.tor browser.sfl*',
-      trash:  [
-                '~/Library/Application Support/TorBrowser-Data',
-                '~/Library/Preferences/org.mozilla.tor browser.plist',
-                '~/Library/Preferences/org.torproject.torbrowser.plist',
-              ]
+  zap trash: [
+               '~/Library/Application Support/TorBrowser-Data',
+               '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.tor browser.sfl*',
+               '~/Library/Preferences/org.mozilla.tor browser.plist',
+               '~/Library/Preferences/org.torproject.torbrowser.plist',
+             ]
 end
