@@ -1,6 +1,6 @@
 cask 'dropbox-beta' do
-  version '40.3.43'
-  sha256 '3611278bec94b8959792b3203108b6cfbc1ecdc6a6c19dbfc701b8f59f69e7a2'
+  version '40.3.44'
+  sha256 'e747677f2fdf4d9596e46928039b7a5862f9198095b0b4da7ac8f2678b7bbd8b'
 
   # clientupdates.dropboxstatic.com was verified as official when first introduced to the cask
   url "https://clientupdates.dropboxstatic.com/client/Dropbox%20#{version}.dmg"
@@ -14,25 +14,23 @@ cask 'dropbox-beta' do
   uninstall login_item: 'Dropbox',
             launchctl:  'com.dropbox.DropboxMacUpdate.agent'
 
-  zap delete: [
-                '/Library/DropboxHelperTools',
-                '~/Library/Application Scripts/com.getdropbox.dropbox.garcon',
-                '~/Library/Caches/CloudKit/com.apple.bird/iCloud.com.getdropbox.Dropbox',
-                '~/Library/Caches/com.dropbox.DropboxMacUpdate',
-                '~/Library/Caches/com.getdropbox.dropbox',
-                '~/Library/Caches/com.getdropbox.DropboxMetaInstaller',
-                '~/Library/Caches/com.plausiblelabs.crashreporter.data/com.dropbox.DropboxMacUpdate',
-                '~/Library/Containers/com.getdropbox.dropbox.garcon',
-                '~/Library/Group Containers/com.getdropbox.dropbox.garcon',
-                '~/Library/Logs/Dropbox_debug.log',
-              ],
-      trash:  [
-                '~/.dropbox',
-                '~/Library/Application Support/Dropbox',
-                '~/Library/Dropbox',
-                '~/Library/Preferences/com.dropbox.DropboxMacUpdate.plist',
-                '~/Library/Preferences/com.dropbox.DropboxMonitor.plist',
-                '~/Library/Preferences/com.dropbox.tungsten.helper.plist',
-                '~/Library/Preferences/com.getdropbox.dropbox.plist',
-              ]
+  zap trash: [
+               '/Library/DropboxHelperTools',
+               '~/.dropbox',
+               '~/Library/Application Scripts/com.getdropbox.dropbox.garcon',
+               '~/Library/Application Support/Dropbox',
+               '~/Library/Caches/CloudKit/com.apple.bird/iCloud.com.getdropbox.Dropbox',
+               '~/Library/Caches/com.dropbox.DropboxMacUpdate',
+               '~/Library/Caches/com.getdropbox.DropboxMetaInstaller',
+               '~/Library/Caches/com.getdropbox.dropbox',
+               '~/Library/Caches/com.plausiblelabs.crashreporter.data/com.dropbox.DropboxMacUpdate',
+               '~/Library/Containers/com.getdropbox.dropbox.garcon',
+               '~/Library/Dropbox',
+               '~/Library/Group Containers/com.getdropbox.dropbox.garcon',
+               '~/Library/Logs/Dropbox_debug.log',
+               '~/Library/Preferences/com.dropbox.DropboxMacUpdate.plist',
+               '~/Library/Preferences/com.dropbox.DropboxMonitor.plist',
+               '~/Library/Preferences/com.dropbox.tungsten.helper.plist',
+               '~/Library/Preferences/com.getdropbox.dropbox.plist',
+             ]
 end
