@@ -22,7 +22,8 @@ cask 'firefoxnightly' do
     'uk'
   end
 
-  url "https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central#{language == 'en-US' ? '' : '-l10n'}/firefox-#{version}.#{language}.mac.dmg"
+  # download-installer.cdn.mozilla.net/pub/firefox/nightly was verified as official when first introduced to the cask
+  url "https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-central#{language == 'en-US' ? '' : '-l10n'}/firefox-#{version}.#{language}.mac.dmg"
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/firefox/channel/desktop/#nightly'
 
