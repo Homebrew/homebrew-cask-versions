@@ -76,7 +76,8 @@ cask 'firefox-esr' do
     'zh-CN'
   end
 
-  url "https://ftp.mozilla.org/pub/firefox/releases/#{version}esr/mac/#{language}/Firefox%20#{version}esr.dmg"
+  # download-installer.cdn.mozilla.net/pub/firefox/releases was verified as official when first introduced to the cask
+  url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/#{version}esr/mac/#{language}/Firefox%20#{version}esr.dmg"
   name 'Mozilla Firefox ESR'
   name 'Mozilla Firefox Extended Support Release'
   homepage 'https://www.mozilla.org/firefox/organizations/'
