@@ -106,7 +106,8 @@ cask 'firefox-beta' do
     'zh-CN'
   end
 
-  url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=#{language}"
+  # download-installer.cdn.mozilla.net/pub/firefox/releases was verified as official when first introduced to the cask
+  url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/#{version}/mac/#{language}/Firefox%20#{version}.dmg"
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/firefox/channel/desktop/#beta'
 
