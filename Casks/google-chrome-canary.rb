@@ -1,8 +1,10 @@
 cask 'google-chrome-canary' do
-  version :latest
-  sha256 :no_check
+  version '64.0.3273.0'
+  sha256 '9b0b0052625bfe8aba077c206bc15ef11cdd6602679fe99c68683612b2a5775e'
 
   url 'https://dl.google.com/release2/q/canary/googlechrome.dmg'
+  appcast 'https://omahaproxy.appspot.com/history?os=mac;channel=canary',
+          checkpoint: '09e2da142b1a49116417a24bc94f3d918a81a7c6673d237b028190499f1afc93'
   name 'Google Chrome Canary'
   homepage 'https://www.google.com/chrome/browser/canary.html?platform=mac'
 
