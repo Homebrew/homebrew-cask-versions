@@ -1,8 +1,10 @@
 cask 'google-chrome-beta' do
-  version :latest
-  sha256 :no_check
+  version '63.0.3239.52'
+  sha256 '6e07daec12cafb60a595147e14dd9199770e2e51e60dd49eb5c520b2e8de5c1c'
 
   url 'https://dl.google.com/chrome/mac/beta/googlechrome.dmg'
+  appcast 'https://omahaproxy.appspot.com/history?os=mac;channel=beta',
+          checkpoint: '9335047e6c2a0f9450687a67199b821c4a8b214646490bd400fc98500f08ddfd'
   name 'Google Chrome'
   homepage 'https://www.google.com/chrome/browser/beta.html?platform=mac&extra=betachannel'
 
