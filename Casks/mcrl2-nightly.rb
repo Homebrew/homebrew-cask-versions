@@ -1,76 +1,96 @@
 cask 'mcrl2-nightly' do
-  version '201707.1.15080'
-  sha256 '37b260017a4b7def9b782461555b703fa04522aa845bd5cbc52cd8ed7b9482eb'
+  version :latest
+  sha256 :no_check
 
-  url "http://www.mcrl2.org/download/devel/mcrl2-#{version}_x86_64.dmg"
+  url do
+    require 'open-uri'
+    open('http://www.mcrl2.org/web/user_manual/download.html')
+      .read
+      .scan(%r{href="([^"]+/devel/mcrl2\-[^"]+_x86_64.dmg)"})
+      .flatten
+      .first
+  end
   name 'mCRL2'
   homepage 'http://www.mcrl2.org/'
 
   app 'mCRL2.app'
 
-  [
-    'besinfo',
-    'bespp',
-    'bessolve',
-    'diagraphica',
-    'lps2lts',
-    'lps2pbes',
-    'lpsactionrename',
-    'lpsbinary',
-    'lpsbisim2pbes',
-    'lpsconfcheck',
-    'lpsconstelm',
-    'lpsinfo',
-    'lpsinvelm',
-    'lpsparelm',
-    'lpsparunfold',
-    'lpspp',
-    'lpsrewr',
-    'lpssim',
-    'lpssumelm',
-    'lpssuminst',
-    'lpsuntime',
-    'lpsxsim',
-    'lts2lps',
-    'lts2pbes',
-    'ltscompare',
-    'ltsconvert',
-    'ltsgraph',
-    'ltsinfo',
-    'ltspbisim',
-    'ltsview',
-    'mcrl2-gui',
-    'mcrl22lps',
-    'mcrl2i',
-    'mcrl2xi',
-    'pbes2bes',
-    'pbes2bool',
-    'pbesconstelm',
-    'pbesinfo',
-    'pbesinst',
-    'pbesparelm',
-    'pbespgsolve',
-    'pbespp',
-    'pbesrewr',
-    'pbesstategraph',
-    'tracepp',
-    'txt2bes',
-    'txt2lps',
-    'txt2pbes',
-  ].each do |tool|
-    binary "#{appdir}/mCRL2.app/Contents/bin/#{tool}"
+  tools = [
+            'besinfo',
+            'bespp',
+            'bessolve',
+            'diagraphica',
+            'lps2lts',
+            'lps2pbes',
+            'lpsactionrename',
+            'lpsbinary',
+            'lpsbisim2pbes',
+            'lpsconfcheck',
+            'lpsconstelm',
+            'lpsinfo',
+            'lpsinvelm',
+            'lpsparelm',
+            'lpsparunfold',
+            'lpspp',
+            'lpsrewr',
+            'lpssim',
+            'lpssumelm',
+            'lpssuminst',
+            'lpsuntime',
+            'lpsxsim',
+            'lts2lps',
+            'lts2pbes',
+            'ltscompare',
+            'ltsconvert',
+            'ltsgraph',
+            'ltsinfo',
+            'ltspbisim',
+            'ltsview',
+            'mcrl2-gui',
+            'mcrl2compilerewriter',
+            'mcrl22lps',
+            'mcrl2i',
+            'mcrl2xi',
+            'pbes2bes',
+            'pbes2bool',
+            'pbesconstelm',
+            'pbesinfo',
+            'pbesinst',
+            'pbesparelm',
+            'pbespgsolve',
+            'pbespp',
+            'pbesrewr',
+            'pbesstategraph',
+            'tracepp',
+            'txt2bes',
+            'txt2lps',
+            'txt2pbes',
+          ]
+
+  experimental_tools = [
+                         'besconvert',
+                         'complps2pbes',
+                         'lpsrealelm',
+                         'lpsrealzone',
+                         'lpssymbolicbisim',
+                         'pbesabsinthe',
+                         'pbespareqelm',
+                         'symbolic_exploration',
+                       ]
+
+  [*tools, *experimental_tools].each do |tool|
+    binary "#{staged_path}/bin/#{tool}.wrapper.sh", target: tool
   end
 
-  [
-    'besconvert',
-    'complps2pbes',
-    'lpsrealelm',
-    'lpsrealzone',
-    'lpssymbolicbisim',
-    'pbesabsinthe',
-    'pbespareqelm',
-    'symbolic_exploration',
-  ].each do |experimental_tool|
-    binary "#{appdir}/mCRL2.app/Contents/bin/#{experimental_tool}"
+  preflight do
+    FileUtils.mkdir "#{staged_path}/bin"
+
+    [*tools, *experimental_tools].each do |tool|
+      # shim script (https://github.com/caskroom/homebrew-cask/issues/18809)
+      IO.write "#{staged_path}/bin/#{tool}.wrapper.sh", <<~EOS
+        #!/bin/sh
+        exec '#{appdir}/mCRL2.app/Contents/bin/#{tool}' "$@"
+      EOS
+    end
   end
 end
