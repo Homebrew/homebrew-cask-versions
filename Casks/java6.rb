@@ -13,4 +13,6 @@ cask 'java6' do
                        'com.apple.pkg.JavaMDNS',
                        'com.apple.pkg.JavaEssentials',
                      ]
+
+  zap trash: "/Library/Java/JavaVirtualMachines/#{version.major_minor_patch}.jdk"
 end
