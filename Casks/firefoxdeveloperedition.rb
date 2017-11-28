@@ -16,6 +16,11 @@ cask 'firefoxdeveloperedition' do
     'en-US'
   end
 
+  language 'fr' do
+    sha256 '2c78a25bd772da057a074f11c4022a21be040cd526a56e2bca13d240f221ddc6'
+    'fr'
+  end
+
   language 'ja' do
     sha256 '3b3dc7bbba08281c6c375afd6f04854a38ff6a23bb50d2023c76cdb7857be335'
     'ja-JP-mac'
