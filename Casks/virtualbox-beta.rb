@@ -30,4 +30,8 @@ cask 'virtualbox-beta' do
                '~/Library/VirtualBox',
              ],
       rmdir: '~/VirtualBox VMs'
+
+  caveats do
+    kext
+  end
 end
