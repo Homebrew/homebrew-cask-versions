@@ -1,50 +1,55 @@
 cask 'firefoxdeveloperedition' do
-  version '58.0b4'
+  version '58.0b7'
 
   language 'cs' do
-    sha256 '04355dfd72a325fc286cb42db64c6242eb2f1fdbc510d66995bbdd6303ab867e'
+    sha256 'adf6c02447e5961d9a689ff7190d70bebe0b424b3ee49916606f078ca6e2256f'
     'cs'
   end
 
   language 'de' do
-    sha256 'bea959cbca077cf6281fb2961f399d49304ebaa48c42d6073b683addf32c5d33'
+    sha256 '2d28977006bc504fa47dd71030e4890d31e7559f6d4351c47bde95bb131c46ef'
     'de'
   end
 
   language 'en', default: true do
-    sha256 '05f05d523ff7f8417d3e89782be45b515f6e892519e7a56844ed8638e86611d1'
+    sha256 '68d9cb01acf9d63655ce5349b6309603174c1d433af11d30ca6e043e4c46a09b'
     'en-US'
   end
 
+  language 'fr' do
+    sha256 '340c0b1187dff14c4e99650d53db068a79c82e4c22fd756720349b97cc97ee59'
+    'fr'
+  end
+
   language 'ja' do
-    sha256 '3b3dc7bbba08281c6c375afd6f04854a38ff6a23bb50d2023c76cdb7857be335'
+    sha256 'f96b4df2fefb537c32d1907e6bf4e9b4faff264506998331370215c1004af3be'
     'ja-JP-mac'
   end
 
   language 'ru' do
-    sha256 'f00dbe87d2d9951f466aa92c12bcb83cb5784391bfd21c668da49e4b599ff6ca'
+    sha256 '6125f0673d4924259b2fc2e7bdc79467e3eeb02eee4c112e381b25e5fc1d75d4'
     'ru'
   end
 
   language 'uk' do
-    sha256 'e8657345d04a9eb8c0e9179d67df83b91ce1d5cf06b78ec2f38586b4dec5cea5'
+    sha256 '4d9f8cdb9fd3f251b3dd9d79274555277490b1ceed5a748ffe65aff4c235996c'
     'uk'
   end
 
   language 'zh-TW' do
-    sha256 '1c8c1489169094cb8437ca1e9a6e3fbb06396df06b843908f58ec9cc84718142'
+    sha256 '2f0b0fda8867f9339d25d5bf5e51923b2f955e9514254388fa7b39fdf7316274'
     'zh-TW'
   end
 
   language 'zh' do
-    sha256 'ca6bca5c21736e5dd276b3415d57173ea8f1384256c2bc756abdb7936bcc609f'
+    sha256 'cee25b485f531ccb8798d9c120c1bb3c6b935407bf30e68612ab9944b2d7585a'
     'zh-CN'
   end
 
   # download-installer.cdn.mozilla.net/pub/devedition/releases was verified as official when first introduced to the cask
   url "https://download-installer.cdn.mozilla.net/pub/devedition/releases/#{version}/mac/#{language}/Firefox%20#{version}.dmg"
   appcast 'https://download-installer.cdn.mozilla.net/pub/devedition/releases/',
-          checkpoint: '7320780bf03b056ab149d6868cd3ef108a7eb2b0afe1a2ac365b61c05ec7a676'
+          checkpoint: '7c4c3d03b98d4d503aaea0160206efe701b8fea5dcdd59f872caa02be9295373'
   name 'Mozilla Firefox Developer Edition'
   homepage 'https://www.mozilla.org/firefox/developer/'
 
