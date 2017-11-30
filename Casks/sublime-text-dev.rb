@@ -8,7 +8,7 @@ cask 'sublime-text-dev' do
   name 'Sublime Text'
   homepage 'https://www.sublimetext.com/3dev'
 
-  conflicts_with cask: 'caskroom/versions/sublime-text3'
+  conflicts_with cask: 'sublime-text'
 
   app 'Sublime Text.app'
   binary "#{appdir}/Sublime Text.app/Contents/SharedSupport/bin/subl"
