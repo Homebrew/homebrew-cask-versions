@@ -31,7 +31,7 @@ cask 'microsoft-office-2011' do
                  'com.microsoft.mau.all.autoupdate.*',
                  'com.microsoft.merp.all.errorreporting.*',
                ],
-      delete:  [
+      trash:   [
                  '/Library/LaunchDaemons/com.microsoft.office.licensing.helper.plist',
                  '/Library/PrivilegedHelperTools/com.microsoft.office.licensing.helper',
                  '/Library/Application Support/Microsoft/MAU2.0',
