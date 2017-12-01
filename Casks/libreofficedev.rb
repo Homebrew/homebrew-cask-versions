@@ -35,7 +35,7 @@ cask 'libreofficedev' do
   end
 
   zap trash: [
-               '~/Library/Application Support/LibreOffice',
+               '~/Library/Application Support/LibreOfficeDev',
                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.libreoffice.script.sfl*',
                '~/Library/Preferences/org.libreoffice.script.plist',
                '~/Library/Saved Application State/org.libreoffice.script.savedState',
