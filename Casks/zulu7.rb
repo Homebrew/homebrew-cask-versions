@@ -22,28 +22,12 @@ cask 'zulu7' do
     system_command '/usr/libexec/PlistBuddy',
                    args: ['-c', 'Add :JavaVM:JVMCapabilities: string JNI', "/Library/Java/JavaVirtualMachines/zulu#{version.before_comma}.jdk/Contents/Info.plist"],
                    sudo: true
-
-    if MacOS.version <= :mavericks
-      system_command '/bin/rm',
-                     args: ['-rf', '--', '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'],
-                     sudo: true
-      system_command '/bin/ln',
-                     args: ['-nsf', '--', "/Library/Java/JavaVirtualMachines/zulu#{version.before_comma}.jdk/Contents", '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'],
-                     sudo: true
-    end
   end
 
-  uninstall pkgutil: [
-                       "com.azulsystems.zulu.#{version.minor}",
-                     ],
+  uninstall pkgutil: "com.azulsystems.zulu.#{version.minor}",
             delete:  [
                        "/Library/Java/JavaVirtualMachines/zulu#{version.before_comma}.jdk",
                        "/Library/Java/JavaVirtualMachines/zulu-#{version.minor}.jdk",
                        '/Library/Java/Home',
-                       if MacOS.version <= :mavericks
-                         [
-                           '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK',
-                         ]
-                       end,
-                     ].keep_if { |v| !v.nil? }
+                     ]
 end
