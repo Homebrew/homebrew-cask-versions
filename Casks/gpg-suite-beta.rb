@@ -1,6 +1,6 @@
 cask 'gpg-suite-beta' do
-  version '2017.1'
-  sha256 '01705da33b9dadaf5282d28f9ef58f2eb7cd8ff6f19b4ade78861bf87668a061'
+  version '2017.2'
+  sha256 'e48275495006c135aab647833e6a7a383f7e153fa657147723939c0a75dfa2f2'
 
   url "https://releases.gpgtools.org/GPG_Suite-#{version}.dmg"
   name 'GPG Suite Beta'
