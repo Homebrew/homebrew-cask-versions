@@ -6,7 +6,7 @@ cask 'porting-kit-legacy' do
   name 'Porting Kit Legacy'
   homepage 'http://portingkit.com/'
 
-  conflicts_with cask: 'caskroom/cask/porting-kit'
+  conflicts_with cask: 'porting-kit'
   depends_on macos: '<= :mountain_lion'
 
   app 'Porting Kit Legacy.app'
