@@ -14,7 +14,7 @@ cask 'microsoft-office-2011' do
     'ja-JP'
   end
 
-  url "http://officecdn.microsoft.com/pr/MacOffice#{version}/#{language}/MicrosoftOffice#{version}.dmg"
+  url "https://officecdn.microsoft.com/pr/MacOffice#{version}/#{language}/MicrosoftOffice#{version}.dmg"
   name 'Microsoft Office 2011'
   homepage 'https://www.microsoft.com/mac'
 
