@@ -1,11 +1,11 @@
 cask 'visual-studio-code-insiders' do
-  version '1.19.0,bd11a1f64eb870a927f3d0e5e4628b3fa066d90c'
-  sha256 'd482f49b5a442082bd5e910ea3da15ee12d1170b4ef2fee5f797b673c5e9b3d8'
+  version '1.20.0,08ec16001adaab8a86183431f6aec09209caa4ab'
+  sha256 '6ae796e2a9934419b5d068af23cd884807a9b670a71a5879dbfef5db5e8bcb33'
 
   # az764295.vo.msecnd.net/insider was verified as official when first introduced to the cask
   url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-darwin-insider.zip"
   appcast 'https://vscode-update.azurewebsites.net/api/update/darwin/insider/VERSION',
-          checkpoint: '5ca633ffc2d937b3079512c18e8689c40d1951414985f74fb88e01505a0e8584'
+          checkpoint: '0c1a2d39700bd1b8da5d1735ff6af2f82e2378555745ae3d87dbffffaa025c68'
   name 'Microsoft Visual Studio Code'
   name 'VS Code - Insiders'
   homepage 'https://code.visualstudio.com/insiders'
