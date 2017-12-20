@@ -4,7 +4,7 @@ cask 'virtualbox-extension-pack-beta' do
 
   url "http://download.virtualbox.org/virtualbox/#{version.before_comma}/Oracle_VM_VirtualBox_Extension_Pack-#{version.before_comma}-#{version.after_comma}.vbox-extpack"
   appcast 'http://download.virtualbox.org/virtualbox/LATEST-BETA.TXT',
-          checkpoint: '1f753c9849a06ca6ad4b2df06d022a2dc42bee734c87d98759f911be52eb537b'
+          checkpoint: 'f82b8f1c83d837d42c6a14edb6d18e650415b6550e68cf5efbc521194e310b43'
   name 'Oracle VirtualBox Extension Pack'
   homepage 'https://www.virtualbox.org/'
 
@@ -15,12 +15,12 @@ cask 'virtualbox-extension-pack-beta' do
 
   postflight do
     system_command '/usr/local/bin/VBoxManage',
-                   args: [
-                           'extpack', 'install',
-                           '--replace', "#{staged_path}/Oracle_VM_VirtualBox_Extension_Pack-#{version.before_comma}-#{version.after_comma}.vbox-extpack",
-                           '--accept-license=b674970f720eb020ad18926a9268607089cc1703908696d24a04aa870f34c8e8'
-                         ],
-                   sudo: true
+                   args:  [
+                            'extpack', 'install',
+                            '--replace', "#{staged_path}/Oracle_VM_VirtualBox_Extension_Pack-#{version.before_comma}-#{version.after_comma}.vbox-extpack"
+                          ],
+                   input: 'y',
+                   sudo:  true
   end
 
   uninstall_postflight do
