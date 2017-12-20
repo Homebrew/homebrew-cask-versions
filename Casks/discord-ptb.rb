@@ -1,8 +1,10 @@
 cask 'discord-ptb' do
-  version '0.0.29'
-  sha256 '90e3825df9f36ce489bc71a43d30a1716db256fca474df17b940c9b09a9cf1f5'
+  version '0.0.34'
+  sha256 'b892a5f15f6252ac680bd10c8a089d1fa2820d2ad7dc78f4cbda24844839c2e5'
 
   url "https://cdn-ptb.discordapp.com/apps/osx/#{version}/DiscordPTB.dmg"
+  appcast 'https://discordapp.com/api/ptb/updates?platform=osx',
+          checkpoint: 'f4f2e76512093a850964f6d9b8f5f3c32390a393ee06edd11bd08c3ba3f48aea'
   name 'Discord PTB'
   homepage 'https://discordapp.com/'
 
