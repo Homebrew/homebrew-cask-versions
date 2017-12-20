@@ -16,7 +16,10 @@ cask 'webkit-build-archive' do
   name 'WebKit Build Archive'
   homepage 'https://webkit.org/build-archives/'
 
-  depends_on macos: '>= :sierra'
+  depends_on macos: [
+                      :sierra,
+                      :high_sierra,
+                    ]
 
   # shim script (https://github.com/caskroom/homebrew-cask/issues/18809)
   shimscript = "#{staged_path}/webkit.wrapper.sh"
