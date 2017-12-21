@@ -4,11 +4,12 @@ cask 'torbrowser-alpha' do
 
   url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-osx64_en-US.dmg"
   appcast 'https://dist.torproject.org/torbrowser/',
-          checkpoint: '69bf5867088ea2bcf90d328d252ee0bc9d5a74e2bdb956b2a8be9c830fb36c14'
+          checkpoint: '097341a28065ded341946ea196bbbcbce06ea6451b6227dbb089a79d264307f3'
   name 'Tor Browser'
   homepage 'https://www.torproject.org/projects/torbrowser.html'
   gpg "#{url}.asc", key_id: 'ef6e286dda85ea2a4ba7de684e2c6e8793298290'
 
+  auto_updates true
   conflicts_with cask: 'torbrowser'
 
   app 'TorBrowser.app'
