@@ -10,7 +10,7 @@ cask 'atom-beta' do
   homepage 'https://atom.io/beta'
 
   auto_updates true
-  depends_on macos: '>= :mountain_lion'
+  depends_on macos: '>= :mavericks'
 
   app 'Atom Beta.app'
   binary "#{appdir}/Atom Beta.app/Contents/Resources/app/apm/bin/apm", target: 'apm-beta'
