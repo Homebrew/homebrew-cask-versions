@@ -7,6 +7,7 @@ cask 'dropbox-beta' do
   name 'Dropbox'
   homepage 'https://www.dropboxforum.com/t5/Desktop-client-builds/bd-p/101003016'
 
+  auto_updates true
   conflicts_with cask: 'dropbox'
 
   app 'Dropbox.app'
