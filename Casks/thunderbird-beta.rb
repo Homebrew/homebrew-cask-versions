@@ -1,23 +1,23 @@
 cask 'thunderbird-beta' do
-  version '56.0b3'
+  version '58.0b2'
 
   language 'cs' do
-    sha256 'c6158f144573f20cf3b389ad37ac317dfc54c52512996664047a00a62653a50f'
+    sha256 'e4208ce8ea84efe9d7100182b18f95a95ebced21302fccca968960163afe443a'
     'cs'
   end
 
   language 'en', default: true do
-    sha256 '48c353b966c3dc534250e78f80a7e5680870d065f633de4ecf4b7669f5289da1'
+    sha256 'abcdfb038f5be15ae6ab277a437d30dc89ae4bf768179e37d81c94183f192d07'
     'en-US'
   end
 
   language 'ru' do
-    sha256 'd75dcd7d1b8ef3b9d0a5af70313af784a41e146c33e5036e084d3611cd52edbb'
+    sha256 '19e33911ec408ebc8798c47dd36ce77062915a09fc5c1596b4d13a60fba8ef9e'
     'ru'
   end
 
   language 'uk' do
-    sha256 '7ca26f68c83fc3b49366d6206ed1f881176b1d04aade6d59a407999a1e669c75'
+    sha256 'c1a6699c80cd2cfeeee184b2a557175b48b2b22bb598328c77ad094a36547011'
     'uk'
   end
 
