@@ -82,6 +82,11 @@ cask 'firefox-esr' do
   name 'Mozilla Firefox Extended Support Release'
   homepage 'https://www.mozilla.org/firefox/organizations/'
 
+  conflicts_with cask: [
+                         'firefox',
+                         'firefox-beta',
+                       ]
+
   app 'Firefox.app'
 
   zap trash: [
