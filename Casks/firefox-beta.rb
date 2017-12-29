@@ -112,6 +112,10 @@ cask 'firefox-beta' do
   homepage 'https://www.mozilla.org/firefox/channel/desktop/#beta'
 
   auto_updates true
+  conflicts_with cask: [
+                         'firefox',
+                         'firefox-esr',
+                       ]
 
   app 'Firefox.app'
 
