@@ -15,6 +15,7 @@ cask 'openemu-experimental' do
 
   zap trash: [
                '~/Library/Application Support/OpenEmu',
+               '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.openemu.openemu.sfl*',
                '~/Library/Application Support/org.openemu.OEXPCCAgent.Agents',
                '~/Library/Caches/org.openemu.OpenEmu',
                '~/Library/Cookies/org.openemu.OpenEmu.binarycookies',
