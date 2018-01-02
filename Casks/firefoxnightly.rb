@@ -27,7 +27,7 @@ cask 'firefoxnightly' do
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/firefox/channel/desktop/#nightly'
 
-  app 'FirefoxNightly.app'
+  app 'Firefox Nightly.app'
 
   zap trash: [
                '~/Library/Application Support/Firefox',
