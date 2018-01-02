@@ -1,4 +1,4 @@
-cask 'firefoxnightly' do
+cask 'firefox-nightly' do
   version '59.0a1'
   sha256 :no_check # required as upstream package is updated in-place
 
@@ -27,7 +27,7 @@ cask 'firefoxnightly' do
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/firefox/channel/desktop/#nightly'
 
-  app 'FirefoxNightly.app'
+  app 'Firefox Nightly.app'
 
   zap trash: [
                '~/Library/Application Support/Firefox',
