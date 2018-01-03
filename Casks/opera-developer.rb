@@ -9,4 +9,12 @@ cask 'opera-developer' do
   auto_updates true
 
   app 'Opera Developer.app'
+
+  zap trash: [
+               '~/Library/Application Support/com.operasoftware.OperaDeveloper',
+               '~/Library/Caches/com.operasoftware.OperaDeveloper',
+               '~/Library/Cookies/com.operasoftware.OperaDeveloper.binarycookies',
+               '~/Library/Preferences/com.operasoftware.OperaDeveloper.plist',
+               '~/Library/Saved Application State/com.operasoftware.OperaDeveloper.savedState',
+             ]
 end
