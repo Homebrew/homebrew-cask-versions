@@ -1,11 +1,13 @@
 cask 'adium-beta' do
-  version '1.5.10.3b1'
-  sha256 '6c1c7b58e23bf4b1e024eb7c5592eaa5b4d6b2ea33e0fb75e32aa0b0c4672085'
+  version '1.5.10.4'
+  sha256 '31fa3fd32b86dd3381b60e0d5aafbc2a9452036f0fb4963bffbc2a6c64a9458b'
 
-  # adiumx.cachefly.net was verified as official when first introduced to the cask
-  url "https://adiumx.cachefly.net/Adium_#{version}.dmg"
+  url "http://download.adium.im/Adium_#{version}.dmg"
   name 'Adium'
   homepage 'https://beta.adium.im/'
+
+  auto_updates true
+  conflicts_with cask: 'adium'
 
   app 'Adium.app'
 
