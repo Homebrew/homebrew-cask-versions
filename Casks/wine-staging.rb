@@ -4,6 +4,8 @@ cask 'wine-staging' do
 
   # dl.winehq.org/wine-builds/macosx was verified as official when first introduced to the cask
   url "https://dl.winehq.org/wine-builds/macosx/pool/winehq-staging-#{version}.pkg"
+  appcast 'https://dl.winehq.org/wine-builds/macosx/download.html',
+          checkpoint: 'ae39f5807510c74899907fc8e41019d17fba4c7b3e959cde578f57118b6962d3'
   name 'WineHQ-staging'
   homepage 'https://www.wine-staging.com/'
 
