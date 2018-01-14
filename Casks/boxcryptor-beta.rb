@@ -1,8 +1,8 @@
 cask 'boxcryptor-beta' do
-  version :latest
-  sha256 :no_check
+  version '2.3.201.730'
+  sha256 '0caf99cbe2b8b64d4d78501a664e91ae27757bc094f185f62dec2d6b120139a9'
 
-  url 'https://www.boxcryptor.com/l/download-macosx-beta'
+  url "https://downloads.boxcryptor.com/Boxcryptor_v#{version}_Installer.dmg"
   name 'Boxcryptor'
   homepage 'https://www.boxcryptor.com/en/'
 
