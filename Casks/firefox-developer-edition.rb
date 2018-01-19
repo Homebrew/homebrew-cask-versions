@@ -1,4 +1,4 @@
-cask 'firefoxdeveloperedition' do
+cask 'firefox-developer-edition' do
   version :latest
   sha256 :no_check
 
@@ -42,5 +42,5 @@ cask 'firefoxdeveloperedition' do
   name 'Mozilla Firefox Developer Edition'
   homepage 'https://www.mozilla.org/firefox/developer/'
 
-  app 'FirefoxDeveloperEdition.app'
+  app 'Firefox Developer Edition.app'
 end
