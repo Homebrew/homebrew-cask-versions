@@ -1,10 +1,11 @@
 cask 'palemoon' do
-  version '27.6.2'
-  sha256 '56d6f8a768e3f41fa7da523406c1054c5d1edd1c093a5e3de2b5b03262c54e9f'
+  version '27.7.0'
+  sha256 'ec7049d57771fde31214ea9e87606184a44993aa3c1a1b912a4e144abcbcfbad'
 
   url "https://mac.palemoon.org/dist/palemoon-#{version}.mac64.dmg"
   name 'Palemoon'
   homepage 'https://www.palemoon.org/'
 
-  app 'Palemoon.app'
+  # Renamed for clarity: app name is inconsistent with its branding.
+  app 'NewMoon.app', target: 'Palemoon.app'
 end
