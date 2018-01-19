@@ -6,5 +6,6 @@ cask 'palemoon' do
   name 'Palemoon'
   homepage 'https://www.palemoon.org/'
 
-  app 'NewMoon.app'
+  # Renamed for clarity: app name is inconsistent with its branding.
+  app 'NewMoon.app', target: 'Palemoon.app'
 end
