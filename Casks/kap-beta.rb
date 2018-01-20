@@ -9,6 +9,8 @@ cask 'kap-beta' do
   name 'Kap Beta'
   homepage 'https://getkap.co/'
 
+  auto_updates true
+
   app 'Kap Beta.app'
 
   zap trash: [
