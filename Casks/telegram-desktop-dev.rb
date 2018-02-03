@@ -1,6 +1,6 @@
 cask 'telegram-desktop-dev' do
-  version '1.1.13.alpha'
-  sha256 'c5f22e59a6b27a1a616a62b61bb1ca07e943e38a24ac4093d24767d1549e5c19'
+  version '1.2.8.alpha'
+  sha256 '133d090433e53c3d4ba59ac4f9587d8a5574028a8897472c7ddcaecf8a3d0a90'
 
   # tdesktop.com was verified as official when first introduced to the cask
   url "https://updates.tdesktop.com/tmac/tsetup.#{version}.dmg"
