@@ -25,5 +25,17 @@ cask 'thunderbird-beta' do
   name 'Mozilla Thunderbird'
   homepage 'https://www.mozilla.org/en-US/thunderbird/beta/all/'
 
+  conflicts_with cask: [
+                         'thunderbird',
+                         'thunderbird-daily',
+                       ]
+
   app 'Thunderbird.app'
+
+  zap trash: [
+               '~/Library/Thunderbird',
+               '~/Library/Caches/Thunderbird',
+               '~/Library/Saved Application State/org.mozilla.thunderbird.savedState',
+               '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.thunderbird.sfl*',
+             ]
 end

@@ -1,10 +1,10 @@
 cask '1password-beta' do
-  version '6.8.5.BETA-2'
-  sha256 '403fce6ef8c18bfe8a8e086a50ac83ae4e28f01409da2c7c4197a33e94b7204a'
+  version '6.8.6'
+  sha256 '8a2e922d3fbf0cafcf530301b1d5db315fc37fb5ac5c732feecbc0b6190a47d9'
 
   url "https://cache.agilebits.com/dist/1P/mac4/1Password-#{version}.zip"
   appcast 'https://app-updates.agilebits.com/product_history/OPM4',
-          checkpoint: '4ca0ce7d107be3c5229cb6be0860c7bdc230543490433e59a2a828bd65bab13b'
+          checkpoint: '3d8108f7ec801f308b2bf7de4fea46fb7f84535d217d25c1c616360197907dbe'
   name '1Password'
   homepage 'https://agilebits.com/downloads'
 
