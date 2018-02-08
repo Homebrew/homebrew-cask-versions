@@ -5,7 +5,7 @@ cask 'libreoffice-still' do
   # documentfoundation.org was verified as official when first introduced to the cask
   url "http://download.documentfoundation.org/libreoffice/stable/#{version}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg"
   appcast 'https://download.documentfoundation.org/libreoffice/stable/',
-          checkpoint: '486094f95e9a8923aec72ebf34350ffc163e692a1eb22dc8a5980333e53a64f8'
+          checkpoint: 'ee6e2bcea5292e26489d457d0986d64ea95f0e1817d438604493bb8ce17b291a'
   name 'LibreOffice Still'
   homepage 'https://www.libreoffice.org/download/libreoffice-still/'
   gpg "#{url}.asc", key_id: 'c2839ecad9408fbe9531c3e9f434a1efafeeaea3'
