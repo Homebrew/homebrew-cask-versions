@@ -12,6 +12,7 @@ cask 'safari-technology-preview' do
   name 'Safari Technology Preview'
   homepage 'https://developer.apple.com/safari/download/'
 
+  auto_updates true
   depends_on macos: '>= :sierra'
 
   pkg 'Safari Technology Preview.pkg'
