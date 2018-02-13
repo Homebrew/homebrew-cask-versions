@@ -9,7 +9,7 @@ cask 'wine-staging' do
   name 'WineHQ-staging'
   homepage 'https://www.wine-staging.com/'
 
-  depends_on cask: 'xquartz'
+  depends_on x11: true
 
   pkg "winehq-staging-#{version}.pkg",
       choices: [
