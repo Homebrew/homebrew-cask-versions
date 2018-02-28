@@ -1,9 +1,9 @@
 cask 'dropbox-beta' do
-  version '44.3.56'
-  sha256 '44e1b5025a843d43a7104bb9856c9b59c7b7000c314666318e2298667d19f75c'
+  version '45.3.86'
+  sha256 '8632fe73d67338d6d5cb8a33542ce0a5437bfaff78309f09943041797af452ad'
 
-  # clientupdates.dropboxstatic.com was verified as official when first introduced to the cask
-  url "https://clientupdates.dropboxstatic.com/client/Dropbox%20#{version}.dmg"
+  # dropbox.com was verified as official when first introduced to the cask
+  url "https://www.dropbox.com/download?build=#{version}&plat=mac&type=full"
   name 'Dropbox'
   homepage 'https://www.dropboxforum.com/t5/Desktop-client-builds/bd-p/101003016'
 
