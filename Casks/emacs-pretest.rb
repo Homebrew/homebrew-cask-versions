@@ -1,10 +1,10 @@
 cask 'emacs-pretest' do
-  version '26.0.91'
-  sha256 'b43575f0db141e358a4c916891c6dc50e1693daa54b2d23d86efb7d048dbef2a'
+  version '26.0.91-1'
+  sha256 'f6b2c64be15806f153913e2d6f2c6e526c9f596d63438c044bafcf34abba1942'
 
   url "https://emacsformacosx.com/emacs-builds/Emacs-pretest-#{version}-universal.dmg"
   appcast 'https://emacsformacosx.com/atom/pretest',
-          checkpoint: '047327f6099140650abdbfc636d48500c3cd13281947b363f4c8da4f1fe42893'
+          checkpoint: '725a3e42d1670bffc704c577a1f6379518a187ea4bfe760f10925e26d4cf3a0f'
   name 'Emacs'
   homepage 'https://emacsformacosx.com/'
 
