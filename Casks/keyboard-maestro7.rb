@@ -7,7 +7,7 @@ cask 'keyboard-maestro7' do
   name 'Keyboard Maestro'
   homepage 'https://www.keyboardmaestro.com/'
 
-  depends_on macos: '>= :mountain_lion'
+  depends_on macos: '>= :yosemite'
 
   app 'Keyboard Maestro.app'
 end
