@@ -4,7 +4,7 @@ cask 'gpg-suite-nightly' do
 
   url do
     require 'open-uri'
-    html = open('https://releases.gpgtools.org/nightlies/').read
+    html = URI('https://releases.gpgtools.org/nightlies/').open.read
     html.match(%r{<td class='filename'><a href='(.*)'>})[1]
   end
   name 'GPG Suite Nightly'

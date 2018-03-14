@@ -4,7 +4,7 @@ cask 'sequel-pro-nightly' do
 
   url do
     require 'open-uri'
-    open('https://sequelpro.com/builds/latest-test-build.xml') do |page|
+    URI('https://sequelpro.com/builds/latest-test-build.xml').open do |page|
       page.read[%r{https:\/\/sequelpro.com\/builds\/Sequel-Pro-Build-\w+.zip}]
     end
   end

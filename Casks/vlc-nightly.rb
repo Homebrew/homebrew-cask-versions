@@ -5,7 +5,7 @@ cask 'vlc-nightly' do
   url do
     require 'open-uri'
     base_url = 'https://nightlies.videolan.org/build/macosx-intel/last/'
-    file = open(base_url).read.scan(%r{href="([^"]+.dmg)"}).flatten.first
+    file = URI(base_url).open.read.scan(%r{href="([^"]+.dmg)"}).flatten.first
     "#{base_url}#{file}"
   end
   name 'VLC media player'
