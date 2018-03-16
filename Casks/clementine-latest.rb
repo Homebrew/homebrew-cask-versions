@@ -6,7 +6,8 @@ cask 'clementine-latest' do
     require 'open-uri'
     last_modified_query = '?C=M;O=D'
     base_url = 'https://builds.clementine-player.org/mac/'
-    file = open("#{base_url}#{last_modified_query}")
+    file = URI("#{base_url}#{last_modified_query}")
+           .open
            .read
            .scan(%r{href="(clementine-[^"]+.dmg)"})
            .flatten

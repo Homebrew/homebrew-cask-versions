@@ -5,7 +5,7 @@ cask 'emacs-nightly' do
   url do
     require 'open-uri'
     base_url = 'https://emacsformacosx.com/atom/daily'
-    file = open(base_url).read.scan(%r{href="([^"]+.dmg)"}).flatten.first
+    file = URI(base_url).open.read.scan(%r{href="([^"]+.dmg)"}).flatten.first
     file.to_s
   end
   name 'Emacs'
