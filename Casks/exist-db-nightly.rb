@@ -7,7 +7,7 @@ cask 'exist-db-nightly' do
     require 'open-uri'
     base_url = 'http://static.adamretter.org.uk/exist-nightly'
     builds_url = "#{base_url}/table.html"
-    latest_build_filename = open(builds_url) do |io|
+    latest_build_filename = URI(builds_url).open do |io|
       io.read.scan(%r{<tr>.*?<td>(.*?)</td>.*?<a href="([^\"]+)">dmg}m).max[1]
     end
     "#{base_url}/#{latest_build_filename}"
