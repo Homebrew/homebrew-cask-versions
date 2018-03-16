@@ -10,7 +10,7 @@ cask 'webkit-build-archive' do
                     else
                       %r{href="([^"]+mac\-highsierra[^"]+.zip)"}
                     end
-    file = open(base_url).read.scan(macos_release).flatten.first
+    file = URI(base_url).open.read.scan(macos_release).flatten.first
     file.to_s
   end
   name 'WebKit Build Archive'

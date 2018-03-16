@@ -4,7 +4,8 @@ cask 'mcrl2-nightly' do
 
   url do
     require 'open-uri'
-    open('http://www.mcrl2.org/web/user_manual/download.html')
+    URI('http://www.mcrl2.org/web/user_manual/download.html')
+      .open
       .read
       .scan(%r{href="([^"]+/devel/mcrl2\-[^"]+_x86_64.dmg)"})
       .flatten
