@@ -1,10 +1,10 @@
 cask 'torbrowser-alpha' do
-  version '8.0a3'
-  sha256 'c20655c293035591c398b92c12b7e443b74a918e01a85dabb7ad454dd9ad8ee5'
+  version '8.0a4'
+  sha256 '7d629b22fa0b8c2ee66b23e8a2f6a8ce07a86975e9f0529730237c241f467b0a'
 
   url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-osx64_en-US.dmg"
   appcast 'https://dist.torproject.org/torbrowser/',
-          checkpoint: 'a9b3569ba19d354f07ba787c5957ef7f8b6c06e65cc9ce91aa5bfc41f47f38ee'
+          checkpoint: '872b43f4be239c9e06844efca17ed0d5af86e5a5acfc5f22f851a22374284d1e'
   name 'Tor Browser'
   homepage 'https://www.torproject.org/projects/torbrowser.html'
   gpg "#{url}.asc", key_id: 'ef6e286dda85ea2a4ba7de684e2c6e8793298290'
