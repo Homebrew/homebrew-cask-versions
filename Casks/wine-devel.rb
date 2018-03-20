@@ -1,10 +1,10 @@
 cask 'wine-devel' do
-  version '3.3'
-  sha256 'fd6d4f36e821ea70cd625a9e07e626d170aa352bb064067860bd94836b7fad99'
+  version '3.4'
+  sha256 '2aabbf1fabaf8c08f543904bf3b8073636e57af9098f522e5503746663f8c1bc'
 
   url "https://dl.winehq.org/wine-builds/macosx/pool/winehq-devel-#{version}.pkg"
   appcast 'https://dl.winehq.org/wine-builds/macosx/download.html',
-          checkpoint: '889d476868b9c5b53481678821234939154208c3e943d6ce1cc118705769c07f'
+          checkpoint: 'cc16ce44eb4f9a30998521cd4e13e2033e60e038c9466c9923e2777ddcaf7435'
   name 'WineHQ-devel'
   homepage 'https://wiki.winehq.org/MacOS'
 
