@@ -4,7 +4,7 @@ cask 'wine-devel' do
 
   url "https://dl.winehq.org/wine-builds/macosx/pool/winehq-devel-#{version}.pkg"
   appcast 'https://dl.winehq.org/wine-builds/macosx/download.html',
-          checkpoint: '889d476868b9c5b53481678821234939154208c3e943d6ce1cc118705769c07f'
+          checkpoint: 'cc16ce44eb4f9a30998521cd4e13e2033e60e038c9466c9923e2777ddcaf7435'
   name 'WineHQ-devel'
   homepage 'https://wiki.winehq.org/MacOS'
 
