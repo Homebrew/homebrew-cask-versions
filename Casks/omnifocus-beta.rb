@@ -1,10 +1,12 @@
 cask 'omnifocus-beta' do
-  version '2.x-r303501'
-  sha256 '2c15ac0c7ddf6d4e8ef7cb70fceb6a13556e67b45f5a4a586a9b1ae3aa53660f'
+  version '2.x-r306258'
+  sha256 'b2214831838c9e48d0adcc6ce53d5802f3413ab83c8362ed990e6fce03e08480'
 
   url "https://omnistaging.omnigroup.com/omnifocus/releases/OmniFocus-#{version}-Test.dmg"
   name 'OmniFocus'
   homepage 'https://omnistaging.omnigroup.com/omnifocus/'
+
+  depends_on macos: '>= :sierra'
 
   app 'OmniFocus.app'
 
