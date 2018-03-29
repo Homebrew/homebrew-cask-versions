@@ -1,19 +1,17 @@
 cask '1password-beta' do
   version '7.0.BETA-3'
-  sha256 'e8a15236fe58aca9ee49ef212cf043d3cbd02423e39c5448ced3f32cb260bc83'
+  sha256 '1116d6b18cdf18fa532bdc5463e5a2767252ecb47a6015f407a2de9675180c3b'
 
   # 1password.com was verified as official when first introduced to the cask
-  url "https://c.1password.com/dist/1P/mac7/1Password-#{version}.pkg"
-  appcast 'https://app-updates.agilebits.com/download/OPM7',
-          checkpoint: '6b2c01a30d89571fba0ed4da630b0650f182a642d44c8097d90298caf2a705d1'
+  url "https://c.1password.com/dist/1P/mac#{version.major}/1Password-#{version}.zip"
+  appcast "https://app-updates.agilebits.com/product_history/OPM#{version.major}",
+          checkpoint: '51b05534eaace042bdb613f473450b6cf951156667f2ee5b0d3b8f419e35ec93'
   name '1Password'
-  homepage 'https://1password.com/downloads/'
+  homepage 'https://1password.com/'
 
   auto_updates true
 
-  pkg "1Password-#{version}.pkg"
-
-  uninstall pkgutil: 'com.agilebits.pkg.onepassword7'
+  app "1Password #{version.major}.app"
 
   zap trash: [
                '~/Library/Application Scripts/2BUA8C4S2C.com.agilebits.onepassword-osx-helper',
