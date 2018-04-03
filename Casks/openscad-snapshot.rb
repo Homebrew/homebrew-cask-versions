@@ -1,10 +1,10 @@
 cask 'openscad-snapshot' do
-  version '2017.12.02'
-  sha256 'f78f453caa6f66096a6465ca6429b7d6446163a45f57899c5579cd9982233fa7'
+  version '2018.03.17'
+  sha256 '58330d5118ec921b3ed930adfb35e90fdaa30afc25930f85cc102fdf255112aa'
 
   url "http://files.openscad.org/snapshots/OpenSCAD-#{version}.dmg"
   appcast 'http://www.openscad.org/inc/mac_snapshot_links.js',
-          checkpoint: '15380c14aacfad783e513684eb70b8654716aa7d483e1439c838d6a15f5bd5bd'
+          checkpoint: '3649c93e68cf90854651ef413939474ea8530010916dbd6d0cb2e234b56954a6'
   name 'OpenSCAD'
   homepage 'http://www.openscad.org/downloads.html#snapshots'
 
