@@ -1,11 +1,11 @@
 cask 'psi-plus' do
-  version '1.2.105,2017-10-28'
-  sha256 'df24c6f6baa72ba218e6854cd389472aa1633164e086f709bb071135533ee69d'
+  version '1.2.125,2017-12-29'
+  sha256 'f5bc8b2de632247fc94a177daa74112d127cd5de1af7255260836e73a7562d22'
 
   # downloads.sourceforge.net/psiplus/Mac-OS-X was verified as official when first introduced to the cask
   url "https://downloads.sourceforge.net/psiplus/Mac-OS-X/psi-plus-#{version.before_comma}-qt5-webengine-git-#{version.after_comma}-macosx.dmg"
   appcast 'https://sourceforge.net/projects/psiplus/rss',
-          checkpoint: 'bcde13475f4a46b8a08a8ca7f42d6bd8f6f03a36739d25911f19c240b92d3336'
+          checkpoint: '522964829316b8a257efe824ac61b611a0cf356e81e40602b751d0422b0aff6b'
   name 'Psi+'
   homepage 'http://psi-plus.com/'
 
