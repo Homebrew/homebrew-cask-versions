@@ -1,6 +1,6 @@
 cask 'whatpulse-beta' do
-  version '2.7.2b1'
-  sha256 '54dc8c55cdca3d2f19bcd7ea788ac6aa2c57f6c7629e82de32ee93cc6211e0ad'
+  version '2.8.2b3'
+  sha256 'f9873e56bc6cb4becaaaf209da803b98423384869f372b62104b0e16bcecd8ea'
 
   url "https://static.whatpulse.org/files/beta/whatpulse-mac-#{version}.dmg"
   name 'WhatPulse'
