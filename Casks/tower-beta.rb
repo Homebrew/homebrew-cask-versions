@@ -7,7 +7,7 @@ cask 'tower-beta' do
   appcast "https://updates.fournova.com/updates/tower#{version.major}-mac/beta",
           checkpoint: '3c7e1f95c3a3573514979035aa8a37af6a8368b89307c8841609ec884b5fb493'
   name 'Tower'
-  homepage 'https://www.git-tower.com/'
+  homepage 'https://www.git-tower.com/public-beta-2018'
 
   app 'Tower.app'
   binary "#{appdir}/Tower.app/Contents/MacOS/gittower"
