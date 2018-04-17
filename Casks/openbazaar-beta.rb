@@ -1,11 +1,11 @@
 cask 'openbazaar-beta' do
-  version '2.1.1'
-  sha256 'f9c036ee04caf8ff61b19fb53da4dc1065fac2582a50b6c485737aa836886e84'
+  version '2.1.1-rc4'
+  sha256 '9a0a2a657f842114b86b31edcbe1fb540ee237622cf4c683318b4e0296149ab0'
 
   # github.com/OpenBazaar/openbazaar-desktop was verified as official when first introduced to the cask
   url "https://github.com/OpenBazaar/openbazaar-desktop/releases/download/v#{version}/OpenBazaar#{version.major}-#{version.major_minor_patch}.dmg"
   appcast 'https://github.com/OpenBazaar/openbazaar-desktop/releases.atom',
-          checkpoint: '52021919914e4f964154a1a948cc1dff3afd32885deb120a78922c012a637384'
+          checkpoint: '1abbf32d91492e58b18fc5be855e5533eaa69731e6999683d1e10e75bc6868d3'
   name 'OpenBazaar Beta'
   homepage 'https://www.openbazaar.org/'
 
