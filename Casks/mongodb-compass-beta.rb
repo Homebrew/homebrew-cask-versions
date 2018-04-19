@@ -1,10 +1,10 @@
-cask 'mongodb-compass-beta' do
-  version '1.13.0-beta.7'
-  sha256 '3f34019371275dca275701c3f46a1b2dafa7e17940fe9caecb4233f6a648d132'
+cask 'mongodb-compass-community' do
+  version '1.12.7'
+  sha256 'a7b3e023a885f0456791d97d8df4697064ea297fe54479afe3d065cd8a82098b'
 
-  url "https://downloads.mongodb.com/compass/beta/mongodb-compass-#{version}-darwin-x64.dmg"
-  name 'MongoDB Compass'
+  url "https://downloads.mongodb.com/compass/mongodb-compass-community-#{version}-darwin-x64.dmg"
+  name 'MongoDB Compass Community'
   homepage 'https://www.mongodb.com/products/compass'
 
-  app 'MongoDB Compass Beta.app'
+  app 'MongoDB Compass Community.app'
 end
