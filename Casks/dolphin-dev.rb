@@ -1,10 +1,10 @@
 cask 'dolphin-dev' do
-  version '5.0-6203'
-  sha256 '7621be713bdc105dabd12eccbe6817f8da045cc84248d20ddb3bb286b4810839'
+  version '5.0-7053'
+  sha256 '2feeb57e3ad93e072b9e1ee4395842d7849f00981ae4fc2b0c7893475f45dbf7'
 
   url "https://dl.dolphin-emu.org/builds/dolphin-master-#{version}.dmg"
   appcast 'https://github.com/dolphin-emu/dolphin/releases.atom',
-          checkpoint: 'bd796a158ad316236eec0063dfee85e4d063e9cb7697f99ce0872f62d56074c2'
+          checkpoint: 'd861aa16014fc5ba30ec2c4fc02ca2c57923b12372e89e717c75708fbfa9fd39'
   name 'dolphin-dev'
   homepage 'https://dolphin-emu.org/'
 
