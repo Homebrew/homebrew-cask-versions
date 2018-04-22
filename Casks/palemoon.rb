@@ -1,6 +1,6 @@
 cask 'palemoon' do
-  version '27.8.1'
-  sha256 'a51a8b35dada92475d06ad8d29a23463e82b71964945ca36f96a6a3d0234f343'
+  version '27.9.0'
+  sha256 '1982b506d012db957e4bf017dcb2b7aaed65bb72d8e8a12fcc5f304f1231395e'
 
   url "https://mac.palemoon.org/dist/palemoon-#{version}.mac64.dmg"
   name 'Palemoon'
