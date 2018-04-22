@@ -1,10 +1,10 @@
 cask 'mi-beta' do
-  version '3.0.0b16'
-  sha256 '49e239009e70edc2dc5751f9b6b7216b9584f09fe4df2be88991b58468418c38'
+  version '3.0.0'
+  sha256 '6239a38e289a00555341ee55dbc97d99a11a1fca9b4f1724fac194df73167727'
 
   url "https://www.mimikaki.net/download/mi#{version}.dmg"
   appcast 'https://www.mimikaki.net/download/appcast_beta.xml',
-          checkpoint: '03564b1b79264996a3d83a5e8d0b06a974e7e2ced2bbffd739bb5b9b977e5504'
+          checkpoint: '1dac6539d81b880430695e8d98ef42d891e6415c68b3573de1532464ebce0142'
   name 'mi'
   homepage 'https://www.mimikaki.net/download/beta.html'
 
