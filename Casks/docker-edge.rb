@@ -1,10 +1,10 @@
 cask 'docker-edge' do
-  version '18.04.0-ce-mac62,23965'
-  sha256 '1c41dd1198504b8a93aea820a9b09c70349797dceae6150e3ad947165bc1d424'
+  version '18.05.0-ce-rc1-mac63,24246'
+  sha256 '6864b01f2c20e66f8e0beffe2a0a83fbc7d443c22d3021f521cac64937c8b92d'
 
   url "https://download.docker.com/mac/edge/#{version.after_comma}/Docker.dmg"
   appcast 'https://download.docker.com/mac/edge/appcast.xml',
-          checkpoint: '624af9081defc79fe690992a743115e2e12498644f66f11f5b1f9c431a920e96'
+          checkpoint: '94e4e69fcbd97578ca20e79763c03a167682d474ead68c25add67afb77976038'
   name 'Docker Community Edition for Mac (Edge)'
   name 'Docker CE for Mac (Edge)'
   homepage 'https://www.docker.com/community-edition'
