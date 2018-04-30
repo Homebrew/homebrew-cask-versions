@@ -56,9 +56,7 @@ cask 'java8' do
                          '/Library/PreferencePanes/JavaControlPanel.prefPane',
                          '/Library/Java/Home',
                        ],
-            rmdir:     [
-                         "/Library/Java/JavaVirtualMachines/jdk#{version.split('-')[0]}.jdk",
-                       ]
+            rmdir:     "/Library/Java/JavaVirtualMachines/jdk#{version.split('-')[0]}.jdk"
 
   zap trash: [
                '~/Library/Application Support/Java/',
