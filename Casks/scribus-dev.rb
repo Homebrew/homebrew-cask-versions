@@ -9,5 +9,13 @@ cask 'scribus-dev' do
   name 'Scribus'
   homepage 'https://www.scribus.net/'
 
+  conflicts_with cask: 'scribus'
+
   app 'Scribus.app'
+
+  zap trash: [
+               '~/Library/Application Support/Scribus',
+               '~/Library/Preferences/Scribus',
+               '~/Library/Saved Application State/net.scribus.savedState',
+             ]
 end
