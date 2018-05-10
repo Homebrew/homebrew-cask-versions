@@ -10,7 +10,6 @@ cask 'libreofficedev' do
   homepage 'https://www.libreoffice.org/download/pre-releases/'
   gpg "#{url}.asc", key_id: 'c2839ecad9408fbe9531c3e9f434a1efafeeaea3'
 
-  auto_updates true
   depends_on macos: '>= :mavericks'
 
   app 'LibreOfficeDev.app'
