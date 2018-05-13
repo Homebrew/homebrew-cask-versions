@@ -1,10 +1,10 @@
 cask 'prince-latest' do
-  version '20171214'
-  sha256 '4e7d714698d7fe99c1bb4fb5161fa779d0bc78a61f3834b2ecf2a1476673c77a'
+  version '20180328'
+  sha256 '0458b1837225a6285d2f304a68fafa9025020d6784ac254d1317dcb157799d78'
 
   url "https://www.princexml.com/download/prince-#{version}-macosx.tar.gz"
   appcast 'https://www.princexml.com/latest/',
-          checkpoint: 'd7c85f6a9e40d2f62e1891095a144927be9c078fb761646e531c6f9e04d21fb9'
+          checkpoint: '9933d0cf8d8fe54f66dce9ffede5f794ee8de4a70dd6ea753c25a77c82fb35d5'
   name 'Prince'
   homepage 'https://www.princexml.com/'
 
