@@ -12,8 +12,8 @@ cask 'sourcetree-alpha' do
   auto_updates true
   depends_on macos: '>= :yosemite'
 
-  app 'Sourcetree Alpha.app'
-  binary "#{appdir}/Sourcetree Alpha.app/Contents/Resources/stree"
+  app 'Sourcetree-Alpha.app'
+  binary "#{appdir}/Sourcetree-Alpha.app/Contents/Resources/stree"
 
   uninstall launchctl: 'com.atlassian.SourceTreePrivilegedHelper2',
             quit:      'com.torusknot.SourceTreeNotMAS'
