@@ -13,7 +13,7 @@ cask 'sourcetree-alpha' do
   depends_on macos: '>= :yosemite'
 
   app 'SourceTree Alpha.app'
-  binary "#{appdir}/SourceTree Alpha.app/Contents/Resources/stree"
+  binary "#{appdir}/Sourcetree Alpha.app/Contents/Resources/stree"
 
   uninstall launchctl: 'com.atlassian.SourceTreePrivilegedHelper2',
             quit:      'com.torusknot.SourceTreeNotMAS'
