@@ -12,7 +12,7 @@ cask 'sourcetree-alpha' do
   auto_updates true
   depends_on macos: '>= :yosemite'
 
-  app 'SourceTree Alpha.app'
+  app 'Sourcetree Alpha.app'
   binary "#{appdir}/Sourcetree Alpha.app/Contents/Resources/stree"
 
   uninstall launchctl: 'com.atlassian.SourceTreePrivilegedHelper2',
