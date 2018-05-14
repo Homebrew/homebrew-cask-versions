@@ -5,7 +5,7 @@ cask 'signal-beta' do
   url "https://updates.signal.org/desktop/signal-desktop-beta-mac-#{version}.zip"
   appcast 'https://github.com/signalapp/Signal-Desktop/releases.atom',
           checkpoint: '25a8a902518c44a13ddb9eaab2d60644fa034b72df7cac41f9f0e8bf60097e66'
-  name 'Signal-beta'
+  name 'Signal Beta'
   homepage 'https://signal.org/'
 
   auto_updates true
