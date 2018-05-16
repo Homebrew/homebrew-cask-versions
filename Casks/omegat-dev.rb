@@ -12,6 +12,6 @@ cask 'omegat-dev' do
   app "OmegaT_#{version}_Beta_Mac_Signed/OmegaT.app"
 
   caveats do
-    depends_on_java('8+')
+    depends_on_java '8+'
   end
 end
