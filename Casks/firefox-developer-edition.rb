@@ -13,7 +13,7 @@ cask 'firefox-developer-edition' do
   language 'en', default: true do
     'en-US'
   end
-  
+
   language 'es' do
     'es-ES'
   end
