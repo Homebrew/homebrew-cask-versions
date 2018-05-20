@@ -1,11 +1,11 @@
 cask 'airmail-beta' do
-  version '3.5.5.484,342'
-  sha256 'e39c5aaa9d9728892c810a2b69fc63fd8230b8a5a696b46c00942f28de41287e'
+  version '3.5.5.485,343'
+  sha256 '70c5c3fafc6922724166b99345be9f3de7774575a71d2e755f7dad49bb983327'
 
   # hockeyapp.net/api/2/apps/84be85c3331ee1d222fd7f0b59e41b04 was verified as official when first introduced to the cask
   url "https://rink.hockeyapp.net/api/2/apps/84be85c3331ee1d222fd7f0b59e41b04/app_versions/#{version.after_comma}?format=zip&"
   appcast 'https://rink.hockeyapp.net/api/2/apps/84be85c3331ee1d222fd7f0b59e41b04',
-          checkpoint: 'a738e5891ac43dc8c48e804447405f2d02be092121c479d41a2120561642560f'
+          checkpoint: '9f7bf77c5a41f5a954528764d7089e153f31e5dcdcc5ff8e28d89233ec7b27db'
   name 'Airmail'
   homepage 'http://airmailapp.com/beta/'
 
