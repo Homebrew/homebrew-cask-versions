@@ -1,6 +1,6 @@
 # homebrew-cask-versions
 
-Here you'll find alternate versions of Casks for the [homebrew-cask](https://github.com/caskroom/homebrew-cask)
+Here you'll find alternate versions of Casks for the [homebrew-cask](https://github.com/Homebrew/homebrew-cask)
 project.
 
 # Usage
@@ -8,7 +8,7 @@ project.
 After you install homebrew-cask, run the following command:
 
 ```sh
-$ brew tap caskroom/versions
+$ brew tap homebrew/cask-versions
 ```
 
 You can now install alternate versions of Casks.
@@ -19,11 +19,11 @@ $ brew cask install iterm2-beta
 
 ## Acceptable Casks
 
-`caskroom/versions` is not intended to be used for all and any old versions you personally require for xyz project; casks submitted here should be expected to be used by a reasonable number of people and supported by contributors long-term.
+`homebrew/cask-versions` is not intended to be used for all and any old versions you personally require for xyz project; casks submitted here should be expected to be used by a reasonable number of people and supported by contributors long-term.
 
 You may wish to consider hosting your own [tap](https://github.com/Homebrew/brew/blob/master/docs/How-to-Create-and-Maintain-a-Tap.md) for casks you wish to personally support that do not meet the above standards.
 
-For this repo, rules are (following our [nomenclature](https://github.com/caskroom/homebrew-cask/blob/master/doc/development/adding_a_cask.md#finding-a-home-for-your-cask)):
+For this repo, rules are (following our [nomenclature](https://github.com/Homebrew/homebrew-cask/blob/master/doc/development/adding_a_cask.md#finding-a-home-for-your-cask)):
 
 + Include the latest minor version of legacy versions of commercial and freemium software.
 + Legacy versions of commercial and freemium software are restricted to a maximum of five casks.
@@ -33,4 +33,4 @@ For this repo, rules are (following our [nomenclature](https://github.com/caskro
 + Include casks that do not fit the rules, but need to exist somewhere since they are required by other casks.
 
 ## License
-Code is under the [BSD 2 Clause (NetBSD) license](https://github.com/caskroom/homebrew-versions/blob/master/LICENSE)
+Code is under the [BSD 2 Clause (NetBSD) license](https://github.com/Homebrew/homebrew-cask-versions/blob/master/LICENSE)

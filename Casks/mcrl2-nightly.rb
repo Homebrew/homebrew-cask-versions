@@ -87,7 +87,7 @@ cask 'mcrl2-nightly' do
     FileUtils.mkdir "#{staged_path}/bin"
 
     [*tools, *experimental_tools].each do |tool|
-      # shim script (https://github.com/caskroom/homebrew-cask/issues/18809)
+      # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
       IO.write "#{staged_path}/bin/#{tool}.wrapper.sh", <<~EOS
         #!/bin/sh
         exec '#{appdir}/mCRL2.app/Contents/bin/#{tool}' "$@"

@@ -21,7 +21,7 @@ cask 'webkit-build-archive' do
                       :high_sierra,
                     ]
 
-  # shim script (https://github.com/caskroom/homebrew-cask/issues/18809)
+  # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
   shimscript = "#{staged_path}/webkit.wrapper.sh"
   binary shimscript, target: 'webkit'
 

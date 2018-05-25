@@ -9,8 +9,8 @@ cask 'adobe-photoshop-lightroom600' do
   homepage 'https://www.adobe.com/products/photoshop-lightroom.html'
 
   # staged_path not available in Installer/Uninstall Stanza, workaround by nesting with preflight/postflight
-  # see https://github.com/caskroom/homebrew-cask/pull/8887
-  # and https://github.com/caskroom/homebrew-versions/pull/296
+  # see https://github.com/Homebrew/homebrew-cask/pull/8887
+  # and https://github.com/Homebrew/homebrew-cask-versions/pull/296
 
   preflight do
     processes = system_command '/bin/launchctl', args: ['list']
