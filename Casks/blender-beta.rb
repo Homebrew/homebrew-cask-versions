@@ -7,7 +7,7 @@ cask 'blender-beta' do
     base_url = 'https://builder.blender.org/download/'
     latest_build = ''
     URI(base_url).open do |io|
-      latest_build = io.read.scan(%r/blender-2.8-[0-9a-z-]+OSX[-._0-9a-z]+/)[0]
+      latest_build = io.read.scan(%r/blender-2.8[0-9a-z-]+OSX[-._0-9a-z]+/)[0]
     end
     "#{base_url}#{latest_build}"
   end
