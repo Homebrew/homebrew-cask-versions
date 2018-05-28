@@ -8,6 +8,8 @@ cask 'tower-beta' do
           checkpoint: '735540e0e39f40256ed8ccaaf7eac596f4f9eca9b5c4715f41396f826c35ca69'
   name 'Tower'
   homepage 'https://www.git-tower.com/public-beta-2018'
+  
+  auto_updates true
 
   app 'Tower.app'
   binary "#{appdir}/Tower.app/Contents/MacOS/gittower"
