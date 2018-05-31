@@ -1,19 +1,13 @@
 cask 'safari-technology-preview' do
-  version '56'
+  version '57'
+  sha256 'aebc42664e215d0b6d715c00c10e74172b02f5dd9ccc11412471dda38dd54929'
 
-  if MacOS.version == :sierra
-    sha256 '94b25b390da20afae067a699220f47727c72a9b4348b34e69214330fcdf6b8c9'
-    url 'https://secure-appldnld.apple.com/STP/091-84914-20180516-222E2B66-E7F2-410F-AA71-A27B03AB84F6/SafariTechnologyPreview.dmg'
-  else
-    sha256 '675e224be01f59dc4f35aaf0d4838e8b2922544af4d767791885d5fb06936e7b'
-    url 'https://secure-appldnld.apple.com/STP/091-82859-20180516-222E2B66-E7F2-410F-AA71-A27B03AB84F6/SafariTechnologyPreview.dmg'
-  end
-
+  url 'https://secure-appldnld.apple.com/STP/091-86596-20180530-52c8aed3-a343-4dc1-ae7e-f86b389f9fef/SafariTechnologyPreview.dmg'
   name 'Safari Technology Preview'
   homepage 'https://developer.apple.com/safari/download/'
 
   auto_updates true
-  depends_on macos: '>= :sierra'
+  depends_on macos: '>= :high_sierra'
 
   pkg 'Safari Technology Preview.pkg'
 
