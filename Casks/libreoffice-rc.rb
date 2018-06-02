@@ -1,11 +1,11 @@
 cask 'libreoffice-rc' do
-  version '6.0.4.2'
-  sha256 '8a250a07c4178d035bca8edb5aa8c241d200f861fc6cecc5a5d0e309f820daff'
+  version '6.0.5.1'
+  sha256 'fee04b2211241024e072a4fd9ba932ba53db8ac6a4483ee5fe4113942a52a533'
 
   # documentfoundation.org/libreoffice was verified as official when first introduced to the cask
   url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg"
   appcast 'https://download.documentfoundation.org/libreoffice/testing/',
-          checkpoint: '2fc522c321fcd6cca31e0adc4a6e3c01d6aa665a54ec7f84227dc29dd765078e'
+          checkpoint: 'd128cc31aeb266b069062a5344c684c7dc03d7a31d209145a6bd7829884b50d0'
   name 'LibreOffice Release Candidate'
   homepage 'https://www.libreoffice.org/download/pre-releases/'
   gpg "#{url}.asc", key_id: 'c2839ecad9408fbe9531c3e9f434a1efafeeaea3'
