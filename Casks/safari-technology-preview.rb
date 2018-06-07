@@ -1,6 +1,6 @@
 cask 'safari-technology-preview' do
   version '58'
-  sha256 '0f85e2b97802854034e22c7f133987dcb47e811bf6bff563c31e6753a5336eb6'
+  sha256 :no_check
 
   if MacOS.version <= :high_sierra
     url 'https://secure-appldnld.apple.com/STP/091-87399-20180606-FBA72DC9-E8A3-446A-A4E2-B32DBB7175AB/SafariTechnologyPreview.dmg'
