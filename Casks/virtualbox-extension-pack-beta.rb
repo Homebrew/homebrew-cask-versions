@@ -3,8 +3,7 @@ cask 'virtualbox-extension-pack-beta' do
   sha256 'fd73ff4e6a1c8677c0252a94d21423d1e59191c3ab2df00891d37d559899f0c2'
 
   url "http://download.virtualbox.org/virtualbox/#{version.before_comma}/Oracle_VM_VirtualBox_Extension_Pack-#{version.before_comma}-#{version.after_comma}.vbox-extpack"
-  appcast 'http://download.virtualbox.org/virtualbox/LATEST-BETA.TXT',
-          checkpoint: 'f82b8f1c83d837d42c6a14edb6d18e650415b6550e68cf5efbc521194e310b43'
+  appcast 'http://download.virtualbox.org/virtualbox/LATEST-BETA.TXT'
   name 'Oracle VirtualBox Extension Pack'
   homepage 'https://www.virtualbox.org/'
 

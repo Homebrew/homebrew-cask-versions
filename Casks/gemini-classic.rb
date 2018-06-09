@@ -4,8 +4,7 @@ cask 'gemini-classic' do
 
   # devmate.com/com.macpaw.site.Gemini was verified as official when first introduced to the cask
   url "https://dl.devmate.com/com.macpaw.site.Gemini/#{version.before_comma}/#{version.after_comma}/MacPawGemini-#{version.before_comma}.zip"
-  appcast 'https://updates.devmate.com/com.macpaw.site.Gemini.xml',
-          checkpoint: 'e7459033f8af7371c6114b2c91dcfb5a07619385114c09e2b2652ac4734719ae'
+  appcast 'https://updates.devmate.com/com.macpaw.site.Gemini.xml'
   name 'MacPaw Gemini'
   homepage 'https://macpaw.com/gemini-classic'
 

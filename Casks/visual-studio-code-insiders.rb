@@ -4,8 +4,7 @@ cask 'visual-studio-code-insiders' do
 
   # az764295.vo.msecnd.net/insider was verified as official when first introduced to the cask
   url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-darwin-insider.zip"
-  appcast 'https://vscode-update.azurewebsites.net/api/update/darwin/insider/VERSION',
-          checkpoint: 'baf79fd2130d53acfeef40edd562ef9601905d2e6bc3c99d35fa9f9ee230f24b'
+  appcast 'https://vscode-update.azurewebsites.net/api/update/darwin/insider/VERSION'
   name 'Microsoft Visual Studio Code'
   name 'VS Code - Insiders'
   homepage 'https://code.visualstudio.com/insiders'

@@ -4,8 +4,7 @@ cask 'sourcetree-beta' do
 
   # atlassian.com was verified as official when first introduced to the cask
   url "https://downloads.atlassian.com/software/sourcetree/Sourcetree_#{version}.zip"
-  appcast 'https://www.sourcetreeapp.com/update/SparkleAppcastBeta.xml',
-          checkpoint: '58e5ab6e0280f19279e1932110056ac4334212ad50fdf2ab9e7549d91e992191'
+  appcast 'https://www.sourcetreeapp.com/update/SparkleAppcastBeta.xml'
   name 'Atlassian SourceTree'
   homepage 'https://www.sourcetreeapp.com/'
 

@@ -4,8 +4,7 @@ cask 'rhinoceroswip' do
 
   # mcneel.com was verified as official when first introduced to the cask
   url "https://files.mcneel.com/Releases/Rhino/5.0/Mac/RhinoWIP_#{version}.dmg"
-  appcast 'https://files.mcneel.com/rhino/5.0/mac/5CwipUpdates.xml',
-          checkpoint: 'ee6458f135585c7502e88415b506eaa2e91de3fc73fc263cab38eab1d4e7dc97'
+  appcast 'https://files.mcneel.com/rhino/5.0/mac/5CwipUpdates.xml'
   name 'Rhinoceros WIP'
   homepage 'https://www.rhino3d.com/download/rhino-for-mac/5/wip'
 

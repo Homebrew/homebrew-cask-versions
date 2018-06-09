@@ -4,8 +4,7 @@ cask 'tower-beta' do
 
   # amazonaws.com/apps/tower3-mac was verified as official when first introduced to the cask
   url "https://fournova-app-updates.s3.amazonaws.com/apps/tower3-mac/#{version.after_comma}/Tower-#{version.before_comma}.zip"
-  appcast "https://updates.fournova.com/updates/tower#{version.major}-mac/beta",
-          checkpoint: '36662dbb901836cb7b5c82ce4888b5425be8da5fc44a157cd3fde19ee8abc27d'
+  appcast "https://updates.fournova.com/updates/tower#{version.major}-mac/beta"
   name 'Tower'
   homepage 'https://www.git-tower.com/public-beta-2018'
 
