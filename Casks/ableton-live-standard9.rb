@@ -1,6 +1,6 @@
 cask 'ableton-live-standard9' do
-  version '9.7.5'
-  sha256 'db7953c5f3fa52c331c7186e97b70d0d22d269a02ed054014025b2ddde72d130'
+  version '9.7.6'
+  sha256 'd6fda952da53bb2c0eb69a6c0653fd0396bcbe81f5ee239da8ee2e10904c07fa'
 
   url "http://cdn-downloads.ableton.com/channels/#{version}/ableton_live_standard_#{version}_64.dmg"
   name 'Ableton Live 9 Standard'
