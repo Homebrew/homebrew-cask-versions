@@ -3,8 +3,7 @@ cask 'sublime-text2' do
   sha256 '906e71e19ae5321f80e7cf42eab8355146d8f2c3fd55be1f7fe5c62c57165add'
 
   url "https://download.sublimetext.com/Sublime%20Text%20#{version}.dmg"
-  appcast 'https://www.sublimetext.com/updates/2/stable/appcast_osx.xml',
-          checkpoint: '1f88d22b2ed5ba5a9213accf500ca8f1a9723b391fbbbc45ffb23cd98c98519c'
+  appcast 'https://www.sublimetext.com/updates/2/stable/appcast_osx.xml'
   name 'Sublime Text 2'
   homepage 'https://www.sublimetext.com/2'
 

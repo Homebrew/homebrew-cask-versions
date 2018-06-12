@@ -4,8 +4,7 @@ cask 'scribus-dev' do
 
   # sourceforge.net/scribus was verified as official when first introduced to the cask
   url "https://downloads.sourceforge.net/scribus/scribus-devel/#{version}/scribus-#{version}.dmg"
-  appcast 'https://sourceforge.net/projects/scribus/rss?path=/scribus-devel',
-          checkpoint: 'f6f2167e26e07332197f8c876c08794f578705414ef4f4128b12f914584e22e9'
+  appcast 'https://sourceforge.net/projects/scribus/rss?path=/scribus-devel'
   name 'Scribus'
   homepage 'https://www.scribus.net/'
 

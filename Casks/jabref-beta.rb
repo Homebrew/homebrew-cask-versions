@@ -4,8 +4,7 @@ cask 'jabref-beta' do
 
   # github.com/JabRef/jabref was verified as official when first introduced to the cask
   url "https://github.com/JabRef/jabref/releases/download/v#{version}/JabRef_macos_#{version.dots_to_underscores}.dmg"
-  appcast 'https://github.com/JabRef/jabref/releases.atom',
-          checkpoint: 'e03551ded048dcdbfd73ae376dfcfd9b9bfade9fc0e21b47f8d41ed0f633bc68'
+  appcast 'https://github.com/JabRef/jabref/releases.atom'
   name 'JabRef Beta'
   homepage 'https://www.jabref.org/'
 

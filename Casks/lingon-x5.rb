@@ -3,8 +3,7 @@ cask 'lingon-x5' do
   sha256 '7169aaa861626f62112c6ac24256226cd5a5f3b73dade41a4a803232d5942063'
 
   url "https://www.peterborgapps.com/downloads/LingonX#{version.major}.zip"
-  appcast "https://www.peterborgapps.com/updates/lingonx#{version.major}-appcast.xml",
-          checkpoint: '4ba09befbe7a447d13ddbd86acb12a4e85db0382b5dc158863d8041679bc8faa'
+  appcast "https://www.peterborgapps.com/updates/lingonx#{version.major}-appcast.xml"
   name 'Lingon X'
   homepage 'https://www.peterborgapps.com/lingon/'
 

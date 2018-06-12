@@ -4,8 +4,7 @@ cask 'opensong-beta' do
 
   # sourceforge.net/opensong was verified as official when first introduced to the cask
   url "https://downloads.sourceforge.net/opensong/OpenSongOSX-V#{version}.dmg"
-  appcast 'https://sourceforge.net/projects/opensong/rss',
-          checkpoint: 'cd98383cd4ebc45b9c662dbd65ace93b51041221b3f0873063b492067880516c'
+  appcast 'https://sourceforge.net/projects/opensong/rss'
   name 'OpenSong'
   homepage 'http://www.opensong.org/'
 

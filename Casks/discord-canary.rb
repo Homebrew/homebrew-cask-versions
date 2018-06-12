@@ -3,8 +3,7 @@ cask 'discord-canary' do
   sha256 'd6d782d497f28ca099df0d6c31d2b0a293924a59db2303a50c492a9c273d2478'
 
   url "https://cdn-canary.discordapp.com/apps/osx/#{version}/DiscordCanary.dmg"
-  appcast 'https://discordapp.com/api/canary/updates?platform=osx',
-          checkpoint: '86b4f547ff7891b2c00c6030ccad61b04bf7a3f9d739e7c3406ca626b7ac528d'
+  appcast 'https://discordapp.com/api/canary/updates?platform=osx'
   name 'Discord Canary'
   homepage 'https://discordapp.com/'
 

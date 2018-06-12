@@ -4,8 +4,7 @@ cask 'weka-dev' do
 
   # sourceforge.net/weka was verified as official when first introduced to the cask
   url "https://downloads.sourceforge.net/weka/weka-#{version.dots_to_hyphens}-oracle-jvm.dmg"
-  appcast 'https://sourceforge.net/projects/weka/rss',
-          checkpoint: '923267a39eca50cb2a0ab52ddee8c144a80a4357aeb6ac21906e74e08887706d'
+  appcast 'https://sourceforge.net/projects/weka/rss'
   name 'Weka'
   homepage 'https://www.cs.waikato.ac.nz/ml/weka/'
 

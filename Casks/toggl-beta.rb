@@ -4,8 +4,7 @@ cask 'toggl-beta' do
 
   # github.com/toggl/toggldesktop was verified as official when first introduced to the cask
   url "https://github.com/toggl/toggldesktop/releases/download/v#{version}/TogglDesktop-#{version.dots_to_underscores}.dmg"
-  appcast 'https://assets.toggl.com/installers/darwin_beta_appcast.xml',
-          checkpoint: '5c1d8cfcf14658ea3dec3c9354e8bf446057eb0ed945ed5e3ef241f91ae9288b'
+  appcast 'https://assets.toggl.com/installers/darwin_beta_appcast.xml'
   name 'TogglDesktop'
   homepage 'https://www.toggl.com/'
 

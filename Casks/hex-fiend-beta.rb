@@ -4,8 +4,7 @@ cask 'hex-fiend-beta' do
 
   # github.com/ridiculousfish/HexFiend was verified as official when first introduced to the cask
   url "https://github.com/ridiculousfish/HexFiend/releases/download/v#{version.before_comma}-beta-#{version.after_comma}/Hex_Fiend_#{version.major_minor}.dmg"
-  appcast 'https://github.com/ridiculousfish/HexFiend/releases.atom',
-          checkpoint: '3646b93dde0a520765c3e8290da11c1e16e78bdd93bc3287fb84f9e27b4bce0d'
+  appcast 'https://github.com/ridiculousfish/HexFiend/releases.atom'
   name 'Hex Fiend'
   homepage 'http://ridiculousfish.com/hexfiend/'
 

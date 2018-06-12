@@ -4,8 +4,7 @@ cask 'openbazaar-beta' do
 
   # github.com/OpenBazaar/openbazaar-desktop was verified as official when first introduced to the cask
   url "https://github.com/OpenBazaar/openbazaar-desktop/releases/download/v#{version}/OpenBazaar#{version.major}-#{version.major_minor_patch}.dmg"
-  appcast 'https://github.com/OpenBazaar/openbazaar-desktop/releases.atom',
-          checkpoint: '2ee5b2c7ffabcd3b6357e7192d80dad9143454be97c0747e7ed5f53f9a789070'
+  appcast 'https://github.com/OpenBazaar/openbazaar-desktop/releases.atom'
   name 'OpenBazaar Beta'
   homepage 'https://www.openbazaar.org/'
 
