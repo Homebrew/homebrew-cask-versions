@@ -1,28 +1,28 @@
 cask 'powershell-preview' do
-    version '6.1.0-preview.3'
-    sha256 '95efa9d091de87746f877814aee56d2ab8f25fddf596aba2653b1782dd2ba362'
+  version '6.1.0-preview.3'
+  sha256 '95efa9d091de87746f877814aee56d2ab8f25fddf596aba2653b1782dd2ba362'
 
-    url "https://github.com/PowerShell/PowerShell/releases/download/v#{version}/powershell-#{version}-osx-x64.pkg"
-    appcast 'https://github.com/PowerShell/PowerShell/releases.atom'
-    name 'PowerShell'
-    homepage 'https://github.com/PowerShell/PowerShell'
+  url "https://github.com/PowerShell/PowerShell/releases/download/v#{version}/powershell-#{version}-osx-x64.pkg"
+  appcast 'https://github.com/PowerShell/PowerShell/releases.atom'
+  name 'PowerShell'
+  homepage 'https://github.com/PowerShell/PowerShell'
 
-    depends_on formula: 'openssl'
-    depends_on macos: '>= :sierra'
+  depends_on formula: 'openssl'
+  depends_on macos: '>= :sierra'
 
-    pkg "powershell-#{version}-osx-x64.pkg"
+  pkg "powershell-#{version}-osx-x64.pkg"
 
-    uninstall pkgutil: 'com.microsoft.powershell-preview'
+  uninstall pkgutil: 'com.microsoft.powershell-preview'
 
-    zap trash: [
-                 '~/.cache/powershell',
-                 '~/.config/PowerShell',
-                 '~/.local/share/powershell',
-               ],
-        rmdir: [
-                 '~/.cache',
-                 '~/.config',
-                 '~/.local/share',
-                 '~/.local',
-               ]
+  zap trash: [
+                '~/.cache/powershell',
+                '~/.config/PowerShell',
+                '~/.local/share/powershell',
+              ],
+      rmdir: [
+                '~/.cache',
+                '~/.config',
+                '~/.local/share',
+                '~/.local',
+              ]
 end
