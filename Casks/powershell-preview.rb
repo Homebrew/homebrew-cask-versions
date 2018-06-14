@@ -15,14 +15,14 @@ cask 'powershell-preview' do
   uninstall pkgutil: 'com.microsoft.powershell-preview'
 
   zap trash: [
-                '~/.cache/powershell',
-                '~/.config/PowerShell',
-                '~/.local/share/powershell',
-              ],
+               '~/.cache/powershell',
+               '~/.config/PowerShell',
+               '~/.local/share/powershell',
+             ],
       rmdir: [
-                '~/.cache',
-                '~/.config',
-                '~/.local/share',
-                '~/.local',
-              ]
+               '~/.cache',
+               '~/.config',
+               '~/.local/share',
+               '~/.local',
+             ]
 end
