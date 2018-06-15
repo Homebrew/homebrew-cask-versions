@@ -1,4 +1,4 @@
-cask 'exist-db5' do
+cask 'exist-db-rc' do
   version '5.0.0-RC1'
   sha256 'af92923460647bcc6efd7e769b0761eccd30d75ca22c492e000e45fb58471046'
 
