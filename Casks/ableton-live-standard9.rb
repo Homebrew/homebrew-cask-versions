@@ -3,6 +3,7 @@ cask 'ableton-live-standard9' do
   sha256 'd6fda952da53bb2c0eb69a6c0653fd0396bcbe81f5ee239da8ee2e10904c07fa'
 
   url "http://cdn-downloads.ableton.com/channels/#{version}/ableton_live_standard_#{version}_64.dmg"
+  appcast "https://www.ableton.com/en/release-notes/live-#{version.major}/"
   name 'Ableton Live 9 Standard'
   homepage 'https://www.ableton.com/en/live/'
 
