@@ -1,6 +1,6 @@
 cask '1password-beta' do
-  version '7.0.4'
-  sha256 '77f625f3ad28c98342e3ab68a417b4ece7cc762179a6de9279ce714f298ef7c4'
+  version '7.0.5.BETA-0'
+  sha256 'b4c924dade8627d3c0f540fead4b3984f358a5c583130e2f2948058f7dcc0d44'
 
   # 1password.com was verified as official when first introduced to the cask
   url "https://c.1password.com/dist/1P/mac#{version.major}/1Password-#{version}.zip"
