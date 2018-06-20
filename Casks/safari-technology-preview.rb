@@ -1,12 +1,12 @@
 cask 'safari-technology-preview' do
-  version '58'
+  version '59'
 
   if MacOS.version <= :high_sierra
-    url 'https://secure-appldnld.apple.com/STP/091-87399-20180606-FBA72DC9-E8A3-446A-A4E2-B32DBB7175AB/SafariTechnologyPreview.dmg'
-    sha256 '0f85e2b97802854034e22c7f133987dcb47e811bf6bff563c31e6753a5336eb6'
+    url 'https://secure-appldnld.apple.com/STP/091-91596-20180620-59E904CA-6E8B-11E8-A83B-21D3895FD671/SafariTechnologyPreview.dmg'
+    sha256 '177cf747f4eeccb774adbb65c969fdcef1b3293172b8c69debe6a0b1a19c395d'
   else
-    url 'https://secure-appldnld.apple.com/STP/091-81948-20180606-A6156C55-3298-4E25-9905-10135203B756/SafariTechnologyPreview.dmg'
-    sha256 '5ca5557516b11dfd7b34dd442c9f97f5ac3aca7eb77dbc75d89ac839c9b3fb3f'
+    url 'https://secure-appldnld.apple.com/STP/091-91598-20180620-59E904CA-6E8B-11E8-A83B-21D3895FD671/SafariTechnologyPreview.dmg'
+    sha256 '33d5b10a191dafdeac4adc58f8acae6f8c8cbfe8876681fcd85998932f79723e'
   end
 
   name 'Safari Technology Preview'
