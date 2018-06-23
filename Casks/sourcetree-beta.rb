@@ -1,6 +1,6 @@
 cask 'sourcetree-beta' do
-  version '2.7.4b2'
-  sha256 'c0dddc756305b43be43e7a016422325323e195d6a1e4c7ed4cd02614839162cb'
+  version '2.7.4b1'
+  sha256 '70bfe14301ed48c0fd9de4c273212d7fb70b4b5ef1e452ac7111158910895c89'
 
   # atlassian.com was verified as official when first introduced to the cask
   url "https://downloads.atlassian.com/software/sourcetree/Sourcetree_#{version}.zip"
