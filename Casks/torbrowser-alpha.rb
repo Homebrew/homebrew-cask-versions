@@ -9,9 +9,8 @@ cask 'torbrowser-alpha' do
   gpg "#{url}.asc", key_id: 'ef6e286dda85ea2a4ba7de684e2c6e8793298290'
 
   auto_updates true
-  conflicts_with cask: 'torbrowser'
 
-  app 'TorBrowser.app'
+  app 'Tor Browser.app'
 
   zap trash: [
                '~/Library/Application Support/TorBrowser-Data',
