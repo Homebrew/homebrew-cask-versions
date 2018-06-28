@@ -1,6 +1,6 @@
-cask 'torbrowser-alpha' do
-  version '8.0a8'
-  sha256 'a1707a4cc48791ad1907237d153a3cf25a7f79e85747eb689d4658f16392ba16'
+cask 'tor-browser-alpha' do
+  version '8.0a9'
+  sha256 '9d2f92dc14e7ce382923ec22e2a16f238a093f4f5170cc5a6b7e12b3c02fc6d6'
 
   url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-osx64_en-US.dmg"
   appcast 'https://dist.torproject.org/torbrowser/'
@@ -9,9 +9,8 @@ cask 'torbrowser-alpha' do
   gpg "#{url}.asc", key_id: 'ef6e286dda85ea2a4ba7de684e2c6e8793298290'
 
   auto_updates true
-  conflicts_with cask: 'torbrowser'
 
-  app 'TorBrowser.app'
+  app 'Tor Browser.app'
 
   zap trash: [
                '~/Library/Application Support/TorBrowser-Data',
