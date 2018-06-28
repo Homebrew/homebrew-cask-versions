@@ -1,4 +1,4 @@
-cask 'torbrowser-alpha' do
+cask 'tor-browser-alpha' do
   version '8.0a9'
   sha256 '9d2f92dc14e7ce382923ec22e2a16f238a093f4f5170cc5a6b7e12b3c02fc6d6'
 
