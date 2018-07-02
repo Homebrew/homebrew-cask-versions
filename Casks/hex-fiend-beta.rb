@@ -1,6 +1,6 @@
 cask 'hex-fiend-beta' do
-  version '2.10b2'
-  sha256 'b42e9d5d0e1cc93230308ce2de11ef9a74223b67211b0481d107a65b5aec86fa'
+  version '2.10b3'
+  sha256 '2872e1a593fa8cbf5c247bc5001c21255e5dd130a7335076635f7e90411a8a9a'
 
   # github.com/ridiculousfish/HexFiend was verified as official when first introduced to the cask
   url "https://github.com/ridiculousfish/HexFiend/releases/download/v#{version}/Hex_Fiend_#{version.major_minor}.dmg"
