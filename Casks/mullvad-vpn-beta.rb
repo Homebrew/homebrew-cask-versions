@@ -13,7 +13,9 @@ cask 'mullvad-vpn-beta' do
 
   pkg "MullvadVPN-#{version}.pkg"
 
-  uninstall pkgutil: 'net.mullvad.vpn'
+  uninstall pkgutil:   'net.mullvad.vpn',
+            quit:      'net.mullvad.vpn',
+            launchctl: 'net.mullvad.daemon'
 
   zap trash: [
                '~/Library/Application Support/Mullvad VPN',
