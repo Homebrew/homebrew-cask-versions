@@ -9,7 +9,7 @@ cask 'iterm2-beta' do
   homepage 'https://www.iterm2.com/'
 
   auto_updates true
-  depends_on macos: '>= :yosemite'
+  depends_on macos: '>= :sierra'
 
   app 'iTerm.app'
 
