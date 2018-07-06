@@ -1,6 +1,6 @@
 cask 'airmail-beta' do
-  version '3.5.5.500,356'
-  sha256 '81bef02a78cb836add7f9169efb920f45bf2bbfe3ff65067d25603e3709dc6b2'
+  version '3.5.5.501,357'
+  sha256 '9df80eaf60254765f0841bd39b2ad221b34327b50c74d01886db7b0ce8d0d739'
 
   # hockeyapp.net/api/2/apps/84be85c3331ee1d222fd7f0b59e41b04 was verified as official when first introduced to the cask
   url "https://rink.hockeyapp.net/api/2/apps/84be85c3331ee1d222fd7f0b59e41b04/app_versions/#{version.after_comma}?format=zip&"
