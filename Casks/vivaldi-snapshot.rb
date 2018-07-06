@@ -7,5 +7,7 @@ cask 'vivaldi-snapshot' do
   name 'Vivaldi'
   homepage 'https://vivaldi.com/'
 
+  auto_updates true
+
   app 'Vivaldi.app'
 end
