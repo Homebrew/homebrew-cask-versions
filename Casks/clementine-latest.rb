@@ -4,14 +4,19 @@ cask 'clementine-latest' do
 
   url do
     require 'open-uri'
-    last_modified_query = '?C=M;O=D'
     base_url = 'https://builds.clementine-player.org/mac/'
-    file = URI("#{base_url}#{last_modified_query}")
-           .open
-           .read
-           .scan(%r{href="(clementine-[^"]+.dmg)"})
-           .flatten
-           .first
+    versions = URI(base_url.to_s)
+               .open
+               .read
+               .scan(%r{href="clementine\-((?:\d+\.?)+\-\d+\-\w+)\.dmg"})
+               .flatten
+
+    versions.sort_by { |version| Gem::Version.new(version) }
+
+    latest_version = versions.last
+
+    file = "clementine-#{latest_version}.dmg"
+
     "#{base_url}#{file}"
   end
   name 'Clementine'
