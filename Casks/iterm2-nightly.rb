@@ -7,7 +7,6 @@ cask 'iterm2-nightly' do
   name 'iTerm2'
   homepage 'https://www.iterm2.com/'
 
-  auto_updates true
   depends_on macos: '>= :yosemite'
 
   app 'iTerm.app'
