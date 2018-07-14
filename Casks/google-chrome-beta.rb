@@ -6,7 +6,6 @@ cask 'google-chrome-beta' do
   name 'Google Chrome'
   homepage 'https://www.google.com/chrome/browser/beta.html?platform=mac&extra=betachannel'
 
-  auto_updates true
   conflicts_with cask: [
                          'google-chrome',
                          'google-chrome-dev',

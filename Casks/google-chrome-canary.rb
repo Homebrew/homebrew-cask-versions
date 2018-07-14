@@ -6,7 +6,6 @@ cask 'google-chrome-canary' do
   name 'Google Chrome Canary'
   homepage 'https://www.google.com/chrome/browser/canary.html?platform=mac'
 
-  auto_updates true
   depends_on macos: '>= :mavericks'
 
   app 'Google Chrome Canary.app'

@@ -90,7 +90,6 @@ cask 'firefox-beta' do
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/firefox/channel/desktop/#beta'
 
-  auto_updates true
   conflicts_with cask: [
                          'firefox',
                          'firefox-esr',
