@@ -1,6 +1,6 @@
 cask 'dolphin-dev' do
-  version '5.0-7053'
-  sha256 '2feeb57e3ad93e072b9e1ee4395842d7849f00981ae4fc2b0c7893475f45dbf7'
+  version '5.0-8449'
+  sha256 '121091f76e947f2fa484e5dcf0d9289490fa8dd5d8e4ee45bc809e5d88fc9093'
 
   url "https://dl.dolphin-emu.org/builds/dolphin-master-#{version}.dmg"
   appcast 'https://github.com/dolphin-emu/dolphin/releases.atom'
