@@ -5,7 +5,7 @@ cask 'kicad-nightly' do
   url do
     require 'open-uri'
     base_url = 'http://downloads.kicad-pcb.org/osx/nightly/'
-    file = URI(base_url).open.read.scan(%r{href="([^"]+.dmg)"}).flatten.last
+    file = URI(base_url).open.read.scan(%r{href="(kicad-unified-[^"]+.dmg)"}).flatten.last
     "#{base_url}#{file}"
   end
   name 'KiCad'
