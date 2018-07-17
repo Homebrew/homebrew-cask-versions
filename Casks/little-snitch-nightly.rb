@@ -4,7 +4,7 @@ cask 'little-snitch-nightly' do
 
   url "https://obdev.at/downloads/littlesnitch/nightly/LittleSnitch-#{version.before_comma}-nightly-(#{version.after_comma}).dmg"
   appcast 'https://www.obdev.at/products/littlesnitch/releasenotes-nightly.html'
-  name 'Little Snitch'
+  name 'Little Snitch Nightly Build'
   homepage 'https://obdev.at/products/littlesnitch/download-nightly.html'
 
   auto_updates true
