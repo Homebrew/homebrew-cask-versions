@@ -39,10 +39,10 @@ cask 'java11-ea' do
                          'net.java.openjdk.cmd', # Java Control Panel
                        ],
             delete:    [
-                         "/Library/Java/JavaVirtualMachines/jdk#{version.split('-')[0]}.jdk/Contents",
+                         "/Library/Java/JavaVirtualMachines/jdk-#{version.split('-')[0]}.jdk/Contents",
                          '/Library/Java/Home',
                        ],
-            rmdir:     "/Library/Java/JavaVirtualMachines/jdk#{version.split('-')[0]}.jdk"
+            rmdir:     "/Library/Java/JavaVirtualMachines/jdk-#{version.split('-')[0]}.jdk"
 
   zap trash: [
                '~/Library/Application Support/Java/',
