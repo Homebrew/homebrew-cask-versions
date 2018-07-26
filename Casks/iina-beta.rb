@@ -10,7 +10,7 @@ cask 'iina-beta' do
 
   auto_updates true
   conflicts_with cask: 'iina'
-  depends_on macos: '>= :yosemite'
+  depends_on macos: '>= :el_capitan'
 
   app 'IINA.app'
   binary "#{appdir}/IINA.app/Contents/MacOS/iina-cli", target: 'iina'
