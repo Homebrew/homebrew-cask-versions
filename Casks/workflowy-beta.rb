@@ -5,7 +5,7 @@ cask 'workflowy-beta' do
   # github.com/workflowy/desktop-beta was verified as official when first introduced to the cask
   url "https://github.com/workflowy/desktop-beta/releases/download/v#{version}/WorkFlowy-Beta.dmg"
   appcast 'https://github.com/workflowy/desktop-beta/releases.atom'
-  name 'WorkFlowy-Beta'
+  name 'WorkFlowy'
   homepage 'https://beta.workflowy.com/downloads/mac/'
 
   app 'WorkFlowy Beta.app'
