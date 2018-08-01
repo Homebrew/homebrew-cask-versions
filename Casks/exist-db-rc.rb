@@ -1,6 +1,6 @@
 cask 'exist-db-rc' do
-  version '5.0.0-RC2'
-  sha256 'fe733342acde8a3f95b7161a6de896461baf02c0b2c8061b0aaa606dd2a26460'
+  version '5.0.0-RC3'
+  sha256 'a8beee825590a68dbb6ec40144de353864a5dce06955dd2e63f52f2311bc6135'
 
   # dl.bintray.com/existdb was verified as official when first introduced to the cask
   url "https://dl.bintray.com/existdb/releases/eXist-db-#{version}.dmg"
