@@ -1,6 +1,6 @@
 cask 'amidst-beta' do
-  version '4.3-beta3'
-  sha256 '0e44d686ba8ca362fced57736b294b9dee507600d9cad3b0cff6771b654d5b26'
+  version '4.3-beta4'
+  sha256 'f6238c6bac873bd64140db5e1cf6490b7fb23e7fbd1d04b272119a5098aec38e'
 
   url "https://github.com/toolbox4minecraft/amidst/releases/download/v#{version}/amidst-v#{version.dots_to_hyphens}.zip"
   appcast 'https://github.com/toolbox4minecraft/amidst/releases.atom'
