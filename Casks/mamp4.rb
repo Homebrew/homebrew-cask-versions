@@ -4,7 +4,7 @@ cask 'mamp4' do
 
   url "https://downloads.mamp.info/MAMP-PRO/releases/#{version}/MAMP_MAMP_PRO_#{version}.pkg"
   name 'MAMP'
-  homepage 'https://www.mamp.info/'
+  homepage 'https://www.mamp.info/test'
 
   depends_on macos: '>= :yosemite'
 
