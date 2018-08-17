@@ -7,13 +7,16 @@ cask 'porting-kit-legacy' do
   homepage 'http://portingkit.com/'
 
   conflicts_with cask: 'porting-kit'
-  depends_on macos: '<= :mountain_lion'
+  depends_on macos: [
+                      :snow_leopard,
+                      :lion,
+                    ]
 
   app 'Porting Kit Legacy.app'
 
   zap trash: [
                '~/Library/Preferences/edu.ufrj.vitormm.Porting-Kit-Legacy.plist',
-               '~/Library/Application Support/Porting-Kit-Legacy',
+               '~/Library/Application Support/Porting-Kit',
                '~/Library/Saved Application State/edu.ufrj.vitormm.Porting-Kit-Legacy.savedState',
                '~/Library/Caches/edu.ufrj.vitormm.Porting-Kit-Legacy',
                '~/Library/Cookies/edu.ufrj.vitormm.Porting-Kit-Legacy.binarycookies',
