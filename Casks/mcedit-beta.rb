@@ -10,12 +10,10 @@ cask 'mcedit-beta' do
 
   suite "mcedit2-macosx64-#{version}", target: 'MCEdit 2'
 
-  zap trash:  [
-                '~/Library/Application Support/pymclevel',
-                '~/Library/Preferences/mcedit.ini',
-              ],
-      delete: [
-                '~/Library/Application Support/CrashReporter/MCEdit 2_*.plist',
-                '~/Library/Saved Application State/net.mcedit.mcedit2.savedState',
-              ]
+  zap trash: [
+               '~/Library/Application Support/CrashReporter/MCEdit 2_*.plist',
+               '~/Library/Application Support/pymclevel',
+               '~/Library/Preferences/mcedit.ini',
+               '~/Library/Saved Application State/net.mcedit.mcedit2.savedState',
+             ]
 end
