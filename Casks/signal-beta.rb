@@ -1,6 +1,6 @@
 cask 'signal-beta' do
-  version '1.15.0-beta.6'
-  sha256 'e83545c9dd1315f7d9a7472592cd1437c8384698071677cf609ef6bc15f3042d'
+  version '1.15.5-beta.1'
+  sha256 'd00eaa0a07cff91b9174ed278ed0cbfa8238f5c8832e8d93026264c1bb11859f'
 
   url "https://updates.signal.org/desktop/signal-desktop-beta-mac-#{version}.zip"
   appcast 'https://github.com/signalapp/Signal-Desktop/releases.atom'
