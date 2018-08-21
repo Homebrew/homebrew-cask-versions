@@ -1,6 +1,6 @@
 cask 'mcedit-beta' do
-  version '2.0.0-beta12'
-  sha256 '6c92dcc582cd1cf979a41ba825d49dca464bb20c128a28d8d27ab1b9f7a3d5aa'
+  version '2.0.0-beta14'
+  sha256 '5486c1ff58e9b8c2b4bfe1b3ce939a7be673fbc50c248b324b21a2cc0e01cd1e'
 
   # github.com/mcedit/mcedit2 was verified as official when first introduced to the cask
   url "https://github.com/mcedit/mcedit2/releases/download/#{version}/mcedit2-macosx64-#{version}.zip"
