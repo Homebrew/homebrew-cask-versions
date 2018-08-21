@@ -1,6 +1,6 @@
 cask 'java-beta' do
-  version '11,23'
-  sha256 '7bfbcdcfdf8522faef9e389f13ae3a483a9581a2839dd9f0da5f558b33be2e56'
+  version '11,26'
+  sha256 '17aa5d523663982df410ce907c56a2df344fbc841ead4b6032a6471d9c3a5bf4'
 
   url "https://download.java.net/java/early_access/jdk#{version.before_comma}/#{version.after_comma}/BCL/jdk-#{version.before_comma}-ea+#{version.after_comma}_osx-x64_bin.dmg"
   name 'Java Standard Edition Development Kit - Early Access'
