@@ -1,6 +1,6 @@
 cask 'workflowy-beta' do
-  version '1.1.1-beta.632'
-  sha256 '22b15a9cd2397b3d38b56fd53968b6019d21cb6823d15631707b78055368e3b6'
+  version '1.1.2-beta.640'
+  sha256 '511b1e51a37518f87f7399e7c3b63453d43f69a57976e45328da1f585bed5b1c'
 
   # github.com/workflowy/desktop-beta was verified as official when first introduced to the cask
   url "https://github.com/workflowy/desktop-beta/releases/download/v#{version}/WorkFlowy-Beta.dmg"
