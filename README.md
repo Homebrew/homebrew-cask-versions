@@ -8,7 +8,7 @@ project.
 After you install homebrew-cask, run the following command:
 
 ```sh
-$ brew tap homebrew/cask-versions
+$ brew tap homebrew/homebrew-cask-versions
 ```
 
 You can now install alternate versions of Casks.
