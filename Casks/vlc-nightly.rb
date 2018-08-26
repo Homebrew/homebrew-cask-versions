@@ -11,7 +11,6 @@ cask 'vlc-nightly' do
   name 'VLC media player'
   homepage 'https://www.videolan.org/vlc/'
 
-  auto_updates true
   conflicts_with cask: 'vlc'
   depends_on macos: '>= :lion'
 
