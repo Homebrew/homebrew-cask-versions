@@ -4,7 +4,7 @@ cask 'vitamin-r3' do
 
   url "http://www.publicspace.net/download/signedVitamin#{version.major}.zip"
   appcast "http://www.publicspace.net/app/vitamin#{version.major}.xml"
-  name 'Vitamin-R 3'
+  name 'Vitamin-R'
   homepage 'http://www.publicspace.net/Vitamin-R/'
 
   app 'Vitamin-R 3.app'
