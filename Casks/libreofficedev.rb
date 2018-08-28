@@ -7,7 +7,6 @@ cask 'libreofficedev' do
   appcast 'https://download.documentfoundation.org/libreoffice/testing/'
   name 'LibreOffice Development Version'
   homepage 'https://www.libreoffice.org/download/pre-releases/'
-  gpg "#{url}.asc", key_id: 'c2839ecad9408fbe9531c3e9f434a1efafeeaea3'
 
   depends_on macos: '>= :mavericks'
 

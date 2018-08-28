@@ -6,7 +6,6 @@ cask 'tor-browser-alpha' do
   appcast 'https://dist.torproject.org/torbrowser/'
   name 'Tor Browser'
   homepage 'https://www.torproject.org/projects/torbrowser.html'
-  gpg "#{url}.asc", key_id: 'ef6e286dda85ea2a4ba7de684e2c6e8793298290'
 
   auto_updates true
 
