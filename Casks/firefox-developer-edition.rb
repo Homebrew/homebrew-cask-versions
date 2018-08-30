@@ -30,6 +30,10 @@ cask 'firefox-developer-edition' do
     'ja-JP-mac'
   end
 
+  language 'ko' do
+    'ko'
+  end
+
   language 'ru' do
     'ru'
   end
