@@ -8,6 +8,7 @@ cask 'tor-browser-alpha' do
   homepage 'https://www.torproject.org/projects/torbrowser.html'
 
   auto_updates true
+  conflicts_with cask: 'tor-browser'
 
   app 'Tor Browser.app'
 
