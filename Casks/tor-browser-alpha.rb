@@ -17,5 +17,6 @@ cask 'tor-browser-alpha' do
                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.tor browser.sfl*',
                '~/Library/Preferences/org.mozilla.tor browser.plist',
                '~/Library/Preferences/org.torproject.torbrowser.plist',
+               '~/Library/SavedApplicationState/org.torproject.torbrowser.savedState',
              ]
 end
