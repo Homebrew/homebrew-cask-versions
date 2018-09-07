@@ -27,7 +27,7 @@ cask 'firefox-nightly' do
     require 'open-uri'
     base_url = 'https://download-installer.cdn.mozilla.net/pub/firefox/nightly'
     builds_url = "#{base_url}/latest-mozilla-central#{language == 'en-US' ? '' : '-l10n'}/"
-    latest_build_filename = URI(builds_url).open.read.scan(%r{<td><a href="/pub/firefox/nightly/([^\"]+\.mac\.dmg)">}).flatten.grep(%r{\.#{language}\.mac\.dmg}).first
+    latest_build_filename = URI(builds_url).open.read.scan(%r{<td><a href="/pub/firefox/nightly/([^\"]+\.mac\.dmg)">}).flatten.grep(%r{\.#{language}\.mac\.dmg}).max
     "#{base_url}/#{latest_build_filename}"
   end
   name 'Mozilla Firefox'
