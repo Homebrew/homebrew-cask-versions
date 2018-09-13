@@ -1,6 +1,6 @@
 cask 'vitamin-r3' do
-  version '3.00b3'
-  sha256 '16c02a666526052c096435d402137556bf9e204bfdf05dfe36b2ed9cc1c42490'
+  version '3.00b4'
+  sha256 '027aff755a5598fb4d21cfcf572dc6eb56b9bd0d6eeda0be90e59059cd12e2b2'
 
   url "http://www.publicspace.net/download/signedVitamin#{version.major}.zip"
   appcast "http://www.publicspace.net/app/vitamin#{version.major}.xml"
