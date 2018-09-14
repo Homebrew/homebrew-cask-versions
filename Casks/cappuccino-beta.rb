@@ -1,4 +1,4 @@
-cask 'cappuccino' do
+cask 'cappuccino-beta' do
   version '3.0,275'
   sha256 '9b91bfd49717de41ab0e24492f2379d99f65c0c30ec5563b8af2c0f0640d9393'
 
