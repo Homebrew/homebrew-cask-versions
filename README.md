@@ -1,11 +1,11 @@
 # homebrew-cask-versions
 
-Here you'll find alternate versions of Casks for the [homebrew-cask](https://github.com/Homebrew/homebrew-cask)
+Here you'll find alternate versions of Casks for the [Homebrew Cask](https://github.com/Homebrew/homebrew-cask)
 project.
 
 # Usage
 
-After you install homebrew-cask, run the following command:
+After you install Homebrew, run the following command:
 
 ```sh
 $ brew tap homebrew/cask-versions
