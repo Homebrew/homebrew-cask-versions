@@ -7,6 +7,7 @@ cask 'virtualbox-extension-pack-beta' do
   name 'Oracle VirtualBox Extension Pack'
   homepage 'https://www.virtualbox.org/'
 
+  conflicts_with cask: 'virtualbox-extension-pack'
   depends_on cask: 'virtualbox-beta'
   container type: :naked
 
