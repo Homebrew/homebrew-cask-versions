@@ -8,6 +8,7 @@ cask 'virtualbox-beta' do
   homepage 'https://www.virtualbox.org/wiki/Testbuilds'
 
   auto_updates true
+  conflicts_with cask: 'virtualbox'
 
   pkg 'VirtualBox.pkg'
 
