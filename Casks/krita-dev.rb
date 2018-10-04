@@ -1,6 +1,6 @@
 cask 'krita-dev' do
-  version '4.0.0-prealpha'
-  sha256 'f63313ea07fcc1329d4d696153c5d6877940e5a23ec77d432075bd2e88fbe274'
+  version '4.2.0-preview'
+  sha256 '7545412eebc797f06ade346de0e0738d41d854c4e12df4d8a46d6471269d83a8'
 
   # download.kde.org/unstable/krita was verified as official when first introduced to the cask
   url "http://download.kde.org/unstable/krita/#{version}/krita-#{version}.dmg"
@@ -11,4 +11,11 @@ cask 'krita-dev' do
   depends_on macos: '>= :mavericks'
 
   app 'Krita.app'
+
+  zap trash: [
+               '~/Library/Application Support/krita',
+               '~/Library/Preferences/kritadisplayrc',
+               '~/Library/Preferences/kritarc',
+               '~/Library/Saved Application State/org.krita.savedState',
+             ]
 end
