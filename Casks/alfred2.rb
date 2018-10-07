@@ -7,7 +7,6 @@ cask 'alfred2' do
   homepage 'https://www.alfredapp.com/'
 
   auto_updates true
-  accessibility_access true
 
   app 'Alfred 2.app'
 
