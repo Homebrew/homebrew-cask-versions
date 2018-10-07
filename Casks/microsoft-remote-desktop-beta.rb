@@ -7,6 +7,8 @@ cask 'microsoft-remote-desktop-beta' do
   name 'Microsoft Remote Desktop Beta'
   homepage 'https://rink.hockeyapp.net/apps/5e0c144289a51fca2d3bfa39ce7f2b06/'
 
+  auto_updates true
+
   app 'Microsoft Remote Desktop Beta.app'
 
   zap trash: [
