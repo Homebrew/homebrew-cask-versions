@@ -5,7 +5,7 @@ cask 'foldingtext-dev' do
   # foldingtext.s3.amazonaws.com was verified as official when first introduced to the cask
   url 'https://foldingtext.s3.amazonaws.com/FoldingText-Dev.dmg'
   name 'FoldingText'
-  homepage 'http://www.foldingtext.com/'
+  homepage 'https://www.foldingtext.com/'
 
   app 'FoldingText.app'
 end
