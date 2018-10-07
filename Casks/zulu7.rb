@@ -3,7 +3,7 @@ cask 'zulu7' do
   sha256 'd7b21b5d041442282522dd01cfada1d38342cf873ccd985501e2c784541596ee'
 
   url "https://cdn.azul.com/zulu/bin/zulu#{version.after_comma}-jdk#{version.minor}.#{version.patch}.#{version.before_comma.sub(%r{.*_}, '')}-macosx_x64.dmg",
-      referer: 'http://www.azul.com/downloads/zulu/zulu-mac/'
+      referer: 'https://www.azul.com/downloads/zulu/zulu-mac/'
   name 'Azul Zulu Java Standard Edition Development Kit'
   homepage 'https://www.azul.com/products/zulu-and-zulu-enterprise/'
 

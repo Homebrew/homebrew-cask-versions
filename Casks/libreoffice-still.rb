@@ -3,7 +3,7 @@ cask 'libreoffice-still' do
   sha256 '94d39d92160794fc1e8b4812d774ee3e203f7f2ec19064285b2309be5553453d'
 
   # documentfoundation.org was verified as official when first introduced to the cask
-  url "http://download.documentfoundation.org/libreoffice/stable/#{version}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg"
+  url "https://download.documentfoundation.org/libreoffice/stable/#{version}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg"
   appcast 'https://download.documentfoundation.org/libreoffice/stable/'
   name 'LibreOffice Still'
   homepage 'https://www.libreoffice.org/download/libreoffice-still/'

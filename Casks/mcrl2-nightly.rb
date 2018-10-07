@@ -12,7 +12,7 @@ cask 'mcrl2-nightly' do
       .first
   end
   name 'mCRL2'
-  homepage 'http://www.mcrl2.org/'
+  homepage 'https://www.mcrl2.org/'
 
   app 'mCRL2.app'
 

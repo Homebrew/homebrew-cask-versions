@@ -3,7 +3,7 @@ cask 'krita-dev' do
   sha256 '7545412eebc797f06ade346de0e0738d41d854c4e12df4d8a46d6471269d83a8'
 
   # download.kde.org/unstable/krita was verified as official when first introduced to the cask
-  url "http://download.kde.org/unstable/krita/#{version}/krita-#{version}.dmg"
+  url "https://download.kde.org/unstable/krita/#{version}/krita-#{version}.dmg"
   name 'Krita'
   homepage 'https://krita.org/'
 

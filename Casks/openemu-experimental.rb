@@ -6,7 +6,7 @@ cask 'openemu-experimental' do
   url "https://github.com/OpenEmu/OpenEmu/releases/download/v#{version}/OpenEmu_#{version}-experimental.zip"
   appcast 'https://github.com/OpenEmu/OpenEmu/releases.atom'
   name 'OpenEmu'
-  homepage 'http://openemu.org/'
+  homepage 'https://openemu.org/'
 
   depends_on macos: '>= :el_capitan'
 

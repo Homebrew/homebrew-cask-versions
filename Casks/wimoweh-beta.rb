@@ -4,7 +4,7 @@ cask 'wimoweh-beta' do
 
   url "https://www.serialangels.co.uk/sa-content/uploads/2016/04/Wimoweh.#{version}_.zip"
   name 'Wimoweh'
-  homepage 'http://www.serialangels.co.uk/index.php/wimoweh/'
+  homepage 'https://www.serialangels.co.uk/index.php/wimoweh/'
 
   app 'Wimoweh.app'
 end
