@@ -2,7 +2,7 @@ cask 'rider-eap' do
   version '2018.3-EAP1-183.3226.206'
   sha256 'fe83b526f8ff6f40eaf80b1fb56c166d21ade8549dd02c4fe6351c23f7204d64'
 
-  url 'https://download.jetbrains.com/rider/JetBrains.Rider-2018.3-EAP1-183.3226.206.Checked.dmg'
+  url "https://download.jetbrains.com/rider/JetBrains.Rider-#{version}.Checked.dmg"
   name 'Jetbrains Rider EAP'
   homepage 'https://www.jetbrains.com/rider/eap/'
 
