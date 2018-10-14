@@ -1,7 +1,7 @@
-cask 'alfred2' do
-  version_major '2'
-  version_minor_micro '9_446'
-  sha256 '26a99cc0b96a4acee02bbc162ee433d9f1b20518ba8acc9691564b2c3698ed6a'
+cask 'alfred3' do
+  version_major '3'
+  version_minor_micro '7_938'
+  sha256 'aff50ff5e57070530ab2ed7068f6816ce7feaf624d46b9dab5bdaf2017ab199d'
 
   name 'Alfred'
   homepage 'https://www.alfredapp.com/'
@@ -10,6 +10,7 @@ cask 'alfred2' do
   url "https://cachefly.alfredapp.com/#{name}_#{version}.zip"
 
   auto_updates true
+  accessibility_access true
 
   app "#{name} #{version_major}.app"
 
