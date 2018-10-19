@@ -1,6 +1,6 @@
 cask 'dropbox-beta' do
-  version '60.3.89'
-  sha256 'a6642a3780090cc2778c9486cf9d322053c7bf1bca455ebd11862ea46f857634'
+  version '60.3.101'
+  sha256 '10037ee299675cf9278e46c33afcbbe87856fb70610c135b10e244ea6ced8eaa'
 
   # dropbox.com was verified as official when first introduced to the cask
   url "https://www.dropbox.com/download?build=#{version}&plat=mac&type=full"
