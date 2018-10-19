@@ -1,6 +1,6 @@
 cask 'github-beta' do
-  version '1.4.3-beta2-ae86a528'
-  sha256 'c7cba5700b400d91caf053e8cceab2b0f28ffda91ae929c1178addc9eb265867'
+  version '1.4.4-beta0-e93a0544'
+  sha256 '5eae90a2d4e4de6496d4c5f784cc534914a5ccb296746a5da14422102e317e76'
 
   # githubusercontent.com was verified as official when first introduced to the cask
   url "https://desktop.githubusercontent.com/releases/#{version}/GitHubDesktop.zip"
