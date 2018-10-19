@@ -1,4 +1,4 @@
-cask 'brave-dev' do
+cask 'brave-browser-dev' do
   version '0.55.5'
   sha256 'fb3788fe620f08c367993e1ab1c1d0d2eab58f1f78d7e6bb1243c66bc671881b'
 
