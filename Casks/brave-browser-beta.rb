@@ -3,7 +3,7 @@ cask 'brave-browser-beta' do
   sha256 '60c029617a2ed6838ea2b7ac151067e43314d85a4c119db99354bb21d3e15042'
 
   url "https://github.com/brave/brave-browser/releases/download/v#{version}/Brave-Browser-Beta.dmg"
-  appcast 'https://github.com/brave/brave-browser/releases.atom'
+  appcast 'https://updates.bravesoftware.com/sparkle/Brave-Browser/beta/appcast.xml'
   name 'Brave Beta'
   homepage 'https://github.com/brave/brave-browser'
 
