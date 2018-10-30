@@ -10,6 +10,10 @@ cask 'firefox-developer-edition' do
     'de'
   end
 
+  language 'en-GB' do
+    'en-GB'
+  end
+
   language 'en', default: true do
     'en-US'
   end
@@ -24,6 +28,10 @@ cask 'firefox-developer-edition' do
 
   language 'ja' do
     'ja-JP-mac'
+  end
+
+  language 'ko' do
+    'ko'
   end
 
   language 'ru' do

@@ -1,5 +1,5 @@
 cask 'firefox-nightly' do
-  version '63.0a1'
+  version :latest
   sha256 :no_check # required as upstream package is updated in-place
 
   language 'cs' do
@@ -23,7 +23,13 @@ cask 'firefox-nightly' do
   end
 
   # download-installer.cdn.mozilla.net/pub/firefox/nightly was verified as official when first introduced to the cask
-  url "https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-central#{language == 'en-US' ? '' : '-l10n'}/firefox-#{version}.#{language}.mac.dmg"
+  url do
+    require 'open-uri'
+    base_url = 'https://download-installer.cdn.mozilla.net/pub/firefox/nightly'
+    builds_url = "#{base_url}/latest-mozilla-central#{language == 'en-US' ? '' : '-l10n'}/"
+    latest_build_filename = URI(builds_url).open.read.scan(%r{<td><a href="/pub/firefox/nightly/([^\"]+\.mac\.dmg)">}).flatten.grep(%r{\.#{language}\.mac\.dmg}).max
+    "#{base_url}/#{latest_build_filename}"
+  end
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/firefox/channel/desktop/#nightly'
 

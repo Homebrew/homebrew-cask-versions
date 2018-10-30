@@ -9,7 +9,6 @@ cask 'gpg-suite-nightly' do
   end
   name 'GPG Suite Nightly'
   homepage 'https://gpgtools.org/'
-  gpg "#{url}.sig", key_url: 'https://gpgtools.org/GPGTools-00D026C4.asc'
 
   conflicts_with cask: 'gpg-suite'
 

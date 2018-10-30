@@ -6,7 +6,7 @@ cask 'psi-plus' do
   url "https://downloads.sourceforge.net/psiplus/Mac-OS-X/psi-plus-#{version.before_comma}-qt5-webengine-git-#{version.after_comma}-macosx.dmg"
   appcast 'https://sourceforge.net/projects/psiplus/rss'
   name 'Psi+'
-  homepage 'http://psi-plus.com/'
+  homepage 'https://psi-plus.com/'
 
   app 'Psi+.app'
 

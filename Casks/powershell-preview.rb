@@ -1,6 +1,6 @@
 cask 'powershell-preview' do
-  version '6.1.0-preview.3'
-  sha256 '95efa9d091de87746f877814aee56d2ab8f25fddf596aba2653b1782dd2ba362'
+  version '6.1.0-rc.1'
+  sha256 '26ec5668ec9e93cc511654986c1f4d88db9cf20c668014850e31422e715f3b81'
 
   url "https://github.com/PowerShell/PowerShell/releases/download/v#{version}/powershell-#{version}-osx-x64.pkg"
   appcast 'https://github.com/PowerShell/PowerShell/releases.atom'
@@ -12,7 +12,7 @@ cask 'powershell-preview' do
 
   pkg "powershell-#{version}-osx-x64.pkg"
 
-  uninstall pkgutil: 'com.microsoft.powershell'
+  uninstall pkgutil: 'com.microsoft.powershell-preview'
 
   zap trash: [
                '~/.cache/powershell',

@@ -7,7 +7,6 @@ cask 'textexpander5' do
   name 'TextExpander'
   homepage 'https://textexpander.com/textexpander-standalone-apps/'
 
-  accessibility_access true
   conflicts_with cask: 'textexpander'
 
   app 'TextExpander.app'
