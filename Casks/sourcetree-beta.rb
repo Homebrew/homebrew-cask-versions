@@ -1,18 +1,16 @@
 cask 'sourcetree-beta' do
-  version '2.7.4b2'
-  sha256 'c0dddc756305b43be43e7a016422325323e195d6a1e4c7ed4cd02614839162cb'
+  version :latest
+  sha256 :no_check
 
-  # atlassian.com was verified as official when first introduced to the cask
-  url "https://downloads.atlassian.com/software/sourcetree/Sourcetree_#{version}.zip"
-  appcast 'https://www.sourcetreeapp.com/update/SparkleAppcastBeta.xml'
-  name 'Atlassian SourceTree'
+  # bitbucket.org/atlassianlabs/sourcetree was verified as official when first introduced to the cask
+  url 'https://bitbucket.org/atlassianlabs/sourcetree-betas/downloads/OSX_Beta_Latest.zip'
+  name 'Atlassian Sourctree'
   homepage 'https://www.sourcetreeapp.com/'
 
-  auto_updates true
   depends_on macos: '>= :yosemite'
 
-  app 'SourceTree-Beta.app'
-  binary "#{appdir}/SourceTree-Beta.app/Contents/Resources/stree"
+  app 'Sourcetree-Beta.app'
+  binary "#{appdir}/Sourcetree-Beta.app/Contents/Resources/stree"
 
   uninstall launchctl: 'com.atlassian.SourceTreePrivilegedHelper2',
             quit:      'com.torusknot.SourceTreeNotMAS'
