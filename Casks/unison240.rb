@@ -3,7 +3,7 @@ cask 'unison240' do
   sha256 '2bcc460511f2b43fa1613cc5f9ba4dd59bb12d40b5b9fb2e9f21adaf854bcf3b'
 
   # unison-binaries.inria.fr was verified as official when first introduced to the cask
-  url "https://unison-binaries.inria.fr/files/Unison-#{version}_x64.dmg"
+  url "http://unison-binaries.inria.fr/files/Unison-#{version}_x64.dmg"
   appcast 'https://github.com/bcpierce00/unison/releases.atom'
   name 'Unison'
   homepage 'https://www.cis.upenn.edu/~bcpierce/unison/'
