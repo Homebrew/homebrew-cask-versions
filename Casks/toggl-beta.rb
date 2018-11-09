@@ -1,6 +1,6 @@
 cask 'toggl-beta' do
-  version '7.4.253'
-  sha256 '29fa5d767cd7021a0126c0c3fa8bd32980b077aa31805226b781313d75c26680'
+  version '7.4.299'
+  sha256 '399a1b316f9be1f3e19222f687aad74d3d6252db600b5bf3d932073568fb81e7'
 
   # github.com/toggl/toggldesktop was verified as official when first introduced to the cask
   url "https://github.com/toggl/toggldesktop/releases/download/v#{version}/TogglDesktop-#{version.dots_to_underscores}.dmg"
