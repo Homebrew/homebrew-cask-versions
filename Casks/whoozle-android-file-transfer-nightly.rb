@@ -14,4 +14,5 @@ cask 'whoozle-android-file-transfer-nightly' do
 
   app 'Android File Transfer for Linux.app'
   binary "#{appdir}/Android File Transfer for Linux.app/Contents/SharedSupport/bin/aft-mtp-cli"
+  binary "#{appdir}/Android File Transfer for Linux.app/Contents/SharedSupport/bin/aft-mtp-mount"
 end
