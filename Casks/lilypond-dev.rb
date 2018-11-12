@@ -1,6 +1,6 @@
 cask 'lilypond-dev' do
-  version '2.19.81-1'
-  sha256 'eeaadb688710fddd6f40389127b9cfaacf9dcbf6205cc763e5a615956e9159be'
+  version '2.19.82-1'
+  sha256 '558ffac7ba7543b39f2f87ed4a4141a29951d44772893c9af89a89ed33f16176'
 
   url "http://lilypond.org/downloads/binaries/darwin-x86/lilypond-#{version}.darwin-x86.tar.bz2"
   name 'LilyPond'
