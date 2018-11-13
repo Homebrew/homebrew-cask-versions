@@ -10,11 +10,10 @@ cask 'google-chrome-canary' do
 
   app 'Google Chrome Canary.app'
 
-  uninstall launchctl:  [
-                          'com.google.keystone.agent',
-                          'com.google.keystone.daemon',
-                        ],
-            login_item: 'Google Chrome Canary'
+  uninstall launchctl: [
+                         'com.google.keystone.agent',
+                         'com.google.keystone.daemon',
+                       ]
 
   zap trash: [
                '/Library/Caches/com.google.SoftwareUpdate.*',
