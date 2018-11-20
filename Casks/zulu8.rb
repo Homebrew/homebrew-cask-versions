@@ -11,22 +11,22 @@ cask 'zulu8' do
 
   postflight do
     system_command '/bin/mv',
-                   args: ['-f', '--', "/Library/Java/JavaVirtualMachines/zulu-#{version.major}.jdk", "/Library/Java/JavaVirtualMachines/zulu#{version.before_comma}.jdk"],
+                   args: ['-f', '--', "/Library/Java/JavaVirtualMachines/zulu-#{version.major}.jdk", "/Library/Java/JavaVirtualMachines/zulu-#{version.before_comma}.jdk"],
                    sudo: true
     system_command '/bin/ln',
-                   args: ['-nsf', '--', "/Library/Java/JavaVirtualMachines/zulu#{version.before_comma}.jdk", "/Library/Java/JavaVirtualMachines/zulu-#{version.major}.jdk"],
+                   args: ['-nsf', '--', "/Library/Java/JavaVirtualMachines/zulu-#{version.before_comma}.jdk", "/Library/Java/JavaVirtualMachines/zulu-#{version.major}.jdk"],
                    sudo: true
     system_command '/bin/ln',
-                   args: ['-nsf', '--', "/Library/Java/JavaVirtualMachines/zulu#{version.before_comma}.jdk/Contents/Home", '/Library/Java/Home'],
+                   args: ['-nsf', '--', "/Library/Java/JavaVirtualMachines/zulu-#{version.before_comma}.jdk/Contents/Home", '/Library/Java/Home'],
                    sudo: true
     system_command '/usr/libexec/PlistBuddy',
-                   args: ['-c', 'Add :JavaVM:JVMCapabilities: string JNI', "/Library/Java/JavaVirtualMachines/zulu#{version.before_comma}.jdk/Contents/Info.plist"],
+                   args: ['-c', 'Add :JavaVM:JVMCapabilities: string JNI', "/Library/Java/JavaVirtualMachines/zulu-#{version.before_comma}.jdk/Contents/Info.plist"],
                    sudo: true
   end
 
-  uninstall pkgutil: "com.azulsystems.zulu.#{version.minor}",
+  uninstall pkgutil: "com.azulsystems.zulu.#{version.major}",
             delete:  [
-                       "/Library/Java/JavaVirtualMachines/zulu#{version.before_comma}.jdk",
+                       "/Library/Java/JavaVirtualMachines/zulu-#{version.before_comma}.jdk",
                        "/Library/Java/JavaVirtualMachines/zulu-#{version.major}.jdk",
                        '/Library/Java/Home',
                      ]
