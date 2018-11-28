@@ -1,6 +1,6 @@
 cask 'java-beta' do
-  version '12,20'
-  sha256 '50c20a603364d3f0ef9378f7ac2bfd0f7ea8de376789e5ab834b57a946384fb3'
+  version '12,21'
+  sha256 '50c4f8d2f80c5fc01b717f6d76e2692c9d38c09e076b0fb214e2c9d8fe264674'
 
   url "https://download.java.net/java/early_access/jdk#{version.major}/#{version.after_comma}/GPL/openjdk-#{version.before_comma}-ea+#{version.after_comma}_osx-x64_bin.tar.gz"
   name 'OpenJDK - Early Access'
@@ -8,8 +8,10 @@ cask 'java-beta' do
 
   postflight do
     system_command '/bin/mv',
-                   args: ['-f', '--', "#{staged_path}/jdk-#{version.before_comma}.jdk",
-                          "/Library/Java/JavaVirtualMachines/openjdk-#{version.before_comma}.jdk"],
+                   args: [
+                           '-f', '--', "#{staged_path}/jdk-#{version.before_comma}.jdk",
+                           "/Library/Java/JavaVirtualMachines/openjdk-#{version.before_comma}.jdk"
+                         ],
                    sudo: true
 
     system_command '/bin/mkdir',
@@ -17,8 +19,10 @@ cask 'java-beta' do
                    sudo: true
 
     system_command '/bin/ln',
-                   args: ['-nsf', '--', "/Library/Java/JavaVirtualMachines/openjdk-#{version.before_comma}.jdk/Contents/Home/lib/server/libjvm.dylib",
-                          "/Library/Java/JavaVirtualMachines/openjdk-#{version.before_comma}.jdk/Contents/Home/bundle/Libraries/libserver.dylib"],
+                   args: [
+                           '-nsf', '--', "/Library/Java/JavaVirtualMachines/openjdk-#{version.before_comma}.jdk/Contents/Home/lib/server/libjvm.dylib",
+                           "/Library/Java/JavaVirtualMachines/openjdk-#{version.before_comma}.jdk/Contents/Home/bundle/Libraries/libserver.dylib"
+                         ],
                    sudo: true
   end
 
