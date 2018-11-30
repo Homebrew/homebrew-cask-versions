@@ -3,6 +3,7 @@ cask 'sequel-pro-nightly' do
   sha256 :no_check
 
   url do
+    require 'resolv-replace'
     require 'open-uri'
     URI('https://sequelpro.com/builds/latest-test-build.xml').open do |page|
       page.read[%r{https:\/\/sequelpro.com\/builds\/Sequel-Pro-Build-\w+.zip}]
