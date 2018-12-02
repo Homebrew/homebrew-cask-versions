@@ -1,6 +1,6 @@
 cask 'iina-beta' do
-  version '1.0.0-beta4-build92'
-  sha256 'b1eebda515978b620a0447a7b3cd043653f97079bfd9fe4571fac0218d4ed3bd'
+  version '1.0.0-rc'
+  sha256 '40fb3442705e8ca1ab27c16e6dbdab9d41f926e4eeecb65c8f7829196b9cb863'
 
   # dl-portal.iina.io was verified as official when first introduced to the cask
   url "https://dl-portal.iina.io/IINA.v#{version}.dmg"
