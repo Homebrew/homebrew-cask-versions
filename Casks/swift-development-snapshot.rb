@@ -8,6 +8,6 @@ cask 'swift-development-snapshot' do
 
   pkg "swift-DEVELOPMENT-SNAPSHOT-#{version.after_comma}-osx.pkg"
 
-  uninstall pkgutil: "org.swift.#{version.before_comma.no_dots}#{version.after_comma.delete('-')}",
+  uninstall pkgutil: "org.swift.#{version.before_comma.no_dots}#{version.after_comma.no_hyphens}",
             delete:  '/Library/Developer/Toolchains/swift-latest.xctoolchain'
 end
