@@ -1,6 +1,6 @@
 cask 'openemu-experimental' do
-  version '2.0.7'
-  sha256 '2f8cd821fe35798a5c571da562ab7c4863605e53b5ce483f9ebb593c3338eb46'
+  version '2.0.8'
+  sha256 '607bc755858a3b699e04f7585ab90c4650a72b1e4caf980f45af603938d4a7e8'
 
   # github.com/OpenEmu/OpenEmu was verified as official when first introduced to the cask
   url "https://github.com/OpenEmu/OpenEmu/releases/download/v#{version}/OpenEmu_#{version}-experimental.zip"
