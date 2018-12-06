@@ -1,6 +1,6 @@
 cask 'android-studio-preview' do
-  version '3.4.0.4,183.5141831'
-  sha256 'a277ab848578d0121c73ad0d5c100dbfc802b4a80c5d40e67ed1fe23a94720b1'
+  version '3.4.0.5,183.5146016'
+  sha256 '838548a4d21dd023d8ef68304efd49556fb0243e45139dbcfd443619c793422a'
 
   # google.com/dl/android/studio was verified as official when first introduced to the cask
   url "https://dl.google.com/dl/android/studio/ide-zips/#{version.before_comma}/android-studio-ide-#{version.after_comma}-mac.zip"
@@ -10,15 +10,17 @@ cask 'android-studio-preview' do
   app "Android Studio #{version.major_minor} Preview.app"
 
   zap trash: [
-               "~/Library/Application Support/AndroidStudioPreview#{version.major_minor}",
-               "~/Library/Caches/AndroidStudioPreview#{version.major_minor}",
-               "~/Library/Logs/AndroidStudioPreview#{version.major_minor}",
-               "~/Library/Preferences/AndroidStudioPreview#{version.major_minor}",
-               '~/Library/Preferences/com.google.android.studio.plist',
+               '~/Library/Android/sdk',
+               "~/Library/Application Support/AndroidStudio#{version.major_minor}",
+               "~/Library/Caches/AndroidStudio#{version.major_minor}",
+               "~/Library/Logs/AndroidStudio#{version.major_minor}",
+               "~/Library/Preferences/AndroidStudio#{version.major_minor}",
+               '~/Library/Preferences/com.android.Emulator.plist',
+               '~/Library/Saved Application State/com.google.android.studio.savedState',
+               '~/.android',
              ],
-      rmdir: '~/AndroidStudioProjects'
-
-  caveats do
-    depends_on_java
-  end
+      rmdir: [
+               '~/AndroidStudioProjects',
+               '~/Library/Android',
+             ]
 end
