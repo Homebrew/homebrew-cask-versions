@@ -1,6 +1,6 @@
 cask 'vivaldi-snapshot' do
-  version '2.2.1388.6'
-  sha256 '0bf9a2cddc83c36b286eee444d15ac803cf242997a899c7567a66d27e76ee87f'
+  version '2.2.1388.21'
+  sha256 '7445d4e5bc02565a5149896a38b57fe0c58062459cfec5f45f7fcfdce65fa57a'
 
   url "https://downloads.vivaldi.com/snapshot/Vivaldi.#{version}.dmg"
   appcast 'https://update.vivaldi.com/update/1.0/mac/appcast.xml'
