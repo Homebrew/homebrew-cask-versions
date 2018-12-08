@@ -5,7 +5,7 @@ cask 'loopback1' do
   url "https://rogueamoeba.com/legacy/downloads/Loopback-#{version.no_dots}.zip"
   appcast 'https://rogueamoeba.net/ping/versionCheck.cgi?format=sparkle&bundleid=com.rogueamoeba.Loopback&system=10140'
   name 'Loopback'
-  homepage 'https://rogueamoeba.com/legacy/'
+  homepage 'https://rogueamoeba.com/legacy/#loopback'
 
   conflicts_with cask: 'loopback'
 
