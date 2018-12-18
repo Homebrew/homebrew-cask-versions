@@ -1,6 +1,6 @@
 cask 'tableau-beta' do
-  version '2019.1-Beta1'
-  sha256 '60876185901e23071b0b115fa4be520838b49aa821539f7c247fcaf3bd62ce45'
+  version '2019.1-Beta2'
+  sha256 '3a2fb89e9514f2fd0c3da3ec3bc923b0369ae381c9447e95cb6337b60b211185'
 
   url "https://beta.tableau.com/#{version.major_minor}/Tableau-Desktop-Mac-#{version}.dmg"
   name 'Tableau Desktop'
