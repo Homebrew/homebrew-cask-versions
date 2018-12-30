@@ -1,6 +1,6 @@
 cask 'wine-staging' do
-  version '4.0-rc2'
-  sha256 '9775bff45ea7bd45a5b7b02731027373f8f3c40c7029c80c4405a2995ac79c75'
+  version '4.0-rc3'
+  sha256 '6e7582643c43ff7853e14c2967c1111c0a9be2170d581a3633fd72796a31b0a0'
 
   # dl.winehq.org/wine-builds/macosx was verified as official when first introduced to the cask
   url "https://dl.winehq.org/wine-builds/macosx/pool/winehq-staging-#{version}.pkg"
@@ -8,6 +8,11 @@ cask 'wine-staging' do
   name 'WineHQ-staging'
   homepage 'https://www.wine-staging.com/'
 
+  conflicts_with formula: 'wine',
+                 cask:    [
+                            'wine-stable',
+                            'wine-devel',
+                          ]
   depends_on x11: true
 
   pkg "winehq-staging-#{version}.pkg",
@@ -18,6 +23,20 @@ cask 'wine-staging' do
                    'attributeSetting' => 1,
                  },
                ]
+  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/msiexec"
+  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/notepad"
+  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/regedit"
+  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/regsvr32"
+  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/wine"
+  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/wine64"
+  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/wineboot"
+  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/winecfg"
+  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/wineconsole"
+  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/winedbg"
+  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/winefile"
+  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/winemine"
+  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/winepath"
+  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/wineserver"
 
   uninstall pkgutil: [
                        'org.winehq.wine-staging',
