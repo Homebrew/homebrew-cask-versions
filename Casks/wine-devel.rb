@@ -7,6 +7,11 @@ cask 'wine-devel' do
   name 'WineHQ-devel'
   homepage 'https://wiki.winehq.org/MacOS'
 
+  conflicts_with formula: 'wine',
+                 cask:    [
+                            'wine-stable',
+                            'wine-staging',
+                          ]
   depends_on x11: true
 
   pkg "winehq-devel-#{version}.pkg",
@@ -17,6 +22,20 @@ cask 'wine-devel' do
                    'attributeSetting' => 1,
                  },
                ]
+  binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/msiexec"
+  binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/notepad"
+  binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/regedit"
+  binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/regsvr32"
+  binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/wine"
+  binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/wine64"
+  binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/wineboot"
+  binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/winecfg"
+  binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/wineconsole"
+  binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/winedbg"
+  binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/winefile"
+  binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/winemine"
+  binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/winepath"
+  binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/wineserver"
 
   uninstall pkgutil: [
                        'org.winehq.wine-devel',
