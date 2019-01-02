@@ -23,6 +23,8 @@ cask 'wine-staging' do
                    'attributeSetting' => 1,
                  },
                ]
+  binary "#{appdir}/Wine Staging.app/Contents/Resources/start/bin/appdb"
+  binary "#{appdir}/Wine Staging.app/Contents/Resources/start/bin/winehelp"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/msiexec"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/notepad"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/regedit"
