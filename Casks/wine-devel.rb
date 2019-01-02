@@ -22,6 +22,8 @@ cask 'wine-devel' do
                    'attributeSetting' => 1,
                  },
                ]
+  binary "#{appdir}/Wine Devel.app/Contents/Resources/start/bin/appdb"
+  binary "#{appdir}/Wine Devel.app/Contents/Resources/start/bin/winehelp"
   binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/msiexec"
   binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/notepad"
   binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/regedit"
