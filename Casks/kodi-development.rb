@@ -1,6 +1,6 @@
 cask 'kodi-development' do
-  version '18.0-Leia_rc2'
-  sha256 '1fa307e5abb90f49cdce0bae8f061ebab3d867d117aec871ecdde1a809fe9b93'
+  version '18.0-Leia_rc4'
+  sha256 'fbc0e1ad2493e54c91a26e73f59628f6755e283394cf0046651e43f768a457ed'
 
   url "https://mirrors.kodi.tv/releases/osx/x86_64/kodi-#{version}-x86_64.dmg"
   name 'Kodi-Development'
