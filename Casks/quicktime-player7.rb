@@ -6,8 +6,6 @@ cask 'quicktime-player7' do
   name 'QuickTime Player 7'
   homepage 'https://support.apple.com/kb/dl923'
 
-  depends_on macos: '>= :snow_leopard'
-
   pkg "QuickTimePlayer#{version}_SnowLeopard.pkg"
 
   uninstall pkgutil: "com.apple.pkg.QuickTimePlayer#{version}_SnowLeopard"

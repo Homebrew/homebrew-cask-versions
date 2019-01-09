@@ -7,8 +7,6 @@ cask 'mi-beta' do
   name 'mi'
   homepage 'https://www.mimikaki.net/download/beta.html'
 
-  depends_on macos: '>= :lion'
-
   app 'mi.app'
 
   zap trash: [

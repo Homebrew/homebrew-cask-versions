@@ -9,7 +9,6 @@ cask 'hex-fiend-beta' do
   homepage 'https://ridiculousfish.com/hexfiend/'
 
   conflicts_with cask: 'hex-fiend'
-  depends_on macos: '>= :lion'
 
   app 'Hex Fiend.app'
   binary "#{appdir}/Hex Fiend.app/Contents/Resources/hexf"

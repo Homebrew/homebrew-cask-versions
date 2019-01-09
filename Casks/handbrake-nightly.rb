@@ -10,7 +10,5 @@ cask 'handbrake-nightly' do
   name 'HandBrake Nightly'
   homepage 'https://handbrake.fr/nightly.php'
 
-  depends_on macos: '>= :lion'
-
   app 'HandBrake.app'
 end

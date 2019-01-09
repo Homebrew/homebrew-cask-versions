@@ -7,7 +7,6 @@ cask 'anaconda2' do
   name 'Continuum Analytics Anaconda2'
   homepage 'https://www.anaconda.com/what-is-anaconda/'
 
-  depends_on macos: '>= :lion'
   container type: :naked
 
   installer script: {
