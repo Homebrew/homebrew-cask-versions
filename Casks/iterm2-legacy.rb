@@ -9,7 +9,6 @@ cask 'iterm2-legacy' do
 
   auto_updates true
   conflicts_with cask: 'iterm2'
-  depends_on macos: '>= :lion'
 
   app 'iTerm.app'
 

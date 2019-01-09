@@ -12,7 +12,6 @@ cask 'vlc-nightly' do
   homepage 'https://www.videolan.org/vlc/'
 
   conflicts_with cask: 'vlc'
-  depends_on macos: '>= :lion'
 
   app 'VLC.app'
   # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)

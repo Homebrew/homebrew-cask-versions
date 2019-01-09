@@ -12,8 +12,6 @@ cask 'sequel-pro-nightly' do
   name 'Sequel Pro'
   homepage 'https://sequelpro.com/test-builds'
 
-  depends_on macos: '>= :leopard'
-
   app 'Sequel Pro.app'
 
   zap trash: '~/Library/Application Support/Sequel Pro/Data'
