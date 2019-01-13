@@ -7,6 +7,7 @@ cask 'sublime-text-dev' do
   name 'Sublime Text'
   homepage "https://www.sublimetext.com/#{version.major}dev"
 
+  auto_updates true
   conflicts_with cask: 'sublime-text'
 
   app 'Sublime Text.app'
