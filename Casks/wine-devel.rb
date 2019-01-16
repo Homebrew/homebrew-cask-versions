@@ -1,6 +1,6 @@
 cask 'wine-devel' do
-  version '4.0-rc5'
-  sha256 'b4c305bd0b3f62ffa78bfda5b3b1158f41dabbe4383abd304dac12449cab6944'
+  version '4.0-rc6'
+  sha256 'c306bb8c251569fbbb56a111f43dc353d9497d6d406a4ca3826aba821dce4faf'
 
   url "https://dl.winehq.org/wine-builds/macosx/pool/winehq-devel-#{version}.pkg"
   appcast 'https://dl.winehq.org/wine-builds/macosx/download.html'
