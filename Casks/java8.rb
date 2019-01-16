@@ -1,6 +1,6 @@
 cask 'java8' do
   version '8.202.03,07_nov_2018'
-  sha256 'fa07eee08fa0f3de541ee1770de0cdca2ae3876f3bd78c329f27e85c287cd070'
+  sha256 'a5c312fbe58add9b124920d799f2e61a3608bd9b7872d67a76b279a845447975'
 
   url "https://download.java.net/java/early_access/jdk#{version.major}/b#{version.patch}/BCL/jdk-#{version.major}u#{version.minor}-ea-bin-b03-macosx-x86_64-#{version.after_comma}.dmg"
   name 'OpenJDK'
