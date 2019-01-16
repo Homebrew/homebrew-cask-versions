@@ -7,4 +7,6 @@ cask 'java8' do
   homepage 'https://jdk.java.net/'
 
   pkg "JDK #{version.major} Update #{version.minor}.pkg"
+
+  uninstall pkgutil: "com.oracle.jdk#{version.major}u#{version.minor}"
 end
