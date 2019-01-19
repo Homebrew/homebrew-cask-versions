@@ -6,15 +6,11 @@ cask 'pext-nightly' do
   url do
     require 'open-uri'
     require 'json'
-    base_url = 'https://github.com/Pext/Pext/releases/continuous/'
-    latest_version = URI(base_url.to_s)
-                       .open
-                       .read
-                       .scan(%r{href="/.*/Pext\-((?:\d+\.?)+\.\d+\.\w+)\.dmg"})
-                       .flatten
-                       .last
 
-    "https://github.com/Pext/Pext/releases/download/continuous/Pext-#{latest_version}.dmg"
+    JSON.parse(
+      open('https://api.github.com/repos/Pext/Pext/releases').read
+    ).select { |r| r['prerelease'] }[0]['assets']
+    .select { |k| k['browser_download_url'] =~ /.*dmg/ }[0]['browser_download_url']
   end
   name 'Pext'
   homepage 'https://pext.io/'
