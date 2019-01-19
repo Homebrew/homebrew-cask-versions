@@ -7,9 +7,8 @@ cask 'pext-nightly' do
     require 'open-uri'
     require 'json'
 
-    JSON.parse(
-      open('https://api.github.com/repos/Pext/Pext/releases').read
-    ).select { |r| r['prerelease'] }[0]['assets']
+    JSON.parse(open('https://api.github.com/repos/Pext/Pext/releases').read)
+    .select { |r| r['prerelease'] }[0]['assets']
     .select { |k| k['browser_download_url'] =~ /.*dmg/ }[0]['browser_download_url']
   end
   name 'Pext'
