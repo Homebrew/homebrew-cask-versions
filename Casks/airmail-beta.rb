@@ -6,7 +6,7 @@ cask 'airmail-beta' do
   url "https://rink.hockeyapp.net/api/2/apps/84be85c3331ee1d222fd7f0b59e41b04/app_versions/#{version.after_comma}?format=zip&"
   appcast 'https://rink.hockeyapp.net/api/2/apps/84be85c3331ee1d222fd7f0b59e41b04'
   name 'Airmail'
-  homepage 'http://airmailapp.com/beta/'
+  homepage 'https://airmailapp.com/beta/'
 
   app 'Airmail Beta.app'
 
