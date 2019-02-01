@@ -1,9 +1,9 @@
 cask 'telegram-desktop-dev' do
-  version '1.5.7'
-  sha256 '37e59445b792efcbdb9872aba1dd91f117ceb18ad7f2d97769f48dc33a3c3c3c'
+  version '1.5.10'
+  sha256 'ca7baf2d74fe7374c012887b4ede846b376b055944de31713b5251215f3383cd'
 
   # github.com/telegramdesktop/tdesktop was verified as official when first introduced to the cask
-  url "https://github.com/telegramdesktop/tdesktop/releases/download/v#{version}/tsetup.#{version}.beta.dmg"
+  url "https://github.com/telegramdesktop/tdesktop/releases/download/v#{version}/tsetup.#{version}.dmg"
   appcast 'https://github.com/telegramdesktop/tdesktop/releases.atom'
   name 'Telegram Desktop'
   homepage 'https://desktop.telegram.org/'
