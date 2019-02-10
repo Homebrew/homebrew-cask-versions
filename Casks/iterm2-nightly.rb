@@ -1,7 +1,7 @@
 cask 'iterm2-nightly' do
   # note: "2" is not a version number, but an intrinsic part of the product name
-  version :latest
-  sha256 :no_check
+  version '3_3_20190210'
+  sha256 'b6d0efbbcd52958c7966574b688e1053424510a08252eaa1d811d7d2484df852'
 
   url 'https://www.iterm2.com/nightly/latest'
   name 'iTerm2'
