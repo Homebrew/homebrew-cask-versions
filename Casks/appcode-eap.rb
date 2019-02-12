@@ -5,7 +5,6 @@ cask 'appcode-eap' do
   url "https://download.jetbrains.com/objc/AppCode-#{version}.dmg"
   name 'AppCode EAP'
   homepage 'https://www.jetbrains.com/objc/nextversion/'
-  license :commercial
 
   conflicts_with cask: 'appcode'
 
