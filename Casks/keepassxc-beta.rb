@@ -1,6 +1,6 @@
 cask 'keepassxc-beta' do
-  version '2.4.0-beta1'
-  sha256 'd31a870a645f9b7cb1ac6804d09fb9bffa4ffe4726f5340ea94fcea8cc2622f3'
+  version '2.4.0-beta2'
+  sha256 '10c84c663afd83f798d17393d4da2f7921e1b51b0cd9245d306c6592bc622568'
 
   # github.com/keepassxreboot/keepassxc was verified as official when first introduced to the cask
   url "https://github.com/keepassxreboot/keepassxc/releases/download/#{version}/KeePassXC-#{version}.dmg"
