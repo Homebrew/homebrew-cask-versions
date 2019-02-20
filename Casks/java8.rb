@@ -13,7 +13,17 @@ cask 'java8' do
 
   pkg 'JDK 8 Update 202.pkg'
 
-  uninstall pkgutil: "com.oracle.jdk#{version.before_comma}"
+  uninstall pkgutil: "com.oracle.jdk#{version.before_comma}",
+            delete:  [
+                       '/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin',
+                       '/Library/PreferencePanes/JavaControlPanel.prefPane',
+                     ]
+
+  zap trash: [
+               '~/Library/Application Support/Oracle/Java',
+               '~/Library/Application Support/com.oracle.java.JavaAppletPlugin.plist',
+               '~/Library/Application Support/com.oracle.javadeployment.plist',
+             ]
 
   caveats do
     license 'https://www.oracle.com/technetwork/java/javase/terms/license/javase-license.html'
