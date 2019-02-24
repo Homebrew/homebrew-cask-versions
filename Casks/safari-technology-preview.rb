@@ -9,6 +9,7 @@ cask 'safari-technology-preview' do
     sha256 '91a394119fb086f185140477736289091954c9409b856a6c97ec9e3a040c4165'
   end
 
+  appcast 'https://developer.apple.com/safari/technology-preview/release-notes/'
   name 'Safari Technology Preview'
   homepage 'https://developer.apple.com/safari/download/'
 
