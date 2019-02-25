@@ -1,19 +1,19 @@
 cask 'psi-plus' do
-  version '1.2.125,2017-12-29'
-  sha256 'f5bc8b2de632247fc94a177daa74112d127cd5de1af7255260836e73a7562d22'
+  version '1.4.567-macOS10.12'
+  sha256 '7cb90ddd612e6e96a95d7df3e6c3d945da05c198cc6d929cae484ed59ab305f1'
 
-  # downloads.sourceforge.net/psiplus/Mac-OS-X was verified as official when first introduced to the cask
-  url "https://downloads.sourceforge.net/psiplus/Mac-OS-X/psi-plus-#{version.before_comma}-qt5-webengine-git-#{version.after_comma}-macosx.dmg"
+  # downloads.sourceforge.net/ was verified as official when first introduced to the cask
+  url "https://downloads.sourceforge.net/Psi+-#{version}-x86_64.dmg"
   appcast 'https://sourceforge.net/projects/psiplus/rss'
   name 'Psi+'
   homepage 'https://psi-plus.com/'
 
   app 'Psi+.app'
 
-  uninstall quit: 'com.googlecode.psi-dev'
+  uninstall quit: 'com.psi-plus'
 
   zap trash: [
-               '~/Library/Saved Application State/com.googlecode.psi-dev.savedState',
+               '~/Library/Saved Application State/com.psi-plus.savedState',
                '~/Library/Caches/Psi+',
                '~/Library/Application Support/Psi+',
              ]
