@@ -1,6 +1,6 @@
 cask 'prince-latest' do
-  version '20180524'
-  sha256 '533789e4548c6f42303cfc375bfe6ede03399920040bef1d40c775c8d8797f88'
+  version '20190220'
+  sha256 '7c688f3f752421ae8e8b7a08fd4d3a99a195fac8b323799aa16e069f4ece0814'
 
   url "https://www.princexml.com/download/prince-#{version}-macosx.tar.gz"
   appcast 'https://www.princexml.com/latest/'
