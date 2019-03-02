@@ -1,6 +1,6 @@
 cask 'dropbox-beta' do
-  version '68.3.92'
-  sha256 'e91650501887fe640b94c8e5c885b0c0df63de91ee5bf53db0c856b3b93adeb8'
+  version '68.3.95'
+  sha256 '67dc8c4b77617882f2e309ddaf253cbe2c8706c126b95aec59ac970665fb7117'
 
   # dropbox.com was verified as official when first introduced to the cask
   url "https://www.dropbox.com/download?build=#{version}&plat=mac&type=full"
@@ -18,6 +18,7 @@ cask 'dropbox-beta' do
   zap trash: [
                '/Library/DropboxHelperTools',
                '~/.dropbox',
+               '~/Library/Application Scripts/com.dropbox.foldertagger',
                '~/Library/Application Scripts/com.getdropbox.dropbox.garcon',
                '~/Library/Application Support/Dropbox',
                '~/Library/Caches/CloudKit/com.apple.bird/iCloud.com.getdropbox.Dropbox',
@@ -25,9 +26,11 @@ cask 'dropbox-beta' do
                '~/Library/Caches/com.getdropbox.DropboxMetaInstaller',
                '~/Library/Caches/com.getdropbox.dropbox',
                '~/Library/Caches/com.plausiblelabs.crashreporter.data/com.dropbox.DropboxMacUpdate',
+               '~/Library/Containers/com.dropbox.foldertagger',
                '~/Library/Containers/com.getdropbox.dropbox.garcon',
                '~/Library/Dropbox',
                '~/Library/Group Containers/com.getdropbox.dropbox.garcon',
+               '~/Library/LaunchAgents/com.dropbox.DropboxMacUpdate.agent.plist',
                '~/Library/Logs/Dropbox_debug.log',
                '~/Library/Preferences/com.dropbox.DropboxMacUpdate.plist',
                '~/Library/Preferences/com.dropbox.DropboxMonitor.plist',

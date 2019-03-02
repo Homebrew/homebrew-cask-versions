@@ -22,8 +22,9 @@ class NeutralSystemExit < SystemExit
   end
 end
 
-def skip(message)
-  raise NeutralSystemExit, message
+def skip(message = nil)
+  $stderr.puts message unless message.nil?
+  raise NeutralSystemExit.new(message)
 end
 
 $stdout.sync = true
@@ -67,16 +68,38 @@ def diff_for_pull_request(pr)
 end
 
 def merge_pull_request(pr, statuses = GitHub.open_api(pr.fetch("statuses_url")))
-  skip "CI status is not successful." unless passed_ci?(statuses)
-
-  diff = diff_for_pull_request(pr)
-  skip "Not a “simple” version bump pull request." unless diff.simple?
-
-  puts "Merging pull request #{pr.fetch("number")}…"
-
   repo   = pr.fetch("base").fetch("repo").fetch("full_name")
   number = pr.fetch("number")
   sha    = pr.fetch("head").fetch("sha")
+
+  tap = Tap.fetch(repo)
+  pr_name = "#{tap.name}##{number}"
+
+  skip "CI status for pull request #{pr_name} is not successful." unless passed_ci?(statuses)
+
+  diff = diff_for_pull_request(pr)
+  skip "Pull request #{pr_name} is not a “simple” version bump." unless diff.simple?
+
+  if diff.version_changed?
+    if diff.version_decreased?
+      skip "Version in pull request #{pr_name} decreased from #{diff.old_version.inspect} to #{diff.new_version.inspect}."
+    end
+
+    tap.install(full_clone: true) unless tap.installed?
+
+    cask_path = diff.files.first.a_path
+
+    out, _ = system_command! 'git', args: ['-C', tap.path, 'log', '--pretty=format:', '-G', '\s+version\s+\'', '--follow', '-p', '--', cask_path]
+
+    version_diff = GitDiff.from_string(out)
+    previous_versions = version_diff.additions.select { |l| l.version? }.map { |l| l.version }.uniq
+
+    if previous_versions.include?(diff.new_version)
+      skip "Version in pull request #{pr_name} changed to a previous version. Previous versions were:\n#{previous_versions.join("\n")}"
+    end
+  end
+
+  puts "Merging pull request #{pr_name}…"
 
   begin
     tries ||= 0
@@ -86,11 +109,10 @@ def merge_pull_request(pr, statuses = GitHub.open_api(pr.fetch("statuses_url")))
       number: number, sha: sha,
       merge_method: :squash,
     )
-    puts "Pull request #{pr.fetch("number")} merged successfully."
+
+    puts "Pull request #{pr_name} merged successfully."
   rescue => e
-    $stderr.puts "Failed to merge pull request #{pr.fetch("number")}."
-    $stderr.puts e
-    raise if (tries += 1) > 3
+    raise "Failed to merge pull request #{pr_name}:\n#{e}" if (tries += 1) > 3
     sleep 5
     retry
   end
@@ -133,22 +155,21 @@ begin
       begin
         merge_pull_request(pr)
         merged_prs << pr
-      rescue NeutralSystemExit
+      rescue NeutralSystemExit => e
         skipped_prs << pr
-      rescue
+      rescue => e
+        $stderr.puts e
+        $stderr.puts e.backtrace
         failed_prs << pr
       end
     end
 
     if (merged_prs + failed_prs).empty? && skipped_prs.any?
-      skip "No “simple” version bump pull requests found."
+      skip
     elsif failed_prs.any?
       exit 1
     end
   else
     skip "Unsupported GitHub Actions event."
   end
-rescue NeutralSystemExit => reason
-  $stderr.puts reason
-  raise
 end
