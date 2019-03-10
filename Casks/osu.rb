@@ -1,4 +1,4 @@
-cask 'osu-lazer' do
+cask 'osu' do
   version '2019.308.0'
   sha256 '15d1e456081643758a76d7a3651fc4a3868b2defd17aed7b69602543b7dafad7'
 
