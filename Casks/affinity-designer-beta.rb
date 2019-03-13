@@ -1,6 +1,6 @@
 cask 'affinity-designer-beta' do
-  version '1.7.0.4'
-  sha256 'a771dca222237c582a392579c08b717b79ebf69d07d91b46ee9c53986f621378'
+  version '1.7.0.6'
+  sha256 'b4d4a12bdb90f6e256a40ae735ff9aa2029d733ce6f87c0c4f4a6a698f45584c'
 
   # amazonaws.com/affinity-beta was verified as official when first introduced to the cask
   url 'https://s3.amazonaws.com/affinity-beta/download/Affinity%20Designer%20Beta.dmg'
