@@ -9,6 +9,7 @@ cask 'osu-development' do
 
   auto_updates true
   conflicts_with cask: 'osu'
+  depends_on macos: '>= :sierra'
 
   app 'osu!.app'
 
