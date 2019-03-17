@@ -5,7 +5,7 @@ cask 'corretto8' do
   # d2znqt9b1bc64u.cloudfront.net was verified as official when first introduced to the cask
   url "https://d2znqt9b1bc64u.cloudfront.net/amazon-corretto-#{version}-macosx-x64.pkg"
   appcast "https://docs.aws.amazon.com/en_us/corretto/latest/corretto-#{version.major}-ug/corretto-#{version.major}-ug.rss"
-  name 'Amazon Corretto 8'
+  name 'Amazon Corretto'
   homepage 'https://aws.amazon.com/corretto/'
 
   pkg "amazon-corretto-#{version}-macosx-x64.pkg"
