@@ -1,4 +1,4 @@
-cask 'java' do
+cask 'java11' do
   version '11.0.2,9'
   sha256 'f365750d4be6111be8a62feda24e265d97536712bc51783162982b8ad96a70ee'
 
