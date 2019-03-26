@@ -11,6 +11,7 @@ cask 'keepassxc-beta' do
   conflicts_with cask: 'keepassxc'
 
   app 'KeePassXC.app'
+  binary "#{appdir}/KeePassXC.app/Contents/MacOS/keepassxc-cli"
 
   zap trash: '~/.keepassxc'
 end
