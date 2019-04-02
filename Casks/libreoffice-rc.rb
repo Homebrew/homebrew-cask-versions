@@ -1,6 +1,6 @@
 cask 'libreoffice-rc' do
-  version '6.2.2.2'
-  sha256 'b373fa95b393c2fd3179c1dd72cc57e2b1fd8ff78e1d48d786cea78201180ea2'
+  version '6.2.3.1'
+  sha256 'bc87bdfa76daa955f886f1dba3ce718d19d0fe1a37d49493dfc195d26ad83111'
 
   # documentfoundation.org/libreoffice was verified as official when first introduced to the cask
   url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg"
