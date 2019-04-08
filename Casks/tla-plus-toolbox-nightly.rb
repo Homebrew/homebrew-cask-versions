@@ -1,6 +1,6 @@
 cask 'tla-plus-toolbox-nightly' do
   version :latest
-  sha256 :no_check # required as upstream package is updated in-place
+  sha256 :no_check
 
   # tla.msr-inria.inria.fr was verified as official when first introduced to the cask
   url do
