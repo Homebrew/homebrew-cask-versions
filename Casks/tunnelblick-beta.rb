@@ -1,6 +1,6 @@
 cask 'tunnelblick-beta' do
-  version '3.7.9beta04,5230'
-  sha256 'ef36fffc0d1b369555afe17b2b4261fd14ff1317bd87a39de1b29434220e55c7'
+  version '3.7.9beta05,5240'
+  sha256 'f089849eff85908f655479b128d36ba7021ef608ea67e08c392e9ffe387bf03e'
 
   # github.com/Tunnelblick/Tunnelblick was verified as official when first introduced to the cask
   url "https://github.com/Tunnelblick/Tunnelblick/releases/download/v#{version.before_comma}/Tunnelblick_#{version.before_comma}_build_#{version.after_comma}.dmg"
