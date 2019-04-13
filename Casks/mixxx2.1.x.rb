@@ -1,6 +1,6 @@
-cask 'mixxx' do
-  version '2.1.5'
-  sha256 'd2936777887719cf6e4622c6512a09b1fa29a6b5b9a6268f8e9a04c8206080a6'
+cask 'mixxx2.1.x' do
+  version '2.1.8'
+  sha256 '778fe1b167484cf660ce92f469c241f6c730c78011fefef73e33e73b731a1fd9'
 
   url "https://downloads.mixxx.org/mixxx-#{version}/mixxx-#{version}-osxintel.dmg"
   appcast 'https://www.mixxx.org/download/'
