@@ -1,4 +1,4 @@
-cask 'mixxx2.1.x' do
+cask 'mixxx2.1' do
   version '2.1.8'
   sha256 '778fe1b167484cf660ce92f469c241f6c730c78011fefef73e33e73b731a1fd9'
 
