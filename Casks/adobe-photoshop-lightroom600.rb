@@ -1,6 +1,6 @@
 cask 'adobe-photoshop-lightroom600' do
   version '6.0'
-  sha256 '5c36e5fa76b8676144c4bba9790fe4c597daf350b2195a2088346b097f46a95f'
+  sha256 '6bb829e03797123a11c1a449d14b06a9bbc67da31833980f71c0fe8f26681618'
 
   url "https://trials3.adobe.com/AdobeProducts/LTRM/#{version.major}/osx10/Lightroom_#{version.major}_LS11.dmg",
       user_agent: :fake,
