@@ -1,6 +1,6 @@
 cask 'termius-beta' do
-  version '4.3.0'
-  sha256 '8e252adab7f8e236ad19b7c17148fbc6db8a528bfad669f731344fb9c04cc713'
+  version '4.4.1'
+  sha256 'b48ea83498c26095b6b146a0876f3e29113961ed7f8c100df61f0ebef6b3412b'
 
   # s3.amazonaws.com/termius.desktop.autoupdate/mac was verified as official when first introduced to the cask
   url 'https://s3.amazonaws.com/termius.desktop.autoupdate/mac-beta/Termius+Beta.dmg'
