@@ -1,6 +1,6 @@
 cask 'keepassxc-beta' do
-  version '2.4.0-beta2'
-  sha256 '10c84c663afd83f798d17393d4da2f7921e1b51b0cd9245d306c6592bc622568'
+  version '2.4.0'
+  sha256 'b611ada8bd6bc9fe93e8566b042ceaa3a9c2f1e8c5c2ddbefb866ce20a39254e'
 
   # github.com/keepassxreboot/keepassxc was verified as official when first introduced to the cask
   url "https://github.com/keepassxreboot/keepassxc/releases/download/#{version}/KeePassXC-#{version}.dmg"
@@ -11,6 +11,7 @@ cask 'keepassxc-beta' do
   conflicts_with cask: 'keepassxc'
 
   app 'KeePassXC.app'
+  binary "#{appdir}/KeePassXC.app/Contents/MacOS/keepassxc-cli"
 
   zap trash: '~/.keepassxc'
 end
