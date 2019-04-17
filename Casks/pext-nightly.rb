@@ -1,15 +1,10 @@
 cask 'pext-nightly' do
-  version :latest
+  version :0.23.15.gac9a6bd
   sha256 :no_check
 
   # github.com/Pext/Pext was verified as official when first introduced to the cask
-  url do
-    require 'open-uri'
-    require 'json'
-
-    JSON.parse(open('https://api.github.com/repos/Pext/Pext/releases/tags/continuous').read)['assets']
-        .find { |r| r['browser_download_url'] =~ %r{/.*\.dmg} }['browser_download_url']
-  end
+  url "https://github.com/Pext/Pext/releases/download/continuous/Pext-#{version}.dmg"
+  appcast 'https://github.com/Pext/Pext/releases.atom'
   name 'Pext'
   homepage 'https://pext.io/'
 
