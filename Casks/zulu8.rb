@@ -1,6 +1,6 @@
 cask 'zulu8' do
-  version '8.0.202,8.36.0.1-ca'
-  sha256 '92b313e3c8da4a5b75288a41ff884374b1de1c596ca1da026c795319637d0071'
+  version '8.0.212,8.38.0.13-ca'
+  sha256 '789ec21c913953eb1554c110dad1883e7f02179d445d88b204bbdb6c64318acb'
 
   url "https://cdn.azul.com/zulu/bin/zulu#{version.after_comma}-jdk#{version.before_comma}-macosx_x64.dmg",
       referer: 'https://www.azul.com/downloads/zulu/zulu-mac/'
