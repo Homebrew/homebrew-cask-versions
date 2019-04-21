@@ -1,5 +1,4 @@
 cask 'termius-beta' do
-master
   version '4.5.0'
   sha256 '3cde456c3d33d76dde2d000173a9ef222b307248f070ab84bb670451e9ad9be4'
 
