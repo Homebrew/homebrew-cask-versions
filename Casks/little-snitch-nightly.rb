@@ -1,6 +1,6 @@
 cask 'little-snitch-nightly' do
-  version '4.3.2,5274'
-  sha256 'b3d6320699a9964a50d6e7f8309ab52dfab6287bb9006945c7286231369af65d'
+  version '4.3.2,5280'
+  sha256 'ad7d7cba79f989a796250014282ca56d637e2089fb5d9d15a8075a8148726f7e'
 
   url "https://obdev.at/downloads/littlesnitch/nightly/LittleSnitch-#{version.before_comma}-nightly-(#{version.after_comma}).dmg"
   appcast 'https://www.obdev.at/products/littlesnitch/releasenotes-nightly.html'
