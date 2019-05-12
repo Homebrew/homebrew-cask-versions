@@ -1,5 +1,5 @@
 cask 'audirvana-plus2' do
-  version '2.6.8'
+  version '2.6.9'
   sha256 '7db18cdd2754c2d366a840dea937e21a86fd73d1fbaf1214aaf517e85a81256a'
 
   url "https://audirvana.com/delivery/AudirvanaPlus_#{version}.dmg"
