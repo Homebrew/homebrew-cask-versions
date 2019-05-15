@@ -1,12 +1,12 @@
 cask 'safari-technology-preview' do
-  version '81,041-59125-20190501-80842936-1ceb-4586-8a00-a4a2d2a54751'
+  version '82,041-62874-20190514-dcb3b57a-1ea8-4753-81fe-673bc547318d'
 
   if MacOS.version <= :high_sierra
-    url 'https://secure-appldnld.apple.com/STP/041-58764-20190501-d28417f0-1e4c-4abb-9cdf-b469cf8c1b48/SafariTechnologyPreview.dmg'
-    sha256 'a54adcc8112eec0e31c0c7e8858b3f73e924ae1a97482d153b92201f2753f8ce'
+    url 'https://secure-appldnld.apple.com/STP/041-62843-20190514-272a49d7-cb29-4b4a-843d-b41160eb862c/SafariTechnologyPreview.dmg'
+    sha256 'cf1ace8f8adc851652933cdb45c5378676a037acbcb5e1e93fd18b66e8f619b2'
   else
     url "https://secure-appldnld.apple.com/STP/#{version.after_comma}/SafariTechnologyPreview.dmg"
-    sha256 '3aa1008425146f4d17b7f4601c39ea895c542bf73f1cb919bfa7e9f6e525baf7'
+    sha256 '7d68a57bc6f83aa5b4f071d33379b650c878d9e0896c2201483d51ad51c11f7c'
   end
 
   appcast 'https://developer.apple.com/safari/technology-preview/release-notes/'
