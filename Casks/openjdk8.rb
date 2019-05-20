@@ -1,4 +1,4 @@
-cask 'adoptopenjdk8' do
+cask 'openjdk8' do
   version '8,212:b03'
   sha256 'd0e4265b151d87235a74e354725fdc218d60abb06c253af0993fd2fcf4c3a355'
 
