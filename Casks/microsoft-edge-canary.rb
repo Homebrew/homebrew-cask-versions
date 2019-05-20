@@ -7,6 +7,8 @@ cask 'microsoft-edge-canary' do
   name 'Microsoft Edge Canary'
   homepage 'https://www.microsoftedgeinsider.com/'
 
+  auto_updates true  
+
   pkg "MicrosoftEdgeCanary-#{version}.pkg"
 
   uninstall pkgutil: 'com.microsoft.Edge.Canary'
