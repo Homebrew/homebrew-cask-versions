@@ -8,15 +8,15 @@ cask 'microsoft-edge-canary' do
     end
   end
 
-  version Utils.file_version.to_s
+  version :latest
   sha256 :no_check
 
   # officecdn-microsoft-com.akamaized.net was verified as official when first introduced to the cask
-  url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeCanary-#{version}.pkg"
+  url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeCanary-#{Utils.file_version}.pkg"
   name 'Microsoft Edge Canary'
   homepage 'https://www.microsoftedgeinsider.com/'
 
-  pkg "MicrosoftEdgeCanary-#{version}.pkg"
+  pkg "MicrosoftEdgeCanary-#{Utils.file_version}.pkg"
 
   uninstall pkgutil: 'com.microsoft.Edge.Canary'
 end
