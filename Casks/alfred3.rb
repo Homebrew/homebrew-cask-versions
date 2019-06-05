@@ -11,14 +11,14 @@ cask 'alfred3' do
 
   app "Alfred #{version.major}.app"
 
-  uninstall quit:       'com.runningwithcrayons.Alfred-3',
-            login_item: 'Alfred 3'
+  uninstall quit:       "com.runningwithcrayons.Alfred-#{version.major}",
+            login_item: "Alfred #{version.major}"
 
   zap trash: [
-               '~/Library/Application Support/Alfred 3',
-               '~/Library/Caches/com.runningwithcrayons.Alfred-3',
-               '~/Library/Preferences/com.runningwithcrayons.Alfred-3.plist',
-               '~/Library/Preferences/com.runningwithcrayons.Alfred-Preferences-3.plist',
-               '~/Library/Saved Application State/com.runningwithcrayons.Alfred-Preferences-3.savedState',
+               "~/Library/Application Support/Alfred #{version.major}",
+               "~/Library/Caches/com.runningwithcrayons.Alfred-#{version.major}",
+               "~/Library/Preferences/com.runningwithcrayons.Alfred-#{version.major}.plist",
+               "~/Library/Preferences/com.runningwithcrayons.Alfred-Preferences-#{version.major}.plist",
+               "~/Library/Saved Application State/com.runningwithcrayons.Alfred-Preferences-#{version.major}.savedState",
              ]
 end
