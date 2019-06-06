@@ -16,8 +16,6 @@ cask 'microsoft-edge-dev' do
   name 'Microsoft Edge Dev'
   homepage 'https://www.microsoftedgeinsider.com/'
 
-  auto_updates true
-
   pkg "MicrosoftEdgeDev-#{Utils.file_version}.pkg"
 
   uninstall pkgutil: 'com.microsoft.Edge.Dev'
