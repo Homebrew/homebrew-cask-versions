@@ -1,22 +1,16 @@
 cask 'microsoft-edge-dev' do
-  module Utils
-    def self.file_version
-      require 'open-uri'
-      appcast = 'https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/0409EDDV01-chk.xml'
-      appcast_version = URI(appcast).read.scan(%r{<string>(.*)<\/string>})[2].join.split('.')
-      appcast_version[0] + '.0.' + appcast_version[1] + '.1'
-    end
-  end
-
-  version :latest
-  sha256 :no_check
+  version '76.0.176.1'
+  sha256 'f7260b8640e9d159d6c1de9c8dfdd89bd70bd5999d3e4fffafca21ea258b7b8c'
 
   # officecdn-microsoft-com.akamaized.net was verified as official when first introduced to the cask
-  url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeDev-#{Utils.file_version}.pkg"
+  url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeDev-#{version}.pkg"
+  appcast 'https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/0409EDDV01-chk.xml'
   name 'Microsoft Edge Dev'
   homepage 'https://www.microsoftedgeinsider.com/'
 
-  pkg "MicrosoftEdgeDev-#{Utils.file_version}.pkg"
+  auto_updates true
+
+  pkg "MicrosoftEdgeDev-#{version}.pkg"
 
   uninstall pkgutil: 'com.microsoft.Edge.Dev'
 end
