@@ -7,10 +7,7 @@ cask 'whoozle-android-file-transfer-nightly' do
   name 'Android File Transfer'
   homepage 'https://whoozle.github.io/android-file-transfer-linux/'
 
-  conflicts_with cask: [
-                         'android-file-transfer',
-                         'whoozle-android-file-transfer',
-                       ]
+  conflicts_with cask: 'whoozle-android-file-transfer'
 
   app 'Android File Transfer for Linux.app'
   binary "#{appdir}/Android File Transfer for Linux.app/Contents/SharedSupport/bin/aft-mtp-cli"
