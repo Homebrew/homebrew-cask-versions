@@ -3,7 +3,7 @@ cask 'beyond-compare-beta' do
   sha256 '4431e59d435e4a614fcdecff70467855b54e9a2f0619c86a0aedb29bfa243329'
 
   url "https://www.scootersoftware.com/BCompareOSX-#{version}.zip"
-  appcast 'https://www.scootersoftware.com/download.php?zz=v4changelog'
+  appcast 'https://www.scootersoftware.com/download.php?zz=v4betalog'
   name 'Beyond Compare'
   homepage 'https://www.scootersoftware.com/'
 
