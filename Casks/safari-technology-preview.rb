@@ -3,7 +3,6 @@ cask 'safari-technology-preview' do
 
   url "https://secure-appldnld.apple.com/STP/#{version.after_comma}/SafariTechnologyPreview.dmg"
   sha256 '52c70d1f62c4d68d93e371c034fa37395bdd63dd09fcc8037679e01ccd46b68a'
-
   appcast 'https://developer.apple.com/safari/technology-preview/release-notes/'
   name 'Safari Technology Preview'
   homepage 'https://developer.apple.com/safari/download/'
