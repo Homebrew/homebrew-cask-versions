@@ -1,5 +1,5 @@
 cask 'safari-technology-preview' do
-  version '85,041-73105-20190612-8d1ff016-e901-431d-aa35-7cf7b1ceaa7d/'
+  version '85,041-73105-20190612-8d1ff016-e901-431d-aa35-7cf7b1ceaa7d'
 
   if MacOS.version <= :mojave
     url 'https://secure-appldnld.apple.com/STP/041-73107-20190612-2744e373-b7d6-47b2-984c-08bcf11661ab/SafariTechnologyPreview.dmg'
