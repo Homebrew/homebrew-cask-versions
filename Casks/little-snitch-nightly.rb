@@ -12,7 +12,7 @@ cask 'little-snitch-nightly' do
   depends_on macos: '>= :el_capitan'
   container type: :naked
 
-  installer manual: "LittleSnitch-#{version.before_comma}-nightly-(#{version.after_comma}).dmg/Little Snitch Installer.app"
+  installer manual: "LittleSnitch-#{version.before_comma}-nightly-(#{version.after_comma}).dmg"
 
   uninstall launchctl: [
                          'at.obdev.LittleSnitchUIAgent',
