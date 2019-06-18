@@ -1,6 +1,6 @@
 cask 'rstudio-preview' do
-  version '1.2.1522'
-  sha256 '5f998412b3718abcb97dfb824c8f1ebeddb2207cbb55aa2d3c61cb7cc2682dc3'
+  version '1.2.1541'
+  sha256 'c675249c037686b9636d4056a77432763ebbb3801138898edd6407b284eb5ca6'
 
   # s3.amazonaws.com/rstudio-ide-build was verified as official when first introduced to the cask
   url "https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-#{version}.dmg"
