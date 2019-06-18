@@ -1,6 +1,6 @@
 cask 'anaconda2' do
-  version '5.1.0'
-  sha256 'b686e01aeadb33526d9c154a0ac6f691dfad135080df96fb44d3ae1e4b128521'
+  version '2019.03'
+  sha256 '414917d00deaeefa38719992e6437470f54793718ef4bedcd66b0e5a30dbe4b6'
 
   # repo.continuum.io/archive was verified as official when first introduced to the cask
   url "https://repo.continuum.io/archive/Anaconda2-#{version}-MacOSX-x86_64.sh"
