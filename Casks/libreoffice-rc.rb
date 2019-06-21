@@ -4,7 +4,7 @@ cask 'libreoffice-rc' do
 
   # documentfoundation.org/libreoffice was verified as official when first introduced to the cask
   url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg"
-  appcast 'https://download.documentfoundation.org/libreoffice/testing/'
+  appcast "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/x86_64/"
   name 'LibreOffice Release Candidate'
   homepage 'https://www.libreoffice.org/download/pre-releases/'
 
