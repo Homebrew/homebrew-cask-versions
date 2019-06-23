@@ -16,8 +16,15 @@ cask 'dotnet-preview' do
 
   pkg "dotnet-runtime-#{version}-osx-x64.pkg"
 
+  postflight do
+    FileUtils.ln_sf('/usr/local/share/dotnet/dotnet', "#{HOMEBREW_PREFIX}/bin/dotnet")
+  end
+
   uninstall pkgutil: 'com.microsoft.dotnet.*',
-            delete:  '/etc/paths.d/dotnet'
+            delete:  [
+                       '/etc/paths.d/dotnet',
+                       "#{HOMEBREW_PREFIX}/bin/dotnet",
+                     ]
 
   zap trash: '~/.nuget'
 end
