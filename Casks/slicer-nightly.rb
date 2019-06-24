@@ -8,7 +8,7 @@ cask 'slicer-nightly' do
     base_url = 'https://download.slicer.org'
     base_url + JSON.parse(URI(base_url + '/find?os=macosx&stability=nightly').read)['download_url']
   end
-  name '3D Slicer Nightly'
+  name '3D Slicer'
   homepage 'https://www.slicer.org/'
 
   app 'Slicer.app'
