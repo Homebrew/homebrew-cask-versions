@@ -2,14 +2,11 @@ cask 'slicer-nightly' do
   version :latest
   sha256 :no_check
 
-  base_url = 'https://download.slicer.org'
   url do
     require 'open-uri'
     require 'json'
-    URI("#{base_url}/find?os=macosx&stability=nightly").open do |json_page|
-      content = JSON.parse(json_page.read)
-      "#{base_url}#{content['download_url']}"
-    end
+    base_url = 'https://download.slicer.org'
+    base_url + JSON.parse(URI(base_url + '/find?os=macosx&stability=nightly').read)['download_url']
   end
   name '3D Slicer Nightly'
   homepage 'https://www.slicer.org/'
