@@ -7,7 +7,7 @@ cask 'handbrake-nightly' do
     base_url = 'https://handbrake.fr/nightly.php'
     URI(base_url).open.read.scan(%r{href="([^"]+.dmg)"}).flatten.first
   end
-  name 'HandBrake Nightly'
+  name 'HandBrake'
   homepage 'https://handbrake.fr/nightly.php'
 
   app 'HandBrake.app'
