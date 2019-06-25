@@ -1,8 +1,8 @@
 cask 'dotnet-sdk-preview' do
-  version '3.0.100-preview5-011568'
-  sha256 '42b04e419ca1f4b9a95836d3663f94dd4113a755f808a30a93988fe8e6e4a16e'
+  version '3.0.100-preview6-012264'
+  sha256 '109ba444cbce5c284a82292748b959ff59a19194d44dacdd69a316bf5626bb4e'
 
-  url "https://download.visualstudio.microsoft.com/download/pr/afcef2c8-471f-48aa-8030-010fb6c8517b/75a05bc56f2849f80d5ca7b834bb8722/dotnet-sdk-#{version}-osx-x64.pkg"
+  url "https://download.visualstudio.microsoft.com/download/pr/31af4401-55f7-487c-adf7-2b6bed7cb1c5/a6aafa2569a628a80a6ebd2a2fd5c6f3/dotnet-sdk-#{version}-osx-x64.pkg"
   appcast 'https://www.microsoft.com/net/download/macos'
   name '.NET Core SDK'
   homepage 'https://www.microsoft.com/net/core#macos'
@@ -15,6 +15,7 @@ cask 'dotnet-sdk-preview' do
   depends_on macos: '>= :sierra'
 
   pkg "dotnet-sdk-#{version}-osx-x64.pkg"
+  binary '/usr/local/share/dotnet/dotnet'
 
   uninstall pkgutil: [
                        'com.microsoft.dotnet.*',
