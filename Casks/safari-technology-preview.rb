@@ -7,7 +7,6 @@ cask 'safari-technology-preview' do
   else
     url "https://secure-appldnld.apple.com/STP/#{version.after_comma}/SafariTechnologyPreview.dmg"
     sha256 '1a5ee5c496c4f5bdcb5c6e211064194f3eb881f3c0e5fafb9f96d39f95a9b265'
-    
   end
 
   appcast 'https://developer.apple.com/safari/download/'
