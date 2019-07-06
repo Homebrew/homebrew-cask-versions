@@ -8,10 +8,7 @@ cask 'wine-devel' do
   homepage 'https://wiki.winehq.org/MacOS'
 
   conflicts_with formula: 'wine',
-                 cask:    [
-                            'wine-stable',
-                            'wine-staging',
-                          ]
+                 cask:    'wine-staging'
   depends_on macos: '<= :mojave'
   depends_on x11: true
 
