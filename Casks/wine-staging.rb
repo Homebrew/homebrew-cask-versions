@@ -9,10 +9,7 @@ cask 'wine-staging' do
   homepage 'https://www.wine-staging.com/'
 
   conflicts_with formula: 'wine',
-                 cask:    [
-                            'wine-stable',
-                            'wine-devel',
-                          ]
+                 cask:    'wine-devel'
   depends_on macos: '<= :mojave'
   depends_on x11: true
 
