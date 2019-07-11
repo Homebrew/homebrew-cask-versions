@@ -1,5 +1,5 @@
 cask 'affinity-designer-beta' do
-  version '1.7.0.14 - RC1'
+  version '1.7.0.6'
   sha256 'b67cc07d8ec1ee8eed1b6c04f20cc23591edeef2f45808a46f2dfc2acf12ce79'
 
   # amazonaws.com/affinity-beta was verified as official when first introduced to the cask
