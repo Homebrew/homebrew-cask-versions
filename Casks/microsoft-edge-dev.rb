@@ -1,6 +1,6 @@
 cask 'microsoft-edge-dev' do
-  version '77.0.211.3'
-  sha256 'd1e9b5843d582aa1fabfe8383c4b9e007b64fd503ed0bac040b49b0ba8c208c0'
+  version '77.0.218.4'
+  sha256 '95d32cc3bdda8c169bee89db1f6f91ec99d72c4a6b1a429caf066d928971eb54'
 
   # officecdn-microsoft-com.akamaized.net was verified as official when first introduced to the cask
   url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeDev-#{version}.pkg"
