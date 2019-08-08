@@ -1,12 +1,12 @@
 cask 'safari-technology-preview' do
-  version '87,041-83560-20190709-252983d6-4455-4709-b6c6-1776265d701a'
+  version '89,041-96201-20190806-0fd0ee8f-c976-47c6-bb96-afc3fee2e4f0'
 
-  if MacOS.version <= :mojave
-    url 'https://secure-appldnld.apple.com/STP/041-82605-20190709-982f8ac0-959c-4c34-aabb-341e0d2e1fa4/SafariTechnologyPreview.dmg'
-    sha256 '5fcdc353ac8b25d67747c4e3fede42fac3a0a2869fdd7fa4dd0ca369d7db7967'
+  if MacOS.version <= :catalina
+    url 'https://secure-appldnld.apple.com/STP/041-96198-20190806-e90a9856-9ea6-443d-ac67-ce4eae1a967a/SafariTechnologyPreview.dmg'
+    sha256 :no_check
   else
     url "https://secure-appldnld.apple.com/STP/#{version.after_comma}/SafariTechnologyPreview.dmg"
-    sha256 '9798454a5c688cb023a91b7b60597b37535da5c6a8080109e38a77648456f3a6'
+    sha256 '364a0719c8c549caa2277259a20009a0f385fefeb8c7a4679c5daf8126713d7f'
   end
 
   appcast 'https://developer.apple.com/safari/download/'
@@ -14,7 +14,7 @@ cask 'safari-technology-preview' do
   homepage 'https://developer.apple.com/safari/download/'
 
   auto_updates true
-  depends_on macos: '>= :mojave'
+  depends_on macos: '>= :catalina'
 
   pkg 'Safari Technology Preview.pkg'
 
