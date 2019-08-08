@@ -1,6 +1,6 @@
 cask 'mullvadvpn-beta' do
-  version '2019.6-beta1'
-  sha256 '994c2cfbbfc351a5df13097f130cbfb1880b1192937fb53e872f7a8adca82581'
+  version '2019.7-beta1'
+  sha256 '71f0322c35bcd93b9f29dcf58a8e88b409fb143cd52abf5edd254ef4f3aa45d9'
 
   # github.com/mullvad/mullvadvpn-app was verified as official when first introduced to the cask
   url "https://github.com/mullvad/mullvadvpn-app/releases/download/#{version}/MullvadVPN-#{version}.pkg"
