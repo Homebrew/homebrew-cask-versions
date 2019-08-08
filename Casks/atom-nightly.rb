@@ -1,19 +1,16 @@
-cask 'atom-beta' do
-  version '1.40.0-beta1'
-  sha256 '1b2086dfd090315e0f5f4d95db568874edf2b86be03c3c2d8bc107e21b92938d'
+cask 'atom-nightly' do
+  version :latest
+  sha256 :no_check
 
-  # github.com/atom/atom was verified as official when first introduced to the cask
-  url "https://github.com/atom/atom/releases/download/v#{version}/atom-mac.zip"
-  appcast 'https://github.com/atom/atom/releases.atom'
-  name 'Github Atom Beta'
-  homepage 'https://atom.io/beta'
+  url 'https://atom.io/download/mac?channel=nightly'
+  name 'Github Atom Nightly'
+  homepage 'https://atom.io/nightly'
 
-  auto_updates true
   depends_on macos: '>= :mavericks'
 
-  app 'Atom Beta.app'
-  binary "#{appdir}/Atom Beta.app/Contents/Resources/app/apm/bin/apm", target: 'apm-beta'
-  binary "#{appdir}/Atom Beta.app/Contents/Resources/app/atom.sh", target: 'atom-beta'
+  app 'Atom Nightly.app'
+  binary "#{appdir}/Atom Nightly.app/Contents/Resources/app/apm/bin/apm", target: 'apm-nightly'
+  binary "#{appdir}/Atom Nightly.app/Contents/Resources/app/atom.sh", target: 'atom-nightly'
 
   zap trash: [
                '~/.atom',
