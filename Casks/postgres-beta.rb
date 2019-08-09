@@ -1,5 +1,5 @@
 cask 'postgres-beta' do
-  version '2.3beta3,2.2.4'
+  version '2.3beta3,2.2.5'
   sha256 'c63b8bff1e24cdfc8a755ae29a1ff3e17f014cfd2800364df6455357a70c0ea1'
 
   # github.com/PostgresApp/PostgresApp was verified as official when first introduced to the cask
