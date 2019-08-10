@@ -1,4 +1,4 @@
-cask 'textmate-unstable' do
+cask 'textmate-preview' do
   version '2.0-rc.29'
   sha256 '49c14380728d8bf1af1e09298fa616a09ae535f5f106967361b84f6ec81d6249'
 
