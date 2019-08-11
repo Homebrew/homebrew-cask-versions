@@ -1,6 +1,6 @@
 cask 'java-beta' do
-  version '13,32'
-  sha256 '2fb4e71ec8148a3cbbbedec6b6ab886e6d161cda81217d71d8085683b057097f'
+  version '13,33'
+  sha256 '1a9c096630a0e4f27ce61ac9e477378b8581c537568186d4afd0b416a7e9dd68'
 
   url "https://download.java.net/java/early_access/jdk#{version.major}/#{version.after_comma}/GPL/openjdk-#{version.before_comma}-ea+#{version.after_comma}_osx-x64_bin.tar.gz"
   name 'OpenJDK Early Access Java Development Kit'
