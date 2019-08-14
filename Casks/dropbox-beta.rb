@@ -12,8 +12,7 @@ cask 'dropbox-beta' do
 
   app 'Dropbox.app'
 
-  uninstall login_item: 'Dropbox',
-            launchctl:  'com.dropbox.DropboxMacUpdate.agent'
+  uninstall launchctl: 'com.dropbox.DropboxMacUpdate.agent'
 
   zap trash: [
                '/Library/DropboxHelperTools',
