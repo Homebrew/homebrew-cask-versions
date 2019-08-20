@@ -19,9 +19,7 @@ cask 'microsoft-edge-beta' do
                    'com.microsoft.autoupdate.helper',
                    'com.microsoft.update.agent',
                  ],
-      pkgutil:   [
-                   'com.microsoft.package.Microsoft_AutoUpdate.app',
-                 ],
+      pkgutil:   'com.microsoft.package.Microsoft_AutoUpdate.app',
       trash:     [
                    '/Library/PrivilegedHelperTools/com.microsoft.autoupdate.helper',
                    '~/Library/Preferences/com.microsoft.Edge.Beta.plist',
