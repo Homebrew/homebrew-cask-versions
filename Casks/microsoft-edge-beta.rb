@@ -23,8 +23,6 @@ cask 'microsoft-edge-beta' do
       trash:     [
                    '/Library/PrivilegedHelperTools/com.microsoft.autoupdate.helper',
                    '~/Library/Preferences/com.microsoft.Edge.Beta.plist',
-                 ],
-      rmdir:     [
                    '/Library/Application Support/Microsoft',
                    '~/Library/Application Support/Microsoft Edge Beta',
                  ]
