@@ -1,6 +1,6 @@
 cask 'microsoft-edge-dev' do
-  version '77.0.235.5'
-  sha256 '642740d95fb5f281b76dafe8805cc6d2fd55573c16b9c629837cf7d12e14dc7f'
+  version '78.0.244.0'
+  sha256 'a37a7dad8491e757db6cec680cebdfbf6669845d0f2dca1040277d892c198627'
 
   # officecdn-microsoft-com.akamaized.net was verified as official when first introduced to the cask
   url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeDev-#{version}.pkg"
@@ -14,4 +14,16 @@ cask 'microsoft-edge-dev' do
   pkg "MicrosoftEdgeDev-#{version}.pkg"
 
   uninstall pkgutil: 'com.microsoft.Edge.Dev'
+
+  zap launchctl: [
+                   'com.microsoft.autoupdate.helper',
+                   'com.microsoft.update.agent',
+                 ],
+      pkgutil:   'com.microsoft.package.Microsoft_AutoUpdate.app',
+      trash:     [
+                   '/Library/PrivilegedHelperTools/com.microsoft.autoupdate.helper',
+                   '~/Library/Preferences/com.microsoft.Edge.Dev.plist',
+                   '/Library/Application Support/Microsoft',
+                   '~/Library/Application Support/Microsoft Edge Dev',
+                 ]
 end
