@@ -130,13 +130,6 @@ def passed_ci?(statuses = [])
   statuses.dig("continuous-integration/travis-ci/pr", "state") == "success"
 end
 
-CASK_REPOS = [
-  "Homebrew/homebrew-cask",
-  "Homebrew/homebrew-cask-drivers",
-  "Homebrew/homebrew-cask-fonts",
-  "Homebrew/homebrew-cask-versions",
-].freeze
-
 begin
   case ENV["GITHUB_EVENT_NAME"]
   when "status"
@@ -145,8 +138,8 @@ begin
     pr = find_pull_request_for_status(status)
     skip "No matching pull request found." unless pr
     merge_pull_request(pr, [status])
-  when "issue_comment", "pull_request", "pull_request_review", "pull_request_review_comment", "push"
-    prs = CASK_REPOS.flat_map { |repo| GitHub.pull_requests(repo, state: :open, base: "master") }
+  when "schedule"
+    prs = GitHub.pull_requests(ENV["GITHUB_REPOSITORY"], state: :open, base: "master")
 
     skip "No open pull requests found." if prs.empty?
 
@@ -174,10 +167,6 @@ begin
       end
     end
 
-    puts "Merged PRs: #{merged_prs.count}"
-    puts "Skipped PRs: #{skipped_prs.count}"
-    puts "Failed PRs: #{failed_prs.count}"
-
     if (merged_prs + failed_prs).empty? && skipped_prs.any?
       skip
     elsif failed_prs.any?
@@ -186,4 +175,6 @@ begin
   else
     skip "Unsupported GitHub Actions event."
   end
+rescue NeutralSystemExit => e
+  puts e.message
 end
