@@ -10,8 +10,7 @@ cask 'alfred2' do
 
   app 'Alfred 2.app'
 
-  uninstall quit:       'com.runningwithcrayons.Alfred-2',
-            login_item: 'Alfred 2'
+  uninstall quit: 'com.runningwithcrayons.Alfred-2'
 
   zap trash: [
                '~/Library/Application Support/Alfred 2',
