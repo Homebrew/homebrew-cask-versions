@@ -1,6 +1,6 @@
 cask 'microsoft-edge-beta' do
-  version '77.0.235.17'
-  sha256 '4db36e4985a61349d7c71003fec9f36c6b1b112960da7d75cf3ca3cdcf0bf085'
+  version '77.0.235.18'
+  sha256 '2ff246da0c9c48ff4f2e1deb137f4fe2cc7144d98b4680aed7efc4f8a3f994a5'
 
   # officecdn-microsoft-com.akamaized.net was verified as official when first introduced to the cask
   url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeBeta-#{version}.pkg"
