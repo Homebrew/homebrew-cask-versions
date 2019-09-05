@@ -19,7 +19,7 @@ cask 'microsoft-edge-canary' do
 
   pkg "MicrosoftEdgeCanary-#{Utils.file_version}.pkg"
 
-  uninstall pkgutil: 'com.microsoft.Edge.Canary'
+  uninstall pkgutil: 'com.microsoft.edgemac.Canary'
 
   zap launchctl: [
                    'com.microsoft.autoupdate.helper',
@@ -28,7 +28,7 @@ cask 'microsoft-edge-canary' do
       pkgutil:   'com.microsoft.package.Microsoft_AutoUpdate.app',
       trash:     [
                    '/Library/PrivilegedHelperTools/com.microsoft.autoupdate.helper',
-                   '~/Library/Preferences/com.microsoft.Edge.Canary.plist',
+                   '~/Library/Preferences/com.microsoft.edgemac.Canary.plist',
                    '/Library/Application Support/Microsoft',
                    '~/Library/Application Support/Microsoft Edge Canary',
                  ]
