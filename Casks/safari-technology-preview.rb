@@ -1,5 +1,4 @@
 cask 'safari-technology-preview' do
-  
   if MacOS.version <= :mojave
     version '91,061-10708-20190903-4bf79804-9f40-4b31-97c9-c914330c30b1'
     sha256 'ad39ec6525db9c95eaa9559ad446ab24bf179cdb599a8d5b47e01f4b395e1897'
