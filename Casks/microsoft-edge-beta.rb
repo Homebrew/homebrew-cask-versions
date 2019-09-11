@@ -13,7 +13,7 @@ cask 'microsoft-edge-beta' do
 
   pkg "MicrosoftEdgeBeta-#{version}.pkg"
 
-  uninstall pkgutil: 'com.microsoft.edgemac.Bet'
+  uninstall pkgutil: 'com.microsoft.Edge.Beta'
 
   zap launchctl: [
                    'com.microsoft.autoupdate.helper',
@@ -22,7 +22,7 @@ cask 'microsoft-edge-beta' do
       pkgutil:   'com.microsoft.package.Microsoft_AutoUpdate.app',
       trash:     [
                    '/Library/PrivilegedHelperTools/com.microsoft.autoupdate.helper',
-                   '~/Library/Preferences/com.microsoft.edgemac.Beta.plist',
+                   '~/Library/Preferences/com.microsoft.Edge.Beta.plist',
                    '/Library/Application Support/Microsoft',
                    '~/Library/Application Support/Microsoft Edge Beta',
                  ]
