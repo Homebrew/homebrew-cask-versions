@@ -2,8 +2,8 @@ cask 'brave-browser-nightly' do
   version :latest
   sha256 :no_check
 
-  # URL_SECTION was verified as official when first introduced to the cask
-  url "https://brave-browser-downloads.s3.brave.com/latest/Brave-Browser-Nightly.dmg"
+  # brave-browser-downloads.s3.brave.com was verified as official when first introduced to the cask
+  url 'https://brave-browser-downloads.s3.brave.com/latest/Brave-Browser-Nightly.dmg'
   name 'Brave Nightly'
   homepage 'https://github.com/brave/brave-browser'
 
