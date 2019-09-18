@@ -6,7 +6,7 @@ cask 'brave-browser-dev' do
   url "https://github.com/brave/brave-browser/releases/download/v#{version}/Brave-Browser-Dev.dmg"
   appcast 'https://updates.bravesoftware.com/sparkle/Brave-Browser/dev/appcast.xml'
   name 'Brave Dev'
-  homepage 'https://brave.com/download-beta/'
+  homepage 'https://brave.com/download-dev/'
 
   auto_updates true
   depends_on macos: '>= :mavericks'
