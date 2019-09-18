@@ -3,9 +3,13 @@ cask 'brave-browser-nightly' do
   sha256 :no_check
 
   # brave-browser-downloads.s3.brave.com was verified as official when first introduced to the cask
-  url 'https://brave-browser-downloads.s3.brave.com/latest/Brave-Browser-Nightly.dmg'
+  url do
+    require 'open-uri'
+    appcast = 'https://updates.bravesoftware.com/sparkle/Brave-Browser/nightly/appcast.xml'
+    URI(appcast).open.read.scan(%r{enclosure url="([^"]+.dmg)"}).flatten.first
+  end
   name 'Brave Nightly'
-  homepage 'https://github.com/brave/brave-browser'
+  homepage 'https://brave.com/download-nightly/'
 
   depends_on macos: '>= :mavericks'
 
