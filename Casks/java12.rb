@@ -5,6 +5,8 @@ cask 'java12' do
   url "https://download.java.net/java/GA/jdk#{version.before_comma}/#{version.after_colon}/#{version.after_comma.before_colon}/GPL/openjdk-#{version.before_comma}_osx-x64_bin.tar.gz"
   name 'OpenJDK Java Development Kit'
   homepage 'https://openjdk.java.net/'
+  
   artifact "jdk-#{version.before_comma}.jdk", target: "/Library/Java/JavaVirtualMachines/openjdk-#{version.before_comma}.jdk"
+  
   uninstall rmdir: '/Library/Java/JavaVirtualMachines'
 end
