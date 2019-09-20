@@ -13,7 +13,7 @@ cask 'emacs-nightly' do
   conflicts_with cask:    [
                             'emacs',
                             'emacs-pretest',
-                          ]
+                          ],
                  formula: 'emacs'
 
   app 'Emacs.app'
