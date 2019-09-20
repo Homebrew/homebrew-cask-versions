@@ -10,7 +10,8 @@ cask 'emacs-nightly' do
   name 'Emacs'
   homepage 'https://emacsformacosx.com/'
 
-  conflicts_with formula: 'emacs', cask: ['emacs', 'emacs-pretest']
+  conflicts_with cask: ['emacs', 'emacs-pretest']
+  conflicts_with formula: 'emacs'
 
   app 'Emacs.app'
   binary "#{appdir}/Emacs.app/Contents/MacOS/Emacs", target: 'emacs'
