@@ -4,7 +4,6 @@ cask 'processing2' do
 
   # github.com/processing/processing was verified as official when first introduced to the cask
   url "https://github.com/processing/processing/releases/download/processing-0227-#{version}/processing-#{version}-macosx.zip"
-  appcast 'https://github.com/processing/processing/releases.atom'
   name 'Processing'
   homepage 'https://processing.org/'
 
