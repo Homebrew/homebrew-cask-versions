@@ -14,9 +14,7 @@ cask 'textmate-preview' do
   app 'TextMate.app'
   binary "#{appdir}/TextMate.app/Contents/Resources/mate"
 
-  uninstall quit: [
-                    'com.macromates.TextMate',
-                  ]
+  uninstall quit: 'com.macromates.TextMate'
 
   zap trash: [
                '~/Library/Application Support/TextMate',
@@ -24,8 +22,5 @@ cask 'textmate-preview' do
                '~/Library/Preferences/com.macromates.TextMate.plist',
                '~/Library/Saved Application State/com.macromates.TextMate.savedState',
                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.macromates.textmate.sfl2',
-             ],
-      quit:  [
-               'com.macromates.TextMate',
              ]
 end
