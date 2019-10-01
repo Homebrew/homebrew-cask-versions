@@ -11,5 +11,7 @@ cask 'processing2' do
 
   app 'Processing.app'
 
+  uninstall quit: 'org.processing.app'
+
   zap trash: '~/Library/Processing/preferences.txt'
 end
