@@ -32,7 +32,6 @@ cask 'microsoft-office-2016' do
                          'com.microsoft.pkg.licensing',
                          'com.microsoft.OneDrive',
                        ],
-            # Frameworks, DFonts and ProofingTools remain in each applicaiton after pkg uninstall, delete them
             delete:    [
                          '/Applications/Microsoft Excel.app',
                          '/Applications/Microsoft OneNote.app',
@@ -96,7 +95,5 @@ cask 'microsoft-office-2016' do
                    'com.microsoft.autoupdate.helper',
                    'com.microsoft.update.agent',
                  ],
-      pkgutil:   [
-                   'com.microsoft.package.Microsoft_AutoUpdate.app',
-                 ]
+      pkgutil:   'com.microsoft.package.Microsoft_AutoUpdate.app'
 end
