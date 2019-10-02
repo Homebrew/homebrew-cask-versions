@@ -1,6 +1,6 @@
 cask 'krita-dev' do
-  version '4.2.0-preview'
-  sha256 '7545412eebc797f06ade346de0e0738d41d854c4e12df4d8a46d6471269d83a8'
+  version '4.2.7-beta1'
+  sha256 '50dbae888eff53245296d23589670082ddafe71bc6428a6712d44d1d3b8ff5af'
 
   # download.kde.org/unstable/krita was verified as official when first introduced to the cask
   url "https://download.kde.org/unstable/krita/#{version}/krita-#{version}.dmg"
@@ -8,7 +8,7 @@ cask 'krita-dev' do
   homepage 'https://krita.org/'
 
   conflicts_with cask: 'krita'
-  depends_on macos: '>= :mavericks'
+  depends_on macos: '>= :sierra'
 
   app 'Krita.app'
 
