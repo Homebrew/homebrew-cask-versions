@@ -3,7 +3,7 @@ cask 'adguard-nightly' do
   sha256 :no_check
 
   url 'https://static.adguard.com/mac/nightly/AdGuard.dmg'
-  name 'Adguard for Mac'
+  name 'Adguard'
   homepage 'https://adguard.com/'
 
   pkg 'AdGuard.pkg'
