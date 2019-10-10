@@ -1,11 +1,12 @@
 cask 'brave-browser-dev' do
-  version '0.71.72'
-  sha256 'dd726d2d7fe6fecbffdf640653bc3bdc60ba1adee0f98f4bbf0f89e08c4356f3'
+  version '0.71.88'
+  sha256 'b8a639325e23531927d1fa94d0053cb940ed9033648ae00039e02b5b2b7df139'
 
+  # github.com/brave/brave-browser was verified as official when first introduced to the cask
   url "https://github.com/brave/brave-browser/releases/download/v#{version}/Brave-Browser-Dev.dmg"
   appcast 'https://updates.bravesoftware.com/sparkle/Brave-Browser/dev/appcast.xml'
   name 'Brave Dev'
-  homepage 'https://github.com/brave/brave-browser'
+  homepage 'https://brave.com/download-dev/'
 
   auto_updates true
   depends_on macos: '>= :mavericks'
