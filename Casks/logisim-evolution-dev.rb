@@ -7,8 +7,8 @@ cask 'logisim-evolution-dev' do
   homepage 'https://github.com/reds-heig/logisim-evolution'
 
   conflicts_with cask: 'logisim-evolution'
-
   depends_on formula: 'java'
+
   # depends_on java: => "1.9+" # not yet functional
 
   app 'logisim-evolution-develop/build/macApp/Logisim-evolution.app', target: 'Logisim Evolution.app'
