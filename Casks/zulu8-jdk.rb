@@ -1,4 +1,4 @@
-cask 'zulu8' do
+cask 'zulu8-jdk' do
   version '8.0.232,8.42.0.21-ca'
   sha256 'b726c51d89f6c2baf2a3b1aa847883f98430fd932d875d04394d0e6bd711ce82'
 
