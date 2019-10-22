@@ -2,13 +2,11 @@ cask 'inkscape-nightly' do
   version :latest
   sha256 :no_check
 
-  # gitlab.com/inkscape/inkscape was verified as official when first introduced to the cask
-  url 'https://gitlab.com/inkscape/inkscape/-/jobs/artifacts/master/download?job=inkscape:mac'
+  url 'http://alpha.inkscape.org/prereleases/Inkscape-latest.dmg'
   name 'Inkscape'
   homepage 'https://inkscape.org/'
 
   conflicts_with cask: 'inkscape'
-  container nested: 'artifacts/Inkscape.dmg'
 
   app 'Inkscape.app'
 
