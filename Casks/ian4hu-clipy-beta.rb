@@ -3,7 +3,7 @@ cask 'ian4hu-clipy-beta' do
   sha256 '89a8e4a13ee669138ef0425db586f0921f9bee813f0a9afaf3b922bc16d0eb4b'
 
   url "https://github.com/ian4hu/Clipy/releases/download/#{version}/Clipy.app.zip"
-  appcast 'https://raw.githubusercontent.com/ian4hu/Clipy/develop/appcast.xml'
+  appcast "https://github.com/ian4hu/Clipy/releases/download/#{version}/appcast.xml"
   name 'ian4hu/Clipy-beta'
   homepage 'https://github.com/ian4hu/Clipy'
 
