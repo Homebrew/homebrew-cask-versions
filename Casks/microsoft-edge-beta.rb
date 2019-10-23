@@ -13,7 +13,8 @@ cask 'microsoft-edge-beta' do
 
   pkg "MicrosoftEdgeBeta-#{version}.pkg"
 
-  uninstall pkgutil: 'com.microsoft.edgemac.Beta'
+  uninstall pkgutil: 'com.microsoft.edgemac.Beta',
+            rmdir:   '/Library/Application Support/Microsoft'
 
   zap launchctl: [
                    'com.microsoft.autoupdate.helper',
