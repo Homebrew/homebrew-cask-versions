@@ -13,15 +13,16 @@ cask 'microsoft-edge-dev' do
 
   pkg "MicrosoftEdgeDev-#{version}.pkg"
 
-  uninstall pkgutil: 'com.microsoft.edgemac.Dev'
+  uninstall pkgutil: 'com.microsoft.edgemac.Dev',
+            rmdir:   '/Library/Application Support/Microsoft'
 
   zap launchctl: [
                    'com.microsoft.autoupdate.helper',
                    'com.microsoft.update.agent',
                  ],
       pkgutil:   'com.microsoft.package.Microsoft_AutoUpdate.app',
+      delete:    '/Library/PrivilegedHelperTools/com.microsoft.autoupdate.helper',
       trash:     [
-                   '/Library/PrivilegedHelperTools/com.microsoft.autoupdate.helper',
                    '~/Library/Preferences/com.microsoft.edgemac.Dev.plist',
                    '/Library/Application Support/Microsoft',
                    '~/Library/Application Support/Microsoft Edge Dev',
