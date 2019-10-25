@@ -1,6 +1,6 @@
 cask 'powershell-preview' do
-  version '7.0.0-preview.4'
-  sha256 '876cdf8fbe7558f2878468d25bd19b832af56e03f5c70fbc43d9430043cc2f2f'
+  version '7.0.0-preview.5'
+  sha256 '338f5f36b0c7beebc301deda43c3a350d768f09afadaaba714ff80272ab0dac0'
 
   url "https://github.com/PowerShell/PowerShell/releases/download/v#{version}/powershell-#{version}-osx-x64.pkg"
   appcast 'https://github.com/PowerShell/PowerShell/releases.atom'
