@@ -21,8 +21,8 @@ cask 'java6' do
     artifact 'Library/Java/JavaVirtualMachines/1.6.0.jdk', target: '/Library/Java/JavaVirtualMachines/1.6.0.jdk'
 
     preflight do
-      `cd "#{staged_path}" && pkgutil --expand JavaForOSX.pkg JavaForOSX`
-      `cd "#{staged_path}" && (gunzip < JavaForOSX/JavaForOSX.pkg/Payload | pax -r)`
+      system_command '/usr/sbin/pkgutil', args: ['--expand', "#{staged_path}/JavaForOSX.pkg", "#{staged_path}/JavaForOSX" ]
+      system_command '/usr/bin/tar', args: ['-xz', '-C', "#{staged_path}", '-f', "#{staged_path}/JavaForOSX/JavaForOSX.pkg/Payload" ]
     end
   end
 end
