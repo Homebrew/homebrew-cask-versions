@@ -12,8 +12,6 @@ cask 'java6' do
 
     uninstall pkgutil: [
                          'com.apple.pkg.JavaForMacOSX107',
-                         'com.apple.pkg.JavaMDNS',
-                         'com.apple.pkg.JavaEssentials',
                        ]
   else
     artifact 'JavaForOSX/JavaForOSX.pkg/Payload/Library/Java/JavaVirtualMachines/1.6.0.jdk', target: '/Library/Java/JavaVirtualMachines/1.6.0.jdk'
