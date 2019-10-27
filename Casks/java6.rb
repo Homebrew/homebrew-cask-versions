@@ -16,8 +16,6 @@ cask 'java6' do
                          'com.apple.pkg.JavaEssentials',
                        ]
   else
-    container nested: 'JavaForOSX.pkg'
-
     artifact 'JavaForOSX/JavaForOSX.pkg/Payload/Library/Java/JavaVirtualMachines/1.6.0.jdk', target: '/Library/Java/JavaVirtualMachines/1.6.0.jdk'
 
     preflight do
