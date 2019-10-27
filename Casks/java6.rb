@@ -18,11 +18,10 @@ cask 'java6' do
   else
     container nested: 'JavaForOSX.pkg'
 
-    artifact 'Library/Java/JavaVirtualMachines/1.6.0.jdk', target: '/Library/Java/JavaVirtualMachines/1.6.0.jdk'
+    artifact 'JavaForOSX/JavaForOSX.pkg/Payload/Library/Java/JavaVirtualMachines/1.6.0.jdk', target: '/Library/Java/JavaVirtualMachines/1.6.0.jdk'
 
     preflight do
-      system_command 'pkgutil', chdir: staged_path, args: ['--expand', 'JavaForOSX.pkg', 'JavaForOSX']
-      system_command 'tar', chdir: staged_path, args: ['-xzf', 'JavaForOSX/JavaForOSX.pkg/Payload']
+      system_command 'pkgutil', chdir: staged_path, args: ['--expand-full', 'JavaForOSX.pkg', 'JavaForOSX']
     end
   end
 end
