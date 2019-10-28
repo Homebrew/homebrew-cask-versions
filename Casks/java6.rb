@@ -10,9 +10,7 @@ cask 'java6' do
   if MacOS.version <= :mojave
     pkg 'JavaForOSX.pkg'
 
-    uninstall pkgutil: [
-                         'com.apple.pkg.JavaForMacOSX107',
-                       ]
+    uninstall pkgutil: 'com.apple.pkg.JavaForMacOSX107'
   else
     artifact 'JavaForOSX/JavaForOSX.pkg/Payload/Library/Java/JavaVirtualMachines/1.6.0.jdk', target: '/Library/Java/JavaVirtualMachines/1.6.0.jdk'
 
