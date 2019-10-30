@@ -1,8 +1,7 @@
 cask 'hamsket-nightly' do
   version :latest
-  sha256 :no_check # required as upstream package is updated in-place
+  sha256 :no_check
 
-  # url "https://github.com/TheGoddessInari/hamsket/releases/download/nightly/Hamsket-#{version}.dmg"
   url do
     require 'open-uri'
     base_url = 'https://github.com/TheGoddessInari/hamsket/releases'
