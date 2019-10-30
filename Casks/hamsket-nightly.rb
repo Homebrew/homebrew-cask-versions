@@ -1,9 +1,15 @@
-cask 'hamsket' do
-  version '0.6.0'
-  sha256 '7019bc69f6414602f7202422f2d7d579389dfe27939dcf2ea710e86d8eed199d'
+cask 'hamsket-nightly' do
+  version :latest
+  sha256 :no_check # required as upstream package is updated in-place
 
-  url "https://github.com/TheGoddessInari/hamsket/releases/download/nightly/Hamsket-#{version}.dmg"
-  appcast 'https://github.com/TheGoddessInari/hamsket/releases.atom'
+  # url "https://github.com/TheGoddessInari/hamsket/releases/download/nightly/Hamsket-#{version}.dmg"
+  url do
+    require 'open-uri'
+    base_url = 'https://github.com/TheGoddessInari/hamsket/releases'
+    latest_build_filename = URI(base_url).open.read.scan(%r{<a href="/TheGoddessInari/hamsket/releases/download/nightly/Hamsket-.*.dmg"}).max
+    latest_build_filename = latest_build_filename[('<a href="/TheGoddessInari/hamsket/releases/'.length)..-2]
+    "#{base_url}/#{latest_build_filename}"
+  end
   name 'Hamsket'
   homepage 'https://github.com/TheGoddessInari/hamsket'
 
