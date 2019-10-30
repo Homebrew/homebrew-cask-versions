@@ -5,8 +5,7 @@ cask 'hamsket-nightly' do
   url do
     require 'open-uri'
     base_url = 'https://github.com/TheGoddessInari/hamsket/releases'
-    latest_build_filename = URI(base_url).open.read.scan(%r{<a href="/TheGoddessInari/hamsket/releases/download/nightly/Hamsket-.*.dmg"}).max[('<a href="/TheGoddessInari/hamsket/releases/'.length)..-2]
-    "#{base_url}/#{latest_build_filename}"
+    'https://github.com' + URI(base_url).open.read.scan(%r{href="([^"]+nightly/Hamsket-.*.dmg)"}).flatten.first
   end
   name 'Hamsket'
   homepage 'https://github.com/TheGoddessInari/hamsket'
