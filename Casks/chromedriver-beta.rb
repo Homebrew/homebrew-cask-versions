@@ -1,6 +1,6 @@
 cask 'chromedriver-beta' do
-  version '78.0.3904.70'
-  sha256 'f04501f36af92ab869111137a66c84612e69ec729caa29b25fa4c305614cfe37'
+  version '79.0.3945.16'
+  sha256 'ca35bba4f9315bc9a149ae8e33552e393d459574184d3e1a9ba57bde7e83a8f8'
 
   # chromedriver.storage.googleapis.com was verified as official when first introduced to the cask
   url "https://chromedriver.storage.googleapis.com/#{version}/chromedriver_mac64.zip"
