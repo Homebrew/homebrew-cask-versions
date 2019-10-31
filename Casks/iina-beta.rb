@@ -8,7 +8,10 @@ cask 'iina-beta' do
   homepage 'https://iina.io/'
 
   auto_updates true
-  conflicts_with cask: 'iina'
+  conflicts_with cask: [
+                         'iina',
+                         'iina-nightly',
+                       ]
   depends_on macos: '>= :el_capitan'
 
   app 'IINA.app'
