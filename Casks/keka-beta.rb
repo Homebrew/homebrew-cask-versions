@@ -6,7 +6,7 @@ cask 'keka-beta' do
   url "https://github.com/aonez/Keka/releases/download/v#{version}/Keka-#{version}.dmg"
   appcast 'https://github.com/aonez/Keka/releases.atom'
   name 'Keka'
-  homepage 'https://www.kekaosx.com/'
+  homepage 'https://www.keka.io/#beta'
 
   auto_updates true
   conflicts_with cask: 'keka'
