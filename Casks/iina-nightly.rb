@@ -16,10 +16,7 @@ cask 'iina-nightly' do
   name 'iina-nightly'
   homepage 'https://iina.io/'
 
-  conflicts_with cask: [
-                         'iina',
-                         'iina-beta',
-                       ]
+  conflicts_with cask: 'iina'
   depends_on macos: '>= :el_capitan'
 
   app 'IINA.app'
