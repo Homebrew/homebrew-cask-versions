@@ -7,11 +7,15 @@ cask 'java6' do
   name 'Apple Java 6 Standard Edition Development Kit'
   homepage 'https://support.apple.com/kb/DL1572'
 
-  pkg 'JavaForOSX.pkg'
+  if MacOS.version <= :mojave
+    pkg 'JavaForOSX.pkg'
 
-  uninstall pkgutil: [
-                       'com.apple.pkg.JavaForMacOSX107',
-                       'com.apple.pkg.JavaMDNS',
-                       'com.apple.pkg.JavaEssentials',
-                     ]
+    uninstall pkgutil: 'com.apple.pkg.JavaForMacOSX107'
+  else
+    artifact 'JavaForOSX/JavaForOSX.pkg/Payload/Library/Java/JavaVirtualMachines/1.6.0.jdk', target: '/Library/Java/JavaVirtualMachines/1.6.0.jdk'
+
+    preflight do
+      system_command 'pkgutil', chdir: staged_path, args: ['--expand-full', 'JavaForOSX.pkg', 'JavaForOSX']
+    end
+  end
 end
