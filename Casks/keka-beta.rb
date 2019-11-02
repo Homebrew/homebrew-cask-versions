@@ -4,7 +4,7 @@ cask 'keka-beta' do
 
   # github.com/aonez/Keka was verified as official when first introduced to the cask
   url "https://github.com/aonez/Keka/releases/download/v#{version}/Keka-#{version}.dmg"
-  appcast 'https://github.com/aonez/Keka/releases.atom'
+  appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://beta.keka.io'
   name 'Keka'
   homepage 'https://www.keka.io/#beta'
 
