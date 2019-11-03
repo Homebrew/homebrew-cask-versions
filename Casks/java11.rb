@@ -7,6 +7,4 @@ cask 'java11' do
   homepage 'https://www.oracle.com/technetwork/java/javase/'
 
   artifact "jdk-#{version.before_comma}.jdk", target: "/Library/Java/JavaVirtualMachines/openjdk-#{version.before_comma}.jdk"
-
-  uninstall rmdir: '/Library/Java/JavaVirtualMachines'
 end
