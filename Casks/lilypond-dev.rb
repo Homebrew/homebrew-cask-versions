@@ -3,6 +3,7 @@ cask 'lilypond-dev' do
   sha256 '15e763e908d1371fb3f8151f73ece23bdd8ea7bc757f427f067d8418659c15c3'
 
   url "http://lilypond.org/downloads/binaries/darwin-x86/lilypond-#{version}.darwin-x86.tar.bz2"
+  appcast 'http://lilypond.org/development.html'
   name 'LilyPond'
   homepage 'http://lilypond.org/'
 
