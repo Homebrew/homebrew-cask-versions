@@ -12,7 +12,6 @@ cask 'wine-devel' do
                             'wine-stable',
                             'wine-staging',
                           ]
-  depends_on macos: '<= :mojave'
   depends_on x11: true
 
   pkg "winehq-devel-#{version}.pkg",
