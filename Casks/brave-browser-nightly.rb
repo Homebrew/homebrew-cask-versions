@@ -1,6 +1,6 @@
 cask 'brave-browser-nightly' do
-  version :latest
-  sha256 :no_check
+  version '1.3.5'
+  sha256 'eb4fb95c01614cf9e0d90658d716a03e554a913bcab1b5f1f20dce2898e460a7'
 
   # updates.bravesoftware.com was verified as official when first introduced to the cask
   url do
