@@ -1,6 +1,6 @@
 cask 'visual-studio-code-insiders' do
-  version '1.41.0,2014f5adccbce83d347e714206903f2bbee40dcb'
-  sha256 '7888461dae3953ec64d97e9fad3d265f87d96d3e13472469b317840e28cbab58'
+  version '1.41.0,3b17b7943842e84912a5507111a6cd790db18a46'
+  sha256 '9dd24853e18ef6c0b3ee0bc47f1cc8f7ccff471165337cdb8071148bce33ca7d'
 
   # az764295.vo.msecnd.net/insider was verified as official when first introduced to the cask
   url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-darwin-insider.zip"
