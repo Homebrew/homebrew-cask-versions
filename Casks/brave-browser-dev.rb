@@ -1,6 +1,6 @@
 cask 'brave-browser-dev' do
-  version '1.2.4'
-  sha256 'd021bcf40f7180f61b7159130bb45d2fd6e07acb258162619a0bf876e7610fbb'
+  version '1.2.5'
+  sha256 '55b72bb56b1a7bcd25620db26cca0d4f6d6b022e0c6da45ee6d7a96f9c3df48b'
 
   # github.com/brave/brave-browser was verified as official when first introduced to the cask
   url "https://github.com/brave/brave-browser/releases/download/v#{version}/Brave-Browser-Dev.dmg"
