@@ -15,11 +15,15 @@ cask 'docker-edge' do
 
   uninstall delete:    [
                          '/Library/PrivilegedHelperTools/com.docker.vmnetd',
+                         '/private/var/tmp/com.docker.vmnetd.socket',
                          '/usr/local/bin/docker',
                          '/usr/local/bin/docker-compose',
+                         '/usr/local/bin/docker-credential-desktop',
                          '/usr/local/bin/docker-credential-osxkeychain',
                          '/usr/local/bin/docker-machine',
                          '/usr/local/bin/hyperkit',
+                         '/usr/local/bin/kubectl',
+                         '/usr/local/bin/kubectl.docker',
                          '/usr/local/bin/notary',
                          '/usr/local/bin/vpnkit',
                        ],
@@ -30,6 +34,9 @@ cask 'docker-edge' do
             quit:      'com.docker.docker'
 
   zap trash: [
+               '/usr/local/bin/docker-compose.backup',
+               '/usr/local/bin/docker-machine.backup',
+               '/usr/local/bin/docker.backup',
                '~/Library/Application Scripts/com.docker.helper',
                '~/Library/Caches/KSCrashReports/Docker',
                '~/Library/Caches/com.docker.docker',
