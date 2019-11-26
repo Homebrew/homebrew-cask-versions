@@ -4,6 +4,7 @@ cask 'sublime-text-dev' do
 
   url "https://download.sublimetext.com/sublime_text_build_#{version.no_dots}_mac.zip"
   appcast "https://www.sublimetext.com/updates/#{version.major}/dev_update_check"
+          configuration: version.no_dots
   name 'Sublime Text'
   homepage "https://www.sublimetext.com/dev"
 
