@@ -1,6 +1,6 @@
 cask 'discord-canary' do
-  version '0.0.239'
-  sha256 '92da447830a1ad40ce19eb7535cc6e3db23f99be1112ea3398187e4b35248472'
+  version '0.0.241'
+  sha256 '8c108f65e4d455490fb9d6d7ee0f0eb2b3d5afc6802fd5459330cb061c6576ad'
 
   url "https://cdn-canary.discordapp.com/apps/osx/#{version}/DiscordCanary.dmg"
   appcast 'https://discordapp.com/api/canary/updates?platform=osx'

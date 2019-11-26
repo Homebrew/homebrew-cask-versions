@@ -1,13 +1,21 @@
-cask 'iina-beta' do
-  version '1.0.0-rc'
-  sha256 '40fb3442705e8ca1ab27c16e6dbdab9d41f926e4eeecb65c8f7829196b9cb863'
+cask 'iina-nightly' do
+  version :latest
+  sha256 :no_check
 
-  url "https://dl-portal.iina.io/IINA.v#{version}.dmg"
-  appcast 'https://www.iina.io/appcast-beta.xml'
-  name 'IINA'
+  url do
+    require 'open-uri'
+    base_url = 'https://nightly.iina.io/'
+    path = URI(base_url)
+           .open
+           .read
+           .scan(%r{href="([^"]+\.app\.tar\.xz)">Download})
+           .flatten
+           .first
+    "#{base_url}#{path}"
+  end
+  name 'iina-nightly'
   homepage 'https://iina.io/'
 
-  auto_updates true
   conflicts_with cask: 'iina'
   depends_on macos: '>= :el_capitan'
 

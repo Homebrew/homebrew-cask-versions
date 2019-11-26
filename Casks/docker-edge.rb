@@ -1,6 +1,6 @@
 cask 'docker-edge' do
-  version '2.1.4.0,39357'
-  sha256 '42c28353e8f2929b0e25d2125e1548e64753b3714bbd102222775ab1da4e2bdb'
+  version '2.1.6.0,40807'
+  sha256 'da162409178102a106ba2e3d7dc9df555663705ef28a83f3bb2cee8940ecfa53'
 
   url "https://download.docker.com/mac/edge/#{version.after_comma}/Docker.dmg"
   appcast 'https://download.docker.com/mac/edge/appcast.xml'
@@ -15,11 +15,15 @@ cask 'docker-edge' do
 
   uninstall delete:    [
                          '/Library/PrivilegedHelperTools/com.docker.vmnetd',
+                         '/private/var/tmp/com.docker.vmnetd.socket',
                          '/usr/local/bin/docker',
                          '/usr/local/bin/docker-compose',
+                         '/usr/local/bin/docker-credential-desktop',
                          '/usr/local/bin/docker-credential-osxkeychain',
                          '/usr/local/bin/docker-machine',
                          '/usr/local/bin/hyperkit',
+                         '/usr/local/bin/kubectl',
+                         '/usr/local/bin/kubectl.docker',
                          '/usr/local/bin/notary',
                          '/usr/local/bin/vpnkit',
                        ],
@@ -30,6 +34,9 @@ cask 'docker-edge' do
             quit:      'com.docker.docker'
 
   zap trash: [
+               '/usr/local/bin/docker-compose.backup',
+               '/usr/local/bin/docker-machine.backup',
+               '/usr/local/bin/docker.backup',
                '~/Library/Application Scripts/com.docker.helper',
                '~/Library/Caches/KSCrashReports/Docker',
                '~/Library/Caches/com.docker.docker',

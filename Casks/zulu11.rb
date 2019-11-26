@@ -1,6 +1,6 @@
 cask 'zulu11' do
-  version '11.0.5,11.35.13-ca'
-  sha256 '54cd0130d2884a924a9d71d2107230abe4ac42cd67b58e27b88be454e8f37b9f'
+  version '11.0.5,11.35.15-ca'
+  sha256 'be848b53673e50780bdb5e0efdd5f33b57525cd9af1a7841d17ca3fc1c3a9880'
 
   url "https://cdn.azul.com/zulu/bin/zulu#{version.after_comma}-jdk#{version.before_comma}-macosx_x64.dmg",
       referer: 'https://www.azul.com/downloads/zulu/zulu-mac/'
@@ -9,6 +9,5 @@ cask 'zulu11' do
 
   pkg "Double-Click to Install Zulu #{version.major}.pkg"
 
-  uninstall pkgutil: "com.azulsystems.zulu.#{version.major}",
-            rmdir:   '/Library/Java/JavaVirtualMachines'
+  uninstall pkgutil: "com.azulsystems.zulu.#{version.major}"
 end

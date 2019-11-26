@@ -1,6 +1,6 @@
 cask 'wine-devel' do
-  version '4.18'
-  sha256 '57aefd69058fd0504b248d0fb7d676abcdafd1b13003eed0a22959d9b013e1e1'
+  version '4.20'
+  sha256 'f9a90bde1465d64a9c9335f6e82447967135ea4ae1d62e8aa59b4fc9bfa2ba83'
 
   url "https://dl.winehq.org/wine-builds/macosx/pool/winehq-devel-#{version}.pkg"
   appcast 'https://dl.winehq.org/wine-builds/macosx/download.html'
@@ -12,7 +12,6 @@ cask 'wine-devel' do
                             'wine-stable',
                             'wine-staging',
                           ]
-  depends_on macos: '<= :mojave'
   depends_on x11: true
 
   pkg "winehq-devel-#{version}.pkg",
