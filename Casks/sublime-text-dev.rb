@@ -6,7 +6,7 @@ cask 'sublime-text-dev' do
   appcast "https://www.sublimetext.com/updates/#{version.major}/dev_update_check",
           configuration: version.no_dots
   name 'Sublime Text'
-  homepage "https://www.sublimetext.com/dev"
+  homepage 'https://www.sublimetext.com/dev'
 
   auto_updates true
   conflicts_with cask: 'sublime-text'
@@ -17,8 +17,8 @@ cask 'sublime-text-dev' do
   uninstall quit: "com.sublimetext.#{version.major}"
 
   zap trash: [
-               "~/Library/Application Support/Sublime Text",
-               "~/Library/Application Support/Sublime Text (Safe Mode)",
+               '~/Library/Application Support/Sublime Text',
+               '~/Library/Application Support/Sublime Text (Safe Mode)',
                "~/Library/Caches/com.sublimetext.#{version.major}",
                "~/Library/Preferences/com.sublimetext.#{version.major}.plist",
                "~/Library/Saved Application State/com.sublimetext.#{version.major}.savedState",
