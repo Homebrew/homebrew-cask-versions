@@ -51,6 +51,12 @@ cask 'firefox-esr' do
     'pl'
   end
 
+  language 'pt-BR' do
+    sha256 '8ec4c4d893e6fd5cd5011fd1cb0bc726da62b756bc62beeaee7a33f251dd5bd1'
+    'pt-BR'
+  end
+
+
   language 'pt' do
     sha256 '9ee7896a27dd02b3463b2e9dd2c4840b76bf304ce122babfe03e836290bbb565'
     'pt-PT'
