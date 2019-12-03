@@ -1,5 +1,5 @@
 cask 'telegram-alpha' do
-  version '5.8.2-186505,2364'
+  version '5.8.2-186513,2365'
   sha256 '5bf38d017949bfd971e10c747a43fe56a4c6ef57fddaa269b131f7dffa19cd86'
 
   # hockeyapp.net/api/2/apps/6ed2ac3049e1407387c2f1ffcb74e81f was verified as official when first introduced to the cask
