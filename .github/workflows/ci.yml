@@ -5,7 +5,7 @@ on:
 
 jobs:
   ci:
-    runs-on: macOS-latest
+    runs-on: macOS-10.14
     steps:
       - name: brew pull
         run: |
