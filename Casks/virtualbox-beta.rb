@@ -7,17 +7,45 @@ cask 'virtualbox-beta' do
   name 'Oracle VirtualBox'
   homepage 'https://www.virtualbox.org/wiki/Testbuilds'
 
-  auto_updates true
   conflicts_with cask: 'virtualbox'
 
-  pkg 'VirtualBox.pkg'
+  pkg 'VirtualBox.pkg',
+      choices: [
+                 {
+                   'choiceIdentifier' => 'choiceVBoxKEXTs',
+                   'choiceAttribute'  => 'selected',
+                   'attributeSetting' => 1,
+                 },
+                 {
+                   'choiceIdentifier' => 'choiceVBox',
+                   'choiceAttribute'  => 'selected',
+                   'attributeSetting' => 1,
+                 },
+                 {
+                   'choiceIdentifier' => 'choiceVBoxCLI',
+                   'choiceAttribute'  => 'selected',
+                   'attributeSetting' => 1,
+                 },
+                 {
+                   'choiceIdentifier' => 'choiceOSXFuseCore',
+                   'choiceAttribute'  => 'selected',
+                   'attributeSetting' => 0,
+                 },
+               ]
+
+  postflight do
+    # If VirtualBox is installed before `/usr/local/lib/pkgconfig` is created by Homebrew, it creates it itself with incorrect permissions that break other packages
+    # See https://github.com/Homebrew/homebrew-cask/issues/68730#issuecomment-534363026
+    set_ownership '/usr/local/lib/pkgconfig'
+  end
 
   uninstall script:  {
                        executable: 'VirtualBox_Uninstall.tool',
                        args:       ['--unattended'],
                        sudo:       true,
                      },
-            pkgutil: 'org.virtualbox.pkg.*'
+            pkgutil: 'org.virtualbox.pkg.*',
+            delete:  '/usr/local/bin/vboximg-mount'
 
   zap trash: [
                '/Library/Application Support/VirtualBox',
