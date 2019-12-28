@@ -1,6 +1,6 @@
 cask 'quicktime-player7' do
   version '7.6.6'
-  sha256 '954c2376d2d747821614dc802249cf3c708a4792abed08945d7261de3894e759'
+  sha256 '1959c0103c8b9c0ffffbbe70c15d08524576481f0a2eb37e36509fe324d16a3e'
 
   url "https://support.apple.com/downloads/DL923/en_US/QuickTimePlayer#{version}_SnowLeopard.dmg"
   name 'QuickTime Player 7'
