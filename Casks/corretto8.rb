@@ -1,12 +1,11 @@
 cask 'corretto8' do
-  version '8.232.09.2'
-  sha256 'b31250af04e1a88d4345997949154b380249afcde49baba6bdc3c035d10127dd'
+  version '8.242.07.1'
+  sha256 '12b765736520d91a8084837ac39c80bcb8e08cb12792d9e6e524239d1b085779'
 
-  # d3pxv6yz143wms.cloudfront.net was verified as official when first introduced to the cask
-  url "https://d3pxv6yz143wms.cloudfront.net/#{version}/amazon-corretto-#{version}-macosx-x64.pkg"
+  url "https://corretto.aws/downloads/resources/#{version}/amazon-corretto-#{version}-macosx-x64.pkg"
   appcast "https://docs.aws.amazon.com/en_us/corretto/latest/corretto-#{version.major}-ug/corretto-#{version.major}-ug.rss"
   name 'Amazon Corretto'
-  homepage 'https://aws.amazon.com/corretto/'
+  homepage 'https://corretto.aws/'
 
   pkg "amazon-corretto-#{version}-macosx-x64.pkg"
 
