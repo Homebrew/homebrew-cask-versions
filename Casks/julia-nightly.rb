@@ -7,7 +7,7 @@ cask 'julia-nightly' do
   homepage 'https://julialang.org/'
 
   app "Julia-#{version}.app"
-  binary "#{appdir}/Julia-#{version}.app/Contents/Resources/julia/bin/julia"
+  binary "#{appdir}/Julia-#{version}.app/Contents/Resources/julia/bin/julia", target: 'julia-nightly'
 
   zap trash: '~/.julia'
 end
