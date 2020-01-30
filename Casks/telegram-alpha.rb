@@ -1,6 +1,6 @@
 cask 'telegram-alpha' do
-  version '5.9.1-190053,2414'
-  sha256 'b139e212aff7851a2ac41f5d2c69e2b184e64767c4c7ad8798927263726b85ca'
+  version '5.9.1-190147,2417'
+  sha256 '41280d97749d78a89c6d739a8acda6549bc009599cd9f14a6ecb79291272dd96'
 
   # hockeyapp.net/api/2/apps/6ed2ac3049e1407387c2f1ffcb74e81f was verified as official when first introduced to the cask
   url "https://rink.hockeyapp.net/api/2/apps/6ed2ac3049e1407387c2f1ffcb74e81f/app_versions/#{version.after_comma}?format=zip"
