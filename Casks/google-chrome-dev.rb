@@ -10,7 +10,6 @@ cask 'google-chrome-dev' do
                          'google-chrome',
                          'google-chrome-beta',
                        ]
-  depends_on macos: '>= :mavericks'
 
   app 'Google Chrome.app'
 
