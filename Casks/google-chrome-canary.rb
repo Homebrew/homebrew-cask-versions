@@ -6,8 +6,6 @@ cask 'google-chrome-canary' do
   name 'Google Chrome Canary'
   homepage 'https://www.google.com/chrome/browser/canary.html?platform=mac'
 
-  depends_on macos: '>= :mavericks'
-
   app 'Google Chrome Canary.app'
 
   uninstall launchctl: [
