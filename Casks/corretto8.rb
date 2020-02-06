@@ -1,8 +1,8 @@
 cask 'corretto8' do
-  version '8.242.07.1'
-  sha256 '12b765736520d91a8084837ac39c80bcb8e08cb12792d9e6e524239d1b085779'
+  version '8.242.08.1-1'
+  sha256 'bf45f7e741124ef0086e31261c93b5462ac490f350a47c988ad8c41a70d01a26'
 
-  url "https://corretto.aws/downloads/resources/#{version}/amazon-corretto-#{version}-macosx-x64.pkg"
+  url "https://corretto.aws/downloads/resources/#{version.major_minor_patch}.#{version.split('.').last.split('-').first}/amazon-corretto-#{version}-macosx-x64.pkg"
   appcast "https://docs.aws.amazon.com/en_us/corretto/latest/corretto-#{version.major}-ug/corretto-#{version.major}-ug.rss"
   name 'Amazon Corretto'
   homepage 'https://corretto.aws/'
