@@ -8,10 +8,7 @@ cask 'libreoffice-still' do
   name 'LibreOffice Still'
   homepage 'https://www.libreoffice.org/download/libreoffice-still/'
 
-  conflicts_with cask: [
-                         'libreoffice',
-                         'libreoffice-rc',
-                       ]
+  conflicts_with cask: 'libreoffice'
 
   app 'LibreOffice.app'
   binary "#{appdir}/LibreOffice.app/Contents/MacOS/gengal"
