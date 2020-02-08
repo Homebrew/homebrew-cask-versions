@@ -1,6 +1,6 @@
 cask 'microsoft-remote-desktop-beta' do
-  version '10.3.8.1741,430'
-  sha256 'ab29a4f76c18b37fe2126f1ffc7ae3d8668dcb01a22af03b1f2437fd292295b1'
+  version '10.3.8.1746,434'
+  sha256 '627f4a417fd722fc391b3de4c2e80d341d4832eff913ba4548be8b1a7df760ec'
 
   url "https://rink.hockeyapp.net/api/2/apps/5e0c144289a51fca2d3bfa39ce7f2b06/app_versions/#{version.after_comma}?format=zip"
   appcast 'https://rink.hockeyapp.net/api/2/apps/5e0c144289a51fca2d3bfa39ce7f2b06',
