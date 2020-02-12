@@ -1,6 +1,6 @@
-cask 'mono-mdk516' do
-  version '5.16.1.0'
-  sha256 '0007b2a606afd3a523f66a8f6f2ae8c4c49c247f93a9fb6325c45a5bcc1b3307'
+cask 'mono-mdk-for-visual-studio' do
+  version '6.4.0.198'
+  sha256 '07f3622e5ec47ed000c9668702d45acf19f49602c10b0aaa055cc7e454cdc695'
 
   url "https://download.mono-project.com/archive/#{version.major_minor_patch}/macos-10-universal/MonoFramework-MDK-#{version}.macos10.xamarin.universal.pkg"
   appcast 'https://www.mono-project.com/download/vs/'
@@ -22,7 +22,7 @@ cask 'mono-mdk516' do
                      ]
 
   caveats <<~EOS
-    This is a version specific for Visual Studio users.
+    This is a version specific for Visual Studio users. This cask should follow the specific Visual Studio channel/branch maintained by mono developers.
 
     Installing #{token} removes mono and mono dependant formula binaries in
     /usr/local/bin and adds #{token} to /private/etc/paths.d/
