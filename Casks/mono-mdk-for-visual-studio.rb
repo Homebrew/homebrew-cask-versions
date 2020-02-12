@@ -1,4 +1,4 @@
-cask 'mono-mdk-visual-studio' do
+cask 'mono-mdk-for-visual-studio' do
   version '6.4.0.198'
   sha256 '07f3622e5ec47ed000c9668702d45acf19f49602c10b0aaa055cc7e454cdc695'
 
