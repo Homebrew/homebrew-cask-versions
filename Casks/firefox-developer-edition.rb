@@ -121,7 +121,7 @@ cask 'firefox-developer-edition' do
     'zh-CN'
   end
 
-  # download-installer.cdn.mozilla.net/pub/firefox/releases was verified as official when first introduced to the cask
+  # download-installer.cdn.mozilla.net/pub/devedition/releases was verified as official when first introduced to the cask
   url "https://download-installer.cdn.mozilla.net/pub/devedition/releases/#{version}/mac/#{language}/Firefox%20#{version}.dmg"
   appcast "https://www.macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://download.mozilla.org/%3Fproduct=firefox-devedition-latest-ssl%26os=osx%26lang=#{language}"
   name 'Mozilla Firefox Developer Edition'
