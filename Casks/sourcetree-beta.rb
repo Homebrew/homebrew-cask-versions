@@ -8,7 +8,7 @@ cask 'sourcetree-beta' do
   name 'Atlassian Sourctree'
   homepage 'https://www.sourcetreeapp.com/'
 
-  depends_on macos: '>= :yosemite'
+  depends_on macos: '>= :mojave'
 
   app 'Sourcetree-Beta.app'
   binary "#{appdir}/Sourcetree-Beta.app/Contents/Resources/stree"
