@@ -1,11 +1,10 @@
 cask 'microsoft-edge-dev' do
-  version '81.0.416.3'
-  sha256 'c4e3a6eeb88d2b935d58a5c7625c0bacf376c3120672b678b92c1a07e7972b2e'
+  version '81.0.416.6'
+  sha256 '4cb67a3fb373df7f66c7d10e922832d02c3cf9f6c087c73bdd03e1b267a0255e'
 
   # officecdn-microsoft-com.akamaized.net was verified as official when first introduced to the cask
   url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeDev-#{version}.pkg"
-  appcast 'https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/0409EDDV01-chk.xml',
-          configuration: "#{version.major}.#{version.patch}"
+  appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://go.microsoft.com/fwlink/?linkid=2069340'
   name 'Microsoft Edge Dev'
   homepage 'https://www.microsoftedgeinsider.com/'
 
