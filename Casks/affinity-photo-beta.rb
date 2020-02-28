@@ -1,5 +1,5 @@
 cask 'affinity-photo-beta' do
-  version '1.8.0.168'
+  version '1.8.0.167'
   sha256 'b8094b9ef0951a2a2b0f592c86db717169fd256530b413e53e709c21e53e0aff'
 
   # affinity-beta.s3.amazonaws.com was verified as official when first introduced to the cask
