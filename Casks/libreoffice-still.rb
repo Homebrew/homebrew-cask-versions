@@ -4,9 +4,9 @@ cask 'libreoffice-still' do
 
   # documentfoundation.org was verified as official when first introduced to the cask
   url "https://download.documentfoundation.org/libreoffice/stable/#{version}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg"
-  appcast "https://download.documentfoundation.org/libreoffice/stable/#{version}/mac/x86_64/"
+  appcast 'https://download.documentfoundation.org/libreoffice/stable/'
   name 'LibreOffice Still'
-  homepage 'https://www.libreoffice.org/download/libreoffice-still/'
+  homepage 'https://www.libreoffice.org/'
 
   conflicts_with cask: 'libreoffice'
 
