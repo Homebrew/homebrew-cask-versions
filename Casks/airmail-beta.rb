@@ -4,7 +4,8 @@ cask 'airmail-beta' do
 
   # appcenter-filemanagement-distrib2ede6f06e.azureedge.net/a61ee875-4fc5-4d5c-a05e-c2530ece39cf was verified as official when first introduced to the cask
   url 'https://appcenter-filemanagement-distrib2ede6f06e.azureedge.net/a61ee875-4fc5-4d5c-a05e-c2530ece39cf/Airmail%20Beta.app.zip?sv=2018-03-28&sr=c&sig=v421mFWezOf2Ny6eiA5EI7pLwQBOqUd1JbihMWX88sw%3D&se=2020-03-03T21%3A16%3A08Z&sp=r&download_origin=appcenter'
-  appcast 'https://install.appcenter.ms/orgs/airmail-devs-organization/apps/airmail-beta/distribution_groups/all-users-of-airmail-beta'
+  appcast 'https://install.appcenter.ms/api/v0.1/apps/airmail-devs-organization/airmail-beta/distribution_groups/all-users-of-airmail-beta/public_releases',
+          configuration: version.after_comma
   name 'Airmail'
   homepage 'https://airmailapp.com/beta/'
 
