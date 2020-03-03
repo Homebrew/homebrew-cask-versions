@@ -3,7 +3,7 @@ cask 'tor-browser-alpha' do
   sha256 'f4856bfcd813e824dcb49faf627be08f5f02160180f1306b9a38aca5c3350500'
 
   url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-osx64_en-US.dmg"
-  appcast 'https://dist.torproject.org/torbrowser/'
+  appcast 'https://www.torproject.org/download/alpha/'
   name 'Tor Browser'
   homepage 'https://www.torproject.org/projects/torbrowser.html'
 
