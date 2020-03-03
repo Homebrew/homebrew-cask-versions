@@ -20,7 +20,6 @@ cask 'docker-edge' do
                          '/usr/local/bin/docker-compose',
                          '/usr/local/bin/docker-credential-desktop',
                          '/usr/local/bin/docker-credential-osxkeychain',
-                         '/usr/local/bin/docker-machine',
                          '/usr/local/bin/hyperkit',
                          '/usr/local/bin/kubectl',
                          '/usr/local/bin/kubectl.docker',
@@ -35,7 +34,6 @@ cask 'docker-edge' do
 
   zap trash: [
                '/usr/local/bin/docker-compose.backup',
-               '/usr/local/bin/docker-machine.backup',
                '/usr/local/bin/docker.backup',
                '~/Library/Application Scripts/com.docker.helper',
                '~/Library/Caches/KSCrashReports/Docker',
