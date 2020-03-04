@@ -1,6 +1,6 @@
 cask 'emacs-pretest' do
-  version '26.3-rc1'
-  sha256 'a78210f215f3eee844ccf5b86c4b5bf0de7ca9fe0fbbe5eb22f60d0dc561261c'
+  version '27.0.90'
+  sha256 '502c849bfccef7f0aa86aa4a6bfed6f8bf0d87452cfdd3adb22bdd85857c1cd1'
 
   url "https://emacsformacosx.com/emacs-builds/Emacs-pretest-#{version}-universal.dmg"
   appcast 'https://emacsformacosx.com/atom/pretest'
@@ -15,9 +15,9 @@ cask 'emacs-pretest' do
 
   app 'Emacs.app'
   binary "#{appdir}/Emacs.app/Contents/MacOS/Emacs", target: 'emacs'
-  binary "#{appdir}/Emacs.app/Contents/MacOS/bin/ebrowse"
-  binary "#{appdir}/Emacs.app/Contents/MacOS/bin/emacsclient"
-  binary "#{appdir}/Emacs.app/Contents/MacOS/bin/etags"
+  binary "#{appdir}/Emacs.app/Contents/MacOS/bin-x86_64-10_14/ebrowse"
+  binary "#{appdir}/Emacs.app/Contents/MacOS/bin-x86_64-10_14/emacsclient"
+  binary "#{appdir}/Emacs.app/Contents/MacOS/bin-x86_64-10_14/etags"
 
   zap trash: [
                '~/Library/Caches/org.gnu.Emacs',
