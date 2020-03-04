@@ -15,9 +15,9 @@ cask 'emacs-pretest' do
 
   app 'Emacs.app'
   binary "#{appdir}/Emacs.app/Contents/MacOS/Emacs", target: 'emacs'
-  binary "#{appdir}/Emacs.app/Contents/MacOS/bin/ebrowse"
-  binary "#{appdir}/Emacs.app/Contents/MacOS/bin/emacsclient"
-  binary "#{appdir}/Emacs.app/Contents/MacOS/bin/etags"
+  binary "#{appdir}/Emacs.app/Contents/MacOS/bin-x86_64-10_14/ebrowse"
+  binary "#{appdir}/Emacs.app/Contents/MacOS/bin-x86_64-10_14/emacsclient"
+  binary "#{appdir}/Emacs.app/Contents/MacOS/bin-x86_64-10_14/etags"
 
   zap trash: [
                '~/Library/Caches/org.gnu.Emacs',
