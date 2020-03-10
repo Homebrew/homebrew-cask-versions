@@ -6,7 +6,9 @@ cask 'termius-beta' do
   url 'https://www.termius.com/beta/download/mac/Termius+Beta.dmg'
   name 'Termius Beta'
   homepage 'https://www.termius.com/beta-program'
-
+  
+  auto_updates true
+  
   app 'Termius Beta.app'
 
   zap trash: [
