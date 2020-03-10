@@ -2,10 +2,10 @@ cask 'lilypond-dev' do
   version '2.19.84-1'
   sha256 '14c7d0cee5c31fed433fa8f4d2dda94d83e4eff7ef4ab683071131a3d759a0fd'
 
-  url "http://lilypond.org/downloads/binaries/darwin-x86/lilypond-#{version}.darwin-x86.tar.bz2"
-  appcast 'http://lilypond.org/development.html'
+  url "https://lilypond.org/downloads/binaries/darwin-x86/lilypond-#{version}.darwin-x86.tar.bz2"
+  appcast 'https://lilypond.org/development.html'
   name 'LilyPond'
-  homepage 'http://lilypond.org/'
+  homepage 'https://lilypond.org/'
 
   app 'LilyPond.app'
 
