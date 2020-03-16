@@ -7,7 +7,6 @@ cask 'osu-development' do
   name 'osu!lazer'
   homepage 'https://github.com/ppy/osu/'
 
-  auto_updates true
   conflicts_with cask: 'osu'
   depends_on macos: '>= :sierra'
 
