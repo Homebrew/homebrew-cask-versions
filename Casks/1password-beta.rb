@@ -8,6 +8,7 @@ cask '1password-beta' do
   homepage 'https://1password.com/'
 
   auto_updates true
+  conflicts_with cask: '1password'
 
   app "1Password #{version.major}.app"
 
