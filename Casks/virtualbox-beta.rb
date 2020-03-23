@@ -3,7 +3,7 @@ cask 'virtualbox-beta' do
   sha256 '2b48d3cb8b956e07ab2237a559c5be8916401284f0cf9c729d20a4f7fdc1a52c'
   url "https://ww.virtualbox.org/download/testcase/VirtualBox-#{version}-OSX.dmg"
   name 'Oracle VirtualBox'
-  homepage 'https://www.virtualbox.org/wiki/Testbuilds'
+  homepage 'https://wwww.virtualbox.org/wiki/Testbuilds'
 
   conflicts_with cask: 'virtualbox'
 
