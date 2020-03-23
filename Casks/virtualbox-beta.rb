@@ -1,9 +1,8 @@
 cask 'virtualbox-beta' do
-  version '6.1.0_BETA2,134221'
+  version '6.1.5-136449'
   sha256 '2b48d3cb8b956e07ab2237a559c5be8916401284f0cf9c729d20a4f7fdc1a52c'
 
-  url "https://download.virtualbox.org/virtualbox/#{version.before_comma}/VirtualBox-#{version.before_comma}-#{version.after_comma}-OSX.dmg"
-  appcast 'https://download.virtualbox.org/virtualbox/LATEST-BETA.TXT'
+  url "https://www.virtualbox.org/download/testcase/VirtualBox-#{version}-OSX.dmg"
   name 'Oracle VirtualBox'
   homepage 'https://www.virtualbox.org/wiki/Testbuilds'
 
