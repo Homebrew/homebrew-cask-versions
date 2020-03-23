@@ -1,6 +1,6 @@
 cask 'appcode-eap' do
-  version '2020.1,201.6251.27'
-  sha256 'c5c8a3660655e0884480e875072e0335a9042d833954067209014aed59bb842e'
+  version '2020.1,201.6487.7'
+  sha256 'ac007df59eeae7fc04e1b3e27cae625264bac8090c13686209b68abed6dcd73c'
 
   url "https://download.jetbrains.com/objc/AppCode-#{version.after_comma}.dmg"
   name 'AppCode EAP'
