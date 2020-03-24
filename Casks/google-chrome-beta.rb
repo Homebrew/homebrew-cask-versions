@@ -4,7 +4,7 @@ cask 'google-chrome-beta' do
 
   url 'https://dl.google.com/chrome/mac/beta/googlechrome.dmg'
   name 'Google Chrome'
-  homepage 'https://www.google.com/chrome/browser/beta.html?platform=mac&extra=betachannel'
+  homepage 'https://www.google.com/chrome/beta/'
 
   conflicts_with cask: [
                          'google-chrome',
