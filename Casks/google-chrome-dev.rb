@@ -4,7 +4,7 @@ cask 'google-chrome-dev' do
 
   url 'https://dl.google.com/chrome/mac/dev/googlechrome.dmg'
   name 'Google Chrome'
-  homepage 'https://www.google.com/chrome/browser/desktop/index.html?extra=devchannel'
+  homepage 'https://www.google.com/chrome/dev/'
 
   conflicts_with cask: [
                          'google-chrome',
