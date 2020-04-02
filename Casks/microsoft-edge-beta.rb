@@ -22,8 +22,10 @@ cask 'microsoft-edge-beta' do
       pkgutil:   'com.microsoft.package.Microsoft_AutoUpdate.app',
       delete:    '/Library/PrivilegedHelperTools/com.microsoft.autoupdate.helper',
       trash:     [
-                   '~/Library/Preferences/com.microsoft.edgemac.Beta.plist',
                    '/Library/Application Support/Microsoft',
                    '~/Library/Application Support/Microsoft Edge Beta',
+                   '~/Library/Caches/Microsoft Edge Beta',
+                   '~/Library/Preferences/com.microsoft.edgemac.Beta.plist',
+                   '~/Library/Saved Application State/com.microsoft.edgemac.Beta.savedState',
                  ]
 end
