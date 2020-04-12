@@ -8,4 +8,10 @@ cask 'reflector2' do
   homepage 'https://www.airsquirrels.com/reflector/'
 
   app "Reflector #{version.major}.app"
+
+  zap trash: [
+               '~/Library/Application Support/Logs/Reflector.log',
+               "~/Library/Caches/com.squirrels.Reflector-#{version.major}",
+               "~/Library/Preferences/com.squirrels.Reflector-#{version.major}.plist",
+             ]
 end
