@@ -1,12 +1,13 @@
 cask 'openvpn-connect-beta' do
-  version '3.1.0.890'
-  sha256 'acd08a223275510505eeb94db593b038a59b9dfe27a0885dfdd3495c95000b6e'
+  version '3.1.1.1089'
+  sha256 '92ef85ccf5fff1665b26d2f55b1a8694cbc9df1f284ec4795b6413879fe17772'
 
   url "https://swupdate.openvpn.net/beta-downloads/connect/openvpn-connect-#{version}_signed.dmg"
+  appcast 'https://openvpn.net/client-connect-vpn-for-mac-os/'
   name 'OpenVPN Connect'
   homepage 'https://openvpn.net/client-connect-vpn-for-mac-os/'
 
-  pkg "OpenVPN_Connect_#{version.major_minor_patch.dots_to_underscroes}(#{version.split('.').last})_Installer_signed.pkg"
+  pkg "OpenVPN_Connect_#{version.major_minor_patch.dots_to_underscores}(#{version.split('.').last})_Installer_signed.pkg"
 
   uninstall script:  {
                        executable: '/Applications/OpenVPN Connect/Uninstall OpenVPN Connect.app/Contents/Resources/remove.sh',
