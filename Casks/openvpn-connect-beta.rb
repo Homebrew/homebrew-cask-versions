@@ -3,7 +3,8 @@ cask 'openvpn-connect-beta' do
   sha256 '92ef85ccf5fff1665b26d2f55b1a8694cbc9df1f284ec4795b6413879fe17772'
 
   url "https://swupdate.openvpn.net/beta-downloads/connect/openvpn-connect-#{version}_signed.dmg"
-  appcast 'https://openvpn.net/client-connect-vpn-for-mac-os/'
+  appcast 'https://openvpn.net/client-connect-vpn-for-mac-os/',
+          configuration: version.major_minor_patch
   name 'OpenVPN Connect'
   homepage 'https://openvpn.net/client-connect-vpn-for-mac-os/'
 
