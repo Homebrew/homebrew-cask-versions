@@ -2,7 +2,7 @@ cask 'sourcetree-alpha' do
   version '2.7.4a1'
   sha256 '99ca2431a07fdf7a2c964f46510c3ad3af9c95e80cad55cb02bbf40399bd64bd'
 
-  # atlassian.com was verified as official when first introduced to the cask
+  # atlassian.com/ was verified as official when first introduced to the cask
   url "https://downloads.atlassian.com/software/sourcetree/Sourcetree_#{version}.zip"
   appcast 'https://www.sourcetreeapp.com/update/SparkleAppcastAlpha.xml'
   name 'Atlassian SourceTree'
