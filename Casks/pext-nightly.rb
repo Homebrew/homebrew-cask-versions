@@ -2,7 +2,7 @@ cask 'pext-nightly' do
   version :latest
   sha256 :no_check
 
-  # api.github.com/repos/Pext/Pext was verified as official when first introduced to the cask
+  # api.github.com/repos/Pext/Pext/ was verified as official when first introduced to the cask
   url do
     require 'open-uri'
     require 'json'
