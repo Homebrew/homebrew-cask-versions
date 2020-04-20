@@ -2,7 +2,7 @@ cask 'hyper-canary' do
   version '3.0.1-canary.4'
   sha256 'd6c9d1d78769772f6afc431747c29488b9d4657fb1f892fef87f5d5040aa69ee'
 
-  # github.com/zeit/hyper was verified as official when first introduced to the cask
+  # github.com/zeit/hyper/ was verified as official when first introduced to the cask
   url "https://github.com/zeit/hyper/releases/download/#{version}/hyper-#{version}-mac.zip"
   appcast 'https://github.com/zeit/hyper/releases.atom'
   name 'Hyper'
