@@ -2,7 +2,7 @@ cask 'microsoft-edge-dev' do
   version '83.0.478.10'
   sha256 '3a6bbff76abbe9b1988434e0a67090c2d975f983871430d4c9399d00fd624757'
 
-  # officecdn-microsoft-com.akamaized.net was verified as official when first introduced to the cask
+  # officecdn-microsoft-com.akamaized.net/ was verified as official when first introduced to the cask
   url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeDev-#{version}.pkg"
   appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://go.microsoft.com/fwlink/?linkid=2069340'
   name 'Microsoft Edge Dev'
