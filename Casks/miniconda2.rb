@@ -2,7 +2,7 @@ cask 'miniconda2' do
   version :latest
   sha256 :no_check
 
-  # repo.continuum.io/miniconda was verified as official when first introduced to the cask
+  # repo.continuum.io/miniconda/ was verified as official when first introduced to the cask
   url 'https://repo.continuum.io/miniconda/Miniconda2-latest-MacOSX-x86_64.sh'
   name 'Continuum Analytics Miniconda'
   homepage 'https://www.anaconda.com/what-is-anaconda/'
