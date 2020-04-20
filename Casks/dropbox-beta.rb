@@ -2,7 +2,7 @@ cask 'dropbox-beta' do
   version '96.3.159'
   sha256 '6cef80bbc39ff50303564ef9199d954dcb2f778baeebd2928fbbdbe126d68b36'
 
-  # dropbox.com was verified as official when first introduced to the cask
+  # dropbox.com/ was verified as official when first introduced to the cask
   url "https://www.dropbox.com/download?build=#{version}&plat=mac&type=full"
   name 'Dropbox'
   homepage 'https://www.dropboxforum.com/t5/Desktop-client-builds/bd-p/101003016'
