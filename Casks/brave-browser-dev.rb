@@ -1,6 +1,6 @@
 cask 'brave-browser-dev' do
-  version '81.1.9.38,109.38'
-  sha256 'b3e80ce13bcb0bb70c0fd2e10cd1303fab1aa4a1b75cd40fac187700dc59b96a'
+  version '81.1.9.43,109.43'
+  sha256 '13494ccd47d4085d2bc40ee8294559d17143479df2d4b9d95f3372fdcb1e6f8c'
 
   # updates-cdn.bravesoftware.com/sparkle/Brave-Browser/ was verified as official when first introduced to the cask
   url "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/dev/#{version.after_comma}/Brave-Browser-Dev.dmg"
