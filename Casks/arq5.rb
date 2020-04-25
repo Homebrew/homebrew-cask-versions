@@ -4,7 +4,7 @@ cask 'arq' do
 
   url "https://www.arqbackup.com/download/arqbackup/Arq_#{version.major}.#{version.minor}.zip"
   appcast 'https://www.arqbackup.com/'
-  name 'Arq'
+  name 'Arq5'
   homepage 'https://www.arqbackup.com/'
 
   auto_updates true
