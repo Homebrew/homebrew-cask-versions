@@ -7,6 +7,7 @@ cask 'arq5' do
   homepage 'https://www.arqbackup.com/'
 
   auto_updates true
+  conflicts_with cask: 'arq'
 
   app 'Arq.app'
 end
