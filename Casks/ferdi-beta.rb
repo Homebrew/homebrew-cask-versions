@@ -8,6 +8,7 @@ cask 'ferdi-beta' do
   name 'Ferdi'
   homepage 'https://getferdi.com/'
 
+  auto_updates true
   conflicts_with cask: 'ferdi'
 
   app 'Ferdi.app'
