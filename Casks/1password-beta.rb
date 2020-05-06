@@ -1,6 +1,6 @@
 cask '1password-beta' do
-  version '7.5.BETA-0'
-  sha256 '808dbff17b21fae53fd6157cc3e5df51149283804a67961640b163749827871b'
+  version '7.5.1.BETA-0'
+  sha256 '197f0fc62ce8618ea86b459944b88a319ac75974a125cd39354733ee66aea75c'
 
   url "https://c.1password.com/dist/1P/mac#{version.major}/1Password-#{version}.zip"
   appcast "https://app-updates.agilebits.com/product_history/OPM#{version.major}"
