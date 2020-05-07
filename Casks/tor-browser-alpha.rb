@@ -1,6 +1,6 @@
 cask 'tor-browser-alpha' do
-  version '9.5a11'
-  sha256 'ac94e1485cc54fec44a7520ef9c834db8e237a9f12a908900d45db2e6788edf8'
+  version '9.5a12'
+  sha256 '2ce571b48a4c3c77b540ef4f4673180343a2c03d6a23c56a47bbe0ffb4e9272b'
 
   url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-osx64_en-US.dmg"
   appcast 'https://www.torproject.org/download/alpha/'
