@@ -1,6 +1,6 @@
 cask 'dotnet-sdk-preview' do
-  version '3.1.100-preview3-014645,f4377189-a171-425b-8ef6-f8f21e89a8b0:b0d3561b13bd43ab4771bb62a2fddd4d'
-  sha256 '61fd5b2630a3ac536cfbf66172f62a246ccf87c7fe7988b188e257089eb0a4aa'
+  version '5.0.100-preview.3.20216.6,3fa9a36e-907c-4d7a-a98a-e50ad0aa4990:ff63364b94e98687d5933c1b9a50a5d0'
+  sha256 '46220c1bf858d3f41caaedb287de946d0ea2667f6e3cf67d1ce6abe307638164'
 
   url "https://download.visualstudio.microsoft.com/download/pr/#{version.after_comma.before_colon}/#{version.after_colon}/dotnet-sdk-#{version.before_comma}-osx-x64.pkg"
   appcast "https://dotnet.microsoft.com/download/dotnet-core/#{version.major_minor}"
@@ -19,9 +19,15 @@ cask 'dotnet-sdk-preview' do
 
   uninstall pkgutil: [
                        'com.microsoft.dotnet.*',
-                       'com.microsoft.netstandard.*',
+                       'com.microsoft.netstandard.pack.targeting.*',
                      ],
-            delete:  '/etc/paths.d/dotnet'
+            delete:  [
+                       '/etc/paths.d/dotnet',
+                       '/etc/paths.d/dotnet-cli-tools',
+                     ]
 
-  zap trash: '~/.nuget'
+  zap trash: [
+               '~/.dotnet',
+               '~/.nuget',
+             ]
 end
