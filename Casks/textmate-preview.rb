@@ -20,7 +20,6 @@ cask 'textmate-preview' do
                '~/Library/Application Support/TextMate',
                '~/Library/Caches/com.macromates.TextMate',
                '~/Library/Preferences/com.macromates.TextMate.plist',
-               '~/Library/Preferences/com.macromates.TextMate.preview.plist',
                '~/Library/Saved Application State/com.macromates.TextMate.savedState',
                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.macromates.textmate.sfl2',
              ]
