@@ -1,5 +1,5 @@
 cask 'android-studio-preview-beta' do
-  version '4.0.0.15,193.645338'
+  version '4.0.0.15,193.6453388'
   sha256 '78d1ec72245f3d5646256f75ce141926293ca7c5f730a0f76eb1963a9c6a6bf3'
 
   # dl.google.com/dl/android/studio/ was verified as official when first introduced to the cask
