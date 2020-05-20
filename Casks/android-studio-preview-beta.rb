@@ -13,6 +13,9 @@ cask 'android-studio-preview-beta' do
   # for non-RC beta releases:
   # app "Android Studio #{version.major_minor} Preview.app"
 
+  conflicts_with cask: 'android-studio'
+  conflicts_with cask: 'android-studio-preview-canary'
+
   zap trash: [
                '~/Library/Android/sdk',
                "~/Library/Application Support/AndroidStudio#{version.major_minor}",
