@@ -1,6 +1,6 @@
 cask 'dotnet-preview' do
-  version '5.0.0-preview.3.20214.6,de092180-43f4-4f89-b72c-a149aa86caf4:d603d2b043ae80556f1239946140471a'
-  sha256 '859a5d3d55549ccb2d6b65784f3633ac0ac3f4806f88cbce911206f23b23fd6e'
+  version '5.0.0-preview.4.20251.6,25a7898d-1bb3-4472-bae9-ed24c8b4124a:dedf9dbb6d310ac5a9616d7b67fc77d0'
+  sha256 '4451c86060914492247b14c12579cf67ffda1a17aa8ac1cdabd949252a5067a6'
 
   url "https://download.visualstudio.microsoft.com/download/pr/#{version.after_comma.before_colon}/#{version.after_colon}/dotnet-runtime-#{version.before_comma}-osx-x64.pkg"
   appcast 'https://dotnet.microsoft.com/download/dotnet-core'
