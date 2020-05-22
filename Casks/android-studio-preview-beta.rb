@@ -7,11 +7,7 @@ cask 'android-studio-preview-beta' do
   name 'Android Studio Preview (Beta)'
   homepage 'https://developer.android.com/studio/preview/'
 
-  # for release candidates:
   app 'Android Studio.app'
-
-  # for non-RC beta releases:
-  # app "Android Studio #{version.major_minor} Preview.app"
 
   conflicts_with cask: 'android-studio'
   conflicts_with cask: 'android-studio-preview-canary'
