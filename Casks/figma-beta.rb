@@ -6,7 +6,7 @@ cask 'figma-beta' do
   name 'Figma'
   homepage 'https://www.figma.com/'
 
-  app 'Figma.app'
+  app 'Figma Beta.app'
 
   zap trash: [
                '~/Library/Application Support/Figma/DesktopBeta',
