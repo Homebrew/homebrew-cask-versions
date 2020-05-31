@@ -1,9 +1,10 @@
 cask 'microsoft-office-2016' do
-  version '16.16.20030700'
-  sha256 'e6b38e17fecf5bf67cb08c5ef405bcefe2079a079637d5800e1815b1fcb8e0b6'
+  version '16.16.20050901'
+  sha256 '5d93978bccc086a69987f914d645d6247ee38d1745f483f118d6a0439ffb78ea'
 
   # officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/ was verified as official when first introduced to the cask
   url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_#{version}_Installer.pkg"
+  appcast 'https://docs.microsoft.com/en-us/officeupdates/release-notes-office-2016-mac/'
   name 'Microsoft Office'
   homepage 'https://products.office.com/mac/microsoft-office-for-mac/'
 
@@ -20,7 +21,9 @@ cask 'microsoft-office-2016' do
   pkg "Microsoft_Office_#{version}_Installer.pkg"
 
   uninstall pkgutil:   [
+                         'com.microsoft.OneDrive',
                          'com.microsoft.package.DFonts',
+                         'com.microsoft.package.Fonts',
                          'com.microsoft.package.Frameworks',
                          'com.microsoft.package.Microsoft_AutoUpdate.app',
                          'com.microsoft.package.Microsoft_Excel.app',
@@ -30,7 +33,6 @@ cask 'microsoft-office-2016' do
                          'com.microsoft.package.Microsoft_Word.app',
                          'com.microsoft.package.Proofing_Tools',
                          'com.microsoft.pkg.licensing',
-                         'com.microsoft.OneDrive',
                        ],
             delete:    [
                          '/Applications/Microsoft Excel.app',
@@ -38,13 +40,15 @@ cask 'microsoft-office-2016' do
                          '/Applications/Microsoft Outlook.app',
                          '/Applications/Microsoft PowerPoint.app',
                          '/Applications/Microsoft Word.app',
+                         '/Applications/OneDrive.app',
                        ],
             launchctl: [
-                         'com.microsoft.office.licensing.helper',
-                         'com.microsoft.office.licensingV2.helper',
                          'com.microsoft.OneDriveStandaloneUpdater',
                          'com.microsoft.OneDriveStandaloneUpdaterDaemon',
                          'com.microsoft.OneDriveUpdaterDaemon',
+                         'com.microsoft.office.licensing.helper',
+                         'com.microsoft.office.licensingV2.helper',
+                         'com.microsoft.update.agent',
                        ]
 
   zap trash:     [
