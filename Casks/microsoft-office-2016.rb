@@ -21,7 +21,9 @@ cask 'microsoft-office-2016' do
   pkg "Microsoft_Office_#{version}_Installer.pkg"
 
   uninstall pkgutil:   [
+                         'com.microsoft.OneDrive',
                          'com.microsoft.package.DFonts',
+                         'com.microsoft.package.Fonts',
                          'com.microsoft.package.Frameworks',
                          'com.microsoft.package.Microsoft_AutoUpdate.app',
                          'com.microsoft.package.Microsoft_Excel.app',
@@ -31,7 +33,6 @@ cask 'microsoft-office-2016' do
                          'com.microsoft.package.Microsoft_Word.app',
                          'com.microsoft.package.Proofing_Tools',
                          'com.microsoft.pkg.licensing',
-                         'com.microsoft.OneDrive',
                        ],
             delete:    [
                          '/Applications/Microsoft Excel.app',
@@ -39,13 +40,15 @@ cask 'microsoft-office-2016' do
                          '/Applications/Microsoft Outlook.app',
                          '/Applications/Microsoft PowerPoint.app',
                          '/Applications/Microsoft Word.app',
+                         '/Applications/OneDrive.app',
                        ],
             launchctl: [
-                         'com.microsoft.office.licensing.helper',
-                         'com.microsoft.office.licensingV2.helper',
                          'com.microsoft.OneDriveStandaloneUpdater',
                          'com.microsoft.OneDriveStandaloneUpdaterDaemon',
                          'com.microsoft.OneDriveUpdaterDaemon',
+                         'com.microsoft.office.licensing.helper',
+                         'com.microsoft.office.licensingV2.helper',
+                         'com.microsoft.update.agent',
                        ]
 
   zap trash:     [
