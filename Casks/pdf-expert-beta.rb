@@ -1,6 +1,6 @@
 cask 'pdf-expert-beta' do
-  version '2.5.7,691'
-  sha256 'c69c9209da33dd0c47ecb7aa39f0aaf8f48374f2b38b98170f7a2f55b5c2d61b'
+  version '2.5.8,692'
+  sha256 'a047806bfada444aceeafb508770e6997d594ce230dc77fcc5167b19dae7d685'
 
   # d1ke680phyeohy.cloudfront.net/ was verified as official when first introduced to the cask
   url "https://d1ke680phyeohy.cloudfront.net/versions/#{version.after_comma}/PDFExpert.dmg"
