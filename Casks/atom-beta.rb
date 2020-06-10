@@ -1,6 +1,6 @@
 cask 'atom-beta' do
-  version '1.48.0-beta0'
-  sha256 '1138f461ed67162e1054d38014ec447a7a1573e3e9c0f582cecd1bcfe4660dd5'
+  version '1.49.0-beta0'
+  sha256 'eb8a40139ad6d7f832f5f5908e43ea437a5ac8e8242174ded6c764593949347f'
 
   # github.com/atom/atom/ was verified as official when first introduced to the cask
   url "https://github.com/atom/atom/releases/download/v#{version}/atom-mac.zip"
@@ -9,7 +9,6 @@ cask 'atom-beta' do
   homepage 'https://atom.io/beta'
 
   auto_updates true
-  depends_on macos: '>= :mavericks'
 
   app 'Atom Beta.app'
   binary "#{appdir}/Atom Beta.app/Contents/Resources/app/apm/bin/apm", target: 'apm-beta'
