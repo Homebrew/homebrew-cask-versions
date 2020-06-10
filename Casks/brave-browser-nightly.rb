@@ -11,8 +11,6 @@ cask 'brave-browser-nightly' do
   name 'Brave Nightly'
   homepage 'https://brave.com/download-nightly/'
 
-  depends_on macos: '>= :mavericks'
-
   app 'Brave Browser Nightly.app'
 
   zap trash: [
