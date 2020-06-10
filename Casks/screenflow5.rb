@@ -7,7 +7,6 @@ cask 'screenflow5' do
   homepage 'https://www.telestream.net/screenflow/'
 
   auto_updates true
-  depends_on macos: '>= :mavericks'
 
   app 'ScreenFlow.app'
 end

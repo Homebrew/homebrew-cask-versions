@@ -10,7 +10,6 @@ cask 'visual-studio-code-insiders' do
   homepage 'https://code.visualstudio.com/insiders'
 
   auto_updates true
-  depends_on macos: '>= :mavericks'
 
   app 'Visual Studio Code - Insiders.app'
   binary "#{appdir}/Visual Studio Code - Insiders.app/Contents/Resources/app/bin/code", target: 'code-insiders'
