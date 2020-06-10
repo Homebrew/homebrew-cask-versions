@@ -6,8 +6,6 @@ cask 'atom-nightly' do
   name 'Github Atom Nightly'
   homepage 'https://atom.io/nightly'
 
-  depends_on macos: '>= :mavericks'
-
   app 'Atom Nightly.app'
   binary "#{appdir}/Atom Nightly.app/Contents/Resources/app/apm/bin/apm", target: 'apm-nightly'
   binary "#{appdir}/Atom Nightly.app/Contents/Resources/app/atom.sh", target: 'atom-nightly'
