@@ -9,7 +9,6 @@ cask 'brave-browser-dev' do
   homepage 'https://brave.com/download-dev/'
 
   auto_updates true
-  depends_on macos: '>= :mavericks'
 
   app 'Brave Browser Dev.app'
 
