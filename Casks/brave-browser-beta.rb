@@ -9,7 +9,6 @@ cask 'brave-browser-beta' do
   homepage 'https://brave.com/download-beta/'
 
   auto_updates true
-  depends_on macos: '>= :mavericks'
 
   app 'Brave Browser Beta.app'
 
