@@ -4,7 +4,7 @@ cask 'openvpn-connect-beta' do
 
   url "https://swupdate.openvpn.net/beta-downloads/connect/openvpn-connect-#{version}_signed.dmg"
   appcast 'https://openvpn.net/client-connect-vpn-for-mac-os/',
-          configuration: version.major_minor_patch
+          must_contain: version.major_minor_patch
   name 'OpenVPN Connect'
   homepage 'https://openvpn.net/client-connect-vpn-for-mac-os/'
 
