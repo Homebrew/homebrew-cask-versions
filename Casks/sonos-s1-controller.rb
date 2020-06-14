@@ -1,4 +1,4 @@
-cask 'sonos-s1' do
+cask 'sonos-s1-controller' do
   version '11.2'
   sha256 '1a98300bd16bb2f727eb1921db80777cc23178a483d56b44a9bb5d95d9ea6602'
 
