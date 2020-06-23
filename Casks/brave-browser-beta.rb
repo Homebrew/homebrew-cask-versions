@@ -1,6 +1,6 @@
 cask 'brave-browser-beta' do
-  version '83.1.11.69,111.69'
-  sha256 'c888be4a5353cbc1c1121534cb2e3480025279d2b9d6e2eeb1394cccc1eb8a28'
+  version '83.1.11.74,111.74'
+  sha256 '48beebbe461630112fb2f20a21166d883e1aea902d2777fd90d586e7a2c3bd44'
 
   # updates-cdn.bravesoftware.com/sparkle/Brave-Browser/ was verified as official when first introduced to the cask
   url "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/beta/#{version.after_comma}/Brave-Browser-Beta.dmg"
