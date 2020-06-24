@@ -9,7 +9,7 @@ cask 'vmware-fusion-tech-preview' do
 
   auto_updates true
   conflicts_with cask: 'vmware-fusion'
-  depends_on macos: '>= :sierra'
+  depends_on macos: '>= :catalina'
 
   app 'VMware Fusion Tech Preview.app'
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vkd/bin/vctl"
