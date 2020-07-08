@@ -8,6 +8,8 @@ cask 'adobe-acrobat-pro-2017' do
   name 'Adobe Acrobat Pro 2017'
   homepage 'https://helpx.adobe.com/uk/download-install/kb/acrobat-2017-downloads.html#AcrobatPro2017'
 
+  auto_updates true
+
   pkg 'Acrobat 2017/Acrobat 2017 Installer.pkg'
 
   uninstall pkgutil:   [
