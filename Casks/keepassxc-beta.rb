@@ -1,5 +1,5 @@
 cask 'keepassxc-beta' do
-  version '2.6.0-beta1'
+  version '2.6.0'
 
   if MacOS.version <= :sierra
     # github.com/keepassxreboot/keepassxc/ was verified as official when first introduced to the cask
@@ -8,7 +8,7 @@ cask 'keepassxc-beta' do
   else
     # github.com/keepassxreboot/keepassxc/ was verified as official when first introduced to the cask
     url "https://github.com/keepassxreboot/keepassxc/releases/download/#{version}/KeePassXC-#{version}.dmg"
-    sha256 '8b92b0638bfbb9fb1a992477e350f42971043ebb1f55ddb94974c5206acda36b'
+    sha256 '2224047775b0184b78c252e97cc9c7487aada3a26d24701e45114ea32868f403'
   end
 
   appcast 'https://github.com/keepassxreboot/keepassxc/releases.atom'
