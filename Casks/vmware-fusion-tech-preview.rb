@@ -1,6 +1,6 @@
 cask 'vmware-fusion-tech-preview' do
-  version '16227879'
-  sha256 '55028e37a24d848e362c8ebaf18ca3b8a65dbcdaa4c4aa3f4e1049d26ff69c8c'
+  version '16530630'
+  sha256 '663b3d35f23541003f34ee0f5160bd04d0113703ac0a34a509b964b21a5bd5d0'
 
   # download3.vmware.com/ was verified as official when first introduced to the cask
   url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-e.x.p-#{version}.dmg"
