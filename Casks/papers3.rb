@@ -4,7 +4,7 @@ cask 'papers3' do
 
   # downloads.mekentosj.com was verified as official when first introduced to the cask
   url "https://downloads.mekentosj.com/papers_#{version.no_dots}.dmg"
-  name 'Papers3'
+  name 'Papers'
   homepage 'https://support.papersapp.com/support/solutions/30000034695'
 
   app 'Papers.app'
@@ -12,10 +12,10 @@ cask 'papers3' do
   uninstall login_item: 'Citations'
 
   zap trash: [
-               '~/Library/Application Support/Papers3',
+               "~/Library/Application Support/Papers#{version.major}",
                '~/Library/Caches/com.mekentosj.Citations',
-               '~/Library/Caches/com.mekentosj.papers3',
+               "~/Library/Caches/com.mekentosj.papers#{version.major}",
                '~/Library/Preferences/com.mekentosj.Citations.plist',
-               '~/Library/Preferences/com.mekentosj.papers3',
+               "~/Library/Preferences/com.mekentosj.papers#{version.major}",
              ]
 end
