@@ -1,6 +1,6 @@
 cask 'papers3' do
   version '3.4.23_587'
-  sha256 '48882e7852cd60ee42356e16fc297bbbe4f49c6a01f8a4a9127cfd10e45ff775'
+  sha256 '6960a5ad8d886d67cf9ab39730baa04f9fb5fb64a2c28cd0c25073f9b515f565'
 
   # downloads.mekentosj.com was verified as official when first introduced to the cask
   url "https://downloads.mekentosj.com/papers_#{version.no_dots}.dmg"
