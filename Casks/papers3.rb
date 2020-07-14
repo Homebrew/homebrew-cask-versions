@@ -5,7 +5,7 @@ cask 'papers3' do
   # downloads.mekentosj.com was verified as official when first introduced to the cask
   url "https://downloads.mekentosj.com/papers_#{version.no_dots}.dmg"
   name 'Papers'
-  homepage 'https://support.papersapp.com/support/solutions/30000034695'
+  homepage 'https://support.papersapp.com/support/solutions/articles/30000031865-existing-papers-3-users-accessing-papers-3-program-files-for-additional-device-installs'
 
   app 'Papers.app'
 
