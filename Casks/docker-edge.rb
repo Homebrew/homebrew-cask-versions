@@ -1,6 +1,6 @@
 cask 'docker-edge' do
-  version '2.3.2.0,46268'
-  sha256 'a690e08e376a925d48db8bc62c48d10fafb51f737fa5937b5a3e25f1ad6bb3cf'
+  version '2.3.3.0,46574'
+  sha256 'ee17cad62ca2127b85914868a9f1774f1fa3adb59657b601a1d511dc338b645e'
 
   url "https://download.docker.com/mac/edge/#{version.after_comma}/Docker.dmg"
   appcast 'https://download.docker.com/mac/edge/appcast.xml'
