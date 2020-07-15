@@ -10,10 +10,10 @@ cask 'microsoft-office-2016' do
 
   auto_updates true
   conflicts_with cask: [
-                         'microsot-office',
-                         'microsot-word',
-                         'microsot-excel',
-                         'microsot-powerpoint',
+                         'microsoft-office',
+                         'microsoft-word',
+                         'microsoft-excel',
+                         'microsoft-powerpoint',
                          'onedrive',
                        ]
   depends_on macos: '>= :sierra'
