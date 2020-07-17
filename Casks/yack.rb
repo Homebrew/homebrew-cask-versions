@@ -8,4 +8,10 @@ cask 'yack' do
   homepage 'http://yack.io/'
 
   app 'Yack! - Beta.app'
+
+  zap trash: [
+               '~/Library/Logs/Yack! - Beta',
+               '~/Library/Preferences/com.yack.yackapp-beta.plist',
+               '~/Library/Saved Application State/com.yack.yackapp-beta.savedState',
+             ]
 end
