@@ -5,6 +5,8 @@ cask 'smcfancontrol-beta' do
   url "https://github.com/hholtmann/smcFanControl/releases/download/#{version}%C3%9F1/#{version.dots_to_underscores}.zip"
   name 'smcFanControl'
   homepage 'https://github.com/hholtmann/smcFanControl'
+  
+  conflicts_with cask: 'smcfancontrol'
 
   app 'smcFanControl.app'
 
