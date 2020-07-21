@@ -17,4 +17,3 @@ cask 'smcfancontrol-beta' do
                "~/Library/Caches/com.eidac.smcFanControl#{version.major}",
              ]
 end
-
