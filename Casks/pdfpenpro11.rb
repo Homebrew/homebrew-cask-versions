@@ -5,8 +5,8 @@ cask 'pdfpenpro11' do
   url "https://dl.smilesoftware.com/com.smileonmymac.PDFpenPro/#{version.before_comma}/#{version.after_comma}/PDFpenPro-#{version.before_comma}.zip"
   name 'PDFpenPro 11'
   homepage 'https://smilesoftware.com/PDFpenPro'
-  
-  depends_on macos: ">= :sierra"
+
+  depends_on macos: '>= :sierra'
 
   app 'PDFpenPro.app'
 end
