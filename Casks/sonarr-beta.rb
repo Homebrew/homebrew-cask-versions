@@ -7,13 +7,12 @@ cask "sonarr-beta" do
   homepage "https://sonarr.tv/"
 
   conflicts_with cask: "sonarr"
-
   depends_on cask: "mono-mdk"
 
   app "Sonarr.app"
 
   zap trash: [
     "~/.config/Sonarr",
-    "~/Library/Saved Application State/com.osx.sonarr.tv.savedState"
+    "~/Library/Saved Application State/com.osx.sonarr.tv.savedState",
   ]
 end
