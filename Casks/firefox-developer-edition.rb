@@ -1,62 +1,62 @@
-cask 'firefox-developer-edition' do
+cask "firefox-developer-edition" do
   version :latest
   sha256 :no_check
 
-  language 'cs' do
-    'cs'
+  language "cs" do
+    "cs"
   end
 
-  language 'de' do
-    'de'
+  language "de" do
+    "de"
   end
 
-  language 'en-GB' do
-    'en-GB'
+  language "en-GB" do
+    "en-GB"
   end
 
-  language 'en', default: true do
-    'en-US'
+  language "en", default: true do
+    "en-US"
   end
 
-  language 'es' do
-    'es-ES'
+  language "es" do
+    "es-ES"
   end
 
-  language 'fr' do
-    'fr'
+  language "fr" do
+    "fr"
   end
 
-  language 'ja' do
-    'ja-JP-mac'
+  language "ja" do
+    "ja-JP-mac"
   end
 
-  language 'pt-BR' do
-    'pt-BR'
+  language "pt-BR" do
+    "pt-BR"
   end
 
-  language 'ko' do
-    'ko'
+  language "ko" do
+    "ko"
   end
 
-  language 'ru' do
-    'ru'
+  language "ru" do
+    "ru"
   end
 
-  language 'uk' do
-    'uk'
+  language "uk" do
+    "uk"
   end
 
-  language 'zh-TW' do
-    'zh-TW'
+  language "zh-TW" do
+    "zh-TW"
   end
 
-  language 'zh' do
-    'zh-CN'
+  language "zh" do
+    "zh-CN"
   end
 
   url "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=osx&lang=#{language}"
-  name 'Mozilla Firefox Developer Edition'
-  homepage 'https://www.mozilla.org/firefox/developer/'
+  name "Mozilla Firefox Developer Edition"
+  homepage "https://www.mozilla.org/firefox/developer/"
 
-  app 'Firefox Developer Edition.app'
+  app "Firefox Developer Edition.app"
 end
