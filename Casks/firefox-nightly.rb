@@ -1,118 +1,118 @@
-cask 'firefox-nightly' do
+cask "firefox-nightly" do
   version :latest
   sha256 :no_check # required as upstream package is updated in-place
 
-  language 'cs' do
-    'cs'
+  language "cs" do
+    "cs"
   end
 
-  language 'de' do
-    'de'
+  language "de" do
+    "de"
   end
 
-  language 'en-GB' do
-    'en-GB'
+  language "en-GB" do
+    "en-GB"
   end
 
-  language 'en', default: true do
-    'en-US'
+  language "en", default: true do
+    "en-US"
   end
 
-  language 'eo' do
-    'eo'
+  language "eo" do
+    "eo"
   end
 
-  language 'es-AR' do
-    'es-AR'
+  language "es-AR" do
+    "es-AR"
   end
 
-  language 'es-CL' do
-    'es-CL'
+  language "es-CL" do
+    "es-CL"
   end
 
-  language 'es-ES' do
-    'es-ES'
+  language "es-ES" do
+    "es-ES"
   end
 
-  language 'fi' do
-    'fi'
+  language "fi" do
+    "fi"
   end
 
-  language 'fr' do
-    'fr'
+  language "fr" do
+    "fr"
   end
 
-  language 'gl' do
-    'gl'
+  language "gl" do
+    "gl"
   end
 
-  language 'in' do
-    'hi-IN'
+  language "in" do
+    "hi-IN"
   end
 
-  language 'it' do
-    'it'
+  language "it" do
+    "it"
   end
 
-  language 'ja' do
-    'ja-JP-mac'
+  language "ja" do
+    "ja-JP-mac"
   end
 
-  language 'ko' do
-    'ko'
+  language "ko" do
+    "ko"
   end
 
-  language 'nl' do
-    'nl'
+  language "nl" do
+    "nl"
   end
 
-  language 'pl' do
-    'pl'
+  language "pl" do
+    "pl"
   end
 
-  language 'pt-BR' do
-    'pt-BR'
+  language "pt-BR" do
+    "pt-BR"
   end
 
-  language 'pt' do
-    'pt'
+  language "pt" do
+    "pt"
   end
 
-  language 'ru' do
-    'ru'
+  language "ru" do
+    "ru"
   end
 
-  language 'tr' do
-    'tr'
+  language "tr" do
+    "tr"
   end
 
-  language 'uk' do
-    'uk'
+  language "uk" do
+    "uk"
   end
 
-  language 'zh-TW' do
-    'zh-TW'
+  language "zh-TW" do
+    "zh-TW"
   end
 
-  language 'zh' do
-    'zh-CN'
+  language "zh" do
+    "zh-CN"
   end
 
   # download-installer.cdn.mozilla.net/pub/firefox/nightly was verified as official when first introduced to the cask
   url do
-    require 'open-uri'
-    base_url = 'https://download-installer.cdn.mozilla.net/pub/firefox/nightly'
-    builds_url = "#{base_url}/latest-mozilla-central#{language == 'en-US' ? '' : '-l10n'}/"
-    latest_build_filename = URI(builds_url).open.read.scan(%r{<td><a href="/pub/firefox/nightly/([^\"]+\.mac\.dmg)">}).flatten.grep(%r{\.#{language}\.mac\.dmg}).max
+    require "open-uri"
+    base_url = "https://download-installer.cdn.mozilla.net/pub/firefox/nightly"
+    builds_url = "#{base_url}/latest-mozilla-central#{language == "en-US" ? "" : "-l10n"}/"
+    latest_build_filename = URI(builds_url).open.read.scan(%r{<td><a href="/pub/firefox/nightly/([^"]+\.mac\.dmg)">}).flatten.grep(/\.#{language}\.mac\.dmg/).max
     "#{base_url}/#{latest_build_filename}"
   end
-  name 'Mozilla Firefox'
-  homepage 'https://www.mozilla.org/firefox/channel/desktop/#nightly'
+  name "Mozilla Firefox"
+  homepage "https://www.mozilla.org/firefox/channel/desktop/#nightly"
 
-  app 'Firefox Nightly.app'
+  app "Firefox Nightly.app"
 
   zap trash: [
-               '~/Library/Application Support/Firefox',
-               '~/Library/Caches/Firefox',
-             ]
+    "~/Library/Application Support/Firefox",
+    "~/Library/Caches/Firefox",
+  ]
 end

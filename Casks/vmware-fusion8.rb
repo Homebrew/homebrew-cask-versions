@@ -1,14 +1,14 @@
-cask 'vmware-fusion8' do
-  version '8.5.10-7527438'
-  sha256 'f81f4dbbb27b12eb3a31e96df4207a7e564a2f98f1b32eb1c4d9453308ef3ffe'
+cask "vmware-fusion8" do
+  version "8.5.10-7527438"
+  sha256 "f81f4dbbb27b12eb3a31e96df4207a7e564a2f98f1b32eb1c4d9453308ef3ffe"
 
   url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-#{version}.dmg"
-  name 'VMware Fusion'
-  homepage 'https://www.vmware.com/products/fusion.html'
+  name "VMware Fusion"
+  homepage "https://www.vmware.com/products/fusion.html"
 
   auto_updates true
 
-  app 'VMware Fusion.app'
+  app "VMware Fusion.app"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmnet-bridge"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmnet-cfgcli"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmnet-cli"
@@ -36,7 +36,7 @@ cask 'vmware-fusion8' do
 
   postflight do
     system_command "#{appdir}/VMware Fusion.app/Contents/Library/Initialize VMware Fusion.tool",
-                   args: ['set'],
+                   args: ["set"],
                    sudo: true
   end
 
@@ -45,27 +45,27 @@ cask 'vmware-fusion8' do
   end
 
   zap trash: [
-               '/Library/Application Support/VMware',
-               '/Library/Logs/VMware Fusion Services.log',
-               '/Library/Logs/VMware USB Arbitrator Service.log',
-               '/Library/Logs/VMware',
-               '/Library/Preferences/VMware Fusion',
-               '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.vmware.fusion.sfl*',
-               '~/Library/Application Support/VMware Fusion',
-               '~/Library/Caches/com.vmware.fusion',
-               '~/Library/Logs/VMware Fusion',
-               '~/Library/Logs/VMware Graphics Service.log',
-               '~/Library/Logs/VMware',
-               '~/Library/Preferences/VMware Fusion',
-               '~/Library/Preferences/com.vmware.fusion.plist',
-               '~/Library/Preferences/com.vmware.fusion.plist.lockfile',
-               '~/Library/Preferences/com.vmware.fusionDaemon.plist',
-               '~/Library/Preferences/com.vmware.fusionDaemon.plist.lockfile',
-               '~/Library/Preferences/com.vmware.fusionStartMenu.plist',
-               '~/Library/Preferences/com.vmware.fusionStartMenu.plist.lockfile',
-               '~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist',
-               '~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist.lockfile',
-               '~/Library/Saved Application State/com.vmware.fusion.savedState',
-               '~/Library/WebKit/com.vmware.fusion',
-             ]
+    "/Library/Application Support/VMware",
+    "/Library/Logs/VMware Fusion Services.log",
+    "/Library/Logs/VMware USB Arbitrator Service.log",
+    "/Library/Logs/VMware",
+    "/Library/Preferences/VMware Fusion",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.vmware.fusion.sfl*",
+    "~/Library/Application Support/VMware Fusion",
+    "~/Library/Caches/com.vmware.fusion",
+    "~/Library/Logs/VMware Fusion",
+    "~/Library/Logs/VMware Graphics Service.log",
+    "~/Library/Logs/VMware",
+    "~/Library/Preferences/VMware Fusion",
+    "~/Library/Preferences/com.vmware.fusion.plist",
+    "~/Library/Preferences/com.vmware.fusion.plist.lockfile",
+    "~/Library/Preferences/com.vmware.fusionDaemon.plist",
+    "~/Library/Preferences/com.vmware.fusionDaemon.plist.lockfile",
+    "~/Library/Preferences/com.vmware.fusionStartMenu.plist",
+    "~/Library/Preferences/com.vmware.fusionStartMenu.plist.lockfile",
+    "~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist",
+    "~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist.lockfile",
+    "~/Library/Saved Application State/com.vmware.fusion.savedState",
+    "~/Library/WebKit/com.vmware.fusion",
+  ]
 end
