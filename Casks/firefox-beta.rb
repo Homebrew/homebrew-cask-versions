@@ -1,114 +1,114 @@
-cask 'firefox-beta' do
+cask "firefox-beta" do
   version :latest
   sha256 :no_check
 
-  language 'cs' do
-    'cs'
+  language "cs" do
+    "cs"
   end
 
-  language 'de' do
-    'de'
+  language "de" do
+    "de"
   end
 
-  language 'en-GB' do
-    'en-GB'
+  language "en-GB" do
+    "en-GB"
   end
 
-  language 'en', default: true do
-    'en-US'
+  language "en", default: true do
+    "en-US"
   end
 
-  language 'es-AR' do
-    'es-AR'
+  language "es-AR" do
+    "es-AR"
   end
 
-  language 'es-CL' do
-    'es-CL'
+  language "es-CL" do
+    "es-CL"
   end
 
-  language 'es-ES' do
-    'es-ES'
+  language "es-ES" do
+    "es-ES"
   end
 
-  language 'fi' do
-    'fi'
+  language "fi" do
+    "fi"
   end
 
-  language 'fr' do
-    'fr'
+  language "fr" do
+    "fr"
   end
 
-  language 'gl' do
-    'gl'
+  language "gl" do
+    "gl"
   end
 
-  language 'in' do
-    'hi-IN'
+  language "in" do
+    "hi-IN"
   end
 
-  language 'it' do
-    'it'
+  language "it" do
+    "it"
   end
 
-  language 'ja' do
-    'ja-JP-mac'
+  language "ja" do
+    "ja-JP-mac"
   end
 
-  language 'nl' do
-    'nl'
+  language "nl" do
+    "nl"
   end
 
-  language 'pl' do
-    'pl'
+  language "pl" do
+    "pl"
   end
 
-  language 'pt-BR' do
-    'pt-BR'
+  language "pt-BR" do
+    "pt-BR"
   end
 
-  language 'pt' do
-    'pt-PT'
+  language "pt" do
+    "pt-PT"
   end
 
-  language 'ru' do
-    'ru'
+  language "ru" do
+    "ru"
   end
 
-  language 'uk' do
-    'uk'
+  language "uk" do
+    "uk"
   end
 
-  language 'zh-TW' do
-    'zh-TW'
+  language "zh-TW" do
+    "zh-TW"
   end
 
-  language 'zh' do
-    'zh-CN'
+  language "zh" do
+    "zh-CN"
   end
 
   url "https://download.mozilla.org/?product=firefox-beta-latest-ssl&os=osx&lang=#{language}"
-  name 'Mozilla Firefox'
-  homepage 'https://www.mozilla.org/firefox/channel/desktop/#beta'
+  name "Mozilla Firefox"
+  homepage "https://www.mozilla.org/firefox/channel/desktop/#beta"
 
   conflicts_with cask: [
-                         'firefox',
-                         'firefox-esr',
-                       ]
+    "firefox",
+    "firefox-esr",
+  ]
 
-  app 'Firefox.app'
+  app "Firefox.app"
 
   zap trash: [
-               '/Library/Logs/DiagnosticReports/firefox_*',
-               '~/Library/Application Support/Firefox',
-               '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.firefox.sfl*',
-               '~/Library/Caches/Firefox',
-               '~/Library/Caches/Mozilla/updates/Applications/Firefox',
-               '~/Library/Preferences/org.mozilla.firefox.plist',
-             ],
+    "/Library/Logs/DiagnosticReports/firefox_*",
+    "~/Library/Application Support/Firefox",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.firefox.sfl*",
+    "~/Library/Caches/Firefox",
+    "~/Library/Caches/Mozilla/updates/Applications/Firefox",
+    "~/Library/Preferences/org.mozilla.firefox.plist",
+  ],
       rmdir: [
-               '~/Library/Application Support/Mozilla', # May also contain non-Firefox data
-               '~/Library/Caches/Mozilla/updates/Applications',
-               '~/Library/Caches/Mozilla/updates',
-               '~/Library/Caches/Mozilla',
-             ]
+        "~/Library/Application Support/Mozilla", # May also contain non-Firefox data
+        "~/Library/Caches/Mozilla/updates/Applications",
+        "~/Library/Caches/Mozilla/updates",
+        "~/Library/Caches/Mozilla",
+      ]
 end
