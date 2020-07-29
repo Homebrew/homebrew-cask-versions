@@ -1,6 +1,6 @@
 cask "termius-beta" do
-  version "6.2.2"
-  sha256 "9007c2b6ffa77cfaa6cdcfe83d5a47bcbd5f88f3934a9c7e861146b9fa9a0bfe"
+  version "6.2.3"
+  sha256 "b2b4386156454158fdc6c48663a7332d0dfda9f34a90be052eedd32b798935cd"
 
   url "https://www.termius.com/beta/download/mac/Termius+Beta.dmg"
   name "Termius Beta"
