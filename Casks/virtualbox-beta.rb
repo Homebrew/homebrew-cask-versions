@@ -34,7 +34,8 @@ cask "virtualbox-beta" do
       ]
 
   postflight do
-    # If VirtualBox is installed before `/usr/local/lib/pkgconfig` is created by Homebrew, it creates it itself with incorrect permissions that break other packages
+    # If VirtualBox is installed before `/usr/local/lib/pkgconfig` is created by Homebrew,
+    # it creates it itself with incorrect permissions that break other packages.
     # See https://github.com/Homebrew/homebrew-cask/issues/68730#issuecomment-534363026
     set_ownership "/usr/local/lib/pkgconfig"
   end
