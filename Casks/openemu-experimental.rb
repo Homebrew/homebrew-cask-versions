@@ -16,6 +16,9 @@ cask "openemu-experimental" do
   name "OpenEmu"
   homepage "https://openemu.org/"
 
+  auto_updates true
+  conflicts_with cask: "openemu"
+
   app "OpenEmu.app"
 
   zap trash: [
