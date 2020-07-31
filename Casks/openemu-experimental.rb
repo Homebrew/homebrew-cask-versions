@@ -1,8 +1,5 @@
 cask "openemu-experimental" do
-  if MacOS.version <= :yosemite
-    version "1.0.4"
-    sha256 "23b99cf31a11f84e1110c6ce9bf503b6b479583e5229987b6c663bacfed73f06"
-  elsif MacOS.version <= :high_sierra
+  if MacOS.version <= :high_sierra
     version "2.0.9.1"
     sha256 "62c44e823fef65c583cbf5e6f84faa03618d713f45610f73bc23fb34cbf64762"
   else
