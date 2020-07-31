@@ -6,12 +6,48 @@ cask "thunderbird-beta" do
     "cs"
   end
 
+  language "de" do
+    "de"
+  end
+
   language "en-GB" do
     "en-GB"
   end
 
   language "en", default: true do
     "en-US"
+  end
+
+  language "fr" do
+    "fr"
+  end
+
+  language "gl" do
+    "gl"
+  end
+
+  language "it" do
+    "it"
+  end
+
+  language "ja" do
+    "ja-JP-mac"
+  end
+
+  language "nl" do
+    "nl"
+  end
+
+  language "pl" do
+    "pl"
+  end
+
+  language "pt" do
+    "pt-PT"
+  end
+
+  language "pt-BR" do
+    "pt-BR"
   end
 
   language "ru" do
@@ -30,9 +66,10 @@ cask "thunderbird-beta" do
     "zh-CN"
   end
 
+  # download.mozilla.org/ was verified as official when first introduced to the cask
   url "https://download.mozilla.org/?product=thunderbird-beta-latest-SSL&os=osx&lang=#{language}"
   name "Mozilla Thunderbird"
-  homepage "https://www.mozilla.org/en-US/thunderbird/beta/all/"
+  homepage "https://www.thunderbird.net/en-US/thunderbird/beta/all/"
 
   conflicts_with cask: "thunderbird"
 
