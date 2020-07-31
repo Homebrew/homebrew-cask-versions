@@ -12,8 +12,8 @@ cask "java6" do
 
     uninstall pkgutil: "com.apple.pkg.JavaForMacOSX107"
   else
-    artifact "JavaForOSX/JavaForOSX.pkg/Payload/Library/Java/JavaVirtualMachines" \
-             "/1.6.0.jdk", target: "/Library/Java/JavaVirtualMachines/1.6.0.jdk"
+    artifact "JavaForOSX/JavaForOSX.pkg/Payload/Library/Java/JavaVirtualMachines/1.6.0.jdk",
+             target: "/Library/Java/JavaVirtualMachines/1.6.0.jdk"
 
     preflight do
       system_command "pkgutil", chdir: staged_path, args: ["--expand-full", "JavaForOSX.pkg", "JavaForOSX"]
