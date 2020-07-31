@@ -1,14 +1,20 @@
 cask "openemu-experimental" do
-  version "2.2.1"
-  sha256 "8977f563868a312b72298dc7cd2b8767c21b440bae598d16a7d3916a98d870e8"
+  if MacOS.version <= :yosemite
+    version "1.0.4"
+    sha256 "23b99cf31a11f84e1110c6ce9bf503b6b479583e5229987b6c663bacfed73f06"
+  elsif MacOS.version <= :high_sierra
+    version "2.0.9.1"
+    sha256 "62c44e823fef65c583cbf5e6f84faa03618d713f45610f73bc23fb34cbf64762"
+  else
+    version "2.2.1"
+    sha256 "8977f563868a312b72298dc7cd2b8767c21b440bae598d16a7d3916a98d870e8"
+  end
 
   # github.com/OpenEmu/OpenEmu/ was verified as official when first introduced to the cask
   url "https://github.com/OpenEmu/OpenEmu/releases/download/v#{version}/OpenEmu_#{version}-experimental.zip"
   appcast "https://github.com/OpenEmu/OpenEmu/releases.atom"
   name "OpenEmu"
   homepage "https://openemu.org/"
-
-  depends_on macos: ">= :el_capitan"
 
   app "OpenEmu.app"
 
