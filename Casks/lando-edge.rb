@@ -8,6 +8,7 @@ cask "lando-edge" do
   name "Lando Edge"
   homepage "https://docs.lando.dev/"
 
+  conflicts_with cask: "lando"
   depends_on cask: "docker"
 
   pkg "LandoInstaller.pkg",
