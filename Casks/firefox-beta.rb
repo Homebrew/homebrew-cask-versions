@@ -5,83 +5,63 @@ cask "firefox-beta" do
   language "cs" do
     "cs"
   end
-
   language "de" do
     "de"
   end
-
   language "en-GB" do
     "en-GB"
   end
-
   language "en", default: true do
     "en-US"
   end
-
   language "es-AR" do
     "es-AR"
   end
-
   language "es-CL" do
     "es-CL"
   end
-
   language "es-ES" do
     "es-ES"
   end
-
   language "fi" do
     "fi"
   end
-
   language "fr" do
     "fr"
   end
-
   language "gl" do
     "gl"
   end
-
   language "in" do
     "hi-IN"
   end
-
   language "it" do
     "it"
   end
-
   language "ja" do
     "ja-JP-mac"
   end
-
   language "nl" do
     "nl"
   end
-
   language "pl" do
     "pl"
   end
-
   language "pt-BR" do
     "pt-BR"
   end
-
   language "pt" do
     "pt-PT"
   end
-
   language "ru" do
     "ru"
   end
-
   language "uk" do
     "uk"
   end
-
   language "zh-TW" do
     "zh-TW"
   end
-
   language "zh" do
     "zh-CN"
   end

@@ -5,19 +5,15 @@ cask "thunderbird-daily" do
   language "cs" do
     "cs"
   end
-
   language "en", default: true do
     "en-US"
   end
-
   language "ja" do
     "ja-JP-mac"
   end
-
   language "ru" do
     "ru"
   end
-
   language "uk" do
     "uk"
   end
