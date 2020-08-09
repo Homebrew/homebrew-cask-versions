@@ -5,11 +5,9 @@ cask "microsoft-office-2011" do
   language "de" do
     "de-DE"
   end
-
   language "en", default: true do
     "en-US"
   end
-
   language "ja" do
     "ja-JP"
   end
