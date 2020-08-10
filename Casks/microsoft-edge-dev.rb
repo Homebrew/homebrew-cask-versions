@@ -1,6 +1,6 @@
 cask "microsoft-edge-dev" do
-  version "86.0.587.0"
-  sha256 "1124b2e814d2bbed0219d455cc614da3f3318bdb4067e5ce41525575558e2819"
+  version "86.0.594.1"
+  sha256 "ba42f4dd57e7d7fc0db6cc57f5e012344a9eb3005af86313fc0ee14beebad81f"
 
   # officecdn-microsoft-com.akamaized.net/ was verified as official when first introduced to the cask
   url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeDev-#{version}.pkg"
@@ -9,21 +9,25 @@ cask "microsoft-edge-dev" do
   homepage "https://www.microsoftedgeinsider.com/"
 
   auto_updates true
+  depends_on cask: "microsoft-auto-update"
 
-  pkg "MicrosoftEdgeDev-#{version}.pkg"
+  pkg "MicrosoftEdgeDev-#{version}.pkg",
+      choices: [
+        {
+          "choiceIdentifier" => "com.microsoft.package.Microsoft_AutoUpdate.app", # Office16_all_autoupdate.pkg
+          "choiceAttribute"  => "selected",
+          "attributeSetting" => 0,
+        },
+      ]
 
-  uninstall pkgutil: "com.microsoft.edgemac.Dev",
+  uninstall pkgutil: "com.microsoft.edgemac.Dev.Dev",
             rmdir:   "/Library/Application Support/Microsoft"
 
-  zap launchctl: [
-    "com.microsoft.autoupdate.helper",
-    "com.microsoft.update.agent",
-  ],
-      pkgutil:   "com.microsoft.package.Microsoft_AutoUpdate.app",
-      delete:    "/Library/PrivilegedHelperTools/com.microsoft.autoupdate.helper",
-      trash:     [
-        "~/Library/Preferences/com.microsoft.edgemac.Dev.plist",
-        "/Library/Application Support/Microsoft",
-        "~/Library/Application Support/Microsoft Edge Dev",
-      ]
+  zap trash: [
+    "/Library/Application Support/Microsoft",
+    "~/Library/Application Support/Microsoft Edge Dev",
+    "~/Library/Caches/Microsoft Edge Dev",
+    "~/Library/Preferences/com.microsoft.edgemac.Dev.plist",
+    "~/Library/Saved Application State/com.microsoft.edgemac.Dev.savedState",
+  ]
 end
