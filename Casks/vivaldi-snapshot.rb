@@ -1,13 +1,13 @@
 cask "vivaldi-snapshot" do
-  version "3.2.1967.38"
-  sha256 "c2e38bfee9433524524f481a044f6fc5f615b67ba6d7b3da9027be0684b2249f"
+  version "3.3.2001.3"
+  sha256 "491a1487e5d8513a4743e0ecad14e31541db260c8ed217982a8f9a920a7c558a"
 
   url "https://downloads.vivaldi.com/snapshot/Vivaldi.#{version}.dmg"
-  appcast "https://update.vivaldi.com/update/1.0/mac/appcast.xml"
+  appcast "https://update.vivaldi.com/update/1.0/snapshot/mac/appcast.xml"
   name "Vivaldi"
   homepage "https://vivaldi.com/"
 
   auto_updates true
 
-  app "Vivaldi.app"
+  app "Vivaldi Snapshot.app"
 end
