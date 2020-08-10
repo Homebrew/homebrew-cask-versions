@@ -4,7 +4,7 @@ cask "iterm2-beta" do
   sha256 "5951a67574fb08528e581baf9224a3a3ddf609046352f0b44b663214a1754e68"
 
   url "https://iterm2.com/downloads/beta/iTerm2-#{version.dots_to_underscores}.zip"
-  appcast "https://iterm2.com/appcasts/testing3.xml"
+  appcast "https://iterm2.com/appcasts/testing_modern.xml"
   name "iTerm2"
   homepage "https://www.iterm2.com/"
 
