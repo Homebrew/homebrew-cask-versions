@@ -2,13 +2,12 @@ cask "pext-nightly" do
   version :latest
   sha256 :no_check
 
-  # api.github.com/repos/Pext/Pext/ was verified as official when first introduced to the cask
+  # github.com was verified as official when first introduced to the cask
   url do
     require "open-uri"
-    require "json"
-
-    JSON.parse(open("https://api.github.com/repos/Pext/Pext/releases/tags/continuous").read)["assets"]
-        .find { |r| r["browser_download_url"] =~ %r{/.*\.dmg} }["browser_download_url"]
+    base_url = "https://github.com/Pext/Pext/releases/tag/continuous/"
+    file = URI(base_url).open.read.scan(/href="([^"]+.dmg)"/).flatten.first
+    "https://github.com#{file}"
   end
   name "Pext"
   homepage "https://pext.io/"
