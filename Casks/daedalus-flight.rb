@@ -5,6 +5,7 @@ cask "daedalus-flight" do
   # update-cardano-mainnet-flight.iohk.io/ was verified as official when first introduced to the cask
   url "https://update-cardano-mainnet-flight.iohk.io/daedalus-#{version.before_comma}-mainnet_flight-#{version.after_comma}.pkg"
   name "Daedalus Flight"
+  desc "The pre-release version of the Daedalus wallet for Cardano"
   homepage "https://daedaluswallet.io/en/flight/"
 
   depends_on macos: ">= :high_sierra"
