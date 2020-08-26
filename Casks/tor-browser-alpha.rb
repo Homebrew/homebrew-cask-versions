@@ -5,7 +5,7 @@ cask "tor-browser-alpha" do
   url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-osx64_en-US.dmg"
   appcast "https://www.torproject.org/download/alpha/"
   name "Tor Browser"
-  desc "Web browser application focusing on security"
+  desc "Web browser focusing on security"
   homepage "https://www.torproject.org/"
 
   auto_updates true
