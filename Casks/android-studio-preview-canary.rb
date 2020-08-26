@@ -8,7 +8,6 @@ cask "android-studio-preview-canary" do
   homepage "https://developer.android.com/studio/preview/"
 
   conflicts_with cask: [
-    "android-studio",
     "android-studio-preview-beta",
   ]
 
