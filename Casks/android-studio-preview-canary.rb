@@ -7,9 +7,7 @@ cask "android-studio-preview-canary" do
   name "Android Studio Preview (Canary)"
   homepage "https://developer.android.com/studio/preview/"
 
-  conflicts_with cask: [
-    "android-studio-preview-beta",
-  ]
+  conflicts_with cask: "android-studio-preview-beta"
 
   app "Android Studio #{version.major_minor} Preview.app"
 
