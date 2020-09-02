@@ -2,9 +2,8 @@ cask "blender-lts" do
   version "2.83.5"
   sha256 "00a8e6ef52b84256ab64d33df3a079ebe5ac743aead06b74cd99987382be7f52"
 
-  url "https://download.blender.org/release/Blender#{version.major_minor.delete("a-z")}/blender-#{version}-macOS.dmg"
-  appcast "https://download.blender.org/release/",
-          must_contain: version.major_minor.delete("a-z")
+  url "https://download.blender.org/release/Blender#{version.major_minor}/blender-#{version}-macOS.dmg"
+  appcast "https://www.blender.org/download/lts/"
   name "Blender"
   desc "Free and open-source 3D creation suite"
   homepage "https://www.blender.org/"
