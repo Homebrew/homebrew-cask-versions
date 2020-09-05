@@ -1,9 +1,9 @@
 cask "openscad-snapshot" do
-  version "2019.12.20"
-  sha256 "e7847469f4159e4a9d52bd5aa5ec1af4267c801281c6c68ac5dd3b469110098a"
+  version "2020.09.03"
+  sha256 "074d011f0db0e0779e6a7e8a8ad367d69623c4ae3c268c15c6e1cba6527a3d1e"
 
   url "https://files.openscad.org/snapshots/OpenSCAD-#{version}.dmg"
-  appcast "https://www.openscad.org/inc/mac_snapshot_links.js"
+  appcast "https://files.openscad.org/snapshots/.snapshot_macos.js"
   name "OpenSCAD"
   homepage "https://www.openscad.org/downloads.html#snapshots"
 
