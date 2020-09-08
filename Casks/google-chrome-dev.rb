@@ -4,6 +4,7 @@ cask "google-chrome-dev" do
 
   url "https://dl.google.com/chrome/mac/dev/googlechrome.dmg"
   name "Google Chrome"
+  desc "Cross-platform web browser"
   homepage "https://www.google.com/chrome/dev/"
 
   conflicts_with cask: [
