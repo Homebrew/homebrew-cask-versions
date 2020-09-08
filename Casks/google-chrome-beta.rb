@@ -4,6 +4,7 @@ cask "google-chrome-beta" do
 
   url "https://dl.google.com/chrome/mac/beta/googlechrome.dmg"
   name "Google Chrome"
+  desc "Cross-platform web browser"
   homepage "https://www.google.com/chrome/beta/"
 
   conflicts_with cask: [
