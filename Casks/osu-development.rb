@@ -1,6 +1,6 @@
 cask "osu-development" do
-  version "2020.820.0"
-  sha256 "d277523c3d32a24e8eeaf1d216d690a7000255de2504c69327153ad55e04913d"
+  version "2020.903.0"
+  sha256 "de3fe76bd057c2a72a95db930cd603bb7a08bca822adf6b8e1d7117c1e2aaa70"
 
   url "https://github.com/ppy/osu/releases/download/#{version}/osu.app.zip"
   appcast "https://github.com/ppy/osu/releases.atom"
