@@ -1,6 +1,6 @@
 cask "powershell-preview" do
-  version "7.1.0-preview.5"
-  sha256 "b3fdc56b48f4a6ade19a94dbbc0c80531df37998c044c4f0de9776b7f5fe8955"
+  version "7.1.0-preview.7"
+  sha256 "b6156efcce319e89743f47cce21730345dccf79c5dc57e5c6c7137c8d4db4ead"
 
   url "https://github.com/PowerShell/PowerShell/releases/download/v#{version}/powershell-#{version}-osx-x64.pkg"
   appcast "https://github.com/PowerShell/PowerShell/releases.atom"
@@ -8,7 +8,7 @@ cask "powershell-preview" do
   homepage "https://github.com/PowerShell/PowerShell"
 
   depends_on formula: "openssl"
-  depends_on macos: ">= :sierra"
+  depends_on macos: ">= :high_sierra"
 
   pkg "powershell-#{version}-osx-x64.pkg"
 
