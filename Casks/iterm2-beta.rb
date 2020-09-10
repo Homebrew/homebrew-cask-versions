@@ -1,7 +1,7 @@
 cask "iterm2-beta" do
   # note: "2" is not a version number, but an intrinsic part of the product name
-  version "3.4.0beta5"
-  sha256 "a73381af235ba66645cb9d667e8bfae77c3770623e17aa57099c5e9aaa9ddf90"
+  version "3.4.0beta6"
+  sha256 "33bfea412b3c918037c5f7b86a4d683978bebb5a91114f9db3ebb478eb51ad28"
 
   url "https://iterm2.com/downloads/beta/iTerm2-#{version.dots_to_underscores}.zip"
   appcast "https://iterm2.com/appcasts/testing_modern.xml"
@@ -10,7 +10,7 @@ cask "iterm2-beta" do
 
   auto_updates true
   conflicts_with cask: "iterm2"
-  depends_on macos: ">= :sierra"
+  depends_on macos: ">= :mojave"
 
   app "iTerm.app"
 
