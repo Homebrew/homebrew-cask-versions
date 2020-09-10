@@ -9,6 +9,7 @@ cask "transmission-nightly" do
     "#{base_url}#{file}"
   end
   name "Transmission"
+  desc "Open-source BitTorrent client"
   homepage "https://transmissionbt.com/"
 
   conflicts_with cask: "transmission"
