@@ -9,6 +9,7 @@ cask "vlc-nightly" do
     "#{base_url}#{file}"
   end
   name "VLC media player"
+  desc "Open-source cross-platform multimedia player"
   homepage "https://www.videolan.org/vlc/"
 
   conflicts_with cask: "vlc"
