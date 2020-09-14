@@ -9,7 +9,7 @@ cask "docker-edge" do
   homepage "https://www.docker.com/products/docker-desktop"
 
   auto_updates true
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :mojave"
 
   app "Docker.app"
 
