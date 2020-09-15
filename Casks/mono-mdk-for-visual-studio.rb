@@ -3,7 +3,7 @@ cask "mono-mdk-for-visual-studio" do
   sha256 "ebbca4a757d01550ef96e080f8e16f3d419d010cbe7cd5568f5f65834fc34d68"
 
   url "https://download.mono-project.com/archive/#{version.major_minor_patch}/macos-10-universal/MonoFramework-MDK-#{version}.macos10.xamarin.universal.pkg"
-  appcast "https://www.mono-project.com/download/vs/"
+  appcast "https://github.com/mono/mono/releases.atom"
   name "Mono"
   homepage "https://www.mono-project.com/"
 
