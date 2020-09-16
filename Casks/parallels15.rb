@@ -14,9 +14,9 @@ cask "parallels15" do
   app "Parallels Desktop.app"
 
   postflight do
-     system_command "#{appdir}/Parallels Desktop.app/Contents/MacOS/inittool",
-                    args: ["init"],
-                    sudo: true
+    system_command "#{appdir}/Parallels Desktop.app/Contents/MacOS/inittool",
+                   args: ["init"],
+                   sudo: true
   end
 
   uninstall_preflight do
