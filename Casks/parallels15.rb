@@ -11,6 +11,14 @@ cask "parallels15" do
   auto_updates true
   depends_on macos: ">= :sierra"
 
+  app "Parallels Desktop.app"
+
+  postflight do
+     system_command "#{appdir}/Parallels Desktop.app/Contents/MacOS/inittool",
+                    args: ["init"],
+                    sudo: true
+  end
+
   uninstall_preflight do
     set_ownership "#{appdir}/Parallels Desktop.app"
   end
@@ -23,12 +31,6 @@ cask "parallels15" do
     "/usr/local/bin/prlctl",
     "/usr/local/bin/prlexec",
     "/usr/local/bin/prlsrvctl",
-    "/Applications/Parallels Desktop.app",
-    "/Applications/Parallels Desktop.app/Contents/Applications/Parallels Link.app",
-    "/Applications/Parallels Desktop.app/Contents/Applications/Parallels Mounter.app",
-    "/Applications/Parallels Desktop.app/Contents/Applications/Parallels Technical Data Reporter.app",
-    "/Applications/Parallels Desktop.app/Contents/MacOS/Parallels Service.app",
-    "/Applications/Parallels Desktop.app/Contents/MacOS/Parallels VM.app",
   ]
 
   zap trash: [
