@@ -10,19 +10,6 @@ cask "parallels15" do
 
   auto_updates true
   depends_on macos: ">= :sierra"
-  # This .dmg cannot be extracted normally
-  # Original discussion: https://github.com/Homebrew/homebrew-cask/pull/67202
-  container type: :naked
-
-  preflight do
-    system_command "/usr/bin/hdiutil",
-                   args: ["attach", "-nobrowse", "#{staged_path}/ParallelsDesktop-#{version}.dmg"]
-    system_command "/Volumes/Parallels Desktop #{version.major}/Parallels Desktop.app/Contents/MacOS/inittool",
-                   args: ["install", "-t", "#{appdir}/Parallels Desktop.app"],
-                   sudo: true
-    system_command "/usr/bin/hdiutil",
-                   args: ["detach", "/Volumes/Parallels Desktop #{version.major}"]
-  end
 
   uninstall_preflight do
     set_ownership "#{appdir}/Parallels Desktop.app"
