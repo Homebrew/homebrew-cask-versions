@@ -5,6 +5,7 @@ cask "mono-mdk-for-visual-studio" do
   url "https://download.mono-project.com/archive/#{version.major_minor_patch}/macos-10-universal/MonoFramework-MDK-#{version}.macos10.xamarin.universal.pkg"
   appcast "https://github.com/mono/mono/releases.atom"
   name "Mono"
+  desc "Open source implementation of Microsoft's .NET Framework"
   homepage "https://www.mono-project.com/"
 
   conflicts_with cask: "mono-mdk"
