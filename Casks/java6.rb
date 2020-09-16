@@ -5,7 +5,7 @@ cask "java6" do
   # updates.cdn-apple.com/ was verified as official when first introduced to the cask
   url "https://updates.cdn-apple.com/2019/cert/041-88384-20191011-3d8da658-dca4-4a5b-b67c-26e686876403/JavaForOSX.dmg"
   name "Apple Java 6 Standard Edition Development Kit"
-  desc "Legacy Java 6 runtime from Apple"
+  desc "Legacy runtime for the Java programming language"
   homepage "https://support.apple.com/kb/DL1572"
 
   if MacOS.version <= :mojave
