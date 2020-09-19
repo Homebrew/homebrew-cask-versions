@@ -13,6 +13,13 @@ cask "parallels15" do
 
   app "Parallels Desktop.app"
 
+  preflight do
+    system_command "chflags",
+                   args: ["nohidden", "#{staged_path}/Parallels Desktop.app"]
+    system_command "xattr",
+                   args: ["-d", "com.apple.FinderInfo", "#{staged_path}/Parallels Desktop.app"]
+  end
+
   postflight do
     system_command "#{appdir}/Parallels Desktop.app/Contents/MacOS/inittool",
                    args: ["init"],
