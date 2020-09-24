@@ -1,6 +1,6 @@
 cask "android-studio-preview-canary" do
-  version "4.2.0.11,202.6825553"
-  sha256 "f805b4b9fdcffb4e9d8d34e2f7a287a5ad5f14ed4780c8ffc9823a69b46206bd"
+  version "4.2.0.12,202.6847140"
+  sha256 "8f8671b15974e0336ac5b4f3f2f45af4ce3e1599c7724f839bee7073b488ed4b"
 
   # dl.google.com/dl/android/studio/ was verified as official when first introduced to the cask
   url "https://dl.google.com/dl/android/studio/ide-zips/#{version.before_comma}/android-studio-ide-#{version.after_comma}-mac.zip"
