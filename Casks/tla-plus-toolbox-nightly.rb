@@ -5,7 +5,7 @@ cask "tla-plus-toolbox-nightly" do
   # tla.msr-inria.inria.fr/ was verified as official when first introduced to the cask
   url do
     require "open-uri"
-    base_url = "http://tla.msr-inria.inria.fr/tlatoolbox/ci/products/"
+    base_url = "https://tla.msr-inria.inria.fr/tlatoolbox/ci/products/"
     file = URI(base_url).open.read.scan(/href="([^"]+-macosx.cocoa.x86_64.zip)"/).flatten.first
     "#{base_url}#{file}"
   end
