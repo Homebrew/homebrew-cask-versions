@@ -7,7 +7,7 @@ cask "zulu14" do
   name "Azul Zulu Java Standard Edition Development Kit"
   desc "Azul's build of OpenJDK 14"
   homepage "https://www.azul.com/downloads/zulu/zulu-mac/"
-  
+
   depends_on macos: ">= :high_sierra"
 
   pkg "Double-Click to Install Zulu #{version.major}.pkg"
