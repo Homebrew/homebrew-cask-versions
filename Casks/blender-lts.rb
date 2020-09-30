@@ -1,6 +1,6 @@
 cask "blender-lts" do
-  version "2.83.5"
-  sha256 "00a8e6ef52b84256ab64d33df3a079ebe5ac743aead06b74cd99987382be7f52"
+  version "2.83.7"
+  sha256 "0fb29c0ae48b12b2e1cef4d7ebcb4bc68b98ebe3e7c7c56db74c3c0528455148"
 
   url "https://download.blender.org/release/Blender#{version.major_minor}/blender-#{version}-macOS.dmg"
   appcast "https://www.blender.org/download/lts/"
