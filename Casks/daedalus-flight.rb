@@ -9,6 +9,7 @@ cask "daedalus-flight" do
   desc "Pre-release of Daedalus cryptocurrency wallet for ada on the Cardano blockchain"
   homepage "https://daedaluswallet.io/en/flight/"
 
+  auto_updates true
   depends_on macos: ">= :high_sierra"
 
   pkg "daedalus-#{version.before_comma}-mainnet_flight-#{version.after_comma}.pkg"
