@@ -1,6 +1,6 @@
 cask "microsoft-edge-beta" do
-  version "86.0.622.28"
-  sha256 "dc300205d1990dc1ed1371bbf2d3b96aa7910369336fb26e957c393a63e7318c"
+  version "86.0.622.31"
+  sha256 "bfb8a9012ed14e5f116fcb0eeed254a88dd2082fbd4e80a5c3d41a20c72dda12"
 
   # officecdn-microsoft-com.akamaized.net/ was verified as official when first introduced to the cask
   url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeBeta-#{version}.pkg"
