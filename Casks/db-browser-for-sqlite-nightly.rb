@@ -7,7 +7,9 @@ cask "db-browser-for-sqlite-nightly" do
   desc "Database browser for SQLite"
   homepage "https://sqlitebrowser.org/"
 
-  app "DB Browser for SQLite.app", target: "DB Browser for SQLite Nightly.app"
+  conflicts_with cask: "db-browser-for-sqlite"
+
+  app "DB Browser for SQLite.app"
 
   zap trash: [
     "~/Library/Preferences/com.sqlitebrowser.sqlitebrowser.plist",
