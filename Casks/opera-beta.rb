@@ -4,6 +4,7 @@ cask "opera-beta" do
 
   url "https://get.geo.opera.com/pub/opera-beta/#{version}/mac/Opera_beta_#{version}_Setup.dmg"
   name "Opera Beta"
+  desc "Cross-platform web browser"
   homepage "https://www.opera.com/computer/beta"
 
   auto_updates true
