@@ -5,7 +5,7 @@ cask "hamsket-nightly" do
   url do
     require "open-uri"
     base_url = "https://github.com/TheGoddessInari/hamsket/releases"
-    "https://github.com#{URI(base_url).open.read.scan(%r{href="([^"]+nightly/Hamsket-.*.dmg)"}).flatten.first}"
+    "https://github.com#{URI(base_url).open.read.match(%r{href="([^"]+nightly/Hamsket-.*.dmg)"}).to_s}"
   end
   name "Hamsket"
   homepage "https://github.com/TheGoddessInari/hamsket"
