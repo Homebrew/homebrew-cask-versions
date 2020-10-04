@@ -6,7 +6,7 @@ cask "tla-plus-toolbox-nightly" do
   url do
     require "open-uri"
     base_url = "https://tla.msr-inria.inria.fr/tlatoolbox/ci/products/"
-    file = URI(base_url).open.read.scan(/href="([^"]+-macosx.cocoa.x86_64.zip)"/).flatten.first
+    file = URI(base_url).read.match(/href="([^"]+-macosx.cocoa.x86_64.zip)"/).to_s
     "#{base_url}#{file}"
   end
   name "TLA+ Toolbox"
