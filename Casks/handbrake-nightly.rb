@@ -5,7 +5,7 @@ cask "handbrake-nightly" do
   url do
     require "open-uri"
     base_url = "https://handbrake.fr/nightly.php"
-    URI(base_url).open.read.match(/href="([^"]+.dmg)"/).to_s
+    URI(base_url).read[/href="([^"]+.dmg)"/, 1]
   end
   name "HandBrake"
   homepage "https://handbrake.fr/nightly.php"
