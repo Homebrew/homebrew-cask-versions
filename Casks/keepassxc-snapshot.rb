@@ -5,7 +5,7 @@ cask "keepassxc-snapshot" do
   url do
     require "open-uri"
     base_url = "https://snapshot.keepassxc.org/latest/"
-    path = URI(base_url).read[/href="([^"]+-snapshot\.dmg)">/, 1]
+    path = URI(base_url).read[/href="([^"]+-snapshot\.dmg)"/, 1]
     "#{base_url}#{path}"
   end
   name "KeePassXC"
