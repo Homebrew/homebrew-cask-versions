@@ -8,6 +8,7 @@ cask "hamsket-nightly" do
     "https://github.com#{URI(base_url).read[%r{href="([^"]+nightly/Hamsket-.*.dmg)"}, 1]}"
   end
   name "Hamsket"
+  desc "Free and Open Source messaging and emailing app"
   homepage "https://github.com/TheGoddessInari/hamsket"
 
   app "Hamsket.app"
