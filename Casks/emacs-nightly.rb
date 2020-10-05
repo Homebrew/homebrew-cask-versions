@@ -7,6 +7,7 @@ cask "emacs-nightly" do
     URI("https://emacsformacosx.com/atom/daily").read[/href="([^"]+.dmg)"/, 1]
   end
   name "Emacs"
+  desc "GNU Emacs text editor"
   homepage "https://emacsformacosx.com/"
 
   conflicts_with cask:    [
