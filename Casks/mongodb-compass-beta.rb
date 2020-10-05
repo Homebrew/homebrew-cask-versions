@@ -5,6 +5,7 @@ cask "mongodb-compass-beta" do
   url "https://downloads.mongodb.com/compass/beta/mongodb-compass-#{version}-darwin-x64.dmg"
   appcast "https://www.mongodb.com/try/download/compass"
   name "MongoDB Compass"
+  desc "GUI for MongoDB"
   homepage "https://www.mongodb.com/try/download/compass"
 
   app "MongoDB Compass Beta.app"
