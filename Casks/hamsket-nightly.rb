@@ -5,9 +5,10 @@ cask "hamsket-nightly" do
   url do
     require "open-uri"
     base_url = "https://github.com/TheGoddessInari/hamsket/releases"
-    "https://github.com#{URI(base_url).open.read.scan(%r{href="([^"]+nightly/Hamsket-.*.dmg)"}).flatten.first}"
+    "https://github.com#{URI(base_url).read[%r{href="([^"]+nightly/Hamsket-.*.dmg)"}, 1]}"
   end
   name "Hamsket"
+  desc "Free and Open Source messaging and emailing app"
   homepage "https://github.com/TheGoddessInari/hamsket"
 
   app "Hamsket.app"
