@@ -4,8 +4,7 @@ cask "emacs-nightly" do
 
   url do
     require "open-uri"
-    file = URI("https://emacsformacosx.com/atom/daily").open.read.match(/href="([^"]+.dmg)"/).to_s
-    file.to_s
+    URI("https://emacsformacosx.com/atom/daily").read[/href="([^"]+.dmg)"/, 1]
   end
   name "Emacs"
   homepage "https://emacsformacosx.com/"
