@@ -9,6 +9,7 @@ cask "keepassxc-snapshot" do
     "#{base_url}#{path}"
   end
   name "KeePassXC"
+  desc "Password manager app"
   homepage "https://keepassxc.org/"
 
   app "KeePassXC.app"
