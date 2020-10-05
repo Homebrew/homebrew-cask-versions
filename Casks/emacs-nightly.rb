@@ -4,10 +4,10 @@ cask "emacs-nightly" do
 
   url do
     require "open-uri"
-    file = URI("https://emacsformacosx.com/atom/daily").open.read.scan(/href="([^"]+.dmg)"/).flatten.first
-    file.to_s
+    URI("https://emacsformacosx.com/atom/daily").read[/href="([^"]+.dmg)"/, 1]
   end
   name "Emacs"
+  desc "GNU Emacs text editor"
   homepage "https://emacsformacosx.com/"
 
   conflicts_with cask:    [
