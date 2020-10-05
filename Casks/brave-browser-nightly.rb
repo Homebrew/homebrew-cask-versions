@@ -6,9 +6,10 @@ cask "brave-browser-nightly" do
   url do
     require "open-uri"
     appcast = "https://updates.bravesoftware.com/sparkle/Brave-Browser/nightly/appcast.xml"
-    URI(appcast).open.read.match(/enclosure url="([^"]+.dmg)"/).to_s
+    URI(appcast).read[/enclosure url="([^"]+.dmg)"/, 1]
   end
   name "Brave Nightly"
+  desc "Web browser focusing on privacy"
   homepage "https://brave.com/download-nightly/"
 
   app "Brave Browser Nightly.app"
