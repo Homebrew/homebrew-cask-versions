@@ -8,6 +8,7 @@ cask "handbrake-nightly" do
     URI(base_url).read[/href="([^"]+.dmg)"/, 1]
   end
   name "HandBrake"
+  desc "Open-source video transcoder"
   homepage "https://handbrake.fr/nightly.php"
 
   app "HandBrake.app"
