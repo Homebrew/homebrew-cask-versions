@@ -5,7 +5,7 @@ cask "transmission-nightly" do
   url do
     require "open-uri"
     base_url = "https://build.transmissionbt.com/job/trunk-mac/lastSuccessfulBuild/artifact/release/"
-    file = URI(base_url).open.read.scan(/href="([^"]+.dmg)"/).flatten.first
+    file = URI(base_url).read[/href="([^"]+.dmg)"/, 1]
     "#{base_url}#{file}"
   end
   name "Transmission"
