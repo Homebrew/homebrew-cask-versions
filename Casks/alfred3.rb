@@ -1,10 +1,11 @@
 cask "alfred3" do
-  version "3.8.5_970"
-  sha256 "b3b2341ac9574b0a6a78b62c747e852a41ecd54fae921e446e05b076166b5102"
+  version "3.8.6_972"
+  sha256 "20b111cbd22fb57f8a1d11348e12b55f9725c8eca6517790b1df8e2cd9c9a9b8"
 
   url "https://cachefly.alfredapp.com/Alfred_#{version}.dmg"
   appcast "https://www.alfredapp.com/app/update/general.xml"
   name "Alfred"
+  desc "Application launcher and productivity software"
   homepage "https://www.alfredapp.com/"
 
   auto_updates true
