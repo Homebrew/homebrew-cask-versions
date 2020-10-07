@@ -1,10 +1,11 @@
 cask "dotnet-sdk-preview" do
-  version "5.0.100-preview.8.20417.9,6ff7a8f6-9e28-46bc-8d0d-f7fbc2c13a59:1c576dee55c50ce071c0b7bb504906aa"
-  sha256 "5e2a21820dd6dbbe81bb1d69e4fafe8c1a62a3be8f85e4d3a9f34d0ffb265073"
+  version "5.0.100-rc.1.20452.10,288c8d33-c0e0-4ab2-a9c0-7278f4e2490f:68c2c7c6e1d971d29caa12302e9352cf"
+  sha256 "02a4954e933ef9bb782940f44ae83f8506589acb5605408a8ce67ecbe8628135"
 
   url "https://download.visualstudio.microsoft.com/download/pr/#{version.after_comma.before_colon}/#{version.after_colon}/dotnet-sdk-#{version.before_comma}-osx-x64.pkg"
   appcast "https://dotnet.microsoft.com/download/dotnet-core/#{version.major_minor}"
   name ".NET Core SDK"
+  desc "Preview  relaase of the .NET Core SDK"
   homepage "https://www.microsoft.com/net/core#macos"
 
   conflicts_with cask: [
