@@ -5,7 +5,7 @@ cask "dotnet-sdk-preview" do
   url "https://download.visualstudio.microsoft.com/download/pr/#{version.after_comma.before_colon}/#{version.after_colon}/dotnet-sdk-#{version.before_comma}-osx-x64.pkg"
   appcast "https://dotnet.microsoft.com/download/dotnet-core/#{version.major_minor}"
   name ".NET Core SDK"
-  desc "Preview  relaase of the .NET Core SDK"
+  desc "Preview release of the .NET Core SDK"
   homepage "https://www.microsoft.com/net/core#macos"
 
   conflicts_with cask: [
