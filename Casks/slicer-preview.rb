@@ -1,4 +1,4 @@
-cask "slicer-nightly" do
+cask "slicer-preview" do
   version :latest
   sha256 :no_check
 
