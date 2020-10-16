@@ -1,4 +1,6 @@
-cask "java-beta" do
+# frozen_string_literal: true
+
+cask("java-beta") do
   version "16,20"
   sha256 "5cc94a6165d433c7070464edebaf971d563f90cda7f59196dffadc03eab40961"
 
