@@ -1,5 +1,5 @@
 cask "affinity-designer-beta" do
-  version "1.9.0.3"
+  version "1.9.0.4"
   sha256 "6816953f38ac48440cf770e8c36f71fd07a31360ed77c031dc432500a3795416"
 
   # affinity-beta.s3.amazonaws.com/ was verified as official when first introduced to the cask
