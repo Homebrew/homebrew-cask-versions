@@ -4,7 +4,7 @@ cask "termius-beta" do
 
   url "https://www.termius.com/beta/download/mac/Termius+Beta.dmg"
   name "Termius Beta"
-  desc "Command-line solution for system administrators and network engineers"
+  desc "Cross-platform SSH client"
   homepage "https://www.termius.com/beta-program"
 
   app "Termius Beta.app"
