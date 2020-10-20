@@ -67,6 +67,7 @@ cask "firefox-esr" do
   appcast "https://www.macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://download.mozilla.org/%3Fproduct=firefox-esr-latest-ssl%26os=osx"
   name "Mozilla Firefox ESR"
   name "Mozilla Firefox Extended Support Release"
+  desc "Cross-platform web browser"
   homepage "https://www.mozilla.org/firefox/organizations/"
 
   conflicts_with cask: [
