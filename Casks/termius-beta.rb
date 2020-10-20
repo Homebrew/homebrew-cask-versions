@@ -1,9 +1,10 @@
 cask "termius-beta" do
-  version "6.6.0"
-  sha256 "e22229b2fc183475597f716c3f34b3fd1d4f8ebedd450747b10d462766ec97ae"
+  version "7.0.0"
+  sha256 "ad32699788b6dc6b214340d121247aae459d4f34bed2302f5eb0b208bc68d9bb"
 
   url "https://www.termius.com/beta/download/mac/Termius+Beta.dmg"
   name "Termius Beta"
+  desc "Cross-platform SSH client"
   homepage "https://www.termius.com/beta-program"
 
   app "Termius Beta.app"
