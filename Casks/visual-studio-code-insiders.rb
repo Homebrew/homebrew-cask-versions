@@ -7,6 +7,7 @@ cask "visual-studio-code-insiders" do
   appcast "https://vscode-update.azurewebsites.net/api/update/darwin/insider/VERSION"
   name "Microsoft Visual Studio Code"
   name "VS Code - Insiders"
+  desc "Integrated development environment"
   homepage "https://code.visualstudio.com/insiders"
 
   auto_updates true
