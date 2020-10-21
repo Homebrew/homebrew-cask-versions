@@ -4,7 +4,8 @@ cask "corretto8" do
 
   url "https://corretto.aws/downloads/resources/#{version}/amazon-corretto-#{version}-macosx-x64.pkg"
   appcast "https://www.macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://corretto.aws/downloads/latest/amazon-corretto-8-x64-macos-jdk.pkg"
-  name "Amazon Corretto"
+  name "Amazon Corretto JDK"
+  desc "OpenJDK distribution from Amazon"
   homepage "https://corretto.aws/"
 
   pkg "amazon-corretto-#{version}-macosx-x64.pkg"
