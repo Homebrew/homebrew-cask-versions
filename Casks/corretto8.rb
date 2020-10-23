@@ -1,6 +1,6 @@
 cask "corretto8" do
-  version "8.265.01.1"
-  sha256 "2244f6f5603a08257d57e25dddc17eceb33aa948d34d82be4ea22c34cba1004f"
+  version "8.272.10.3"
+  sha256 "307d27c21f155021facd9c4791cf9df55f157e296ea10a6609a390495d606ba7"
 
   url "https://corretto.aws/downloads/resources/#{version}/amazon-corretto-#{version}-macosx-x64.pkg"
   appcast "https://www.macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://corretto.aws/downloads/latest/amazon-corretto-8-x64-macos-jdk.pkg"
