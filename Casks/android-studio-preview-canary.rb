@@ -6,7 +6,7 @@ cask "android-studio-preview-canary" do
   url "https://dl.google.com/dl/android/studio/ide-zips/#{version.before_comma}/android-studio-ide-#{version.after_comma}-mac.zip"
   name "Android Studio Preview (Canary)"
   desc "Tools for building Android applications"
-  homepage "https://developer.android.com/studio/preview"
+  homepage "https://developer.android.com/studio/preview/"
 
   conflicts_with cask: "android-studio-preview-beta"
 
