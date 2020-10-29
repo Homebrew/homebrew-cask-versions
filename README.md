@@ -17,6 +17,10 @@ You can now install alternate versions of Casks.
 $ brew cask install iterm2-beta
 ```
 
+## Submitting a Cask to this repository
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Acceptable Casks
 
 `homebrew/cask-versions` is not intended to be used for all and any old versions you personally require. Casks submitted here should be expected to be used by a reasonable number of people and supported by contributors long-term.
