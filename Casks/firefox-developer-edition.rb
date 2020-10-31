@@ -50,5 +50,7 @@ cask "firefox-developer-edition" do
   desc "Cross-platform web browser"
   homepage "https://www.mozilla.org/firefox/developer/"
 
+  depends_on macos: ">= :sierra"
+
   app "Firefox Developer Edition.app"
 end

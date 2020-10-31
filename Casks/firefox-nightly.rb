@@ -90,6 +90,8 @@ cask "firefox-nightly" do
   desc "Cross-platform web browser"
   homepage "https://www.mozilla.org/firefox/channel/desktop/#nightly"
 
+  depends_on macos: ">= :sierra"
+
   app "Firefox Nightly.app"
 
   zap trash: [
