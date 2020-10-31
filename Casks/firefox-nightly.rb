@@ -86,7 +86,7 @@ cask "firefox-nightly" do
     latest_build_filename = URI(builds_url).open.read.scan(%r{<td><a href="/pub/firefox/nightly/([^"]+\.mac\.dmg)">}).flatten.grep(/\.#{language}\.mac\.dmg/).max
     "#{base_url}/#{latest_build_filename}"
   end
-  name "Mozilla Firefox"
+  name "Mozilla Firefox Nightly"
   desc "Cross-platform web browser"
   homepage "https://www.mozilla.org/firefox/channel/desktop/#nightly"
 
