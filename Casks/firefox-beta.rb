@@ -71,6 +71,7 @@ cask "firefox-beta" do
 
   url "https://download.mozilla.org/?product=firefox-beta-latest-ssl&os=osx&lang=#{language}"
   name "Mozilla Firefox"
+  desc "Cross-platform web browser"
   homepage "https://www.mozilla.org/firefox/channel/desktop/#beta"
 
   conflicts_with cask: [

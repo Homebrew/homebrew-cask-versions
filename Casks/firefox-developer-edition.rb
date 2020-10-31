@@ -47,6 +47,7 @@ cask "firefox-developer-edition" do
 
   url "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=osx&lang=#{language}"
   name "Mozilla Firefox Developer Edition"
+  desc "Cross-platform web browser"
   homepage "https://www.mozilla.org/firefox/developer/"
 
   app "Firefox Developer Edition.app"
