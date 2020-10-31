@@ -8,6 +8,9 @@ cask "firefox-developer-edition" do
   language "de" do
     "de"
   end
+  language "en-CA" do
+    "en-CA"
+  end
   language "en-GB" do
     "en-GB"
   end
@@ -44,7 +47,29 @@ cask "firefox-developer-edition" do
 
   url "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=osx&lang=#{language}"
   name "Mozilla Firefox Developer Edition"
+  desc "Cross-platform web browser"
   homepage "https://www.mozilla.org/firefox/developer/"
 
+  depends_on macos: ">= :sierra"
+
   app "Firefox Developer Edition.app"
+
+  zap trash: [
+    "/Library/Logs/DiagnosticReports/firefox_*",
+    "~/Library/Application Support/Firefox",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.firefox.sfl*",
+    "~/Library/Application Support/CrashReporter/firefox_*",
+    "~/Library/Caches/Firefox",
+    "~/Library/Caches/Mozilla/updates/Applications/Firefox",
+    "~/Library/Caches/org.mozilla.firefox",
+    "~/Library/Preferences/org.mozilla.firefox.plist",
+    "~/Library/Saved Application State/org.mozilla.firefox.savedState",
+    "~/Library/WebKit/org.mozilla.firefox",
+  ],
+      rmdir: [
+        "~/Library/Application Support/Mozilla", #  May also contain non-Firefox data
+        "~/Library/Caches/Mozilla/updates/Applications",
+        "~/Library/Caches/Mozilla/updates",
+        "~/Library/Caches/Mozilla",
+      ]
 end

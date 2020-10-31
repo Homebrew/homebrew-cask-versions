@@ -9,6 +9,10 @@ cask "firefox-esr" do
     sha256 "4bf69cec269ce229447f8f7733b2e5163550ac150a3f9c7d7e1018263385c2de"
     "de"
   end
+  language "en-CA" do
+    sha256 "c59d589d79ee817f219a27bcb1b8cea15f2cc51bd3fa9d721717741100d73fcf"
+    "en-CA"
+  end
   language "en-GB" do
     sha256 "a559e934d9586b8e24eeb3a3a0ca97b65bdd623ce3abb07fd177bcd31ade8930"
     "en-GB"
@@ -74,11 +78,26 @@ cask "firefox-esr" do
     "firefox",
     "firefox-beta",
   ]
+  depends_on macos: ">= :sierra"
 
   app "Firefox.app"
 
   zap trash: [
+    "/Library/Logs/DiagnosticReports/firefox_*",
     "~/Library/Application Support/Firefox",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.firefox.sfl*",
+    "~/Library/Application Support/CrashReporter/firefox_*",
     "~/Library/Caches/Firefox",
-  ]
+    "~/Library/Caches/Mozilla/updates/Applications/Firefox",
+    "~/Library/Caches/org.mozilla.firefox",
+    "~/Library/Preferences/org.mozilla.firefox.plist",
+    "~/Library/Saved Application State/org.mozilla.firefox.savedState",
+    "~/Library/WebKit/org.mozilla.firefox",
+  ],
+      rmdir: [
+        "~/Library/Application Support/Mozilla", #  May also contain non-Firefox data
+        "~/Library/Caches/Mozilla/updates/Applications",
+        "~/Library/Caches/Mozilla/updates",
+        "~/Library/Caches/Mozilla",
+      ]
 end
