@@ -9,6 +9,10 @@ cask "firefox-esr" do
     sha256 "4bf69cec269ce229447f8f7733b2e5163550ac150a3f9c7d7e1018263385c2de"
     "de"
   end
+  language "en-CA" do
+    sha256 "c59d589d79ee817f219a27bcb1b8cea15f2cc51bd3fa9d721717741100d73fcf"
+    "en-CA"
+  end
   language "en-GB" do
     sha256 "a559e934d9586b8e24eeb3a3a0ca97b65bdd623ce3abb07fd177bcd31ade8930"
     "en-GB"

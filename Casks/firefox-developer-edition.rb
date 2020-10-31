@@ -8,6 +8,9 @@ cask "firefox-developer-edition" do
   language "de" do
     "de"
   end
+  language "en-CA" do
+    "en-CA"
+  end
   language "en-GB" do
     "en-GB"
   end
