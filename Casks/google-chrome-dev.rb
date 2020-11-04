@@ -2,17 +2,12 @@ cask "google-chrome-dev" do
   version :latest
   sha256 :no_check
 
-  url "https://dl.google.com/chrome/mac/dev/googlechrome.dmg"
-  name "Google Chrome"
+  url "https://dl.google.com/chrome/mac/dev/googlechromedev.dmg"
+  name "Google Chrome Dev"
   desc "Cross-platform web browser"
   homepage "https://www.google.com/chrome/dev/"
 
-  conflicts_with cask: [
-    "google-chrome",
-    "google-chrome-beta",
-  ]
-
-  app "Google Chrome.app"
+  app "Google Chrome Dev.app"
 
   uninstall launchctl: [
     "com.google.keystone.agent",
@@ -23,10 +18,10 @@ cask "google-chrome-dev" do
     "/Library/Caches/com.google.SoftwareUpdate.*",
     "/Library/Google/Google Chrome Brand.plist",
     "/Library/Google/GoogleSoftwareUpdate",
-    "~/Library/Application Support/Google/Chrome",
+    "~/Library/Application Support/Google/Chrome Dev",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.google.chrome.app.*.sfl*",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.google.chrome.sfl*",
-    "~/Library/Caches/Google/Chrome",
+    "~/Library/Caches/Google/Chrome Dev",
     "~/Library/Caches/com.google.Chrome",
     "~/Library/Caches/com.google.Chrome.helper.*",
     "~/Library/Caches/com.google.Keystone",
