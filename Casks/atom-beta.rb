@@ -6,6 +6,7 @@ cask "atom-beta" do
   url "https://github.com/atom/atom/releases/download/v#{version}/atom-mac.zip"
   appcast "https://github.com/atom/atom/releases.atom"
   name "Github Atom Beta"
+  desc "Cross-platform text editor"
   homepage "https://atom.io/beta"
 
   auto_updates true
