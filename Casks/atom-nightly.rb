@@ -4,6 +4,7 @@ cask "atom-nightly" do
 
   url "https://atom.io/download/mac?channel=nightly"
   name "Github Atom Nightly"
+  desc "Cross-platform text editor"
   homepage "https://atom.io/nightly"
 
   app "Atom Nightly.app"
