@@ -1,6 +1,6 @@
 cask "affinity-photo-beta" do
-  version "1.9.0.199"
-  sha256 "08b77c5ec584fd606a8a66b443d970af1eab7fd7da212d1a4525776d44a450c9"
+  version "1.9.0.203"
+  sha256 "3a8c8de8944ab85e1b520ba85859dc4aa875e02e7c0eb748bf014288f2a04fde"
 
   # affinity-beta.s3.amazonaws.com/ was verified as official when first introduced to the cask
   url "https://affinity-beta.s3.amazonaws.com/download/Affinity%20Photo%20Customer%20Beta.zip"
