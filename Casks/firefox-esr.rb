@@ -9,6 +9,10 @@ cask "firefox-esr" do
     sha256 "2cdd1f0a0371cd877285cc3d9d143496d268fae13ba57ccddafbee853fc402f2"
     "de"
   end
+  language "en-CA" do
+    sha256 "b9d246bfd004369a741f55a053b4b31cb2bf0acf0e736bb4b3d3a7c226eba918"
+    "en-CA"
+  end
   language "en-GB" do
     sha256 "115e8a6bfb3d016faba907e57dda6d2152f4422b53eceb4c38cb8e5b32d8a862"
     "en-GB"
@@ -67,17 +71,33 @@ cask "firefox-esr" do
   appcast "https://www.macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://download.mozilla.org/%3Fproduct=firefox-esr-latest-ssl%26os=osx"
   name "Mozilla Firefox ESR"
   name "Mozilla Firefox Extended Support Release"
+  desc "Cross-platform web browser"
   homepage "https://www.mozilla.org/firefox/organizations/"
 
   conflicts_with cask: [
     "firefox",
     "firefox-beta",
   ]
+  depends_on macos: ">= :sierra"
 
   app "Firefox.app"
 
   zap trash: [
+    "/Library/Logs/DiagnosticReports/firefox_*",
     "~/Library/Application Support/Firefox",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.firefox.sfl*",
+    "~/Library/Application Support/CrashReporter/firefox_*",
     "~/Library/Caches/Firefox",
-  ]
+    "~/Library/Caches/Mozilla/updates/Applications/Firefox",
+    "~/Library/Caches/org.mozilla.firefox",
+    "~/Library/Preferences/org.mozilla.firefox.plist",
+    "~/Library/Saved Application State/org.mozilla.firefox.savedState",
+    "~/Library/WebKit/org.mozilla.firefox",
+  ],
+      rmdir: [
+        "~/Library/Application Support/Mozilla", #  May also contain non-Firefox data
+        "~/Library/Caches/Mozilla/updates/Applications",
+        "~/Library/Caches/Mozilla/updates",
+        "~/Library/Caches/Mozilla",
+      ]
 end
