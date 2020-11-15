@@ -5,7 +5,7 @@ cask "mi-beta" do
   url "https://www.mimikaki.net/download/mi#{version}.dmg"
   appcast "https://www.mimikaki.net/download/appcast_beta.xml"
   name "mi"
-  desc "A simple text editor"
+  desc "Text editor"
   homepage "https://www.mimikaki.net/download/beta.html"
 
   conflicts_with cask: "mi"
