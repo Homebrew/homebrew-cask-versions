@@ -7,6 +7,10 @@ cask "mi-beta" do
   name "mi"
   homepage "https://www.mimikaki.net/"
 
+  conflicts_with cask: [
+    "mi",
+  ]
+
   app "mi.app"
 
   zap trash: [
