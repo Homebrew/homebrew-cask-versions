@@ -8,9 +8,7 @@ cask "mi-beta" do
   desc "A simple text editor"
   homepage "https://www.mimikaki.net/download/beta.html"
 
-  conflicts_with cask: [
-    "mi",
-  ]
+  conflicts_with cask: "mi"
 
   app "mi.app"
 
