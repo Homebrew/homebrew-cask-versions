@@ -1,5 +1,5 @@
 cask "pgadmin3" do
-  # note: "3" is not a version number, but indicates a different vendor
+  # NOTE: "3" is not a version number, but indicates a different vendor
   version "1.22.2"
   sha256 "35a140e5a15d2acbdd981819c6f891ad197af520914a26964920424621fe5c31"
 

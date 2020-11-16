@@ -1,5 +1,5 @@
 cask "iterm2-beta" do
-  # note: "2" is not a version number, but an intrinsic part of the product name
+  # NOTE: "2" is not a version number, but an intrinsic part of the product name
   version "3.4.0beta13"
   sha256 "7a6b21c55233cc452ef3a5e5766abeb0580fb5913c1df83ccc378a4da8c4939c"
 

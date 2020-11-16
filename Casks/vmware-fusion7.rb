@@ -18,7 +18,7 @@ cask "vmware-fusion7" do
   end
 
   zap trash: [
-    # note: '~/Library/Application Support/VMware Fusion' is not safe
+    # NOTE: '~/Library/Application Support/VMware Fusion' is not safe
     # to delete. In older versions, VM images were located there.
     "~/Library/Caches/com.vmware.fusion",
     "~/Library/Logs/VMware",
