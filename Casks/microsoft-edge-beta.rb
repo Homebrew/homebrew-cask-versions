@@ -1,11 +1,12 @@
 cask "microsoft-edge-beta" do
-  version "87.0.664.40"
-  sha256 "67a70808d1f447fb58a3c3239660d4794a0a6f43e54ee63ac8c277796c4c24d1"
+  version "87.0.664.41"
+  sha256 "16cec397f4fb2503696b052778ce35b2dd47640fb63bbe6daf5c2aa1150d8942"
 
   # officecdn-microsoft-com.akamaized.net/ was verified as official when first introduced to the cask
   url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeBeta-#{version}.pkg"
   appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://go.microsoft.com/fwlink/?linkid=2069439"
   name "Microsoft Edge Beta"
+  desc "Multi-platform web browser"
   homepage "https://www.microsoftedgeinsider.com/"
 
   auto_updates true
