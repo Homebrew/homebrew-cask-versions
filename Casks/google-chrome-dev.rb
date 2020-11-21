@@ -4,7 +4,7 @@ cask "google-chrome-dev" do
 
   url "https://dl.google.com/chrome/mac/dev/googlechromedev.dmg"
   name "Google Chrome Dev"
-  desc "Cross-platform web browser"
+  desc "Web browser"
   homepage "https://www.google.com/chrome/dev/"
 
   app "Google Chrome Dev.app"
