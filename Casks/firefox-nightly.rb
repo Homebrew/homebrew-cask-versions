@@ -87,7 +87,7 @@ cask "firefox-nightly" do
     "#{base_url}/#{latest_build_filename}"
   end
   name "Mozilla Firefox Nightly"
-  desc "Cross-platform web browser"
+  desc "Web browser"
   homepage "https://www.mozilla.org/firefox/channel/desktop/#nightly"
 
   depends_on macos: ">= :sierra"
