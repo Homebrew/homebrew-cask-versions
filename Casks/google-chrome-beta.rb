@@ -4,7 +4,7 @@ cask "google-chrome-beta" do
 
   url "https://dl.google.com/chrome/mac/beta/googlechromebeta.dmg"
   name "Google Chrome Beta"
-  desc "Cross-platform web browser"
+  desc "Web browser"
   homepage "https://www.google.com/chrome/beta/"
 
   app "Google Chrome Beta.app"
