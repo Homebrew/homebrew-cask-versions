@@ -5,7 +5,7 @@ cask "chromedriver-beta" do
   # chromedriver.storage.googleapis.com/ was verified as official when first introduced to the cask
   url "https://chromedriver.storage.googleapis.com/#{version}/chromedriver_mac64.zip"
   name "ChromeDriver"
-  desc "Automated testing of webapps for Chrome"
+  desc "Automated testing of webapps for Google Chrome"
   homepage "https://sites.google.com/a/chromium.org/chromedriver/home"
 
   conflicts_with cask: "chromedriver"
