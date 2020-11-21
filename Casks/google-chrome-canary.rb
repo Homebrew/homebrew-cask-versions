@@ -4,7 +4,7 @@ cask "google-chrome-canary" do
 
   url "https://dl.google.com/release2/q/canary/googlechrome.dmg"
   name "Google Chrome Canary"
-  desc "Cross-platform web browser"
+  desc "Web browser"
   homepage "https://www.google.com/chrome/canary/"
 
   app "Google Chrome Canary.app"
