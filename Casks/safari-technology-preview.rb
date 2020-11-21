@@ -10,6 +10,7 @@ cask "safari-technology-preview" do
   url "https://secure-appldnld.apple.com/STP/#{version.after_comma}/SafariTechnologyPreview.dmg"
   appcast "https://developer.apple.com/safari/download/"
   name "Safari Technology Preview"
+  desc "Web browser"
   homepage "https://developer.apple.com/safari/download/"
 
   auto_updates true
