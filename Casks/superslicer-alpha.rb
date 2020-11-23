@@ -1,4 +1,4 @@
-cask "superslicer-beta" do
+cask "superslicer-alpha" do
   version "2.3.55.1,20201118"
   sha256 "0fd087faac2c48a2fefe245a99f1d340197e0c534af3de48b4c8ca25f2766eff"
 
