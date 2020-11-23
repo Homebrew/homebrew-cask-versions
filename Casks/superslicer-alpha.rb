@@ -10,4 +10,3 @@ cask "superslicer-alpha" do
 
   app "superslicer.app"
 end
-
