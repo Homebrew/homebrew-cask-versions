@@ -6,6 +6,7 @@ cask "brave-browser-beta" do
   url "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/beta/#{version.after_comma}/Brave-Browser-Beta-x64.dmg"
   appcast "https://updates.bravesoftware.com/sparkle/Brave-Browser/beta/appcast.xml"
   name "Brave Beta"
+  desc "Web browser focusing on privacy"
   homepage "https://brave.com/download-beta/"
 
   auto_updates true
