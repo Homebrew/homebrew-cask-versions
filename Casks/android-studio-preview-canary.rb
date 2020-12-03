@@ -1,6 +1,6 @@
 cask "android-studio-preview-canary" do
-  version "4.2.0.16,202.6939830"
-  sha256 "e315f6b98979a5882a64ca8cc979acfd2accbe57b2e6b0ea8ade5cc77587877c"
+  version "2020.3.1.1,202.6983675"
+  sha256 "47b7565136c7378c77da1964a3711ab6d09f5ace3f04bd87a62b13992db5dd9a"
 
   # dl.google.com/dl/android/studio/ was verified as official when first introduced to the cask
   url "https://dl.google.com/dl/android/studio/ide-zips/#{version.before_comma}/android-studio-ide-#{version.after_comma}-mac.zip"
@@ -10,7 +10,7 @@ cask "android-studio-preview-canary" do
 
   conflicts_with cask: "android-studio-preview-beta"
 
-  app "Android Studio #{version.major_minor} Preview.app"
+  app "Android Studio Preview.app"
 
   zap trash: [
     "~/Library/Android/sdk",
