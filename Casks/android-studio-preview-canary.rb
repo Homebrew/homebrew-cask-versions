@@ -10,7 +10,7 @@ cask "android-studio-preview-canary" do
 
   conflicts_with cask: "android-studio-preview-beta"
 
-  app "Android Studio #{version.major_minor} Preview.app"
+  app "Android Studio Preview.app"
 
   zap trash: [
     "~/Library/Android/sdk",
