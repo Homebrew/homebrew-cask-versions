@@ -34,8 +34,8 @@ Example ([exist-db-nightly.rb](https://github.com/Homebrew/homebrew-cask-version
 
 ```ruby
   url do
-    require 'open-uri'
-    base_url = 'http://static.adamretter.org.uk/exist-nightly'
+    require "open-uri"
+    base_url = "http://static.adamretter.org.uk/exist-nightly"
     builds_url = "#{base_url}/table.html"
     latest_build_filename = URI(builds_url).open do |io|
       io.read.scan(%r{<tr>.*?<td>(.*?)</td>.*?<a href="([^\"]+)">dmg}m).max[1]
