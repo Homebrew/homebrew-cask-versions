@@ -2,8 +2,8 @@ cask "android-studio-preview-canary" do
   version "2020.3.1.2,202.7006259"
   sha256 "e767bba3b9ed88e922d6a1dcce64900237c65045e43d30de6ce29c5f90f1b5f7"
 
-  # dl.google.com/dl/android/studio/ was verified as official when first introduced to the cask
-  url "https://dl.google.com/dl/android/studio/ide-zips/#{version.before_comma}/android-studio-ide-#{version.after_comma}-mac.zip"
+  url "https://dl.google.com/dl/android/studio/ide-zips/#{version.before_comma}/android-studio-ide-#{version.after_comma}-mac.zip",
+      verified: "dl.google.com/dl/android/studio/"
   name "Android Studio Preview (Canary)"
   desc "Tools for building Android applications"
   homepage "https://developer.android.com/studio/preview/"
