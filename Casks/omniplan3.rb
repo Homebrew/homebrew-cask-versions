@@ -1,4 +1,4 @@
-cask 'omniplan' do
+cask 'omniplan3' do
   if MacOS.version <= :high_sierra
     version '3.13'
     sha256 '82e0d7db2626d751f93f97d80dc032e4bc01bba1e05ea52c553e4771c8cfeec5'
