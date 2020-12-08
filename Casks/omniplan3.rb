@@ -9,12 +9,13 @@ cask "omniplan3" do
     url "https://downloads.omnigroup.com/software/MacOSX/10.14/OmniPlan-#{version}.dmg"
   end
 
-  appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://www.omnigroup.com/download/latest/omniplan/"
+  appcast "https://downloads.omnigroup.com/software/MacOSX/10.14/"
   name "OmniPlan"
   desc "Project planning and management software"
   homepage "https://www.omnigroup.com/omniplan/"
 
   auto_updates true
+  conflicts_with cask: "omniplan"
   depends_on macos: ">= :high_sierra"
 
   app "OmniPlan.app"
