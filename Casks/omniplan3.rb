@@ -9,7 +9,6 @@ cask "omniplan3" do
     url "https://downloads.omnigroup.com/software/MacOSX/10.14/OmniPlan-#{version}.dmg"
   end
 
-  appcast "https://downloads.omnigroup.com/software/MacOSX/10.14/"
   name "OmniPlan"
   desc "Project planning and management software"
   homepage "https://www.omnigroup.com/omniplan/"
