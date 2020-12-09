@@ -2,8 +2,8 @@ cask "kap-beta" do
   version "3.0.0-beta.6"
   sha256 "b4b82e82224787b44c292647fd18763beec8c13db9022307f50a2cefd1ef58f3"
 
-  # github.com/wulkano/kap/ was verified as official when first introduced to the cask
-  url "https://github.com/wulkano/kap/releases/download/v#{version}/kap-beta-#{version}.dmg"
+  url "https://github.com/wulkano/kap/releases/download/v#{version}/kap-beta-#{version}.dmg",
+      verified: "github.com/wulkano/kap/"
   appcast "https://github.com/wulkano/kap/releases.atom"
   name "Kap Beta"
   homepage "https://getkap.co/"
