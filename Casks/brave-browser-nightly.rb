@@ -2,12 +2,12 @@ cask "brave-browser-nightly" do
   version :latest
   sha256 :no_check
 
-  # updates.bravesoftware.com/ was verified as official when first introduced to the cask
   url do
     require "open-uri"
     appcast = "https://updates.bravesoftware.com/sparkle/Brave-Browser/nightly/appcast.xml"
     URI(appcast).read[/enclosure url="([^"]+.dmg)"/, 1]
   end
+  url verified: "updates.bravesoftware.com/"
   name "Brave Nightly"
   desc "Web browser focusing on privacy"
   homepage "https://brave.com/download-nightly/"
