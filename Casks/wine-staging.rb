@@ -6,13 +6,14 @@ cask "wine-staging" do
       verified: "dl.winehq.org/wine-builds/macosx/"
   appcast "https://dl.winehq.org/wine-builds/macosx/download.html"
   name "WineHQ-staging"
+  desc "Compatibility layer to run Windows applications"
   homepage "https://www.wine-staging.com/"
 
   conflicts_with cask: [
                    "wine-stable",
                    "wine-devel",
                  ]
-  depends_on x11: true
+  depends_on cask: xquartz
 
   pkg "winehq-staging-#{version}.pkg",
       choices: [
