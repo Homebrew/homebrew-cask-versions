@@ -2,8 +2,8 @@ cask "libreoffice-still" do
   version "6.4.7"
   sha256 "eb18f32bf8b27879081289a7d34dbca582bd3eb2852e330c5dc78d8d904c3075"
 
-  # download.documentfoundation.org/ was verified as official when first introduced to the cask
-  url "https://download.documentfoundation.org/libreoffice/stable/#{version}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg"
+  url "https://download.documentfoundation.org/libreoffice/stable/#{version}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg",
+      verified: "download.documentfoundation.org/"
   appcast "https://download.documentfoundation.org/libreoffice/stable/"
   name "LibreOffice Still"
   desc "Free cross-platform office suite"

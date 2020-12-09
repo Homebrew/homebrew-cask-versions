@@ -2,8 +2,8 @@ cask "morpheus-beta" do
   version "2.2.0_rc1"
   sha256 "a095b04df3cdef5d877371873a8540bca7b13ae068b9ce60b96218c7faffc573"
 
-  # imc.zih.tu-dresden.de/morpheus/ was verified as official when first introduced to the cask
-  url "https://imc.zih.tu-dresden.de/morpheus/packages/mac/Morpheus-#{version}.dmg"
+  url "https://imc.zih.tu-dresden.de/morpheus/packages/mac/Morpheus-#{version}.dmg",
+      verified: "imc.zih.tu-dresden.de/morpheus/"
   appcast "https://morpheus.gitlab.io/download/"
   name "Morpheus"
   desc "Modelling environment for multi-cellular systems biology"

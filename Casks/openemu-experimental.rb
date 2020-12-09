@@ -7,8 +7,8 @@ cask "openemu-experimental" do
     sha256 "8977f563868a312b72298dc7cd2b8767c21b440bae598d16a7d3916a98d870e8"
   end
 
-  # github.com/OpenEmu/OpenEmu/ was verified as official when first introduced to the cask
-  url "https://github.com/OpenEmu/OpenEmu/releases/download/v#{version}/OpenEmu_#{version}-experimental.zip"
+  url "https://github.com/OpenEmu/OpenEmu/releases/download/v#{version}/OpenEmu_#{version}-experimental.zip",
+      verified: "github.com/OpenEmu/OpenEmu/"
   appcast "https://github.com/OpenEmu/OpenEmu/releases.atom"
   name "OpenEmu"
   homepage "https://openemu.org/"
