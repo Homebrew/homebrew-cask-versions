@@ -2,12 +2,12 @@ cask "keepassxc-beta" do
   version "2.6.2"
 
   if MacOS.version <= :sierra
-    # github.com/keepassxreboot/keepassxc/ was verified as official when first introduced to the cask
-    url "https://github.com/keepassxreboot/keepassxc/releases/download/#{version}/KeePassXC-#{version}-Sierra.dmg"
+    url "https://github.com/keepassxreboot/keepassxc/releases/download/#{version}/KeePassXC-#{version}-Sierra.dmg",
+        verified: "github.com/keepassxreboot/keepassxc/"
     sha256 "7cd8dc34022091c240e538f7a9889afd7dc8f9f3957a66bca9d70c067045ade4"
   else
-    # github.com/keepassxreboot/keepassxc/ was verified as official when first introduced to the cask
-    url "https://github.com/keepassxreboot/keepassxc/releases/download/#{version}/KeePassXC-#{version}.dmg"
+    url "https://github.com/keepassxreboot/keepassxc/releases/download/#{version}/KeePassXC-#{version}.dmg",
+        verified: "github.com/keepassxreboot/keepassxc/"
     sha256 "29bfaf99f2c8a47063b2da0b67054f10c90cafe248db84411a26ecc974711ba7"
   end
 
