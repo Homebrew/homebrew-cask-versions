@@ -2,8 +2,8 @@ cask "sourcetree-beta" do
   version "4.0.2b6_235"
   sha256 "57144614a0d6e0dea85b464deae3b3cbdceb3e285a28598969cb3a2fe346af76"
 
-  # product-downloads.atlassian.com/software/sourcetree/ was verified as official when first introduced to the cask
-  url "https://product-downloads.atlassian.com/software/sourcetree/beta/Sourcetree_#{version}.zip"
+  url "https://product-downloads.atlassian.com/software/sourcetree/beta/Sourcetree_#{version}.zip",
+      verified: "product-downloads.atlassian.com/software/sourcetree/"
   appcast "https://product-downloads.atlassian.com/software/sourcetree/Appcast/SparkleAppcastBeta.xml"
   name "Atlassian Sourctree"
   homepage "https://www.sourcetreeapp.com/"

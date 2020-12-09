@@ -3,8 +3,8 @@ cask "pgadmin3" do
   version "1.22.2"
   sha256 "35a140e5a15d2acbdd981819c6f891ad197af520914a26964920424621fe5c31"
 
-  # ftp.postgresql.org/pub/pgadmin/pgadmin3/ was verified as official when first introduced to the cask
-  url "https://ftp.postgresql.org/pub/pgadmin/pgadmin3/v#{version}/osx/pgadmin3-#{version}.dmg"
+  url "https://ftp.postgresql.org/pub/pgadmin/pgadmin3/v#{version}/osx/pgadmin3-#{version}.dmg",
+      verified: "ftp.postgresql.org/pub/pgadmin/pgadmin3/"
   name "pgAdmin"
   homepage "https://www.pgadmin.org/"
 
