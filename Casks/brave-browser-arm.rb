@@ -8,8 +8,7 @@ cask "brave-browser-arm" do
     appcast = "https://updates.bravesoftware.com/sparkle/Brave-Browser/nightly-arm64/appcast.xml"
     URI(appcast).read[/enclosure url="([^"]+.dmg)"/, 1]
   end
-
-  name "Brave Nightly"
+  name "Brave Nightly ARM"
   desc "Web browser focusing on privacy"
   homepage "https://brave.com/download-nightly/"
 
