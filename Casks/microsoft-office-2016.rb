@@ -2,8 +2,8 @@ cask "microsoft-office-2016" do
   version "16.16.20071300"
   sha256 "76db656a1cf3194936070cea0f89fc5c0ecd59a50d93a6a5fabb773cd8126387"
 
-  # officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/ was verified as official when first introduced to the cask
-  url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_#{version}_Installer.pkg"
+  url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_#{version}_Installer.pkg",
+      verified: "officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/"
   appcast "https://docs.microsoft.com/en-us/officeupdates/release-notes-office-2016-mac/"
   name "Microsoft Office"
   homepage "https://products.office.com/mac/microsoft-office-for-mac/"
