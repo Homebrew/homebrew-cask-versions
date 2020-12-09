@@ -7,8 +7,7 @@ cask "wine-devel" do
   name "WineHQ-devel"
   homepage "https://wiki.winehq.org/MacOS"
 
-  conflicts_with formula: "wine",
-                 cask:    [
+  conflicts_with cask:    [
                    "wine-stable",
                    "wine-staging",
                  ]
