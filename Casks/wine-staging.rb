@@ -13,7 +13,7 @@ cask "wine-staging" do
     "wine-stable",
     "wine-devel",
   ]
-  depends_on cask: xquartz
+  depends_on cask: "xquartz"
 
   pkg "winehq-staging-#{version}.pkg",
       choices: [
