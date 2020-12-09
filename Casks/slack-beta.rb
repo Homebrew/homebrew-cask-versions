@@ -2,8 +2,8 @@ cask "slack-beta" do
   version "4.12.0-beta1"
   sha256 "5d76cd07d03aaf907d560acd045ee73f63762cc0023a560c2b8ca6f547e65ff3"
 
-  # downloads.slack-edge.com/ was verified as official when first introduced to the cask
-  url "https://downloads.slack-edge.com/releases/macos/#{version}/beta/x64/Slack-#{version}-macOS.zip"
+  url "https://downloads.slack-edge.com/releases/macos/#{version}/beta/x64/Slack-#{version}-macOS.zip",
+      verified: "downloads.slack-edge.com/"
   appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://slack.com/ssb/download-osx-beta"
   name "Slack"
   desc "Team communication and collaboration software"
