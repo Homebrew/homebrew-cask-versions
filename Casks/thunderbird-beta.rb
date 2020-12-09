@@ -51,8 +51,8 @@ cask "thunderbird-beta" do
     "zh-CN"
   end
 
-  # download.mozilla.org/ was verified as official when first introduced to the cask
-  url "https://download.mozilla.org/?product=thunderbird-beta-latest-SSL&os=osx&lang=#{language}"
+  url "https://download.mozilla.org/?product=thunderbird-beta-latest-SSL&os=osx&lang=#{language}",
+      verified: "download.mozilla.org/"
   name "Mozilla Thunderbird"
   homepage "https://www.thunderbird.net/en-US/thunderbird/beta/all/"
 
