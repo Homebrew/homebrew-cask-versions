@@ -10,9 +10,9 @@ cask "wine-staging" do
   homepage "https://www.wine-staging.com/"
 
   conflicts_with cask: [
-                   "wine-stable",
-                   "wine-devel",
-                 ]
+    "wine-stable",
+    "wine-devel",
+  ]
   depends_on cask: xquartz
 
   pkg "winehq-staging-#{version}.pkg",
