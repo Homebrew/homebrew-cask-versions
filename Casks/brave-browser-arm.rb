@@ -12,7 +12,7 @@ cask "brave-browser-arm" do
   desc "Web browser focusing on privacy"
   homepage "https://brave.com/download-nightly/"
 
-  app "Brave Browser Nightly ARM.app"
+  app "Brave Browser Nightly.app"
 
   zap trash: [
     "~/Library/Application Support/brave",
