@@ -8,8 +8,7 @@ cask "wine-staging" do
   name "WineHQ-staging"
   homepage "https://www.wine-staging.com/"
 
-  conflicts_with formula: "wine",
-                 cask:    [
+  conflicts_with cask:    [
                    "wine-stable",
                    "wine-devel",
                  ]
