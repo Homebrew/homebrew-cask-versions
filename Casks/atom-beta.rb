@@ -2,8 +2,8 @@ cask "atom-beta" do
   version "1.54.0-beta0"
   sha256 "f919563d014511d90caf3add54fd6f51a8f44b264771399385ea784dc108ad62"
 
-  # github.com/atom/atom/ was verified as official when first introduced to the cask
-  url "https://github.com/atom/atom/releases/download/v#{version}/atom-mac.zip"
+  url "https://github.com/atom/atom/releases/download/v#{version}/atom-mac.zip",
+      verified: "github.com/atom/atom/"
   appcast "https://github.com/atom/atom/releases.atom"
   name "Github Atom Beta"
   desc "Cross-platform text editor"
