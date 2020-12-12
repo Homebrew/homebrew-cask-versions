@@ -85,7 +85,6 @@ cask "firefox-nightly" do
     latest_build_filename = URI(builds_url).open.read.scan(%r{<td><a href="/pub/firefox/nightly/([^"]+\.mac\.dmg)">}).flatten.grep(/\.#{language}\.mac\.dmg/).max
     "#{base_url}/#{latest_build_filename}"
   end
-  url verified: "download-installer.cdn.mozilla.net/pub/firefox/nightly"
   name "Mozilla Firefox Nightly"
   desc "Web browser"
   homepage "https://www.mozilla.org/firefox/channel/desktop/#nightly"
