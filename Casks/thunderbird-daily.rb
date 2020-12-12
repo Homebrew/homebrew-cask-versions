@@ -18,7 +18,6 @@ cask "thunderbird-daily" do
     "uk"
   end
 
-  # download-installer.cdn.mozilla.net/pub/thunderbird/nightly was verified as official when first introduced to the cask
   url do
     require "open-uri"
     base_url = "https://download-installer.cdn.mozilla.net/pub/thunderbird/nightly"
