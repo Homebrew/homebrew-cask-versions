@@ -25,7 +25,6 @@ cask "thunderbird-daily" do
     latest_build_filename = URI(builds_url).open.read.scan(%r{<td><a href="/pub/thunderbird/nightly/([^"]+\.mac\.dmg)">}).flatten.grep(/\.#{language}\.mac\.dmg/).last
     "#{base_url}/#{latest_build_filename}"
   end
-  url verified: "download-installer.cdn.mozilla.net/pub/thunderbird/nightly"
   name "Earlybird"
   name "Thunderbird Daily"
   homepage "https://www.mozilla.org/en-US/thunderbird/channel/"
