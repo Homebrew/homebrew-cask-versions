@@ -8,7 +8,6 @@ cask "tla-plus-toolbox-nightly" do
     file = URI(base_url).read[/href="([^"]+-macosx.cocoa.x86_64.zip)"/, 1]
     "#{base_url}#{file}"
   end
-  url verified: "tla.msr-inria.inria.fr/"
   name "TLA+ Toolbox"
   desc "IDE for TLA+"
   homepage "https://lamport.azurewebsites.net/tla/toolbox.html"
