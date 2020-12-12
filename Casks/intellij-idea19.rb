@@ -5,6 +5,7 @@ cask "intellij-idea19" do
   url "https://download.jetbrains.com/idea/ideaIU-#{version}.dmg"
   appcast "https://data.services.jetbrains.com/products/releases?code=IIU&latest=false&type=release"
   name "IntelliJ IDEA Ultimate"
+  desc "IDE for JVM languages"
   homepage "https://www.jetbrains.com/idea/"
 
   auto_updates true
