@@ -2,8 +2,8 @@ cask "discord-canary" do
   version "0.0.261"
   sha256 "a6ff982783d9b24743f3e58f3fd116e6b08f7a5523e20354f3430a465e0c2fea"
 
-  # discordapp.com was verified as official when first introduced to the cask
-  url "https://cdn-canary.discordapp.com/apps/osx/#{version}/DiscordCanary.dmg"
+  url "https://cdn-canary.discordapp.com/apps/osx/#{version}/DiscordCanary.dmg",
+      verified: "cdn-canary.discordapp.com/apps/osx/"
   appcast "https://canary.discord.com/api/canary/updates?platform=osx"
   name "Discord Canary"
   homepage "https://canary.discord.com/"

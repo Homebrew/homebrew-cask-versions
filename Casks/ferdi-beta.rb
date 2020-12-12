@@ -2,8 +2,8 @@ cask "ferdi-beta" do
   version "5.6.0-beta.2"
   sha256 "028d42471c259498d82a81e2bba216770111d15a9e064b4b8e765936920f9573"
 
-  # github.com/getferdi/ferdi/ was verified as official when first introduced to the cask
-  url "https://github.com/getferdi/ferdi/releases/download/#{version}/Ferdi-#{version}.dmg"
+  url "https://github.com/getferdi/ferdi/releases/download/#{version}/Ferdi-#{version}.dmg",
+      verified: "github.com/getferdi/ferdi/"
   appcast "https://github.com/getferdi/ferdi/releases.atom"
   name "Ferdi"
   homepage "https://getferdi.com/"

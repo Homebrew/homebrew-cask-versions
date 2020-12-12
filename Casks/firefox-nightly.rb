@@ -78,7 +78,6 @@ cask "firefox-nightly" do
     "zh-CN"
   end
 
-  # download-installer.cdn.mozilla.net/pub/firefox/nightly was verified as official when first introduced to the cask
   url do
     require "open-uri"
     base_url = "https://download-installer.cdn.mozilla.net/pub/firefox/nightly"
