@@ -6,10 +6,11 @@ cask "intellij-idea-ce19" do
   appcast "https://data.services.jetbrains.com/products/releases?code=IIC&latest=false&type=release"
   name "IntelliJ IDEA Community Edition"
   name "IntelliJ IDEA CE"
-  desc "IDE for JVM languages"
+  desc "IDE for Java development - community edition"
   homepage "https://www.jetbrains.com/idea/"
 
   auto_updates true
+  conflicts_with cask: "intellij-idea-ce"
 
   app "IntelliJ IDEA CE.app"
 
