@@ -1,5 +1,5 @@
 cask "termius-beta" do
-  version "7.2.1"
+  version "7.3.0"
   sha256 :no_check
 
   url "https://www.termius.com/beta/download/mac/Termius+Beta.dmg"
