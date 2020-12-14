@@ -1,6 +1,6 @@
 cask "slack-beta" do
-  version "4.12.0-beta1"
-  sha256 "5d76cd07d03aaf907d560acd045ee73f63762cc0023a560c2b8ca6f547e65ff3"
+  version "4.12.0"
+  sha256 "ab51d48b03b319d7d035701290ec3c2483b65d241033c7a973a7849d4b5c67e9"
 
   url "https://downloads.slack-edge.com/releases/macos/#{version}/beta/x64/Slack-#{version}-macOS.zip",
       verified: "downloads.slack-edge.com/"
