@@ -1,6 +1,6 @@
 cask "julia-nightly" do
   version "1.7"
-  sha256 :no_check # required as upstream package is updated in-place
+  sha256 :no_check
 
   url "https://julialangnightlies-s3.julialang.org/bin/mac/x64/julia-latest-mac64.dmg"
   name "Julia"
