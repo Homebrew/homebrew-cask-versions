@@ -1,6 +1,6 @@
 cask "firefox-nightly" do
   version :latest
-  sha256 :no_check # required as upstream package is updated in-place
+  sha256 :no_check
 
   language "cs" do
     "cs"
