@@ -1,6 +1,6 @@
 cask "microsoft-edge-beta" do
-  version "88.0.705.18"
-  sha256 "27dabc134949ed65f8a6f223e749d0c93fa3b2af4fef8707a78d249c0b4f52c4"
+  version "88.0.705.22"
+  sha256 "3d181d095a0eb9205e27e5e2a20274c5e29f87e1b0da0e4a735eef20b1d36950"
 
   url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeBeta-#{version}.pkg",
       verified: "officecdn-microsoft-com.akamaized.net/"
