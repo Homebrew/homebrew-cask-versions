@@ -1,10 +1,21 @@
 cask "visual-studio-code-insiders" do
   version "1.53.0,f3e95ede9e4b9818c29a5bca3564d6fd162fb210"
-  sha256 "3cec6c114ef5cad33682c8030c1ce394ef95a60aaeba037db72a2702b23d633c"
 
-  url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-darwin.zip",
-      verified: "az764295.vo.msecnd.net/insider/"
-  appcast "https://vscode-update.azurewebsites.net/api/update/darwin/insider/VERSION"
+  if Hardware::CPU.arch == :arm64
+    sha256 "716c55769531b5ea54a7246697e6bc34920a973bc5b7f3e834ff8fa0bc9f845e"
+  else
+    sha256 "3cec6c114ef5cad33682c8030c1ce394ef95a60aaeba037db72a2702b23d633c"
+  end
+  
+  if Hardware::CPU.arch == :arm64
+    url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-darwin-arm64.zip",
+        verified: "az764295.vo.msecnd.net/insider/"
+    appcast "https://vscode-update.azurewebsites.net/api/update/darwin-arm64/insider/VERSION"
+  else
+    url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-darwin.zip",
+        verified: "az764295.vo.msecnd.net/insider/"
+    appcast "https://vscode-update.azurewebsites.net/api/update/darwin/insider/VERSION"
+  end
   name "Microsoft Visual Studio Code"
   name "VS Code - Insiders"
   desc "Integrated development environment"
