@@ -6,7 +6,7 @@ cask "visual-studio-code-insiders" do
   else
     sha256 "3cec6c114ef5cad33682c8030c1ce394ef95a60aaeba037db72a2702b23d633c"
   end
-  
+
   if Hardware::CPU.arch == :arm64
     url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-darwin-arm64.zip",
         verified: "az764295.vo.msecnd.net/insider/"
