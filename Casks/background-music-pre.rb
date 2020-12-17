@@ -1,8 +1,8 @@
 cask "background-music-pre" do
-  version "0.4.0-SNAPSHOT-c024116"
-  sha256 "91bb417656a8b7c8f493993fd882acd89d8cb933f83da6ba5d88b81b89d6014d"
+  version "0.4.0-SNAPSHOT-c0ab98b"
+  sha256 "7fdbcab0542c496cb37f3f958b63d4ec2cd2fe1ce1debbcdf0cf6cb5f1226384"
 
-  url "https://github.com/kyleneideck/BackgroundMusic/releases/download/#{version}/BackgroundMusic-#{version}.unsigned.pkg"
+  url "https://github.com/kyleneideck/BackgroundMusic/releases/download/#{version}/BackgroundMusic-#{version}.pkg"
   appcast "https://github.com/kyleneideck/BackgroundMusic/releases.atom"
   name "Background Music"
   homepage "https://github.com/kyleneideck/BackgroundMusic"
@@ -10,7 +10,7 @@ cask "background-music-pre" do
   conflicts_with cask: "background-music"
   depends_on macos: ">= :yosemite"
 
-  pkg "BackgroundMusic-#{version}.unsigned.pkg"
+  pkg "BackgroundMusic-#{version}.pkg"
 
   uninstall launchctl: "com.bearisdriving.BGM.XPCHelper",
             pkgutil:   "com.bearisdriving.BGM",
