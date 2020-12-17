@@ -1,5 +1,5 @@
 cask "affinity-designer-beta" do
-  version "1.9.0.10"
+  version "1.9.0.11"
   sha256 :no_check
 
   url "https://affinity-beta.s3.amazonaws.com/download/Affinity%20Designer%20Beta.dmg",
