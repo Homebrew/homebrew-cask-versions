@@ -18,5 +18,5 @@ cask "background-music-pre" do
               sudo:       true,
             },
             launchctl: "com.bearisdriving.BGM.XPCHelper",
-            pkgutil:   "com.bearisdriving.BGM",
+            pkgutil:   "com.bearisdriving.BGM"
 end
