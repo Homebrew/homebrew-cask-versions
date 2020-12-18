@@ -8,6 +8,7 @@ cask "sketch-beta" do
   homepage "https://www.sketch.com/beta"
 
   auto_updates true
+  depends_on macos: ">= :mojave"
 
   app "Sketch Beta.app"
 
@@ -18,9 +19,9 @@ cask "sketch-beta" do
     "~/Library/Application Support/com.bohemiancoding.sketch3.beta",
     "~/Library/Caches/com.bohemiancoding.sketch3.beta",
     "~/Library/Caches/com.plausiblelabs.crashreporter.data/com.bohemiancoding.sketch3.beta",
+    "~/Library/Cookies/com.bohemiancoding.sketch3.beta.binarycookies",
     "~/Library/Logs/com.bohemiancoding.sketch3.beta",
     "~/Library/Preferences/com.bohemiancoding.sketch3.beta.LSSharedFileList.plist",
     "~/Library/Preferences/com.bohemiancoding.sketch3.beta.plist",
-    "~/Library/Cookies/com.bohemiancoding.sketch3.beta.binarycookies",
   ]
 end
