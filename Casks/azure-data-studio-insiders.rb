@@ -12,8 +12,7 @@ cask "azure-data-studio-insiders" do
   auto_updates true
 
   app "Azure Data Studio - Insiders.app"
-  binary "#{appdir}/Azure Data Studio - Insiders.app/Contents/Resources/app/bin/code",
-         target: "azuredatastudio-insiders"
+  binary "#{appdir}/Azure Data Studio - Insiders.app/Contents/Resources/app/bin/code", target: "azuredatastudio-insiders"
 
   zap trash: [
     "~/.azuredatastudio-insiders",
