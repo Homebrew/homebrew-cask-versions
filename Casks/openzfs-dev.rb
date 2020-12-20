@@ -30,17 +30,9 @@ cask "openzfs-dev" do
 
   uninstall_preflight do
     system "sudo", "/usr/local/bin/zpool", "export", "-af"
-    system "sudo", "/bin/launchctl", "unload", "/Library/LaunchDaemons/org.openzfsonosx.zed.plist"
-    system "sudo", "/sbin/kextunload", "-b", "net.lundman.zfs"
   end
 
-  uninstall pkgutil:   "net.lundman.zfs",
-            launchctl: [
-              "org.openzfsonosx.InvariantDisks",
-              "org.openzfsonosx.zconfigd",
-              "org.openzfsonosx.zed",
-              "org.openzfsonosx.zpool-import-all",
-            ]
+  uninstall pkgutil: "net.lundman.zfs"
 
   caveats do
     kext
