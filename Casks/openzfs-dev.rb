@@ -32,7 +32,13 @@ cask "openzfs-dev" do
     system "sudo", "/usr/local/bin/zpool", "export", "-af"
   end
 
-  uninstall pkgutil: "net.lundman.zfs"
+  uninstall pkgutil:   "net.lundman.zfs",
+            launchctl: [
+              "org.openzfsonosx.InvariantDisks",
+              "org.openzfsonosx.zconfigd",
+              "org.openzfsonosx.zed",
+              "org.openzfsonosx.zpool-import-all",
+            ]
 
   caveats do
     kext
