@@ -6,7 +6,7 @@ cask "ferdi-beta" do
       verified: "github.com/getferdi/ferdi/"
   appcast "https://github.com/getferdi/ferdi/releases.atom"
   name "Ferdi"
-  desc "App to accumulate all fav browser-based websites/apps into a single thick client"
+  desc "Messaging browser which combines several services"
   homepage "https://getferdi.com/"
 
   auto_updates true
