@@ -1,20 +1,16 @@
 cask "openzfs-dev" do
-  version "2.0.0"
-
   if MacOS.version <= :mojave
-    file_id="221"
-    url "https://openzfsonosx.org/forum/download/file.php?id=#{file_id}"
+    version "2.0.0,221"
     sha256 "55a44ed37f76eca89b938f91315d15ae053dae74c961e65b34079b1e17dccb48"
   elsif MacOS.version <= :catalina
-    file_id="219"
-    url "https://openzfsonosx.org/forum/download/file.php?id=#{file_id}"
+    version "2.0.0,219"
     sha256 "304ea1ddc474b27827721b81b1718aaeba317f4d0657b3a1b994f224de151d92"
   else
-    file_id="220"
-    url "https://openzfsonosx.org/forum/download/file.php?id=#{file_id}"
+    version "2.0.0,220"
     sha256 "a11cc3c3b43012d627fe3fba9728252385feff6da910b5b06d302e49c5424207"
   end
 
+  url "https://openzfsonosx.org/forum/download/file.php?id=#{version.after_comma}"
   name "OpenZFS on OS X"
   desc "ZFS driver and utilities"
   homepage "https://openzfsonosx.org/"
