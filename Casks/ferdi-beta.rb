@@ -1,11 +1,12 @@
 cask "ferdi-beta" do
-  version "5.6.0-beta.2"
-  sha256 "028d42471c259498d82a81e2bba216770111d15a9e064b4b8e765936920f9573"
+  version "5.6.0-beta.5"
+  sha256 "6ffcb4a287ebb9e596d8a116d6132b63473064e5f579fbb361f0fd61e8ff4740"
 
-  url "https://github.com/getferdi/ferdi/releases/download/#{version}/Ferdi-#{version}.dmg",
+  url "https://github.com/getferdi/ferdi/releases/download/v#{version}/Ferdi-#{version}.dmg",
       verified: "github.com/getferdi/ferdi/"
   appcast "https://github.com/getferdi/ferdi/releases.atom"
   name "Ferdi"
+  desc "Messaging browser which combines several services"
   homepage "https://getferdi.com/"
 
   auto_updates true
