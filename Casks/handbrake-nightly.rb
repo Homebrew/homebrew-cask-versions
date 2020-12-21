@@ -5,7 +5,9 @@ cask "handbrake-nightly" do
   url do
     require "open-uri"
     base_url = "https://handbrake.fr/nightly.php"
-    URI(base_url).read[/href="([^"]+.dmg)"/, 1]
+    content = URI(base_url).read
+    file_path = content[/href=["']?([^"' >]*Handbrake[._-][^"' >]+\.dmg)["' >]/i, 1]
+    file_path ? URI.join(base_url, file_path) : nil
   end
   name "HandBrake"
   desc "Open-source video transcoder"
