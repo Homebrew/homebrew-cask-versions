@@ -6,6 +6,7 @@ cask "sublime-text-dev" do
   appcast "https://www.sublimetext.com/updates/#{version.major}/dev/appcast_osx.xml",
           must_contain: version.no_dots
   name "Sublime Text"
+  desc "Text editor for code, markup and prose"
   homepage "https://www.sublimetext.com/#{version.major}dev"
 
   auto_updates true
