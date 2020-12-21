@@ -5,11 +5,8 @@ cask "handbrake-nightly" do
   url do
     require "open-uri"
     base_url = "https://handbrake.fr/nightly.php"
-    file_path = URI.parse(base_url).open do |f|
-      content = f.read
-      /href=["']?(?<file_path>[^"' >]*Handbrake[._-][^"' >]+\.dmg)["' >]/i =~ content
-      file_path
-    end
+    content = URI(base_url).open(&:read)
+    /href=["']?(?<file_path>[^"' >]*Handbrake[._-][^"' >]+\.dmg)["' >]/i =~ content
     file_path ? URI.join(base_url, file_path) : nil
   end
   name "HandBrake"
