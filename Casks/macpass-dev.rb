@@ -10,8 +10,8 @@ cask "macpass-dev" do
   homepage "https://macpass.github.io/"
 
   auto_updates true
-  depends_on macos: ">= :yosemite"
   conflicts_with cask: "macpass"
+  depends_on macos: ">= :yosemite"
 
   app "MacPass.app"
 
