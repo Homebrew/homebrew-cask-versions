@@ -4,7 +4,6 @@ cask "macpass-dev" do
 
   url "https://github.com/MacPass/MacPass/releases/download/continuous/MacPass-continuous.zip",
       verified: "github.com/MacPass/MacPass/"
-  appcast "https://github.com/MacPass/MacPass/releases.atom"
   name "MacPass"
   desc "Open-source, KeePass-client and password manager (development version)"
   homepage "https://macpass.github.io/"
