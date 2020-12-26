@@ -5,7 +5,7 @@ cask "osu-development" do
   url "https://github.com/ppy/osu/releases/download/#{version}/osu.app.zip"
   appcast "https://github.com/ppy/osu/releases.atom"
   name "osu!lazer"
-  desc "Open source rhythm game"
+  desc "Rhythm game"
   homepage "https://github.com/ppy/osu/"
 
   depends_on macos: ">= :sierra"
