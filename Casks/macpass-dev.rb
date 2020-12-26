@@ -5,7 +5,7 @@ cask "macpass-dev" do
   url "https://github.com/MacPass/MacPass/releases/download/continuous/MacPass-continuous.zip",
       verified: "github.com/MacPass/MacPass/"
   name "MacPass"
-  desc "Open-source, KeePass-client and password manager (development version)"
+  desc "KeePass-client and password manager"
   homepage "https://macpass.github.io/"
 
   conflicts_with cask: "macpass"
