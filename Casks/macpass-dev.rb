@@ -9,7 +9,6 @@ cask "macpass-dev" do
   desc "Open-source, KeePass-client and password manager (development version)"
   homepage "https://macpass.github.io/"
 
-  auto_updates true
   conflicts_with cask: "macpass"
   depends_on macos: ">= :yosemite"
 
