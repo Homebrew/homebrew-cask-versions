@@ -5,9 +5,10 @@ cask "deadbeef-devel" do
   url "https://downloads.sourceforge.net/deadbeef/travis/osx/master/deadbeef-devel-osx-x86_64.zip",
       verified: "downloads.sourceforge.net/deadbeef/"
   name "DeaDBeeF"
+  desc "Modular audio player for UNIX-like systems"
   homepage "https://deadbeef.sourceforge.io/"
 
-  app "deadbeef.app"
+  app "DeaDBeeF.app"
 
   zap trash: [
     "~/Library/Preferences/com.deadbeef.deadbeef.plist",
