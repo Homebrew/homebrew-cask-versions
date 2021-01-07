@@ -8,7 +8,7 @@ cask "propresenter-beta" do
   desc "Presentation and production application for live events"
   homepage "https://www.renewedvision.com/propresenter.php"
 
-  conflicts_with cask: "homebrew/cask/propresenter"
+  conflicts_with cask: "propresenter"
   depends_on macos: ">= :mojave"
 
   app "ProPresenter.app"
