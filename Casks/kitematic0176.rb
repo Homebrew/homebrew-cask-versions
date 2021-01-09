@@ -1,6 +1,6 @@
 cask "kitematic0176" do
-  version "0.17.6"
-  sha256 "827756c4b7de7b23b474aba12ed2b4a333d3a5f1b2fad5bc5819da405d72ed83"
+  version "0.17.13"
+  sha256 "d2e3dba17680eec4789851fba376bb573799f448eea7beb2d7aa990f24feb402"
 
   url "https://github.com/docker/kitematic/releases/download/v#{version}/Kitematic-#{version}-Mac.zip",
       verified: "github.com/docker/kitematic/"
