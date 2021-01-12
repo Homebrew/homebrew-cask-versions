@@ -1,6 +1,6 @@
 cask "freecad-pre" do
   version "0.19_pre,23578"
-  sha256 "a74c87512c845569fd356207be86e71c6691cbe26c7700b792591105c1257586"
+  sha256 "83748a7955cb3a36863e12e155f162deefbe6ab4a5e32fd3b717f8eaaf0273bf"
 
   url "https://github.com/FreeCAD/FreeCAD/releases/download/#{version.before_comma}/FreeCAD_#{version.major_minor.delete_suffix("_pre")}-#{version.after_comma}-macOS-x86_64-conda.dmg",
       verified: "github.com/FreeCAD/FreeCAD/"
