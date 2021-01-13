@@ -1,6 +1,6 @@
 cask "visual-studio-code-insiders" do
-  version "1.53.0,3ceb3a100ed0ad5f3238b5022d9d64353a1cc31e"
-  sha256 "47747b302d5f3d3245c1d45d99db326497c94148bd63356f8395b0763bc300d3"
+  version "1.53.0,6dc779565e1e4a26104002fde340b68c157c3bc5"
+  sha256 "ea08cd72f7501223d1c888b300bd961df27e80558e4e51c868740f651f3912ce"
 
   url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-darwin.zip",
       verified: "az764295.vo.msecnd.net/insider/"
