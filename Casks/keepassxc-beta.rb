@@ -1,5 +1,5 @@
 cask "keepassxc-beta" do
-  version "2.6.2"
+  version "2.6.3"
 
   if MacOS.version <= :sierra
     url "https://github.com/keepassxreboot/keepassxc/releases/download/#{version}/KeePassXC-#{version}-Sierra.dmg",
@@ -8,11 +8,12 @@ cask "keepassxc-beta" do
   else
     url "https://github.com/keepassxreboot/keepassxc/releases/download/#{version}/KeePassXC-#{version}.dmg",
         verified: "github.com/keepassxreboot/keepassxc/"
-    sha256 "29bfaf99f2c8a47063b2da0b67054f10c90cafe248db84411a26ecc974711ba7"
+    sha256 "3b2e86aafa6943771f008ec530d0809b12f1a09773838f8e0e79ed71061a3c36"
   end
 
   appcast "https://github.com/keepassxreboot/keepassxc/releases.atom"
   name "KeePassXC"
+  desc "Password manager app"
   homepage "https://keepassxc.org/"
 
   conflicts_with cask: "keepassxc"
