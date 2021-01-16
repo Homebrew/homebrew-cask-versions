@@ -8,8 +8,8 @@ cask "openzfs-dev" do
     sha256 "304ea1ddc474b27827721b81b1718aaeba317f4d0657b3a1b994f224de151d92"
     pkg "OpenZFSonOsX-#{version.before_comma}-Catalina-10.15.pkg"
   else
-    version "2.0.0,220"
-    sha256 "a11cc3c3b43012d627fe3fba9728252385feff6da910b5b06d302e49c5424207"
+    version "2.0.0,229"
+    sha256 "c439029d885e42525ba8f2ab32d0fef815941e3d2bb893acae3bcee8e21bd658"
     pkg "OpenZFSonOsX-#{version.before_comma}-Big.Sur-11.0.pkg"
   end
 
