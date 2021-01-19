@@ -2,7 +2,7 @@ cask "google-chrome-canary" do
   version :latest
   sha256 :no_check
 
-  url "https://dl.google.com/release2/q/canary/googlechrome.dmg"
+  url "https://dl.google.com/chrome/mac/universal/canary/googlechromecanary.dmg"
   name "Google Chrome Canary"
   desc "Web browser"
   homepage "https://www.google.com/chrome/canary/"
