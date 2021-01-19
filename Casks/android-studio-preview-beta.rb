@@ -1,10 +1,11 @@
 cask "android-studio-preview-beta" do
-  version "4.2.0.18,202.7008469"
-  sha256 "536d7b15bd2f2540ed793995b98b9bfc0b4d7846e832209d0ecccc6971a45843"
+  version "4.2.0.19,202.7033425"
+  sha256 "64f11d0e1ebdc7e9ee57199f17633befac3fe8e85cb3ff9677d7fded72e23ddf"
 
   url "https://dl.google.com/dl/android/studio/ide-zips/#{version.before_comma}/android-studio-ide-#{version.after_comma}-mac.zip",
       verified: "dl.google.com/dl/android/studio/"
   name "Android Studio Preview (Beta)"
+  desc "Tools for building Android applications"
   homepage "https://developer.android.com/studio/preview/"
 
   conflicts_with cask: "android-studio-preview-canary"
