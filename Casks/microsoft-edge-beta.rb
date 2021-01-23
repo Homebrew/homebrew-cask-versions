@@ -30,7 +30,7 @@ cask "microsoft-edge-beta" do
         },
       ]
 
-  uninstall pkgutil: "com.microsoft.edgemac.Beta.Beta",
+  uninstall pkgutil: "com.microsoft.edgemac.Beta",
             rmdir:   "/Library/Application Support/Microsoft"
 
   zap trash: [
