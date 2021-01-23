@@ -1,9 +1,18 @@
 cask "microsoft-edge-beta" do
-  version "88.0.705.22"
-  sha256 "3d181d095a0eb9205e27e5e2a20274c5e29f87e1b0da0e4a735eef20b1d36950"
+  version "88.0.705.49"
 
-  url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeBeta-#{version}.pkg",
-      verified: "officecdn-microsoft-com.akamaized.net/"
+  if Hardware::CPU.intel?
+    sha256 "c645aca0f84d2a68e8a71e5dfc51a3c16f0a422af3e75d71da01e5fc6d691c39"
+
+    url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeBeta-#{version}.pkg",
+        verified: "officecdn-microsoft-com.akamaized.net/"
+  else
+    sha256 "1d414292e5cebf8133c3190eb10c440fece90e197a8a5c832c32e839f0cc2b4e"
+
+    url "https://officecdn-microsoft-com.akamaized.net/pr/03adf619-38c6-4249-95ff-4a01c0ffc962/MacAutoupdate/MicrosoftEdgeBeta-#{version}.pkg",
+        verified: "officecdn-microsoft-com.akamaized.net/"
+  end
+
   appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://go.microsoft.com/fwlink/?linkid=2069439"
   name "Microsoft Edge Beta"
   desc "Multi-platform web browser"
@@ -21,7 +30,7 @@ cask "microsoft-edge-beta" do
         },
       ]
 
-  uninstall pkgutil: "com.microsoft.edgemac.Beta.Beta",
+  uninstall pkgutil: "com.microsoft.edgemac.Beta",
             rmdir:   "/Library/Application Support/Microsoft"
 
   zap trash: [
