@@ -6,8 +6,8 @@ cask "adoptopenjdk8" do
       verified: "github.com/AdoptOpenJDK/openjdk8-binaries/"
   appcast "https://github.com/adoptopenjdk/openjdk#{version.before_comma}-binaries/releases.atom"
   name "AdoptOpenJDK 8"
-  homepage "https://adoptopenjdk.net/"
   desc "Prebuilt OpenJDK Binaries for Free!"
+  homepage "https://adoptopenjdk.net/"
 
   pkg "OpenJDK#{version.before_comma}U-jdk_x64_mac_hotspot_#{version.before_comma}u#{version.after_comma.before_colon}#{version.after_comma.after_colon}.pkg"
 
