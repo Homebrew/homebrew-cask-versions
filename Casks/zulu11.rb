@@ -1,7 +1,7 @@
 cask "zulu11" do
   if Hardware::CPU.intel?
-    version "11.0.9.1,11.43.55-ca"
-    sha256 "18ba26ead6b15b4e8b6f9301053f962f2a7da3fb6f1d49a81957235979783cda"
+    version "11.0.10,11.45.27-ca"
+    sha256 "1c59885634ad438c9b198d31b9dd2aa310922484b3a0ffec603eec1b02eb898e"
 
     url "https://cdn.azul.com/zulu/bin/zulu#{version.after_comma}-jdk#{version.before_comma}-macosx_x64.dmg",
         referer: "https://www.azul.com/downloads/zulu/zulu-mac/"
