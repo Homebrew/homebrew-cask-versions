@@ -5,6 +5,7 @@ cask "signal-beta" do
   url "https://updates.signal.org/desktop/signal-desktop-beta-mac-#{version}.dmg"
   appcast "https://github.com/signalapp/Signal-Desktop/releases.atom"
   name "Signal Beta"
+  desc "Instant messaging application focusing on security"
   homepage "https://signal.org/"
 
   auto_updates true
