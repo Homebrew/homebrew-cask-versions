@@ -1,3 +1,6 @@
+# typed: false
+# frozen_string_literal: true
+
 cask "android-studio-preview-canary" do
   version "2020.3.1.5"
   sha256 "8bcadfc7ef2636909bf3da7327c353bddc9a9a764e47189732b5021d6bdede21"
@@ -7,6 +10,12 @@ cask "android-studio-preview-canary" do
   name "Android Studio Preview (Canary)"
   desc "Tools for building Android applications"
   homepage "https://developer.android.com/studio/preview/"
+
+  livecheck do
+    url :homepage
+    strategy :page_match
+    regex(/android-studio-(\d+(?:\.\d+)*)-mac.zip/)
+  end
 
   conflicts_with cask: "android-studio-preview-beta"
 
