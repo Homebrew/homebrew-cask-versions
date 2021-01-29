@@ -1,6 +1,3 @@
-# typed: false
-# frozen_string_literal: true
-
 cask "android-studio-preview-canary" do
   version "2020.3.1.5"
   sha256 "8bcadfc7ef2636909bf3da7327c353bddc9a9a764e47189732b5021d6bdede21"
