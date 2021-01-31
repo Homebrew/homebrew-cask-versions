@@ -8,6 +8,12 @@ cask "android-studio-preview-canary" do
   desc "Tools for building Android applications"
   homepage "https://developer.android.com/studio/preview/"
 
+  livecheck do
+    url :homepage
+    strategy :page_match
+    regex(/android-studio-(\d+(?:\.\d+)*)-mac.zip/)
+  end
+
   conflicts_with cask: "android-studio-preview-beta"
 
   app "Android Studio Preview.app"
