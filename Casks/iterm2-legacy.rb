@@ -8,7 +8,11 @@ cask "iterm2-legacy" do
   homepage "https://www.iterm2.com/"
 
   auto_updates true
-  conflicts_with cask: "iterm2"
+  conflicts_with cask: [
+    "iterm2",
+    "iterm2-beta",
+    "iterm2-nightly",
+  ]
 
   app "iTerm.app"
 
