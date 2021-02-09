@@ -10,7 +10,11 @@ cask "iterm2-beta" do
   homepage "https://www.iterm2.com/"
 
   auto_updates true
-  conflicts_with cask: "iterm2"
+  conflicts_with cask: [
+    "iterm2",
+    "iterm2-legacy",
+    "iterm2-nightly",
+  ]
   depends_on macos: ">= :mojave"
 
   app "iTerm.app"
