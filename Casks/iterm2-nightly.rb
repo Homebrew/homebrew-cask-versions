@@ -7,6 +7,11 @@ cask "iterm2-nightly" do
   name "iTerm2"
   homepage "https://www.iterm2.com/"
 
+  conflicts_with cask: [
+    "iterm2",
+    "iterm2-beta",
+    "iterm2-legacy",
+  ]
   depends_on macos: ">= :yosemite"
 
   app "iTerm.app"
