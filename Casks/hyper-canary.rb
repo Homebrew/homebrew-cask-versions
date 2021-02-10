@@ -11,7 +11,7 @@ cask "hyper-canary" do
   livecheck do
     url "https://github.com/vercel/hyper/releases"
     strategy :page_match
-    regex(/hyper-(\d+(?:\.\d+)*+.+)-mac\.zip/i)
+    regex(/hyper-(\d+(?:\.\d+)*.+)-mac\.zip/i)
   end
 
   auto_updates true
