@@ -1,16 +1,18 @@
 cask "hyper-canary" do
-  version "3.0.1-canary.4"
-  sha256 "d6c9d1d78769772f6afc431747c29488b9d4657fb1f892fef87f5d5040aa69ee"
+  version "3.1.0-canary.4"
+  sha256 "6585914c59fa71142154340d20e641e725d17bf25b58b7b43ecdf5362d0ff837"
 
-  url "https://github.com/zeit/hyper/releases/download/#{version}/hyper-#{version}-mac.zip",
-      verified: "github.com/zeit/hyper/"
-  appcast "https://github.com/zeit/hyper/releases.atom"
+  url "https://github.com/vercel/hyper/releases/download/v#{version}/Hyper-#{version}-mac.zip",
+      verified: "github.com/vercel/hyper/"
+  appcast "https://github.com/vercel/hyper/releases.atom"
   name "Hyper"
+  desc "Terminal built on web technologies"
   homepage "https://hyper.is/"
 
   auto_updates true
 
   app "Hyper.app"
+  binary "#{appdir}/Hyper.app/Contents/Resources/bin/hyper"
 
   zap trash: [
     "~/.hyper.js",
@@ -19,6 +21,9 @@ cask "hyper-canary" do
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.zeit.hyper.sfl*",
     "~/Library/Caches/co.zeit.hyper",
     "~/Library/Caches/co.zeit.hyper.ShipIt",
+    "~/Library/Cookies/co.zeit.hyper.binarycookies",
+    "~/Library/Logs/Hyper",
+    "~/Library/Preferences/ByHost/co.zeit.hyper.ShipIt.*.plist",
     "~/Library/Preferences/co.zeit.hyper.plist",
     "~/Library/Preferences/co.zeit.hyper.helper.plist",
     "~/Library/Saved Application State/co.zeit.hyper.savedState",
