@@ -4,12 +4,18 @@ cask "hyper-canary" do
 
   url "https://github.com/vercel/hyper/releases/download/v#{version}/Hyper-#{version}-mac.zip",
       verified: "github.com/vercel/hyper/"
-  appcast "https://github.com/vercel/hyper/releases.atom"
   name "Hyper"
   desc "Terminal built on web technologies"
   homepage "https://hyper.is/"
 
+  livecheck do
+    url "https://github.com/vercel/hyper/releases"
+    strategy :page_match
+    regex(/hyper-(\d+(?:\.\d+)*+.+)-mac\.zip/i)
+  end
+
   auto_updates true
+  conflicts_with cask: "hyper"
 
   app "Hyper.app"
   binary "#{appdir}/Hyper.app/Contents/Resources/bin/hyper"
