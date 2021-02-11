@@ -1,14 +1,14 @@
 cask "visual-studio-code-insiders" do
-  version "1.54.0,40b3204d70a9c72305c613164272175d0b344b5f"
+  version "1.54.0,e6d8271e2e3b139aa4cbadad8c117103a13f26fa"
 
   if Hardware::CPU.intel?
-    sha256 "30dac8d8a99e139192169b70f7aa23d97f9ca8fe19e1625a52eadca23a8daee1"
+    sha256 "e35953b659283b15eeb25c977c3c5b9791f9e5a7fe5207d1058d94c4d01b6102"
 
     url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-darwin.zip",
         verified: "az764295.vo.msecnd.net/insider/"
     appcast "https://update.code.visualstudio.com/api/update/darwin/insider/VERSION"
   else
-    sha256 "0ac75d14b27908aa7534e2832ffd9ee18b712f8addff43e8c888e7b6f1288ff0"
+    sha256 "07a0a5d54cdf36f4dd1388363de0d6414c7bfe483e0540262f79d774c64b634d"
 
     url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-darwin-arm64.zip",
         verified: "az764295.vo.msecnd.net/insider/"
