@@ -7,6 +7,8 @@ cask "google-chrome-dev" do
   desc "Web browser"
   homepage "https://www.google.com/chrome/dev/"
 
+  auto_updates true
+
   app "Google Chrome Dev.app"
 
   zap trash:     [

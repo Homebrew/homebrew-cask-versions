@@ -7,6 +7,8 @@ cask "google-chrome-beta" do
   desc "Web browser"
   homepage "https://www.google.com/chrome/beta/"
 
+  auto_updates true
+
   app "Google Chrome Beta.app"
 
   zap trash:     [

@@ -7,6 +7,8 @@ cask "google-chrome-canary" do
   desc "Web browser"
   homepage "https://www.google.com/chrome/canary/"
 
+  auto_updates true
+
   app "Google Chrome Canary.app"
 
   zap trash:     [
