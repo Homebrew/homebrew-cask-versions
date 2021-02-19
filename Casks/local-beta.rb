@@ -7,14 +7,6 @@ cask "local-beta" do
   desc "WordPress local development tool (beta)"
   homepage "https://localwp.com/community/c/local-beta/17/"
 
-  livecheck do
-    url "https://cdn.localwp.com/beta/latest/mac"
-    strategy :header_match do |headers|
-      match = headers["location"].match(%r{/(\d+(?:\.\d+)*)\+(\d+)/})
-      "#{match[1]},#{match[2]}"
-    end
-  end
-
   app "Local Beta.app"
 
   zap trash: [
