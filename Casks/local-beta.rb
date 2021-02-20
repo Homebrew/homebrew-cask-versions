@@ -4,7 +4,7 @@ cask "local-beta" do
 
   url "https://cdn.localwp.com/releases-beta/#{version.before_comma}+local-beta-#{version.after_comma}/local-beta-#{version.before_comma}-b#{version.after_comma}-mac.dmg"
   name "Local Beta"
-  desc "WordPress local development tool (beta)"
+  desc "WordPress local development tool by Flywheel (beta)"
   homepage "https://localwp.com/"
 
   app "Local Beta.app"
