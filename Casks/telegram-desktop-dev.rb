@@ -4,10 +4,14 @@ cask "telegram-desktop-dev" do
 
   url "https://github.com/telegramdesktop/tdesktop/releases/download/v#{version.major_minor_patch}/tsetup.#{version}.dmg",
       verified: "github.com/telegramdesktop/tdesktop/"
-  appcast "https://github.com/telegramdesktop/tdesktop/releases.atom",
-          must_contain: version.major_minor_patch
   name "Telegram Desktop"
+  desc "Desktop client for Telegram messenger"
   homepage "https://desktop.telegram.org/"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
 
   auto_updates true
   conflicts_with cask: "telegram-desktop"
