@@ -8,6 +8,7 @@ cask "gpg-suite-nightly" do
     html.match(/<td class='filename'><a href='(.*)'>/)[1]
   end
   name "GPG Suite Nightly"
+  desc "Tools to protect your emails and files"
   homepage "https://gpgtools.org/"
 
   conflicts_with cask: "gpg-suite"

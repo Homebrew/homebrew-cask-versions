@@ -1,6 +1,6 @@
 cask "android-studio-preview-beta" do
-  version "4.2.0.20,202.7094744"
-  sha256 "ffa3cf2a511fab8a87e1859a50f977f7c7f7464d2ff7af90cb44bcd332037e3b"
+  version "4.2.0.21,202.7141121"
+  sha256 "d927c4b0bacf9835ad74b90caf5013e00ef4ceb0bbd148ae6f615efd39dc67ae"
 
   url "https://dl.google.com/dl/android/studio/ide-zips/#{version.before_comma}/android-studio-ide-#{version.after_comma}-mac.zip",
       verified: "dl.google.com/dl/android/studio/"
@@ -14,12 +14,12 @@ cask "android-studio-preview-beta" do
 
   zap trash: [
     "~/Library/Android/sdk",
-    "~/Library/Application Support/AndroidStudio#{version.major_minor}",
-    "~/Library/Caches/AndroidStudio#{version.major_minor}",
-    "~/Library/Logs/AndroidStudio#{version.major_minor}",
-    "~/Library/Preferences/AndroidStudio#{version.major_minor}",
+    "~/Library/Application Support/Google/AndroidStudioPreview#{version.major_minor}",
+    "~/Library/Caches/Google/AndroidStudioPreview#{version.major_minor}",
+    "~/Library/Logs/Google/AndroidStudioPreview#{version.major_minor}",
+    "~/Library/Preferences/com.google.android.studio-EAP.plist",
     "~/Library/Preferences/com.android.Emulator.plist",
-    "~/Library/Saved Application State/com.google.android.studio.savedState",
+    "~/Library/Saved Application State/com.google.android.studio-EAP.savedState",
     "~/.android",
   ],
       rmdir: [
