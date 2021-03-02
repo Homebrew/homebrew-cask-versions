@@ -9,5 +9,5 @@ cask "qgis-ltr" do
   desc "Geographic Information System"
   homepage "https://www.qgis.org/"
 
-  app "QGIS#{version.major_minor}.app"
+  app "QGIS-LTR.app"
 end
