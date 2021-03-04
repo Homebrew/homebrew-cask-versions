@@ -1,6 +1,6 @@
 cask "mi-beta" do
-  version "3.5b4"
-  sha256 "0586d48d7796932ac88f30c02eeee896cdc9165caa88247c984126d4847ea3bc"
+  version "3.5.2"
+  sha256 "19646316623e83359b2f5c7096270e29ddc9b7db3b2f53d1350214bad3e23226"
 
   url "https://www.mimikaki.net/download/mi#{version}.dmg"
   appcast "https://www.mimikaki.net/download/appcast_beta.xml"
