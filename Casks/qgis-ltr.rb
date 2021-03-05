@@ -1,5 +1,5 @@
 cask "qgis-ltr" do
-  version "3.10.12"
+  version "3.16.4"
   sha256 :no_check
 
   url "https://qgis.org/downloads/macos/qgis-macos-ltr.dmg"
@@ -9,5 +9,5 @@ cask "qgis-ltr" do
   desc "Geographic Information System"
   homepage "https://www.qgis.org/"
 
-  app "QGIS#{version.major_minor}.app"
+  app "QGIS-LTR.app"
 end

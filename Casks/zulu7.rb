@@ -7,6 +7,14 @@ cask "zulu7" do
   name "Azul Zulu Java Standard Edition Development Kit"
   homepage "https://www.azul.com/downloads/zulu/zulu-mac/"
 
+  livecheck do
+    url "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=#{version.major}&ext=dmg&os=macos"
+    regex(/url":"https:.*zulu(.*)-jdk(.*)-macos/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| match[1] + "," + match[0] }
+    end
+  end
+
   pkg "Double-Click to Install Zulu #{version.major}.pkg"
 
   uninstall pkgutil: "com.azulsystems.zulu.#{version.major}"
