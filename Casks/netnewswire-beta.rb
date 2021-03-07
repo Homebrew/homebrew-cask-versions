@@ -10,6 +10,7 @@ cask "netnewswire-beta" do
   homepage "https://ranchero.com/netnewswire/"
 
   auto_updates true
+  conflicts_with cask: "netnewswire"
   depends_on macos: ">= :catalina"
 
   app "NetNewsWire.app"
