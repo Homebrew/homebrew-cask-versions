@@ -23,7 +23,11 @@ cask "dotnet-sdk-preview" do
   ]
   depends_on macos: ">= :sierra"
 
-  pkg "dotnet-sdk-#{version.before_comma}-osx-x64.pkg"
+  if Hardware::CPU.intel?
+    pkg "dotnet-sdk-#{version.before_comma}-osx-x64.pkg"
+  else
+    pkg "dotnet-sdk-#{version.before_comma}-osx-arm64.pkg"
+  end
   binary "/usr/local/share/dotnet/dotnet"
 
   uninstall pkgutil: [
