@@ -10,7 +10,8 @@ cask "telegram-desktop-dev" do
 
   livecheck do
     url :url
-    strategy :github_latest
+    strategy :page_match
+    regex(/tsetup.(\d+(?:\.\d+)*)\.beta\.dmg/i)
   end
 
   auto_updates true
