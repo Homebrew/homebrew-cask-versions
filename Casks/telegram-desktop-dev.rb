@@ -9,7 +9,7 @@ cask "telegram-desktop-dev" do
   homepage "https://desktop.telegram.org/"
 
   livecheck do
-    url :url
+    url "https://github.com/telegramdesktop/tdesktop/releases"
     strategy :page_match
     regex(/tsetup.(\d+(?:\.\d+)*)\.beta\.dmg/i)
   end
