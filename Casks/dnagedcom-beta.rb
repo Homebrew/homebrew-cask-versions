@@ -1,19 +1,16 @@
-require "json"
-
 cask "dnagedcom-beta" do
   version "3.1.3.8"
   sha256 :no_check
 
   url "https://www.dnagedcom.com/App3/Beta/DNAGedcomInstaller.pkg"
   name "DNAGedcom"
-  desc "Client for downloading & analyzing DNA matches from testing/comparison websites"
+  desc "Download and analyze DNA matches from testing/comparison websites"
   homepage "https://www.dnagedcom.com/"
 
   livecheck do
     url "https://genetic.family/setting/QuerySystem?SettingKey=DGCMac3_Beta"
     strategy :page_match do |page|
-      resp = JSON.parse(page)
-      resp["Data"]
+      JSON.parse(page)["Data"]
     end
   end
 
