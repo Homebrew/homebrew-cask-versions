@@ -1,6 +1,6 @@
 cask "brave-browser-dev" do
-  version "89.1.22.56,122.56"
-  sha256 "f25bade60566a01cbf0375fabfc06f53bc5341ecc71756e6c2f84349cc24a344"
+  version "89.1.22.63,122.63"
+  sha256 "95911cca527daab3fb1ad726424387fd60a7bf7334e54fac73353d306b202ec7"
 
   url "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/dev/#{version.after_comma}/Brave-Browser-Dev-x64.dmg",
       verified: "updates-cdn.bravesoftware.com/sparkle/Brave-Browser/"
