@@ -6,12 +6,6 @@ cask "opera-developer" do
   name "Opera Developer"
   homepage "https://www.opera.com/computer/beta"
 
-  livecheck do
-    url "https://download.opera.com/download/get/?partner=www&opsys=MacOS&product=Opera+developer"
-    strategy :page_match
-    regex(/Opera_Developer_(\d+(?:\.\d+)*)_Setup\.dmg/)
-  end
-
   auto_updates true
 
   app "Opera Developer.app"
