@@ -1,8 +1,8 @@
 cask "telegram-desktop-dev" do
-  version "2.6.6"
-  sha256 "d49e2cd83f94c33905492282a1d8190654a5e429b7afc53c8ae23aeaa3a20cd1"
+  version "2.7.0"
+  sha256 "74e3bbe380c252ba59ccf7d0adce83f996629bd1d4969e748883c58207041ceb"
 
-  url "https://github.com/telegramdesktop/tdesktop/releases/download/v#{version}/tsetup.#{version}.beta.dmg",
+  url "https://github.com/telegramdesktop/tdesktop/releases/download/v#{version}/tsetup.#{version}.dmg",
       verified: "github.com/telegramdesktop/tdesktop/"
   name "Telegram Desktop"
   desc "Desktop client for Telegram messenger"
@@ -11,7 +11,7 @@ cask "telegram-desktop-dev" do
   livecheck do
     url "https://github.com/telegramdesktop/tdesktop/releases"
     strategy :page_match
-    regex(/tsetup.(\d+(?:\.\d+)*)\.beta\.dmg/i)
+    regex(/tsetup.(\d+(?:\.\d+)*)\.dmg/i)
   end
 
   auto_updates true
