@@ -1,6 +1,6 @@
 cask "textmate-preview" do
-  version "2.0.15"
-  sha256 "36b5ad38e05558b7af2549de56f4d2fdab0ae90abecb515874ef8a47a680226c"
+  version "2.0.21"
+  sha256 "df1e8ecca2931f2138ccc241990be51e51875b9f3b743608c7750a1e992a13ad"
 
   url "https://github.com/textmate/textmate/releases/download/v#{version}/TextMate_#{version}.tbz",
       verified: "github.com/textmate/textmate/"
