@@ -3,9 +3,10 @@ cask "brave-browser-nightly" do
   sha256 :no_check
 
   url do
-    require "open-uri"
     appcast = "https://updates.bravesoftware.com/sparkle/Brave-Browser/nightly/appcast.xml"
-    URI(appcast).read[/enclosure url="([^"]+.dmg)"/, 1]
+    result = curl_output("--fail", "--silent", appcast)
+    result.assert_success!
+    result.stdout[/enclosure url="([^"]+.dmg)"/, 1]
   end
   name "Brave Nightly"
   desc "Web browser focusing on privacy"
