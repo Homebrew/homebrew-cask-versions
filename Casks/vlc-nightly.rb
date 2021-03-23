@@ -3,11 +3,14 @@ cask "vlc-nightly" do
   sha256 :no_check
 
   url do
-    require "open-uri"
     base_url = "https://artifacts.videolan.org/vlc/nightly-macos/"
-    folder = URI(base_url).read[/\d+-\d+/]
+    result = curl_output("--fail", "--silent", base_url)
+    result.assert_success!
+    folder = result.stdout[/\d+-\d+/]
     updated_url = "#{base_url}#{folder}/"
-    file = URI.join(updated_url).read[/href="([^"]+.dmg)"/, 1]
+    result = curl_output("--fail", "--silent", updated_url)
+    result.assert_success!
+    file = result.stdout[/href="([^"]+.dmg)"/, 1]
     "#{updated_url}#{file}"
   end
   name "VLC media player"
