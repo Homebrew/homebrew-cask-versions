@@ -8,6 +8,12 @@ cask "dropbox-beta" do
   desc "Client for the Dropbox cloud storage service"
   homepage "https://www.dropboxforum.com/t5/Desktop-client-builds/bd-p/101003016"
 
+  livecheck do
+    url :homepage
+    strategy :page_match
+    regex(/Beta\sBuild\s(\d+(?:\.\d+)*)/i)
+  end
+
   auto_updates true
   conflicts_with cask: "dropbox"
 
