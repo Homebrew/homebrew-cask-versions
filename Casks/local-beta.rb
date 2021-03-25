@@ -7,6 +7,14 @@ cask "local-beta" do
   desc "WordPress local development tool by Flywheel (beta)"
   homepage "https://localwp.com/"
 
+  livecheck do
+    url "https://cdn.localwp.com/stable/latest/mac"
+    strategy :header_match do |headers|
+      match = headers["location"].match(%r{/(\d+(?:\.\d+)*)\+local-beta-(\d+)/})
+      "#{match[1]},#{match[2]}"
+    end
+  end
+
   app "Local Beta.app"
 
   zap trash: [
