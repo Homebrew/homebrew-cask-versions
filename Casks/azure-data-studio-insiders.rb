@@ -1,6 +1,6 @@
 cask "azure-data-studio-insiders" do
-  version "1.28.0,780ca84f9a5104591fbae4231c9323f14f6aab28"
-  sha256 "9ac7e6b12a367d862da8bb07ded5dae1a6d4eb5046e0ae78fbd377cfb9d86c2a"
+  version "1.28.0,de494f97ef3450f065188075cb605aab2e35a6ea"
+  sha256 "4c8786912b4e0862b5000dc589a84f87f85368b4137fa17297c0f24cbf86f1ab"
 
   url "https://sqlopsbuilds.azureedge.net/insider/#{version.after_comma}/azuredatastudio-macos-#{version.before_comma}-insider.zip",
       verified: "sqlopsbuilds.azureedge.net/insider/"
