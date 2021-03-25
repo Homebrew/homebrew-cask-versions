@@ -8,6 +8,10 @@ cask "olympus" do
   desc "Everest (Mod loader for video games Celeste) installer / manager"
   homepage "https://everestapi.github.io/"
 
+  livecheck do
+    skip
+  end
+
   container nested: "macos.main/dist.zip"
 
   app "Olympus.app"
