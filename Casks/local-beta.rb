@@ -8,7 +8,7 @@ cask "local-beta" do
   homepage "https://localwp.com/"
 
   livecheck do
-    url "https://cdn.localwp.com/stable/latest/mac"
+    url "https://cdn.localwp.com/beta/latest/mac"
     strategy :header_match do |headers|
       match = headers["location"].match(%r{/(\d+(?:\.\d+)*)\+local-beta-(\d+)/})
       "#{match[1]},#{match[2]}"
