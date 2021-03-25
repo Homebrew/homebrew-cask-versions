@@ -1,12 +1,16 @@
 cask "olympus" do
-  version "1998"
-  sha256 "d202412b1cfdef49c05172a60b2661cb3110194c1a2c3e646b624093672feacd"
+  version "2012"
+  sha256 "317bde78dcd7725e0dbd5ff4b41f2a16c93138944cd79b6d3f877849a490823f"
 
   url "https://dev.azure.com/EverestAPI/Olympus/_apis/build/builds/#{version}/artifacts?artifactName=macos.main&$format=zip",
       verified: "dev.azure.com/EverestAPI/Olympus"
   name "Olympus"
   desc "Everest (Mod loader for video games Celeste) installer / manager"
   homepage "https://everestapi.github.io/"
+
+  livecheck do
+    skip
+  end
 
   container nested: "macos.main/dist.zip"
 
