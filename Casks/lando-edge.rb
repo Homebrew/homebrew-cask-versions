@@ -4,7 +4,6 @@ cask "lando-edge" do
 
   url "https://github.com/lando/lando/releases/download/v#{version}/lando-v#{version}.dmg",
       verified: "github.com/lando/lando/"
-  appcast "https://github.com/lando/lando/releases.atom"
   name "Lando Edge"
   homepage "https://docs.lando.dev/"
 
