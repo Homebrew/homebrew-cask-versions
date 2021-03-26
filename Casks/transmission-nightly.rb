@@ -3,9 +3,10 @@ cask "transmission-nightly" do
   sha256 :no_check
 
   url do
-    require "open-uri"
     base_url = "https://build.transmissionbt.com/job/trunk-mac/lastSuccessfulBuild/artifact/release/"
-    file = URI(base_url).read[/href="([^"]+.dmg)"/, 1]
+    result = curl_output("--fail", "--silent", base_url)
+    result.assert_success!
+    file = result.stdout[/href="([^"]+.dmg)"/, 1]
     "#{base_url}#{file}"
   end
   name "Transmission"

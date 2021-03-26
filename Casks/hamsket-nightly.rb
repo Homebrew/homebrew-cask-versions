@@ -3,9 +3,10 @@ cask "hamsket-nightly" do
   sha256 :no_check
 
   url do
-    require "open-uri"
     base_url = "https://github.com/TheGoddessInari/hamsket/releases"
-    "https://github.com#{URI(base_url).read[%r{href="([^"]+nightly/Hamsket-.*.dmg)"}, 1]}"
+    result = curl_output("--fail", "--silent", base_url)
+    result.assert_success!
+    "https://github.com#{result.stdout[%r{href="([^"]+nightly/Hamsket-.*.dmg)"}, 1]}"
   end
   name "Hamsket"
   desc "Free and Open Source messaging and emailing app"
