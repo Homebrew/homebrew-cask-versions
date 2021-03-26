@@ -3,9 +3,11 @@ cask "sequel-pro-nightly" do
   sha256 :no_check
 
   url do
-    result = curl_output("--fail", "--silent", "https://sequelpro.com/builds/latest-test-build.xml")
-    result.assert_success!
-    result.stdout[%r{https://sequelpro.com/builds/Sequel-Pro-Build-\w+.zip}]
+    require "resolv-replace"
+    require "open-uri"
+    URI("https://sequelpro.com/builds/latest-test-build.xml").open do |page|
+      page.read[%r{https://sequelpro.com/builds/Sequel-Pro-Build-\w+.zip}]
+    end
   end
   name "Sequel Pro"
   homepage "https://sequelpro.com/test-builds"
