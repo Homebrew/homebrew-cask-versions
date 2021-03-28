@@ -2,9 +2,8 @@ cask "netnewswire-beta" do
   version "6.0.1b1"
   sha256 "e73ba43fd587e14de32b055787100c8e9948da29e5088d28f7779b4be845e58f"
 
-  url "https://github.com/brentsimmons/NetNewsWire/releases/download/mac-#{version}/NetNewsWire#{version.sub("beta", "b")}.zip",
+  url "https://github.com/brentsimmons/NetNewsWire/releases/download/mac-#{version}/NetNewsWire#{version}.zip",
       verified: "github.com/brentsimmons/NetNewsWire/"
-  appcast "https://github.com/brentsimmons/NetNewsWire/releases.atom"
   name "NetNewsWire"
   desc "Free and open-source RSS reader"
   homepage "https://ranchero.com/netnewswire/"
