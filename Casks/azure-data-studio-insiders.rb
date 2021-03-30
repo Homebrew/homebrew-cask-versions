@@ -4,10 +4,18 @@ cask "azure-data-studio-insiders" do
 
   url "https://sqlopsbuilds.azureedge.net/insider/#{version.after_comma}/azuredatastudio-macos-#{version.before_comma}-insider.zip",
       verified: "sqlopsbuilds.azureedge.net/insider/"
-  appcast "https://azuredatastudio-update.azurewebsites.net/api/update/darwin/insider/VERSION"
   name "Azure Data Studio - Insiders"
   desc "Data management tool that enables working with SQL Server"
   homepage "https://docs.microsoft.com/en-us/sql/azure-data-studio/"
+
+  livecheck do
+    url "https://azuredatastudio-update.azurewebsites.net/api/update/darwin/insider/VERSION"
+    strategy :page_match do |page|
+      name = page.match(/"name":"(\d+(?:\.\d+)*)/i)
+      version = page.match(/"version":"(\w+)/i)
+      "#{name[1]},#{version[1]}"
+    end
+  end
 
   auto_updates true
 
