@@ -14,7 +14,7 @@ cask "visual-studio-code-insiders" do
   end
 
   name "Microsoft Visual Studio Code"
-  name "VS Code"
+  name "VS Code Insiders"
   desc "Open-source code editor"
   homepage "https://code.visualstudio.com/insiders"
 
