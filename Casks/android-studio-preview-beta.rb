@@ -8,6 +8,14 @@ cask "android-studio-preview-beta" do
   desc "Tools for building Android applications"
   homepage "https://developer.android.com/studio/preview/"
 
+  livecheck do
+    url :homepage
+    strategy :page_match do |page|
+      match = page.match(/href=.*?(\d+(?:\.\d+)+)\/android-studio-ide-(\d+(?:\.\d+)+)-mac\.zip/i)
+      "#{match[1]},#{match[2]}"
+    end
+  end
+
   conflicts_with cask: "android-studio-preview-canary"
 
   app "Android Studio #{version.major_minor} Preview.app"
