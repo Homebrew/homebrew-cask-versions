@@ -15,7 +15,7 @@ cask "visual-studio-code-insiders" do
 
   name "Microsoft Visual Studio Code"
   name "VS Code Insiders"
-  desc "Open-source code editor"
+  desc "Code editor"
   homepage "https://code.visualstudio.com/insiders"
 
   livecheck do
