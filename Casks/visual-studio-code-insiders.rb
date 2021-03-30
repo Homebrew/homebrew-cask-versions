@@ -6,18 +6,26 @@ cask "visual-studio-code-insiders" do
 
     url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-darwin.zip",
         verified: "az764295.vo.msecnd.net/insider/"
-    appcast "https://update.code.visualstudio.com/api/update/darwin/insider/VERSION"
   else
     sha256 "038133f0fd98df8d8205a15d82f15d979e771c3a778746441d5b7e6b23c82b5a"
 
     url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-darwin-arm64.zip",
         verified: "az764295.vo.msecnd.net/insider/"
-    appcast "https://update.code.visualstudio.com/api/update/darwin-arm64/insider/VERSION"
   end
+
   name "Microsoft Visual Studio Code"
-  name "VS Code - Insiders"
-  desc "Integrated development environment"
+  name "VS Code"
+  desc "Open-source code editor"
   homepage "https://code.visualstudio.com/insiders"
+
+  livecheck do
+    url "https://update.code.visualstudio.com/api/update/darwin-universal/insider/VERSION"
+    strategy :page_match do |page|
+      name = page.match(/"name":"(\d+(?:\.\d+)*)/i)
+      version = page.match(/"version":"(\w+)/i)
+      "#{name[1]},#{version[1]}"
+    end
+  end
 
   auto_updates true
 
