@@ -21,9 +21,9 @@ cask "visual-studio-code-insiders" do
   livecheck do
     url "https://update.code.visualstudio.com/api/update/darwin-universal/insider/VERSION"
     strategy :page_match do |page|
-      name = page.match(/"name":"(\d+(?:\.\d+)*)/i)
-      version = page.match(/"version":"(\w+)/i)
-      "#{name[1]},#{version[1]}"
+      name = page[/"name":"(\d+(?:\.\d+)*)/i, 1]
+      version = page[/"version":"(\w+)/i, 1]
+      "#{name},#{version}"
     end
   end
 
