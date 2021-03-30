@@ -6,6 +6,10 @@ cask "appcode-eap" do
   name "AppCode EAP"
   homepage "https://www.jetbrains.com/objc/nextversion/"
 
+  livecheck do
+    skip "No version information available"
+  end
+
   conflicts_with cask: "appcode"
 
   app "AppCode #{version.before_comma} EAP.app"
