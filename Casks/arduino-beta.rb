@@ -12,6 +12,7 @@ cask "arduino-beta" do
     strategy :page_match do |page|
       match = page.match(/href=.*?arduino[._-]ide[._-]v?(\d+(?:\.\d+)+)[._-]beta\.(\d+)[._-]macos[._-]64bit\.dmg/i)
       "#{match[1]},#{match[2]}"
+    end
   end
 
   app "Arduino IDE.app"
