@@ -78,12 +78,9 @@ cask "firefox-nightly" do
     "zh-CN"
   end
 
-  url do
-    require "open-uri"
-    base_url = "https://download-installer.cdn.mozilla.net/pub/firefox/nightly"
-    builds_url = "#{base_url}/latest-mozilla-central#{language == "en-US" ? "" : "-l10n"}/"
-    latest_build_filename = URI(builds_url).open.read.scan(%r{<td><a href="/pub/firefox/nightly/([^"]+\.mac\.dmg)">}).flatten.grep(/\.#{language}\.mac\.dmg/).max
-    "#{base_url}/#{latest_build_filename}"
+  url "https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-central#{language == "en-US" ? "" : "-l10n"}/" do |page|
+    file_path = page.scan(%r{<td><a href="(/pub/firefox/nightly/[^"]+\.mac\.dmg)">}).flatten.grep(/\.#{language}\.mac\.dmg/).max
+    [URI.join(page.url, file_path), { verified: "mozilla.net" }]
   end
   name "Mozilla Firefox Nightly"
   desc "Web browser"

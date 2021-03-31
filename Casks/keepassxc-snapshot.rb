@@ -2,11 +2,9 @@ cask "keepassxc-snapshot" do
   version :latest
   sha256 :no_check
 
-  url do
-    require "open-uri"
-    base_url = "https://snapshot.keepassxc.org/latest/"
-    path = URI(base_url).read[/href="([^"]+-snapshot\.dmg)"/, 1]
-    "#{base_url}#{path}"
+  url "https://snapshot.keepassxc.org/latest/" do |page|
+    file_path = page[/href="([^"]+-snapshot\.dmg)"/, 1]
+    URI.join(page.url, file_path)
   end
   name "KeePassXC"
   desc "Password manager app"

@@ -2,10 +2,8 @@ cask "hamsket-nightly" do
   version :latest
   sha256 :no_check
 
-  url do
-    require "open-uri"
-    base_url = "https://github.com/TheGoddessInari/hamsket/releases"
-    "https://github.com#{URI(base_url).read[%r{href="([^"]+nightly/Hamsket-.*.dmg)"}, 1]}"
+  url "https://github.com/TheGoddessInari/hamsket/releases" do |page|
+    "https://github.com#{page[%r{href="([^"]+nightly/Hamsket-.*.dmg)"}, 1]}"
   end
   name "Hamsket"
   desc "Free and Open Source messaging and emailing app"

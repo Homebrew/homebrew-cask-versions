@@ -2,10 +2,8 @@ cask "gpg-suite-nightly" do
   version :latest
   sha256 :no_check
 
-  url do
-    require "open-uri"
-    html = URI("https://releases.gpgtools.org/nightlies/").open.read
-    html.match(/<td class='filename'><a href='(.*)'>/)[1]
+  url "https://releases.gpgtools.org/nightlies/" do |page|
+    page[/<td class='filename'><a href='(.*)'>/, 1]
   end
   name "GPG Suite Nightly"
   desc "Tools to protect your emails and files"
