@@ -2,11 +2,10 @@ cask "slicer-preview" do
   version :latest
   sha256 :no_check
 
-  url do
-    require "open-uri"
+  url "https://download.slicer.org/find?os=macosx&stability=nightly" do |page|
     require "json"
-    base_url = "https://download.slicer.org"
-    "#{base_url}/#{JSON.parse(URI("#{base_url}/find?os=macosx&stability=nightly").read)["download_url"]}"
+    file_path = JSON.parse(page)["download_url"]
+    URI.join(page.url, file_path)
   end
   name "3D Slicer"
   desc "Medical image processing and visualization system"

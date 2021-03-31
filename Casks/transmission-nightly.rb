@@ -2,11 +2,9 @@ cask "transmission-nightly" do
   version :latest
   sha256 :no_check
 
-  url do
-    require "open-uri"
-    base_url = "https://build.transmissionbt.com/job/trunk-mac/lastSuccessfulBuild/artifact/release/"
-    file = URI(base_url).read[/href="([^"]+.dmg)"/, 1]
-    "#{base_url}#{file}"
+  url "https://build.transmissionbt.com/job/trunk-mac/lastSuccessfulBuild/artifact/release/" do |page|
+    file_path = page[/href="([^"]+.dmg)"/, 1]
+    URI.join(page.url, file_path)
   end
   name "Transmission"
   desc "Open-source BitTorrent client"

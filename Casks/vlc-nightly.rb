@@ -2,13 +2,12 @@ cask "vlc-nightly" do
   version :latest
   sha256 :no_check
 
-  url do
-    require "open-uri"
-    base_url = "https://artifacts.videolan.org/vlc/nightly-macos/"
-    folder = URI(base_url).read[/\d+-\d+/]
-    updated_url = "#{base_url}#{folder}/"
-    file = URI.join(updated_url).read[/href="([^"]+.dmg)"/, 1]
-    "#{updated_url}#{file}"
+  url "https://artifacts.videolan.org/vlc/nightly-macos/" do |page|
+    folder_path = page[%r{\d+-\d+/}]
+    url URI.join(page.url, folder_path) do |version_page|
+      file_path = version_page[/href="([^"]+.dmg)"/, 1]
+      URI.join(version_page.url, file_path)
+    end
   end
   name "VLC media player"
   desc "Open-source cross-platform multimedia player"

@@ -2,9 +2,8 @@ cask "emacs-nightly" do
   version :latest
   sha256 :no_check
 
-  url do
-    require "open-uri"
-    URI("https://emacsformacosx.com/atom/daily").read[/href="([^"]+.dmg)"/, 1]
+  url "https://emacsformacosx.com/atom/daily" do |page|
+    page[/href="([^"]+.dmg)"/, 1]
   end
   name "Emacs"
   desc "GNU Emacs text editor"

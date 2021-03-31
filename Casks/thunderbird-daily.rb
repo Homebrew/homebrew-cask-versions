@@ -18,12 +18,9 @@ cask "thunderbird-daily" do
     "uk"
   end
 
-  url do
-    require "open-uri"
-    base_url = "https://download-installer.cdn.mozilla.net/pub/thunderbird/nightly"
-    builds_url = "#{base_url}/latest-comm-central#{language == "en-US" ? "" : "-l10n"}/"
-    latest_build_filename = URI(builds_url).open.read.scan(%r{<td><a href="/pub/thunderbird/nightly/([^"]+\.mac\.dmg)">}).flatten.grep(/\.#{language}\.mac\.dmg/).last
-    "#{base_url}/#{latest_build_filename}"
+  url "https://download-installer.cdn.mozilla.net/pub/thunderbird/nightly/latest-comm-central#{language == "en-US" ? "" : "-l10n"}/" do |page|
+    file_path = page.scan(%r{<td><a href="(/pub/thunderbird/nightly/[^"]+\.mac\.dmg)">}).flatten.grep(/\.#{language}\.mac\.dmg/).max
+    [URI.join(page.url, file_path), { verified: "mozilla.net" }]
   end
   name "Earlybird"
   name "Thunderbird Daily"

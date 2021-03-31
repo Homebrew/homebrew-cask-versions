@@ -2,12 +2,9 @@ cask "handbrake-nightly" do
   version :latest
   sha256 :no_check
 
-  url do
-    require "open-uri"
-    base_url = "https://handbrake.fr/nightly.php"
-    content = URI(base_url).read
-    file_path = content[/href=["']?([^"' >]*Handbrake[._-][^"' >]+\.dmg)["' >]/i, 1]
-    file_path ? URI.join(base_url, file_path) : nil
+  url "https://handbrake.fr/nightly.php" do |page|
+    file_path = page[/href=["']?([^"' >]*Handbrake[._-][^"' >]+\.dmg)["' >]/i, 1]
+    URI.join(page.url, file_path)
   end
   name "HandBrake"
   desc "Open-source video transcoder"
