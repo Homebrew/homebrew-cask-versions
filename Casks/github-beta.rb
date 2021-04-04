@@ -1,6 +1,6 @@
 cask "github-beta" do
-  version "2.7.0-beta1-6ab505f0"
-  sha256 "064b7ec9e6bcf3e445e37767426b7a2762f68159c05b8106ca61065fd98a7ddb"
+  version "2.7.2-beta1-b1d6981c"
+  sha256 "8ffb98b3c1720c028fdd4013ed5923a716eeda508af4f4bebdfb293ef9608877"
 
   url "https://desktop.githubusercontent.com/releases/#{version}/GitHubDesktop.zip",
       verified: "desktop.githubusercontent.com/"
