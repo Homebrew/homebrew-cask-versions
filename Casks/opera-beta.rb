@@ -7,6 +7,12 @@ cask "opera-beta" do
   desc "Cross-platform web browser"
   homepage "https://www.opera.com/computer/beta"
 
+  livecheck do
+    url "https://get.geo.opera.com/pub/opera-beta/"
+    strategy :page_match
+    regex(/href="(\d+(?:\.\d+)*)/i)
+  end
+
   auto_updates true
 
   app "Opera Beta.app"
