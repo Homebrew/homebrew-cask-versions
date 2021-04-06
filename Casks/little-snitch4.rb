@@ -9,10 +9,15 @@ cask "little-snitch4" do
     url "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-#{version}.dmg"
   end
 
-  appcast "https://www.obdev.at/products/littlesnitch/releasenotes#{version.major}.html"
   name "Little Snitch"
   desc "Host-based application firewall"
   homepage "https://www.obdev.at/products/littlesnitch/index.html"
+
+  livecheck do
+    url "https://www.obdev.at/products/littlesnitch/releasenotes#{version.major}.html"
+    strategy :page_match
+    regex(/Little\sSnitch\s(\d+(?:\.\d+)*)/i)
+  end
 
   auto_updates true
   depends_on macos: [
