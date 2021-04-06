@@ -6,6 +6,12 @@ cask "opera-developer" do
   name "Opera Developer"
   homepage "https://www.opera.com/computer/beta"
 
+  livecheck do
+    url "https://get.geo.opera.com/pub/opera-developer/"
+    strategy :page_match
+    regex(/href="(\d+(?:\.\d+)*)/i)
+  end
+
   auto_updates true
 
   app "Opera Developer.app"
