@@ -60,7 +60,7 @@ cask "firefox-nightly" do
     "pt-BR"
   end
   language "pt" do
-    "pt"
+    "pt-PT"
   end
   language "ru" do
     "ru"
