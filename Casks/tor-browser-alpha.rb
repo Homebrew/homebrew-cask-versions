@@ -8,6 +8,12 @@ cask "tor-browser-alpha" do
   desc "Web browser focusing on security"
   homepage "https://www.torproject.org/"
 
+  livecheck do
+    url "https://www.torproject.org/download/alpha/"
+    strategy :page_match
+    regex(%r{href=.*?/TorBrowser-(\d+(?:.\d+)*)-osx64_.*\.dmg}i)
+  end
+
   auto_updates true
   conflicts_with cask: "tor-browser"
 
