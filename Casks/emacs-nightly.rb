@@ -3,9 +3,8 @@ cask "emacs-nightly" do
   sha256 :no_check
 
   url do
-    result = curl_output("--fail", "--silent", "https://emacsformacosx.com/atom/daily")
-    result.assert_success!
-    result.stdout[/href="([^"]+.dmg)"/, 1]
+    require "open-uri"
+    URI("https://emacsformacosx.com/atom/daily").read[/href="([^"]+.dmg)"/, 1]
   end
   name "Emacs"
   desc "GNU Emacs text editor"

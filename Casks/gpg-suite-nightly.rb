@@ -3,9 +3,9 @@ cask "gpg-suite-nightly" do
   sha256 :no_check
 
   url do
-    result = curl_output("--fail", "--silent", "https://releases.gpgtools.org/nightlies/")
-    result.assert_success!
-    result.stdout.match(/<td class='filename'><a href='(.*)'>/)[1]
+    require "open-uri"
+    html = URI("https://releases.gpgtools.org/nightlies/").open.read
+    html.match(/<td class='filename'><a href='(.*)'>/)[1]
   end
   name "GPG Suite Nightly"
   desc "Tools to protect your emails and files"
