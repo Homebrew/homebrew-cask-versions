@@ -7,6 +7,12 @@ cask "rstudio-preview" do
   name "RStudio"
   homepage "https://www.rstudio.com/products/rstudio/download/preview/"
 
+  livecheck do
+    url :homepage
+    strategy :page_match
+    regex(/RStudio-(\d+(?:\.\d+)*)\.dmg/i)
+  end
+
   app "RStudio.app"
 
   zap trash: "~/.rstudio-desktop"
