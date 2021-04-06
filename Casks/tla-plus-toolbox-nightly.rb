@@ -4,7 +4,7 @@ cask "tla-plus-toolbox-nightly" do
 
   url "https://tla.msr-inria.inria.fr/tlatoolbox/ci/products/" do |page|
     file_path = page[/href="([^"]+-macosx.cocoa.x86_64.zip)"/, 1]
-    URI.join(page.url, file_path)
+    [URI.join(page.url, file_path), { verified: "tla.msr-inria.inria.fr" }]
   end
   name "TLA+ Toolbox"
   desc "IDE for TLA+"
