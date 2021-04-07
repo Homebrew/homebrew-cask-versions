@@ -1,11 +1,17 @@
 cask "google-chrome-dev" do
-  version "90.0.4421.5,4421.5"
+  version "91.0.4464.5"
   sha256 :no_check
 
   url "https://dl.google.com/chrome/mac/universal/dev/googlechromedev.dmg"
   name "Google Chrome Dev"
   desc "Web browser"
   homepage "https://www.google.com/chrome/dev/"
+
+  livecheck do
+    url "https://omahaproxy.appspot.com/history?os=mac;channel=dev"
+    strategy :page_match
+    regex(/mac,dev,(\d+(?:\.\d+)*)/i)
+  end
 
   auto_updates true
 
