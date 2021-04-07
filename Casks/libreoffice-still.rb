@@ -9,6 +9,16 @@ cask "libreoffice-still" do
   desc "Free cross-platform office suite"
   homepage "https://www.libreoffice.org/"
 
+  livecheck do
+    url "https://www.libreoffice.org/download/release-notes/"
+    strategy :page_match do |page|
+      match = page.match(
+        /LibreOffice\s*(\d+(?:\.\d+)*)\s*\((\d+(?:-\d+)*)\)\s*-\s*Still\s*Branch/i,
+      )
+      "#{match[1]}"
+    end
+  end
+
   conflicts_with cask: "libreoffice"
 
   app "LibreOffice.app"
