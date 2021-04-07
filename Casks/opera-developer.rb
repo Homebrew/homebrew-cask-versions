@@ -1,10 +1,17 @@
 cask "opera-developer" do
-  version "76.0.3995.0"
-  sha256 "dc1de5d8d92208a009dcc0b3972c08932ec6de4d88adeabecbd4b60704ede39b"
+  version "76.0.4016.0"
+  sha256 "54104710acbba49cea994e0677b5b87a92b952530d9b6430710c1725d437a360"
 
   url "https://get.geo.opera.com/pub/opera-developer/#{version}/mac/Opera_Developer_#{version}_Setup.dmg"
   name "Opera Developer"
+  desc "Web browser"
   homepage "https://www.opera.com/computer/beta"
+
+  livecheck do
+    url "https://get.geo.opera.com/pub/opera-developer/"
+    strategy :page_match
+    regex(/href="(\d+(?:\.\d+)*)/i)
+  end
 
   auto_updates true
 
