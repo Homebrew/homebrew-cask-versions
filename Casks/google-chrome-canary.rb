@@ -1,11 +1,17 @@
 cask "google-chrome-canary" do
-  version "90.0.4424.0,4424.0"
+  version "91.0.4468.0"
   sha256 :no_check
 
   url "https://dl.google.com/chrome/mac/universal/canary/googlechromecanary.dmg"
   name "Google Chrome Canary"
   desc "Web browser"
   homepage "https://www.google.com/chrome/canary/"
+
+  livecheck do
+    url "https://omahaproxy.appspot.com/history?os=mac;channel=canary"
+    strategy :page_match
+    regex(/mac,canary,(\d+(?:\.\d+)*)/i)
+  end
 
   auto_updates true
 
