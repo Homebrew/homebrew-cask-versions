@@ -1,11 +1,17 @@
 cask "google-chrome-beta" do
-  version "89.0.4389.40,4389.40"
+  version "90.0.4430.51"
   sha256 :no_check
 
   url "https://dl.google.com/chrome/mac/universal/beta/googlechromebeta.dmg"
   name "Google Chrome Beta"
   desc "Web browser"
   homepage "https://www.google.com/chrome/beta/"
+
+  livecheck do
+    url "https://omahaproxy.appspot.com/history?os=mac;channel=beta"
+    strategy :page_match
+    regex(/mac,beta,(\d+(?:\.\d+)*)/i)
+  end
 
   auto_updates true
 
