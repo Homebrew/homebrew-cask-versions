@@ -4,10 +4,14 @@ cask "iterm2-beta" do
   sha256 "86b42e49bff8400f090ec83f7a15b32d94573bee2c9354f5d46a73ca27290758"
 
   url "https://iterm2.com/downloads/beta/iTerm2-#{version.dots_to_underscores}.zip"
-  appcast "https://iterm2.com/appcasts/testing_modern.xml"
   name "iTerm2"
   desc "Terminal emulator as alternative to Apple's Terminal app"
   homepage "https://www.iterm2.com/"
+
+  livecheck do
+    url "https://iterm2.com/appcasts/testing_modern.xml"
+    strategy :sparkle
+  end
 
   auto_updates true
   conflicts_with cask: [
