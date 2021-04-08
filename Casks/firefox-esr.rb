@@ -1,78 +1,82 @@
 cask "firefox-esr" do
-  version "78.8.0"
+  version "78.9.0"
 
   language "cs" do
-    sha256 "68cf3eb3bffd1eef9109af10486bf2e824c76a3ec0e3108c7d20fa9417aac093"
+    sha256 "dccabb4113a1041326390da438d1635c98753d4df11e6adbb47050de0f223802"
     "cs"
   end
   language "de" do
-    sha256 "d928e5b7c72f06fe12c120976056db0097ac24ed859bff6a0a96446e2cf4165c"
+    sha256 "1d11b9bdabd5afd6907a0e8be7fdd8549f04bc00ac07d3fe8367ca3e51e7e219"
     "de"
   end
   language "en-CA" do
-    sha256 "b37a6f711529f81e1603f3832e1d055df2cc8e4edc0df633bcf98e5d470c094f"
+    sha256 "7c54f7fb6af28016d362db10bad10f3358ff612bd182c056673042fff9a21e71"
     "en-CA"
   end
   language "en-GB" do
-    sha256 "87a6c1d08e62946ed6316c5c8a024ddbf0d9de211569c214a2d25f06fce95b0b"
+    sha256 "5fac6851f7bc0f621463b1ab495aa1dd14271439372cde31868b0614278cbd13"
     "en-GB"
   end
   language "en", default: true do
-    sha256 "87a07644dcb326672da0ef6c6aa46307c6a7558d4fb6ac4c615778036c5d522e"
+    sha256 "afb97bd0ffc48103a3513ce8ded8bb245438a9460846643dea72c77a71694e0d"
     "en-US"
   end
   language "fr" do
-    sha256 "9f789ebaa7915437eb0fe80b14529e198fd13ed5a265296b6b89f861eadca6d1"
+    sha256 "2408c873e3473c542ebf3e7507f7ddc749a4c2b64e44c4074db4844b0ffd6b52"
     "fr"
   end
   language "gl" do
-    sha256 "682277a021c2a3e707b6d77ba3c9e8c62df84fd55ed914f38c7fd47cb8577ae5"
+    sha256 "6188bf23dd19fad243cac6b231cf3e409ee4f41127bd705c5ff38affa071910e"
     "gl"
   end
   language "it" do
-    sha256 "b1925b8069b023620e2b5e1ce1d0c3130a86e01703d31ce52857662412641000"
+    sha256 "64525aba993ce16037807a849c6aee044da8380d7dba13c18d6cd11b2338fb27"
     "it"
   end
   language "ja" do
-    sha256 "ef5b1a07de8478318f1781d8e8312ddfc5c7f17f04dd74809857b00199842243"
+    sha256 "71261775aaebfbe0787c25ade7a8d818e7977ee6784aefd933a228d12cadd33f"
     "ja-JP-mac"
   end
   language "nl" do
-    sha256 "2c786374be353f05899f3421bd778a15d4ec7d1620991821620e075e5e4349a5"
+    sha256 "aced677c065ff1c31b6d0b951668e3fab0e886d5bb4da22dd650219b8d84beca"
     "nl"
   end
   language "pl" do
-    sha256 "e010dca0186fa5ead721fbb86cefb68a5faacb58c706a01e88a5a98adaacf537"
+    sha256 "97d26d4121c49b7363a602643073680ca56d7b74a82891a0a3ac0913f62d1fe4"
     "pl"
   end
   language "pt" do
-    sha256 "9eb1d036bef4ab879c6a1beb3eca69cbfe9545fc309e7fe4560c81c0e7697299"
+    sha256 "37b77b25564278221615ab4274333515166e37413ffb0992b2b72933c040b274"
     "pt-PT"
   end
   language "ru" do
-    sha256 "a624fca17bcd6bc053ca91a21c98ba193f4ee9161976111e943fdb691c129cd2"
+    sha256 "ba5d343c885d67a9fe20a8b24ebcbc9d1b756dbc70e17fea2c1bd0306d5bb697"
     "ru"
   end
   language "uk" do
-    sha256 "ca78b8025bb4d82538c746c58fc2da054856f8f62cb74108f0b393331d768ad8"
+    sha256 "20f09968c653b1eae248172ad090b024fc70e9750870eb00676241711a28fd2d"
     "uk"
   end
   language "zh-TW" do
-    sha256 "ceaf33d16c79e659075b22a243982cc014784e7bf09678e10183ca5d7654a59c"
+    sha256 "e5c745c198c414dba0bf63476580d4a1b36a991fed1e78fa22ba52610cfe1c9c"
     "zh-TW"
   end
   language "zh" do
-    sha256 "0e4568cc90abdbe37dac9c9f64b329af7ff3707bf477300cae71ca3efbc09839"
+    sha256 "f31ca3c09c910e4c78142ef83d0d61c9434b483b7a9b0008a4e15816958dcdb3"
     "zh-CN"
   end
 
   url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/#{version}esr/mac/#{language}/Firefox%20#{version}esr.dmg",
       verified: "download-installer.cdn.mozilla.net/pub/firefox/releases/"
-  appcast "https://www.macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://download.mozilla.org/%3Fproduct=firefox-esr-latest-ssl%26os=osx"
   name "Mozilla Firefox ESR"
   name "Mozilla Firefox Extended Support Release"
   desc "Web browser"
   homepage "https://www.mozilla.org/firefox/organizations/"
+
+  livecheck do
+    url "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=osx"
+    strategy :header_match
+  end
 
   conflicts_with cask: [
     "firefox",
