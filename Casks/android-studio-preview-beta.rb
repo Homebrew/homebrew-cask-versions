@@ -1,6 +1,6 @@
 cask "android-studio-preview-beta" do
-  version "4.2.0.22,202.7188722"
-  sha256 "2a4b20fc930346502b678b980eeb25a18cfc02e40dfab9a1ab4f5082d86161da"
+  version "4.2.0.23,202.7231092"
+  sha256 "5fb1f88a3437f95a27eb535357cf3a45f2ce51377c39a46af5d38bb73dfbc0d9"
 
   url "https://dl.google.com/dl/android/studio/ide-zips/#{version.before_comma}/android-studio-ide-#{version.after_comma}-mac.zip",
       verified: "dl.google.com/dl/android/studio/"
