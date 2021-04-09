@@ -10,7 +10,7 @@ cask "iterm2-beta" do
 
   livecheck do
     url "https://iterm2.com/appcasts/testing_modern.xml"
-    strategy :sparkle
+    strategy :sparkle, &:version
   end
 
   auto_updates true
