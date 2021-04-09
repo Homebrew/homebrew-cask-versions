@@ -2,7 +2,7 @@ cask "visual-studio-code-insiders" do
   version "1.56.0,5904b7b686e9274631893d560fdbc55a5567f878"
 
   if Hardware::CPU.intel?
-    sha256 "e6b0e857247949c015a1b6b9004be3c04fca560fbe364fc70d49e96a2e56ea66q"
+    sha256 "e6b0e857247949c015a1b6b9004be3c04fca560fbe364fc70d49e96a2e56ea66"
 
     url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-darwin.zip",
         verified: "az764295.vo.msecnd.net/insider/"
