@@ -1,13 +1,13 @@
 cask "dotnet-preview" do
   if Hardware::CPU.intel?
-    version "6.0.0-preview.2.21154.6,51cb50a7-c2e6-49f9-a172-e1dd0dd0f40f:d3cd57a2fc52ff8e85d8f52ba27f2e2f"
-    sha256 "286ef6a223d8614df4df45e0e167ad68cd2b69de838b809bc3eb5ce0963e244b"
+    version "6.0.0-preview.3.21201.4,e738a530-73a3-489a-8537-0b33e0084c38:c3c8697484a961efb8240ccddc5d22b3"
+    sha256 "7f0c859d1b1aff2c09215d5f6afb27a112edc778fbbf51ef498d6bc8d2a7a4fb"
 
     url "https://download.visualstudio.microsoft.com/download/pr/#{version.after_comma.before_colon}/#{version.after_colon}/dotnet-runtime-#{version.before_comma}-osx-x64.pkg"
     pkg "dotnet-runtime-#{version.before_comma}-osx-x64.pkg"
   else
-    version "6.0.0-preview.2.21154.6,3de6add5-a77c-4621-bf77-1722073ac0a7:4535dfffd67bbbf59b06c1b59c0b2f29"
-    sha256 "a05e828c99371b137434987ca7ef44a9ff0b36dc390fb5af9754075872b9506e"
+    version "6.0.0-preview.3.21201.4,668c384c-9568-4261-9897-9d76a3d27e6f:60d295f764d49be02666ee1b46658a2e"
+    sha256 "709e2ef53d21f690fb0071655d90f31f2c3daec7d65beb65bd6c9e21893e481d"
 
     url "https://download.visualstudio.microsoft.com/download/pr/#{version.after_comma.before_colon}/#{version.after_colon}/dotnet-runtime-#{version.before_comma}-osx-arm64.pkg"
     pkg "dotnet-runtime-#{version.before_comma}-osx-arm64.pkg"
