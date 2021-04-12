@@ -1,8 +1,8 @@
 cask "github-beta" do
-  version "2.7.2-beta1-b1d6981c"
-  sha256 "8ffb98b3c1720c028fdd4013ed5923a716eeda508af4f4bebdfb293ef9608877"
+  version "2.7.3-beta1-8b75aaa9"
+  sha256 "35b6f779ccc71506ed44be93f78011eac71e46af629a0ecf30cf27975b547639"
 
-  url "https://desktop.githubusercontent.com/releases/#{version}/GitHubDesktop.zip",
+  url "https://desktop.githubusercontent.com/releases/#{version}/GitHubDesktop-x64.zip",
       verified: "desktop.githubusercontent.com/"
   appcast "https://github.com/desktop/desktop/releases.atom"
   name "GitHub Desktop"
