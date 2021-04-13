@@ -15,6 +15,7 @@ cask "github-beta" do
   end
 
   auto_updates true
+  conflicts_with cask: "github"
 
   app "GitHub Desktop.app"
   binary "#{appdir}/GitHub Desktop.app/Contents/Resources/app/static/github.sh", target: "github"
