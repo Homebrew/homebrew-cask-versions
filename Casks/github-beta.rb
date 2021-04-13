@@ -4,9 +4,15 @@ cask "github-beta" do
 
   url "https://desktop.githubusercontent.com/releases/#{version}/GitHubDesktop-x64.zip",
       verified: "desktop.githubusercontent.com/"
-  appcast "https://github.com/desktop/desktop/releases.atom"
   name "GitHub Desktop"
+  desc "Desktop client for GitHub repositories"
   homepage "https://desktop.github.com/"
+
+  livecheck do
+    url "https://central.github.com/deployments/desktop/desktop/latest/darwin?env=beta"
+    strategy :header_match
+    regex(%r{(\d+(?:\.\d+).*)/GitHubDesktop\.zip}i)
+  end
 
   auto_updates true
 
