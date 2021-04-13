@@ -11,7 +11,7 @@ cask "github-beta" do
   livecheck do
     url "https://central.github.com/deployments/desktop/desktop/latest/darwin?env=beta"
     strategy :header_match
-    regex(%r{(\d+(?:\.\d+).*)/GitHubDesktop\.zip}i)
+    regex(%r{(\d+(?:\.\d+).*)/GitHubDesktop-x64\.zip}i)
   end
 
   auto_updates true
