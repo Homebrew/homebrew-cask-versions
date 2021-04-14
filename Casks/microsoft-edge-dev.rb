@@ -34,14 +34,13 @@ cask "microsoft-edge-dev" do
         },
       ]
 
-  uninstall pkgutil: "com.microsoft.edgemac.Dev",
-            rmdir:   "/Library/Application Support/Microsoft"
+  uninstall pkgutil: "com.microsoft.edgemac.Dev"
 
   zap trash: [
-    "/Library/Application Support/Microsoft",
     "~/Library/Application Support/Microsoft Edge Dev",
     "~/Library/Caches/Microsoft Edge Dev",
     "~/Library/Preferences/com.microsoft.edgemac.Dev.plist",
     "~/Library/Saved Application State/com.microsoft.edgemac.Dev.savedState",
-  ]
+  ],
+      rmdir: "/Library/Application Support/Microsoft"
 end
