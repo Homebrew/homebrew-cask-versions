@@ -34,7 +34,7 @@ cask "microsoft-edge-dev" do
         },
       ]
 
-  uninstall pkgutil: "com.microsoft.edgemac.Dev.Dev",
+  uninstall pkgutil: "com.microsoft.edgemac.Dev",
             rmdir:   "/Library/Application Support/Microsoft"
 
   zap trash: [
