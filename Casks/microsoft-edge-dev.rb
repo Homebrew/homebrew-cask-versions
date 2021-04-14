@@ -13,10 +13,14 @@ cask "microsoft-edge-dev" do
         verified: "officecdn-microsoft-com.akamaized.net/"
   end
 
-  appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://go.microsoft.com/fwlink/?linkid=2069340"
   name "Microsoft Edge Dev"
   desc "Multi-platform web browser"
   homepage "https://www.microsoftedgeinsider.com/"
+
+  livecheck do
+    url "https://go.microsoft.com/fwlink/?linkid=2069340"
+    strategy :header_match
+  end
 
   auto_updates true
   depends_on cask: "microsoft-auto-update"
