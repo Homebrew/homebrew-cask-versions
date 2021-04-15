@@ -4,9 +4,15 @@ cask "mullvadvpn-beta" do
 
   url "https://github.com/mullvad/mullvadvpn-app/releases/download/#{version}/MullvadVPN-#{version}.pkg",
       verified: "github.com/mullvad/mullvadvpn-app/"
-  appcast "https://github.com/mullvad/mullvadvpn-app/releases.atom"
-  name "Mullvad"
+  name "Mullvad VPN"
+  desc "VPN client"
   homepage "https://mullvad.net/"
+
+  livecheck do
+    url "https://github.com/mullvad/mullvadvpn-app/releases"
+    strategy :page_match
+    regex(/MullvadVPN-(\d+(?:\.\d+)*.+-beta\d+).pkg/i)
+  end
 
   conflicts_with cask: "mullvadvpn"
 
