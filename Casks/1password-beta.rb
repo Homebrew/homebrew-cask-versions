@@ -1,12 +1,17 @@
 cask "1password-beta" do
-  version "7.8.1.BETA-2"
-  sha256 "1d11d9dd8c5ff81d9be5a853681f7823651a0f31cb490f8a40e2a3bd888167a6"
+  version "7.8.1"
+  sha256 "8d760e4a57a65e321965cb2d2056b6da06f5296cb1ed661adcc7300bf6074750"
 
   url "https://c.1password.com/dist/1P/mac#{version.major}/1Password-#{version}.zip"
-  appcast "https://app-updates.agilebits.com/product_history/OPM#{version.major}"
   name "1Password"
   desc "Password manager that keeps all passwords secure behind one password"
   homepage "https://1password.com/"
+
+  livecheck do
+    url "https://app-updates.agilebits.com/product_history/OPM#{version.major}"
+    strategy :page_match
+    regex(%r{href=.*?/1Password-(\d+(?:\.\d+)*)\.pkg}i)
+  end
 
   auto_updates true
   conflicts_with cask: "1password"
