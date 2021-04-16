@@ -1,16 +1,20 @@
 cask "openzfs-dev" do
   if MacOS.version <= :mojave
-    version "2.0.0,221"
-    sha256 "55a44ed37f76eca89b938f91315d15ae053dae74c961e65b34079b1e17dccb48"
+    version "2.0.0,249"
+    sha256 "ccb87037600c486c118afee7d9f3c41e8d5c4e90d41744a6e8dc78484b130e2b"
     pkg "OpenZFSonOsX-#{version.before_comma}-Mojave-10.14.pkg"
   elsif MacOS.version <= :catalina
-    version "2.0.0,219"
-    sha256 "304ea1ddc474b27827721b81b1718aaeba317f4d0657b3a1b994f224de151d92"
+    version "2.0.0,266"
+    sha256 "570106c7c30f68bd915679ed9432d01068f6eea12d5f90610512f8f9bac6e5b3"
     pkg "OpenZFSonOsX-#{version.before_comma}-Catalina-10.15.pkg"
-  else
-    version "2.0.0,229"
-    sha256 "c439029d885e42525ba8f2ab32d0fef815941e3d2bb893acae3bcee8e21bd658"
+  elsif Hardware::CPU.intel?
+    version "2.0.0,265"
+    sha256 "5e85c05da5b50c5676e65b0e38d3c7fcc3815aa1cb2aaabc7d340d30cbacedcd"
     pkg "OpenZFSonOsX-#{version.before_comma}-Big.Sur-11.0.pkg"
+  else
+    version "2.0.0,242"
+    sha256 "53deccf5dced128c25c47592078c56cd52f488583c06e8b4f17468aae3041cc6"
+    pkg "OpenZFSonOsX-#{version.before_comma}-Big.Sur-11.2.pkg"
   end
 
   url "https://openzfsonosx.org/forum/download/file.php?id=#{version.after_comma}"
@@ -22,7 +26,7 @@ cask "openzfs-dev" do
   depends_on macos: ">= :mojave"
 
   uninstall_preflight do
-    system "sudo", "/usr/local/bin/zpool", "export", "-af"
+    system "sudo", "/usr/local/zfs/bin/zpool", "export", "-af"
   end
 
   uninstall pkgutil:   "net.lundman.zfs",
@@ -30,6 +34,7 @@ cask "openzfs-dev" do
               "org.openzfsonosx.InvariantDisks",
               "org.openzfsonosx.zconfigd",
               "org.openzfsonosx.zed",
+              "org.openzfsonosx.zpool-import",
               "org.openzfsonosx.zpool-import-all",
             ]
 
