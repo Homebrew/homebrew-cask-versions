@@ -8,6 +8,12 @@ cask "netnewswire-beta" do
   desc "Free and open-source RSS reader"
   homepage "https://ranchero.com/netnewswire/"
 
+  livecheck do
+    url "https://github.com/brentsimmons/NetNewsWire.git"
+    strategy :git
+    regex(%r{b}i)
+  end
+
   auto_updates true
   conflicts_with cask: "netnewswire"
   depends_on macos: ">= :catalina"
