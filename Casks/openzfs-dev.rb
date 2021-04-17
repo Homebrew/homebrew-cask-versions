@@ -5,7 +5,7 @@ cask "openzfs-dev" do
     pkg "OpenZFSonOsX-#{version.before_comma}-Mojave-10.14.pkg"
   elsif MacOS.version <= :catalina
     version "2.0.0,266"
-    sha256 "570106c7c30f68bd915679ed9432d01068f6eea12d5f90610512f8f9bac6e5b3"
+    sha256 "151171a437a05ee5b171ef5b833d8284aba9859697e4601fdade79b2a576a00c"
     pkg "OpenZFSonOsX-#{version.before_comma}-Catalina-10.15.pkg"
   elsif Hardware::CPU.intel?
     version "2.0.0,265"
