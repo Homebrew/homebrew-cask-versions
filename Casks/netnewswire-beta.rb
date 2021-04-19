@@ -9,7 +9,7 @@ cask "netnewswire-beta" do
   homepage "https://ranchero.com/netnewswire/"
 
   livecheck do
-    url "https://github.com/brentsimmons/NetNewsWire.git"
+    url :url
     strategy :git
     regex(/^(\d+(?:\.\d+)*b\d+)$/i)
   end
