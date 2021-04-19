@@ -11,7 +11,7 @@ cask "netnewswire-beta" do
   livecheck do
     url :url
     strategy :git
-    regex(/^(\d+(?:\.\d+)*b\d+)$/i)
+    regex(/^mac-(\d+(?:\.\d+)*b\d+)$/i)
   end
 
   auto_updates true
