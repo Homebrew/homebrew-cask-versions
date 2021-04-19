@@ -11,7 +11,7 @@ cask "netnewswire-beta" do
   livecheck do
     url "https://github.com/brentsimmons/NetNewsWire.git"
     strategy :git
-    regex(/b/i)
+    regex(/^(\d+(?:\.\d+)*b\d+)$/i)
   end
 
   auto_updates true
