@@ -1,6 +1,6 @@
 cask "lando-edge" do
-  version "3.1.0"
-  sha256 "bcd2f0a5fc79df24e1d90d979d457a753ccabb1ea9b48e204e5fa8fa0fcd5224"
+  version "3.1.2"
+  sha256 "0db853b8077f6c2506972b6c5cd002eaedc48b4646cbf1db698dac71849457dc"
 
   url "https://github.com/lando/lando/releases/download/v#{version}/lando-v#{version}.dmg",
       verified: "github.com/lando/lando/"
