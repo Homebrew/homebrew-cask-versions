@@ -3,10 +3,17 @@ cask "propresenter-beta" do
   sha256 "8c3d85733fccbc5020d43b8594e98a718d835fe79320cd0da139c5d9fc049965"
 
   url "https://renewedvision.com/downloads/propresenter/mac/ProPresenter_#{version.before_comma}_#{version.after_comma}.zip"
-  appcast "https://api.renewedvision.com/v1/pro/upgrade?platform=macos&osVersion=0&appVersion=0&buildNumber=0&includeNotes=0&channel=beta"
   name "ProPresenter"
   desc "Presentation and production application for live events"
   homepage "https://www.renewedvision.com/propresenter.php"
+
+  livecheck do
+    url "https://api.renewedvision.com/v1/pro/upgrade?platform=macos&osVersion=0&appVersion=0&buildNumber=0&includeNotes=0&channel=beta"
+    strategy :page_match do |page|
+      match = page.match(%r{/ProPresenter_(\d+(?:\.\d+)*)_(\d+)\.zip}i)
+      "#{match[1]},#{match[2]}"
+    end
+  end
 
   auto_updates true
   conflicts_with cask: "propresenter"
