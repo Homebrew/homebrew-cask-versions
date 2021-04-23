@@ -4,7 +4,7 @@ cask "qt-creator-dev" do
 
   url "https://download.qt.io/development_releases/qtcreator/#{version.major_minor}/#{version}/qt-creator-opensource-mac-x86_64-#{version}.dmg"
   name "Qt Creator Dev"
-  desc "IDE for Application Development"
+  desc "IDE for application development"
   homepage "https://www1.qt.io/developers/"
 
   livecheck do
