@@ -1,11 +1,17 @@
 cask "lilypond-dev" do
-  version "2.19.84-1"
-  sha256 "14c7d0cee5c31fed433fa8f4d2dda94d83e4eff7ef4ab683071131a3d759a0fd"
+  version "2.23.2-1"
+  sha256 "fca201d2534088060bbd1dee5b2f7be43fb87c3288f3a5ce103bec1cd74c38e9"
 
   url "https://lilypond.org/downloads/binaries/darwin-x86/lilypond-#{version}.darwin-x86.tar.bz2"
-  appcast "https://lilypond.org/development.html"
   name "LilyPond"
+  desc "Music engraving program"
   homepage "https://lilypond.org/"
+
+  livecheck do
+    url "https://lilypond.org/development.html"
+    strategy :page_match
+    regex(%r{href=.*?/lilypond-(\d+(?:\.\d+)*(?:-\d+)?)\.darwin-x86\.tar\.bz2}i)
+  end
 
   app "LilyPond.app"
 
