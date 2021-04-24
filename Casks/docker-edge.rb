@@ -3,7 +3,6 @@ cask "docker-edge" do
   sha256 "5d63435e322494be1113c0e25474fd55db4b06563abc2c0f9697db54584d1595"
 
   url "https://desktop.docker.com/mac/edge/#{version.after_comma}/Docker.dmg"
-  appcast "https://desktop.docker.com/mac/edge/appcast.xml"
   name "Docker Community Edition for Mac (Edge)"
   name "Docker CE for Mac (Edge)"
   desc "App to build and share containerized applications and microservices"
@@ -53,4 +52,12 @@ cask "docker-edge" do
         "~/Library/Caches/KSCrashReports",
         "~/Library/Caches/com.plausiblelabs.crashreporter.data",
       ]
+
+  caveats do
+    discontinued
+    <<~EOS
+      Starting with Docker Desktop 3.0.0, Stable and Edge releases
+      are combined into a single, cumulative release stream.
+    EOS
+  end
 end
