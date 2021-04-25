@@ -7,6 +7,12 @@ cask "qq-beta" do
   desc "Instant messaging tool"
   homepage "https://im.qq.com/macqq/"
 
+  livecheck do
+    url "https://im.qq.com/proxy/domain/qzonestyle.gtimg.cn/qzone/qzactStatics/configSystem/data/1373/config1.js"
+    strategy :page_match
+    regex(%r{/QQCatalyst/QQ_(\d+(?:\.\d+)*)\.dmg}i)
+  end
+
   app "QQ体验版.app"
 
   zap trash: [
