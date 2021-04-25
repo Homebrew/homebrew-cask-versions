@@ -8,6 +8,10 @@ cask "docker-edge" do
   desc "App to build and share containerized applications and microservices"
   homepage "https://www.docker.com/products/docker-desktop"
 
+  livecheck do
+    skip "Discontinued"
+  end
+
   auto_updates true
   depends_on macos: ">= :mojave"
 
