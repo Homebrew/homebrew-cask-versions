@@ -4,10 +4,15 @@ cask "atom-beta" do
 
   url "https://github.com/atom/atom/releases/download/v#{version}/atom-mac.zip",
       verified: "github.com/atom/atom/"
-  appcast "https://github.com/atom/atom/releases.atom"
   name "Github Atom Beta"
   desc "Cross-platform text editor"
   homepage "https://atom.io/beta"
+
+  livecheck do
+    url :url
+    strategy :git
+    regex(/^v?(\d+(?:\.\d+)*-beta\d*)$/i)
+  end
 
   auto_updates true
 
