@@ -8,10 +8,19 @@ cask "safari-technology-preview" do
   end
 
   url "https://secure-appldnld.apple.com/STP/#{version.after_comma}/SafariTechnologyPreview.dmg"
-  appcast "https://developer.apple.com/safari/download/"
   name "Safari Technology Preview"
   desc "Web browser"
   homepage "https://developer.apple.com/safari/download/"
+
+  livecheck do
+    url :homepage
+    strategy :page_match do |page|
+      macos_version = MacOS.version.to_s.gsub(".", "\\.")
+      release = page[%r{Release</p>\s*<p.*?>(\d+)</p>}i, 1]
+      id = page[%r{href=.*?/([0-9a-f]+(?:-[0-9a-f]+)*)/SafariTechnologyPreview\.dmg.*?macOS\s*#{macos_version}\.}i, 1]
+      "#{release},#{id}"
+    end
+  end
 
   auto_updates true
   depends_on macos: ">= :catalina"
