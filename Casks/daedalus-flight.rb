@@ -4,10 +4,17 @@ cask "daedalus-flight" do
 
   url "https://update-cardano-mainnet-flight.iohk.io/daedalus-#{version.before_comma}-mainnet_flight-#{version.after_comma}.pkg",
       verified: "update-cardano-mainnet-flight.iohk.io/"
-  appcast "https://update-cardano-mainnet-flight.iohk.io/daedalus-latest-version.json"
   name "Daedalus Flight"
   desc "Pre-release of Daedalus cryptocurrency wallet for ada on the Cardano blockchain"
   homepage "https://daedaluswallet.io/en/flight/"
+
+  livecheck do
+    url "https://update-cardano-mainnet-flight.iohk.io/daedalus-latest-version.json"
+    strategy :page_match do |page|
+      match = page.match(%r{/daedalus-(\d+(?:\.\d+)*(?:-FC\d*)?)-mainnet_flight-(\d+)\.pkg}i)
+      "#{match[1]},#{match[2]}"
+    end
+  end
 
   auto_updates true
   depends_on macos: ">= :high_sierra"
