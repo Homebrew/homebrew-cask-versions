@@ -4,8 +4,8 @@ cask "scribus-dev" do
 
   url "https://downloads.sourceforge.net/scribus/scribus-devel/#{version}/scribus-#{version}.dmg",
       verified: "sourceforge.net/scribus/"
-  appcast "https://sourceforge.net/projects/scribus/rss?path=/scribus-devel"
   name "Scribus"
+  desc "Free and open-source page layout program"
   homepage "https://www.scribus.net/"
 
   conflicts_with cask: "scribus"
