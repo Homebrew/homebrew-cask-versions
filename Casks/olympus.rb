@@ -9,7 +9,7 @@ cask "olympus" do
   homepage "https://everestapi.github.io/"
 
   livecheck do
-    skip
+    skip "No version information available"
   end
 
   container nested: "macos.main/dist.zip"
