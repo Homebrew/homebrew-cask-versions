@@ -22,12 +22,12 @@ cask "openzfs-dev" do
   desc "ZFS driver and utilities"
   homepage "https://openzfsonosx.org/"
 
-  conflicts_with cask: "openzfs"
-  depends_on macos: ">= :mojave"
-
   livecheck do
     skip "No version information available"
   end
+
+  conflicts_with cask: "openzfs"
+  depends_on macos: ">= :mojave"
 
   uninstall_preflight do
     system "sudo", "/usr/local/zfs/bin/zpool", "export", "-af"
