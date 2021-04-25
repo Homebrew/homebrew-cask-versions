@@ -25,6 +25,10 @@ cask "openzfs-dev" do
   conflicts_with cask: "openzfs"
   depends_on macos: ">= :mojave"
 
+  livecheck do
+    skip "No version information available"
+  end
+
   uninstall_preflight do
     system "sudo", "/usr/local/zfs/bin/zpool", "export", "-af"
   end
