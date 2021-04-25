@@ -1,11 +1,11 @@
 cask "scribus-dev" do
-  version "1.5.6.1"
-  sha256 "5a79350884a405e223789bc65038d7c40f41c97bf352e8da0d96a9444a0bddd5"
+  version "1.5.7"
+  sha256 "f5b660aff6b8ffdef74396d56e62656779d9ec9c2ab3b02af2635d71274dfd32"
 
   url "https://downloads.sourceforge.net/scribus/scribus-devel/#{version}/scribus-#{version}.dmg",
       verified: "sourceforge.net/scribus/"
-  appcast "https://sourceforge.net/projects/scribus/rss?path=/scribus-devel"
   name "Scribus"
+  desc "Free and open-source page layout program"
   homepage "https://www.scribus.net/"
 
   conflicts_with cask: "scribus"
