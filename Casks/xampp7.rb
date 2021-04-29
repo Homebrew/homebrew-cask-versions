@@ -14,6 +14,8 @@ cask "xampp7" do
     regex(%r{href=.*?/xampp-osx-(7(?:\.\d+)*-\d+)-installer\.dmg}i)
   end
 
+  conflicts_with cask: "xampp"
+
   installer script: {
     executable: "XAMPP.app/Contents/MacOS/osx-x86_64",
     args:       ["--mode", "unattended"],
