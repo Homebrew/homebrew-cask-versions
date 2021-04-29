@@ -13,10 +13,29 @@ cask "dotnet-preview" do
     pkg "dotnet-runtime-#{version.before_comma}-osx-arm64.pkg"
   end
 
-  appcast "https://dotnet.microsoft.com/download/dotnet/#{version.major_minor}"
   name ".NET Runtime"
   desc "Preview release of the .NET Runtime"
   homepage "https://dotnet.microsoft.com/"
+
+  livecheck do
+    url "https://dotnet.microsoft.com/download/dotnet"
+    strategy :page_match do |page|
+      cpu = if Hardware::CPU.intel?
+        "x64"
+      else
+        "arm64"
+      end
+      release = page[%r{<td>(\d+(?:\.\d+)*-(?:preview|rc)(?:\.\d+)*)</td>}i, 1]
+      install_page = Net::HTTP.get(URI.parse("#{url}/thank-you/runtime-#{release}-macos-#{cpu}-installer"))
+      match = install_page.match(%r{
+        href=.*?
+        /([0-9a-f]+(?:-[0-9a-f]+)*)
+        /([0-9a-f]+)
+        /dotnet-runtime-((\d+(?:\.\d+)*-(?:preview|rc)(?:\.\d+)*))-osx-#{cpu}\.pkg
+      }ix)
+      "#{match[3]},#{match[1]}:#{match[2]}"
+    end
+  end
 
   conflicts_with cask: [
     "dotnet",
