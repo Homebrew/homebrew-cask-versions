@@ -1,8 +1,8 @@
 cask "morpheus-beta" do
-  version "2.2.2"
-  sha256 "5bb2090fbad62333735ba2aa5aab1ccebc748fea741bb149b524942b74fafde6"
+  version "2.2.2,20210504"
+  sha256 "968cadb06fbc1d5520d84d116d4c5bd94aaf881d3ed48bc7197b6b003a02a384"
 
-  url "https://imc.zih.tu-dresden.de/morpheus/packages/mac/Morpheus-#{version}.dmg",
+  url "https://imc.zih.tu-dresden.de/morpheus/packages/mac/Morpheus-#{version.before_comma}.dmg",
       verified: "imc.zih.tu-dresden.de/morpheus/"
   name "Morpheus"
   desc "Modelling environment for multi-cellular systems biology"
