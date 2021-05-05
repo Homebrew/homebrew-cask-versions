@@ -4,7 +4,13 @@ cask "charles-beta" do
 
   url "https://www.charlesproxy.com/assets/release/#{version.gsub(/b\d$/, "")}/charles-proxy-#{version}.dmg"
   name "Charles"
+  desc "Web debugging Proxy application"
   homepage "https://www.charlesproxy.com/download/beta/"
+
+  livecheck do
+    url :homepage
+    regex(/name=["']?version.*?value=["']?(\d+(?:\.\d+)*b\d+)/i)
+  end
 
   app "Charles.app"
 
