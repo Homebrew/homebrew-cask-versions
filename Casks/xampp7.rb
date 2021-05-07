@@ -1,6 +1,6 @@
 cask "xampp7" do
-  version "7.4.16-0"
-  sha256 "be2ae9f742249b4d8f474b5cc320478813a0495b604671fd27d4c6f72963e839"
+  version "7.4.18-0"
+  sha256 "97f81af7be9bee1d6094e5f94113192f260d3c5b2a58bdc2b48d849e44d5de21"
 
   url "https://downloadsapachefriends.global.ssl.fastly.net/xampp-files/#{version.split("-").first}/xampp-osx-#{version}-installer.dmg",
       verified: "downloadsapachefriends.global.ssl.fastly.net/xampp-files/"
