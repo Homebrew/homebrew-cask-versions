@@ -1,13 +1,13 @@
 cask "microsoft-edge-beta" do
-  version "90.0.818.46"
+  version "91.0.864.15"
 
   if Hardware::CPU.intel?
-    sha256 "f32a3cad2c8ea4397245160614353d4d9909a28bc7048782d9e82f02d9ed64ae"
+    sha256 "02a0f423c8424138d35369c1bf6654c69b0da78c6412c3cecc9807c5e9e2461a"
 
     url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeBeta-#{version}.pkg",
         verified: "officecdn-microsoft-com.akamaized.net/"
   else
-    sha256 "870d298eb09a419218c644a0ec9d8e19dee6b7e5fa167e16aaa0ed72e2c77ede"
+    sha256 "84dbffe256b6ff7bd52b9c6a61c640168adb66869bc228600f8975e1bac3f3e1"
 
     url "https://officecdn-microsoft-com.akamaized.net/pr/03adf619-38c6-4249-95ff-4a01c0ffc962/MacAutoupdate/MicrosoftEdgeBeta-#{version}.pkg",
         verified: "officecdn-microsoft-com.akamaized.net/"
