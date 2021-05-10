@@ -9,12 +9,12 @@ cask "1password-beta" do
 
   livecheck do
     url "https://app-updates.agilebits.com/product_history/OPM#{version.major}"
-    strategy :page_match
-    regex(%r{href=.*?/1Password-(\d+(?:\.\d+)*)\.pkg}i)
+    regex(%r{href=.*?/1Password[._-]?v?(\d+(?:\.\d+)*(?:[._-]BETA[._-]?\d*)?)\.pkg}i)
   end
 
   auto_updates true
   conflicts_with cask: "1password"
+  depends_on macos: ">= :high_sierra"
 
   app "1Password #{version.major}.app"
 
