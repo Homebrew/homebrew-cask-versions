@@ -1,11 +1,12 @@
 cask "postgres-beta" do
-  version "2.3beta3,2.2.5"
-  sha256 "c63b8bff1e24cdfc8a755ae29a1ff3e17f014cfd2800364df6455357a70c0ea1"
+  version "2.5beta1"
+  sha256 "6fbb47bdbea8e45d24c5d4101f68f58056d1769def771eff00450c5d7b045994"
 
-  url "https://github.com/PostgresApp/PostgresApp/releases/download/v#{version.after_comma}/Postgres-#{version.before_comma}.dmg",
+  url "https://github.com/PostgresApp/PostgresApp/releases/download/v#{version}/Postgres-#{version}-13-13-arm.dmg",
       verified: "github.com/PostgresApp/PostgresApp/"
   appcast "https://github.com/PostgresApp/PostgresApp/releases.atom"
   name "Postgres"
+  desc "PostgreSQL installation packaged as a standard app"
   homepage "https://postgresapp.com/"
 
   auto_updates true
