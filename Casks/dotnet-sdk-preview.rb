@@ -24,7 +24,7 @@ cask "dotnet-sdk-preview" do
     livecheck do
       url "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/#{version.major_minor}/releases.json"
       strategy :page_match do |page|
-        page.scan(%r{/download/pr/([^/]+)/([^/]+)/dotnet-sdk-v?(.+)-osx-x64\.pkg}i).map do |match|
+        page.scan(%r{/download/pr/([^/]+)/([^/]+)/dotnet-sdk-v?(.+)-osx-arm64\.pkg}i).map do |match|
           "#{match[2]},#{match[0]}:#{match[1]}"
         end
       end
