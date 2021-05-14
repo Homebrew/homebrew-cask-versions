@@ -5,25 +5,42 @@ cask "dotnet-sdk-preview" do
 
     url "https://download.visualstudio.microsoft.com/download/pr/#{version.after_comma.before_colon}/#{version.after_colon}/dotnet-sdk-#{version.before_comma}-osx-x64.pkg"
     pkg "dotnet-sdk-#{version.before_comma}-osx-x64.pkg"
+
+    livecheck do
+      url "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/#{version.major_minor}/releases.json"
+      strategy :page_match do |page|
+        page.scan(%r{/download/pr/([^/]+)/([^/]+)/dotnet-sdk-v?(.+)-osx-x64\.pkg}i).map do |match|
+          "#{match[2]},#{match[0]}:#{match[1]}"
+        end
+      end
+    end
   else
     version "6.0.100-preview.3.21202.5,293e469c-7948-4fc9-9d10-d5d39662e19d:1ae28ceb225f19d9aa922ffa3febb872"
     sha256 "ccdbc6e0a75da77c1ed72975b2ae4099669454695a3396d4ba01a73525fbac38"
 
     url "https://download.visualstudio.microsoft.com/download/pr/#{version.after_comma.before_colon}/#{version.after_colon}/dotnet-sdk-#{version.before_comma}-osx-arm64.pkg"
     pkg "dotnet-sdk-#{version.before_comma}-osx-arm64.pkg"
+
+    livecheck do
+      url "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/#{version.major_minor}/releases.json"
+      strategy :page_match do |page|
+        page.scan(%r{/download/pr/([^/]+)/([^/]+)/dotnet-sdk-v?(.+)-osx-x64\.pkg}i).map do |match|
+          "#{match[2]},#{match[0]}:#{match[1]}"
+        end
+      end
+    end
   end
 
-  appcast "https://dotnet.microsoft.com/download/dotnet/#{version.major_minor}"
   name ".NET SDK"
-  desc "Preview release of the .NET SDK"
-  homepage "https://dotnet.microsoft.com/"
+  desc "Developer platform"
+  homepage "https://www.microsoft.com/net/core#macos"
 
   conflicts_with cask: [
     "dotnet",
     "dotnet-sdk",
     "dotnet-preview",
   ]
-  depends_on macos: ">= :sierra"
+  depends_on macos: ">= :mojave"
 
   binary "/usr/local/share/dotnet/dotnet"
 
