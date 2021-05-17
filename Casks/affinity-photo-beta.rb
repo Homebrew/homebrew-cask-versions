@@ -1,5 +1,5 @@
 cask "affinity-photo-beta" do
-  version "1.9.0.206"
+  version "1.9.4.243"
   sha256 :no_check
 
   url "https://affinity-beta.s3.amazonaws.com/download/Affinity%20Photo%20Customer%20Beta.zip",
