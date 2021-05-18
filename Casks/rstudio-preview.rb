@@ -10,8 +10,7 @@ cask "rstudio-preview" do
 
   livecheck do
     url :homepage
-    strategy :page_match
-    regex(/RStudio-(\d+(?:\.\d+)*)\.dmg/i)
+    regex(/RStudio[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
   end
 
   conflicts_with cask: "rstudio"
