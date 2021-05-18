@@ -1,6 +1,6 @@
 cask "sublime-merge-dev" do
-  version "2053"
-  sha256 "903bedf260cebc265fba6f488a34b11175ffb9a12f0512812025a9084dffcdc0"
+  version "2055"
+  sha256 "bfe7ca4a99e05fb246626f7e3799735081a286c2faae8e67a8550889096aaa4d"
 
   url "https://download.sublimetext.com/sublime_merge_build_#{version}_mac.zip",
       verified: "download.sublimetext.com/"
@@ -10,8 +10,7 @@ cask "sublime-merge-dev" do
 
   livecheck do
     url "https://www.sublimemerge.com/updates/dev_update_check"
-    strategy :page_match
-    regex(/"latest_version":\s*(\d+)/i)
+    regex(/"latest_version"\s*:\s*(\d+)/i)
   end
 
   auto_updates true
