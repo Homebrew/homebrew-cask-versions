@@ -1,11 +1,11 @@
-cask "arduino-beta" do
+cask "arduino-ide-beta" do
   version "2.0.0,7"
   sha256 "7f53889f4efbb4eda9aaa1fc5fcd7f55929dd6fb813e7d1d8924343fee0d6842"
 
   url "https://downloads.arduino.cc/arduino-ide/arduino-ide_#{version.before_comma}-beta.#{version.after_comma}_macOS_64bit.dmg"
-  name "Arduino Beta"
-  desc "Open-source electronics prototyping platform"
-  homepage "https://www.arduino.cc/"
+  name "Arduino IDE"
+  desc "Electronics prototyping platform"
+  homepage "https://www.arduino.cc/en/software#experimental-software"
 
   livecheck do
     url "https://www.arduino.cc/en/software/"
@@ -16,4 +16,6 @@ cask "arduino-beta" do
   end
 
   app "Arduino IDE.app"
+
+  zap trash: "~/Library/Application Support/arduino-ide"
 end
