@@ -4,7 +4,7 @@ cask "vmware-fusion-tech-preview" do
 
   url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-e.x.p-#{version}.dmg"
   name "VMware Fusion Tech Preview"
-  desc "Create, manage, and run virtual machinces"
+  desc "Create, manage, and run virtual machines"
   homepage "https://blogs.vmware.com/teamfusion/tech-preview"
 
   livecheck do
