@@ -11,8 +11,8 @@ cask "android-studio-preview-beta" do
   livecheck do
     url :homepage
     strategy :page_match do |page|
-      match = page.match(%r{href=.*?/(\d+(?:\.\d+)+)/android-studio-ide-(\d+(?:\.\d+)+)-mac\.zip}i)
-      "#{match[1]},#{match[2]}"
+      match = page.match(/android-studio-(\d+(?:\.\d+)+)-mac\.zip/i)
+      (match[3]).to_s
     end
   end
 
