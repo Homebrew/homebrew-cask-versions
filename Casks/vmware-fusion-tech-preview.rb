@@ -8,7 +8,7 @@ cask "vmware-fusion-tech-preview" do
   homepage "https://blogs.vmware.com/teamfusion/tech-preview"
 
   livecheck do
-    url "https://bit.ly/get-fusion-tp"
+    url "http://www.vmware.com/go/get-fusion-tp"
     strategy :header_match
   end
 
