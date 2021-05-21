@@ -2,16 +2,22 @@ cask "vmware-fusion-tech-preview" do
   version "16530630"
   sha256 "663b3d35f23541003f34ee0f5160bd04d0113703ac0a34a509b964b21a5bd5d0"
 
-  url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-e.x.p-#{version}.dmg",
-      verified: "download3.vmware.com/"
+  url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-e.x.p-#{version}.dmg"
   name "VMware Fusion Tech Preview"
-  homepage "https://vmwarefusion.github.io/"
+  desc "Create, manage, and run virtual machines"
+  homepage "https://blogs.vmware.com/teamfusion/tech-preview"
+
+  livecheck do
+    url "http://www.vmware.com/go/get-fusion-tp"
+    strategy :header_match
+  end
 
   auto_updates true
   conflicts_with cask: "vmware-fusion"
   depends_on macos: ">= :catalina"
 
   app "VMware Fusion Tech Preview.app"
+  binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/VMware OVF Tool/ovftool"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vkd/bin/vctl"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-bridge"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-cfgcli"
@@ -20,8 +26,8 @@ cask "vmware-fusion-tech-preview" do
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-natd"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-netifup"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-sniffer"
-  binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmrun"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmrest"
+  binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmrun"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmss2core"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmware-aewp"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmware-authd"
@@ -37,7 +43,6 @@ cask "vmware-fusion-tech-preview" do
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmware-vmx"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmware-vmx-debug"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmware-vmx-stats"
-  binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/VMware OVF Tool/ovftool"
 
   postflight do
     system_command "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/Initialize VMware Fusion.tool",
@@ -82,6 +87,6 @@ cask "vmware-fusion-tech-preview" do
   ]
 
   caveats do
-    kext
+    kext if MacOS.version == :catalina
   end
 end
