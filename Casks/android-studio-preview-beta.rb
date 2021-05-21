@@ -1,6 +1,6 @@
 cask "android-studio-preview-beta" do
-  version "2020.3.1.16"
-  sha256 "7342d856931eb798c1a8d6d0e8857205e6d9c1f3633d2afcea4fca3dc8544853"
+  version "2020.3.1.17"
+  sha256 "8bdded06bd0d1bc50f82ea875f2fd3e472ece8da93100a4636ebe90ceb7af2fa"
 
   url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-#{version}-mac.zip",
       verified: "dl.google.com/dl/android/studio/"
