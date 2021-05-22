@@ -1,9 +1,18 @@
 cask "github-beta" do
   version "2.8.2-beta2-88a50c13"
-  sha256 "aa39890da23483ee3f6c84d8961a397fd6993a7795525db5dc9b35d9f1602be9"
 
-  url "https://desktop.githubusercontent.com/releases/#{version}/GitHubDesktop-x64.zip",
-      verified: "desktop.githubusercontent.com/"
+  if Hardware::CPU.intel?
+    sha256 "aa39890da23483ee3f6c84d8961a397fd6993a7795525db5dc9b35d9f1602be9"
+
+    url "https://desktop.githubusercontent.com/releases/#{version}/GitHubDesktop-x64.zip",
+        verified: "desktop.githubusercontent.com/"
+  else
+    sha256 "65c3df5606e8bd361f03e109f41505ac9ab35b70be9464b77f36bfa9c6323d8e"
+
+    url "https://desktop.githubusercontent.com/releases/#{version}/GitHubDesktop-arm64.zip",
+        verified: "desktop.githubusercontent.com/"
+  end
+
   name "GitHub Desktop"
   desc "Desktop client for GitHub repositories"
   homepage "https://desktop.github.com/"
