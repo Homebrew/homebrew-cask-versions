@@ -8,9 +8,8 @@ cask "osu-development" do
   homepage "https://github.com/ppy/osu/"
 
   livecheck do
-    url :homepage
-    strategy :git
-    regex(/^(\d+(?:\.\d+)*)$/)
+    url :url
+    regex(/^v?(\d+(?:\.\d+)+)$/)
   end
 
   depends_on macos: ">= :sierra"
