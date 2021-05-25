@@ -4,7 +4,7 @@ cask "royal-tsx-beta" do
 
   url "https://royaltsx-v5.royalapps.com/updates/royaltsx_#{version}.dmg"
   name "Royal TSX"
-  desc "Powerful Connection Management"
+  desc "Remote management solution"
   homepage "https://www.royalapps.com/ts/mac/features"
 
   livecheck do
@@ -13,6 +13,7 @@ cask "royal-tsx-beta" do
   end
 
   auto_updates true
+  depends_on macos: ">= :sierra"
 
   app "Royal TSX.app"
 end
