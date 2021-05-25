@@ -5,10 +5,10 @@ cask "sublime-text-dev" do
   url "https://download.sublimetext.com/sublime_text_build_#{version.no_dots}_mac.zip"
   name "Sublime Text"
   desc "Text editor for code, markup and prose"
-  homepage "https://www.sublimetext.com/#{version.major}dev"
+  homepage "https://www.sublimetext.com/dev"
 
   livecheck do
-    url "https://www.sublimetext.com/dev"
+    url :homepage
     regex(/href=.*?v?(\d+)_mac\.zip/i)
     strategy :page_match do |page, regex|
       match = page.match(regex)[1]
