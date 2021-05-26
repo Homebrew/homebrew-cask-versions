@@ -1,4 +1,4 @@
-cask "microsoft-openjdk" do
+cask "microsoft-openjdk11" do
   version "11.0.11.9.1"
   sha256 "3f378080a74bce8687a36978d4093b7a585011a527d84e867aa990a9b69e0301"
 
