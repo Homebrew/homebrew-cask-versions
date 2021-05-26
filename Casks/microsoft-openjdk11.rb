@@ -11,7 +11,7 @@ cask "microsoft-openjdk11" do
   livecheck do
     url "https://docs.microsoft.com/java/openjdk/download"
     strategy :page_match
-    regex(%r{href=.*?/microsoft-jdk-(\d+(?:\.\d+)*)-macOS-x64.pkg}i)
+    regex(%r{href=.*?/microsoft-jdk-(11.\d+(?:\.\d+)*)-macOS-x64.pkg}i)
   end
 
   pkg "microsoft-jdk-#{version}-macOS-x64.pkg"
