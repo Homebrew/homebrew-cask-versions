@@ -8,9 +8,9 @@ cask "google-chrome-canary" do
   homepage "https://www.google.com/chrome/canary/"
 
   livecheck do
-    url "https://omahaproxy.appspot.com/history?os=mac;channel=canary"
+    url "https://chromiumdash.appspot.com/fetch_releases?channel=Canary&platform=Mac"
     strategy :page_match
-    regex(/mac,canary,(\d+(?:\.\d+)*)/i)
+    regex(/"version": "(\d+(?:\.\d+)*)"/i)
   end
 
   auto_updates true
