@@ -18,7 +18,7 @@ cask "arduino-ide-beta" do
   app "Arduino IDE.app"
 
   zap trash: [
-    "~/Library/Application Support/arduino-ide"
-    "~/.arduinoIDE"
+    "~/Library/Application Support/arduino-ide",
+    "~/.arduinoIDE",
   ]
 end
