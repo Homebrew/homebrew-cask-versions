@@ -8,9 +8,9 @@ cask "google-chrome-dev" do
   homepage "https://www.google.com/chrome/dev/"
 
   livecheck do
-    url "https://omahaproxy.appspot.com/history?os=mac;channel=dev"
+    url "https://chromiumdash.appspot.com/fetch_releases?channel=Dev&platform=Mac"
     strategy :page_match
-    regex(/mac,dev,(\d+(?:\.\d+)*)/i)
+    regex(/"version": "(\d+(?:\.\d+)*)"/i)
   end
 
   auto_updates true
