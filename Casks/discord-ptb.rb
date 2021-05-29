@@ -13,6 +13,8 @@ cask "discord-ptb" do
     strategy :header_match
   end
 
+  auto_updates true
+
   app "Discord PTB.app"
 
   zap trash: [
