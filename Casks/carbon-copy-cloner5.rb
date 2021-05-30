@@ -1,4 +1,4 @@
-cask "carbon-copy-cloner-5" do
+cask "carbon-copy-cloner5" do
   version "5.1.27.6196"
   sha256 "b2edc2798f3e7497c3b2f624517909a8876b89026d181ac0c321447a6d47849f"
 
