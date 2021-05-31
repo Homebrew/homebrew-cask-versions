@@ -8,6 +8,14 @@ cask "citra-nightly" do
   desc "Nintendo 3DS emulator"
   homepage "https://citra-emu.org/"
 
+  livecheck do
+    url :url
+    strategy :github_latest do |page|
+      match = page.match(%r{href=.*?/nightly[._-](\d+)/citra[._-]osx[._-](\d+[._-]\h+)\.tar\.gz}i)
+      "#{match[1]},#{match[2]}"
+    end
+  end
+
   app "citra-osx-#{version.after_comma}/citra-qt.app"
 
   zap trash: [
