@@ -7,6 +7,11 @@ cask "julia-nightly" do
   desc "Programming language for technical computing"
   homepage "https://julialang.org/"
 
+  livecheck do
+    url :url
+    strategy :extract_plist
+  end
+
   app "Julia-#{version}.app"
   binary "#{appdir}/Julia-#{version}.app/Contents/Resources/julia/bin/julia", target: "julia-nightly"
 
