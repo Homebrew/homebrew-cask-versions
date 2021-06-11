@@ -1,13 +1,13 @@
 cask "github-beta" do
-  version "2.8.4-beta3-d6d9e446"
+  version "2.8.4-beta4-dd405223"
 
   if Hardware::CPU.intel?
-    sha256 "14cf2572ce26c38bf3b9fe61470b2ed44950bd6cceda9920674f5c5cbc4059ab"
+    sha256 "3f86fef21bfab67f01d82710b062aba9ce95e496e5e1c779a941a67eeea4a0f9"
 
     url "https://desktop.githubusercontent.com/releases/#{version}/GitHubDesktop-x64.zip",
         verified: "desktop.githubusercontent.com/"
   else
-    sha256 "cc86321417045dc759f70ff0af1c71c02ed6e40a8c450db416d2b941b35cd4b8"
+    sha256 "699a306927d6ab8fe2dd93e9e98ca8420e4f1a1928dd739bde174918f299cd30"
 
     url "https://desktop.githubusercontent.com/releases/#{version}/GitHubDesktop-arm64.zip",
         verified: "desktop.githubusercontent.com/"
