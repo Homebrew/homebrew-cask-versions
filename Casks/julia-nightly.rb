@@ -1,5 +1,5 @@
 cask "julia-nightly" do
-  version "1.8.0,1.8.0-DEV-0d94727a38"
+  version "1.8.0"
   sha256 :no_check
 
   url "https://julialangnightlies-s3.julialang.org/bin/mac/x64/julia-latest-mac64.dmg"
@@ -8,12 +8,11 @@ cask "julia-nightly" do
   homepage "https://julialang.org/"
 
   livecheck do
-    url :url
-    strategy :extract_plist
+    skip "unversioned URL"
   end
 
-  app "Julia-#{version.before_comma}.app"
-  binary "#{appdir}/Julia-#{version.before_comma}.app/Contents/Resources/julia/bin/julia", target: "julia-nightly"
+  app "Julia-#{version}.app"
+  binary "#{appdir}/Julia-#{version}.app/Contents/Resources/julia/bin/julia", target: "julia-nightly"
 
   zap trash: "~/.julia"
 end
