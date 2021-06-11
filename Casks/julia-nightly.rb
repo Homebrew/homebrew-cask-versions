@@ -12,8 +12,8 @@ cask "julia-nightly" do
     strategy :extract_plist
   end
 
-  app "Julia-#{version}.app"
-  binary "#{appdir}/Julia-#{version}.app/Contents/Resources/julia/bin/julia", target: "julia-nightly"
+  app "Julia-#{version.before_comma}.app"
+  binary "#{appdir}/Julia-#{version.before_comma}.app/Contents/Resources/julia/bin/julia", target: "julia-nightly"
 
   zap trash: "~/.julia"
 end
