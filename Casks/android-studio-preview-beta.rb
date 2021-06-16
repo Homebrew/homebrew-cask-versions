@@ -1,13 +1,13 @@
 cask "android-studio-preview-beta" do
-  version "2020.3.1.18"
+  version "2020.3.1.19"
 
   if Hardware::CPU.intel?
-    sha256 "dd245451ab3a43de16665cd4bcea53c773b46f6c4b59cdb34a9ad551d2a52367"
+    sha256 "1fb6a41ae10332e3f411b2e94b87a2b7db99c9f7ad56d16c6bc775b4afa5c3f3"
 
     url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-#{version}-mac.zip",
         verified: "dl.google.com/dl/android/studio/"
   else
-    sha256 "ad66cffbf83d5f470d64f2256b866c86da9b190330779aeb053d5c61f65971df"
+    sha256 "50ed51c367fbe16829e4ad20759a99a206583ef3b1318770c815d4e1a65e18bb"
 
     url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-#{version}-mac_arm.zip",
         verified: "dl.google.com/dl/android/studio/"
