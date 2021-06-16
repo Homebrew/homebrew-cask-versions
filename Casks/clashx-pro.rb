@@ -1,6 +1,6 @@
 cask "clashx-pro" do
-  version "1.50.1.1"
-  sha256 "946f9d10d05087401d790cf85af3bccddf421af2bdea9de3735162d1da8d2213"
+  version "1.60.0.2"
+  sha256 "74cb57b50e585176b33a966c38bbc1694fffa56790f79a94636fbee7d0fdbcbd"
 
   url "https://appcenter.vercel.app/clashx/clashx-pro/#{version}",
       verified: "appcenter.vercel.app/clashx"
