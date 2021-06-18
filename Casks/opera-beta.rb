@@ -4,13 +4,12 @@ cask "opera-beta" do
 
   url "https://get.geo.opera.com/pub/opera-beta/#{version}/mac/Opera_beta_#{version}_Setup.dmg"
   name "Opera Beta"
-  desc "Cross-platform web browser"
+  desc "Web browser"
   homepage "https://www.opera.com/computer/beta"
 
   livecheck do
     url "https://get.geo.opera.com/pub/opera-beta/"
-    strategy :page_match
-    regex(/href="(\d+(?:\.\d+)*)/i)
+    regex(%r{href=["']?v?(\d+(?:\.\d+)+)/?["' >]}i)
   end
 
   auto_updates true
