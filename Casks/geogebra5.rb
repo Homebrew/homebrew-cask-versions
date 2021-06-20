@@ -4,7 +4,7 @@ cask "geogebra5" do
 
   url "https://download.geogebra.org/installers/#{version.major_minor}/GeoGebra-MacOS-Installer-withJava-#{version.dots_to_hyphens}.zip"
   name "GeoGebra"
-  desc "Previous major version of GeoGebra 6."
+  desc "Previous major version of GeoGebra 6"
   homepage "https://www.geogebra.org/"
 
   livecheck do
@@ -20,4 +20,3 @@ cask "geogebra5" do
   uninstall quit:       "org.geogebra5.mac",
             login_item: "Geogebra"
 end
-
