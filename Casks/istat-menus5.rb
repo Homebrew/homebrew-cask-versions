@@ -6,6 +6,11 @@ cask "istat-menus5" do
   name "iStats Menus"
   homepage "https://bjango.com/mac/istatmenus/"
 
+  livecheck do
+    url "https://download.bjango.com/istatmenus#{version.major}/"
+    strategy :header_match
+  end
+
   auto_updates true
 
   app "iStat Menus.app"
