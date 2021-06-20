@@ -4,6 +4,7 @@ cask "reflector2" do
 
   url "https://download.airsquirrels.com/Reflector#{version.major}/Mac/Reflector-#{version}.dmg"
   name "Reflector"
+  desc "Wireless screen-mirroring application"
   homepage "https://www.airsquirrels.com/reflector/"
 
   livecheck do
