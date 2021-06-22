@@ -1,6 +1,6 @@
 cask "xampp7" do
-  version "7.4.19-0"
-  sha256 "e9a136217334a0a3cf8b3b7c0830d972c8c3e3dc95087d566d99bf60375befc4"
+  version "7.4.20-0"
+  sha256 "9d830a4e7bf266322200718d65b570c51fbe12aec8bff843fe217bdaf267e79e"
 
   url "https://downloadsapachefriends.global.ssl.fastly.net/xampp-files/#{version.split("-").first}/xampp-osx-#{version}-installer.dmg",
       verified: "downloadsapachefriends.global.ssl.fastly.net/xampp-files/"
@@ -10,8 +10,7 @@ cask "xampp7" do
 
   livecheck do
     url "https://www.apachefriends.org/download.html"
-    strategy :page_match
-    regex(%r{href=.*?/xampp-osx-(7(?:\.\d+)*-\d+)-installer\.dmg}i)
+    regex(%r{href=.*?/xampp[._-]osx[._-]v?(7(?:\.\d+)*-\d+)[._-]installer\.dmg}i)
   end
 
   conflicts_with cask: "xampp"

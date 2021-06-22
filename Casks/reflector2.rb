@@ -3,9 +3,14 @@ cask "reflector2" do
   sha256 "fd9e4c1ee48d113c09c5e2736001a20e3eff6fdf655ec974b814a190c1c8b76e"
 
   url "https://download.airsquirrels.com/Reflector#{version.major}/Mac/Reflector-#{version}.dmg"
-  appcast "https://updates.airsquirrels.com/Reflector#{version.major}/Mac/Reflector#{version.major}.xml"
   name "Reflector"
+  desc "Wireless screen-mirroring application"
   homepage "https://www.airsquirrels.com/reflector/"
+
+  livecheck do
+    url "https://updates.airsquirrels.com/Reflector#{version.major}/Mac/Reflector#{version.major}.xml"
+    strategy :sparkle, &:short_version
+  end
 
   app "Reflector #{version.major}.app"
 
