@@ -15,9 +15,11 @@ cask "safari-technology-preview" do
   livecheck do
     url :homepage
     strategy :page_match do |page|
-      macos_version = MacOS.version.to_s.gsub(".", "\\.")
-      release = page[%r{Release</p>\s*<p.*?>(\d+)</p>}i, 1]
-      id = page[%r{href=.*?/([0-9a-f]+(?:-[0-9a-f]+)*)/SafariTechnologyPreview\.dmg.*?macOS\s*#{macos_version}\.}i, 1]
+      release = page[%r{>\s*Release\s*</p>\s*<p[^>]*>\s*(\d+)\s*<}i, 1]
+      id = page[%r{
+        href=.*?/(\h+(?:-\h+)*)/SafariTechnologyPreview\.dmg
+        .*?macOS(?:\s|&nbsp;)*#{Regexp.escape(MacOS.version.to_s)}[\s.<]
+      }ix, 1]
       "#{release},#{id}"
     end
   end
