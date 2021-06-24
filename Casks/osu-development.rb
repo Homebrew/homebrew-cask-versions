@@ -1,6 +1,6 @@
 cask "osu-development" do
-  version "2021.619.1"
-  sha256 "5d9107783d0ec748ba381ce2f8c28fbbd5dda311273834766645860d8ed722ae"
+  version "2021.623.0"
+  sha256 "5e1871125c49e24c11986e0ac1756fde8c5c1f9d1c18e88335918f8f28583937"
 
   url "https://github.com/ppy/osu/releases/download/#{version}/osu.app.zip"
   name "osu!lazer"
@@ -9,7 +9,7 @@ cask "osu-development" do
 
   livecheck do
     url :url
-    regex(/^v?(\d+(?:\.\d+)+)$/)
+    regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
   depends_on macos: ">= :sierra"
