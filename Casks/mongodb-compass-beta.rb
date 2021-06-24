@@ -1,6 +1,6 @@
 cask "mongodb-compass-beta" do
-  version "1.27.0-beta.2"
-  sha256 "0f98da43204d9fe708939d6cff7303da3ea5f72b432cf6cb31ad785001994a8f"
+  version "1.27.0-beta.8"
+  sha256 "7e4f9dc40386d13282bab27a6b503ac2d402047c4bb0d155627001348250c651"
 
   url "https://downloads.mongodb.com/compass/beta/mongodb-compass-#{version}-darwin-x64.dmg"
   name "MongoDB Compass"
@@ -9,8 +9,7 @@ cask "mongodb-compass-beta" do
 
   livecheck do
     url "https://github.com/mongodb-js/compass"
-    strategy :git
-    regex(/^v?(\d+(?:\.\d+)*-beta\.\d+)$/i)
+    regex(/^v?(\d+(?:\.\d+)+[._-]beta\.\d+)$/i)
   end
 
   app "MongoDB Compass Beta.app"
