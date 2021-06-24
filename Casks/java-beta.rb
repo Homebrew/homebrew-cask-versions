@@ -1,8 +1,16 @@
 cask "java-beta" do
-  version "17,22"
-  sha256 "6b2ca14a3dbd769072bdf21392a44186775b5c5a985a74bd41233b4e9bf2ee31"
+  version "17,27"
 
-  url "https://download.java.net/java/early_access/jdk#{version.major}/#{version.after_comma}/GPL/openjdk-#{version.before_comma}-ea+#{version.after_comma}_macos-x64_bin.tar.gz"
+  if Hardware::CPU.intel?
+    sha256 "be9915a490d4e052d5e18dbf26d3ce0ed0d09d5783300868dc166d2886c0d8de"
+
+    url "https://download.java.net/java/early_access/jdk#{version.major}/#{version.after_comma}/GPL/openjdk-#{version.before_comma}-ea+#{version.after_comma}_macos-x64_bin.tar.gz"
+  else
+    sha256 "80845e6530df3211b6598c3fc1efd7ef75ebdfe5b936c20ef34ebc87df6e95ad"
+
+    url "https://download.java.net/java/early_access/jdk#{version.major}/#{version.after_comma}/GPL/openjdk-#{version.before_comma}-ea+#{version.after_comma}_macos-aarch64_bin.tar.gz"
+  end
+
   name "OpenJDK Early Access Java Development Kit"
   desc "Early access development kit for the Java programming language"
   homepage "https://jdk.java.net/"
