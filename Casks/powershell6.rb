@@ -3,8 +3,8 @@ cask "powershell6" do
   sha256 "d968da998b00178f666f342c9823c7df5038947a46d153892b1b20580be8d6d4"
 
   url "https://github.com/PowerShell/PowerShell/releases/download/v#{version}/powershell-#{version}-osx-x64.pkg"
-  appcast "https://github.com/PowerShell/PowerShell/releases.atom"
   name "PowerShell"
+  desc "Command-line shell and scripting language"
   homepage "https://github.com/PowerShell/PowerShell"
 
   conflicts_with cask: "powershell"
@@ -25,4 +25,8 @@ cask "powershell6" do
         "~/.local/share",
         "~/.local",
       ]
+
+  caveats do
+    discontinued
+  end
 end
