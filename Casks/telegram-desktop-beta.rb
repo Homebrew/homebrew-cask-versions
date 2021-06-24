@@ -1,16 +1,16 @@
-cask "telegram-desktop-dev" do
-  version "2.7.8"
-  sha256 "ac33fada756907928e7f736279baf98e53f56ce3355c7427c8bee978cdf15ce2"
+cask "telegram-desktop-beta" do
+  version "2.7.10"
+  sha256 "c8b634cafe5bb8de150a56f4d09e0fdaa336be31876f5a64c2f30a0cb0bb3f63"
 
-  url "https://github.com/telegramdesktop/tdesktop/releases/download/v#{version}/tsetup.#{version}.beta.dmg",
-      verified: "github.com/telegramdesktop/tdesktop/"
+  url "https://updates.tdesktop.com/tmac/tsetup.#{version}.beta.dmg",
+      verified: "updates.tdesktop.com/tmac"
   name "Telegram Desktop"
   desc "Desktop client for Telegram messenger"
   homepage "https://desktop.telegram.org/"
 
   livecheck do
-    url "https://github.com/telegramdesktop/tdesktop/releases"
-    strategy :page_match
+    url "https://telegram.org/dl/desktop/mac?beta=1"
+    strategy :header_match
     regex(/tsetup.(\d+(?:\.\d+)*)\.beta.dmg/i)
   end
 
