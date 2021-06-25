@@ -1,7 +1,7 @@
 cask "dotnet-sdk-preview" do
   if Hardware::CPU.intel?
-    version "6.0.100-preview.4.21255.9,4bf47b4e-f856-4628-a713-8f2a400a38a0:02bd28f2020d9149ff5a6f7251f193fb"
-    sha256 "b54b57a285f108d451d246d3187d53dc33f2abfba69a689d0c8003a6e2e7e739"
+    version "6.0.100-preview.5.21302.13,134a7c15-69cf-40b3-ba78-a78a666ac2de:996de9580ee6c05b2bcb0e9456fdf877"
+    sha256 "593cf446397766503f202bdfa3d5080a891fc84e6675bc9a885befeda030b35a"
 
     url "https://download.visualstudio.microsoft.com/download/pr/#{version.after_comma.before_colon}/#{version.after_colon}/dotnet-sdk-#{version.before_comma}-osx-x64.pkg"
     pkg "dotnet-sdk-#{version.before_comma}-osx-x64.pkg"
@@ -15,8 +15,8 @@ cask "dotnet-sdk-preview" do
       end
     end
   else
-    version "6.0.100-preview.4.21255.9,bd11a494-6dc8-4b74-8980-f784593a66e9:13703559437ed332269bda08e90a2f40"
-    sha256 "1fc23b8f9ab1d49b77540c7a2b111354dcff3f81637c4dc34ee595fa4f618d6d"
+    version "6.0.100-preview.5.21302.13,b1b77ccc-7428-4ab6-9bd5-dbde5e5fdb56:5a33c488a8bb58eaf1982a2edd2af2a2"
+    sha256 "2295dbc157def86b6d3543dcc49ea691d3386bfd47d5b3e7ddef6525381199cc"
 
     url "https://download.visualstudio.microsoft.com/download/pr/#{version.after_comma.before_colon}/#{version.after_colon}/dotnet-sdk-#{version.before_comma}-osx-arm64.pkg"
     pkg "dotnet-sdk-#{version.before_comma}-osx-arm64.pkg"
