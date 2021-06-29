@@ -1,6 +1,6 @@
 cask "local-beta" do
-  version "5.10.5,5402"
-  sha256 "7ce0eac6068344ba14c582fea27b66392f633f2b3bb07520d2f74a32effeb03a"
+  version "6.0.0,5443"
+  sha256 "b68ae287a49f5533af32e11666bad6b7e4428ebadc4b3d9ca1dcd4dd856c149b"
 
   url "https://cdn.localwp.com/releases-beta/#{version.before_comma}+local-beta-#{version.after_comma}/local-beta-#{version.before_comma}-b#{version.after_comma}-mac.dmg"
   name "Local Beta"
