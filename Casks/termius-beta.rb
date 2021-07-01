@@ -1,5 +1,5 @@
 cask "termius-beta" do
-  version "7.15.0"
+  version "7.15.1"
   sha256 :no_check
 
   if Hardware::CPU.intel?
@@ -9,7 +9,7 @@ cask "termius-beta" do
   end
 
   name "Termius Beta"
-  desc "Cross-platform SSH client"
+  desc "SSH client"
   homepage "https://www.termius.com/beta-program"
 
   livecheck do
