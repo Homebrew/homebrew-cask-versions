@@ -1,6 +1,6 @@
 cask "signal-beta" do
-  version "5.7.0-beta.1"
-  sha256 "c016a4dc58d05580b036d80bd42c7f52bd00ac8a8cee642c889be94c3d6a9ce2"
+  version "5.8.0-beta.1"
+  sha256 "95ba94ea440f867e669ccd5194a5d702834911e2f9f4e83bf9eaba464e44d0e1"
 
   url "https://updates.signal.org/desktop/signal-desktop-beta-mac-#{version}.dmg"
   name "Signal Beta"
@@ -9,8 +9,7 @@ cask "signal-beta" do
 
   livecheck do
     url "https://github.com/signalapp/Signal-Desktop"
-    strategy :git
-    regex(/^v?(\d+(?:\.\d+)*-beta\.\d+)$/i)
+    regex(/^v?(\d+(?:\.\d+)+[._-]beta\.\d+)$/i)
   end
 
   auto_updates true
