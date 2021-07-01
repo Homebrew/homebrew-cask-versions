@@ -1,16 +1,15 @@
 cask "sketch-beta" do
-  version "73-127160"
-  sha256 "8ae25bc5ec31d56c80608de29e251e391c8723ff9d1adfd3cb72a9adf8e4e87a"
+  version "73,127175"
+  sha256 "373c9ed5bd4e82f6d0763adb61b45d31561f81b31caa307f3cfdcf722f7f5c99"
 
-  url "https://beta-download.sketch.com/sketch-#{version}.zip"
+  url "https://beta-download.sketch.com/sketch-#{version.before_comma}-#{version.after_comma}.zip"
   name "Sketch"
   desc "Digital design and prototyping platform"
   homepage "https://www.sketch.com/beta"
 
   livecheck do
     url "https://beta-download.sketch.com/sketch-versions.xml"
-    strategy :page_match
-    regex(%r{url=.*?/sketch-(\d+(?:\.\d+)*-\d+)\.zip}i)
+    strategy :sparkle
   end
 
   auto_updates true
