@@ -1,6 +1,6 @@
 cask "mongodb-compass-beta" do
-  version "1.27.0-beta.8"
-  sha256 "7e4f9dc40386d13282bab27a6b503ac2d402047c4bb0d155627001348250c651"
+  version "1.27.0-beta.9"
+  sha256 "198a71742b3d7cce10a783c819f9e354c6e999b9846f45049bfab88e8dbe303c"
 
   url "https://downloads.mongodb.com/compass/beta/mongodb-compass-#{version}-darwin-x64.dmg"
   name "MongoDB Compass"
