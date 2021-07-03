@@ -2,7 +2,12 @@ cask "google-chrome-dev" do
   version "93.0.4557.4"
   sha256 :no_check
 
-  url "https://dl.google.com/chrome/mac/universal/dev/googlechromedev.dmg"
+  if Hardware::CPU.intel?
+    url "https://dl.google.com/chrome/mac/dev/googlechromedev.dmg"
+  else
+    url "https://dl.google.com/chrome/mac/universal/dev/googlechromedev.dmg"
+  end
+
   name "Google Chrome Dev"
   desc "Web browser"
   homepage "https://www.google.com/chrome/dev/"
