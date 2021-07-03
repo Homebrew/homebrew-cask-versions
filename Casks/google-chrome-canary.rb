@@ -2,7 +2,12 @@ cask "google-chrome-canary" do
   version "93.0.4563.0"
   sha256 :no_check
 
-  url "https://dl.google.com/chrome/mac/universal/canary/googlechromecanary.dmg"
+  if Hardware::CPU.intel?
+    url "https://dl.google.com/chrome/mac/canary/googlechromecanary.dmg"
+  else
+    url "https://dl.google.com/chrome/mac/universal/canary/googlechromecanary.dmg"
+  end
+
   name "Google Chrome Canary"
   desc "Web browser"
   homepage "https://www.google.com/chrome/canary/"
