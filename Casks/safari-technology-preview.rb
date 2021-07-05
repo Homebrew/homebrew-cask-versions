@@ -1,10 +1,10 @@
 cask "safari-technology-preview" do
-  if MacOS.version <= :catalina
-    version "125,071-44527-20210526-93430244-0334-4fae-878d-56502a656003"
-    sha256 "6ea830ec5c9101665e18d77f31a7f220a0fc8afc35b9ac036ee29d5ee3dbdd23"
+  if MacOS.version <= :big_sur
+    version "127,071-59915-20210701-7aeff054-50c5-4c98-b5b7-4fc517d8a696"
+    sha256 "996c5937493b90ee993c41e28b158224a18b60c573d5ec741b2ad50853984481"
   else
-    version "125,071-45899-20210526-3fe7359c-0f20-4850-b6ec-da9b197119c2"
-    sha256 "63e4961fd0cca345b58128c0edb33627847d02b99a77613c54c0a89e6402d36e"
+    version "127,071-59909-20210701-e031945b-3e30-49fd-be61-b9aaa8e69e94"
+    sha256 "d187e486ca8b6dc95b4a8bd0520b4b972639235b9bb05cb7765e2481742f257e"
   end
 
   url "https://secure-appldnld.apple.com/STP/#{version.after_comma}/SafariTechnologyPreview.dmg"
@@ -15,15 +15,17 @@ cask "safari-technology-preview" do
   livecheck do
     url :homepage
     strategy :page_match do |page|
-      macos_version = MacOS.version.to_s.gsub(".", "\\.")
-      release = page[%r{Release</p>\s*<p.*?>(\d+)</p>}i, 1]
-      id = page[%r{href=.*?/([0-9a-f]+(?:-[0-9a-f]+)*)/SafariTechnologyPreview\.dmg.*?macOS\s*#{macos_version}\.}i, 1]
+      release = page[%r{>\s*Release\s*</p>\s*<p[^>]*>\s*(\d+)\s*<}i, 1]
+      id = page[%r{
+        href=.*?/(\h+(?:-\h+)*)/SafariTechnologyPreview\.dmg
+        .*?macOS(?:\s|&nbsp;)*#{Regexp.escape(MacOS.version.to_s)}[\s.<]
+      }ix, 1]
       "#{release},#{id}"
     end
   end
 
   auto_updates true
-  depends_on macos: ">= :catalina"
+  depends_on macos: ">= :big_sur"
 
   pkg "Safari Technology Preview.pkg"
 
