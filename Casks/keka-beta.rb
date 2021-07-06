@@ -4,8 +4,8 @@ cask "keka-beta" do
 
   url "https://github.com/aonez/Keka/releases/download/v#{version}/Keka-#{version}.dmg",
       verified: "github.com/aonez/Keka/"
-  appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://beta.keka.io"
   name "Keka"
+  desc "File archiver"
   homepage "https://www.keka.io/#beta"
 
   auto_updates true
