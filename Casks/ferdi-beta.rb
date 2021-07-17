@@ -13,10 +13,14 @@ cask "ferdi-beta" do
         verified: "github.com/getferdi/ferdi/"
   end
 
-  appcast "https://github.com/getferdi/ferdi/releases.atom"
   name "Ferdi"
   desc "Messaging browser which combines several services"
   homepage "https://getferdi.com/"
+
+  livecheck do
+    url :url
+    strategy :git
+  end
 
   auto_updates true
   conflicts_with cask: "ferdi"
