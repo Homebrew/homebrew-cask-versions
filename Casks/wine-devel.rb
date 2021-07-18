@@ -3,7 +3,6 @@ cask "wine-devel" do
   sha256 "7965a0d47bb37b072f9bee06be653e9c8a2ce084f558207aa8a519d9ac5e7e64"
 
   url "https://dl.winehq.org/wine-builds/macosx/pool/winehq-devel-#{version}.pkg"
-  appcast "https://dl.winehq.org/wine-builds/macosx/download.html"
   name "WineHQ-devel"
   desc "Compatibility layer to run Windows applications"
   homepage "https://wiki.winehq.org/MacOS"
