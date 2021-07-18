@@ -34,10 +34,13 @@ cask "visual-studio-code-insiders" do
 
   zap trash: [
     "~/Library/Application Support/Code - Insiders",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.microsoft.vscodeinsiders.sfl*",
     "~/Library/Caches/Code - Insiders",
     "~/Library/Caches/com.microsoft.VSCodeInsiders",
     "~/Library/Caches/com.microsoft.VSCodeInsiders.ShipIt",
     "~/Library/Preferences/com.microsoft.VSCodeInsiders.helper.plist",
     "~/Library/Preferences/com.microsoft.VSCodeInsiders.plist",
+    "~/Library/Saved Application State/com.microsoft.VSCodeInsiders.savedState",
+    "~/.vscode-insiders",
   ]
 end
