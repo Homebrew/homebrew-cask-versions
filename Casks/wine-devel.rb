@@ -8,6 +8,11 @@ cask "wine-devel" do
   desc "Compatibility layer to run Windows applications"
   homepage "https://wiki.winehq.org/MacOS"
 
+  livecheck do
+    url "https://dl.winehq.org/wine-builds/macosx/download.html"
+    regex(/href=.*?winehq[._-]devel[._-]v?(\d+(?:\.\d+)+)\.pkg/i)
+  end
+
   conflicts_with cask: [
     "wine-stable",
     "wine-staging",
