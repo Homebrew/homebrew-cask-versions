@@ -1,19 +1,15 @@
 cask "openzfs-dev" do
-  if MacOS.version <= :mojave
-    version "2.0.0,283"
-    sha256 "30f5c8948ca28d9d645af1440564756f3aeb39afc79bbc86f15aca70be4d115f"
-    pkg "OpenZFSonOsX-#{version.before_comma}-Mojave-10.14.pkg"
-  elsif MacOS.version <= :catalina
-    version "2.0.0,281"
-    sha256 "0733eda7e9e362de3e89fc9233e082faf9f1706ec8e06574855d71d730f1ecab"
+  if MacOS.version <= :catalina
+    version "2.1.0rc2,331"
+    sha256 "34e1d91e02e908b9b4c7d1f6a0936c3660f6f59367d18eb445a9bbbbd5f9e506"
     pkg "OpenZFSonOsX-#{version.before_comma}-Catalina-10.15.pkg"
   elsif Hardware::CPU.intel?
-    version "2.0.0,282"
-    sha256 "91ace2ea3aea67ee5d2b919ef64335a609051aba7ad6c40d649bc82b6407843f"
+    version "2.1.0rc2,332"
+    sha256 "204adbe293006106ea89a27024cb97d9e5438c972bd8e749feff9df455138fe2"
     pkg "OpenZFSonOsX-#{version.before_comma}-Big.Sur-11.pkg"
   else
-    version "2.0.0,280"
-    sha256 "b119d8fc36ab0e11219032dd4ebaf5793168103968268453e20e4705b0bc11f3"
+    version "2.1.0rc2,330"
+    sha256 "38e82456f3c2dc0ff2db65fce56b0473e7183f96023a1f5d7ab8530fd0a90ed7"
     pkg "OpenZFSonOsX-#{version.before_comma}-Big.Sur-11-arm64.pkg"
   end
 
@@ -27,7 +23,7 @@ cask "openzfs-dev" do
   end
 
   conflicts_with cask: "openzfs"
-  depends_on macos: ">= :mojave"
+  depends_on macos: ">= :catalina"
 
   postflight do
     set_ownership "/usr/local/zfs"
@@ -37,7 +33,7 @@ cask "openzfs-dev" do
     system "sudo", "/usr/local/zfs/bin/zpool", "export", "-af"
   end
 
-  uninstall pkgutil:   "net.lundman.zfs",
+  uninstall pkgutil:   "org.openzfsonosx.zfs",
             launchctl: [
               "org.openzfsonosx.InvariantDisks",
               "org.openzfsonosx.zconfigd",
@@ -48,6 +44,5 @@ cask "openzfs-dev" do
 
   caveats do
     kext
-    'Please note that BigSur now requires boot-args="keepsyms=1" to work.' if MacOS.version == 11
   end
 end
