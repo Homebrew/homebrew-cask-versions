@@ -1,6 +1,6 @@
 cask "corretto11" do
-  version "11.0.11.9.1"
-  sha256 "a693e427abaa70871562bd9b629ca4ca6c760109cc3fe3fc4f237fa678d2e9e2"
+  version "11.0.12.7.2"
+  sha256 "90a6829e61e60c04c9207d0c2543c5781a4c05c0cbf84868a33de5bbf3eb7741"
 
   url "https://corretto.aws/downloads/resources/#{version}/amazon-corretto-#{version}-macosx-x64.pkg"
   appcast "https://www.macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://corretto.aws/downloads/latest/amazon-corretto-11-x64-macos-jdk.pkg"
