@@ -7,6 +7,8 @@ cask "arduino-ide-nightly" do
   desc "Electronics prototyping platform"
   homepage "https://www.arduino.cc/en/software#experimental-software"
 
+  conflicts_with cask: "arduino-ide-beta"
+
   app "Arduino IDE.app"
 
   zap trash: [
