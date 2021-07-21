@@ -15,6 +15,8 @@ cask "arduino-ide-beta" do
     end
   end
 
+  conflicts_with cask: "arduino-ide-nightly"
+
   app "Arduino IDE.app"
 
   zap trash: [
