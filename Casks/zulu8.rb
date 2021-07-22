@@ -35,7 +35,7 @@ cask "zulu8" do
 
   depends_on macos: ">= :yosemite"
 
-  pkg "Double-Click to Install Zulu #{version.major}.pkg"
+  pkg "Double-Click to Install Azul Zulu JDK #{version.major}.pkg"
 
   uninstall pkgutil: "com.azulsystems.zulu.#{version.major}"
 end
