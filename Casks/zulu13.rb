@@ -25,7 +25,7 @@ cask "zulu13" do
     end
   end
 
-  pkg "Double-Click to Install Zulu #{version.major}.pkg"
+  pkg "Double-Click to Install Azul Zulu JDK #{version.major}.pkg"
 
   uninstall pkgutil: "com.azulsystems.zulu.#{version.major}"
 end
