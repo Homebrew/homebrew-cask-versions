@@ -14,7 +14,7 @@ cask "zulu15" do
   end
   name "Azul Zulu Java Standard Edition Development Kit"
   desc "Zulu OpenJDK 15"
-  homepage "https://www.azul.com/downloads/zulu/zulu-mac/"
+  homepage "https://www.azul.com/products/core/"
 
   livecheck do
     url "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=#{version.major}&ext=dmg&os=macos"
