@@ -14,6 +14,7 @@ cask "zulu11" do
   end
 
   name "Azul Zulu Java Standard Edition Development Kit"
+  desc "OpenJDK distribution from Azul"
   homepage "https://www.azul.com/downloads/zulu/zulu-mac/"
 
   livecheck do
