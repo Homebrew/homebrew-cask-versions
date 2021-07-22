@@ -23,8 +23,7 @@ cask "zulu11" do
       page.scan(regex).map { |match| match[1] + "," + match[0] }
     end
   end
-
-  pkg "Double-Click to Install Zulu #{version.major}.pkg"
+  pkg "Double-Click to Install Azul Zulu JDK #{version.major}.pkg"
 
   uninstall pkgutil: "com.azulsystems.zulu.#{version.major}"
 end
