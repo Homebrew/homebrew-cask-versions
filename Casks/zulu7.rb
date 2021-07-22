@@ -5,6 +5,7 @@ cask "zulu7" do
   url "https://cdn.azul.com/zulu/bin/zulu#{version.after_comma}-jdk#{version.before_comma}-macosx_x64.dmg",
       referer: "https://www.azul.com/downloads/zulu/zulu-mac/"
   name "Azul Zulu Java Standard Edition Development Kit"
+  desc "OpenJDK distribution from Azul"
   homepage "https://www.azul.com/products/core/"
 
   livecheck do
@@ -15,7 +16,7 @@ cask "zulu7" do
     end
   end
 
-  pkg "Double-Click to Install Zulu #{version.major}.pkg"
+  pkg "Double-Click to Install Azul Zulu JDK #{version.major}.pkg"
 
   uninstall pkgutil: "com.azulsystems.zulu.#{version.major}"
 end
