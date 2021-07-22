@@ -1,5 +1,4 @@
 cask "zulu8" do
-
   if Hardware::CPU.intel?
     sha256 "a60a31b33a8386f9b446cad2615e33d0190eb0f18cdf8d6812b74fd6e0f4f716"
     version "8.0.292,8.54.0.21-ca"
@@ -14,6 +13,7 @@ cask "zulu8" do
   end
 
   name "Azul Zulu Java 8 Standard Edition Development Kit"
+  desc "OpenJDK distribution from Azul"
   homepage "https://www.azul.com/downloads/?package=jdk"
 
   livecheck do
