@@ -4,10 +4,14 @@ cask "wine-staging" do
 
   url "https://dl.winehq.org/wine-builds/macosx/pool/winehq-staging-#{version}.pkg",
       verified: "dl.winehq.org/wine-builds/macosx/"
-  appcast "https://dl.winehq.org/wine-builds/macosx/download.html"
   name "WineHQ-staging"
   desc "Compatibility layer to run Windows applications"
   homepage "https://www.wine-staging.com/"
+
+  livecheck do
+    url "https://dl.winehq.org/wine-builds/macosx/download.html"
+    regex(/href=.*?winehq[._-]staging[._-]v?(\d+(?:\.\d+)+)\.pkg/i)
+  end
 
   conflicts_with cask: [
     "wine-stable",
