@@ -19,8 +19,7 @@ cask "ferdi-beta" do
 
   livecheck do
     url :url
-    strategy :git
-    regex(/beta/i)
+    regex(/^v?(\d+(?:\.\d+)+[._-]beta[._-]\d+)$/i)
   end
 
   auto_updates true
