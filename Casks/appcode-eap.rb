@@ -1,9 +1,10 @@
 cask "appcode-eap" do
-  version "2021.2,212.4746.85"
-  sha256 "9299625c32871f4e5a1d265789db210d85da8f20d41af61c6af88159b2a5b743"
+  version "2021.2,212.4746.104"
+  sha256 "c976a751cfcc04e8fb32fc591b01b8db9960d2666056e32f3fd5271b983838e4"
 
   url "https://download.jetbrains.com/objc/AppCode-#{version.after_comma}.dmg"
   name "AppCode EAP"
+  desc "IDE for Swift, Objective-C, C, and C++ development"
   homepage "https://www.jetbrains.com/objc/nextversion/"
 
   livecheck do
