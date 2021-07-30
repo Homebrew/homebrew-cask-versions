@@ -4,6 +4,7 @@ cask "appcode-eap" do
 
   url "https://download.jetbrains.com/objc/AppCode-#{version.after_comma}.dmg"
   name "AppCode EAP"
+  desc "IDE for Swift, Objective-C, C, and C++ development"
   homepage "https://www.jetbrains.com/objc/nextversion/"
 
   livecheck do
