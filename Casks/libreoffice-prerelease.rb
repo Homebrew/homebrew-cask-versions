@@ -1,27 +1,24 @@
-cask "libreoffice-still" do
-  version "7.0.6"
-  sha256 "cd99c75b4becb853dbd37a501300b07f1f39b33dc0c1e418c346744829fc7738"
+cask "libreoffice-prerelease" do
+  version "7.2.0.2"
+  sha256 "9f91efd227bf650231ea7f4851a05c976e89bea23358f050c79cfef833837f1d"
 
-  url "https://download.documentfoundation.org/libreoffice/stable/#{version}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg",
-      verified: "download.documentfoundation.org/"
-  name "LibreOffice Still"
+  url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg",
+      verified: "documentfoundation.org/"
+  name "LibreOffice"
   desc "Free cross-platform office suite"
   homepage "https://www.libreoffice.org/"
 
   livecheck do
-    url "https://www.libreoffice.org/download/release-notes/"
-    strategy :page_match do |page|
-      match = page.match(
-        /LibreOffice\s*(\d+(?:\.\d+)*)\s*\((\d+(?:-\d+)*)\)\s*-\s*Still\s*Branch/i,
-      )
-      (match[1]).to_s
-    end
+    url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/x86_64/"
+    strategy :page_match
+    regex(/href="LibreOffice_(\d+(?:\.\d+)*)_MacOS_x86-64.dmg"/i)
   end
 
   conflicts_with cask: [
     "libreoffice",
-    "homebrew/cask-versions/libreoffice-prerelease",
+    "homebrew/cask-versions/libreoffice-still",
   ]
+  depends_on macos: ">= :yosemite"
 
   app "LibreOffice.app"
   binary "#{appdir}/LibreOffice.app/Contents/MacOS/gengal"
