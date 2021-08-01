@@ -19,4 +19,6 @@ cask "adoptopenjdk8" do
   pkg "OpenJDK#{version.before_comma}U-jdk_x64_mac_hotspot_#{version.before_comma}u#{version.after_comma.before_colon}#{version.after_comma.after_colon}.pkg"
 
   uninstall pkgutil: "net.adoptopenjdk.#{version.before_comma}.jdk"
+
+  # TODO: find way to deprecate cask. this has been replaced by temurin8
 end
