@@ -5,7 +5,7 @@ cask "temurin8" do
   url "https://github.com/adoptium/temurin8-binaries/releases/download/jdk#{version.before_comma}u#{version.after_comma.before_colon}-#{version.after_colon}/OpenJDK#{version.before_comma}U-jdk_x64_mac_hotspot_#{version.before_comma}u#{version.after_comma.before_colon}#{version.after_comma.after_colon}.pkg",
       verified: "github.com/adoptium/temurin8-binaries/"
   name "Eclipse Temurin 8"
-  desc "Prebuilt OpenJDK binaries"
+  desc "JDK from the Eclipse Foundation (Adoptium)"
   homepage "https://adoptium.net/"
 
   livecheck do
