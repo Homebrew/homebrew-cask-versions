@@ -1,5 +1,5 @@
 cask "google-chrome-canary" do
-  version "94.0.4595.0"
+  version "94.0.4595.3"
   sha256 :no_check
 
   if Hardware::CPU.intel?
