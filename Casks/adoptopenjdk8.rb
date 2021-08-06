@@ -20,5 +20,8 @@ cask "adoptopenjdk8" do
 
   uninstall pkgutil: "net.adoptopenjdk.#{version.before_comma}.jdk"
 
-  # TODO: find way to deprecate cask. this has been replaced by temurin8
+  caveats <<~EOS
+    This cask is officially deprecated in favor of temurin:
+      brew install --cask temurin
+  EOS
 end
