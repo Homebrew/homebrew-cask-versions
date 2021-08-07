@@ -1,6 +1,6 @@
 cask "arduino-ide-beta" do
-  version "2.0.0,9"
-  sha256 "72466d66abefd9b60964fc96131363f1f87c91173bb21aeb5af13a76d2ffce5d"
+  version "2.0.0,10"
+  sha256 "2fac335b36729879a5d3f2f7dfc3d45802331ea12891abf03bf60b107f577df0"
 
   url "https://downloads.arduino.cc/arduino-ide/arduino-ide_#{version.before_comma}-beta.#{version.after_comma}_macOS_64bit.dmg"
   name "Arduino IDE"
