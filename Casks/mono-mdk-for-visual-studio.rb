@@ -8,7 +8,7 @@ cask "mono-mdk-for-visual-studio" do
   homepage "https://www.mono-project.com/"
 
   livecheck do
-    url "https://www.mono-project.com/download/vs/"
+    url "https://github.com/mono/mono/releases"
     strategy :page_match
     regex(%r{href=.*?/MonoFramework-MDK-(\d+(?:\.\d+)*).macos10.xamarin.universal\.pkg}i)
   end
