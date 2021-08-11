@@ -1,6 +1,6 @@
 cask "qgis-ltr" do
-  version "3.16.8,20210619_044746"
-  sha256 "9d233bb074e73f6347168f29a97c65622617f993ad137d11b96c785b431300bc"
+  version "3.16.9,20210806_022813"
+  sha256 "dbaae82571d2323199e385e003fb6c768f286d7052f59ad6f8f3088e18596a12"
 
   url "https://qgis.org/downloads/macos/ltr/qgis_ltr_final-#{version.before_comma.dots_to_underscores}_#{version.after_comma}.dmg"
   name "QGIS LTR"
