@@ -1,13 +1,22 @@
 cask "freecad-pre" do
-  version "0.19_pre,24212"
-  sha256 "0c62d5bae4e3f57047ccc4069c1809542183274cd64223f99357247fc975493f"
+  version "0.19.2,24291"
+  sha256 "53f56601513537b20cec4fde172f96ebfdeddba22495ac55d74f5451544b101c"
 
-  url "https://github.com/FreeCAD/FreeCAD/releases/download/#{version.before_comma}/FreeCAD_#{version.major_minor.delete_suffix("_pre")}-#{version.after_comma}-macOS-x86_64-conda.dmg",
+  url "https://github.com/FreeCAD/FreeCAD/releases/download/#{version.before_comma}/FreeCAD_#{version.major_minor}-#{version.after_comma}-macOS-x86_64-conda.dmg",
       verified: "github.com/FreeCAD/FreeCAD/"
-  appcast "https://github.com/freecad/freecad/releases.atom"
   name "FreeCAD"
   desc "3D parametric modeler"
   homepage "https://freecadweb.org/"
+
+  livecheck do
+    url "https://github.com/FreeCAD/FreeCAD/releases"
+    strategy :page_match do |page|
+      match = page.match(
+        %r{href=.*?/(\d+(?:\.\d+)*)/FreeCAD_(?:\d+(?:\.\d+)*)-(\d+(?:-pre\d+)?)-macOS-x86_64-conda\.dmg}i,
+      )
+      "#{match[1]},#{match[2]}"
+    end
+  end
 
   conflicts_with cask: "freecad"
   depends_on macos: ">= :sierra"
