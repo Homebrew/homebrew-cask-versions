@@ -24,7 +24,7 @@ cask "adoptopenjdk8" do
     discontinued
 
     <<~EOS
-      Terumin is the official successor to this software:
+      Temurin is the official successor to this software:
 
         brew install --cask temurin8
     EOS
