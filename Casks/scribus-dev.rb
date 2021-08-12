@@ -8,6 +8,11 @@ cask "scribus-dev" do
   desc "Free and open-source page layout program"
   homepage "https://www.scribus.net/"
 
+  livecheck do
+    url "https://www.scribus.net/downloads/unstable-branch/"
+    regex(/Current\s*development\s*candidate:\s*Scribus\s*(\d+(?:\.\d+)*)/i)
+  end
+
   conflicts_with cask: "scribus"
 
   app "Scribus.app"
