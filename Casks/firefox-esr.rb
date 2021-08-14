@@ -71,10 +71,10 @@ cask "firefox-esr" do
   name "Mozilla Firefox ESR"
   name "Mozilla Firefox Extended Support Release"
   desc "Web browser"
-  homepage "https://www.mozilla.org/firefox/organizations/"
+  homepage "https://www.mozilla.org/en-US/firefox/all/#product-desktop-esr"
 
   livecheck do
-    url "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=osx"
+    url "https://download.mozilla.org/?product=firefox-esr-next-latest-ssl&os=osx&lang=en-US"
     strategy :header_match
   end
 
