@@ -1,15 +1,19 @@
 cask "openzfs-dev" do
-  if MacOS.version <= :catalina
-    version "2.1.0rc2,331"
-    sha256 "34e1d91e02e908b9b4c7d1f6a0936c3660f6f59367d18eb445a9bbbbd5f9e506"
+  if MacOS.version <= :mojave
+    version "2.1.0rc4,341"
+    sha256 "14d5de6c0723c71ce96ab8052fd24a52719c8618b167f6eebec5d7ca8f110dee"
+    pkg "OpenZFSonOsX-#{version.before_comma}-Mojave-10.14.pkg"
+  elsif MacOS.version <= :catalina
+    version "2.1.0rc4,340"
+    sha256 "7d4b9111956abaf1c9a7339d22fd4f30c1c897e0e99955b3c3ee418f16fe42c1"
     pkg "OpenZFSonOsX-#{version.before_comma}-Catalina-10.15.pkg"
   elsif Hardware::CPU.intel?
-    version "2.1.0rc2,332"
-    sha256 "204adbe293006106ea89a27024cb97d9e5438c972bd8e749feff9df455138fe2"
+    version "2.1.0rc4,339"
+    sha256 "36035302b9833a81c9f25caabc8d19031cd1575e6e4d4df39f4759b8402bf67e"
     pkg "OpenZFSonOsX-#{version.before_comma}-Big.Sur-11.pkg"
   else
-    version "2.1.0rc2,330"
-    sha256 "38e82456f3c2dc0ff2db65fce56b0473e7183f96023a1f5d7ab8530fd0a90ed7"
+    version "2.1.0rc4,338"
+    sha256 "9e25ff3d7701b6f84128714b0f5ef81b774fca30cd80103b67430775c98e5805"
     pkg "OpenZFSonOsX-#{version.before_comma}-Big.Sur-11-arm64.pkg"
   end
 
@@ -23,7 +27,7 @@ cask "openzfs-dev" do
   end
 
   conflicts_with cask: "openzfs"
-  depends_on macos: ">= :catalina"
+  depends_on macos: ">= :mojave"
 
   postflight do
     set_ownership "/usr/local/zfs"
