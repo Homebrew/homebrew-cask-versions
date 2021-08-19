@@ -1,10 +1,10 @@
 cask "safari-technology-preview" do
   if MacOS.version <= :big_sur
-    version "129,071-75207-20210803-64ff58d6-e277-4a4c-9304-607d2d6e12ae"
-    sha256 "d67c1b77656f0b818c7d80b0fde2457474d30e083e9ff3363755f12acfa1d775"
+    version "130,071-81359-20210818-152F5574-2BE4-4FAB-86AB-199701F65B0C"
+    sha256 "a9d05c7b84cbd0cc92702a1b46d036b246ae9c4c260e1047dc50fe8904112fb0"
   else
-    version "129,071-75208-20210803-e6d1f017-ba39-43c9-906e-33692a983ac5"
-    sha256 "5b30229d3abf138d184be2728438f755208f8d085968dfca8edfbba94f4f8729"
+    version "130,071-85875-20210818-4A85CF1C-4491-48AC-9B6D-72265DF075BC"
+    sha256 "aab8c18e912a91cb5c54280cb0878215c015cc5fd6421a667bfdbb7e137739e9"
   end
 
   url "https://secure-appldnld.apple.com/STP/#{version.after_comma}/SafariTechnologyPreview.dmg"
@@ -14,12 +14,13 @@ cask "safari-technology-preview" do
 
   livecheck do
     url :homepage
-    strategy :page_match do |page|
+    regex(%r{
+      href=.*?/(\h+(?:-\h+)*)/SafariTechnologyPreview\.dmg
+      .*?macOS(?:\s|&nbsp;)*#{Regexp.escape(MacOS.version.to_s)}[\s.<]
+    }ix)
+    strategy :page_match do |page, regex|
       release = page[%r{>\s*Release\s*</p>\s*<p[^>]*>\s*(\d+)\s*<}i, 1]
-      id = page[%r{
-        href=.*?/(\h+(?:-\h+)*)/SafariTechnologyPreview\.dmg
-        .*?macOS(?:\s|&nbsp;)*#{Regexp.escape(MacOS.version.to_s)}[\s.<]
-      }ix, 1]
+      id = page[regex, 1]
       "#{release},#{id}"
     end
   end
