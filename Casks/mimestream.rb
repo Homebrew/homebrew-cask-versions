@@ -13,4 +13,9 @@ cask "mimestream" do
     url "https:/mimestream.com/appcast.xml"
     strategy :sparkle
   end
+
+  zap trash: [
+    "~/Library/Application Scripts/com.mimestream.Mimestream",
+    "~/Library/Containers/com.mimestream.Mimestream",
+  ]
 end
