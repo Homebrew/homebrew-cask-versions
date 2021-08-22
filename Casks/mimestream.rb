@@ -5,14 +5,14 @@ cask "mimestream" do
   url "https://storage.googleapis.com/mimestream-releases/Mimestream_#{version}.dmg"
   name "mimestream"
   desc "Native macOS email client for Gmail"
-  homepage "https://mimestream.com"
-
-  app "Mimestream.app"
+  homepage "https://mimestream.com/"
 
   livecheck do
     url "https:/mimestream.com/appcast.xml"
     strategy :sparkle
   end
+
+  app "Mimestream.app"
 
   zap trash: [
     "~/Library/Application Scripts/com.mimestream.Mimestream",
