@@ -8,4 +8,9 @@ cask "mimestream" do
   homepage "https://mimestream.com"
 
   app "Mimestream.app"
+
+  livecheck do
+    url "https:/mimestream.com/appcast.xml"
+    strategy :sparkle
+  end
 end
