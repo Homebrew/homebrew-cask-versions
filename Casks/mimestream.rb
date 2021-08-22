@@ -4,7 +4,7 @@ cask "mimestream" do
 
   url "https://storage.googleapis.com/mimestream-releases/Mimestream_#{version}.dmg"
   name "mimestream"
-  desc "Native macOS email client for Gmail"
+  desc "Native app email client for Gmail"
   homepage "https://mimestream.com/"
 
   livecheck do
