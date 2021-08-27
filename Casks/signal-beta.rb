@@ -1,6 +1,6 @@
 cask "signal-beta" do
-  version "5.15.0-beta.2"
-  sha256 "b17b89f6b21bb71c01012cea9fcdbca49c6e611810f009e62cb76154df1dcc83"
+  version "5.16.0-beta.1"
+  sha256 "fb14aa23648b80efc69d6194e9f04edc13b9add3f8f7ce61bc1b2563dfd90bd1"
 
   url "https://updates.signal.org/desktop/signal-desktop-beta-mac-#{version}.dmg"
   name "Signal Beta"
