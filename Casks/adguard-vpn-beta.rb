@@ -4,11 +4,11 @@ cask "adguard-vpn-beta" do
 
   url "https://static.adguard-vpn.com/mac/release/AdGuardVPN.dmg"
   name "Adguard VPN"
-  homepage "https://adguard.com/"
+  homepage "https://adguard-vpn.com/"
 
   pkg "AdGuard VPN.pkg"
 
-  uninstall pkgutil: "com.adguard.mac.adguard-vpn-pkg"
+  uninstall pkgutil: "com.adguard.mac.vpn-pkg"
 
   zap trash: [
     "/Library/Application Support/com.adguard.mac.vpn"
