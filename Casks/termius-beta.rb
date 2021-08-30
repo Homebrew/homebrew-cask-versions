@@ -1,11 +1,11 @@
 cask "termius-beta" do
-  version "7.19.1"
+  version "7.19.2"
   sha256 :no_check
 
   if Hardware::CPU.intel?
-    url "https://www.termius.com/beta/download/mac/Termius+Beta.dmg"
+    url "https://autoupdate.termius.com/mac-beta/Termius%20Beta.dmg"
   else
-    url "https://www.termius.com/beta/download/mac-arm64/Termius+Beta.dmg"
+    url "https:///autoupdate.termius.com/mac-beta-arm64/Termius+Beta.dmg"
   end
 
   name "Termius Beta"
