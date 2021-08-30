@@ -3,9 +3,9 @@ cask "termius-beta" do
   sha256 :no_check
 
   if Hardware::CPU.intel?
-    url "https://www.termius.com/beta/download/mac/Termius+Beta.dmg"
+    url "https://autoupdate.termius.com/mac-beta-intel/Termius%20Beta.dmg"
   else
-    url "https://www.termius.com/beta/download/mac-arm64/Termius+Beta.dmg"
+    url "https:///autoupdate.termius.com/mac-beta-arm64/Termius+Beta.dmg"
   end
 
   name "Termius Beta"
