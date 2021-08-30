@@ -2,7 +2,7 @@ cask "vlc-nightly" do
   version :latest
   sha256 :no_check
 
-  url "https://artifacts.videolan.org/vlc/nightly-macos/" do |page|
+  url "https://artifacts.videolan.org/vlc/nightly-macos-x86_64/" do |page|
     folder_path = page[%r{\d+-\d+/}]
     url URI.join(page.url, folder_path) do |version_page|
       file_path = version_page[/href="([^"]+.dmg)"/, 1]
