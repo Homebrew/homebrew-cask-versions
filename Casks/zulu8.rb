@@ -7,7 +7,7 @@ cask "zulu8" do
         referer: "https://www.azul.com/downloads/zulu/zulu-mac/"
 
     livecheck do
-      url "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=#{version.major}&ext=dmg&os=macos&arch=x86"
+      url "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=#{version.major}&ext=dmg&os=macos&arch=x86&javafx=false"
       strategy :page_match do |page|
         match = page.match(%r{url"\s*:\s*"https:.*?/zulu(\d+(?:\.\d+)*-.*?)-jdk(\d+(?:\.\d+)*)-macos}i)
         "#{match[2]},#{match[1]}"
@@ -21,7 +21,7 @@ cask "zulu8" do
         referer: "https://www.azul.com/downloads/zulu/zulu-mac/"
 
     livecheck do
-      url "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=#{version.major}&ext=dmg&os=macos&arch=arm"
+      url "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=#{version.major}&ext=dmg&os=macos&arch=arm&javafx=false"
       strategy :page_match do |page|
         match = page.match(%r{url"\s*:\s*"https:.*?/zulu(\d+(?:\.\d+)*-.*?)-jdk(\d+(?:\.\d+)*)-macos}i)
         "#{match[2]},#{match[1]}"

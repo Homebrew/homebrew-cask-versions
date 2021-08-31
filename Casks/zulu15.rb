@@ -17,7 +17,7 @@ cask "zulu15" do
   homepage "https://www.azul.com/products/core/"
 
   livecheck do
-    url "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=#{version.major}&ext=dmg&os=macos"
+    url "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=#{version.major}&ext=dmg&os=macos&javafx=false"
     strategy :page_match do |page|
       match = page.match(%r{url"\s*:\s*"https:.*?/zulu(\d+(?:\.\d+)*-.*?)-jdk(\d+(?:\.\d+)*)-macos}i)
       "#{match[2]},#{match[1]}"
