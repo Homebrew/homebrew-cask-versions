@@ -1,10 +1,10 @@
 cask "geogebra5" do
-  version "5.0.659.0"
-  sha256 "d83166b994ba138507c11b9a5385dc7f96406c54ea12561a134d83163194b4e3"
+  version "5.0.662.0"
+  sha256 "da45442e0d6d1408ee5f394201bc2ad9f3fab05322914ef2ba9d6666214fb37f"
 
   url "https://download.geogebra.org/installers/#{version.major_minor}/GeoGebra-MacOS-Installer-withJava-#{version.dots_to_hyphens}.zip"
   name "GeoGebra"
-  desc "Previous major version of GeoGebra 6"
+  desc "Solve, save and share math problems, graph functions, etc"
   homepage "https://www.geogebra.org/"
 
   livecheck do
@@ -17,6 +17,6 @@ cask "geogebra5" do
 
   app "Geogebra.app"
 
-  uninstall quit:       "org.geogebra5.mac",
+  uninstall quit:       "org.geogebra#{version.major}.mac",
             login_item: "Geogebra"
 end
