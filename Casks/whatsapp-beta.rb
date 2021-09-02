@@ -10,4 +10,21 @@ cask "whatsapp-beta" do
   homepage "https://www.whatsapp.com/"
 
   app "WhatsApp.app"
+
+  livecheck do
+      url "https://web.whatsapp.com/desktop-beta/mac/releases"
+      strategy :page_match
+      regex(/release-(\d+(?:\.\d+)*)\.zip/i)
+    end
+
+    zap trash: [
+        "~/Library/Application Support/WhatsApp",
+        "~/Library/Application Support/WhatsApp.ShipIt",
+        "~/Library/Caches/WhatsApp",
+        "~/Library/Caches/WhatsApp.ShipIt",
+        "~/Library/Preferences/ByHost/WhatsApp.ShipIt.*.plist",
+        "~/Library/Preferences/WhatsApp.plist",
+        "~/Library/Preferences/WhatsApp-Helper.plist",
+        "~/Library/Saved Application State/WhatsApp.savedState",
+      ]
 end
