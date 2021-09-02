@@ -9,7 +9,7 @@ cask "whatsapp-beta" do
 
   livecheck do
     url "https://web.whatsapp.com/desktop-beta/mac/releases"
-    regex(/release-(\d+(?:\.\d+)*)\.zip/i)
+    regex(/release[._-](\d+(?:\.\d+)*)\.zip/i)
   end
 
   auto_updates true
