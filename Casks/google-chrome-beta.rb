@@ -1,5 +1,5 @@
 cask "google-chrome-beta" do
-  version "94.0.4606.20"
+  version "94.0.4606.30"
   sha256 :no_check
 
   if Hardware::CPU.intel?
