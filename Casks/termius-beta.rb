@@ -1,5 +1,5 @@
 cask "termius-beta" do
-  version "7.19.2"
+  version "7.20.0"
   sha256 :no_check
 
   if Hardware::CPU.intel?
@@ -20,11 +20,11 @@ cask "termius-beta" do
   app "Termius Beta.app"
 
   zap trash: [
-    "~/.termius",
-    "~/Library/Application Support/Termius Beta",
-    "~/Library/Saved Application State/com.termius-beta.mac.savedState",
     "/Library/Preferences/com.termius-beta.mac.helper.plist",
     "/Library/Preferences/com.termius-beta.mac.plist",
+    "~/.termius",
+    "~/Library/Application Support/Termius Beta",
     "~/Library/Logs/Termius Beta",
+    "~/Library/Saved Application State/com.termius-beta.mac.savedState",
   ]
 end
