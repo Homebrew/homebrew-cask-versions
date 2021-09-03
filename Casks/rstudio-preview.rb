@@ -1,8 +1,8 @@
 cask "rstudio-preview" do
-  version "1.4.1725"
-  sha256 "29487960948bae1a7668316db6d5cf0efd98cd6fccb1467655ccbb8e45b34b44"
+  version "2021.09.0,340"
+  sha256 "2ed2cbcda875585c9d3e5d4678ba8a0c66c805da2774bd405c761b3440abd40b"
 
-  url "https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-#{version}.dmg",
+  url "https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-#{version.before_comma}-preview\%2B#{version.after_comma}.dmg",
       verified: "s3.amazonaws.com/rstudio-ide-build/"
   name "RStudio"
   desc "Data science software focusing on R and Python"
@@ -10,7 +10,10 @@ cask "rstudio-preview" do
 
   livecheck do
     url :homepage
-    regex(/RStudio[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
+    strategy :page_match do |page|
+      match = page.match(/RStudio-(\d{4}\.\d{2}\.\d+)-preview%2B(\d+)\.dmg/i)
+      "#{match[1]},#{match[2]}"
+    end
   end
 
   conflicts_with cask: "rstudio"
