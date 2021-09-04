@@ -1,13 +1,13 @@
 cask "android-studio-preview-canary" do
-  version "2021.1.1.10"
+  version "2021.1.1.11"
 
   if Hardware::CPU.intel?
-    sha256 "1599008a854d50362a75e05375b589239aacde764648165578090d36d226e54e"
+    sha256 "443572a34d2dbc903aa07bf88d8246733492fae86f55e38baecec8ab5457d092"
 
     url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-#{version}-mac.zip",
         verified: "dl.google.com/dl/android/studio/"
   else
-    sha256 "79738368a2e3ac2897ca74960464683674806ec8abcbf910281aaef1ca658014"
+    sha256 "36cdcb07295b05b0be6485a443ce84bb64086beeb106e676a101b35a2d63112b"
 
     url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-#{version}-mac_arm.zip",
         verified: "dl.google.com/dl/android/studio/"
