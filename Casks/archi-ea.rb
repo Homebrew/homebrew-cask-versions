@@ -17,7 +17,6 @@ cask "archi-ea" do
   livecheck do
     url :homepage
     regex(/\s+id\s*=\s*["']?download["']?[^>]+?data-version\s*=\s*["']?(\d+(?:\.\d+)+?-(?:alpha|beta|ea)\d+)["']?/i)
-    # Matching template: <div ... id="download" ... data-version="0.0.0-beta0" ...>
   end
 
   conflicts_with cask: "archi"
@@ -30,8 +29,4 @@ cask "archi-ea" do
     "~/Library/Preferences/com.archimatetool.editor.plist",
     "~/Library/Saved Application State/com.archimatetool.editor.savedState",
   ]
-
-  caveats "This early access version of Archi gives you the opportunity to test new features before full release."
-  caveats "Please ensure you back up your data first before testing this version, and please use test data only."
-  caveats "Change Log: https://www.archimatetool.com/downloads/beta/change-log.txt"
 end
