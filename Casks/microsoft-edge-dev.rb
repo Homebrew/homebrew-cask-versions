@@ -1,13 +1,13 @@
 cask "microsoft-edge-dev" do
-  version "95.0.997.1"
+  version "95.0.1000.0"
 
   if Hardware::CPU.intel?
-    sha256 "d0079814667534f06558d9fcb3a26fe360cb9116201533273e1cfc2efb628413"
+    sha256 "2974211db06d1fd9a3b2a74d7d394bf2a6ec0b24d2b216ac4cbb2de76a6aa858"
 
     url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeDev-#{version}.pkg",
         verified: "officecdn-microsoft-com.akamaized.net/"
   else
-    sha256 "ec017c93a3905e38981d706138ed365480ec2af90bee9ed4bc718dee12be4af8"
+    sha256 "4cbccd3ecf26bce02113f9298b4667a3fcb8a621b5766f4a4b942fca58a33645"
 
     url "https://officecdn-microsoft-com.akamaized.net/pr/03adf619-38c6-4249-95ff-4a01c0ffc962/MacAutoupdate/MicrosoftEdgeDev-#{version}.pkg",
         verified: "officecdn-microsoft-com.akamaized.net/"
