@@ -18,8 +18,9 @@ cask "ferdi-beta" do
   homepage "https://getferdi.com/"
 
   livecheck do
-    url :url
-    regex(/^v?(\d+(?:\.\d+)+[._-]beta[._-]\d+)$/i)
+    url "https://github.com/getferdi/ferdi/releases/"
+    strategy :page_match
+    regex(/Ferdi[._-](\d+(?:\.\d+)*((?:[._-]beta)?)*([._-]\d+)?)\.dmg/i)
   end
 
   auto_updates true
