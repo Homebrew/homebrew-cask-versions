@@ -4,7 +4,8 @@ cask "affinity-publisher-beta" do
 
   url "https://beta-downloads.serif.com/download/f6b89099-eace-44b3-8ce7-76ae7b0e036d/affinity-publisher-customer-beta-#{version}.zip"
   appcast "https://forum.affinity.serif.com/index.php?/forum/57-publisher-beta-on-mac/"
-  name "Serif Affinity Publisher"
+  name "Affinity Publisher"
+  desc "Professional desktop publishing software"
   homepage "https://affinity.serif.com/en-us/publisher/"
 
   app "Affinity Publisher Beta.app"
