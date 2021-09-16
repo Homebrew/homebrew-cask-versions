@@ -2,9 +2,6 @@ cask "thunderbird-daily" do
   version :latest
   sha256 :no_check
 
-  language "cs" do
-    "cs"
-  end
   language "en", default: true do
     "en-US"
   end
@@ -24,6 +21,7 @@ cask "thunderbird-daily" do
   end
   name "Earlybird"
   name "Thunderbird Daily"
+  desc "Customizable email client"
   homepage "https://www.mozilla.org/en-US/thunderbird/channel/"
 
   app "Thunderbird Daily.app"
