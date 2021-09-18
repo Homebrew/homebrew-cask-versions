@@ -1,8 +1,8 @@
 cask "whatsapp-beta" do
-  version "2.2135.1"
-  sha256 "d082d2237792997141295e7c19daee73eff02425ee982a72bb8a5ca9a29a85d2"
+  version "2.2137.6"
+  sha256 "5a74f04468c21f0333c5102dc46dbb70b0b34a55de66eda278d0259e7c0c347e"
 
-  url "https://web.whatsapp.com/desktop-beta/mac/files/release-#{version}.zip"
+  url "https://web.whatsapp.com/desktop/mac/files/release-#{version}.zip"
   name "WhatsApp Beta"
   desc "Desktop client for WhatsApp"
   homepage "https://www.whatsapp.com/"
@@ -13,6 +13,7 @@ cask "whatsapp-beta" do
   end
 
   auto_updates true
+  conflicts_with cask: "whatsapp"
 
   app "WhatsApp.app"
 
