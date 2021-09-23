@@ -21,6 +21,7 @@ cask "microsoft-office-2016" do
   pkg "Microsoft_Office_#{version}_Installer.pkg"
 
   uninstall pkgutil:   [
+    "com.microsoft.autoupdate2",
     "com.microsoft.OneDrive",
     "com.microsoft.package.DFonts",
     "com.microsoft.package.Fonts",
