@@ -21,7 +21,6 @@ cask "microsoft-office-2016" do
   pkg "Microsoft_Office_#{version}_Installer.pkg"
 
   uninstall pkgutil:   [
-    "com.microsoft.autoupdate2",
     "com.microsoft.OneDrive",
     "com.microsoft.package.DFonts",
     "com.microsoft.package.Fonts",
@@ -50,6 +49,9 @@ cask "microsoft-office-2016" do
               "com.microsoft.office.licensing.helper",
               "com.microsoft.office.licensingV2.helper",
               "com.microsoft.update.agent",
+            ],
+            quit:      [
+              "com.microsoft.autoupdate2",
             ]
 
   zap trash:     [
