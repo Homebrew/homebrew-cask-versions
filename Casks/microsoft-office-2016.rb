@@ -1,11 +1,12 @@
 cask "microsoft-office-2016" do
-  version "16.16.20071300"
-  sha256 "76db656a1cf3194936070cea0f89fc5c0ecd59a50d93a6a5fabb773cd8126387"
+  version "16.16.20101200"
+  sha256 "f108918241da7bd1442b97e42c6f9c3d9241202461c2f8ea0fc4e8abb2a1c581"
 
   url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_#{version}_Installer.pkg",
       verified: "officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/"
   appcast "https://docs.microsoft.com/en-us/officeupdates/release-notes-office-2016-mac/"
   name "Microsoft Office"
+  desc "Office suite"
   homepage "https://products.office.com/mac/microsoft-office-for-mac/"
 
   auto_updates true
@@ -49,6 +50,9 @@ cask "microsoft-office-2016" do
               "com.microsoft.office.licensing.helper",
               "com.microsoft.office.licensingV2.helper",
               "com.microsoft.update.agent",
+            ],
+            quit:      [
+              "com.microsoft.autoupdate2",
             ]
 
   zap trash:     [
