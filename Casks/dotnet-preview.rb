@@ -1,7 +1,7 @@
 cask "dotnet-preview" do
   if Hardware::CPU.intel?
-    version "6.0.0-preview.7.21377.19,f3f28827-7599-4d5e-a218-348e3988e27f:cbc1fe0c1d29f48f9b75591e95823d42"
-    sha256 "11501744415fb43e9623e0fbf38330908bee1e3cd08f112ebfdfdc7c0e55de52"
+    version "6.0.0-rc.1.21451.13,a8608d51-2363-4352-9102-f76d360deeea:d1c289e36f88b8eaa2e1464ae11d25c9"
+    sha256 "1d1bec479449df0229960c2faab768ad26fa30c3dd8d0877b979b15c206c0807"
 
     url "https://download.visualstudio.microsoft.com/download/pr/#{version.after_comma.before_colon}/#{version.after_colon}/dotnet-runtime-#{version.before_comma}-osx-x64.pkg"
     pkg "dotnet-runtime-#{version.before_comma}-osx-x64.pkg"
