@@ -11,7 +11,9 @@ cask "rstudio-preview" do
   livecheck do
     url :homepage
     strategy :page_match do |page|
-      match = page.match(/RStudio-(\d{4}\.\d{2}\.\d+)-preview%2B(\d+)\.dmg/i)
+      match = page.match(/RStudio-(\d{4}\.\d{2}\.\d+)%2B(\d+)\.dmg/i)
+      next if match.nil?
+
       "#{match[1]},#{match[2]}"
     end
   end
