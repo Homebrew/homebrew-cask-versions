@@ -12,7 +12,7 @@ cask "rstudio-preview" do
     url :homepage
     strategy :page_match do |page|
       match = page.match(/RStudio-(\d{4}\.\d{2}\.\d+)%2B(\d+)\.dmg/i)
-      next if match.nil?
+      next if match.blank?
 
       "#{match[1]},#{match[2]}"
     end
