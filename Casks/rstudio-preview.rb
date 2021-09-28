@@ -1,8 +1,8 @@
 cask "rstudio-preview" do
-  version "2021.09.0,341"
-  sha256 "17926f58bd4250d970282cbf44b1f3c89616de7ed72e41fb5b51e531df162ce7"
+  version "2021.09.0,351"
+  sha256 "f8e97ced3107eed24ed946de3c81a8ee4eef550bcaacf91c5a48e803a43b6971"
 
-  url "https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-#{version.before_comma}-preview\%2B#{version.after_comma}.dmg",
+  url "https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-#{version.before_comma}\%2B#{version.after_comma}.dmg",
       verified: "s3.amazonaws.com/rstudio-ide-build/"
   name "RStudio"
   desc "Data science software focusing on R and Python"
@@ -11,7 +11,9 @@ cask "rstudio-preview" do
   livecheck do
     url :homepage
     strategy :page_match do |page|
-      match = page.match(/RStudio-(\d{4}\.\d{2}\.\d+)-preview%2B(\d+)\.dmg/i)
+      match = page.match(/RStudio-(\d{4}\.\d{2}\.\d+)%2B(\d+)\.dmg/i)
+      next if match.nil?
+
       "#{match[1]},#{match[2]}"
     end
   end
