@@ -1,11 +1,11 @@
 cask "archi-ea" do
-  version "4.9.0-ea5"
+  version "4.9.0-beta3"
 
   if Hardware::CPU.intel?
-    sha256 "331534bc384e1f09dbdd47299edabfe823d7938acd30699301c8fa5b89b95a07"
+    sha256 "0dcb9117ac52c4d4a0efc95fecf77519bf9b57d8c9076df2205da8b4a8e1c50c"
     url "https://www.archimatetool.com/downloads/beta/Archi-Mac-#{version}.dmg"
   else
-    sha256 "caaab95b9578d45f0955815ece8e78a5e2ed854633ccf811498532e366981d0d"
+    sha256 "ed034b57833e4e9fb755c3c8d5aae498efc9fc9183fde0003c0788a958832871"
     url "https://www.archimatetool.com/downloads/beta/Archi-Mac-Silicon-#{version}.dmg"
   end
 
