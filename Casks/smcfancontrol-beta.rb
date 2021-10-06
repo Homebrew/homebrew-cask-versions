@@ -10,7 +10,7 @@ cask "smcfancontrol-beta" do
   livecheck do
     url "https://github.com/hholtmann/smcFanControl/releases/"
     strategy :page_match do |page|
-      match = page[%r{smcFanControl[._-](\d+(?:.\d+)*)\.zip}i, 1]
+      match = page[/smcFanControl[._-](\d+(?:.\d+)*)\.zip/i, 1]
       match.tr("_", ".")
     end
   end
