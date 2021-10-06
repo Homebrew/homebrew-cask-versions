@@ -1,13 +1,13 @@
 cask "lando-edge" do
-  version "3.4.0"
+  version "3.4.2"
 
   if Hardware::CPU.intel?
-    sha256 "72a2b7aacca6acc588171bcf3a27365d740402047088444db7d9131125aae8f7"
+    sha256 "2593ebb137733f3069a6db873f440f84860e0d00fa0eb99293bda0c8f17472fe"
 
     url "https://github.com/lando/lando/releases/download/v#{version}/lando-x64-v#{version}.dmg",
         verified: "github.com/lando/lando/"
   else
-    sha256 "d893bf5e84b0a31d252af69fa43a837037690f88f8caf45f520097c33d61368a"
+    sha256 "a5d9837a5509ce60a45cc4bdf6aa8bcdd5df7ceb0e972f1f547ab45eb9f69dee"
 
     url "https://github.com/lando/lando/releases/download/v#{version}/lando-arm64-v#{version}.dmg",
         verified: "github.com/lando/lando/"
