@@ -1,8 +1,8 @@
 cask "affinity-publisher-beta" do
-  version "1.10.2.1156"
-  sha256 "95eda2d699a736cba93b3a0488938a9d336e6920c5c9735703c432b4a3ebfca1"
+  version "1.10.2.1167"
+  sha256 "97a9e6fa4374e52c4e3740ffbd6bc07690c78996fe2cbb123de8f57d19d392f8"
 
-  url "https://beta-downloads.serif.com/download/f6b89099-eace-44b3-8ce7-76ae7b0e036d/affinity-publisher-customer-beta-#{version}.zip"
+  url "https://beta-downloads.serif.com/download/ece3d4cf-3976-4bff-a084-583cc53c6176/affinity-publisher-customer-beta-#{version}.zip"
   name "Affinity Publisher"
   desc "Professional desktop publishing software"
   homepage "https://affinity.serif.com/en-us/publisher/"
