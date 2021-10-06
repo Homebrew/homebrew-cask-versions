@@ -19,8 +19,8 @@ cask "clashx-pro" do
   app "ClashX Pro.app"
 
   uninstall delete:    [
-    "/Library/PrivilegedHelperTools/com.west2online.ClashXPro.ProxyConfigHelper",
     "/Library/LaunchDaemons/com.west2online.ClashXPro.ProxyConfigHelper.plist",
+    "/Library/PrivilegedHelperTools/com.west2online.ClashXPro.ProxyConfigHelper",
   ],
             launchctl: "com.west2online.ClashXPro.ProxyConfigHelper",
             quit:      "com.west2online.ClashXPro"
@@ -28,7 +28,7 @@ cask "clashx-pro" do
   zap trash: [
     "~/Library/Application Support/com.west2online.ClashXPro",
     "~/Library/Caches/com.west2online.ClashXPro",
-    "~/Library/Preferences/com.west2online.ClashXPro.plist",
     "~/Library/Logs/ClashX Pro",
+    "~/Library/Preferences/com.west2online.ClashXPro.plist",
   ]
 end
