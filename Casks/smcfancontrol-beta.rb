@@ -7,6 +7,14 @@ cask "smcfancontrol-beta" do
   name "smcFanControl"
   homepage "https://github.com/hholtmann/smcFanControl"
 
+  livecheck do
+    url "https://github.com/hholtmann/smcFanControl/releases/"
+    strategy :page_match do |page|
+      match = page[%r{smcFanControl[._-](\d+(?:.\d+)*)\.zip}i, 1]
+      match.tr("_", ".")
+    end
+  end
+
   conflicts_with cask: "smcfancontrol"
 
   app "smcFanControl.app"
