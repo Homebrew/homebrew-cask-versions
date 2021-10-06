@@ -3,8 +3,8 @@ cask "smcfancontrol-beta" do
   sha256 "d9dcd2c01e2583b74e14a6303ffd75d659dea7f99e1e42de4d8fcb0115cbcec3"
 
   url "https://github.com/hholtmann/smcFanControl/releases/download/#{version}%C3%9F1/smcFanControl_#{version.dots_to_underscores}.zip"
-  appcast "https://github.com/hholtmann/smcFanControl/releases.atom"
   name "smcFanControl"
+  desc "Sets a minimum speed for built-in fans"
   homepage "https://github.com/hholtmann/smcFanControl"
 
   livecheck do
