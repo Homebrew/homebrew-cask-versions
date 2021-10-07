@@ -1,8 +1,8 @@
 cask "brave-browser-beta" do
-  version "1.31.71.0,131.71"
+  version "1.31.74.0,131.74"
 
   if Hardware::CPU.intel?
-    sha256 "27214ab5958b41f1208fb4f3a15462efcdbbc213167ad400b1f75e2ee5a2a36c"
+    sha256 "90159c93be4192b8daade6f6b35d64c211d2bd958605cc253f1082c4607dcaaa"
 
     url "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/beta/#{version.after_comma}/Brave-Browser-Beta-x64.dmg",
         verified: "updates-cdn.bravesoftware.com/sparkle/Brave-Browser/"
@@ -12,7 +12,7 @@ cask "brave-browser-beta" do
       strategy :sparkle
     end
   else
-    sha256 "0f8823b9a378fd6eea25b5a8155f2908ded526b49f97b9b197dcf1ddd9370597"
+    sha256 "8448a7d02636b2f88d016e5f6b283637f3300e5f895ac07f3d91b593248da6e1"
 
     url "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/beta-arm64/#{version.after_comma}/Brave-Browser-Beta-arm64.dmg",
         verified: "updates-cdn.bravesoftware.com/sparkle/Brave-Browser/"
