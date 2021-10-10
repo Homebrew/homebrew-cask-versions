@@ -43,4 +43,9 @@ cask "blender-lts" do
       '#{appdir}/Blender.app/Contents/MacOS/Blender' "$@"
     EOS
   end
+  
+  zap trash: [
+    "~/Library/Application Support/Blender",
+    "~/Library/Saved Application State/org.blenderfoundation.blender.savedState",
+  ]
 end
