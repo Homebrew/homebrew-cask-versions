@@ -9,13 +9,14 @@ cask "kaleidoscope2" do
 
   livecheck do
     url "https://updates.kaleidoscope.app/v#{version.major}/prod/appcast"
-    strategy :sparkle do |item|
-      match = item.url.match(%r{/Kaleidoscope-(\d+(?:\.\d+)*)-(\d+)-(\w+(?:-\d+)*)\.app\.zip}i)
-      "#{match[1]},#{match[2]}:#{match[3]}"
+    regex(/Kaleidoscope-(\d+(?:\.\d+)*)-(\d+)-(\w+(?:-\d+)*)\.app\.zip/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| "#{match[1]},#{match[2]}:#{match[3]}" }
     end
   end
 
   auto_updates true
+  conflicts_with cask: "kaleidoscope"
   depends_on macos: ">= :high_sierra"
 
   app "Kaleidoscope.app"
