@@ -1,32 +1,29 @@
 cask "wine-staging" do
-  version "5.7"
-  sha256 "04a52f91ea515dfdcbead6fc3efefccf4e53377d17b9e818d14b44f29f184f28"
+  version "6.19"
+  sha256 "a7cc606e2138c7e18401b5dbeba052b9e45e4378984e2fa1b1dc88fad9fcbbbd"
 
-  url "https://dl.winehq.org/wine-builds/macosx/pool/winehq-staging-#{version}.pkg",
-      verified: "dl.winehq.org/wine-builds/macosx/"
+  # Current winehq packages are deprecated and these are packages from
+  # the new maintainers that will eventually be pushed to Winehq.
+  # See https://www.winehq.org/pipermail/wine-devel/2021-July/191504.html
+  url "https://github.com/Gcenx/macOS_Wine_builds/releases/download/#{version}/wine-staging-#{version}-osx64.tar.xz",
+      verified: "https://github.com/Gcenx/macOS_Wine_builds/"
   name "WineHQ-staging"
   desc "Compatibility layer to run Windows applications"
-  homepage "https://www.wine-staging.com/"
+  homepage "https://wiki.winehq.org/MacOS"
 
   livecheck do
-    url "https://dl.winehq.org/wine-builds/macosx/download.html"
-    regex(/href=.*?winehq[._-]staging[._-]v?(\d+(?:\.\d+)+)\.pkg/i)
+    url "https://github.com/Gcenx/macOS_Wine_builds/releases"
+    strategy :page_match
+    regex(/wine[._-]staging[._-]v?(\d+(?:\.\d+)*)[._-]osx64\.tar\.xz/i)
   end
 
   conflicts_with cask: [
     "wine-stable",
     "wine-devel",
   ]
-  depends_on cask: "xquartz"
+  depends_on formula: "xz"
 
-  pkg "winehq-staging-#{version}.pkg",
-      choices: [
-        {
-          "choiceIdentifier" => "choice3",
-          "choiceAttribute"  => "selected",
-          "attributeSetting" => 1,
-        },
-      ]
+  app "Wine Staging.app"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/start/bin/appdb"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/start/bin/winehelp"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/msiexec"
@@ -44,17 +41,15 @@ cask "wine-staging" do
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/winepath"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/wineserver"
 
-  uninstall pkgutil: [
-    "org.winehq.wine-staging",
-    "org.winehq.wine-staging-deps",
-    "org.winehq.wine-staging-deps64",
-    "org.winehq.wine-staging32",
-    "org.winehq.wine-staging64",
-  ],
-            delete:  "/Applications/Wine Staging.app"
-
   caveats <<~EOS
-    #{token} installs support for running 64 bit applications in Wine, which is considered experimental.
-    If you do not want 64 bit support, you should download and install the #{token} package manually.
+    #{token} supports both 32-bit and 64-bit. It is compatible with an existing
+    32-bit wine prefix, but it will now default to 64-bit when you create a new
+    wine prefix. The architecture can be selected using the WINEARCH environment
+    variable which can be set to either win32 or win64.
+
+    To create a new pure 32-bit prefix, you can run:
+      $ WINEARCH=win32 WINEPREFIX=~/.wine32 winecfg
+
+    See the Wine FAQ for details: https://wiki.winehq.org/FAQ#Wineprefixes
   EOS
 end
