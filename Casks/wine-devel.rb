@@ -1,31 +1,29 @@
 cask "wine-devel" do
-  version "5.7"
-  sha256 "7965a0d47bb37b072f9bee06be653e9c8a2ce084f558207aa8a519d9ac5e7e64"
+  version "6.19"
+  sha256 "add13ca5b304430617ee7fd77f99492f63da817f64b5301bcc15288add3a6818"
 
-  url "https://dl.winehq.org/wine-builds/macosx/pool/winehq-devel-#{version}.pkg"
+  # Current winehq packages are deprecated and these are packages from
+  # the new maintainers that will eventually be pushed to Winehq.
+  # See https://www.winehq.org/pipermail/wine-devel/2021-July/191504.html
+  url "https://github.com/Gcenx/macOS_Wine_builds/releases/download/#{version}/wine-devel-#{version}-osx64.tar.xz",
+      verified: "https://github.com/Gcenx/macOS_Wine_builds/"
   name "WineHQ-devel"
   desc "Compatibility layer to run Windows applications"
   homepage "https://wiki.winehq.org/MacOS"
 
   livecheck do
-    url "https://dl.winehq.org/wine-builds/macosx/download.html"
-    regex(/href=.*?winehq[._-]devel[._-]v?(\d+(?:\.\d+)+)\.pkg/i)
+    url "https://github.com/Gcenx/macOS_Wine_builds/releases"
+    strategy :page_match
+    regex(/wine[._-]devel[._-]v?(\d+(?:\.\d+)*)[._-]osx64\.tar\.xz/i)
   end
 
   conflicts_with cask: [
     "wine-stable",
     "wine-staging",
   ]
-  depends_on cask: "xquartz"
+  depends_on formula: "xz"
 
-  pkg "winehq-devel-#{version}.pkg",
-      choices: [
-        {
-          "choiceIdentifier" => "choice3",
-          "choiceAttribute"  => "selected",
-          "attributeSetting" => 1,
-        },
-      ]
+  app "Wine Devel.app"
   binary "#{appdir}/Wine Devel.app/Contents/Resources/start/bin/appdb"
   binary "#{appdir}/Wine Devel.app/Contents/Resources/start/bin/winehelp"
   binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/msiexec"
@@ -43,17 +41,15 @@ cask "wine-devel" do
   binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/winepath"
   binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/wineserver"
 
-  uninstall pkgutil: [
-    "org.winehq.wine-devel",
-    "org.winehq.wine-devel-deps",
-    "org.winehq.wine-devel-deps64",
-    "org.winehq.wine-devel32",
-    "org.winehq.wine-devel64",
-  ],
-            delete:  "/Applications/Wine Devel.app"
-
   caveats <<~EOS
-    #{token} installs support for running 64 bit applications in Wine, which is considered experimental.
-    If you do not want 64 bit support, you should download and install the #{token} package manually.
+    #{token} supports both 32-bit and 64-bit. It is compatible with an existing
+    32-bit wine prefix, but it will now default to 64-bit when you create a new
+    wine prefix. The architecture can be selected using the WINEARCH environment
+    variable which can be set to either win32 or win64.
+
+    To create a new pure 32-bit prefix, you can run:
+      $ WINEARCH=win32 WINEPREFIX=~/.wine32 winecfg
+
+    See the Wine FAQ for details: https://wiki.winehq.org/FAQ#Wineprefixes
   EOS
 end
