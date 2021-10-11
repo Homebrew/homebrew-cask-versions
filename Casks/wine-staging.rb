@@ -17,6 +17,10 @@ cask "wine-staging" do
     regex(/wine[._-]staging[._-]v?(\d+(?:\.\d+)*)[._-]osx64\.tar\.xz/i)
   end
 
+  conflicts_with cask: [
+    "wine-stable",
+    "wine-devel",
+  ]
   depends_on formula: "xz"
 
   app "Wine Staging.app"
