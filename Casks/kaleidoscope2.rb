@@ -11,7 +11,7 @@ cask "kaleidoscope2" do
     url "https://updates.kaleidoscope.app/v#{version.major}/prod/appcast"
     regex(/Kaleidoscope-(\d+(?:\.\d+)*)-(\d+)-(\w+(?:-\d+)*)\.app\.zip/i)
     strategy :page_match do |page, regex|
-      page.scan(regex).map { |match| "#{match[1]},#{match[2]}:#{match[3]}" }
+      page.scan(regex).map { |match| "#{match[0]},#{match[1]}:#{match[2]}" }
     end
   end
 
