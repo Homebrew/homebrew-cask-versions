@@ -9,6 +9,7 @@ cask "slack-beta" do
     sha256 "d7027b01b293302ad59085e39ee85ef9ab81ab2421cd3855f81ed56b0f072ab2"
   else
     sha256 "fd5feb0f070c9106d376de602946cbfbde1fa2907f1a70d5b1afefd4574df333"
+  end
 
   name "Slack"
   desc "Team communication and collaboration software"
