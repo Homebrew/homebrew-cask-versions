@@ -1,9 +1,15 @@
 cask "slack-beta" do
-  version "4.21.0-beta1"
-  sha256 "d7027b01b293302ad59085e39ee85ef9ab81ab2421cd3855f81ed56b0f072ab2"
+  arch = Hardware::CPU.intel? ? "x64" : "arm64"
 
-  url "https://downloads.slack-edge.com/releases/macos/#{version}/beta/x64/Slack-#{version}-macOS.zip",
-      verified: "downloads.slack-edge.com/"
+  version "4.21.0-beta1"
+
+  url "https://downloads.slack-edge.com/releases/macos/#{version}/beta/#{arch}/Slack-#{version}-macOS.zip",
+      verified: "downloads.slack-edge.com/releases/macos/"
+  if Hardware::CPU.intel?
+    sha256 "d7027b01b293302ad59085e39ee85ef9ab81ab2421cd3855f81ed56b0f072ab2"
+  else
+    sha256 "fd5feb0f070c9106d376de602946cbfbde1fa2907f1a70d5b1afefd4574df333"
+
   name "Slack"
   desc "Team communication and collaboration software"
   homepage "https://slack.com/beta/osx"
