@@ -1,6 +1,6 @@
 cask "carbon-copy-cloner5" do
-  version "5.1.27.6196"
-  sha256 "b2edc2798f3e7497c3b2f624517909a8876b89026d181ac0c321447a6d47849f"
+  version "5.1.28.6213"
+  sha256 "050ed65c493ff75bf415210de357ce552833c724e39c9d61043fd10151dd7a22"
 
   url "https://bombich.scdn1.secure.raxcdn.com/software/files/ccc-#{version}.zip",
       verified: "bombich.scdn1.secure.raxcdn.com/software/files/"
@@ -9,9 +9,14 @@ cask "carbon-copy-cloner5" do
   homepage "https://bombich.com/"
 
   livecheck do
-    url "https://bombich.com/download"
-    strategy :page_match
-    regex(/href=.*?v=(5+(?:\.\d+)+)/i)
+    url "https://bombich.com/software/updates/ccc.php?os_major=11&os_minor=6&os_bugfix=0&ccc=6000&beta=0&locale=en"
+    strategy :page_match do |page|
+      version = JSON.parse(page)["stable"]["version"]
+      build = JSON.parse(page)["stable"]["build"]
+      next if version.blank? || build.blank?
+
+      "#{version}.#{build}"
+    end
   end
 
   auto_updates true
