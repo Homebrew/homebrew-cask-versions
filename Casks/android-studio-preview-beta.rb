@@ -1,16 +1,14 @@
 cask "android-studio-preview-beta" do
-  version "2020.3.1.21"
+  arch = Hardware::CPU.intel? ? "mac" : "mac_arm"
 
+  version "2021.1.1.14"
+
+  url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-#{version}-#{arch}.zip",
+      verified: "dl.google.com/dl/android/studio/"
   if Hardware::CPU.intel?
-    sha256 "ae3ff455fdc6c06b83b7701f8daba1af638f33e03265383fb576c8c4ed125bd7"
-
-    url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-#{version}-mac.zip",
-        verified: "dl.google.com/dl/android/studio/"
+    sha256 "3da189125e0ed7b21cbe5778792540dcb0f41fb100a3c779c2bb41b76926459b"
   else
-    sha256 "a4ea75c0ff7de8ed940fa6e21e7d9b6218057737faa9fcbcefd299f314b5ba1a"
-
-    url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-#{version}-mac_arm.zip",
-        verified: "dl.google.com/dl/android/studio/"
+    sha256 "d7d9ee8f7ae3d78d331903e8a3a0faec409c5866bd56aa214096609705561a19"
   end
 
   name "Android Studio Preview (Beta)"
@@ -19,7 +17,7 @@ cask "android-studio-preview-beta" do
 
   livecheck do
     url :homepage
-    regex(%r{href=.*?/android[._-]studio[._-]v?(\d+(?:\.\d+)+)[._-]mac\.zip[^>]*>[\w\s.-]*?(Beta|RC)}i)
+    regex(%r{href=.*?/android[._-]studio[._-]v?(\d+(?:\.\d+)+)[._-]#{arch}\.zip(.*\n*\s*.*)(Beta|RC))}i)
   end
 
   conflicts_with cask: "android-studio-preview-canary"
