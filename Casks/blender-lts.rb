@@ -1,12 +1,13 @@
 cask "blender-lts" do
+  arch = Hardware::CPU.intel? ? "x64" : "arm64"
+
   version "2.93.5"
 
+  url "https://download.blender.org/release/Blender#{version.major_minor}/blender-#{version}-macos-#{arch}.dmg"
   if Hardware::CPU.intel?
     sha256 "08c929f2fcbde0233947b183e8cf53e5595b8f9eedcac749b2828a713ceb9ce0"
-    url "https://download.blender.org/release/Blender#{version.major_minor}/blender-#{version}-macos-x64.dmg"
   else
     sha256 "4435bf05591ebeb3dcb5f9071e3fc5d10417fc04c1901e4d2073994f2cd37b06"
-    url "https://download.blender.org/release/Blender#{version.major_minor}/blender-#{version}-macos-arm64.dmg"
   end
 
   name "Blender"
@@ -15,7 +16,7 @@ cask "blender-lts" do
 
   livecheck do
     url "https://www.blender.org/download/lts/"
-    regex(%r{href=.*?/blender[._-]v?(\d+(?:\.\d+)+)-macOS-x64\.dmg}i)
+    regex(%r{href=.*?/blender[._-]v?(\d+(?:\.\d+)+)-macOS-#{arch}\.dmg}i)
     strategy :page_match do |page, regex|
       minor_version = page[%r{href=["'].*/download/lts/(\d+(?:[.-]\d+)+)/["' >]}i, 1]
       next [] if minor_version.blank?
