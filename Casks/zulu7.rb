@@ -9,10 +9,12 @@ cask "zulu7" do
   homepage "https://www.azul.com/products/core/"
 
   livecheck do
-    url "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=#{version.major}&ext=dmg&os=macos&javafx=false"
-    regex(/url":"https:.*zulu(.*)-jdk(.*)-macos/i)
-    strategy :page_match do |page, regex|
-      page.scan(regex).map { |match| match[1] + "," + match[0] }
+    url "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=#{version.major}&bundle_type=jdk&javafx=false&ext=dmg&os=macos&arch=x86"
+    strategy :page_match do |page|
+      match = page.match(/zulu(\d+(?:\.\d+)*-.*?)-jdk(\d+(?:\.\d+)*)-macosx_x64\.dmg/i)
+      next if match.blank?
+
+      "#{match[2]},#{match[1]}"
     end
   end
 
