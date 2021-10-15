@@ -1,16 +1,14 @@
 cask "zulu13" do
+  arch = Hardware::CPU.intel? ? "x64" : "aarch64"
+
   version "13.0.8,13.42.17-ca"
 
+  url "https://cdn.azul.com/zulu/bin/zulu#{version.after_comma}-jdk#{version.before_comma}-macosx_#{arch}.dmg",
+      referer: "https://www.azul.com/downloads/zulu/zulu-mac/"
   if Hardware::CPU.intel?
     sha256 "75cba5a0fb0609d71906c8cc8f3a4700ff037d3ff577c65e982bdc1d4bc4def4"
-
-    url "https://cdn.azul.com/zulu/bin/zulu#{version.after_comma}-jdk#{version.before_comma}-macosx_x64.dmg",
-        referer: "https://www.azul.com/downloads/zulu/zulu-mac/"
   else
     sha256 "1a89abcbbdafd305bbffdcdce4bc0544ff69db5fe3a0403122a131e4913f132d"
-
-    url "https://cdn.azul.com/zulu/bin/zulu#{version.after_comma}-jdk#{version.before_comma}-macosx_aarch64.dmg",
-        referer: "https://www.azul.com/downloads/zulu/zulu-mac/"
   end
 
   name "Azul Zulu Java Standard Edition Development Kit"
@@ -18,10 +16,10 @@ cask "zulu13" do
   homepage "https://www.azul.com/products/core/"
 
   livecheck do
-    url "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=#{version.major}&ext=dmg&os=macos&javafx=false"
-    regex(/url":"https:.*zulu(.*)-jdk(.*)-macos/i)
-    strategy :page_match do |page, regex|
-      page.scan(regex).map { |match| match[1] + "," + match[0] }
+    url "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=#{version.major}&bundle_type=jdk&javafx=false&ext=dmg&os=macos"
+    strategy :page_match do |page|
+      match = page.match(/zulu(\d+(?:\.\d+)*-.*?)-jdk(\d+(?:\.\d+)*)-macosx_#{arch}\.dmg/i)
+      "#{match[2]},#{match[1]}"
     end
   end
 
