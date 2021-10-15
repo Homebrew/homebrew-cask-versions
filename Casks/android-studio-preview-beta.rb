@@ -17,7 +17,7 @@ cask "android-studio-preview-beta" do
 
   livecheck do
     url :homepage
-    regex(%r{href=.*?/android[._-]studio[._-]v?(\d+(?:\.\d+)+)[._-]#{arch}\.zip(.*\n*\s*.*)(Beta|RC))}i)
+    regex(%r{href=.*?/android[._-]studio[._-]v?(\d+(?:\.\d+)+)[._-]#{arch}\.zip(.*\n*\s*.*)(Beta|RC)}i)
   end
 
   conflicts_with cask: "android-studio-preview-canary"
