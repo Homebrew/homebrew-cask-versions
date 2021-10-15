@@ -1,14 +1,14 @@
 cask "hyper-canary" do
+  arch = Hardware::CPU.intel? ? "x64" : "arm64"
+
   version "3.1.0-canary.6"
 
+  url "https://github.com/vercel/hyper/releases/download/v#{version}/Hyper-#{version}-mac-#{arch}.zip",
+      verified: "github.com/vercel/hyper/"
   if Hardware::CPU.intel?
     sha256 "033735bec4cef2796e5c40d84b186843941347a768fdbb3d1323c9bc4379ebd3"
-    url "https://github.com/vercel/hyper/releases/download/v#{version}/Hyper-#{version}-mac-x64.zip",
-        verified: "github.com/vercel/hyper/"
   else
     sha256 "d2cd7409dbc1454bc5c67454228572f8c27ef9e5434893f8d1bc81b9613441e0"
-    url "https://github.com/vercel/hyper/releases/download/v#{version}/Hyper-#{version}-mac-arm64.zip",
-        verified: "github.com/vercel/hyper/"
   end
 
   name "Hyper"
@@ -18,7 +18,7 @@ cask "hyper-canary" do
   livecheck do
     url "https://releases-canary.hyper.is/"
     strategy :page_match
-    regex(/hyper-(\d+(?:\.\d+)*.+)-mac-x64\.zip/i)
+    regex(/hyper-(\d+(?:\.\d+)*.+)-mac-#{arch}\.zip/i)
   end
 
   auto_updates true
