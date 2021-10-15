@@ -1,5 +1,6 @@
 cask "zulu15" do
   arch = Hardware::CPU.intel? ? "x64" : "aarch64"
+  livecheckarch = Hardware::CPU.intel? ? "x64" : "arm"
 
   version "15.0.4,15.34.17-ca"
 
@@ -16,9 +17,9 @@ cask "zulu15" do
   homepage "https://www.azul.com/products/core/"
 
   livecheck do
-    url "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=#{version.major}&bundle_type=jdk&javafx=false&ext=dmg&os=macos"
+    url "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=#{version.major}&bundle_type=jdk&javafx=false&ext=dmg&os=macos&arch=#{livecheckarch}"
     strategy :page_match do |page|
-      match = page.match(/zulu(\d+(?:\.\d+)*-.*?)-jdk(\d+(?:\.\d+)*)-macosx_(aarch64|x64)\.dmg/i)
+      match = page.match(/zulu(\d+(?:\.\d+)*-.*?)-jdk(\d+(?:\.\d+)*)-macosx_#{arch}\.dmg/i)
       "#{match[2]},#{match[1]}"
     end
   end
