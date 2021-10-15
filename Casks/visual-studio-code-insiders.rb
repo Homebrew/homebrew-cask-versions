@@ -1,16 +1,14 @@
 cask "visual-studio-code-insiders" do
+  arch = Hardware::CPU.intel? ? "darwin" : "darwin-arm64"
+
   version "1.62.0,cad4c193d85f0891204da41c0508de39e7aa38c6"
 
+  url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-#{arch}.zip",
+      verified: "az764295.vo.msecnd.net/insider/"
   if Hardware::CPU.intel?
     sha256 "dfa2ba8ecd93dc65aa67a6eb46576d786ed032b6c0e0152b98c781ccfc556fdc"
-
-    url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-darwin.zip",
-        verified: "az764295.vo.msecnd.net/insider/"
   else
     sha256 "f94698074a121c7ef6d465e1abd1384371811c5accd5a0b2aed065b7c151ced4"
-
-    url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-darwin-arm64.zip",
-        verified: "az764295.vo.msecnd.net/insider/"
   end
 
   name "Microsoft Visual Studio Code"
@@ -19,7 +17,7 @@ cask "visual-studio-code-insiders" do
   homepage "https://code.visualstudio.com/insiders"
 
   livecheck do
-    url "https://update.code.visualstudio.com/api/update/darwin-universal/insider/VERSION"
+    url "https://update.code.visualstudio.com/api/update/#{arch}/insider/VERSION"
     strategy :page_match do |page|
       name = page[/"name":"(\d+(?:\.\d+)*)/i, 1]
       version = page[/"version":"(\w+)/i, 1]
