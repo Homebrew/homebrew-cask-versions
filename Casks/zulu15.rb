@@ -1,6 +1,6 @@
 cask "zulu15" do
   arch = Hardware::CPU.intel? ? "x64" : "aarch64"
-  choice = Hardware::CPU.intel? ? "x64" : "arm"
+  choice = Hardware::CPU.intel? ? "x86" : "arm"
 
   version "15.0.4,15.34.17-ca"
 
