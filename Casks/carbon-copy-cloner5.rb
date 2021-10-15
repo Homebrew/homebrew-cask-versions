@@ -9,9 +9,14 @@ cask "carbon-copy-cloner5" do
   homepage "https://bombich.com/"
 
   livecheck do
-    url "https://bombich.com/download"
-    strategy :page_match
-    regex(/href=.*?v=(5+(?:\.\d+)+)/i)
+    url "https://bombich.com/software/updates/ccc.php?os_major=11&os_minor=6&os_bugfix=0&ccc=6000&beta=0&locale=en"
+    strategy :page_match do |page|
+      version = JSON.parse(page)["stable"]["version"]
+      build = JSON.parse(page)["stable"]["build"]
+      next if version.blank? || build.blank?
+
+      "#{version}.#{build}"
+    end
   end
 
   auto_updates true
