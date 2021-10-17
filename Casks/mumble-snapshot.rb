@@ -18,4 +18,12 @@ cask "mumble-snapshot" do
   depends_on macos: ">= :high_sierra"
 
   app "Mumble.app"
+  
+  zap trash: [
+    "~/Library/Application Support/Mumble",
+    "~/Library/Logs/Mumble.log",
+    "~/Library/Preferences/net.sourceforge.mumble.Mumble.plist",
+    "~/Library/Saved Application State/net.sourceforge.mumble.Mumble.savedState",
+    "/Library/ScriptingAdditions/MumbleOverlay.osax",
+  ]
 end
