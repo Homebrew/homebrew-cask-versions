@@ -12,7 +12,7 @@ cask "textmate-preview" do
   depends_on macos: ">= :sierra"
 
   app "TextMate.app"
-  binary "#{appdir}/TextMate.app/Contents/Resources/mate"
+  binary "#{appdir}/TextMate.app/Contents/MacOS/mate"
 
   uninstall quit: "com.macromates.TextMate"
 
