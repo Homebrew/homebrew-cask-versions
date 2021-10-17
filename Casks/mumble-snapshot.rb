@@ -9,9 +9,9 @@ cask "mumble-snapshot" do
 
   livecheck do
     url "https://dl.mumble.info/latest/snapshot/client-macos-x64"
-    strategy :header_match
-    regex(/mumble[._-]client[._-](.*)~snapshot\.dmg/i)
-    match[1].tr("_", "~")
+    strategy :header_match do |headers|
+      headers["content-disposition"][/mumble[._-]client[._-](.*)~snapshot\.dmg/i, 1].tr("_", "~")
+    end
   end
 
   conflicts_with cask: "mumble"
