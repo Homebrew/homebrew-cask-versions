@@ -18,7 +18,7 @@ cask "mumble-snapshot" do
   depends_on macos: ">= :high_sierra"
 
   app "Mumble.app"
-  
+
   zap trash: [
     "~/Library/Application Support/Mumble",
     "~/Library/Logs/Mumble.log",
