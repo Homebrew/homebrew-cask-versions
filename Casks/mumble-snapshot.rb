@@ -1,8 +1,8 @@
 cask "mumble-snapshot" do
-  version "1.4.0~2021-09-04~g37ee67716"
+  version "1.4.0_2021-09-04_g37ee67716"
   sha256 "d66818e6e7f6775da70fc5fbafbe81a9f77b4a95282c3e3dfff65aca4db6cfb7"
 
-  url "https://dl.mumble.info/snapshot/mumble_client-#{version}~snapshot.dmg"
+  url "https://dl.mumble.info/snapshot/mumble_client-#{version.tr("_", "~")}~snapshot.dmg"
   name "Mumble Snapshot"
   desc "Open-source, low-latency, high quality voice chat software for gaming"
   homepage "https://mumble.info/"
@@ -11,6 +11,7 @@ cask "mumble-snapshot" do
     url "https://dl.mumble.info/latest/snapshot/client-macos-x64"
     strategy :header_match
     regex(/mumble[._-]client[._-](.*)~snapshot\.dmg/i)
+    match[1].tr("_", "~")
   end
 
   conflicts_with cask: "mumble"
