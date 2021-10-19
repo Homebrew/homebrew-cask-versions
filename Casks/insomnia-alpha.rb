@@ -11,7 +11,7 @@ cask "insomnia-alpha" do
   livecheck do
     url "https://github.com/Kong/insomnia/releases"
     strategy :page_match
-    regex(/Insomnia[._-]Core[._-](\d+(?:\.\d+)+[._-](?:alpha\.)\d*)\.dmg/i)
+    regex(/Insomnia[._-]Core[._-](\d+(?:\.\d+)+[._-](?:alpha|beta)\.\d*)\.dmg/i)
   end
 
   auto_updates true
