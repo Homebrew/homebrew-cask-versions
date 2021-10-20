@@ -1,27 +1,16 @@
 cask "vmware-fusion-tech-preview" do
-  arch = Hardware::CPU.intel? ? "" : "_arm64"
+  version "16530630"
+  sha256 "663b3d35f23541003f34ee0f5160bd04d0113703ac0a34a509b964b21a5bd5d0"
 
-  if Hardware::CPU.intel?
-    version "16530630"
-    sha256 "663b3d35f23541003f34ee0f5160bd04d0113703ac0a34a509b964b21a5bd5d0"
-
-    livecheck do
-      url "http://www.vmware.com/go/get-fusion-tp"
-      strategy :header_match
-    end
-  else
-    version "18656771"
-    sha256 "c8511bbb829d60f95f94599392bef8058b36cd94f103fb264a57cacdc5f55325"
-
-    livecheck do
-      skip "No version information available"
-    end
-  end
-
-  url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-e.x.p-#{version}#{arch}.dmg"
+  url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-e.x.p-#{version}.dmg"
   name "VMware Fusion Tech Preview"
   desc "Create, manage, and run virtual machines"
   homepage "https://blogs.vmware.com/teamfusion/tech-preview"
+
+  livecheck do
+    url "http://www.vmware.com/go/get-fusion-tp"
+    strategy :header_match
+  end
 
   auto_updates true
   conflicts_with cask: "vmware-fusion"
