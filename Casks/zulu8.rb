@@ -2,11 +2,11 @@ cask "zulu8" do
   arch = Hardware::CPU.intel? ? "x64" : "aarch64"
   choice = Hardware::CPU.intel? ? "x86" : "arm"
 
+  version "8.0.312,8.58.0.13-ca"
+
   if Hardware::CPU.intel?
-    version "8.0.302,8.56.0.21-ca"
-    sha256 "4e667ac2b946d8890a0d9ffe2168e1ad1ccb3f82c3683ccd3f10ce5349c874a7"
+    sha256 "9e61884a468df79ff762d0c1ec82090f4292ec0c7204707560dc31fb3c3bf594"
   else
-    version "8.0.312,8.58.0.13-ca"
     sha256 "15ac8c0f246b0c2065200f8e864faff8bf9340cf7d960a60857af67454b58746"
   end
 
