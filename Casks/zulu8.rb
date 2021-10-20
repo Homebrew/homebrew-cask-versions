@@ -6,8 +6,8 @@ cask "zulu8" do
     version "8.0.302,8.56.0.21-ca"
     sha256 "4e667ac2b946d8890a0d9ffe2168e1ad1ccb3f82c3683ccd3f10ce5349c874a7"
   else
-    version "8.0.302,8.56.0.23-ca"
-    sha256 "ee6c3ceaa3ef384c322c50b64feeaf0e7a9b54895300a4935b50a8e5df22e858"
+    version "8.0.312,8.58.0.13-ca"
+    sha256 "15ac8c0f246b0c2065200f8e864faff8bf9340cf7d960a60857af67454b58746"
   end
 
   url "https://cdn.azul.com/zulu/bin/zulu#{version.after_comma}-jdk#{version.before_comma}-macosx_#{arch}.dmg",
