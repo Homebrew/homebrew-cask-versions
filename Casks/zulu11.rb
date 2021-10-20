@@ -2,14 +2,14 @@ cask "zulu11" do
   arch = Hardware::CPU.intel? ? "x64" : "aarch64"
   choice = Hardware::CPU.intel? ? "x86" : "arm"
 
-  version "11.0.12,11.50.19-ca"
+  version "11.0.13,11.52.13-ca"
 
   url "https://cdn.azul.com/zulu/bin/zulu#{version.after_comma}-jdk#{version.before_comma}-macosx_#{arch}.dmg",
       referer: "https://www.azul.com/downloads/zulu/zulu-mac/"
   if Hardware::CPU.intel?
-    sha256 "4820c5ecbdfe199398aa361864ef9812a8af15c221540f8016d05d70fde6db94"
+    sha256 "b780c7934ee5e67b82cd0362dd0295895d53976498b3dccfe18747d98ea27bda"
   else
-    sha256 "6c8cbf1a685d04348e92e7c104987fdfe40688b3f51fe98056a5570cec0564e8"
+    sha256 "e26e3df726f53f0ac91f35dd07791fc81cf18a1347ab56a7a156de256db60b8c"
   end
 
   name "Azul Zulu Java Standard Edition Development Kit"
