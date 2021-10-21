@@ -6,7 +6,7 @@ cask "figma-beta" do
   if Hardware::CPU.intel?
     sha256 "c3aadfa3c15c9e80c521f82a1803a785759c245cf9684095f3bb0f1c047085f9"
   else
-    sha265 "6889d4d45a81c84e748dcb2b3312ef6f3bfcb82a14e83196edbdba2cae1c189a"
+    sha256 "6889d4d45a81c84e748dcb2b3312ef6f3bfcb82a14e83196edbdba2cae1c189a"
   end
 
   url "https://desktop.figma.com/#{arch}/beta/FigmaBeta-#{version}.zip"
