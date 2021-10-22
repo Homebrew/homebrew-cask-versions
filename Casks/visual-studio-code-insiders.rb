@@ -3,14 +3,14 @@ cask "visual-studio-code-insiders" do
 
   version "1.62.0,bcb9df5afa52c5b713f62e86dcac2c5050504b5f"
 
-  url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-#{arch}.zip",
-      verified: "az764295.vo.msecnd.net/insider/"
   if Hardware::CPU.intel?
     sha256 "fe2d045a9ee0b3ed0c214d73cd17f179a0249d99ed2fdbda2d523907546b9d21"
   else
     sha256 "7e7802ea3636f5afb2d52467ab12df808033097747531c958f54629fdc4c34c8"
   end
 
+  url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-#{arch}.zip",
+      verified: "az764295.vo.msecnd.net/insider/"
   name "Microsoft Visual Studio Code"
   name "Visual Studio Code Insiders"
   desc "Code editor"
