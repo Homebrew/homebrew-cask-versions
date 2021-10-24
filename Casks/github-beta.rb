@@ -4,14 +4,14 @@ cask "github-beta" do
 
   version "2.9.4-beta4-e25e14f5"
 
-  url "https://desktop.githubusercontent.com/github-desktop/releases/#{version}/GitHubDesktop-#{arch}.zip",
-      verified: "desktop.githubusercontent.com/github-desktop/"
   if Hardware::CPU.intel?
     sha256 "e1d04bbada4f0f94db6d4f3134776e9982b3f9ad9ba4fa840d4fad1b5f3f4eff"
   else
     sha256 "2156004cdf7e625d522c617de532052510f5a623f8ec30513415e881e71bd0dd"
   end
 
+  url "https://desktop.githubusercontent.com/github-desktop/releases/#{version}/GitHubDesktop-#{arch}.zip",
+      verified: "desktop.githubusercontent.com/github-desktop/"
   name "GitHub Desktop"
   desc "Desktop client for GitHub repositories"
   homepage "https://desktop.github.com/"
