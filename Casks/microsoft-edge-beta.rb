@@ -4,14 +4,14 @@ cask "microsoft-edge-beta" do
 
   version "95.0.1020.30"
 
-  url "https://officecdn-microsoft-com.akamaized.net/pr/#{folder}/MacAutoupdate/MicrosoftEdgeBeta-#{version}.pkg",
-      verified: "officecdn-microsoft-com.akamaized.net/"
   if Hardware::CPU.intel?
     sha256 "381b58818f3d1d621df82acc180f2d4282ba8754bf5539532dfb95225a51ff55"
   else
     sha256 "42f0b49ca75ddaa2e289705b25ec80d6c10610b4df0fae0b2dfa84543320377b"
   end
 
+  url "https://officecdn-microsoft-com.akamaized.net/pr/#{folder}/MacAutoupdate/MicrosoftEdgeBeta-#{version}.pkg",
+      verified: "officecdn-microsoft-com.akamaized.net/"
   name "Microsoft Edge Beta"
   desc "Multi-platform web browser"
   homepage "https://www.microsoftedgeinsider.com/"
