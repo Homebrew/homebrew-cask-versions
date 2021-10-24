@@ -4,14 +4,14 @@ cask "brave-browser-dev" do
 
   version "1.32.77.0,132.77"
 
-  url "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/#{folder}/#{version.after_comma}/Brave-Browser-Dev-#{arch}.dmg",
-      verified: "updates-cdn.bravesoftware.com/sparkle/Brave-Browser/"
   if Hardware::CPU.intel?
     sha256 "08bc7add6cf7f191551d27506c3c81e77a611a22578df2e078a3102031fcb6de"
   else
     sha256 "f17d196ce1d92946eb32b3638cdda0495eae33bf02418753e4d7a69e3decfc5f"
   end
 
+  url "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/#{folder}/#{version.after_comma}/Brave-Browser-Dev-#{arch}.dmg",
+      verified: "updates-cdn.bravesoftware.com/sparkle/Brave-Browser/"
   name "Brave Dev"
   desc "Web browser focusing on privacy"
   homepage "https://brave.com/download-dev/"
