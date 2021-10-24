@@ -3,14 +3,14 @@ cask "android-studio-preview-canary" do
 
   version "2021.2.1.2"
 
-  url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-#{version}-#{arch}.zip",
-      verified: "dl.google.com/dl/android/studio/"
   if Hardware::CPU.intel?
     sha256 "16e3bf8d84aee0022d1ca0f344fcc7eba01565dab16c535bdc68b9092a9df9db"
   else
     sha256 "0e212f27abd2c12d563bc16838cb67208f9133957d1d9b27dcf71767bfc240e0"
   end
 
+  url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-#{version}-#{arch}.zip",
+      verified: "dl.google.com/dl/android/studio/"
   name "Android Studio Preview (Canary)"
   desc "Tools for building Android applications"
   homepage "https://developer.android.com/studio/preview/"
