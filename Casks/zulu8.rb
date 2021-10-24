@@ -4,14 +4,14 @@ cask "zulu8" do
 
   version "8.0.312,8.58.0.13-ca"
 
-  url "https://cdn.azul.com/zulu/bin/zulu#{version.after_comma}-jdk#{version.before_comma}-macosx_#{arch}.dmg",
-      referer: "https://www.azul.com/downloads/zulu/zulu-mac/"
   if Hardware::CPU.intel?
     sha256 "9e61884a468df79ff762d0c1ec82090f4292ec0c7204707560dc31fb3c3bf594"
   else
     sha256 "15ac8c0f246b0c2065200f8e864faff8bf9340cf7d960a60857af67454b58746"
   end
 
+  url "https://cdn.azul.com/zulu/bin/zulu#{version.after_comma}-jdk#{version.before_comma}-macosx_#{arch}.dmg",
+      referer: "https://www.azul.com/downloads/zulu/zulu-mac/"
   name "Azul Zulu Java 8 Standard Edition Development Kit"
   desc "OpenJDK distribution from Azul"
   homepage "https://www.azul.com/"
