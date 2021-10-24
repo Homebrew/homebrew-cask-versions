@@ -3,14 +3,14 @@ cask "android-studio-preview-beta" do
 
   version "2021.1.1.14"
 
-  url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-#{version}-#{arch}.zip",
-      verified: "dl.google.com/dl/android/studio/"
   if Hardware::CPU.intel?
     sha256 "3da189125e0ed7b21cbe5778792540dcb0f41fb100a3c779c2bb41b76926459b"
   else
     sha256 "d7d9ee8f7ae3d78d331903e8a3a0faec409c5866bd56aa214096609705561a19"
   end
 
+  url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-#{version}-#{arch}.zip",
+      verified: "dl.google.com/dl/android/studio/"
   name "Android Studio Preview (Beta)"
   desc "Tools for building Android applications"
   homepage "https://developer.android.com/studio/preview/"
