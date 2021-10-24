@@ -4,14 +4,14 @@ cask "microsoft-edge-dev" do
 
   version "96.0.1047.2"
 
-  url "https://officecdn-microsoft-com.akamaized.net/pr/#{folder}/MacAutoupdate/MicrosoftEdgeDev-#{version}.pkg",
-      verified: "officecdn-microsoft-com.akamaized.net/"
   if Hardware::CPU.intel?
     sha256 "1c08c3df0fc4327f420703233259551764918cefef830f40a009d632d5e3d0c9"
   else
     sha256 "1a479eeddc4f952eb892c10095bec1c49eda2e1fcb8386adf257c0bbe4f80177"
   end
 
+  url "https://officecdn-microsoft-com.akamaized.net/pr/#{folder}/MacAutoupdate/MicrosoftEdgeDev-#{version}.pkg",
+      verified: "officecdn-microsoft-com.akamaized.net/"
   name "Microsoft Edge Dev"
   desc "Multi-platform web browser"
   homepage "https://www.microsoftedgeinsider.com/"
