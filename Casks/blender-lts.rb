@@ -3,13 +3,13 @@ cask "blender-lts" do
 
   version "2.93.5"
 
-  url "https://download.blender.org/release/Blender#{version.major_minor}/blender-#{version}-macos-#{arch}.dmg"
   if Hardware::CPU.intel?
     sha256 "08c929f2fcbde0233947b183e8cf53e5595b8f9eedcac749b2828a713ceb9ce0"
   else
     sha256 "4435bf05591ebeb3dcb5f9071e3fc5d10417fc04c1901e4d2073994f2cd37b06"
   end
 
+  url "https://download.blender.org/release/Blender#{version.major_minor}/blender-#{version}-macos-#{arch}.dmg"
   name "Blender"
   desc "Free and open-source 3D creation suite"
   homepage "https://www.blender.org/"
