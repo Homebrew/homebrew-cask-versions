@@ -33,9 +33,16 @@ cask "safari-technology-preview" do
   uninstall delete: "/Applications/Safari Technology Preview.app"
 
   zap trash: [
+    "~/Library/Application Scripts/com.apple.SafariTechnologyPreview.CacheDeleteExtension",
+    "~/Library/Application Scripts/com.apple.SafariTechnologyPreview.DiagnosticExtension",
+    "~/Library/Application Scripts/com.apple.SafariTechnologyPreview",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.apple.safaritechnologypreview.sfl*",
     "~/Library/Caches/com.apple.SafariTechnologyPreview",
+    "~/Library/Containers/com.apple.SafariTechnologyPreview",
+    "~/Library/Containers/com.apple.SafariTechnologyPreview.CacheDeleteExtension",
+    "~/Library/Containers/com.apple.SafariTechnologyPreview.DiagnosticExtension",
     "~/Library/Preferences/com.apple.SafariTechnologyPreview.plist",
+    "~/Library/Preferences/com.apple.SafariTechnologyPreview.SandboxBroker.plist",
     "~/Library/SafariTechnologyPreview",
     "~/Library/Saved Application State/com.apple.SafariTechnologyPreview.savedState",
     "~/Library/SyncedPreferences/com.apple.SafariTechnologyPreview-com.apple.Safari.UserRequests.plist",
