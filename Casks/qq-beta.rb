@@ -10,7 +10,7 @@ cask "qq-beta" do
   livecheck do
     url "https://im.qq.com/proxy/domain/qzonestyle.gtimg.cn/qzone/qzactStatics/configSystem/data/1373/config1.js"
     strategy :page_match
-    regex(%r{/QQCatalyst/QQ_(\d+(?:\.\d+)*)\.dmg}i)
+    regex(%r{/QQCatalyst/QQ_(\d+(?:\.\d+)+)\.dmg}i)
   end
 
   app "QQ体验版.app"

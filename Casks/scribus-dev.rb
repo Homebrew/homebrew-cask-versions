@@ -10,7 +10,7 @@ cask "scribus-dev" do
 
   livecheck do
     url "https://www.scribus.net/downloads/unstable-branch/"
-    regex(/Current\s*development\s*candidate:\s*Scribus\s*(\d+(?:\.\d+)*)/i)
+    regex(/Current\s*development\s*candidate:\s*Scribus\s*(\d+(?:\.\d+)+)/i)
   end
 
   conflicts_with cask: "scribus"
