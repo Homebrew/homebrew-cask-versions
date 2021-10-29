@@ -11,7 +11,7 @@ cask "dropbox-beta" do
   livecheck do
     url :homepage
     strategy :page_match
-    regex(/Beta\sBuild\s(\d+(?:\.\d+)*)/i)
+    regex(/Beta\sBuild\s(\d+(?:\.\d+)+)/i)
   end
 
   auto_updates true

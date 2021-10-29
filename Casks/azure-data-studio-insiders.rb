@@ -11,7 +11,7 @@ cask "azure-data-studio-insiders" do
   livecheck do
     url "https://azuredatastudio-update.azurewebsites.net/api/update/darwin/insider/VERSION"
     strategy :page_match do |page|
-      name = page[/"name":"(\d+(?:\.\d+)*)/i, 1]
+      name = page[/"name":"(\d+(?:\.\d+)+)/i, 1]
       version = page[/"version":"(\w+)/i, 1]
       "#{name},#{version}"
     end
