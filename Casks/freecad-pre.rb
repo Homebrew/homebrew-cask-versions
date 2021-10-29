@@ -12,7 +12,7 @@ cask "freecad-pre" do
     url "https://github.com/FreeCAD/FreeCAD/releases"
     strategy :page_match do |page|
       match = page.match(
-        %r{href=.*?/(\d+(?:\.\d+)*)/FreeCAD_(?:\d+(?:\.\d+)*)-(\d+(?:-pre\d+)?)-macOS-x86_64-conda\.dmg}i,
+        %r{href=.*?/(\d+(?:\.\d+)+)/FreeCAD_(?:\d+(?:\.\d+)*)-(\d+(?:-pre\d+)?)-macOS-x86_64-conda\.dmg}i,
       )
       "#{match[1]},#{match[2]}"
     end
