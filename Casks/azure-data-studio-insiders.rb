@@ -13,6 +13,8 @@ cask "azure-data-studio-insiders" do
     strategy :page_match do |page|
       name = page[/"name":"(\d+(?:\.\d+)+)/i, 1]
       version = page[/"version":"(\w+)/i, 1]
+      next if name.blank? || version.blank?
+      
       "#{name},#{version}"
     end
   end
