@@ -13,6 +13,8 @@ cask "tunnelblick-beta" do
     regex(%r{href=.*?/Tunnelblick_(\d+(?:\.\d+)*beta(?:\d+))_build_(\d+)\.dmg}i)
     strategy :page_match do |page, regex|
       match = page.match(regex)
+      next if match.blank?
+
       "#{match[1]},#{match[2]}"
     end
   end
