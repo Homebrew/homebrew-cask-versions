@@ -1,12 +1,12 @@
 cask "ferdi-beta" do
   arch = Hardware::CPU.intel? ? "" : "-arm64"
 
-  version "5.6.3-beta.2"
+  version "5.6.3-beta.3"
 
   if Hardware::CPU.intel?
-    sha256 "70d7daae1ac30d1127c4c0f73b10df4da5e9388ee1cd308f2db799269f11f04a"
+    sha256 "0c428569cb140fb20089694d0593b9a7d027d28f1ce965ccfdb6364966bbddfc"
   else
-    sha256 "ca65bdad34d0a53c6ba3c7db76efcbba2fc6a25fcae20d3ea3d7ac130e2379b5"
+    sha256 "754f4ffe8d1f9e9cafbc196a1337acd1c5b1a2de9688126c88d9eceaae8e12e8"
   end
 
   url "https://github.com/getferdi/ferdi/releases/download/v#{version}/Ferdi-#{version}#{arch}.dmg",
