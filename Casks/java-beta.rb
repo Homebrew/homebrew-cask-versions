@@ -18,6 +18,8 @@ cask "java-beta" do
     url "https://jdk.java.net/#{version.major}/"
     strategy :page_match do |page|
       match = page.match(/openjdk-(\d+)-ea\+(\d+)_macos-#{arch}_bin\.tar\.gz/i)
+      next if match.blank?
+      
       "#{match[1]},#{match[2]}"
     end
   end

@@ -12,6 +12,8 @@ cask "adoptopenjdk8" do
     url :url
     strategy :github_latest do |page|
       match = page.match(%r{href=.*/jdk(\d+)u(\d+)-(b\d+).+["' >]}i)
+      next if match.blank?
+      
       "#{match[1]},#{match[2]}:#{match[3]}"
     end
   end
