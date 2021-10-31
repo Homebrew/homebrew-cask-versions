@@ -13,7 +13,7 @@ cask "citra-nightly" do
     strategy :github_latest do |page|
       match = page.match(%r{href=.*?/nightly[._-](\d+)/citra[._-]osx[._-](\d+[._-]\h+)\.tar\.gz}i)
       next if match.blank?
-      
+
       "#{match[1]},#{match[2]}"
     end
   end

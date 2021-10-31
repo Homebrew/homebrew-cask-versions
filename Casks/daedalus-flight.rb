@@ -13,7 +13,7 @@ cask "daedalus-flight" do
     strategy :page_match do |page|
       match = page.match(%r{/daedalus-(\d+(?:\.\d+)*(?:-FC\d*)?)-mainnet_flight-(\d+)\.pkg}i)
       next if match.blank?
-      
+
       "#{match[1]},#{match[2]}"
     end
   end

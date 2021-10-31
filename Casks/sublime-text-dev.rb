@@ -13,7 +13,7 @@ cask "sublime-text-dev" do
     strategy :page_match do |page, regex|
       match = page.match(regex)[1]
       next if match.blank?
-      
+
       "#{match[0]}.#{match[1..]}"
     end
   end

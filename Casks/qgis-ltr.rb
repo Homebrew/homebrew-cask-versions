@@ -12,7 +12,7 @@ cask "qgis-ltr" do
     strategy :page_match do |page|
       match = page.match(/qgis_ltr_final[._-]v?(\d+(?:_\d+)+)[._-](\d+_\d+)\.dmg/i)
       next if match.blank?
-      
+
       "#{match[1].tr("_", ".")},#{match[2]}"
     end
   end
