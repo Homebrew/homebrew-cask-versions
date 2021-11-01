@@ -1,20 +1,27 @@
-cask "inso-alpha" do
-  version "2.4.0-alpha.1"
-  sha256 "e62af5751cb985f27e103eb4546c601082e3b4072bd530e0e1f9d04c7193f714"
+cask "inso-unstable" do
+  version :latest
+  sha256 :no_check
 
-  url "https://github.com/Kong/insomnia/releases/download/lib%40#{version}/inso-macos-#{version}.zip",
-      verified: "github.com/Kong/insomnia/"
+  url do
+    require "open-uri"
+    releases_url = "https://github.com/Kong/insomnia/releases"
+    lib_version = URI(releases_url).open do |io|
+      io.read.scan(/href=["'].*?inso-macos-(?:latest-)*(\d+(?:\.\d+)+[._-](?:alpha|beta)[._-]\d*)\.zip/i).max[0]
+    end
+    [
+      "#{releases_url}/download/lib%40#{lib_version}/inso-macos-#{lib_version}.zip",
+      { verified: "github.com/Kong/insomnia/" },
+    ]
+  end
   name "inso"
   desc "CLI HTTP and GraphQL Client"
   homepage "https://insomnia.rest/products/inso"
 
-  livecheck do
-    url "https://github.com/Kong/insomnia/releases"
-    strategy :page_match
-    regex(/href=.*?inso-macos-(?:latest-)*(\d+(?:\.\d+)+[._-](?:alpha|beta)[._-]\d*)\.zip/i)
-  end
-
   conflicts_with cask: "inso"
 
   binary "inso"
+
+  caveats <<~EOS
+    This may or may not be behind the latest "stable" release.
+  EOS
 end

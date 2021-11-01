@@ -1,20 +1,22 @@
-cask "insomnia-alpha" do
-  version "2021.6.0-alpha.7"
-  sha256 "cafff919768d5bdfac75e5100689f5a0876c3477a292574c81a10ba4a86d5f84"
+cask "insomnia-unstable" do
+  version :latest
+  sha256 :no_check
 
-  url "https://github.com/Kong/insomnia/releases/download/core%40#{version}/Insomnia.Core-#{version}.dmg",
-      verified: "github.com/Kong/insomnia/"
+  url do
+    require "open-uri"
+    releases_url = "https://github.com/Kong/insomnia/releases"
+    core_version = URI(releases_url).open do |io|
+      io.read.scan(/href=["'].*?Insomnia[._-]Core[._-](\d+(?:\.\d+)+[._-](?:alpha|beta)[._-]\d*)\.dmg/i).max[0]
+    end
+    [
+      "#{releases_url}/download/core%40#{core_version}/Insomnia.Core-#{core_version}.dmg",
+      { verified: "github.com/Kong/insomnia/" },
+    ]
+  end
   name "Insomnia"
   desc "HTTP and GraphQL Client"
   homepage "https://insomnia.rest/"
 
-  livecheck do
-    url "https://github.com/Kong/insomnia/releases"
-    strategy :page_match
-    regex(/Insomnia[._-]Core[._-](\d+(?:\.\d+)+[._-](?:alpha|beta)[._-]\d*)\.dmg/i)
-  end
-
-  auto_updates true
   conflicts_with cask: "insomnia"
 
   app "Insomnia.app"
@@ -29,4 +31,8 @@ cask "insomnia-alpha" do
     "~/Library/Preferences/com.insomnia.app.plist",
     "~/Library/Saved Application State/com.insomnia.app.savedState",
   ]
+
+  caveats <<~EOS
+    This may or may not be behind the latest "stable" release.
+  EOS
 end
