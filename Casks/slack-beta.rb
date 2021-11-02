@@ -22,6 +22,7 @@ cask "slack-beta" do
 
   auto_updates true
   conflicts_with cask: "slack"
+  depends_on macos: ">= :mojave"
 
   app "Slack.app"
 
