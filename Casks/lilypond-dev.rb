@@ -1,6 +1,6 @@
 cask "lilypond-dev" do
-  version "2.23.3-1"
-  sha256 "46113d7edc432297012e71ad66db88f909b8fdca3c1a5baca8560e1efbae17d0"
+  version "2.23.4-1"
+  sha256 "037ddcf31d91413d1677d7e20e956c0eee83735c46e04cb61a06ffaad86168af"
 
   url "https://lilypond.org/downloads/binaries/darwin-x86/lilypond-#{version}.darwin-x86.tar.bz2"
   name "LilyPond"
