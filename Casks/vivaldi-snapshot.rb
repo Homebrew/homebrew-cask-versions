@@ -16,11 +16,11 @@ cask "vivaldi-snapshot" do
   depends_on macos: ">= :el_capitan"
 
   app "Vivaldi Snapshot.app"
-  
+
   zap trash: [
     "~/Library/Application Support/Vivaldi Snapshot",
-    "~/Library/Caches/Vivaldi Snapshot",
     "~/Library/Caches/com.vivaldi.Vivaldi.snapshot",
+    "~/Library/Caches/Vivaldi Snapshot",
     "~/Library/Preferences/com.vivaldi.Vivaldi.snapshot.plist",
     "~/Library/Saved Application State/com.vivaldi.Vivaldi.snapshot.savedState",
   ]
