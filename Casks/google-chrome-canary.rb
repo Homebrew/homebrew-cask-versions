@@ -1,7 +1,7 @@
 cask "google-chrome-canary" do
   arch = Hardware::CPU.intel? ? "" : "universal/"
 
-  version "97.0.4692.0"
+  version "97.0.4692.2"
   sha256 :no_check
 
   url "https://dl.google.com/chrome/mac/#{arch}canary/googlechromecanary.dmg"
