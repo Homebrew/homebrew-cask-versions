@@ -1,6 +1,6 @@
 cask "dropbox-beta" do
-  version "136.3.4307"
-  sha256 "9f2306e33bb60a3ea1c71dd35b55d3074f418241e8dd6d4cbb7231ba97bd4e8d"
+  version "136.3.4318"
+  sha256 "f53ffc150bed1b5dc0c8dded2f73b90f410bb09b4acff334d32571b15cac1c49"
 
   url "https://www.dropbox.com/download?build=#{version}&plat=mac&type=full",
       verified: "dropbox.com/"
