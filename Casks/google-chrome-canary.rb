@@ -11,7 +11,6 @@ cask "google-chrome-canary" do
 
   livecheck do
     url "https://chromiumdash.appspot.com/fetch_releases?channel=Canary&platform=Mac"
-    strategy :page_match
     regex(/"version": "(\d+(?:\.\d+)+)"/i)
   end
 
