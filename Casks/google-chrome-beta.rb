@@ -11,7 +11,6 @@ cask "google-chrome-beta" do
 
   livecheck do
     url "https://chromiumdash.appspot.com/fetch_releases?channel=Beta&platform=Mac"
-    strategy :page_match
     regex(/"version": "(\d+(?:\.\d+)+)"/i)
   end
 
