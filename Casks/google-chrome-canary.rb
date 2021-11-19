@@ -1,7 +1,7 @@
 cask "google-chrome-canary" do
   arch = Hardware::CPU.intel? ? "" : "universal/"
 
-  version "98.0.4712.0"
+  version "98.0.4713.0"
   sha256 :no_check
 
   url "https://dl.google.com/chrome/mac/#{arch}canary/googlechromecanary.dmg"
@@ -11,7 +11,6 @@ cask "google-chrome-canary" do
 
   livecheck do
     url "https://chromiumdash.appspot.com/fetch_releases?channel=Canary&platform=Mac"
-    strategy :page_match
     regex(/"version": "(\d+(?:\.\d+)+)"/i)
   end
 
