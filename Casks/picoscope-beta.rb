@@ -10,7 +10,7 @@ cask "picoscope-beta" do
   livecheck do
     url "https://oem.picotech.com/p#{version.major}beta/download/"
     strategy :page_match
-    regex(%r{href=.*?/PicoScope_(\d+(?:\.\d+)+)\.pkg}i)
+    regex(%r{href=.*?/PicoScope_7_TM_Early_Access_(\d+(?:\.\d+)+)\.pkg}i)
   end
 
   pkg "PicoScope_7_TM_Early_Access_#{version}.pkg"
