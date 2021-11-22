@@ -2,11 +2,10 @@ cask "defold-alpha" do
   version :latest
   sha256 :no_check
 
-  release_channel = "alpha"
-  url "https://d.defold.com/#{release_channel}/info.json" do |json_content|
+  url "https://d.defold.com/alpha/info.json" do |json_content|
     require "json"
     version_sha = JSON.parse(json_content)["sha1"]
-    "https://d.defold.com/archive/#{release_channel}/#{version_sha}/#{release_channel}/editor2/Defold-x86_64-darwin.dmg"
+    "https://d.defold.com/archive/alpha/#{version_sha}/alpha/editor2/Defold-x86_64-darwin.dmg"
   end
   name "Defold"
   desc "Game engine for development of desktop, mobile and web games"
