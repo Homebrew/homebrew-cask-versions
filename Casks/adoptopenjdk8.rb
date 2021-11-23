@@ -1,16 +1,16 @@
 cask "adoptopenjdk8" do
-  version "8,292:b10"
+  version "8,292,b10"
   sha256 "4e200bc752337abc9dbfddf125db6a600f2ec53566f6f119a83036c8242a7672"
 
-  url "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk#{version.before_comma}u#{version.after_comma.before_colon}-#{version.after_colon}/OpenJDK#{version.before_comma}U-jdk_x64_mac_hotspot_#{version.before_comma}u#{version.after_comma.before_colon}#{version.after_comma.after_colon}.pkg",
+  url "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk#{version.csv[0]}u#{version.csv[1]}-#{version.csv[2]}/OpenJDK#{version.csv[0]}U-jdk_x64_mac_hotspot_#{version.csv[0]}u#{version.csv[1]}#{version.csv[2]}.pkg",
       verified: "github.com/AdoptOpenJDK/openjdk8-binaries/"
   name "AdoptOpenJDK 8"
   desc "Prebuilt OpenJDK binaries"
   homepage "https://adoptopenjdk.net/"
 
-  pkg "OpenJDK#{version.before_comma}U-jdk_x64_mac_hotspot_#{version.before_comma}u#{version.after_comma.before_colon}#{version.after_comma.after_colon}.pkg"
+  pkg "OpenJDK#{version.csv[0]}U-jdk_x64_mac_hotspot_#{version.csv[0]}u#{version.csv[1]}#{version.csv[2]}.pkg"
 
-  uninstall pkgutil: "net.adoptopenjdk.#{version.before_comma}.jdk"
+  uninstall pkgutil: "net.adoptopenjdk.#{version.csv[0]}.jdk"
 
   caveats do
     discontinued
