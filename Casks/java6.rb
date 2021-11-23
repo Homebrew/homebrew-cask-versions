@@ -20,4 +20,8 @@ cask "java6" do
       system_command "pkgutil", chdir: staged_path, args: ["--expand-full", "JavaForOSX.pkg", "JavaForOSX"]
     end
   end
+
+  caveats do
+    discontinued
+  end
 end
