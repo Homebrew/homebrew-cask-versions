@@ -16,7 +16,7 @@ cask "temurin8" do
         next if match.blank?
 
         "#{match[1]},#{match[2]},#{match[3]}"
-      end
+      end.compact
     end
   end
 
