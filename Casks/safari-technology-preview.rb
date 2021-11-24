@@ -7,7 +7,7 @@ cask "safari-technology-preview" do
     sha256 "c087829c21391331b8b3287ae6902e8a304ed5fa5d277fe5edcaa0695528097a"
   end
 
-  url "https://secure-appldnld.apple.com/STP/#{version.after_comma}/SafariTechnologyPreview.dmg"
+  url "https://secure-appldnld.apple.com/STP/#{version.csv[1]}/SafariTechnologyPreview.dmg"
   name "Safari Technology Preview"
   desc "Web browser"
   homepage "https://developer.apple.com/safari/download/"
@@ -38,9 +38,9 @@ cask "safari-technology-preview" do
     "~/Library/Application Scripts/com.apple.SafariTechnologyPreview",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.apple.safaritechnologypreview.sfl*",
     "~/Library/Caches/com.apple.SafariTechnologyPreview",
-    "~/Library/Containers/com.apple.SafariTechnologyPreview",
     "~/Library/Containers/com.apple.SafariTechnologyPreview.CacheDeleteExtension",
     "~/Library/Containers/com.apple.SafariTechnologyPreview.DiagnosticExtension",
+    "~/Library/Containers/com.apple.SafariTechnologyPreview",
     "~/Library/Preferences/com.apple.SafariTechnologyPreview.plist",
     "~/Library/Preferences/com.apple.SafariTechnologyPreview.SandboxBroker.plist",
     "~/Library/SafariTechnologyPreview",
