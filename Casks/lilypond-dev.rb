@@ -1,6 +1,6 @@
 cask "lilypond-dev" do
-  version "2.23.4-1"
-  sha256 "037ddcf31d91413d1677d7e20e956c0eee83735c46e04cb61a06ffaad86168af"
+  version "2.23.5-1"
+  sha256 "e4b923f45c34d754fac89b73c0aa555b529e89ea2e8a46475ef0e291e80a0c6d"
 
   url "https://lilypond.org/downloads/binaries/darwin-x86/lilypond-#{version}.darwin-x86.tar.bz2"
   name "LilyPond"
@@ -38,7 +38,7 @@ cask "lilypond-dev" do
   end
 
   zap trash: [
-    "~/Library/Preferences/org.lilypond.lilypond.plist",
     "~/Library/Preferences/org.lilypond.lilypond.LSSharedFileList.plist",
+    "~/Library/Preferences/org.lilypond.lilypond.plist",
   ]
 end
