@@ -38,7 +38,7 @@ cask "lilypond-dev" do
   end
 
   zap trash: [
-    "~/Library/Preferences/org.lilypond.lilypond.plist",
     "~/Library/Preferences/org.lilypond.lilypond.LSSharedFileList.plist",
+    "~/Library/Preferences/org.lilypond.lilypond.plist",
   ]
 end
