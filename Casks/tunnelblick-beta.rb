@@ -1,8 +1,8 @@
 cask "tunnelblick-beta" do
-  version "3.8.7beta03,5740"
-  sha256 "30f7ad636830148e75548db3516bcde00494e7c5a4f21a28e89e618e56a40586"
+  version "3.8.8beta01,5760"
+  sha256 "61a0efc76390c8e9f1a7f1a8d63754b6187d85739de5e391a045f0197d2b5a86"
 
-  url "https://github.com/Tunnelblick/Tunnelblick/releases/download/v#{version.before_comma}/Tunnelblick_#{version.before_comma}_build_#{version.after_comma}.dmg",
+  url "https://github.com/Tunnelblick/Tunnelblick/releases/download/v#{version.csv.first}/Tunnelblick_#{version.csv.first}_build_#{version.csv.second}.dmg",
       verified: "github.com/Tunnelblick/Tunnelblick/"
   name "Tunnelblick"
   desc "Free and open source graphic user interface for OpenVPN"
