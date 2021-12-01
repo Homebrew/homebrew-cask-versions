@@ -33,6 +33,6 @@ cask "powershell-preview" do
 
   caveats <<~EOS
     To use Homebrew in PowerShell, set:
-      Add-Content -Path $PROFILE -Value '$(#{HOMEBREW_PREFIX}/bin/brew shellenv) | Invoke-Expression'
+      Add-Content -Path $PROFILE.CurrentUserAllHosts -Value '$(#{HOMEBREW_PREFIX}/bin/brew shellenv) | Invoke-Expression'
   EOS
 end
