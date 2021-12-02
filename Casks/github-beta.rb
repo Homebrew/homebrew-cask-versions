@@ -2,12 +2,12 @@ cask "github-beta" do
   arch = Hardware::CPU.intel? ? "x64" : "arm64"
   platform = Hardware::CPU.intel? ? "darwin" : "darwin-arm64"
 
-  version "2.9.5-beta4-3e9f53d3"
+  version "2.9.6-beta1-9ccafea8"
 
   if Hardware::CPU.intel?
-    sha256 "9581bd46438c625a20fb8c6c962b758834ace210fe9412b9d229e5771eac652e"
+    sha256 "73c50ce15f1963ee6418b322df4ba0c05d8f8d5689cc7cb4d0007c5be24aa0c8"
   else
-    sha256 "49494580a845906604f83eb5d69b5e04afef5585e02da2b2c2bf5ccf80fb0d73"
+    sha256 "13e77be6f1b53a2b6ffe7327e470bd200ec8da221ccb75ea5ea6a8903251f293"
   end
 
   url "https://desktop.githubusercontent.com/github-desktop/releases/#{version}/GitHubDesktop-#{arch}.zip",
