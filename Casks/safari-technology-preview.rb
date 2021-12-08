@@ -7,7 +7,7 @@ cask "safari-technology-preview" do
     sha256 "3368c2fa034ae81705f9e2fd75333f6a3c68a71eea5097acc591da24b773f257"
   end
 
-  url "https://secure-appldnld.apple.com/STP/#{version.csv.first}/SafariTechnologyPreview.dmg"
+  url "https://secure-appldnld.apple.com/STP/#{version.csv.second}/SafariTechnologyPreview.dmg"
   name "Safari Technology Preview"
   desc "Web browser"
   homepage "https://developer.apple.com/safari/download/"
