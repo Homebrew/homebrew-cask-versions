@@ -1,7 +1,7 @@
 cask "google-chrome-beta" do
   arch = Hardware::CPU.intel? ? "" : "universal/"
 
-  version "97.0.4692.36"
+  version "97.0.4692.45"
   sha256 :no_check
 
   url "https://dl.google.com/chrome/mac/#{arch}beta/googlechromebeta.dmg"
@@ -22,15 +22,15 @@ cask "google-chrome-beta" do
     "/Library/Caches/com.google.SoftwareUpdate.*",
     "/Library/Google/Google Chrome Brand.plist",
     "/Library/Google/GoogleSoftwareUpdate",
-    "~/Library/Application Support/Google/Chrome Beta",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.google.chrome.app.*.sfl*",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.google.chrome.sfl*",
-    "~/Library/Caches/Google/Chrome Beta",
-    "~/Library/Caches/com.google.Chrome",
+    "~/Library/Application Support/Google/Chrome Beta",
     "~/Library/Caches/com.google.Chrome.helper.*",
-    "~/Library/Caches/com.google.Keystone",
+    "~/Library/Caches/com.google.Chrome",
     "~/Library/Caches/com.google.Keystone.Agent",
+    "~/Library/Caches/com.google.Keystone",
     "~/Library/Caches/com.google.SoftwareUpdate",
+    "~/Library/Caches/Google/Chrome Beta",
     "~/Library/Google/Google Chrome Brand.plist",
     "~/Library/Google/GoogleSoftwareUpdate",
     "~/Library/LaunchAgents/com.google.keystone.agent.plist",
