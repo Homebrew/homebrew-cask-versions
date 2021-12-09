@@ -1,8 +1,8 @@
 cask "propresenter-beta" do
-  version "7.8,117964813"
-  sha256 "bd6e6bd33a8404f7ce905a980c9e6b6dcf4a8fb034fdf141f0f0929610133908"
+  version "7.8,117964815"
+  sha256 "e946675d5bcf9a1386df959da2d7d32a34d42ca4f40e3bdd21d45a1ca5d84eeb"
 
-  url "https://renewedvision.com/downloads/propresenter/mac/ProPresenter_#{version.before_comma}_#{version.after_comma}.zip"
+  url "https://renewedvision.com/downloads/propresenter/mac/ProPresenter_#{version.csv.first}_#{version.csv.second}.zip"
   name "ProPresenter"
   desc "Presentation and production application for live events"
   homepage "https://www.renewedvision.com/propresenter.php"
@@ -25,14 +25,14 @@ cask "propresenter-beta" do
   app "ProPresenter.app"
 
   zap trash: [
-    "~/Library/Application Support/RenewedVision/ProPresenter#{version.major}",
-    "~/Library/Caches/KSCrashReports/ProPresenter #{version.major}",
-    "~/Library/Caches/Sessions/ProPresenter #{version.major}",
-    "~/Library/Caches/com.renewedvision.ProPresenter#{version.major}",
-    "~/Library/Preferences/com.renewedvision.ProPresenter#{version.major}.plist",
     "/Library/Application Support/RenewedVision",
     "/Library/Caches/com.renewedvision.ProPresenter#{version.major}",
     "/Users/Shared/Renewed Vision Media",
+    "~/Library/Application Support/RenewedVision/ProPresenter#{version.major}",
+    "~/Library/Caches/com.renewedvision.ProPresenter#{version.major}",
+    "~/Library/Caches/KSCrashReports/ProPresenter #{version.major}",
+    "~/Library/Caches/Sessions/ProPresenter #{version.major}",
+    "~/Library/Preferences/com.renewedvision.ProPresenter#{version.major}.plist",
   ],
       rmdir: [
         "~/Library/Application Support/RenewedVision",
