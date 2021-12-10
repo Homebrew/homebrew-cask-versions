@@ -2,11 +2,11 @@ cask "little-snitch4" do
   if MacOS.version <= :mojave
     version "4.5.2"
     sha256 "52116bb4e5186fed441c7cab835b4dd822243248f402334b486f0c7b20062c13"
-    url "https://obdev.at/downloads/littlesnitch/legacy/LittleSnitch-#{version}.dmg"
+    url "https://www.obdev.at/downloads/littlesnitch/legacy/LittleSnitch-#{version}.dmg"
   else
     version "4.6"
     sha256 "47475aae4ba506f01b0399552c0d3362cb2ecbf0df95cf27aded5d685a4f875d"
-    url "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-#{version}.dmg"
+    url "https://www.obdev.at/downloads/littlesnitch/legacy/LittleSnitch-#{version}.dmg"
   end
 
   name "Little Snitch"
@@ -32,9 +32,9 @@ cask "little-snitch4" do
   installer manual: "LittleSnitch-#{version}.dmg"
 
   uninstall launchctl: [
-    "at.obdev.LittleSnitchUIAgent",
-    "at.obdev.LittleSnitchHelper",
     "at.obdev.littlesnitchd",
+    "at.obdev.LittleSnitchHelper",
+    "at.obdev.LittleSnitchUIAgent",
   ]
 
   zap trash: [
