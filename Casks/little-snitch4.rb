@@ -32,9 +32,9 @@ cask "little-snitch4" do
   installer manual: "LittleSnitch-#{version}.dmg"
 
   uninstall launchctl: [
-    "at.obdev.LittleSnitchUIAgent",
-    "at.obdev.LittleSnitchHelper",
     "at.obdev.littlesnitchd",
+    "at.obdev.LittleSnitchHelper",
+    "at.obdev.LittleSnitchUIAgent",
   ]
 
   zap trash: [
