@@ -9,7 +9,6 @@ cask "opera-developer" do
 
   livecheck do
     url "https://get.geo.opera.com/pub/opera-developer/"
-    strategy :page_match
     regex(/href="(\d+(?:\.\d+)+)/i)
   end
 
