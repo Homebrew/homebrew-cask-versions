@@ -9,7 +9,6 @@ cask "tor-browser-alpha" do
 
   livecheck do
     url "https://www.torproject.org/download/alpha/"
-    strategy :page_match
     regex(%r{href=.*?/TorBrowser-(\d+(?:.\d+)*)-osx64_.*\.dmg}i)
   end
 
@@ -19,8 +18,8 @@ cask "tor-browser-alpha" do
   app "Tor Browser.app"
 
   zap trash: [
-    "~/Library/Application Support/TorBrowser-Data",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.tor browser.sfl*",
+    "~/Library/Application Support/TorBrowser-Data",
     "~/Library/Preferences/org.mozilla.tor browser.plist",
     "~/Library/Preferences/org.torproject.torbrowser.plist",
     "~/Library/SavedApplicationState/org.torproject.torbrowser.savedState",
