@@ -9,7 +9,7 @@ cask "visual-studio-code-insiders" do
     sha256 "5fe3fbb7fa7066570fa7102e9661001b4111c7e3f794a069b9a0dc2a718ca9c0"
   end
 
-  url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-#{arch}.zip",
+  url "https://az764295.vo.msecnd.net/insider/#{version.csv.second}/VSCode-#{arch}.zip",
       verified: "az764295.vo.msecnd.net/insider/"
   name "Microsoft Visual Studio Code"
   name "Visual Studio Code Insiders"
@@ -33,14 +33,14 @@ cask "visual-studio-code-insiders" do
   binary "#{appdir}/Visual Studio Code - Insiders.app/Contents/Resources/app/bin/code", target: "code-insiders"
 
   zap trash: [
+    "~/.vscode-insiders",
     "~/Library/Application Support/Code - Insiders",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.microsoft.vscodeinsiders.sfl*",
     "~/Library/Caches/Code - Insiders",
-    "~/Library/Caches/com.microsoft.VSCodeInsiders",
     "~/Library/Caches/com.microsoft.VSCodeInsiders.ShipIt",
+    "~/Library/Caches/com.microsoft.VSCodeInsiders",
     "~/Library/Preferences/com.microsoft.VSCodeInsiders.helper.plist",
     "~/Library/Preferences/com.microsoft.VSCodeInsiders.plist",
     "~/Library/Saved Application State/com.microsoft.VSCodeInsiders.savedState",
-    "~/.vscode-insiders",
   ]
 end
