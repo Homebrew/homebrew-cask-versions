@@ -1,10 +1,8 @@
 cask "google-chrome-canary" do
-  arch = Hardware::CPU.intel? ? "" : "universal/"
-
-  version "98.0.4758.5"
+  version "99.0.4765.0"
   sha256 :no_check
 
-  url "https://dl.google.com/chrome/mac/#{arch}canary/googlechromecanary.dmg"
+  url "https://dl.google.com/chrome/mac/universal/canary/googlechromecanary.dmg"
   name "Google Chrome Canary"
   desc "Web browser"
   homepage "https://www.google.com/chrome/canary/"
@@ -22,8 +20,8 @@ cask "google-chrome-canary" do
     "/Library/Caches/com.google.SoftwareUpdate.*",
     "/Library/Google/Google Chrome Brand.plist",
     "/Library/Google/GoogleSoftwareUpdate",
-    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.google.chrome.sfl*",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.google.chrome.app.*.sfl*",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.google.chrome.sfl*",
     "~/Library/Application Support/Google/Chrome Canary",
     "~/Library/Caches/com.google.Chrome.helper.*",
     "~/Library/Caches/com.google.Chrome",
