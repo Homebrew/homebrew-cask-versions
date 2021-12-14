@@ -13,7 +13,6 @@ cask "little-snitch4" do
 
   livecheck do
     url "https://www.obdev.at/products/littlesnitch/releasenotes#{version.major}.html"
-    strategy :page_match
     regex(/Little\sSnitch\s(\d+(?:\.\d+)+)/i)
   end
 
