@@ -1,15 +1,15 @@
 cask "visual-studio-code-insiders" do
   arch = Hardware::CPU.intel? ? "darwin" : "darwin-arm64"
 
-  version "1.64.0,745ef8b8264e12b2a704f6b2b60a2ce2cabfcda3"
+  version "1.64.0,886fd126446cd4b8b03f2b32f09c173dec541e6d"
 
   if Hardware::CPU.intel?
-    sha256 "deff0b0ddf3de7b7907e63386ade04c46c9c1099c07e347b22261754d68eb6a3"
+    sha256 "157c54f2e4a21911a35297fec0a1e76ef8f2c5c9e454434389fe999dc450316f"
   else
-    sha256 "21903b507ea06d46ce0e2c6321232fe865eb84478b080554a60038e13c17df58"
+    sha256 "5fe3fbb7fa7066570fa7102e9661001b4111c7e3f794a069b9a0dc2a718ca9c0"
   end
 
-  url "https://az764295.vo.msecnd.net/insider/#{version.csv.second}/VSCode-#{arch}.zip",
+  url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-#{arch}.zip",
       verified: "az764295.vo.msecnd.net/insider/"
   name "Microsoft Visual Studio Code"
   name "Visual Studio Code Insiders"
@@ -33,14 +33,14 @@ cask "visual-studio-code-insiders" do
   binary "#{appdir}/Visual Studio Code - Insiders.app/Contents/Resources/app/bin/code", target: "code-insiders"
 
   zap trash: [
-    "~/.vscode-insiders",
     "~/Library/Application Support/Code - Insiders",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.microsoft.vscodeinsiders.sfl*",
     "~/Library/Caches/Code - Insiders",
-    "~/Library/Caches/com.microsoft.VSCodeInsiders.ShipIt",
     "~/Library/Caches/com.microsoft.VSCodeInsiders",
+    "~/Library/Caches/com.microsoft.VSCodeInsiders.ShipIt",
     "~/Library/Preferences/com.microsoft.VSCodeInsiders.helper.plist",
     "~/Library/Preferences/com.microsoft.VSCodeInsiders.plist",
     "~/Library/Saved Application State/com.microsoft.VSCodeInsiders.savedState",
+    "~/.vscode-insiders",
   ]
 end
