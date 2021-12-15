@@ -1,6 +1,6 @@
 cask "daedalus-flight" do
-  version "4.5.2,19820"
-  sha256 "a61111fff79ef668bff06e91f03aeebdfb9f803d0681e39537d567348a2bdd6f"
+  version "4.6.0,20052"
+  sha256 "ac3bedf2c17f70257e86cf2de3f1fba2823294a9c3d3c8f4c9f1123cced395d6"
 
   url "https://update-cardano-mainnet-flight.iohk.io/daedalus-#{version.before_comma}-mainnet_flight-#{version.after_comma}.pkg",
       verified: "update-cardano-mainnet-flight.iohk.io/"
