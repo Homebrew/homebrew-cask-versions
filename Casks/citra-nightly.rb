@@ -2,7 +2,7 @@ cask "citra-nightly" do
   version "1737,20211212-28039d3"
   sha256 "6bd88708006c795c1ef64be7048e4b226fae87a44f2d7945f700ecb5c569aeed"
 
-  url "https://github.com/citra-emu/citra-nightly/releases/download/nightly-#{version.before_comma}/citra-osx-#{version.after_comma}.tar.gz",
+  url "https://github.com/citra-emu/citra-nightly/releases/download/nightly-#{version.csv.first}/citra-osx-#{version.csv.second}.tar.gz",
       verified: "github.com/citra-emu/citra-nightly/"
   name "Citra"
   desc "Nintendo 3DS emulator"
@@ -18,7 +18,7 @@ cask "citra-nightly" do
     end
   end
 
-  app "citra-osx-#{version.after_comma}/citra-qt.app"
+  app "citra-osx-#{version.csv.second}/citra-qt.app"
 
   zap trash: [
     "~/Library/Preferences/com.citra-emu.citra.plist",
