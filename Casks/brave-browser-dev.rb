@@ -10,7 +10,7 @@ cask "brave-browser-dev" do
     sha256 "a46caf3182f4c83e7b3773cf3ef89935d20de056e19eb93e1690ad0ab175d008"
   end
 
-  url "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/#{folder}/#{version.after_comma}/Brave-Browser-Dev-#{arch}.dmg",
+  url "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/#{folder}/#{version.csv.second}/Brave-Browser-Dev-#{arch}.dmg",
       verified: "updates-cdn.bravesoftware.com/sparkle/Brave-Browser/"
   name "Brave Dev"
   desc "Web browser focusing on privacy"
