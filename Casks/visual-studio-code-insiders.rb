@@ -1,12 +1,12 @@
 cask "visual-studio-code-insiders" do
   arch = Hardware::CPU.intel? ? "darwin" : "darwin-arm64"
 
-  version "1.64.0,f67a8b753f55e452f38b61497662839c4691fb12"
+  version "1.64.0,d12df34e31b4a018735d312a8947d79331132368"
 
   if Hardware::CPU.intel?
-    sha256 "7c8368d9696a6db51f03ed65d2c0f74cf30d3df7dfa6c928bd857fbc9abc4aa5"
+    sha256 "266ffbcd6e923ae058736f1d1dd61d302ec54aeea8a0aa4de125b023298bce29"
   else
-    sha256 "b74febfbc3cdf5903494822e6bcbf7ef6b14249fe90087cdc7a9e15ea53f4cf5"
+    sha256 "725b72e1417e83bece543a7fe78d7a240fc28c282d0d371c033beb7d7b5af31f"
   end
 
   url "https://az764295.vo.msecnd.net/insider/#{version.csv.second}/VSCode-#{arch}.zip",
