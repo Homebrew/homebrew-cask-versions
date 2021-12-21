@@ -1,12 +1,12 @@
 cask "java-beta" do
   arch = Hardware::CPU.intel? ? "x64" : "aarch64"
 
-  version "18,27"
+  version "18,28"
 
   if Hardware::CPU.intel?
-    sha256 "b956f63b11a6ca2c460a696b604b1b4906aea3fdb504ee9cc3103fb1afa92908"
+    sha256 "5295d172705cabe12ab2fcbb89a9f8a2843070be8009d90b0f97c0e2edf565d6"
   else
-    sha256 "745da8fdb204549925d1b76033d67bf000f3362379f91ad87e29d2677d386927"
+    sha256 "6f8a1893e8c3442369222c47493a17cf2800246487a42ea93ee7c4edf1988a3f"
   end
 
   url "https://download.java.net/java/early_access/jdk#{version.major}/#{version.csv.second}/GPL/openjdk-#{version.csv.first}-ea+#{version.csv.second}_macos-#{arch}_bin.tar.gz"
