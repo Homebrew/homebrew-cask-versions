@@ -1,6 +1,6 @@
 cask "dropbox-beta" do
-  version "138.3.2361"
-  sha256 "c31f36dcaa59533ea2b21cc8dc6d70333ea1f783dfa41c9a30ee7cd1c520e474"
+  version "139.3.4797"
+  sha256 "a0bfb0809583d766d0596d0de390b57665759bf61b2701b033b91896bc697e4c"
 
   url "https://www.dropbox.com/download?build=#{version}&plat=mac&type=full",
       verified: "dropbox.com/"
@@ -10,7 +10,6 @@ cask "dropbox-beta" do
 
   livecheck do
     url :homepage
-    strategy :page_match
     regex(/Beta\sBuild\s(\d+(?:\.\d+)+)/i)
   end
 
@@ -29,8 +28,8 @@ cask "dropbox-beta" do
     "~/Library/Application Support/Dropbox",
     "~/Library/Caches/CloudKit/com.apple.bird/iCloud.com.getdropbox.Dropbox",
     "~/Library/Caches/com.dropbox.DropboxMacUpdate",
-    "~/Library/Caches/com.getdropbox.DropboxMetaInstaller",
     "~/Library/Caches/com.getdropbox.dropbox",
+    "~/Library/Caches/com.getdropbox.DropboxMetaInstaller",
     "~/Library/Caches/com.plausiblelabs.crashreporter.data/com.dropbox.DropboxMacUpdate",
     "~/Library/Containers/com.dropbox.foldertagger",
     "~/Library/Containers/com.getdropbox.dropbox.garcon",
