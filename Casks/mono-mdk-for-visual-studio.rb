@@ -1,6 +1,6 @@
 cask "mono-mdk-for-visual-studio" do
-  version "6.12.0.122"
-  sha256 "e4b9964477a05474b6a182b0ca08701c7c56beedd4afb7a8f2ac4af5d26fb1fa"
+  version "6.12.0.163"
+  sha256 "ad66c9b2ce7707e7559564dfede1540e7564190095315afabd836fad140d38c6"
 
   url "https://download.mono-project.com/archive/#{version.major_minor_patch}/macos-10-universal/MonoFramework-MDK-#{version}.macos10.xamarin.universal.pkg"
   name "Mono"
@@ -8,9 +8,8 @@ cask "mono-mdk-for-visual-studio" do
   homepage "https://www.mono-project.com/"
 
   livecheck do
-    url "https://www.mono-project.com/download/vs/"
-    strategy :page_match
-    regex(%r{href=.*?/MonoFramework-MDK-(\d+(?:\.\d+)+).macos10.xamarin.universal\.pkg}i)
+    url "https://download.mono-project.com/archive/#{version.major_minor_patch}/macos-10-universal/"
+    regex(/MonoFramework-MDK-(\d+(?:\.\d+)+).macos10.xamarin.universal\.pkg/i)
   end
 
   conflicts_with cask: "mono-mdk"
