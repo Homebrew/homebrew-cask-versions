@@ -10,7 +10,6 @@ cask "dropbox-beta" do
 
   livecheck do
     url :homepage
-    strategy :page_match
     regex(/Beta\sBuild\s(\d+(?:\.\d+)+)/i)
   end
 
@@ -29,8 +28,8 @@ cask "dropbox-beta" do
     "~/Library/Application Support/Dropbox",
     "~/Library/Caches/CloudKit/com.apple.bird/iCloud.com.getdropbox.Dropbox",
     "~/Library/Caches/com.dropbox.DropboxMacUpdate",
-    "~/Library/Caches/com.getdropbox.DropboxMetaInstaller",
     "~/Library/Caches/com.getdropbox.dropbox",
+    "~/Library/Caches/com.getdropbox.DropboxMetaInstaller",
     "~/Library/Caches/com.plausiblelabs.crashreporter.data/com.dropbox.DropboxMacUpdate",
     "~/Library/Containers/com.dropbox.foldertagger",
     "~/Library/Containers/com.getdropbox.dropbox.garcon",
