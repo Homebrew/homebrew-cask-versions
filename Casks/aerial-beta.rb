@@ -11,7 +11,7 @@ cask "aerial-beta" do
   livecheck do
     url :url
     strategy :git
-    regex(/^(\d+(?:\.\d+)*beta\d+)$/i)
+    regex(/^v?(\d+(?:\.\d+)*beta\d+)$/i)
   end
 
   conflicts_with cask: "aerial"
