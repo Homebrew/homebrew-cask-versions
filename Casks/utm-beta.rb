@@ -8,6 +8,8 @@ cask "utm-beta" do
   desc "Virtual machines UI using QEMU"
   homepage "https://mac.getutm.app/"
 
+  conflicts_with cask: "utm"
+
   app "UTM.app"
 
   uninstall quit: "com.utmapp.UTM"
