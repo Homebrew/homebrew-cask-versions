@@ -28,7 +28,7 @@ cask "dotnet-preview" do
     "dotnet",
     "dotnet-sdk",
     "dotnet-sdk-preview",
-  ]
+  ], formula: "dotnet"
   depends_on macos: ">= :mojave"
 
   pkg "dotnet-runtime-#{version.csv[0]}-osx-#{arch}.pkg"
