@@ -9,10 +9,11 @@ cask "mono-mdk-for-visual-studio" do
 
   livecheck do
     url "https://www.mono-project.com/download/vs/#download-mac"
+    strategy :page_match
     regex(/MonoFramework-MDK-(\d+(?:\.\d+)+).macos10.xamarin.universal\.pkg/i)
   end
 
-  conflicts_with formula: "mono"
+  conflicts_with "mono", because: "both install 'mono' binaries"
   conflicts_with cask: "mono-mdk"
 
   pkg "MonoFramework-MDK-#{version}.macos10.xamarin.universal.pkg"
