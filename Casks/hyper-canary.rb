@@ -17,7 +17,6 @@ cask "hyper-canary" do
 
   livecheck do
     url "https://releases-canary.hyper.is/"
-    strategy :page_match
     regex(/hyper-(\d+(?:\.\d+)*.+)-mac-#{arch}\.zip/i)
   end
 
@@ -28,17 +27,17 @@ cask "hyper-canary" do
   binary "#{appdir}/Hyper.app/Contents/Resources/bin/hyper"
 
   zap trash: [
-    "~/.hyper.js",
     "~/.hyper_plugins",
-    "~/Library/Application Support/Hyper",
+    "~/.hyper.js",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.zeit.hyper.sfl*",
-    "~/Library/Caches/co.zeit.hyper",
+    "~/Library/Application Support/Hyper",
     "~/Library/Caches/co.zeit.hyper.ShipIt",
+    "~/Library/Caches/co.zeit.hyper",
     "~/Library/Cookies/co.zeit.hyper.binarycookies",
     "~/Library/Logs/Hyper",
     "~/Library/Preferences/ByHost/co.zeit.hyper.ShipIt.*.plist",
-    "~/Library/Preferences/co.zeit.hyper.plist",
     "~/Library/Preferences/co.zeit.hyper.helper.plist",
+    "~/Library/Preferences/co.zeit.hyper.plist",
     "~/Library/Saved Application State/co.zeit.hyper.savedState",
   ]
 end
