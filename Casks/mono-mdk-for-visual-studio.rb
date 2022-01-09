@@ -13,7 +13,7 @@ cask "mono-mdk-for-visual-studio" do
     regex(/MonoFramework-MDK-(\d+(?:\.\d+)+).macos10.xamarin.universal\.pkg/i)
   end
 
-  conflicts_with "mono", because: "both install 'mono' binaries"
+  conflicts_with formula: "mono"
   conflicts_with cask: "mono-mdk"
 
   pkg "MonoFramework-MDK-#{version}.macos10.xamarin.universal.pkg"
