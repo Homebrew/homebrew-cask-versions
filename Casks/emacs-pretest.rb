@@ -1,6 +1,6 @@
 cask "emacs-pretest" do
-  version "27.1.90"
-  sha256 "3e456e7dc991d39fb0a1e3d1415914135f7d51a367bee93ad69aae2224c88888"
+  version "28.0.90"
+  sha256 "638050b19c504a086d940804b22ebca084586288357ca9d6670c02799f1a8af0"
 
   url "https://emacsformacosx.com/emacs-builds/Emacs-pretest-#{version}-universal.dmg"
   appcast "https://emacsformacosx.com/atom/pretest"
