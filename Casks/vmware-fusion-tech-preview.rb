@@ -1,8 +1,8 @@
 cask "vmware-fusion-tech-preview" do
-  version "16530630"
-  sha256 "663b3d35f23541003f34ee0f5160bd04d0113703ac0a34a509b964b21a5bd5d0"
+  version "18656771"
+  sha256 "c8511bbb829d60f95f94599392bef8058b36cd94f103fb264a57cacdc5f55325"
 
-  url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-e.x.p-#{version}.dmg"
+  url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-e.x.p-#{version}_arm64.dmg"
   name "VMware Fusion Tech Preview"
   desc "Create, manage, and run virtual machines"
   homepage "https://blogs.vmware.com/teamfusion/tech-preview"
@@ -17,8 +17,6 @@ cask "vmware-fusion-tech-preview" do
   depends_on macos: ">= :catalina"
 
   app "VMware Fusion Tech Preview.app"
-  binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/VMware OVF Tool/ovftool"
-  binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vkd/bin/vctl"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-bridge"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-cfgcli"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-cli"
@@ -26,7 +24,6 @@ cask "vmware-fusion-tech-preview" do
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-natd"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-netifup"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-sniffer"
-  binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmrest"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmrun"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmss2core"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmware-aewp"
