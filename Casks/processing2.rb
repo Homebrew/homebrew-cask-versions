@@ -4,13 +4,21 @@ cask "processing2" do
 
   url "https://download.processing.org/processing-#{version}-macosx.zip"
   name "Processing"
+  desc "Flexible software sketchbook and a language for learning how to code"
   homepage "https://processing.org/"
 
-  conflicts_with cask: "processing"
+  conflicts_with cask: [
+    "processing",
+    "processing-beta",
+  ]
 
   app "Processing.app"
 
   uninstall quit: "org.processing.app"
 
   zap trash: "~/Library/Processing/preferences.txt"
+
+  caveats do
+    discontinued
+  end
 end
