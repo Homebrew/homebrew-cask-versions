@@ -4,20 +4,22 @@ cask "processing-beta" do
 
   url "https://github.com/processing/processing4/releases/download/processing-#{version.after_comma}-#{version.before_comma}/processing-#{version.before_comma}-macosx.zip",
       verified: "github.com/processing/processing4/"
+  desc "Flexible software sketchbook and a language for learning how to code"
   name "Processing Beta"
   homepage "https://processing.org/"
-  desc "Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts."
 
   livecheck do
     url :url
-    regex(%r{href=.*?tree/processing[._-](\d+)[._-]v?(\d+(?:\.\d+b\d)+)}i)
+    regex(/processing[._-](\d+)[._-]v?(\d+(?:\.\d+b\d)+)/i)
     strategy :github_latest do |page|
       page.scan(regex)
           .map { |match| "#{match[1]},#{match[0]}" }
     end
   end
 
-  app "Processing.app", target: "Processing Beta.app"
+  conflicts_with cask: "processing"
+
+  app "Processing.app"
 
   uninstall quit: "org.processing.app"
 
