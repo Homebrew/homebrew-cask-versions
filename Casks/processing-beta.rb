@@ -17,7 +17,10 @@ cask "processing-beta" do
     end
   end
 
-  conflicts_with cask: "processing"
+  conflicts_with cask: [
+    "processing",
+    "processing2",
+  ]
 
   app "Processing.app"
 
