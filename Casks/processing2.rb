@@ -6,11 +6,18 @@ cask "processing2" do
   name "Processing"
   homepage "https://processing.org/"
 
-  conflicts_with cask: "processing"
+  conflicts_with cask: [
+    "processing",
+    "processing-beta",
+  ]
 
   app "Processing.app"
 
   uninstall quit: "org.processing.app"
 
   zap trash: "~/Library/Processing/preferences.txt"
+
+  caveats do
+    discontinued
+  end
 end
