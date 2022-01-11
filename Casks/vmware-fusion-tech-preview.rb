@@ -1,24 +1,38 @@
 cask "vmware-fusion-tech-preview" do
-  version "16530630"
-  sha256 "663b3d35f23541003f34ee0f5160bd04d0113703ac0a34a509b964b21a5bd5d0"
+  arch = Hardware::CPU.intel? ? "" : "_arm64"
 
-  url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-e.x.p-#{version}.dmg"
+  if Hardware::CPU.intel?
+    version "16530630"
+    sha256 "663b3d35f23541003f34ee0f5160bd04d0113703ac0a34a509b964b21a5bd5d0"
+
+    livecheck do
+      url "http://www.vmware.com/go/get-fusion-tp"
+      strategy :header_match
+    end
+  else
+    version "18656771"
+    sha256 "c8511bbb829d60f95f94599392bef8058b36cd94f103fb264a57cacdc5f55325"
+
+    livecheck do
+      skip "No version information available"
+    end
+  end
+
+  url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-e.x.p-#{version}#{arch}.dmg"
   name "VMware Fusion Tech Preview"
   desc "Create, manage, and run virtual machines"
   homepage "https://blogs.vmware.com/teamfusion/tech-preview"
-
-  livecheck do
-    url "http://www.vmware.com/go/get-fusion-tp"
-    strategy :header_match
-  end
 
   auto_updates true
   conflicts_with cask: "vmware-fusion"
   depends_on macos: ">= :catalina"
 
   app "VMware Fusion Tech Preview.app"
-  binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/VMware OVF Tool/ovftool"
-  binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vkd/bin/vctl"
+  if Hardware::CPU.intel?
+    binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vkd/bin/vctl"
+    binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmrest"
+    binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/VMware OVF Tool/ovftool"
+  end
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-bridge"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-cfgcli"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-cli"
@@ -26,7 +40,6 @@ cask "vmware-fusion-tech-preview" do
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-natd"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-netifup"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-sniffer"
-  binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmrest"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmrun"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmss2core"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmware-aewp"
@@ -54,36 +67,38 @@ cask "vmware-fusion-tech-preview" do
     set_ownership "#{appdir}/VMware Fusion Tech Preview.app"
   end
 
-  uninstall delete: "/etc/paths.d/com.vmware.fusion.public"
-
-  zap trash: [
+  uninstall delete: [
+    "/etc/paths.d/com.vmware.fusion.public",
     "/Library/Application Support/VMware",
     "/Library/Logs/VMware Fusion Services.log",
     "/Library/Logs/VMware USB Arbitrator Service.log",
     "/Library/Logs/VMware",
     "/Library/Preferences/VMware Fusion",
+  ]
+
+  zap trash: [
+    "~/.nautilus",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.vmware.fusion.sfl*",
-    "~/Library/Application Support/VMware Fusion",
     "~/Library/Application Support/VMware Fusion Applications Menu",
+    "~/Library/Application Support/VMware Fusion",
     "~/Library/Caches/com.vmware.fusion",
-    "~/Library/Logs/VMware Fusion",
     "~/Library/Logs/VMware Fusion Applications Menu",
+    "~/Library/Logs/VMware Fusion",
     "~/Library/Logs/VMware Graphics Service.log",
     "~/Library/Logs/VMware",
-    "~/Library/Preferences/VMware Fusion",
-    "~/Library/Preferences/com.vmware.fusion.plist",
+    "~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist.lockfile",
+    "~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist",
     "~/Library/Preferences/com.vmware.fusion.plist.lockfile",
+    "~/Library/Preferences/com.vmware.fusion.plist",
     "~/Library/Preferences/com.vmware.fusionApplicationsMenu.helper.plist",
     "~/Library/Preferences/com.vmware.fusionApplicationsMenu.plist",
-    "~/Library/Preferences/com.vmware.fusionDaemon.plist",
     "~/Library/Preferences/com.vmware.fusionDaemon.plist.lockfile",
-    "~/Library/Preferences/com.vmware.fusionStartMenu.plist",
+    "~/Library/Preferences/com.vmware.fusionDaemon.plist",
     "~/Library/Preferences/com.vmware.fusionStartMenu.plist.lockfile",
-    "~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist",
-    "~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist.lockfile",
+    "~/Library/Preferences/com.vmware.fusionStartMenu.plist",
+    "~/Library/Preferences/VMware Fusion",
     "~/Library/Saved Application State/com.vmware.fusion.savedState",
     "~/Library/WebKit/com.vmware.fusion",
-    "~/.nautilus",
   ]
 
   caveats do
