@@ -2,7 +2,7 @@ cask "arduino-ide-beta" do
   version "2.0.0,12"
   sha256 "80e09f472d947b70d7777ca997e5c197ef70c7bee72817f3a0b1b6bfc784eb8f"
 
-  url "https://downloads.arduino.cc/arduino-ide/arduino-ide_#{version.before_comma}-beta.#{version.after_comma}_macOS_64bit.dmg"
+  url "https://downloads.arduino.cc/arduino-ide/arduino-ide_#{version.csv.first}-beta.#{version.csv.second}_macOS_64bit.dmg"
   name "Arduino IDE"
   desc "Electronics prototyping platform"
   homepage "https://www.arduino.cc/en/software#experimental-software"

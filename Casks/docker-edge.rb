@@ -2,7 +2,7 @@ cask "docker-edge" do
   version "2.5.4,50534"
   sha256 "5d63435e322494be1113c0e25474fd55db4b06563abc2c0f9697db54584d1595"
 
-  url "https://desktop.docker.com/mac/edge/#{version.after_comma}/Docker.dmg"
+  url "https://desktop.docker.com/mac/edge/#{version.csv.second}/Docker.dmg"
   name "Docker Community Edition for Mac (Edge)"
   name "Docker CE for Mac (Edge)"
   desc "App to build and share containerized applications and microservices"

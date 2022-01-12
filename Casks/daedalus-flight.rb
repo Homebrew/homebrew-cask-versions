@@ -2,7 +2,7 @@ cask "daedalus-flight" do
   version "4.6.0,20052"
   sha256 "ac3bedf2c17f70257e86cf2de3f1fba2823294a9c3d3c8f4c9f1123cced395d6"
 
-  url "https://update-cardano-mainnet-flight.iohk.io/daedalus-#{version.before_comma}-mainnet_flight-#{version.after_comma}.pkg",
+  url "https://update-cardano-mainnet-flight.iohk.io/daedalus-#{version.csv.first}-mainnet_flight-#{version.csv.second}.pkg",
       verified: "update-cardano-mainnet-flight.iohk.io/"
   name "Daedalus Flight"
   desc "Pre-release of Daedalus cryptocurrency wallet for ada on the Cardano blockchain"

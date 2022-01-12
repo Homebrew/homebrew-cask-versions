@@ -2,7 +2,7 @@ cask "intellij-idea-ce19" do
   version "2019.3.5,193.7288.26"
   sha256 "9069f23e8dda9307083526c6c438b40cb1858598789c5480040d9345b605d80b"
 
-  url "https://download.jetbrains.com/idea/ideaIC-#{version.before_comma}.dmg"
+  url "https://download.jetbrains.com/idea/ideaIC-#{version.csv.first}.dmg"
   appcast "https://data.services.jetbrains.com/products/releases?code=IIC&latest=false&type=release"
   name "IntelliJ IDEA Community Edition"
   name "IntelliJ IDEA CE"
