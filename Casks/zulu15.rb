@@ -10,7 +10,7 @@ cask "zulu15" do
     sha256 "c255dcf3e1165864846f3d67b7da96dd07230a8def64b4693ad66b12cea0a301"
   end
 
-  url "https://cdn.azul.com/zulu/bin/zulu#{version.after_comma}-jdk#{version.before_comma}-macosx_#{arch}.dmg",
+  url "https://cdn.azul.com/zulu/bin/zulu#{version.csv.second}-jdk#{version.csv.first}-macosx_#{arch}.dmg",
       referer: "https://www.azul.com/downloads/zulu/zulu-mac/"
   name "Azul Zulu Java Standard Edition Development Kit"
   desc "Zulu OpenJDK 15"

@@ -2,7 +2,7 @@ cask "zulu7" do
   version "7.0.322,7.50.0.11-ca"
   sha256 "5e7aad03154922bcb06f21c256a445c840956f9af4bb630b5b719433dfe3ae9c"
 
-  url "https://cdn.azul.com/zulu/bin/zulu#{version.after_comma}-jdk#{version.before_comma}-macosx_x64.dmg",
+  url "https://cdn.azul.com/zulu/bin/zulu#{version.csv.second}-jdk#{version.csv.first}-macosx_x64.dmg",
       referer: "https://www.azul.com/downloads/zulu/zulu-mac/"
   name "Azul Zulu Java Standard Edition Development Kit"
   desc "OpenJDK distribution from Azul"

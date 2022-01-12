@@ -2,7 +2,7 @@ cask "cleanmymac3" do
   version "3.11.0,1569589418"
   sha256 "c1508304fb63351effc643df2d31a9ae4cceb141301dc91c829bc1c0f21d230f"
 
-  url "https://dl.devmate.com/com.macpaw.CleanMyMac#{version.major}/#{version.major_minor_patch}/#{version.after_comma}/CleanMyMac3-#{version.major_minor_patch}.zip",
+  url "https://dl.devmate.com/com.macpaw.CleanMyMac#{version.major}/#{version.major_minor_patch}/#{version.csv.second}/CleanMyMac3-#{version.major_minor_patch}.zip",
       verified: "dl.devmate.com/com.macpaw.CleanMyMac"
   appcast "https://updates.devmate.com/com.macpaw.CleanMyMac#{version.major}.xml"
   name "CleanMyMac"
