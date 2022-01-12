@@ -1,9 +1,19 @@
+# typed: false
+# frozen_string_literal: true
+
 cask "dropbox-beta" do
   version "140.3.1903"
-  sha256 "d5c9b68a65dc93ce1c4e4dfd081972eb591fce5d58456c53e14417e24ea7957e"
 
-  url "https://www.dropbox.com/download?build=#{version}&plat=mac&type=full",
-      verified: "dropbox.com/"
+  if Hardware::CPU.intel?
+    sha256 "d5c9b68a65dc93ce1c4e4dfd081972eb591fce5d58456c53e14417e24ea7957e"
+    url "https://www.dropbox.com/download?build=#{version}&plat=mac&type=full",
+        verified: "dropbox.com/"
+  else
+    sha256 "f98db2fe8745b468577f853f40d0e4b2406f5389315821b50d84848c294eff61"
+    url "https://www.dropbox.com/download?build=#{version}&plat=mac&type=full&arch=arm64",
+        verified: "dropbox.com/"
+  end
+
   name "Dropbox"
   desc "Client for the Dropbox cloud storage service"
   homepage "https://www.dropboxforum.com/t5/Desktop-client-builds/bd-p/101003016"
