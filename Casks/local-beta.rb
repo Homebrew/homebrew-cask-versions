@@ -2,7 +2,7 @@ cask "local-beta" do
   version "6.2.0,5667"
   sha256 "e2929f740bfe2707731cd28cdc2a8d43db32413a59b3bf40331c19289cfd7c78"
 
-  url "https://cdn.localwp.com/releases-beta/#{version.csv[0]}+local-beta-#{version.csv[1]}/local-beta-#{version.csv[0]}-b#{version.csv[1]}-mac.dmg"
+  url "https://cdn.localwp.com/releases-beta/#{version.csv.first}+local-beta-#{version.csv.second}/local-beta-#{version.csv.first}-b#{version.csv.second}-mac.dmg"
   name "Local Beta"
   desc "WordPress local development tool by Flywheel (beta)"
   homepage "https://localwp.com/"
