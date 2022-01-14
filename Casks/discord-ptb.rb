@@ -1,9 +1,9 @@
 cask "discord-ptb" do
-  version "0.0.58"
-  sha256 "1b0614a0f05bc7d9526913f5270cc8d1413d80453ead5e1af4134f552c47922d"
+  version "0.0.59"
+  sha256 "2d2eca13155790ebfc3bf1ab8ac3cc6c1c60fe9c280d720ea3574af70935c81f"
 
   url "https://dl-ptb.discordapp.net/apps/osx/#{version}/DiscordPTB.dmg",
-      verified: "dl-ptb.discordapp.net/"
+      verified: "dl-ptb.discordapp.net/apps/osx/"
   name "Discord PTB"
   desc "Voice and text chat software"
   homepage "https://discord.com/"
@@ -18,9 +18,9 @@ cask "discord-ptb" do
   app "Discord PTB.app"
 
   zap trash: [
+    "~/Library/Application Support/com.hnc.DiscordPTB.ShipIt",
+    "~/Library/Caches/com.hnc.DiscordPTB",
     "~/Library/Preferences/com.hnc.DiscordPTB.plist",
     "~/Library/Saved Application State/com.hnc.DiscordPTB.savedState",
-    "~/Library/Caches/com.hnc.DiscordPTB",
-    "~/Library/Application Support/com.hnc.DiscordPTB.ShipIt",
   ]
 end
