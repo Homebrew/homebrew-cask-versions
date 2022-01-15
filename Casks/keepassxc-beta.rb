@@ -21,13 +21,15 @@ cask "keepassxc-beta" do
   app "KeePassXC.app"
   binary "#{appdir}/KeePassXC.app/Contents/MacOS/keepassxc-cli"
 
+  uninstall quit: "org.keepassxc.keepassxc"
+
   zap trash: [
     "~/.keepassxc",
+    "~/Library/Application Support/CrashReporter/KeePassXC_*.plist",
     "~/Library/Application Support/keepassxc",
     "~/Library/Caches/org.keepassx.keepassxc",
+    "~/Library/Logs/DiagnosticReports/KeePassXC_*.crash",
     "~/Library/Preferences/org.keepassx.keepassxc.plist",
     "~/Library/Saved Application State/org.keepassx.keepassxc.savedState",
-    "~/Library/Logs/DiagnosticReports/KeePassXC_*.crash",
-    "~/Library/Application Support/CrashReporter/KeePassXC_*.plist",
   ]
 end
