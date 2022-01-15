@@ -21,7 +21,7 @@ cask "daedalus-flight" do
   auto_updates true
   depends_on macos: ">= :high_sierra"
 
-  pkg "daedalus-#{version.before_comma}-mainnet_flight-#{version.after_comma}.pkg"
+  pkg "daedalus-#{version.csv.first}-mainnet_flight-#{version.csv.second}.pkg"
 
   uninstall pkgutil: "org.Daedalusmainnet_flight.pkg"
 

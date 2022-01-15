@@ -13,12 +13,12 @@ cask "appcode-eap" do
 
   conflicts_with cask: "appcode"
 
-  app "AppCode #{version.before_comma} EAP.app"
+  app "AppCode #{version.csv.first} EAP.app"
 
   zap delete: [
-    "~/Library/Preferences/AppCode#{version.before_comma}",
-    "~/Library/Application Support/AppCode#{version.before_comma}",
-    "~/Library/Caches/AppCode#{version.before_comma}",
-    "~/Library/Logs/AppCode#{version.before_comma}",
+    "~/Library/Preferences/AppCode#{version.csv.first}",
+    "~/Library/Application Support/AppCode#{version.csv.first}",
+    "~/Library/Caches/AppCode#{version.csv.first}",
+    "~/Library/Logs/AppCode#{version.csv.first}",
   ]
 end
