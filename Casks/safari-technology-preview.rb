@@ -30,7 +30,9 @@ cask "safari-technology-preview" do
 
   pkg "Safari Technology Preview.pkg"
 
-  uninstall delete: "/Applications/Safari Technology Preview.app"
+  uninstall quit:      "com.apple.SafariTechnologyPreview",
+            launchctl: "com.apple.SafariTechnologyPreview.History",
+            delete:    "/Applications/Safari Technology Preview.app"
 
   zap trash: [
     "~/Library/Application Scripts/com.apple.SafariTechnologyPreview.CacheDeleteExtension",
