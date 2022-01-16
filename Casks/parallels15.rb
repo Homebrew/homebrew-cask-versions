@@ -1,15 +1,36 @@
 cask "parallels15" do
-  version "15.1.4-47270"
-  sha256 "7a0a876c5a357c0744626117c359b09e28920b35ec9b63f2dbbafe3bd7a639fd"
+  version "15.1.5-47309"
+  sha256 "94df473f7bddfd1371f78fd32d7f7bb16e5c9a1d1b39751bed77c992b6d3013e"
 
   url "https://download.parallels.com/desktop/v#{version.major}/#{version}/ParallelsDesktop-#{version}.dmg"
-  appcast "https://kb.parallels.com/eu/124724"
   name "Parallels Desktop"
   desc "Desktop virtualization software"
   homepage "https://www.parallels.com/products/desktop/"
 
+  livecheck do
+    url "https://kb.parallels.com/en/124724"
+    strategy :page_match do |page|
+      match = page.match(/Version\s*(\d+(?:\.\d+)+)\s*\((\d+)\)/i)
+      next if match.blank?
+
+      "#{match[1]}-#{match[2]}"
+    end
+  end
+
   auto_updates true
-  depends_on macos: ">= :sierra"
+  conflicts_with cask: [
+    "parallels",
+    "homebrew/cask-versions/parallels12",
+    "homebrew/cask-versions/parallels13",
+    "homebrew/cask-versions/parallels14",
+    "homebrew/cask-versions/parallels16",
+  ]
+  depends_on macos: [
+    :sierra,
+    :high_sierra,
+    :mojave,
+    :catalina,
+  ]
 
   app "Parallels Desktop.app"
 
@@ -38,7 +59,8 @@ cask "parallels15" do
     "/usr/local/bin/prlctl",
     "/usr/local/bin/prlexec",
     "/usr/local/bin/prlsrvctl",
-  ]
+  ],
+            signal: ["TERM", "com.parallels.desktop.console"]
 
   zap trash: [
     "~/.parallels_settings",
