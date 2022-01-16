@@ -4,7 +4,32 @@ cask "parallels13" do
 
   url "https://download.parallels.com/desktop/v#{version.major}/#{version}/ParallelsDesktop-#{version}.dmg"
   name "Parallels Desktop"
+  desc "Desktop virtualization software"
   homepage "https://www.parallels.com/products/desktop/"
+
+  livecheck do
+    url "https://kb.parallels.com/124262"
+    strategy :page_match do |page|
+      match = page.match(/Parallels Desktop #{version.major} for Mac\s*(\d+(?:\.\d+)+)\s*\((\d+)\)/i)
+      next if match.blank?
+
+      "#{match[1]}-#{match[2]}"
+    end
+  end
+
+  conflicts_with cask: [
+    "parallels",
+    "homebrew/cask-versions/parallels12",
+    "homebrew/cask-versions/parallels14",
+    "homebrew/cask-versions/parallels15",
+    "homebrew/cask-versions/parallels16",
+  ]
+  depends_on macos: [
+    :yosemite,
+    :el_capitan,
+    :sierra,
+    :high_sierra,
+  ]
 
   app "Parallels Desktop.app"
 
