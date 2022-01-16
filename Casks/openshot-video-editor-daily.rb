@@ -19,6 +19,7 @@ cask "openshot-video-editor-daily" do
   end
 
   conflicts_with cask: "openshot-video-editor"
+  depends_on macos: ">= :catalina"
 
   app "OpenShot Video Editor.app"
 end
