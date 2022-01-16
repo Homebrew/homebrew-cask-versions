@@ -18,5 +18,7 @@ cask "openshot-video-editor-daily" do
     end
   end
 
+  conflicts_with cask: "openshot-video-editor"
+
   app "OpenShot Video Editor.app"
 end
