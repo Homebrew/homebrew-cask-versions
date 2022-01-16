@@ -23,9 +23,7 @@ cask "adguard-nightly" do
               "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard",
               "/Library/Application Support/com.adguard.Adguard",
             ],
-            rmdir:     [
-              "/Library/Application Support/AdGuard Software",
-            ]
+            rmdir:     "/Library/Application Support/AdGuard Software"
 
   zap trash: [
     "/Library/Logs/com.adguard.mac.adguard",
