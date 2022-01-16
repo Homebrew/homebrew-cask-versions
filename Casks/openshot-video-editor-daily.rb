@@ -9,7 +9,7 @@ cask "openshot-video-editor-daily" do
   homepage "https://openshot.org/"
 
   livecheck do
-    url "https://github.com/OpenShot/openshot-qt/releases/tag/daily"
+    url "https://www.openshot.org/download/"
     strategy :page_match do |page|
       match = page.match(/OpenShot[._-]v?(\d+(?:\.\d+)+)[._-]dev[._-]daily[._-](.*)[._-]x86[._-]64\.dmg/i)
       next if match.blank?
