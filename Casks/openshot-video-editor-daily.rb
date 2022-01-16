@@ -22,4 +22,10 @@ cask "openshot-video-editor-daily" do
   depends_on macos: ">= :catalina"
 
   app "OpenShot Video Editor.app"
+
+  zap trash: [
+    "~/.openshot_qt",
+    "~/Library/Application Support/openshot",
+    "~/Library/Preferences/openshot-qt.plist",
+  ]
 end
