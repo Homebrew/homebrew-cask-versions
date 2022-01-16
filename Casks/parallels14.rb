@@ -3,11 +3,34 @@ cask "parallels14" do
   sha256 "34c9c345642fa30f9d240a76062c5672e399349d5e5984db9c208d22e099f8b9"
 
   url "https://download.parallels.com/desktop/v#{version.major}/#{version}/ParallelsDesktop-#{version}.dmg"
-  appcast "https://kb.parallels.com/eu/124521"
   name "Parallels Desktop"
+  desc "Desktop virtualization software"
   homepage "https://www.parallels.com/products/desktop/"
 
+  livecheck do
+    url "https://kb.parallels.com/en/124521"
+    strategy :page_match do |page|
+      match = page.match(/Parallels Desktop #{version.major} for Mac\s*(\d+(?:\.\d+)+)\s*\((\d+)\)/i)
+      next if match.blank?
+
+      "#{match[1]}-#{match[2]}"
+    end
+  end
+
   auto_updates true
+  conflicts_with cask: [
+    "parallels",
+    "homebrew/cask-versions/parallels12",
+    "homebrew/cask-versions/parallels13",
+    "homebrew/cask-versions/parallels15",
+    "homebrew/cask-versions/parallels16",
+  ]
+  depends_on macos: [
+    :el_capitan,
+    :sierra,
+    :high_sierra,
+    :mojave,
+  ]
   # This .dmg cannot be extracted normally
   # Original discussion: https://github.com/Homebrew/homebrew-cask/pull/67202
   container type: :naked
