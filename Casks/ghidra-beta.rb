@@ -8,7 +8,7 @@ cask "ghidra-beta" do
 
   conflicts_with cask: "ghidra"
 
-  binary "ghidra_#{version.before_comma}/ghidraRun"
+  binary "ghidra_#{version.csv.first}/ghidraRun"
 
   zap trash: "~/.ghidra"
 
