@@ -1,6 +1,6 @@
 cask "scribus-dev" do
-  version "1.5.7"
-  sha256 "f5b660aff6b8ffdef74396d56e62656779d9ec9c2ab3b02af2635d71274dfd32"
+  version "1.5.8"
+  sha256 "d5ebc6f104bb57457c68ce651864053040af38f218bad1eef17491db7e6282ef"
 
   url "https://downloads.sourceforge.net/scribus/scribus-devel/#{version}/scribus-#{version}.dmg",
       verified: "sourceforge.net/scribus/"
