@@ -22,7 +22,7 @@ cask "android-studio-preview-beta" do
 
   conflicts_with cask: "android-studio"
 
-  app "Android Studio.app"
+  app "Android Studio Preview.app"
 
   zap trash: [
     "~/.android",
