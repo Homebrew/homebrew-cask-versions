@@ -9,9 +9,10 @@ cask "lilypond-dev" do
 
   livecheck do
     url "https://lilypond.org/development.html"
-    strategy :page_match
-    regex(%r{href=.*?/lilypond-(\d+(?:\.\d+)*(?:-\d+)?)\.darwin-x86\.tar\.bz2}i)
+    regex(%r{href=.*?/lilypond[._-]v?(\d+(?:\.\d+)*(?:-\d+)?)\.darwin[._-]x86\.tar\.bz2}i)
   end
+
+  conflicts_with cask: "lilypond"
 
   app "LilyPond.app"
 
