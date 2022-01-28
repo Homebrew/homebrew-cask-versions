@@ -12,6 +12,8 @@ cask "lilypond-dev" do
     regex(%r{href=.*?/lilypond[._-]v?(\d+(?:\.\d+)*(?:-\d+)?)\.darwin[._-]x86\.tar\.bz2}i)
   end
 
+  conflicts_with cask: "lilypond"
+
   app "LilyPond.app"
 
   binaries = %w[
