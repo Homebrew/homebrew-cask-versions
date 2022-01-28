@@ -2,12 +2,12 @@ cask "brave-browser-beta" do
   arch = Hardware::CPU.intel? ? "x64" : "arm64"
   folder = Hardware::CPU.intel? ? "beta" : "beta-arm64"
 
-  version "1.35.89.0,135.89"
+  version "1.36.75.0,136.75"
 
   if Hardware::CPU.intel?
-    sha256 "19fc79ce4cf3e1c3335c75bc7912bc95320b065068069d8a00fbe9be422b5213"
+    sha256 "4a04c28232465c7f9484cd38051034d5debd95de7e3732c7757fd01f3881aa14"
   else
-    sha256 "16034019badd4a20af62aaa1196d4ddc573a123ab2df074e141e7e9a65552392"
+    sha256 "5833fddd906a6a0b98b00a98b29225c3f54ad7c96e80cff1d8fc3b49ba9ef9b2"
   end
 
   url "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/#{folder}/#{version.csv.second}/Brave-Browser-Beta-#{arch}.dmg",
