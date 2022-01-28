@@ -9,7 +9,7 @@ cask "tor-browser-alpha" do
 
   livecheck do
     url "https://www.torproject.org/download/alpha/"
-    regex(%r{href=.*?/TorBrowser-(\d+(?:.\d+)*)-osx64_.*\.dmg}i)
+    regex(%r{href=.*?/TorBrowser[._-]v?(\d+(?:.\d+)*)[._-]osx64_.*\.dmg}i)
   end
 
   auto_updates true
