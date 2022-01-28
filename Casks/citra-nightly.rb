@@ -1,6 +1,6 @@
 cask "citra-nightly" do
-  version "1747,20220111-45a4a56"
-  sha256 "3318412bbfe7ad91046b62195fa21705e8199378693abbe288c078da398e127b"
+  version "1748,20220124-4e15823"
+  sha256 "fc4f95a26746df2eb3f5d041f4fb5f90e9e92bdce1b0fd3c97c7feb4536d74a3"
 
   url "https://github.com/citra-emu/citra-nightly/releases/download/nightly-#{version.csv.first}/citra-osx-#{version.csv.second}.tar.gz",
       verified: "github.com/citra-emu/citra-nightly/"
