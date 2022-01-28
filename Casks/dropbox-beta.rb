@@ -25,10 +25,14 @@ cask "dropbox-beta" do
 
   app "Dropbox.app"
 
-  uninstall launchctl: "com.dropbox.DropboxMacUpdate.agent"
+  uninstall launchctl: "com.dropbox.DropboxMacUpdate.agent",
+            kext:      "com.getdropbox.dropbox.kext",
+            delete:    [
+              "/Library/DropboxHelperTools",
+              "/Library/Preferences/com.getdropbox.dropbox.dbkextd.plist",
+            ]
 
   zap trash: [
-    "/Library/DropboxHelperTools",
     "~/.dropbox",
     "~/Library/Application Scripts/com.dropbox.foldertagger",
     "~/Library/Application Scripts/com.getdropbox.dropbox.garcon",
@@ -38,9 +42,11 @@ cask "dropbox-beta" do
     "~/Library/Caches/com.getdropbox.dropbox",
     "~/Library/Caches/com.getdropbox.DropboxMetaInstaller",
     "~/Library/Caches/com.plausiblelabs.crashreporter.data/com.dropbox.DropboxMacUpdate",
+    "~/Library/Containers/com.dropbox.activityprovider",
     "~/Library/Containers/com.dropbox.foldertagger",
     "~/Library/Containers/com.getdropbox.dropbox.garcon",
     "~/Library/Dropbox",
+    "~/Library/Group Containers/com.dropbox.client.crashpad",
     "~/Library/Group Containers/com.getdropbox.dropbox.garcon",
     "~/Library/LaunchAgents/com.dropbox.DropboxMacUpdate.agent.plist",
     "~/Library/Logs/Dropbox_debug.log",
