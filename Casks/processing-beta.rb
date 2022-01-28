@@ -1,8 +1,8 @@
 cask "processing-beta" do
-  version "4.0b3,1278"
-  sha256 "eaa9b818c2386de7b42aef4f6d43cca252905faeb39b87fd7e8cb208dac286d1"
+  version "4.0b4,1279"
+  sha256 "7441962f03de610fe2423d795f4c624e93319e7359aed24c1cb2084386d0d3dc"
 
-  url "https://github.com/processing/processing4/releases/download/processing-#{version.csv.second}-#{version.csv.first}/processing-#{version.csv.first}-macosx.zip",
+  url "https://github.com/processing/processing4/releases/download/processing-#{version.csv.second}-#{version.csv.first}/processing-#{version.csv.first}-macos-x64.zip",
       verified: "github.com/processing/processing4/"
   name "Processing Beta"
   desc "Flexible software sketchbook and a language for learning how to code"
