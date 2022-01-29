@@ -21,9 +21,9 @@ cask "citra-nightly" do
   app "citra-osx-#{version.csv.second}/citra-qt.app"
 
   zap trash: [
-    "~/Library/Preferences/com.citra-emu.citra.plist",
-    "~/Library/Saved Application State/com.citra-emu.citra.savedState",
     "~/.config/citra-emu",
     "~/.local/share/citra-emu",
+    "~/Library/Preferences/com.citra-emu.citra.plist",
+    "~/Library/Saved Application State/com.citra-emu.citra.savedState",
   ]
 end
