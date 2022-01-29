@@ -16,9 +16,12 @@ cask "termius-beta" do
 
   app "Termius Beta.app"
 
-  zap trash: [
+  uninstall delete: [
     "/Library/Preferences/com.termius-beta.mac.helper.plist",
     "/Library/Preferences/com.termius-beta.mac.plist",
+  ]
+
+  zap trash: [
     "~/.termius",
     "~/Library/Application Support/Termius Beta",
     "~/Library/Logs/Termius Beta",
