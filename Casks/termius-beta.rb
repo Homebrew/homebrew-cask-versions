@@ -1,7 +1,7 @@
 cask "termius-beta" do
   arch = Hardware::CPU.intel? ? "mac-beta" : "mac-beta-arm64"
 
-  version "7.32.0"
+  version "7.33.0"
   sha256 :no_check
 
   url "https://autoupdate.termius.com/#{arch}/Termius%20Beta.dmg"
@@ -16,9 +16,12 @@ cask "termius-beta" do
 
   app "Termius Beta.app"
 
-  zap trash: [
+  uninstall delete: [
     "/Library/Preferences/com.termius-beta.mac.helper.plist",
     "/Library/Preferences/com.termius-beta.mac.plist",
+  ]
+
+  zap trash: [
     "~/.termius",
     "~/Library/Application Support/Termius Beta",
     "~/Library/Logs/Termius Beta",
