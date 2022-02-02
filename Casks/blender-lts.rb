@@ -1,12 +1,12 @@
 cask "blender-lts" do
   arch = Hardware::CPU.intel? ? "x64" : "arm64"
 
-  version "2.93.7"
+  version "2.93.8"
 
   if Hardware::CPU.intel?
-    sha256 "bf2ae4606e57d80c309b7e5eeb771506fc07bcf3862d4579932e768f53cbce28"
+    sha256 "221ca9d756f6494e94967c925e014f250d141ada34eb40276e82165f0eea5f1f"
   else
-    sha256 "ce51b61de00d35d55e7c414b8f96d6c42d1e92eaa37bed9e2fe428e56332b342"
+    sha256 "c2e9419585865c42401ca456d27f51c7f4f5d0b9f3fe565d0a5faded8f3e6e40"
   end
 
   url "https://download.blender.org/release/Blender#{version.major_minor}/blender-#{version}-macos-#{arch}.dmg"
