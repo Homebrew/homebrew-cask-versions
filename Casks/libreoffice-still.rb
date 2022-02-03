@@ -19,13 +19,13 @@ cask "libreoffice-still" do
   end
 
   conflicts_with cask: "libreoffice"
+  depends_on macos: ">= :yosemite"
 
   app "LibreOffice.app"
   binary "#{appdir}/LibreOffice.app/Contents/MacOS/gengal"
   binary "#{appdir}/LibreOffice.app/Contents/MacOS/regmerge"
   binary "#{appdir}/LibreOffice.app/Contents/MacOS/regview"
   binary "#{appdir}/LibreOffice.app/Contents/MacOS/senddoc"
-  binary "#{appdir}/LibreOffice.app/Contents/MacOS/ui-previewer"
   binary "#{appdir}/LibreOffice.app/Contents/MacOS/uno"
   binary "#{appdir}/LibreOffice.app/Contents/MacOS/unoinfo"
   binary "#{appdir}/LibreOffice.app/Contents/MacOS/unopkg"
@@ -43,8 +43,8 @@ cask "libreoffice-still" do
   end
 
   zap trash: [
-    "~/Library/Application Support/LibreOffice",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.libreoffice.script.sfl*",
+    "~/Library/Application Support/LibreOffice",
     "~/Library/Preferences/org.libreoffice.script.plist",
     "~/Library/Saved Application State/org.libreoffice.script.savedState",
   ]
