@@ -2,9 +2,9 @@ cask "ksdiff2" do
   version "2.4.2,126,sep-7-2021"
   sha256 "11a4e09eab56fed96cb1e1fb5fbec350a726ee8dd07a7d0d1d992dd4e44b6d68"
 
-  url "https://updates.kaleidoscope.app/v2/prod/ksdiff-#{version.csv.first}-#{version.csv.second}-#{version.csv.third}.zip"
-  name "ksdiff"
-  desc "Command-line tool for the App Store version of Kaleidoscope"
+  url "https://updates.kaleidoscope.app/v#{version.major}/prod/ksdiff-#{version.csv.first}-#{version.csv.second}-#{version.csv.third}.zip"
+  name "ksdiff v2"
+  desc "Command-line tool for the App Store version of Kaleidoscope v2"
   homepage "https://kaleidoscope.app/ksdiff#{version.major}"
 
   livecheck do
@@ -32,7 +32,7 @@ cask "ksdiff2" do
   uninstall pkgutil: "com.blackpixel.kaleidoscope.ksdiff.installer.pkg"
 
   caveats <<~EOS
-    The #{token} Cask is not needed when installing Kaleidoscope version 2 via Cask. It
-    is provided for users who have purchased Kaleidoscope version 2 via the App Store.
+    The #{token} Cask is not needed when installing Kaleidoscope v2 via Cask. It
+    is provided for users who have purchased Kaleidoscope v2 via the App Store.
   EOS
 end
