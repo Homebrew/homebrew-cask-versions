@@ -10,7 +10,7 @@ cask "chromedriver-beta" do
 
   livecheck do
     url :homepage
-    regex(/Latest\s*beta\s*release:.*?ChromeDriver\s*v?(\d+(?:\.\d+)+)/i)
+    regex(/ChromeDriver\s(\d+(?:\.\d+)+)/i)
   end
 
   conflicts_with cask: "chromedriver"
