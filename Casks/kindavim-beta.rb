@@ -1,12 +1,17 @@
 cask "kindavim-beta" do
-  version "1.0.0"
-  sha256 "4c94284b2a31f2e4959005ff0f771d65f5d4f9b69c3d5326fcd0359423eb361e"
+  version "2.0.0"
+  sha256 "0f6d6b1af1448c635fdad0c88370cd6382c21c0b34aae41daecef89f61ff760a"
 
   url "https://github.com/godbout/kindaVim.theapp/releases/download/#{version}/kindaVim.zip",
       verified: "github.com/godbout/kindaVim.theapp/"
   name "kindaVim"
   desc "Use Vim in input fields and non input fields"
   homepage "https://kindavim.app/"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
 
   conflicts_with cask: "kindavim"
   depends_on macos: ">= :monterey"
