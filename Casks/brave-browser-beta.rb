@@ -1,6 +1,5 @@
 cask "brave-browser-beta" do
-  arch = Hardware::CPU.intel? ? "x64" : "arm64"
-  folder = Hardware::CPU.intel? ? "beta" : "beta-arm64"
+  arch, folder = Hardware::CPU.intel? ? ["x64", "beta"] : ["arm64", "beta-arm64"]
 
   version "1.36.87.0,136.87"
 
