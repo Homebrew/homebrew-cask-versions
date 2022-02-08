@@ -2,13 +2,11 @@ cask "deadbeef-nightly" do
   version :latest
   sha256 :no_check
 
-  url "https://downloads.sourceforge.net/deadbeef/travis/osx/master/deadbeef-devel-osx-x86_64.zip",
+  url "https://downloads.sourceforge.net/deadbeef/travis/osx/master/deadbeef-devel-macos-universal.zip",
       verified: "downloads.sourceforge.net/deadbeef/"
   name "DeaDBeeF"
   desc "Modular audio player"
   homepage "https://deadbeef.sourceforge.io/"
-
-  conflicts_with cask: "deadbeef"
 
   app "DeaDBeeF.app"
 
