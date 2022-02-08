@@ -8,8 +8,6 @@ cask "deadbeef-nightly" do
   desc "Modular audio player"
   homepage "https://deadbeef.sourceforge.io/"
 
-  conflicts_with cask: "deadbeef"
-
   app "DeaDBeeF.app"
 
   zap trash: [
