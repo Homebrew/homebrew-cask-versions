@@ -1,6 +1,5 @@
 cask "microsoft-edge-dev" do
-  folder = Hardware::CPU.intel? ? "C1297A47-86C4-4C1F-97FA-950631F94777" : "03adf619-38c6-4249-95ff-4a01c0ffc962"
-  linkid = Hardware::CPU.intel? ? "2069340" : "2099619"
+  folder, linkid = Hardware::CPU.intel? ? ["C1297A47-86C4-4C1F-97FA-950631F94777", "2069340"] : ["03adf619-38c6-4249-95ff-4a01c0ffc962", "2099619"]
 
   version "99.0.1150.7"
 
