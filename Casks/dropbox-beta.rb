@@ -1,12 +1,12 @@
 cask "dropbox-beta" do
   arch = Hardware::CPU.intel? ? "" : "&arch=arm64"
 
-  version "142.3.4086"
+  version "142.3.4155"
 
   if Hardware::CPU.intel?
-    sha256 "44684a81a1557f5d70ebe52502695dcb9e4b472ca600f3196e810574ce1eee4b"
+    sha256 "89692f298482928d5e840c891bc5c8121a50463b450ac49ba188b67fc8a4919d"
   else
-    sha256 "afa162683c6a2af649c3c6ec5be17527efee8627815026a2df4ccd58ebc76faf"
+    sha256 "fef30efb107e585d8295774350f720f096d33a6f4db4b96cf68e5a900166829c"
   end
 
   url "https://www.dropbox.com/download?build=#{version}&plat=mac&type=full#{arch}",
