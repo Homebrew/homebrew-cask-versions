@@ -16,7 +16,7 @@ cask "sourcetree-beta" do
   depends_on macos: ">= :mojave"
 
   app "Sourcetree-Beta.app"
-  binary "#{appdir}/Sourcetree-Beta.app/Contents/Resources/stree", terget: "stree-beta"
+  binary "#{appdir}/Sourcetree-Beta.app/Contents/Resources/stree", target: "stree-beta"
 
   uninstall launchctl: "com.atlassian.SourceTreePrivilegedHelper2",
             quit:      "com.torusknot.SourceTreeNotMAS"
