@@ -1,6 +1,6 @@
 cask "temurin11" do
-  version "11.0.14,9"
-  sha256 "52329ec2174d825ccc645477a4dabfa80071b81662bd48dc1439072ba661f116"
+  version "11.0.14.1,1"
+  sha256 "61817fe645a35b0bfa5e88e65228b2c87cfe26756512d8e10980a0fd038d7565"
 
   url "https://github.com/adoptium/temurin#{version.major}-binaries/releases/download/jdk-#{version.csv.first}%2B#{version.csv.second}/OpenJDK#{version.major}U-jdk_x64_mac_hotspot_#{version.csv.first}_#{version.csv.second.major}.pkg",
       verified: "github.com/adoptium/"
