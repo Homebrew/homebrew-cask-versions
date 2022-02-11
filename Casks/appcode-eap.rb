@@ -21,9 +21,9 @@ cask "appcode-eap" do
   app "AppCode #{version.csv.first} EAP.app"
 
   zap delete: [
-    "~/Library/Preferences/AppCode#{version.csv.first}",
     "~/Library/Application Support/AppCode#{version.csv.first}",
     "~/Library/Caches/AppCode#{version.csv.first}",
     "~/Library/Logs/AppCode#{version.csv.first}",
+    "~/Library/Preferences/AppCode#{version.csv.first}",
   ]
 end
