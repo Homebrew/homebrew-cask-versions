@@ -1,6 +1,6 @@
 cask "appcode-eap" do
-  version "2021.3,213.5744.144"
-  sha256 "9f870297b35f0a31c058ff2e5212f09eaaa743eeb86689df4358dc52d294f6e6"
+  version "2022.1,221.4165.162"
+  sha256 "20a52088c329f8bad05aafc3262ef83bf3a30c90b68f87ab0d4cd95fcf11c80a"
 
   url "https://download.jetbrains.com/objc/AppCode-#{version.csv.second}.dmg"
   name "AppCode EAP"
@@ -8,7 +8,12 @@ cask "appcode-eap" do
   homepage "https://www.jetbrains.com/objc/nextversion/"
 
   livecheck do
-    skip "No version information available"
+    url "https://data.services.jetbrains.com/products/releases?code=AC&latest=true&type=eap"
+    strategy :page_match do |page|
+      JSON.parse(page)["AC"].map do |release|
+        "#{release["version"]},#{release["build"]}"
+      end
+    end
   end
 
   conflicts_with cask: "appcode"
@@ -16,9 +21,9 @@ cask "appcode-eap" do
   app "AppCode #{version.csv.first} EAP.app"
 
   zap delete: [
-    "~/Library/Preferences/AppCode#{version.csv.first}",
     "~/Library/Application Support/AppCode#{version.csv.first}",
     "~/Library/Caches/AppCode#{version.csv.first}",
     "~/Library/Logs/AppCode#{version.csv.first}",
+    "~/Library/Preferences/AppCode#{version.csv.first}",
   ]
 end
