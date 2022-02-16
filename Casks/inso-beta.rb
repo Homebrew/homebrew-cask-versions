@@ -9,7 +9,7 @@ cask "inso-beta" do
   homepage "https://insomnia.rest/products/inso"
 
   livecheck do
-    url "https://github.com/Kong/insomnia/releases"
+    url "https://github.com/Kong/insomnia/releases?q=Inso+CLI"
     strategy :page_match
     regex(/href=.*?inso-macos-(?:latest-)*(\d+(?:\.\d+)+[._-](?:beta)[._-]\d*)\.zip/i)
   end
