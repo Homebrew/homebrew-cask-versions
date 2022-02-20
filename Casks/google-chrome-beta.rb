@@ -1,5 +1,5 @@
 cask "google-chrome-beta" do
-  version "99.0.4844.27"
+  version "99.0.4844.35"
   sha256 :no_check
 
   url "https://dl.google.com/chrome/mac/universal/beta/googlechromebeta.dmg"
@@ -13,6 +13,7 @@ cask "google-chrome-beta" do
   end
 
   auto_updates true
+  depends_on macos: ">= :el_capitan"
 
   app "Google Chrome Beta.app"
 
@@ -32,6 +33,7 @@ cask "google-chrome-beta" do
     "~/Library/Google/Google Chrome Brand.plist",
     "~/Library/Google/GoogleSoftwareUpdate",
     "~/Library/LaunchAgents/com.google.keystone.agent.plist",
+    "~/Library/LaunchAgents/com.google.keystone.xpcservice.plist",
     "~/Library/Logs/GoogleSoftwareUpdateAgent.log",
     "~/Library/Preferences/com.google.Chrome.plist",
     "~/Library/Preferences/com.google.Keystone.Agent.plist",
