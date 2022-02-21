@@ -5,7 +5,7 @@ cask "dotnet-preview" do
     version "7.0.0-preview.1.22076.8,db7f0e7c-1565-4b19-ac46-28e6e2bc8d45,3dc432a183bb535ac690af8abd2b45f7"
     sha256 "e4b066937d0d3a76e5296bcfac4708821bf3ad370e7776fcb10f8b5cc0cca950"
   else
-    version "7.0.0-preview.1.22076.8,17b7ed90-2cac-4a18-9d04-787fb76a0175/52773df7c2c4982728cc153111c8a0aa"
+    version "7.0.0-preview.1.22076.8,17b7ed90-2cac-4a18-9d04-787fb76a0175,52773df7c2c4982728cc153111c8a0aa"
     sha256 "1910170a8f4c1223a3b7a5cbcbdfb4763e7897e57570d4dd74ece98f08203814"
   end
 
