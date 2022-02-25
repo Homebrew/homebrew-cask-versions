@@ -1,8 +1,15 @@
 cask "powershell-preview" do
-  version "7.3.0-preview.1"
-  sha256 "38918d554045953f353107da900239305ceb00bc209c70d9306bd33aaeb51e5c"
+  arch = Hardware::CPU.intel? ? "x64" : "arm64"
 
-  url "https://github.com/PowerShell/PowerShell/releases/download/v#{version}/powershell-#{version}-osx-x64.pkg"
+  version "7.3.0-preview.2"
+
+  if Hardware::CPU.intel?
+    sha256 "a582622ca7bbb818b712394eb060d4056d26aeb082831e27cd647fced9a64c01"
+  else
+    sha256 "f1dd9572ce7e696764d8192250e73ecd6a064c0a95174373c6232729458cd62d"
+  end
+
+  url "https://github.com/PowerShell/PowerShell/releases/download/v#{version}/powershell-#{version}-osx-#{arch}.pkg"
   name "PowerShell"
   desc "Command-line shell and scripting language"
   homepage "https://github.com/PowerShell/PowerShell"
@@ -13,9 +20,9 @@ cask "powershell-preview" do
   end
 
   depends_on formula: "openssl"
-  depends_on macos: ">= :high_sierra"
+  depends_on macos: ">= :mojave"
 
-  pkg "powershell-#{version}-osx-x64.pkg"
+  pkg "powershell-#{version}-osx-#{arch}.pkg"
 
   uninstall pkgutil: "com.microsoft.powershell-preview"
 
