@@ -1,25 +1,17 @@
 cask "azure-data-studio-insiders" do
-  version "1.35.0,e2b4dd5a791b9a939a9776b00e9f53c2e01209c5"
-  sha256 "cc461a5f5843f6e9d431fe6469c0890977254f1bd72e703b11979efd3fb11fc6"
+  version :latest
+  sha256 :no_check
 
-  url "https://sqlopsbuilds.azureedge.net/insider/#{version.csv.second}/azuredatastudio-macos-#{version.csv.first}-insider.zip",
-      verified: "sqlopsbuilds.azureedge.net/insider/"
+  url "https://azuredatastudio-update.azurewebsites.net/api/update/darwin/insider/VERSION" do |version_page|
+    product_version = JSON.parse(version_page)["productVersion"]
+    version = JSON.parse(version_page)["version"]
+
+    ["https://sqlopsbuilds.azureedge.net/insider/#{version}/azuredatastudio-macos-#{product_version}-insider.zip",
+     { verified: "sqlopsbuilds.azureedge.net/insider/" }]
+  end
   name "Azure Data Studio - Insiders"
   desc "Data management tool that enables working with SQL Server"
   homepage "https://docs.microsoft.com/en-us/sql/azure-data-studio/"
-
-  livecheck do
-    url "https://azuredatastudio-update.azurewebsites.net/api/update/darwin/insider/VERSION"
-    strategy :page_match do |page|
-      name = page[/"name":"(\d+(?:\.\d+)+)/i, 1]
-      version = page[/"version":"(\w+)/i, 1]
-      next if name.blank? || version.blank?
-
-      "#{name},#{version}"
-    end
-  end
-
-  auto_updates true
 
   app "Azure Data Studio - Insiders.app"
   binary "#{appdir}/Azure Data Studio - Insiders.app/Contents/Resources/app/bin/code",
