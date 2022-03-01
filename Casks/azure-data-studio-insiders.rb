@@ -2,13 +2,8 @@ cask "azure-data-studio-insiders" do
   version :latest
   sha256 :no_check
 
-  url "https://azuredatastudio-update.azurewebsites.net/api/update/darwin/insider/VERSION" do |version_page|
-    product_version = JSON.parse(version_page)["productVersion"]
-    version = JSON.parse(version_page)["version"]
-
-    ["https://sqlopsbuilds.azureedge.net/insider/#{version}/azuredatastudio-macos-#{product_version}-insider.zip",
-     { verified: "sqlopsbuilds.azureedge.net/insider/" }]
-  end
+  url "https://azuredatastudio-update.azurewebsites.net/latest/darwin/insider",
+      verified: "azuredatastudio-update.azurewebsites.net"
   name "Azure Data Studio - Insiders"
   desc "Data management tool that enables working with SQL Server"
   homepage "https://docs.microsoft.com/en-us/sql/azure-data-studio/"
