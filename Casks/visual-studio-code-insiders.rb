@@ -4,12 +4,7 @@ cask "visual-studio-code-insiders" do
 
   arch = Hardware::CPU.intel? ? "darwin" : "darwin-arm64"
 
-  url "https://update.code.visualstudio.com/api/update/#{arch}/insider/VERSION" do |version_page|
-    version = JSON.parse(version_page)["version"]
-
-    ["https://az764295.vo.msecnd.net/insider/#{version}/VSCode-#{arch}.zip",
-     { verified: "az764295.vo.msecnd.net/insider/" }]
-  end
+  url "https://code.visualstudio.com/sha/download?build=insider&os=#{arch}"
   name "Microsoft Visual Studio Code"
   name "Visual Studio Code Insiders"
   desc "Code editor"
