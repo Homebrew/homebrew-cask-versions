@@ -1,5 +1,5 @@
 cask "google-chrome-canary" do
-  version "101.0.4900.0"
+  version :latest
   sha256 :no_check
 
   url "https://dl.google.com/chrome/mac/universal/canary/googlechromecanary.dmg"
@@ -7,12 +7,6 @@ cask "google-chrome-canary" do
   desc "Web browser"
   homepage "https://www.google.com/chrome/canary/"
 
-  livecheck do
-    url "https://chromiumdash.appspot.com/fetch_releases?channel=Canary&platform=Mac"
-    regex(/"version": "(\d+(?:\.\d+)+)"/i)
-  end
-
-  auto_updates true
   depends_on macos: ">= :el_capitan"
 
   app "Google Chrome Canary.app"
