@@ -1,6 +1,6 @@
 cask "processing-beta" do
-  version "4.0b6,1281"
-  sha256 "36b20152dcc109e53731e73df48942aa777761c21304ba673db85999c390e720"
+  version "4.0b7,1282"
+  sha256 "90a2679787ee6e4de5e3232c8fde25ae715255f41fa6570f7a714eaa8fab70b1"
 
   url "https://github.com/processing/processing4/releases/download/processing-#{version.csv.second}-#{version.csv.first}/processing-#{version.csv.first}-macos-x64.zip",
       verified: "github.com/processing/processing4/"
