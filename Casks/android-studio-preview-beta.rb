@@ -1,12 +1,12 @@
 cask "android-studio-preview-beta" do
   arch = Hardware::CPU.intel? ? "mac" : "mac_arm"
 
-  version "2021.2.1.9"
+  version "2021.2.1.11"
 
   if Hardware::CPU.intel?
-    sha256 "2f919e621a3df4c6ec424f3b6b6eb1627041e666ea7a9e475db21a6ee0c714f2"
+    sha256 "94ca362a616a876049827e3704ea6bcbb3ca15fed201554e0f7eaac276508bb5"
   else
-    sha256 "6c7c3e25f561937913b04ce7fd04e422c25e8371aae9216391210edb2d54ec63"
+    sha256 "688df52460c9f03c4e56443760dc0fab0e8b98567596e8dbfd94fd9b5a0a1d6f"
   end
 
   url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-#{version}-#{arch}.zip",
