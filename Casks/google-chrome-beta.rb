@@ -9,7 +9,7 @@ cask "google-chrome-beta" do
 
   livecheck do
     url "https://chromiumdash.appspot.com/fetch_releases?channel=Beta&platform=Mac"
-    regex(/"version": "(\d+(?:\.\d+)+)"/i)
+    regex(/"version":\s*"v?(\d+(?:\.\d+)+)"/i)
   end
 
   auto_updates true
