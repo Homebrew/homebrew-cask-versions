@@ -1,6 +1,6 @@
 cask "rstudio-preview" do
-  version "2022.02.0,442"
-  sha256 "1aeba2e2f84cb495a5b3bc9cee5ab30aabcb4cfe489c6b8c17c51d01ce269756"
+  version "2022.02.0,443"
+  sha256 "391d5f188fe2ebc0dc67ee35b3d3c389e3772b5b95c1fdcfb6b983b94038298d"
 
   url "https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-#{version.csv.first}-#{version.csv.second}.dmg",
       verified: "s3.amazonaws.com/rstudio-ide-build/"
