@@ -1,6 +1,6 @@
 cask "osu-development" do
-  version "2022.306.0"
-  sha256 "4b93247476103c884c0136a767656c43401aa83f39c027823b5732a10705cf79"
+  version "2022.314.0"
+  sha256 "848d935dfaaecabf6532147cb58293056a282e5b226752f1cc4048004bbaeccf"
 
   url "https://github.com/ppy/osu/releases/download/#{version}/osu.app.zip"
   name "osu!lazer"
