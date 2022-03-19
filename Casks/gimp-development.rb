@@ -1,6 +1,9 @@
+# frozen_string_literal: true
+
 cask "gimp-development" do
   version "2.99.10"
   sha256 "b8b1365bbe553828bb2a124fa826863950f1d50f302c0652f5e1a751267ef186"
+
   url "https://download.gimp.org/pub/gimp/v#{version.major_minor}/osx/gimp-#{version}-x86_64.dmg"
   name "GIMP development version"
   name "GNU Image Manipulation Program"
@@ -26,3 +29,4 @@ cask "gimp-development" do
     "~/Library/Saved Application State/org.gimp.gimp-#{version.major_minor}:.savedState",
   ]
 end
+
