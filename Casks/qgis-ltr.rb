@@ -1,6 +1,6 @@
 cask "qgis-ltr" do
-  version "3.22.4,20220221_153407"
-  sha256 "a2c51a98aaa066b5c696575e73d7200c8a5564b5dbcfb85376218bf9cb77bd19"
+  version "3.22.5,20220318_192712"
+  sha256 "a88f60902dba0a7391b5e54acd8881650f687c669abf1aaafc09ffa11842f9ba"
 
   url "https://qgis.org/downloads/macos/ltr/qgis_ltr_final-#{version.csv.first.dots_to_underscores}_#{version.csv.second}.dmg"
   name "QGIS LTR"
