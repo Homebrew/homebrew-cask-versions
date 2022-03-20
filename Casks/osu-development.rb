@@ -1,4 +1,6 @@
 cask "osu-development" do
+  arch = Hardware::CPU.intel? ? "Intel" : "Apple.Silicon"
+
   version "2022.319.0"
 
   if Hardware::CPU.intel?
@@ -7,7 +9,6 @@ cask "osu-development" do
     sha256 "bcc306951fb308359730f27f81a139614176f5dd147ce490daa9f9c6ecfe54da"
   end
 
-  arch = Hardware::CPU.intel? ? "Intel" : "Apple.Silicon"
   url "https://github.com/ppy/osu/releases/download/#{version}/osu.app.#{arch}.zip"
   name "osu!lazer"
   desc "Rhythm game"
