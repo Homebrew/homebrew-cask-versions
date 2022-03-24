@@ -3,8 +3,8 @@ cask "safari-technology-preview" do
     version "141,002-73837-20220303-4C2EB093-1581-44C1-A404-7292FEEDB4D4"
     sha256 "bd14aff0536b861c58a6ee36ff5bb325c6676817f6dbbbf4300917f20e36503a"
   else
-    version "141,002-72472-20220303-BD427703-8F4A-4CEA-A299-DD1C734C6568"
-    sha256 "8d8aed9bf940972e5ba09fe8b09cfad29bfef3fb6ca010e43a4175191b8bf3f9"
+    version "142,002-82680-20220323-EE9263E9-C759-49B5-A9D3-A3B5253707E9"
+    sha256 "219ee300b824ea727a8c02e5f98f70bf8c2e7932d2817eade7fae352c35d4641"
   end
 
   url "https://secure-appldnld.apple.com/STP/#{version.csv.second}/SafariTechnologyPreview.dmg"
