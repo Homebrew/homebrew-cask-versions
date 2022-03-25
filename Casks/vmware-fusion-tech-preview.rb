@@ -10,8 +10,8 @@ cask "vmware-fusion-tech-preview" do
       strategy :header_match
     end
   else
-    version "18656771"
-    sha256 "c8511bbb829d60f95f94599392bef8058b36cd94f103fb264a57cacdc5f55325"
+    version "19431034"
+    sha256 "493fda53120050f85836032324409be6c6484f90a0755ae0c6a673ba7626818b"
 
     livecheck do
       skip "No version information available"
