@@ -1,12 +1,12 @@
 cask "osu-development" do
   arch = Hardware::CPU.intel? ? "Intel" : "Apple.Silicon"
 
-  version "2022.319.0"
+  version "2022.327.0"
 
   if Hardware::CPU.intel?
-    sha256 "3178c9c0b5c35e9a16f120f5a775f76a77e72c6df22450e18dfc95752475ffa9"
+    sha256 "e1a2ca0829af9193c840bbc635818a1c8646af6e999dc3fac466a94de03e6f4b"
   else
-    sha256 "bcc306951fb308359730f27f81a139614176f5dd147ce490daa9f9c6ecfe54da"
+    sha256 "c6a13b937432cd277194f3aa7f58900a244ae870b59558f75f895472a41aef44"
   end
 
   url "https://github.com/ppy/osu/releases/download/#{version}/osu.app.#{arch}.zip"
