@@ -11,7 +11,7 @@ cask "vmware-fusion-tech-preview" do
     end
   else
     version "19431034"
-    sha256 "493fda53120050f85836032324409be6c6484f90a0755ae0c6a673ba7626818b"
+    sha256 "c61c610fef9fe3c2f9fb9072228432271d7474dad6e954f9df1811da0f3f12dc"
 
     livecheck do
       skip "No version information available"
