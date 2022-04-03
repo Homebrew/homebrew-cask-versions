@@ -16,7 +16,7 @@ cask "xampp7" do
   conflicts_with cask: "xampp"
 
   installer script: {
-    executable: "XAMPP.app/Contents/MacOS/osx-x86_64",
+    executable: "xampp-osx-#{version}-installer.app/Contents/MacOS/osx-x86_64",
     args:       ["--mode", "unattended"],
     sudo:       true,
   }
