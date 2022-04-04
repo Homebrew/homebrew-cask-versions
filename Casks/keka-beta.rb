@@ -8,6 +8,12 @@ cask "keka-beta" do
   desc "File archiver"
   homepage "https://www.keka.io/#beta"
 
+  livecheck do
+    url :url
+    strategy :git
+    regex(/^v?((?:\d+(?:\.\d+)+)-(?:beta|dev)(?:\.(\d+))?)?/i)
+  end
+
   auto_updates true
   conflicts_with cask: "keka"
 
