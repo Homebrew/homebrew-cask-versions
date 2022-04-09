@@ -10,7 +10,6 @@ cask "netnewswire-beta" do
 
   livecheck do
     url :url
-    strategy :git
     regex(/^mac-(\d+(?:\.\d+)*b\d+)$/i)
   end
 

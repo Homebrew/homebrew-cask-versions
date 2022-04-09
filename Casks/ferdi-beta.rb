@@ -17,7 +17,6 @@ cask "ferdi-beta" do
 
   livecheck do
     url :url
-    strategy :git
     regex(/^v?(\d+(?:\.\d+)*((?:[._-]beta)?)*([._-]\d+)?)$/i)
   end
 
