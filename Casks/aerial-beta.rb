@@ -10,7 +10,6 @@ cask "aerial-beta" do
 
   livecheck do
     url :url
-    strategy :git
     regex(/^v?(\d+(?:\.\d+)*beta\d+)$/i)
   end
 
