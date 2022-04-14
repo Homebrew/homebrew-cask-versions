@@ -7,17 +7,18 @@ cask "kitty-nightly" do
   desc "GPU-based terminal emulator"
   homepage "https://github.com/kovidgoyal/kitty"
 
+  conflicts_with cask: "kitty"
   depends_on macos: ">= :sierra"
 
-  app "kitty.app", target: "kitty nightly.app"
+  app "kitty.app"
   # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
   shimscript = "#{staged_path}/kitty.wrapper.sh"
-  binary shimscript, target: "kitty-nightly"
+  binary shimscript, target: "kitty"
 
   preflight do
     File.write shimscript, <<~EOS
       #!/bin/sh
-      exec '#{appdir}/kitty nightly.app/Contents/MacOS/kitty' "$@"
+      exec '#{appdir}/kitty.app/Contents/MacOS/kitty' "$@"
     EOS
   end
 
