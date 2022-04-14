@@ -27,7 +27,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 You may wish to consider hosting your own [tap](https://github.com/Homebrew/brew/blob/master/docs/How-to-Create-and-Maintain-a-Tap.md) for casks you wish to personally support that do not meet the above standards.
 
-For this repo, rules are (following our [nomenclature](https://github.com/Homebrew/homebrew-cask/blob/master/doc/development/adding_a_cask.md#finding-a-home-for-your-cask)):
+For this repo, rules are (following our [nomenclature](https://docs.brew.sh/Acceptable-Casks#finding-a-home-for-your-cask)):
 
 + Include the latest minor version of legacy versions of commercial and freemium software.
 + Legacy versions of commercial and freemium software are restricted to a maximum of five casks.
