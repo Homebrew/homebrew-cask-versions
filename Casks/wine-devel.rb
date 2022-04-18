@@ -14,7 +14,7 @@ cask "wine-devel" do
   livecheck do
     url "https://github.com/Gcenx/macOS_Wine_builds/releases"
     strategy :page_match
-    regex(/wine[._-]devel[._-]v?(\d+(?:\.\d+)+)[._-]osx64\.tar\.xz/i)
+    regex(/href=.*?wine[._-]devel[._-]v?(\d+(?:\.\d+)+)[._-]osx64\.t/i)
   end
 
   conflicts_with cask: [
