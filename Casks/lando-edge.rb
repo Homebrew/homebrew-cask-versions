@@ -1,12 +1,12 @@
 cask "lando-edge" do
   arch = Hardware::CPU.intel? ? "x64" : "arm64"
 
-  version "3.6.2"
+  version "3.6.3"
 
   if Hardware::CPU.intel?
-    sha256 "a32692e8b25365b40ad125114df8eaa10ef3ed171f251a1cd3fedc8117175d76"
+    sha256 "c393163105cf9ae13e90119476f4442375a603a0e44bd50465a8c7120dd109da"
   else
-    sha256 "514d244ec465ed552c1d05a153695dc232e264a3d3f6394392b5deeaae7bf803"
+    sha256 "4dbba823259a458fcdd52efcf0dfb7eddcf33af142d6f2d20e1bf77766bce3b3"
   end
 
   url "https://github.com/lando/lando/releases/download/v#{version}/lando-#{arch}-v#{version}.dmg",
