@@ -2,12 +2,12 @@ cask "zulu8" do
   arch = Hardware::CPU.intel? ? "x64" : "aarch64"
   choice = Hardware::CPU.intel? ? "x86" : "arm"
 
-  version "8.0.322,8.60.0.21-ca"
+  version "8.0.332,8.62.0.19-ca"
 
   if Hardware::CPU.intel?
-    sha256 "44b3ea6856c92230e2c1ca27f2b0ddc533830f3774c955c83c463c13858678c7"
+    sha256 "d8253f1366121f54858481d65c5a745dc2fda235767dc5138743907d7ed9b171"
   else
-    sha256 "6cea661f8bf457c3514cb8cb28d10f7ade1141a2ed6472c5c6f569a66dfbd87c"
+    sha256 "ceccc897c9ac7599c211f939350b57c5cfabbdf56a7d55e5f9b2410d523d3c07"
   end
 
   url "https://cdn.azul.com/zulu/bin/zulu#{version.csv.second}-jdk#{version.csv.first}-macosx_#{arch}.dmg",
