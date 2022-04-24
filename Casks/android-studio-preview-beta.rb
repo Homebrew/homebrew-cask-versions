@@ -1,12 +1,12 @@
 cask "android-studio-preview-beta" do
   arch = Hardware::CPU.intel? ? "mac" : "mac_arm"
 
-  version "2021.2.1.11"
+  version "2021.2.1.12"
 
   if Hardware::CPU.intel?
-    sha256 "94ca362a616a876049827e3704ea6bcbb3ca15fed201554e0f7eaac276508bb5"
+    sha256 "bdaa1fd710f04db4aff6cdea484455d198039144d3bd56f9eb10592171dba9ae"
   else
-    sha256 "688df52460c9f03c4e56443760dc0fab0e8b98567596e8dbfd94fd9b5a0a1d6f"
+    sha256 "eb6c0d609000950d6387e07021a76a1eefaa367dde8f2c2941e3e4bb6ec3f2eb"
   end
 
   url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-#{version}-#{arch}.zip",
@@ -20,9 +20,9 @@ cask "android-studio-preview-beta" do
     regex(%r{href=.*?/android[._-]studio[._-]v?(\d+(?:\.\d+)+)[._-]#{arch}\.zip(.*\n*\s*.*)(Beta|RC)}i)
   end
 
-  conflicts_with cask: "android-studio-preview-canary"
+  conflicts_with cask: "android-studio"
 
-  app "Android Studio Preview.app"
+  app "Android Studio.app"
 
   zap trash: [
     "~/.android",
