@@ -1,4 +1,4 @@
-cask "osu-development" do
+cask "osu" do
   arch = Hardware::CPU.intel? ? "Intel" : "Apple.Silicon"
 
   version "2022.424.1"
@@ -10,7 +10,7 @@ cask "osu-development" do
   end
 
   url "https://github.com/ppy/osu/releases/download/#{version}/osu.app.#{arch}.zip"
-  name "osu!lazer"
+  name "osu!"
   desc "Rhythm game"
   homepage "https://github.com/ppy/osu/"
 
