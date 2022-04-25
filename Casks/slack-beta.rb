@@ -1,12 +1,12 @@
 cask "slack-beta" do
   arch = Hardware::CPU.intel? ? "x64" : "arm64"
 
-  version "4.26.0-beta2"
+  version "4.26.0"
 
   if Hardware::CPU.intel?
-    sha256 "67362785e955b8bc2dc50f04227fe2fa232da4e3d37b246384bbd883d8ce6314"
+    sha256 "d29dc5cbf7fe5cd275fd2037ed18f8d6abd0b6adc3b7ae6846c4e0d0dfe56516"
   else
-    sha256 "a8e003d7c5abc8f1fbf5457990e7e32bfd45f4f84ae498c75b328799098dd773"
+    sha256 "d78a5a9510f82c00d6a317ed4f8c5c7b93be4cce32a962d14d097d104f3441dc"
   end
 
   url "https://downloads.slack-edge.com/releases/macos/#{version}/beta/#{arch}/Slack-#{version}-macOS.zip",
