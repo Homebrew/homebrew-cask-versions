@@ -1,6 +1,6 @@
 cask "macfuse-dev" do
-  version "4.2.5"
-  sha256 "a94af08049fe480453e02acb57334f7c8dcc47d68f3f3fe341bf5aadda418dff"
+  version "4.3.0"
+  sha256 "8447e2ef3252cbab2608aeacec096b85561e7fdc8809157063a90ded812d48e8"
 
   url "https://github.com/osxfuse/osxfuse/releases/download/macfuse-#{version}/macfuse-#{version}.dmg",
       verified: "github.com/osxfuse/osxfuse/"
