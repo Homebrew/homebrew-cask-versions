@@ -12,6 +12,10 @@ cask "rambox-ce" do
 
   app "Rambox.app"
 
+  caveats do
+    discontinued
+  end
+
   zap trash: [
     "~/Library/Application Support/CrashReporter/Rambox Helper_*.plist",
     "~/Library/Application Support/CrashReporter/Rambox_*.plist",
