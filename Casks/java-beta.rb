@@ -1,12 +1,12 @@
 cask "java-beta" do
   arch = Hardware::CPU.intel? ? "x64" : "aarch64"
 
-  version "18,35"
+  version "19,20"
 
   if Hardware::CPU.intel?
-    sha256 "5956dbd5f6c6bba49ecaf40547cd38be177e604a261f1cb62b4d013c0a0994b5"
+    sha256 "e3f3124cf799f24df542c112aaad1ab729e969d2a63ad977988cdde7073efd97"
   else
-    sha256 "649e81f6411fc3e01e19ce629d0f8482e1cf562451785fad3faeb80326d1c467"
+    sha256 "b2b2f68cfac363652cd273feba6a33f4be5855dcf56ad378252e4ed98a5ffba0"
   end
 
   url "https://download.java.net/java/early_access/jdk#{version.major}/#{version.csv.second}/GPL/openjdk-#{version.csv.first}-ea+#{version.csv.second}_macos-#{arch}_bin.tar.gz"
@@ -16,11 +16,9 @@ cask "java-beta" do
 
   livecheck do
     url "https://jdk.java.net/#{version.major}/"
-    strategy :page_match do |page|
-      match = page.match(/openjdk-(\d+)-ea\+(\d+)_macos-#{arch}_bin\.tar\.gz/i)
-      next if match.blank?
-
-      "#{match[1]},#{match[2]}"
+    regex(/openjdk-(\d+)-ea\+(\d+)_macos-#{arch}_bin\.t/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| "#{match[0]},#{match[1]}" }
     end
   end
 
