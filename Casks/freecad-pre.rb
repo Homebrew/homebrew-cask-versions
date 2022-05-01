@@ -10,11 +10,9 @@ cask "freecad-pre" do
 
   livecheck do
     url "https://github.com/FreeCAD/FreeCAD/releases"
-    strategy :page_match do |page|
-      match = page.match(
-        %r{href=.*?/(\d+(?:\.\d+)+)/FreeCAD_(?:\d+(?:\.\d+)*)-(\d+(?:-pre\d+)?)-macOS-x86_64-conda\.dmg}i,
-      )
-      "#{match[1]},#{match[2]}"
+    regex(%r{href=.*?/(\d+(?:\.\d+)+)/FreeCAD_(?:\d+(?:\.\d+)*)-(\d+(?:-pre\d+)?)-macOS-x86_64-conda\.dmg}i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| "#{match[0]},#{match[1]}" }
     end
   end
 

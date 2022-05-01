@@ -9,11 +9,9 @@ cask "qgis-ltr" do
 
   livecheck do
     url "https://qgis.org/downloads/macos/qgis-macos-ltr.sha256sum"
-    strategy :page_match do |page|
-      match = page.match(/qgis_ltr_final[._-]v?(\d+(?:_\d+)+)[._-](\d+_\d+)\.dmg/i)
-      next if match.blank?
-
-      "#{match[1].tr("_", ".")},#{match[2]}"
+    regex(/qgis_ltr_final[._-]v?(\d+(?:_\d+)+)[._-](\d+_\d+)\.dmg/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| "#{match[0].tr("_", ".")},#{match[1]}" }
     end
   end
 
