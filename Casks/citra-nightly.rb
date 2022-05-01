@@ -10,11 +10,9 @@ cask "citra-nightly" do
 
   livecheck do
     url :url
-    strategy :github_latest do |page|
-      match = page.match(%r{href=.*?/nightly[._-](\d+)/citra[._-]osx[._-](\d+[._-]\h+)\.tar\.gz}i)
-      next if match.blank?
-
-      "#{match[1]},#{match[2]}"
+    regex(%r{href=.*?/nightly[._-](\d+)/citra[._-]osx[._-](\d+[._-]\h+)\.t}i)
+    strategy :github_latest do |page, regex|
+      page.scan(regex).map { |match| "#{match[0]},#{match[1]}" }
     end
   end
 

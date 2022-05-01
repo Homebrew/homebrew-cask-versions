@@ -10,11 +10,9 @@ cask "semeru-jdk8-open" do
 
   livecheck do
     url "https://github.com/ibmruntimes/semeru8-binaries/releases"
-    strategy :github_latest do |page|
-      match = page.match(%r{href=.*?/tag/jdk(\d+u\d+)[._-](b\d+)[._-]([^&]+)&quot;}i)
-      next if match.blank?
-
-      "#{match[1]}-#{match[2]},#{match[3]}"
+    regex(%r{href=.*?/tag/jdk(\d+u\d+)[._-](b\d+)[._-]([^&]+)&quot;}i)
+    strategy :github_latest do |page, regex|
+      page.scan(regex).map { |match| "#{match[0]}-#{match[1]},#{match[2]}" }
     end
   end
 
