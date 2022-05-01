@@ -17,12 +17,7 @@ cask "libreoffice-still" do
 
   livecheck do
     url "https://www.libreoffice.org/download/release-notes/"
-    strategy :page_match do |page|
-      match = page.match(
-        /LibreOffice\s*(\d+(?:\.\d+)+)\s*\((\d+(?:-\d+)*)\)\s*-\s*Still\s*Branch/i,
-      )
-      (match[1]).to_s
-    end
+    regex(/LibreOffice\s+v?(\d+(?:\.\d+)+)(?:\s+\((?:\d+(?:-\d+)+)\))?\s*-\s*Still\s+Branch/i)
   end
 
   conflicts_with cask: "libreoffice"
