@@ -7,10 +7,14 @@ cask "background-music-pre" do
   desc "Audio utility"
   homepage "https://github.com/kyleneideck/BackgroundMusic"
 
+  # When the leading version for two snapshot tags are the same, we can't
+  # determine which is newer based on the trailing hash. As such, this check
+  # treats the most recent snapshot tag as newest (if any).
   livecheck do
     url "https://github.com/kyleneideck/BackgroundMusic/releases.atom"
-    strategy :page_match do |page|
-      page[%r{href=.*?/tag/(\d+(?:\.\d+)*-SNAPSHOT-[0-9a-f]+)}i, 1]
+    regex(%r{href=.*?/tag/v?(\d+(?:\.\d+)+[._-]SNAPSHOT[._-][0-9a-f]+)["']}i)
+    strategy :page_match do |page, regex|
+      page[regex, 1]
     end
   end
 

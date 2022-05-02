@@ -1,8 +1,8 @@
 cask "rambox-ce" do
-  version "0.7.9"
-  sha256 "237315fd3d5790e84b1d531024d44fd8fb29066123b02f2580840d069edf1dc2"
+  version "0.8.0"
+  sha256 "c5e93e259344a7b029869bbe7f9d222c141c0f0308fb0a82f6bd3d97f018ef1d"
 
-  url "https://github.com/ramboxapp/community-edition/releases/download/#{version}/Rambox-#{version}-mac.zip",
+  url "https://github.com/ramboxapp/community-edition/releases/download/#{version}/Rambox-#{version}-mac-universal.zip",
       verified: "github.com/ramboxapp/community-edition/"
   name "Rambox Community Edition"
   desc "Free and Open Source messaging and emailing app"
@@ -29,4 +29,8 @@ cask "rambox-ce" do
     "~/Library/Saved Application State/com.saenzramiro.rambox.savedState",
     "~/Library/WebKit/com.saenzramiro.rambox",
   ]
+
+  caveats do
+    discontinued
+  end
 end

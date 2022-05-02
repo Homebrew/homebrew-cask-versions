@@ -11,9 +11,8 @@ cask "processing-beta" do
   livecheck do
     url :url
     regex(/processing[._-](\d+)[._-]v?(\d+(?:\.\d+b\d)+)/i)
-    strategy :github_latest do |page|
-      page.scan(regex)
-          .map { |match| "#{match[1]},#{match[0]}" }
+    strategy :github_latest do |page, regex|
+      page.scan(regex).map { |match| "#{match[1]},#{match[0]}" }
     end
   end
 

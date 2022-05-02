@@ -9,9 +9,9 @@ cask "geogebra5" do
 
   livecheck do
     url "https://download.geogebra.org/package/mac"
-    strategy :header_match do |headers|
-      v = headers["location"][%r{/GeoGebra-MacOS-Installer-withJava-(\d+(?:-\d+)*)\.zip}i, 1]
-      v.tr("-", ".")
+    regex(%r{/GeoGebra-MacOS-Installer-withJava-(\d+(?:-\d+)*)\.zip}i)
+    strategy :header_match do |headers, regex|
+      headers["location"][regex, 1].tr("-", ".")
     end
   end
 

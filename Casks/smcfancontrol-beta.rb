@@ -9,9 +9,9 @@ cask "smcfancontrol-beta" do
 
   livecheck do
     url "https://github.com/hholtmann/smcFanControl/releases/"
-    strategy :page_match do |page|
-      match = page[/smcFanControl[._-](\d+(?:.\d+)*)\.zip/i, 1]
-      match.tr("_", ".")
+    regex(/smcFanControl[._-](\d+(?:.\d+)*)\.zip/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| match.first.tr("_", ".") }
     end
   end
 
