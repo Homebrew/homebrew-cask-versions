@@ -17,10 +17,10 @@ cask "temurin17" do
 
   livecheck do
     url "https://api.adoptium.net/v3/assets/feature_releases/#{version.major}/ga?architecture=#{arch}&image_type=jdk&jvm_impl=hotspot&os=mac&page=0&page_size=1&project=jdk&sort_method=DEFAULT&sort_order=DESC&vendor=eclipse"
-    regex(/^(\d+(?:\.\d+)*)\+(\d+(?:\.\d+)*)$/i)
+    regex(/^jdk-(\d+(?:\.\d+)+)\+(\d+(?:\.\d+)*)$/i)
     strategy :page_match do |page, regex|
-      JSON.parse(page)["versions"].map do |version|
-        match = version["openjdk_version"]&.match(regex)
+      JSON.parse(page).map do |release|
+        match = release["release_name"]&.match(regex)
         next if match.blank?
 
         "#{match[1]},#{match[2]}"
