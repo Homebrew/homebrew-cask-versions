@@ -1,12 +1,12 @@
 cask "figma-beta" do
   arch = Hardware::CPU.intel? ? "mac" : "mac-arm"
 
-  version "114.3.0"
+  version "114.4.0"
 
   if Hardware::CPU.intel?
-    sha256 "a07bbcff1d2080de3a2e217b944a82576eea860da23f05de21173035e6cd5096"
+    sha256 "2995caae332c06c66802c056f9fc06dc7e60fc493321bd1c2753705f445fae15"
   else
-    sha256 "34d12d1ae7f0d25b5e9cbd989f368675c1aa45ec9c4f991e5e705ee36636cd9e"
+    sha256 "08266db4a73a58fdd4c96211dc46ceab9159d19807106f48fed5d905eef38a2b"
   end
 
   url "https://desktop.figma.com/#{arch}/beta/FigmaBeta-#{version}.zip"
