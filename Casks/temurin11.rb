@@ -28,7 +28,7 @@ cask "temurin11" do
     end
   end
 
-  pkg "OpenJDK#{version.major}U-jdk_x64_mac_hotspot_#{version.csv.first}_#{version.csv.second.major}.pkg"
+  pkg "OpenJDK#{version.major}U-jdk_#{arch}_mac_hotspot_#{version.csv.first}_#{version.csv.second.major}.pkg"
 
   uninstall pkgutil: "net.temurin.#{version.major}.jdk"
 end
