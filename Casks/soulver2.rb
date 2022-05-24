@@ -9,7 +9,7 @@ cask "soulver2" do
 
   livecheck do
     url :url
-    stategy :extract_plist
+    strategy :extract_plist
   end
 
   auto_updates true
