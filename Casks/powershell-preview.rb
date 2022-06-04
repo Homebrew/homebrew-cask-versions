@@ -1,12 +1,12 @@
 cask "powershell-preview" do
   arch = Hardware::CPU.intel? ? "x64" : "arm64"
 
-  version "7.3.0-preview.3"
+  version "7.3.0-preview.4"
 
   if Hardware::CPU.intel?
-    sha256 "485aec57821bc8df5c628b9362b65277b3d07ae0e8587f636c722aa707fc2eb7"
+    sha256 "b0d5cb6b5b52f99401e156e896239d9f8d8abe328c7ec122ab8c5670e10296c9"
   else
-    sha256 "842cbeb937ff89a22ffba54b4ad4bf0cf4b5777534777e22082306267a570ec6"
+    sha256 "8359077a4b21f6ac6b20ed471e7fc3ae23f9c375b1c66f32b54f426122045066"
   end
 
   url "https://github.com/PowerShell/PowerShell/releases/download/v#{version}/powershell-#{version}-osx-#{arch}.pkg"
