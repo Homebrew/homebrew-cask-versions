@@ -13,7 +13,6 @@ cask "soulver2" do
   end
 
   auto_updates true
-  depends_on macos: ">= :yosemite"
 
   app "Soulver #{version.major}.app"
 
