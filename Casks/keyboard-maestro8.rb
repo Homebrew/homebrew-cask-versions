@@ -7,8 +7,6 @@ cask "keyboard-maestro8" do
   name "Keyboard Maestro"
   homepage "https://www.keyboardmaestro.com/main/"
 
-  depends_on macos: ">= :yosemite"
-
   app "Keyboard Maestro.app"
 
   zap trash: [
