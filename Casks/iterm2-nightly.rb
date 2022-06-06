@@ -12,7 +12,7 @@ cask "iterm2-nightly" do
     "iterm2-beta",
     "iterm2-legacy",
   ]
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :mojave"
 
   app "iTerm.app"
 
