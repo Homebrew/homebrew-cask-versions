@@ -9,7 +9,7 @@ cask "macpass-dev" do
   homepage "https://macpass.github.io/"
 
   conflicts_with cask: "macpass"
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :high_sierra"
 
   app "MacPass.app"
 
