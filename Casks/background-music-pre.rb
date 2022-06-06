@@ -19,7 +19,6 @@ cask "background-music-pre" do
   end
 
   conflicts_with cask: "background-music"
-  depends_on macos: ">= :yosemite"
 
   pkg "BackgroundMusic-#{version}.pkg"
 
