@@ -24,7 +24,7 @@ cask "zulu8" do
     end
   end
 
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :mojave"
 
   pkg "Double-Click to Install Azul Zulu JDK #{version.major}.pkg"
 
