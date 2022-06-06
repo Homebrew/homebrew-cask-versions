@@ -22,12 +22,7 @@ cask "parallels13" do
     "homebrew/cask-versions/parallels15",
     "homebrew/cask-versions/parallels16",
   ]
-  depends_on macos: [
-    :yosemite,
-    :el_capitan,
-    :sierra,
-    :high_sierra,
-  ]
+  depends_on macos: "<= :high_sierra"
 
   app "Parallels Desktop.app"
 
