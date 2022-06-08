@@ -9,7 +9,7 @@ cask "picoscope-beta" do
 
   livecheck do
     url "https://oem.picotech.com/p#{version.major}beta/download/"
-    regex(%r{href=.*?/PicoScope_7_TnM_Early_Access_(\d+(?:\.\d+)+).pkg}i)
+    regex(%r{href=.*?/PicoScope_(?:\d+)_TnM_Early_Access[._-]v?(\d+(?:\.\d+)+).pkg}i)
   end
 
   pkg "PicoScope_#{version.major}_TnM_Early_Access_#{version}.pkg"
