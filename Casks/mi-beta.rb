@@ -1,6 +1,6 @@
 cask "mi-beta" do
-  version "3.6.2,1126"
-  sha256 "b7e40630493bbb7b4387f7a31607d50ba2ac73538252c27223533f12098be027"
+  version "3.6.3,1139"
+  sha256 "169e1820889f65469eb29c5627ebaf26a308ecd3877086869c8db9d6b2dde96e"
 
   url "https://www.mimikaki.net/download/mi#{version.csv.first}.dmg"
   name "mi"
