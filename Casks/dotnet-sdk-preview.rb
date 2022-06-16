@@ -2,8 +2,8 @@ cask "dotnet-sdk-preview" do
   arch = Hardware::CPU.intel? ? "x64" : "arm64"
 
   if Hardware::CPU.intel?
-    version "7.0.100-preview.4.22252.9,6b26f2f0-f2d1-4ca3-a0ae-ffbd8ac31629,174bdf9b481872c7591fa576833c6c30"
-    sha256 "640107113e2ca69abe87a5dd5a3a3cbaab4bc3554d7982a26f77a76a486f3c59"
+    version "7.0.100-preview.5.22307.18,eb929c1e-1148-49fe-ab31-a711a678a023,f8b7c7eaec03e178e8a515ce8a3a7955"
+    sha256 "edb588842b5be03fbce29e13ff6d262236c785704cf6af3ba5543ac12596cf0a"
   else
     version "7.0.100-preview.3.22179.4,3b73829a-6e68-487d-ace5-f96b993f2383,9f1e0a9d4414c9aae6ce64b4f8c620c5"
     sha256 "7c4d779addb6c379c68fd1d3c2afa532063747097c7f5ef13d4815720e4f1ac9"
