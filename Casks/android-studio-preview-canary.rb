@@ -1,12 +1,12 @@
 cask "android-studio-preview-canary" do
   arch = Hardware::CPU.intel? ? "mac" : "mac_arm"
 
-  version "2022.1.1.4"
+  version "2022.1.1.5"
 
   if Hardware::CPU.intel?
-    sha256 "1e60528de36b1bed8149a62fb7f3665250f3f66f6b8f2ec19494b83281fc860b"
+    sha256 "9c5d0d86c2c6314d8bdd3849a6855a328c113d08ed7a33ed9cc596884e170207"
   else
-    sha256 "4cdc6d31f5eaa9a0bc8c233347341a1f249f3df5492707157ff6637745e210bc"
+    sha256 "1f995a224a0fb2daa4c45393be4e827a761025bda0d30c9634b44dbb7ba82d96"
   end
 
   url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-#{version}-#{arch}.zip",
