@@ -1,12 +1,12 @@
 cask "anki-beta" do
   arch = Hardware::CPU.intel? ? "intel" : "apple"
 
-  version "2.1.53+rc2_96bacf79"
+  version "2.1.54+rc1_595c9273"
 
   if Hardware::CPU.intel?
-    sha256 "90ea470354ff6fb15d6aea5836b18d0e4f7e6292c3192a11354222052c896996"
+    sha256 "1d63c5d11bfe148718252414fd1c6c37c379f2585daf227819b1754e62f88ac2"
   else
-    sha256 "273a7e4444f0f10ab81edd95f84b168c53e01e045b75b8e1ed48a208099aac16"
+    sha256 "d6256fe505f82fa7919ba266f2b5d068f77440477042e34bd024d2d76af4039f"
   end
 
   url "https://apps.ankiweb.net/downloads/beta/anki-#{version}-mac-#{arch}-qt6.dmg"
