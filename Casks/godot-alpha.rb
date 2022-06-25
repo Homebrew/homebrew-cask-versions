@@ -1,4 +1,4 @@
-cask "godot-master" do
+cask "godot-alpha" do
     version "4.0-alpha10"
     sha256 "a4f6e466338253cbf2e5334534d9d7aad42773691f7a7749ebe97a3b95d9788a"
 
