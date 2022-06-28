@@ -2,12 +2,12 @@ cask "microsoft-edge-dev" do
   folder = Hardware::CPU.intel? ? "C1297A47-86C4-4C1F-97FA-950631F94777" : "03adf619-38c6-4249-95ff-4a01c0ffc962"
   linkid = Hardware::CPU.intel? ? "2069340" : "2099619"
 
-  version "104.0.1293.1"
+  version "104.0.1293.5"
 
   if Hardware::CPU.intel?
-    sha256 "531c1a4d352b6e4a19833d8772ed34e5523980293705ae689afa4c5f59eab61c"
+    sha256 "440fe1a3b22cbb3badb6ede02fe70ec99c22f83fdcdab2608845bfe2c1ab0ad0"
   else
-    sha256 "bccde36ff37792fe78e071594f52056729375aa5776aa55b2d4c9554c376bc0d"
+    sha256 "ce7ff7a8cbf813013224c02db8d0072860d1273f4eae0f6f1b72fa1c23f66c3a"
   end
 
   url "https://officecdn-microsoft-com.akamaized.net/pr/#{folder}/MacAutoupdate/MicrosoftEdgeDev-#{version}.pkg",
