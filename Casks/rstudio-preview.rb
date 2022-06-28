@@ -1,8 +1,8 @@
 cask "rstudio-preview" do
-  version "2022.02.3,492"
-  sha256 "4f5943222bb2d158fe4ccbbab2323781fc3fdd904e4f00feee8d529476960739"
+  version "2022.07.0,543"
+  sha256 "dae4d48972b37c693a42739b590f975f7b7b4b4a107dca3c9502c082af28f709"
 
-  url "https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-#{version.csv.first}-#{version.csv.second}.dmg",
+  url "https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-#{version.csv.first}-preview-#{version.csv.second}.dmg",
       verified: "s3.amazonaws.com/rstudio-ide-build/"
   name "RStudio"
   desc "Data science software focusing on R and Python"
