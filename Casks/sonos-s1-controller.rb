@@ -1,6 +1,6 @@
 cask "sonos-s1-controller" do
-  version "11.3,57.10.25040"
-  sha256 "ca58d868c0000ee72316a3ee52b9ea4c6d9eabb3d0e06c96fc8649b4975388b1"
+  version "11.4,57.11.28060"
+  sha256 "4ad48ed5d7cb56596a228eeb6e7fc11cb35943c6dcb0cb1b0a7470c21b2192d2"
 
   url "https://update.sonos.com/software/mac/mdcr/SonosDesktopController#{version.csv.first.no_dots}.dmg"
   name "Sonos S1"
@@ -9,7 +9,21 @@ cask "sonos-s1-controller" do
 
   livecheck do
     url "https://www.sonos.com/en/redir/controller_software_mac"
-    strategy :extract_plist
+    regex(/SonosDesktopController[._-]?v?(\d+(?:\.\d+)*)/i)
+    strategy :header_match do |headers|
+      version = headers["location"][regex, 1]
+      next if version.blank?
+
+      cask = CaskLoader.load("sonos-s1-controller")
+      download_url = "https://update.sonos.com/software/mac/mdcr/SonosDesktopController#{version}.dmg"
+      build = Homebrew::Livecheck::Strategy::ExtractPlist.find_versions(cask: cask,
+                                                                        url:  download_url)[:matches].values.first
+      next if build.blank?
+
+      formatted_version = version.include?(".") ? version : version.sub(/(\d\d)(\d+)/, '\1.\2')
+
+      "#{formatted_version},#{build}"
+    end
   end
 
   auto_updates true
