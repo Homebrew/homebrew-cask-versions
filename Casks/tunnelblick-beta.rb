@@ -28,9 +28,9 @@ cask "tunnelblick-beta" do
   end
 
   uninstall launchctl: [
-    "net.tunnelblick.tunnelblick.LaunchAtLogin",
-    "net.tunnelblick.tunnelblick.tunnelblickd",
-  ],
+              "net.tunnelblick.tunnelblick.LaunchAtLogin",
+              "net.tunnelblick.tunnelblick.tunnelblickd",
+            ],
             quit:      "net.tunnelblick.tunnelblick"
 
   zap trash: [
