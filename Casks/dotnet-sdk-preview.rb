@@ -35,9 +35,9 @@ cask "dotnet-sdk-preview" do
   binary "/usr/local/share/dotnet/dotnet"
 
   uninstall pkgutil: [
-    "com.microsoft.dotnet.*",
-    "com.microsoft.netstandard.pack.targeting.*",
-  ],
+              "com.microsoft.dotnet.*",
+              "com.microsoft.netstandard.pack.targeting.*",
+            ],
             delete:  [
               "/etc/paths.d/dotnet",
               "/etc/paths.d/dotnet-cli-tools",
