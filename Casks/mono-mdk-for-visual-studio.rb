@@ -20,9 +20,9 @@ cask "mono-mdk-for-visual-studio" do
   pkg "MonoFramework-MDK-#{version}.macos10.xamarin.universal.pkg"
 
   uninstall delete:  [
-    "/Library/Frameworks/Mono.framework/Versions/#{version.major_minor_patch}",
-    "/private/etc/paths.d/mono-commands",
-  ],
+              "/Library/Frameworks/Mono.framework/Versions/#{version.major_minor_patch}",
+              "/private/etc/paths.d/mono-commands",
+            ],
             pkgutil: "com.xamarin.mono-*",
             rmdir:   [
               "/Library/Frameworks/Mono.framework/Versions",
