@@ -12,15 +12,15 @@ cask "propresenter6" do
   app "ProPresenter #{version.major}.app"
 
   zap trash: [
-    "~/Library/Application Support/RenewedVision/ProPresenter#{version.major}",
-    "~/Library/Caches/KSCrashReports/ProPresenter #{version.major}",
-    "~/Library/Caches/Sessions/ProPresenter #{version.major}",
-    "~/Library/Caches/com.renewedvision.ProPresenter#{version.major}",
-    "~/Library/Preferences/com.renewedvision.ProPresenter#{version.major}.plist",
-    "/Library/Application Support/RenewedVision",
-    "/Library/Caches/com.renewedvision.ProPresenter#{version.major}",
-    "/Users/Shared/Renewed Vision Media",
-  ],
+        "~/Library/Application Support/RenewedVision/ProPresenter#{version.major}",
+        "~/Library/Caches/KSCrashReports/ProPresenter #{version.major}",
+        "~/Library/Caches/Sessions/ProPresenter #{version.major}",
+        "~/Library/Caches/com.renewedvision.ProPresenter#{version.major}",
+        "~/Library/Preferences/com.renewedvision.ProPresenter#{version.major}.plist",
+        "/Library/Application Support/RenewedVision",
+        "/Library/Caches/com.renewedvision.ProPresenter#{version.major}",
+        "/Users/Shared/Renewed Vision Media",
+      ],
       rmdir: [
         "~/Library/Application Support/RenewedVision",
         "~/Library/Caches/KSCrashReports",
