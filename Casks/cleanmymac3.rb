@@ -11,9 +11,9 @@ cask "cleanmymac3" do
   app "CleanMyMac #{version.major}.app"
 
   uninstall delete:     [
-    "/Library/PrivilegedHelperTools/com.macpaw.CleanMyMac#{version.major}.Agent",
-    "/private/var/run/com.macpaw.CleanMyMac#{version.major}.Agent.socket",
-  ],
+              "/Library/PrivilegedHelperTools/com.macpaw.CleanMyMac#{version.major}.Agent",
+              "/private/var/run/com.macpaw.CleanMyMac#{version.major}.Agent.socket",
+            ],
             launchctl:  [
               "com.macpaw.CleanMyMac#{version.major}.Agent",
               "com.macpaw.CleanMyMac#{version.major}.Scheduler",
