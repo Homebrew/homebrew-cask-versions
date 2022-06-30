@@ -26,9 +26,9 @@ cask "microsoft-office-2011" do
             launchctl: "com.microsoft.office.licensing.helper"
 
   zap pkgutil: [
-    "com.microsoft.mau.all.autoupdate.*",
-    "com.microsoft.merp.all.errorreporting.*",
-  ],
+        "com.microsoft.mau.all.autoupdate.*",
+        "com.microsoft.merp.all.errorreporting.*",
+      ],
       trash:   [
         "/Library/LaunchDaemons/com.microsoft.office.licensing.helper.plist",
         "/Library/PrivilegedHelperTools/com.microsoft.office.licensing.helper",
