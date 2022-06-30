@@ -15,10 +15,10 @@ cask "powershell6" do
   uninstall pkgutil: "com.microsoft.powershell"
 
   zap trash: [
-    "~/.cache/powershell",
-    "~/.config/PowerShell",
-    "~/.local/share/powershell",
-  ],
+        "~/.cache/powershell",
+        "~/.config/PowerShell",
+        "~/.local/share/powershell",
+      ],
       rmdir: [
         "~/.cache",
         "~/.config",
