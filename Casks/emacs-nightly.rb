@@ -10,9 +10,9 @@ cask "emacs-nightly" do
   homepage "https://emacsformacosx.com/"
 
   conflicts_with cask:    [
-    "emacs",
-    "emacs-pretest",
-  ],
+                   "emacs",
+                   "emacs-pretest",
+                 ],
                  formula: "emacs"
 
   app "Emacs.app"
