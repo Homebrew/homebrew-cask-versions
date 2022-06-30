@@ -36,10 +36,10 @@ cask "microsoft-edge-beta" do
   uninstall pkgutil: "com.microsoft.edgemac.Beta"
 
   zap trash: [
-    "~/Library/Application Support/Microsoft Edge Beta",
-    "~/Library/Caches/Microsoft Edge Beta",
-    "~/Library/Preferences/com.microsoft.edgemac.Beta.plist",
-    "~/Library/Saved Application State/com.microsoft.edgemac.Beta.savedState",
-  ],
+        "~/Library/Application Support/Microsoft Edge Beta",
+        "~/Library/Caches/Microsoft Edge Beta",
+        "~/Library/Preferences/com.microsoft.edgemac.Beta.plist",
+        "~/Library/Saved Application State/com.microsoft.edgemac.Beta.savedState",
+      ],
       rmdir: "/Library/Application Support/Microsoft"
 end
