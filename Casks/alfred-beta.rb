@@ -1,8 +1,8 @@
 cask "alfred-beta" do
-  version "5.0,2042"
+  version "5.0,EA6,2042"
   sha256 "2b6dbac94210629eecf9caa8daf99a472b5a93846d11525b3469e1bf593068cb"
 
-  url "https://cachefly.alfredapp.com/Alfred_#{version.csv.first}_EA6_#{version.csv.second}.dmg"
+  url "https://cachefly.alfredapp.com/Alfred_#{version.csv.first}_#{version.csv.second}_#{version.csv.third}.dmg"
   name "Alfred"
   desc "Application launcher and productivity software"
   homepage "https://www.alfredapp.com/alfred-5-whats-new/"
@@ -10,10 +10,10 @@ cask "alfred-beta" do
   livecheck do
     url "https://www.alfredapp.com/app/update#{version.major}/general.xml"
     strategy :page_match do |page|
-      match = page.match(/Alfred[._-]v?(\d(?:\.\d+)+)[._-]EA6[._-](\d+)\.tar\.gz/i)
+      match = page.match(/Alfred[._-]v?(\d(?:\.\d+)+)[._-](EA\d+)[._-](\d+)\.tar\.gz/i)
       next if match.blank?
 
-      "#{match[1]},#{match[2]}"
+      "#{match[1]},#{match[2]},#{match[3]}"
     end
   end
 
