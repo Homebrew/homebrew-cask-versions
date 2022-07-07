@@ -1,8 +1,8 @@
 cask "alfred-beta" do
-  version "5.0,EA6,2042"
-  sha256 "2b6dbac94210629eecf9caa8daf99a472b5a93846d11525b3469e1bf593068cb"
+  version "5.0.0,EA7,2043"
+  sha256 "6540c45fda4e5791a0b4ab19ba2835a6e3f369e33aa12f59078132c6fc5be7ca"
 
-  url "https://cachefly.alfredapp.com/Alfred_#{version.csv.first}_#{version.csv.second}_#{version.csv.third}.dmg"
+  url "https://cachefly.alfredapp.com/Alfred_#{version.csv.first}-#{version.csv.second}_#{version.csv.third}.dmg"
   name "Alfred"
   desc "Application launcher and productivity software"
   homepage "https://www.alfredapp.com/alfred-5-whats-new/"
