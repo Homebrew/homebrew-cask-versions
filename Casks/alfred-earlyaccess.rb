@@ -1,4 +1,4 @@
-cask "alfred-beta" do
+cask "alfred-earlyaccess" do
   version "5.0.0,EA7,2043"
   sha256 "6540c45fda4e5791a0b4ab19ba2835a6e3f369e33aa12f59078132c6fc5be7ca"
 
