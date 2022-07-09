@@ -33,7 +33,8 @@ cask "microsoft-edge-beta" do
         },
       ]
 
-  uninstall pkgutil: "com.microsoft.edgemac.Beta"
+  uninstall pkgutil: "com.microsoft.edgemac.Beta",
+            quit:    "com.microsoft.autoupdate2"
 
   zap trash: [
         "~/Library/Application Support/Microsoft Edge Beta",
