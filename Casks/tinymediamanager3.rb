@@ -8,8 +8,8 @@ cask "tinymediamanager3" do
   homepage "https://www.tinymediamanager.org/"
 
   livecheck do
-    url "https://release.tinymediamanager.org/"
-    regex(%r{href=.*?/tmm[._-]v?(3(?:\.\d+)+)[._-]mac\.zip}i)
+    url "https://release.tinymediamanager.org/download_v3.html"
+    regex(%r{href=.*?/tmm[._-]v?(3(?:\.\d+)+)[._-]macos\.zip}i)
   end
 
   auto_updates true
