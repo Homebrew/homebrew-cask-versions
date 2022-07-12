@@ -8,7 +8,7 @@ cask "tinymediamanager3" do
   homepage "https://www.tinymediamanager.org/"
 
   livecheck do
-    url "https://release.tinymediamanager.org/download_v3.html"
+    url "https://release.tinymediamanager.org/download_v#{version.major}.html"
     regex(%r{href=.*?/tmm[._-]v?(3(?:\.\d+)+)[._-]macos\.zip}i)
   end
 
