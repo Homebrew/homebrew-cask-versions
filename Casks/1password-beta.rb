@@ -1,12 +1,12 @@
 cask "1password-beta" do
   arch = Hardware::CPU.intel? ? "x86_64" : "aarch64"
 
-  version "8.8.0-183.BETA"
+  version "8.8.0-197.BETA"
 
   if Hardware::CPU.intel?
-    sha256 "208b15b537e430b53a690495004221ae544d997e5b1450d4cb857620f9ee2adb"
+    sha256 "1ae3c1eddbc6b0e76b2b7f0e3d700a3026d25b6779641feefa40627dfeeb448e"
   else
-    sha256 "52ba5b7b3e21388e4fac4f1d7ca2f522ec767d6d80138ec3393064c3a02311ce"
+    sha256 "e8e2de90b28cacd7d88022ecb93a39f8fe2a2a25b831e94e74bde9038e2630a1"
   end
 
   url "https://downloads.1password.com/mac/1Password-#{version}-#{arch}.zip"
