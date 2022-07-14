@@ -1,11 +1,11 @@
-cask "alfred5" do
-  version "5.0,2053"
-  sha256 "6a28ba21f217d979a1e039bd5523323c414bf7823aa40adee2dc6246d050fcca"
+cask "alfred4" do
+  version "4.6.7,1305"
+  sha256 "9f30310921bd7a7d52d321599674fab916dce36762711e5ad3830d233dcca5aa"
 
   url "https://cachefly.alfredapp.com/Alfred_#{version.csv.first}_#{version.csv.second}.dmg"
   name "Alfred"
   desc "Application launcher and productivity software"
-  homepage "https://www.alfredapp.com/alfred-5-whats-new/"
+  homepage "https://www.alfredapp.com/"
 
   livecheck do
     url "https://www.alfredapp.com/app/update#{version.major}/general.xml"
