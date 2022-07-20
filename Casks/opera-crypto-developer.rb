@@ -1,6 +1,6 @@
 cask "opera-crypto-developer" do
-  version "88.0.4412.37"
-  sha256 "dab91bbf73fe6938fa01b1b58bab2142c2abb01628c6b734397afd3dbe5ec867"
+  version "88.0.4412.64"
+  sha256 "b6d6d83148d7bc3f4da7be1a8f2c1237e38dfdc9240083eba87ab84d88b7caf7"
 
   url "https://ftp.opera.com/pub/opera_crypto-developer/#{version}/mac/Opera_Crypto_Developer_#{version}_Setup.dmg"
   name "Opera Crypto Browser Developer"
