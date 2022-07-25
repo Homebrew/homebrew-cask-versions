@@ -1,8 +1,8 @@
 cask "sonos-s1-controller" do
-  version "11.4,57.11.28060"
-  sha256 "4ad48ed5d7cb56596a228eeb6e7fc11cb35943c6dcb0cb1b0a7470c21b2192d2"
+  version "11.5,57.12-31030"
+  sha256 "d1a2f22dc0a9e4e7563b301698cdf8c5c5ddb54471216ce25ba8c5d225d95859"
 
-  url "https://update.sonos.com/software/mac/mdcr/SonosDesktopController#{version.csv.first.no_dots}.dmg"
+  url "https://update-software.sonos.com/software/ukxehnnu/Sonos_#{version.csv.second}.dmg"
   name "Sonos S1"
   desc "Controller for Gen 1 Sonos products"
   homepage "https://www.sonos.com/"
