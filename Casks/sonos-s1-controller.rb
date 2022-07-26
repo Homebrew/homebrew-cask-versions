@@ -10,7 +10,6 @@ cask "sonos-s1-controller" do
   livecheck do
     url "https://www.sonos.com/en/redir/controller_software_mac"
     strategy :header_match do |headers|
-
       download_url = headers["location"]
       next if download_url.blank?
 
