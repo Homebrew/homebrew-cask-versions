@@ -9,13 +9,13 @@ cask "sonos-s1-controller" do
 
   livecheck do
     url "https://www.sonos.com/en/redir/controller_software_mac"
-    regex(/SonosDesktopController[._-]?v?(\d+(?:\.\d+)*)/i)
     strategy :header_match do |headers|
-      version = headers["location"][regex, 1]
-      next if version.blank?
+
+      download_url = headers["location"]
+      next if download_url.blank?
 
       cask = CaskLoader.load("sonos-s1-controller")
-      download_url = "https://update.sonos.com/software/mac/mdcr/SonosDesktopController#{version}.dmg"
+
       build = Homebrew::Livecheck::Strategy::ExtractPlist.find_versions(cask: cask,
                                                                         url:  download_url)[:matches].values.first
       next if build.blank?
