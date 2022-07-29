@@ -1,7 +1,7 @@
 cask "google-chrome-dev" do
   arch = Hardware::CPU.intel? ? "" : "universal/"
 
-  version "105.0.5137.4"
+  version "105.0.5195.10"
   sha256 :no_check
 
   url "https://dl.google.com/chrome/mac/#{arch}dev/googlechromedev.dmg"
