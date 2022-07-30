@@ -8,7 +8,10 @@ cask "vmware-fusion-tech-preview" do
   homepage "https://blogs.vmware.com/teamfusion/tech-preview"
 
   livecheck do
-    skip "No version information available"
+    url "https://customerconnect.vmware.com/channel/public/api/v1.0/dlg/beta/header?locale=en_US&downloadGroup=FUS-PUBTP-22H2"
+    strategy :page_match do |page|
+      JSON.parse(page)["buildNumber"]
+    end
   end
 
   auto_updates true
