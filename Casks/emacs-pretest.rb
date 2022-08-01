@@ -1,6 +1,6 @@
 cask "emacs-pretest" do
-  version "28.1.90"
-  sha256 "45a308113f4d62ce2c1347141077723d9d2049a8f32a336da16d3d0167d051eb"
+  version "28.1.91"
+  sha256 "917b7c0d0e7fca0d2000457c97bd180e2aa00fbab832238c4b58a72bc2c4628c"
 
   url "https://emacsformacosx.com/emacs-builds/Emacs-pretest-#{version}-universal.dmg"
   name "Emacs"
