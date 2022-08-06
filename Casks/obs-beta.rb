@@ -17,10 +17,8 @@ cask "obs-beta" do
 
   livecheck do
     url "https://github.com/obsproject/obs-studio/releases"
+    strategy :page_match
     regex(/obs[._-]studio[._-](\d+(?:\.\d+)+[._-](?:beta|rc)\d*)[._-]macos[._-]#{arch}\.dmg/i)
-    strategy :page_match do |page, regex|
-      page.scan(regex).map { |match| match[0] }
-    end
   end
 
   auto_updates true
