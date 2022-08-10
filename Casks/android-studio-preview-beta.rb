@@ -1,5 +1,5 @@
 cask "android-studio-preview-beta" do
-  arch = Hardware::CPU.intel? ? "mac" : "mac_arm"
+  arch arm: "mac_arm", intel: "mac"
 
   version "2021.3.1.14"
 
