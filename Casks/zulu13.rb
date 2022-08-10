@@ -1,6 +1,6 @@
 cask "zulu13" do
-  arch = Hardware::CPU.intel? ? "x64" : "aarch64"
-  choice = Hardware::CPU.intel? ? "x86" : "arm"
+  arch arm: "aarch64", intel: "x64"
+  choice = on_arch_conditional arm: "arm", intel: "x86"
 
   version "13.0.12,13.50.15-ca"
 
