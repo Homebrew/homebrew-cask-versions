@@ -1,5 +1,5 @@
 cask "anki-beta" do
-  arch = Hardware::CPU.intel? ? "intel" : "apple"
+  arch arm: "apple", intel: "intel"
 
   version "2.1.54+rc3_a8e34ce4"
 
