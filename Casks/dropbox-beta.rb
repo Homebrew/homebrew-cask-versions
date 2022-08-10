@@ -1,5 +1,5 @@
 cask "dropbox-beta" do
-  arch = Hardware::CPU.intel? ? "" : "&arch=arm64"
+  arch arm: "&arch=arm64"
 
   version "155.3.5473"
 
