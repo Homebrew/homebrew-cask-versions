@@ -1,5 +1,5 @@
 cask "temurin17" do
-  arch = Hardware::CPU.intel? ? "x64" : "aarch64"
+  arch arm: "aarch64", intel: "x64"
 
   version "17.0.4,8"
 
