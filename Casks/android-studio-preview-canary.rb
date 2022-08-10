@@ -1,5 +1,5 @@
 cask "android-studio-preview-canary" do
-  arch = Hardware::CPU.intel? ? "mac" : "mac_arm"
+  arch arm: "mac_arm", intel: "mac"
 
   version "2022.1.1.9"
 
