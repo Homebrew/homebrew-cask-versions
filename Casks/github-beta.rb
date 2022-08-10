@@ -1,6 +1,6 @@
 cask "github-beta" do
-  arch = Hardware::CPU.intel? ? "x64" : "arm64"
-  platform = Hardware::CPU.intel? ? "darwin" : "darwin-arm64"
+  arch arm: "arm64", intel: "x64"
+  platform = on_arch_conditional arm: "darwin-arm64", intel: "darwin"
 
   version "3.0.6-beta2-706ecf57"
 
