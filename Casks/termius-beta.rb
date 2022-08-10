@@ -1,5 +1,5 @@
 cask "termius-beta" do
-  arch = Hardware::CPU.intel? ? "mac-beta" : "mac-beta-arm64"
+  arch arm: "mac-beta-arm64", intel: "mac-beta"
 
   version "7.46.2"
   sha256 :no_check
