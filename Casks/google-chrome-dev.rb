@@ -1,5 +1,5 @@
 cask "google-chrome-dev" do
-  arch = Hardware::CPU.intel? ? "" : "universal/"
+  arch arm: "universal/"
 
   version "106.0.5216.6"
   sha256 :no_check
