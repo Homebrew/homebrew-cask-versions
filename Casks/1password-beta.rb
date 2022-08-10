@@ -1,5 +1,5 @@
 cask "1password-beta" do
-  arch = Hardware::CPU.intel? ? "x86_64" : "aarch64"
+  arch arm: "aarch64", intel: "x86_64"
 
   version "8.9.0-1.BETA"
 
