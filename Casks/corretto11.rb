@@ -1,5 +1,5 @@
 cask "corretto11" do
-  arch = Hardware::CPU.intel? ? "x64" : "aarch64"
+  arch arm: "aarch64", intel: "x64"
 
   version "11.0.16.8.3"
 
