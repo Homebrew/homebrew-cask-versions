@@ -1,8 +1,8 @@
 cask "visual-studio-code-insiders" do
+  arch arm: "darwin-arm64", intel: "darwin"
+
   version :latest
   sha256 :no_check
-
-  arch = Hardware::CPU.intel? ? "darwin" : "darwin-arm64"
 
   url "https://code.visualstudio.com/sha/download?build=insider&os=#{arch}"
   name "Microsoft Visual Studio Code"
