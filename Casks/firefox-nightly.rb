@@ -78,7 +78,7 @@ cask "firefox-nightly" do
     "zh-CN"
   end
 
-  url "https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-central#{language == "en-US" ? "" : "-l10n"}/" do |page|
+  url "https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-central#{(language == "en-US") ? "" : "-l10n"}/" do |page|
     file_path = page.scan(%r{<td><a href="(/pub/firefox/nightly/[^"]+\.mac\.dmg)">}).flatten.grep(/\.#{language}\.mac\.dmg/).max
     [URI.join(page.url, file_path), { verified: "mozilla.net" }]
   end
