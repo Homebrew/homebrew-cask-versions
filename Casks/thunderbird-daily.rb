@@ -15,7 +15,7 @@ cask "thunderbird-daily" do
     "uk"
   end
 
-  url "https://download-installer.cdn.mozilla.net/pub/thunderbird/nightly/latest-comm-central#{language == "en-US" ? "" : "-l10n"}/" do |page|
+  url "https://download-installer.cdn.mozilla.net/pub/thunderbird/nightly/latest-comm-central#{(language == "en-US") ? "" : "-l10n"}/" do |page|
     file_path = page.scan(%r{<td><a href="(/pub/thunderbird/nightly/[^"]+\.mac\.dmg)">}).flatten.grep(/\.#{language}\.mac\.dmg/).max
     [URI.join(page.url, file_path), { verified: "mozilla.net" }]
   end
