@@ -1,12 +1,12 @@
 cask "obs-beta" do
-  arch = Hardware::CPU.intel? ? "x86_64" : "arm64"
+  arch arm: "arm64", intel: "x86_64"
 
-  version "28.0.0-beta1"
+  version "28.0.0-beta2"
 
   if Hardware::CPU.intel?
-    sha256 "0fa2a64acd529485487aeca811ecbd6aac0f3a2dce4bafc2760922412a893939"
+    sha256 "a1126f3c63b66cf6298daa33ef0e4fcb565dcc1aa38b3292556d8d05551c83a9"
   else
-    sha256 "c5d2bd637b08b7d39d38465370e4d6701f7c9f295b31ca0c8d93b59040d58b14"
+    sha256 "4a253a5a4a0fb1f320b82ec676bc67d33f57a40dbc5d7b44106ad2daedade2dc"
   end
 
   url "https://github.com/obsproject/obs-studio/releases/download/#{version}/obs-studio-#{version}-macos-#{arch}.dmg",
