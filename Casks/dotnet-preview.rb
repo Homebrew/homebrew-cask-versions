@@ -1,9 +1,9 @@
 cask "dotnet-preview" do
-  arch = Hardware::CPU.intel? ? "x64" : "arm64"
+  arch arm: "arm64", intel: "x64"
 
   if Hardware::CPU.intel?
-    version "7.0.0-preview.6.22324.4,daa4040d-22af-4cc2-bbcd-ddfded0ab23f,fb6fe137309f9e8634d38b6d930aac16"
-    sha256 "e1b541d73d5d44c93e5e73d5c172ea0cda6b0c3466f10dfd9bc2d427181b6335"
+    version "7.0.0-preview.7.22375.6,b3d72f3f-cbb6-40cf-8f19-2df35554ad35,3f247901e4f567fdf5defcda474ce080"
+    sha256 "a115c8e3e2de64bd8db74f47f625eebbc7d73822322111a582dacbefb56c8849"
   else
     version "7.0.0-preview.1.22076.8,17b7ed90-2cac-4a18-9d04-787fb76a0175,52773df7c2c4982728cc153111c8a0aa"
     sha256 "1910170a8f4c1223a3b7a5cbcbdfb4763e7897e57570d4dd74ece98f08203814"
