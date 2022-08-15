@@ -3,9 +3,10 @@ cask "appcode-eap" do
 
   version "2022.2,222.3345.83"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "49f789d858ab1ffbb75424138fa33113f4373e1390a379415763667ea7e18aa4"
-  else
+  end
+  on_arm do
     sha256 "5f7b318f98086008c262f1d33dbed341c990b31a6dd16eb3c6e68d9e638299a1"
   end
 
