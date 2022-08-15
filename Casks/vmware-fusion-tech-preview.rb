@@ -19,7 +19,7 @@ cask "vmware-fusion-tech-preview" do
   depends_on macos: ">= :catalina"
 
   app "VMware Fusion Tech Preview.app"
-  if Hardware::CPU.intel?
+  on_intel do
     binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vkd/bin/vctl"
     binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmrest"
     binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/VMware OVF Tool/ovftool"
