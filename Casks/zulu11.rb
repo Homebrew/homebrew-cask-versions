@@ -4,9 +4,10 @@ cask "zulu11" do
 
   version "11.0.16,11.58.15-ca"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "debf7d2adde7555fe22aab6f7aad2401cc01f279e7ef869a3e9af186b794942e"
-  else
+  end
+  on_arm do
     sha256 "b87a7d2567e4e0bde7fd631b56d1f1598c0ab4566afbf801d14203dc3e1c9508"
   end
 
