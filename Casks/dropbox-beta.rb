@@ -3,9 +3,10 @@ cask "dropbox-beta" do
 
   version "155.3.5473"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "032ad5ccf48a1b979262be1bd16121b4cd51dbc8fb232978f56a5c1341eb270d"
-  else
+  end
+  on_arm do
     sha256 "6f22e35a5124e3496f4df4fe993ea04ce6b0af0190bf4f6566af096256146769"
   end
 
