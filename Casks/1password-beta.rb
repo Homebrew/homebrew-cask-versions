@@ -3,9 +3,10 @@ cask "1password-beta" do
 
   version "8.9.0-1.BETA"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "dcba17200cfd9a51ad5d47c4aba9bc2b62a9bce58a5cf74f01bbe18d97185a16"
-  else
+  end
+  on_arm do
     sha256 "cf52e9564b857ee5d6e63b20dbe49167cd6837812794b777e095ebf956d3bdb2"
   end
 
