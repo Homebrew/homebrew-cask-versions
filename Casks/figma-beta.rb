@@ -3,9 +3,10 @@ cask "figma-beta" do
 
   version "116.3.5"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "a5e37de108288ed5aea27db5d51efe80b230aa82d3a8e459b7015cd13a6c9e7d"
-  else
+  end
+  on_arm do
     sha256 "4ba3b691653fccd6f2fe9088d024fbf49ab6743534973b88a21196a6b70e08e1"
   end
 
