@@ -3,9 +3,10 @@ cask "signal-beta" do
 
   version "5.55.0-beta.1"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "88e8b8a09963704fe511eaf70c4c26cb7d27578344658de935dfc97432a2ad39"
-  else
+  end
+  on_arm do
     sha256 "ff4e24c36e59a8fbe6532cd097d67b62c344292d78cfe0555547d59f11f40d9a"
   end
 
