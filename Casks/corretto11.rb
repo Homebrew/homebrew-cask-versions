@@ -3,9 +3,10 @@ cask "corretto11" do
 
   version "11.0.16.8.3"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "6ea0caa2d5cedb859ddb470e54dac08377c216b5921c10dedfb1c2f2e0c58545"
-  else
+  end
+  on_arm do
     sha256 "ba5fdc6ce029f8aa2e2789408266334c480616a058f49b3c8696a591fbc997a3"
   end
 
