@@ -4,9 +4,10 @@ cask "zulu15" do
 
   version "15.0.8,15.42.15-ca"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "27f19d400458de8414d2844f6f0d5f86d6220c4aea3e58ecd5aa136c3191b41f"
-  else
+  end
+  on_arm do
     sha256 "4093ee1d83f176d561c14980d5e39b869c9c1c61aea50c5914fd857f12e473ac"
   end
 
