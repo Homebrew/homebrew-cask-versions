@@ -1,24 +1,25 @@
 cask "java-beta" do
   arch arm: "aarch64", intel: "x64"
 
-  version "19,34"
+  version "19,877d6127e982470ba2a7faa31cc93d04,35"
 
-  if Hardware::CPU.intel?
-    sha256 "772c2dd9f1eba0817622d21bacc3707f830e877d50f7270f57efed496b8c3179"
-  else
-    sha256 "d8d26c800f99e2d6f9c7179f29c39f2cca76819c3aa598259c8d7ab86f31a6e1"
+  on_intel do
+    sha256 "e78eae7d8957f27d530196c59f9b6cba68931ee94ee30fb49f2fe6d17a44a882"
+  end
+  on_arm do
+    sha256 "a54aa5134e797c41c516937e555caa671ba70dafbac1b78d74751333f673061d"
   end
 
-  url "https://download.java.net/java/early_access/jdk#{version.major}/#{version.csv.second}/GPL/openjdk-#{version.csv.first}-ea+#{version.csv.second}_macos-#{arch}_bin.tar.gz"
+  url "https://download.java.net/java/GA/jdk#{version.major}/#{version.csv.second}/#{version.csv.third}/GPL/openjdk-#{version.csv.first}_macos-#{arch}_bin.tar.gz"
   name "OpenJDK Early Access Java Development Kit"
   desc "Early access development kit for the Java programming language"
   homepage "https://jdk.java.net/"
 
   livecheck do
     url "https://jdk.java.net/#{version.major}/"
-    regex(/openjdk-(\d+)-ea\+(\d+)_macos-#{arch}_bin\.t/i)
+    regex(%r{([^/]+)/(\d+)/GPL/openjdk-(\d+)_macos-#{arch}_bin\.t}i)
     strategy :page_match do |page, regex|
-      page.scan(regex).map { |match| "#{match[0]},#{match[1]}" }
+      page.scan(regex).map { |match| "#{match[2]},#{match[0]},#{match[1]}" }
     end
   end
 
