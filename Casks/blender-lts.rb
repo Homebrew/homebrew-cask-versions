@@ -3,9 +3,10 @@ cask "blender-lts" do
 
   version "2.93.10"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "21bd814c76d2545c01064434448fad65d2254e726376f594091fda4fc8103e6c"
-  else
+  end
+  on_arm do
     sha256 "314c82351dab9a9345f303587d9ec36154b06fd4151a83ab62d828c7567a43ae"
   end
 
