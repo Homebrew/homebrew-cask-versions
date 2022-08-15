@@ -3,9 +3,10 @@ cask "hyper-canary" do
 
   version "3.3.0-canary.2"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "1743ca816edab631d472a28b5ddcac872d45684c8bb82c5c153eb2fb2ab30b64"
-  else
+  end
+  on_arm do
     sha256 "03642fc6e1a84164657297eecadb9fb3858d07c5d66401109601eb36fc27112a"
   end
 
