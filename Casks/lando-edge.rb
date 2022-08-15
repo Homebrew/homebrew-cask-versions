@@ -3,9 +3,10 @@ cask "lando-edge" do
 
   version "3.6.5"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "31efde4bc474ab63f2eb418fc0891704f31f1f16f0a3023440aada06f5229221"
-  else
+  end
+  on_arm do
     sha256 "4e1789b78690ea0b430ee73460c747b9c234554fc108a581e1802f02eec87af6"
   end
 
