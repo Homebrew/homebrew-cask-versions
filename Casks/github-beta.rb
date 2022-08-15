@@ -4,9 +4,10 @@ cask "github-beta" do
 
   version "3.0.6-beta2-706ecf57"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "162b5b1a481c5715a03f520277007fc0cf5d345989b32d2b1c68d0ca25533e78"
-  else
+  end
+  on_arm do
     sha256 "2fa3751cc0084c51e6544d5ac32d62e5853a3a9293ad8955c4a94394769ae9ed"
   end
 
