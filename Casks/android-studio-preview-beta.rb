@@ -3,9 +3,10 @@ cask "android-studio-preview-beta" do
 
   version "2021.3.1.14"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "a224aae1b713bdccf5f18f70485656fb64ece7231b2f61c2f9d8db6aeb04de8f"
-  else
+  end
+  on_arm do
     sha256 "ceb97d75c6fa6d631a20561bcfb95d73735e9c860df3bca7c1937fef93c12d1e"
   end
 
