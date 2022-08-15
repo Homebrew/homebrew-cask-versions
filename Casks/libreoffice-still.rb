@@ -1,11 +1,13 @@
 cask "libreoffice-still" do
-  arch, folder = Hardware::CPU.intel? ? ["x86-64", "x86_64"] : ["aarch64", "aarch64"]
+  arch arm: "aarch64", intel: "x86-64"
+  folder = on_arch_conditional arm: "aarch64", intel: "x86_64"
 
   version "7.2.7"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "9e6215ff612885aa610bb90248d75dc1299b0e45fa80ced862380999381bc16e"
-  else
+  end
+  on_arm do
     sha256 "9b29a0cb5a658867d97718347bb4980a244a30b64dfe4ff38aed618b97930261"
   end
 
