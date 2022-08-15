@@ -3,9 +3,10 @@ cask "corretto17" do
 
   version "17.0.4.8.1"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "c062b5bc5838ad5ff61f56ccbec7c5724c8090a80c69d85778bbfbd8a17ceb35"
-  else
+  end
+  on_arm do
     sha256 "05951b62c9bc4b28b24c2f6a81b7bbc2dc94ecb74588b461cdc0d25b71d61ffc"
   end
 
