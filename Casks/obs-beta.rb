@@ -3,9 +3,10 @@ cask "obs-beta" do
 
   version "28.0.0-beta2"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "a1126f3c63b66cf6298daa33ef0e4fcb565dcc1aa38b3292556d8d05551c83a9"
-  else
+  end
+  on_arm do
     sha256 "4a253a5a4a0fb1f320b82ec676bc67d33f57a40dbc5d7b44106ad2daedade2dc"
   end
 
