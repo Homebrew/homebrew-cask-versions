@@ -18,7 +18,7 @@ cask "processing3" do
   end
 
   conflicts_with cask: [
-    "homebrew/cask-versions/processing",
+    "homebrew/cask/processing",
     "homebrew/cask-versions/processing2",
     "homebrew/cask-versions/processing-beta",
   ]
