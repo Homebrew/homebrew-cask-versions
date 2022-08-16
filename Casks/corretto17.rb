@@ -1,10 +1,10 @@
 cask "corretto17" do
   arch arm: "aarch64", intel: "x64"
 
-  version "17.0.4.8.1"
+  version "17.0.4.9.1"
 
   on_intel do
-    sha256 "c062b5bc5838ad5ff61f56ccbec7c5724c8090a80c69d85778bbfbd8a17ceb35"
+    sha256 "a91db130cbf99ab993d5d579a71ee7cd7c2682c2b6698d9353db1a5393b01f7f"
   end
   on_arm do
     sha256 "05951b62c9bc4b28b24c2f6a81b7bbc2dc94ecb74588b461cdc0d25b71d61ffc"
