@@ -7,7 +7,7 @@ cask "corretto11" do
     sha256 "1b256d7104ebc0f72d7745962e0ab47cbbbd976f93481f31bd4a7d40812d739a"
   end
   on_arm do
-    sha256 "ba5fdc6ce029f8aa2e2789408266334c480616a058f49b3c8696a591fbc997a3"
+    sha256 "a460362f97e5371221e76386ea08ba0773c524f8ce7a2f85cb398b62f5c28aca"
   end
 
   url "https://corretto.aws/downloads/resources/#{version.sub(/-\d+/, "")}/amazon-corretto-#{version}-macosx-#{arch}.pkg"
