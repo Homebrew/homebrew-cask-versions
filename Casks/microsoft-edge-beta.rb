@@ -3,10 +3,10 @@ cask "microsoft-edge-beta" do
                                intel: "C1297A47-86C4-4C1F-97FA-950631F94777"
   linkid = on_arch_conditional arm: "2099618", intel: "2069439"
 
-  version "104.0.1293.44"
+  version "105.0.1343.7"
 
   on_intel do
-    sha256 "385994f21d19eb7f136a171f5bf7ff79d02c0ddceb9fe76d7a86cd5437b4a6d7"
+    sha256 "98a95ef69c90f6bde4d91a23f3f138ab1910785d7decff8c949bc7d036c81cf7"
   end
   on_arm do
     sha256 "5faadb8e000e4f7e5ec76cabfa970320e10c8dc03d331e99455048a6e557899d"
