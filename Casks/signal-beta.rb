@@ -4,7 +4,7 @@ cask "signal-beta" do
   version "5.56.0-beta.1"
 
   on_intel do
-    sha256 "88e8b8a09963704fe511eaf70c4c26cb7d27578344658de935dfc97432a2ad39"
+    sha256 "91117ef684ef8985bea49b04f39fcb6ce9873100399c39594fd2a1715c6dfdb8"
   end
   on_arm do
     sha256 "da3ccf3039de3f48ce07701823da218802b8c1be8fee8e71978d6b5c797f95f1"
