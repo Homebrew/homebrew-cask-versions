@@ -4,7 +4,7 @@ cask "dropbox-beta" do
   version "156.3.4852"
 
   on_intel do
-    sha256 "032ad5ccf48a1b979262be1bd16121b4cd51dbc8fb232978f56a5c1341eb270d"
+    sha256 "c5d4516fcdce1b4fe8116afa53a1bc65c800c2bd1772be2334db0363c089f6b1"
   end
   on_arm do
     sha256 "20f840706508e045bb6b91573588537fb204fe6728665e16657595ef4331bd6a"
