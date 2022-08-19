@@ -9,7 +9,7 @@ cask "processing2" do
 
   conflicts_with cask: [
     "processing",
-    "processing-beta",
+    "processing3",
   ]
 
   app "Processing.app"
