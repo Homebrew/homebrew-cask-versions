@@ -2,13 +2,8 @@ cask "hyper-canary" do
   arch arm: "arm64", intel: "x64"
 
   version "3.4.0-canary.1"
-
-  on_intel do
-    sha256 "e1ca5dd3685613bc944c03285611ac2739c450800ed35048edaa9f69458ddfeb"
-  end
-  on_arm do
-    sha256 "66b3550de27ec0afde359e6fd5105176bd6446a7cfc11964636156bcbfb8724f"
-  end
+  sha256 arm:   "66b3550de27ec0afde359e6fd5105176bd6446a7cfc11964636156bcbfb8724f",
+         intel: "e1ca5dd3685613bc944c03285611ac2739c450800ed35048edaa9f69458ddfeb"
 
   url "https://github.com/vercel/hyper/releases/download/v#{version}/Hyper-#{version}-mac-#{arch}.zip",
       verified: "github.com/vercel/hyper/"
