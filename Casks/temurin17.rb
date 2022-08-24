@@ -1,9 +1,9 @@
 cask "temurin17" do
   arch arm: "aarch64", intel: "x64"
 
-  version "17.0.4,8"
-  sha256 arm:   "632e8220e4a71f73c51fe518551d8a7919eea7943339e435cd6fd61f6089cf0d",
-         intel: "c67a539ab49d64de71d62dcdbed9f64c81ecddf67b654299cf0e2521ca0008c5"
+  version "17.0.4.1,1"
+  sha256 arm:   "a3e88dec23869b7e05fcb17cb86fb97e09448171ba6dd73c1577f794aa94a6ff",
+         intel: "a55881728d023626de45c48151bb132b699bafdba1a073c0597dcb1b48c812eb"
 
   url "https://github.com/adoptium/temurin#{version.major}-binaries/releases/download/jdk-#{version.csv.first}%2B#{version.csv.second}/OpenJDK#{version.major}U-jdk_#{arch}_mac_hotspot_#{version.csv.first}_#{version.csv.second.major}.pkg",
       verified: "github.com/adoptium/"
