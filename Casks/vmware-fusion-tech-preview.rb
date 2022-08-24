@@ -19,11 +19,6 @@ cask "vmware-fusion-tech-preview" do
   depends_on macos: ">= :catalina"
 
   app "VMware Fusion Tech Preview.app"
-  on_intel do
-    binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vkd/bin/vctl"
-    binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmrest"
-    binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/VMware OVF Tool/ovftool"
-  end
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-bridge"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-cfgcli"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmnet-cli"
@@ -47,6 +42,12 @@ cask "vmware-fusion-tech-preview" do
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmware-vmx"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmware-vmx-debug"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmware-vmx-stats"
+
+  on_intel do
+    binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vkd/bin/vctl"
+    binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmrest"
+    binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/VMware OVF Tool/ovftool"
+  end
 
   postflight do
     system_command "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/Initialize VMware Fusion.tool",
