@@ -1,6 +1,6 @@
 cask "chromedriver-beta" do
-  version "104.0.5112.29"
-  sha256 "8d99798f46321211a95f076f8bdd30409cd6a387e873592328f4028657e70f35"
+  version "105.0.5195.19"
+  sha256 "2eaa35f3144f6a7e151066b88ce9b55c5843131f25a5041be0786ddbd2c6b825"
 
   url "https://chromedriver.storage.googleapis.com/#{version}/chromedriver_mac64.zip",
       verified: "chromedriver.storage.googleapis.com/"
