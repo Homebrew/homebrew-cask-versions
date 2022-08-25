@@ -1,6 +1,6 @@
 cask "microsoft-openjdk11" do
-  version "11.0.15"
-  sha256 "719841cd3ef3446f54f90df2452583e0b0fd43fe98d99a2ec96d683adac88830"
+  version "11.0.16.1"
+  sha256 "28470754a8cbf0c6f6011b3983c2c83620869043976ba3d0eba643ec0ed1a68b"
 
   url "https://aka.ms/download-jdk/microsoft-jdk-#{version}-macOS-x64.pkg",
       verified: "aka.ms/download-jdk/"
