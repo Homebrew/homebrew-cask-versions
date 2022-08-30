@@ -1,7 +1,8 @@
 cask "vlc-nightly" do
+  arch arm: "arm64", intel: "x86_64"
+
   version :latest
   sha256 :no_check
-  arch arm: "arm64", intel: "x86_64"
 
   url "https://artifacts.videolan.org/vlc/nightly-macos-#{arch}/" do |page|
     folder_path = page[%r{\d+-\d+/}]
