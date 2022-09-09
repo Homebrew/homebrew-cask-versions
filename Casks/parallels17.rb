@@ -1,4 +1,4 @@
-cask "parallels" do
+cask "parallels17" do
   version "17.1.4-51567"
   sha256 "8232f140e4c5b95821bf5063fb37db356f7bab520ddabbab4a73d08b5de0cd10"
 
