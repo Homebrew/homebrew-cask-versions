@@ -14,6 +14,7 @@ cask "parallels" do
 
   auto_updates true
   conflicts_with cask: [
+    "parallels",
     "homebrew/cask-versions/parallels12",
     "homebrew/cask-versions/parallels13",
     "homebrew/cask-versions/parallels14",
