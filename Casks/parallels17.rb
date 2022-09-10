@@ -1,6 +1,6 @@
-cask "parallels16" do
-  version "16.5.2-50703"
-  sha256 "97c01c7baad422192158e25516e394889008b992cb759fe3498a66acc2ae16b0"
+cask "parallels17" do
+  version "17.1.4-51567"
+  sha256 "8232f140e4c5b95821bf5063fb37db356f7bab520ddabbab4a73d08b5de0cd10"
 
   url "https://download.parallels.com/desktop/v#{version.major}/#{version}/ParallelsDesktop-#{version}.dmg"
   name "Parallels Desktop"
@@ -8,11 +8,8 @@ cask "parallels16" do
   homepage "https://www.parallels.com/products/desktop/"
 
   livecheck do
-    url "https://kb.parallels.com/en/125053"
-    regex(/(v?\d+(?:\.\d+)+\s*\(\d+\)|\(v?\d+(?:\.\d+)+-\d+\))/i)
-    strategy :page_match do |page, regex|
-      page.scan(regex).map { |match| match.first.strip.tr("()", "").gsub(/\s+/, "-") }
-    end
+    url "https://www.parallels.com/directdownload/pd#{version.major}/image/"
+    strategy :header_match
   end
 
   auto_updates true
@@ -22,7 +19,7 @@ cask "parallels16" do
     "homebrew/cask-versions/parallels13",
     "homebrew/cask-versions/parallels14",
     "homebrew/cask-versions/parallels15",
-    "homebrew/cask-versions/parallels17",
+    "homebrew/cask-versions/parallels16",
   ]
   depends_on macos: ">= :high_sierra"
 
@@ -45,8 +42,7 @@ cask "parallels16" do
     set_ownership "#{appdir}/Parallels Desktop.app"
   end
 
-  uninstall signal: ["TERM", "com.parallels.desktop.console"],
-            delete: [
+  uninstall delete: [
               "/usr/local/bin/prl_convert",
               "/usr/local/bin/prl_disk_tool",
               "/usr/local/bin/prl_perf_ctl",
@@ -55,7 +51,8 @@ cask "parallels16" do
               "/usr/local/bin/prlexec",
               "/usr/local/bin/prlsrvctl",
               "/Library/Preferences/Parallels",
-            ]
+            ],
+            signal: ["TERM", "com.parallels.desktop.console"]
 
   zap trash: [
     "~/.parallels_settings",
