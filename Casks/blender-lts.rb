@@ -10,15 +10,18 @@ cask "blender-lts" do
   desc "Free and open-source 3D creation suite"
   homepage "https://www.blender.org/"
 
+  # NOTE: The download page contents may change once the newest version is no
+  # longer an LTS version (i.e. 3.4 instead of 3.3 LTS) requiring further
+  # changes to this setup.
   livecheck do
     url "https://www.blender.org/download/lts/"
     regex(%r{href=.*?/blender[._-]v?(\d+(?:\.\d+)+)-macOS-#{arch}\.dmg}i)
     strategy :page_match do |page, regex|
-      minor_version = page[%r{href=["'].*/download/lts/(\d+(?:[.-]\d+)+)/["' >]}i, 1]
-      next [] if minor_version.blank?
+      major_minor = page[%r{href=["'].*/download/lts/(\d+(?:[.-]\d+)+)/["' >]}i, 1]
+      next if major_minor.blank?
 
-      version_page = Homebrew::Livecheck::Strategy.page_content("https://www.blender.org/download/lts/#{minor_version}/")
-      next [] if version_page[:content].blank?
+      version_page = Homebrew::Livecheck::Strategy.page_content("https://www.blender.org/download/")
+      next if version_page[:content].blank?
 
       version_page[:content].scan(regex).flatten
     end
