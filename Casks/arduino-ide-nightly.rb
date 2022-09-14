@@ -5,14 +5,14 @@ cask "arduino-ide-nightly" do
   url "https://downloads.arduino.cc/arduino-ide/nightly/arduino-ide_nightly-latest_macOS_64bit.dmg"
   name "Arduino IDE"
   desc "Electronics prototyping platform"
-  homepage "https://www.arduino.cc/en/software#experimental-software"
+  homepage "https://www.arduino.cc/en/software"
 
-  conflicts_with cask: "arduino-ide-beta"
+  conflicts_with cask: "arduino-ide"
 
   app "Arduino IDE.app"
 
   zap trash: [
-    "~/Library/Application Support/arduino-ide",
     "~/.arduinoIDE",
+    "~/Library/Application Support/arduino-ide",
   ]
 end
