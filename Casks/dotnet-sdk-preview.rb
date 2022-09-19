@@ -6,8 +6,8 @@ cask "dotnet-sdk-preview" do
     sha256 "dd504b6f5cd42e331932d6e91730794622babbfcf1e897ec93de5b813a1a2339"
   end
   on_arm do
-    version "7.0.100-preview.7.22377.5,064356b7-bf90-4c32-bfa9-f5acad1b24fb,dafa5b5f0b7c57d851f5af4d78db2f61"
-    sha256 "dd2cac1674c8208c9bfe9735833d18cabd57e116b998133c14e1eb3bd7251816"
+    version "7.0.100-rc.1.22431.12,a600948e-4b2b-40d2-8551-57d85492df13,196fed4c3c6c5498a0b861127353cc07"
+    sha256 "681917e612a9cc5b623e0585bd6f0c5fedccc2c8a0c151611b0dbf2ffc9257de"
   end
 
   url "https://download.visualstudio.microsoft.com/download/pr/#{version.csv[1]}/#{version.csv[2]}/dotnet-sdk-#{version.csv[0]}-osx-#{arch}.pkg"
