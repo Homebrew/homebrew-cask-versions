@@ -16,4 +16,10 @@ cask "qgis-ltr" do
   end
 
   app "QGIS-LTR.app"
+
+  zap trash: [
+    "~/Library/Application Support/QGIS",
+    "~/Library/Caches/QGIS",
+    "~/Library/Saved Application State/org.qgis.qgis*.savedState",
+  ]
 end
