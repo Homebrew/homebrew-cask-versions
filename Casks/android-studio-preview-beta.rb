@@ -16,12 +16,9 @@ cask "android-studio-preview-beta" do
     regex(%r{href=.*?/android[._-]studio[._-]v?(\d+(?:\.\d+)+)[._-]#{arch}\.zip(.*\n*\s*.*)(Beta|RC)}i)
   end
 
-  conflicts_with cask: [
-    "android-studio-preview-canary",
-    "android-studio",
-  ]
+  conflicts_with cask: "android-studio-preview-canary"
 
-  app "Android Studio.app"
+  app "Android Studio Preview.app"
 
   zap trash: [
         "~/.android",
