@@ -1,6 +1,6 @@
 cask "vmware-fusion-tech-preview" do
-  version "20191287"
-  sha256 "9bbf705202e78e2bd988b0f44f9733145460d797f1b4260819c5075f0ae8f287"
+  version "20486664"
+  sha256 "8c74005d88edb0e37d2ac3517f4e72ce85613abb2dfaaea78fe3db8d2c7b17fd"
 
   url "https://download3.vmware.com/software/FUS-PUBTP-22H2/VMware-Fusion-e.x.p-#{version}_universal.dmg"
   name "VMware Fusion Tech Preview"
