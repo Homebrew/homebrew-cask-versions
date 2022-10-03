@@ -1,6 +1,6 @@
 cask "skype-preview" do
-  version "8.89.76.300"
-  sha256 "fd08ec8002c0d172f1fb6df2767491407a77dd2df73feb32397881ab733689ff"
+  version "8.89.76.401"
+  sha256 "7b14b8ad1761e2cbfc4ab5d4f8d05d7cc3cf44ee8bb8165dba20a9fef420dabf"
 
   url "https://endpoint920510.azureedge.net/s4l/s4l/download/mac/Skype-#{version}.dmg",
       verified: "endpoint920510.azureedge.net/s4l/s4l/download/mac/"
