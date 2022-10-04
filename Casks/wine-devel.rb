@@ -1,6 +1,6 @@
 cask "wine-devel" do
-  version "7.17"
-  sha256 "5b2574de4a6b628e22be508cce39b79474bd3cc0ba9f4b048c9d882ac5533938"
+  version "7.18"
+  sha256 "d4a7d39c25cc418c18c7250bf26f16a80714fd117394462c7db0371954028983"
 
   # Current winehq packages are deprecated and these are packages from
   # the new maintainers that will eventually be pushed to Winehq.
@@ -12,9 +12,8 @@ cask "wine-devel" do
   homepage "https://wiki.winehq.org/MacOS"
 
   livecheck do
-    url "https://github.com/Gcenx/macOS_Wine_builds/releases"
-    strategy :page_match
-    regex(/href=.*?wine[._-]devel[._-]v?(\d+(?:\.\d+)+)[._-]osx64\.t/i)
+    url :url
+    strategy :github_latest
   end
 
   conflicts_with cask: [
