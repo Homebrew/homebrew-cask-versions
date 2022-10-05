@@ -1,5 +1,5 @@
 cask "mailmate-beta" do
-  version :latest
+  version "5918"
   sha256 :no_check
 
   url "https://updates.mailmate-app.com/archives/MailMateBeta.tbz",
@@ -8,6 +8,12 @@ cask "mailmate-beta" do
   desc "IMAP email client"
   homepage "https://freron.com/"
 
+  livecheck do
+    url "https://updates.mailmate-app.com/beta_release_notes"
+    regex(/Revision\s(\d+)/i)
+  end
+
+  conflicts_with cask: "mailmate"
   depends_on macos: ">= :big_sur"
 
   app "MailMate.app"
