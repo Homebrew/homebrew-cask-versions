@@ -1,0 +1,25 @@
+cask "mailmate-beta" do
+  version :latest
+  sha256 :no_check
+
+  url "https://updates.mailmate-app.com/archives/MailMateBeta.tbz",
+      verified: "mailmate-app.com/"
+  name "MailMate"
+  desc "IMAP email client"
+  homepage "https://freron.com/"
+
+  depends_on macos: ">= :big_sur"
+
+  app "MailMate.app"
+  binary "#{appdir}/MailMate.app/Contents/Resources/emate"
+
+  zap trash: [
+    "~/Library/Application Scripts/com.freron.MailMate.MailMateShare",
+    "~/Library/Application Support/MailMate",
+    "~/Library/Caches/com.apple.helpd/Generated/MailMate Help*1.13.2",
+    "~/Library/Caches/com.freron.MailMate",
+    "~/Library/Containers/com.freron.MailMate.MailMateShare",
+    "~/Library/Preferences/com.freron.MailMate.plist",
+    "~/Library/Saved Application State/com.freron.MailMate.savedState",
+  ]
+end
