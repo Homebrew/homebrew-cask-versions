@@ -12,7 +12,7 @@ cask "picoscope-beta" do
     regex(%r{href=.*?/PicoScope_?(\d+(?:\.\d+)+).pkg}i)
   end
 
-  pkg "PicoScope_#{version.major}_TnM_Early_Access_#{version}.pkg"
+  pkg "PicoScope_#{version}.pkg"
 
   uninstall pkgutil: "com.picotech.picoscope#{version.major}tnmbeta"
 end
