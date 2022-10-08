@@ -10,12 +10,9 @@ cask "tunnelblick-beta" do
 
   livecheck do
     url "https://github.com/Tunnelblick/Tunnelblick/releases"
-    regex(%r{href=.*?/Tunnelblick_(\d+(?:\.\d+)*beta(?:\d+))_build_(\d+)\.dmg}i)
+    regex(/Tunnelblick\s+?(\d+(?:\.\d+)*beta(?:\d+)[a-z]?)\s+?\(build\s+?(\d+)/i)
     strategy :page_match do |page, regex|
-      match = page.match(regex)
-      next if match.blank?
-
-      "#{match[1]},#{match[2]}"
+      page.scan(regex).map { |match| "#{match[0]},#{match[1]}" }
     end
   end
 
