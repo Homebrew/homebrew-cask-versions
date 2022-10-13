@@ -1,14 +1,17 @@
 cask "local-beta" do
-  version "6.4.3,6069"
-  sha256 "bf00af14409ba990a876eb21183cee44446570a31a4136d8d9806586087d1361"
+  arch arm: "mac-arm64", intel: "mac"
+  version "6.5.0,6164"
+  sha256  arm: "e89ebbea4a5d234dfe51902e7a21a3d706e641e7ba79146c31cc1fc34a95c9d3",
+          intel: "16317d4db5b9e0fe234fbc9375aeb109a79c268cb3e9713443ff627cd1233e09",
 
-  url "https://cdn.localwp.com/releases-beta/#{version.csv.first}+local-beta-#{version.csv.second}/local-beta-#{version.csv.first}-b#{version.csv.second}-mac.dmg"
+
+  url "https://cdn.localwp.com/releases-beta/#{version.csv.first}+local-beta-#{version.csv.second}/local-beta-#{version.csv.first}-b#{version.csv.second}-#{arch}.dmg"
   name "Local Beta"
   desc "WordPress local development tool by Flywheel (beta)"
   homepage "https://localwp.com/"
 
   livecheck do
-    url "https://cdn.localwp.com/beta/latest/mac"
+    url "https://cdn.localwp.com/beta/latest/#{arch}"
     regex(%r{/(\d+(?:\.\d+)+)\+local-beta-(\d+)/}i)
     strategy :header_match do |headers, regex|
       match = headers["location"]&.match(regex)
