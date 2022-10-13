@@ -5,6 +5,7 @@ cask "soulver2" do
   url "https://d1k3ac1niusr4e.cloudfront.net/soulver#{version.major}.zip",
       verified: "d1k3ac1niusr4e.cloudfront.net/"
   name "Soulver"
+  desc "Text editor and calculator"
   homepage "https://soulver.app/"
 
   livecheck do
