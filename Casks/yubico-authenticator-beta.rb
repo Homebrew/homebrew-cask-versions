@@ -9,10 +9,10 @@ cask "yubico-authenticator-beta" do
 
   livecheck do
     url :homepage
-    strategy :page_match
-    regex(%r{href=.*?/yubioath-desktop-(\d+(?:\.\d+)*-beta(?:\.\d+)*)-mac\.dmg}i)
+    regex(/yubioath[._-]desktop[._-]v?(\d+(?:\.\d+)*-beta(?:\.\d+)*)[._-]mac\.dmg/i)
   end
 
-  # Renamed to avoid conflict with yubico-authenticator.
-  app "Yubico Authenticator.app", target: "Yubico Authenticator Beta.app"
+  conflicts_with cask: "homebrew/cask-drivers/yubico-authenticator"
+
+  app "Yubico Authenticator.app"
 end
