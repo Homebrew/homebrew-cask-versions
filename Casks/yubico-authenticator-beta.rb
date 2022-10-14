@@ -12,7 +12,6 @@ cask "yubico-authenticator-beta" do
     regex(/yubioath[._-]desktop[._-]v?(\d+(?:\.\d+)*-beta(?:\.\d+)*)[._-]mac\.dmg/i)
   end
 
-  conflicts_with cask: "yubico-authenticator"
-
-  app "Yubico Authenticator.app"
+  # Renamed to avoid conflict with yubico-authenticator.
+  app "Yubico Authenticator.app", target: "Yubico Authenticator Beta.app"
 end
