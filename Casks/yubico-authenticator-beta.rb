@@ -12,7 +12,7 @@ cask "yubico-authenticator-beta" do
     regex(/yubioath[._-]desktop[._-]v?(\d+(?:\.\d+)*-beta(?:\.\d+)*)[._-]mac\.dmg/i)
   end
 
-  conflicts_with cask: "homebrew/cask-drivers/yubico-authenticator"
+  conflicts_with cask: "yubico-authenticator"
 
   app "Yubico Authenticator.app"
 end
