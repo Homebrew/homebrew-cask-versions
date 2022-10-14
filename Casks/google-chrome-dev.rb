@@ -1,7 +1,7 @@
 cask "google-chrome-dev" do
   arch arm: "universal/"
 
-  version "108.0.5343.2"
+  version "108.0.5355.0"
   sha256 :no_check
 
   url "https://dl.google.com/chrome/mac/#{arch}dev/googlechromedev.dmg"
