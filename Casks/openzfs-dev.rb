@@ -25,9 +25,6 @@ cask "openzfs-dev" do
 
   conflicts_with cask: "openzfs"
   depends_on macos: ">= :catalina"
-  depends_on arch: :intel
-
-  pkg "OpenZFSonOsX-#{version.csv.first}-Catalina-10.15.pkg"
 
   postflight do
     set_ownership "/usr/local/zfs"
