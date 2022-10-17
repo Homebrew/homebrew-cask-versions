@@ -1,12 +1,17 @@
 cask "openzfs-dev" do
-  if MacOS.version < :el_capitan
-    version "2.1.99,369"
-    sha256 "932db021cddc7de34aa9d50cdad723b0b437dfdf2161150ca416fc68cad8e1c9"
-    pkg "OpenZFSonOsX-#{version.csv.first}-EL.CAPITAN-10.11.pkg"
-  else
-    version "2.1.99,368"
-    sha256 "c64f103b696218202df7f758cc9d4c9995f56b2108fa072eb4c03aef9457219c"
-    pkg "OpenZFSonOsX-#{version.csv.first}-Catalina-10.15.pkg"
+  on_intel do
+    on_catalina :or_newer do
+      version "2.1.99,374"
+      sha256 "0708be51f448be5e85a763f240ebcb7ec8f980694c68a00beb0e852764292b52"
+      pkg "OpenZFSonOsX-#{version.csv.first}-Catalina-10.15.pkg"
+    end
+  end
+  on_arm do
+    on_monterey :or_newer do
+      version "2.1.99,378"
+      sha256 "160fa584a59e00a1ac71f8807cd3822ed8a55d985ae25ea69e699c5a20de0e66"
+      pkg "OpenZFSonOsX-#{version.csv.first}-Monterey-12.pkg"
+    end
   end
 
   url "https://openzfsonosx.org/forum/download/file.php?id=#{version.csv.second}"
@@ -19,8 +24,10 @@ cask "openzfs-dev" do
   end
 
   conflicts_with cask: "openzfs"
-  depends_on macos: ">= :el_capitan"
+  depends_on macos: ">= :catalina"
   depends_on arch: :intel
+
+  pkg "OpenZFSonOsX-#{version.csv.first}-Catalina-10.15.pkg"
 
   postflight do
     set_ownership "/usr/local/zfs"
