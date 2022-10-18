@@ -1,17 +1,14 @@
 cask "openzfs-dev" do
   on_intel do
-    on_catalina :or_newer do
-      version "2.1.99,374"
-      sha256 "0708be51f448be5e85a763f240ebcb7ec8f980694c68a00beb0e852764292b52"
-      pkg "OpenZFSonOsX-#{version.csv.first}-Catalina-10.15.pkg"
-    end
+    version "2.1.99,374"
+    sha256 "0708be51f448be5e85a763f240ebcb7ec8f980694c68a00beb0e852764292b52"
+    pkg "OpenZFSonOsX-#{version.csv.first}-Catalina-10.15.pkg"
   end
   on_arm do
-    on_monterey :or_newer do
-      version "2.1.99,378"
-      sha256 "160fa584a59e00a1ac71f8807cd3822ed8a55d985ae25ea69e699c5a20de0e66"
-      pkg "OpenZFSonOsX-#{version.csv.first}-Monterey-12.pkg"
-    end
+    depends_on macos: ">= :monterey"
+    version "2.1.99,378"
+    sha256 "160fa584a59e00a1ac71f8807cd3822ed8a55d985ae25ea69e699c5a20de0e66"
+    pkg "OpenZFSonOsX-#{version.csv.first}-Monterey-12.pkg"
   end
 
   url "https://openzfsonosx.org/forum/download/file.php?id=#{version.csv.second}"
