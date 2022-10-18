@@ -14,5 +14,5 @@ cask "opera-crypto-developer" do
 
   auto_updates true
 
-  app "Opera Crypto Developer.app"
+  app "Opera Crypto.app"
 end
