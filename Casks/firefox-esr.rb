@@ -74,7 +74,7 @@ cask "firefox-esr" do
   homepage "https://www.mozilla.org/en-US/firefox/all/#product-desktop-esr"
 
   livecheck do
-    url "https://download.mozilla.org/?product=firefox-esr-next-latest-ssl&os=osx&lang=en-US"
+    url "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=osx&lang=en-US"
     strategy :header_match
   end
 
