@@ -8,6 +8,12 @@ cask "utm-beta" do
   desc "Virtual machines UI using QEMU"
   homepage "https://mac.getutm.app/"
 
+  livecheck do
+    url "https://github.com/utmapp/UTM/releases?q=prerelease%3Atrue&expanded=true"
+    regex(%r{href=["']?[^"' >]*?/tag/\D*?(\d+(?:\.\d+)+)[^"' >]*?["' >]}i)
+    strategy :page_match
+  end
+
   conflicts_with cask: "utm"
 
   app "UTM.app"
