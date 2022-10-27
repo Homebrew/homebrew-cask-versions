@@ -1,10 +1,18 @@
 cask "virtualbox-beta" do
-  version "6.1.0_BETA2,134221"
-  sha256 "2b48d3cb8b956e07ab2237a559c5be8916401284f0cf9c729d20a4f7fdc1a52c"
+  on_intel do
+    version "7.0.0_BETA3,153829"
+    sha256 "a97ad4e37f975ec3ec093a1dfc58f456cac2066f27ccc743a523a261235785b0"
+    url "https://download.virtualbox.org/virtualbox/#{version.csv.first}/VirtualBox-#{version.csv.first}-#{version.csv.second}-OSX.dmg"
+  end
+  on_arm do
+    version "7.0.2,BETA4,154219"
+    sha256 "c5b85d3168faabc269035d82d2510b92937d4e389ef93139b4333960cd683582"
+    url "https://download.virtualbox.org/virtualbox/#{version.csv.first}/VirtualBox-#{version.csv.first}_#{version.csv.second}-#{version.csv.third}-macOSArm64.dmg"
+  end
 
-  url "https://download.virtualbox.org/virtualbox/#{version.csv.first}/VirtualBox-#{version.csv.first}-#{version.csv.second}-OSX.dmg"
   appcast "https://download.virtualbox.org/virtualbox/LATEST-BETA.TXT"
   name "Oracle VirtualBox"
+  desc "Virtualizer for x86 and arm64 hardware"
   homepage "https://www.virtualbox.org/wiki/Testbuilds"
 
   conflicts_with cask: "virtualbox"
