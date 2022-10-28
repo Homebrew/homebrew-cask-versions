@@ -3,14 +3,29 @@ cask "virtualbox-beta" do
     version "7.0.0_BETA3,153829"
     sha256 "a97ad4e37f975ec3ec093a1dfc58f456cac2066f27ccc743a523a261235785b0"
     url "https://download.virtualbox.org/virtualbox/#{version.csv.first}/VirtualBox-#{version.csv.first}-#{version.csv.second}-OSX.dmg"
+
+    livecheck do
+      url :homepage
+      regex(/href=.*?VirtualBox[._-]v?(\d+(?:\.\d+)+[._-][^._-]+?)[._-](\d+)[._-]OSX\.dmg/i)
+      strategy :page_match do |page, regex|
+        page.scan(regex).map { |match| "#{match[0]},#{match[1]}" }
+      end
+    end
   end
   on_arm do
     version "7.0.2,BETA4,154219"
     sha256 "c5b85d3168faabc269035d82d2510b92937d4e389ef93139b4333960cd683582"
     url "https://download.virtualbox.org/virtualbox/#{version.csv.first}/VirtualBox-#{version.csv.first}_#{version.csv.second}-#{version.csv.third}-macOSArm64.dmg"
+
+    # TODO: Add a `livecheck` block if/when ARM64 dmg files are linked on
+    # the "Testbuilds" page (https://www.virtualbox.org/wiki/Testbuilds) or
+    # stored in a predictable directory on download.virtualbox.org. ARM64 files
+    # are currently shoehorned into stable version directories (instead of
+    # being in an unstable directory like 7.0.0_BETA3). Unless this remains
+    # true going forward, we would end up making a number of wasted requests in
+    # an attempt to identify a new unstable ARM64 version.
   end
 
-  appcast "https://download.virtualbox.org/virtualbox/LATEST-BETA.TXT"
   name "Oracle VirtualBox"
   desc "Virtualizer for x86 and arm64 hardware"
   homepage "https://www.virtualbox.org/wiki/Testbuilds"
