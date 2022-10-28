@@ -1,9 +1,9 @@
 cask "obs-beta" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "28.0.0-rc2"
-  sha256 arm:   "18bf780a2f19538461f834c741dc920e16158b9a9cc07341b1c262ea8b8d9a58",
-         intel: "ebba8bfd5fa79436e0f1477adab820cda136ca566e6d0b8121cfb601c39c24df"
+  version "28.1.0-rc1"
+  sha256 arm:   "d86037a28b32a45537cf4aa546c66eaec1388a821bf098060183c99ea97e625a",
+         intel: "93dd46eefde5304eb4f2f133586d5832b02d499dac8903704984cef61b68885a"
 
   url "https://github.com/obsproject/obs-studio/releases/download/#{version}/obs-studio-#{version}-macos-#{arch}.dmg",
       verified: "github.com/obsproject/obs-studio/"
@@ -12,9 +12,9 @@ cask "obs-beta" do
   homepage "https://obsproject.com/forum/list/test-builds.20/"
 
   livecheck do
-    url "https://github.com/obsproject/obs-studio/releases"
+    url "https://github.com/obsproject/obs-studio/releases?q=prerelease%3Atrue"
+    regex(%r{href=["']?[^"' >]*?/tag/v?(\d+(?:\.\d+)+[^"' >]*)["' >]}i)
     strategy :page_match
-    regex(/obs[._-]studio[._-](\d+(?:\.\d+)+[._-](?:beta|rc)\d*)[._-]macos[._-]#{arch}\.dmg/i)
   end
 
   auto_updates true
