@@ -12,9 +12,9 @@ cask "obs-beta" do
   homepage "https://obsproject.com/forum/list/test-builds.20/"
 
   livecheck do
-    url "https://github.com/obsproject/obs-studio/releases"
+    url "https://github.com/obsproject/obs-studio/releases?q=prerelease%3Atrue"
+    regex(%r{href=["']?[^"' >]*?/tag/v?(\d+(?:\.\d+)+[^"' >]*)["' >]}i)
     strategy :page_match
-    regex(/obs[._-]studio[._-](\d+(?:\.\d+)+[._-](?:beta|rc)\d*)[._-]macos[._-]#{arch}\.dmg/i)
   end
 
   auto_updates true
