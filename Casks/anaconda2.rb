@@ -5,6 +5,7 @@ cask "anaconda2" do
   url "https://repo.continuum.io/archive/Anaconda2-#{version}-MacOSX-x86_64.sh",
       verified: "repo.continuum.io/archive/"
   name "Continuum Analytics Anaconda2"
+  desc "Data science platform"
   homepage "https://www.anaconda.com/what-is-anaconda/"
 
   container type: :naked
