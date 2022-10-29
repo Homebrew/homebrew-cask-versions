@@ -5,6 +5,7 @@ cask "affinity-photo-beta" do
   url "https://affinity-beta.s3.amazonaws.com/download/Affinity%20Photo%20Customer%20Beta.zip",
       verified: "affinity-beta.s3.amazonaws.com/"
   name "Serif Affinity Photo"
+  desc "Professional image editing software"
   homepage "https://affinity.serif.com/en-us/photo/"
 
   livecheck do
