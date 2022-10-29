@@ -8,11 +8,6 @@ cask "atom-beta" do
   desc "Cross-platform text editor"
   homepage "https://atom.io/beta"
 
-  livecheck do
-    url :url
-    regex(/^v?(\d+(?:\.\d+)*-beta\d*)$/i)
-  end
-
   auto_updates true
 
   app "Atom Beta.app"
@@ -33,4 +28,8 @@ cask "atom-beta" do
     "~/Library/Preferences/com.github.atom.plist",
     "~/Library/Saved Application State/com.github.atom.savedState",
   ]
+
+  caveats do
+    discontinued
+  end
 end
