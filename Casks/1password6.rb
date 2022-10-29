@@ -3,7 +3,6 @@ cask "1password6" do
   sha256 "d7cc24dc354f27441929350b9e6e2e4a710d6ed0bdab06f0e9be07160fe04200"
 
   url "https://c.1password.com/dist/1P/mac4/1Password-#{version}.zip"
-  appcast "https://app-updates.agilebits.com/product_history/OPM4"
   name "1Password"
   desc "Password manager that keeps all passwords secure behind one password"
   homepage "https://1password.com/"
