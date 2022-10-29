@@ -5,6 +5,7 @@ cask "anaconda2" do
   url "https://repo.continuum.io/archive/Anaconda2-#{version}-MacOSX-x86_64.sh",
       verified: "repo.continuum.io/archive/"
   name "Continuum Analytics Anaconda2"
+  desc "Data science platform"
   homepage "https://www.anaconda.com/what-is-anaconda/"
 
   container type: :naked
@@ -25,7 +26,8 @@ cask "anaconda2" do
   ]
 
   caveats do
-    path_environment_variable "#{HOMEBREW_PREFIX}/anaconda2/bin"
+    discontinued
     files_in_usr_local
+    path_environment_variable "#{HOMEBREW_PREFIX}/anaconda2/bin"
   end
 end
