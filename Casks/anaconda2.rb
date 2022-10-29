@@ -25,7 +25,8 @@ cask "anaconda2" do
   ]
 
   caveats do
-    path_environment_variable "#{HOMEBREW_PREFIX}/anaconda2/bin"
+    discontinued
     files_in_usr_local
+    path_environment_variable "#{HOMEBREW_PREFIX}/anaconda2/bin"
   end
 end
