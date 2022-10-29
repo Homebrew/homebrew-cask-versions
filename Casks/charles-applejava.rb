@@ -4,6 +4,7 @@ cask "charles-applejava" do
 
   url "https://www.charlesproxy.com/assets/release/#{version.gsub(/b\d$/, "")}/charles-proxy-#{version}-applejava.dmg"
   name "Charles"
+  desc "Web debugging Proxy application"
   homepage "https://www.charlesproxy.com/previous-release/"
 
   app "Charles.app"
@@ -12,4 +13,8 @@ cask "charles-applejava" do
     "~/Library/Application Support/Charles",
     "~/Library/Preferences/com.xk72.charles.config",
   ]
+
+  caveats do
+    discontinued
+  end
 end
