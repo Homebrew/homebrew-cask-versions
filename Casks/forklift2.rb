@@ -4,6 +4,7 @@ cask "forklift2" do
 
   url "https://download.binarynights.com/ForkLift#{version}.zip"
   name "ForkLift"
+  desc "Finder replacement and FTP, SFTP, WebDAV and Amazon s3 client"
   homepage "https://www.binarynights.com/forklift/"
 
   conflicts_with cask: "forklift"
@@ -14,4 +15,8 @@ cask "forklift2" do
     "~/Library/Preferences/com.binarynights.ForkLift#{version.major}.plist",
     "~/Library/Caches/com.binarynights.ForkLift#{version.major}",
   ]
+
+  caveats do
+    discontinued
+  end
 end
