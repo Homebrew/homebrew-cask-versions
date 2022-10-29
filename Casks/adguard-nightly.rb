@@ -1,11 +1,16 @@
 cask "adguard-nightly" do
-  version :latest
+  version "2.9.0.1206"
   sha256 :no_check
 
   url "https://static.adguard.com/mac/nightly/AdGuard.dmg"
   name "Adguard"
   desc "Stand alone ad blocker"
   homepage "https://adguard.com/"
+
+  livecheck do
+    url "https://adguard.com/en/versions/mac/nightly.html"
+    regex(/Mac\s(\d+(?:\.\d+)+)/i)
+  end
 
   conflicts_with cask: "adguard"
   depends_on macos: ">= :sierra"
