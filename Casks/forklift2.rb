@@ -14,4 +14,8 @@ cask "forklift2" do
     "~/Library/Preferences/com.binarynights.ForkLift#{version.major}.plist",
     "~/Library/Caches/com.binarynights.ForkLift#{version.major}",
   ]
+
+  caveats do
+    discontinued
+  end
 end
