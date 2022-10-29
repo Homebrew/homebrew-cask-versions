@@ -4,8 +4,8 @@ cask "cleanmymac3" do
 
   url "https://dl.devmate.com/com.macpaw.CleanMyMac#{version.major}/#{version.major_minor_patch}/#{version.csv.second}/CleanMyMac3-#{version.major_minor_patch}.zip",
       verified: "dl.devmate.com/com.macpaw.CleanMyMac"
-  appcast "https://updates.devmate.com/com.macpaw.CleanMyMac#{version.major}.xml"
   name "CleanMyMac"
+  desc "Tool to remove unnecessary files and folders from disk"
   homepage "https://macpaw.com/cleanmymac"
 
   app "CleanMyMac #{version.major}.app"
@@ -46,4 +46,8 @@ cask "cleanmymac3" do
     "~/Library/Preferences/com.macpaw.CleanMyMac#{version.major}.plist",
     "~/Pictures/Photos Library.photoslibrary/private/com.macpaw.CleanMyMac#{version.major}",
   ]
+
+  caveats do
+    discontinued
+  end
 end
