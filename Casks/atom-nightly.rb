@@ -1,8 +1,9 @@
 cask "atom-nightly" do
-  version :latest
-  sha256 :no_check
+  version "1.63.0-nightly1"
+  sha256 "50d34ac7d66627749f509df7535078372c9e4e8ce2e82b70de2870147933457f"
 
-  url "https://atom.io/download/mac?channel=nightly"
+  url "https://atom-installer.github.com/v#{version}/atom-mac.zip",
+      verified: "atom-installer.github.com/"
   name "Github Atom Nightly"
   desc "Cross-platform text editor"
   homepage "https://atom.io/nightly"
@@ -25,4 +26,8 @@ cask "atom-nightly" do
     "~/Library/Preferences/com.github.atom.plist",
     "~/Library/Saved Application State/com.github.atom.savedState",
   ]
+
+  caveats do
+    discontinued
+  end
 end
