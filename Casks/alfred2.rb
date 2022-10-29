@@ -20,4 +20,8 @@ cask "alfred2" do
     "~/Library/Preferences/com.runningwithcrayons.Alfred-Preferences.plist",
     "~/Library/Saved Application State/com.runningwithcrayons.Alfred-Preferences.savedState",
   ]
+
+  caveats do
+    discontinued
+  end
 end
