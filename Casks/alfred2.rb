@@ -4,6 +4,7 @@ cask "alfred2" do
 
   url "https://cachefly.alfredapp.com/Alfred_#{version}.zip"
   name "Alfred"
+  desc "Application launcher and productivity software"
   homepage "https://www.alfredapp.com/"
 
   auto_updates true
