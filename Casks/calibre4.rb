@@ -39,4 +39,8 @@ cask "calibre4" do
     "~/Library/Saved Application State/com.calibre-ebook.ebook-viewer.savedState",
     "~/Library/Saved Application State/net.kovidgoyal.calibre.savedState",
   ]
+
+  caveats do
+    discontinued
+  end
 end
