@@ -1,15 +1,22 @@
 cask "defold-beta" do
-  version :latest
-  sha256 :no_check
+  version "1.3.7,f0ad06a2f1fbf0e9cbddbf96162a75bc006d84bb"
+  sha256 "64e6a4c06d762368e5011f944f302b278f6be3269f7081d28ca1b586a16ec236"
 
-  url "https://d.defold.com/beta/info.json" do |json_content|
-    require "json"
-    version_sha = JSON.parse(json_content)["sha1"]
-    "https://d.defold.com/archive/beta/#{version_sha}/beta/editor2/Defold-x86_64-darwin.dmg"
-  end
+  url "https://d.defold.com/archive/beta/#{version.csv.second}/beta/editor2/Defold-x86_64-macos.dmg"
   name "Defold"
   desc "Game engine for development of desktop, mobile and web games"
   homepage "https://defold.com/"
+
+  livecheck do
+    url "https://d.defold.com/beta/info.json"
+    strategy :page_match do |page|
+      version = JSON.parse(page)["version"]
+      sha1 = JSON.parse(page)["sha1"]
+      next if version.blank? || sha1.blank?
+
+      "#{version},#{sha1}"
+    end
+  end
 
   conflicts_with cask: [
     "defold",
