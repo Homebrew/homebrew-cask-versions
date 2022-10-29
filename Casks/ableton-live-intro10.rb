@@ -3,7 +3,6 @@ cask "ableton-live-intro10" do
   sha256 "71e3c03d780e1f4f82654bb5ee74bdc13e3d22659146c9f052239cde2d2dad07"
 
   url "https://cdn-downloads.ableton.com/channels/#{version}/ableton_live_intro_#{version}_64.dmg"
-  appcast "https://www.ableton.com/en/release-notes/live-#{version.major}/"
   name "Ableton Live Intro"
   desc "Sound and music editor"
   homepage "https://www.ableton.com/en/live/"
@@ -24,4 +23,8 @@ cask "ableton-live-intro10" do
     "~/Library/Preferences/com.ableton.live.plist*",
     "~/Music/Ableton",
   ]
+
+  caveats do
+    discontinued
+  end
 end
