@@ -9,7 +9,7 @@ cask "affinity-publisher-beta" do
 
   livecheck do
     url "https://forum.affinity.serif.com/index.php?/topic/83296-affinity-range-mac-beta-release-notifications/"
-    regex(/Affinity\s+Publisher\s+\|\s+MacOS.+\|\s+(\d+(?:\.\d+)+)\s+\|/i)
+    regex(/Publisher.*?\|\s\s(\d+(?:\.\d+)+)/i)
   end
 
   app "Affinity Publisher Beta.app"
