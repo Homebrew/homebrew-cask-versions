@@ -7,13 +7,12 @@ cask "arq5" do
   desc "Multi-cloud backup application"
   homepage "https://www.arqbackup.com/"
 
-  livecheck do
-    url "https://www.arqbackup.com/download/arqbackup/arq#{version.major}_release_notes.html"
-    regex(/Version\s*(\d+(?:\.\d+)+)/i)
-  end
-
   auto_updates true
   conflicts_with cask: "arq"
 
   app "Arq.app"
+
+  caveats do
+    discontinued
+  end
 end
