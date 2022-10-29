@@ -4,6 +4,7 @@ cask "dash2" do
 
   url "https://kapeli.com/downloads/v#{version.major}/Dash.zip"
   name "Dash"
+  desc "API documentation browser and code snippet manager"
   homepage "https://kapeli.com/dash"
 
   app "Dash.app"
@@ -13,4 +14,8 @@ cask "dash2" do
     "~/Library/Preferences/com.kapeli.dash.plist",
     "~/Library/Preferences/com.kapeli.dashdoc.plist",
   ]
+
+  caveats do
+    discontinued
+  end
 end
