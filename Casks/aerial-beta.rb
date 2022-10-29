@@ -9,7 +9,7 @@ cask "aerial-beta" do
   homepage "https://aerialscreensaver.github.io/"
 
   livecheck do
-    url :url
+    url "https://github.com/JohnCoates/Aerial/releases?q=prerelease%3Atrue&expanded=true"
     regex(/^v?(\d+(?:\.\d+)*beta\d+)$/i)
   end
 
