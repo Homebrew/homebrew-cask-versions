@@ -3,8 +3,8 @@ cask "dash4" do
   sha256 "e2b5eb996645b25f12ccae15e24b1b0d8007bc5fed925e14ce7be45a2b693fb6"
 
   url "https://kapeli.com/downloads/v#{version.major}/Dash.zip"
-  appcast "https://kapeli.com/Dash#{version.major}.xml"
   name "Dash"
+  desc "API documentation browser and code snippet manager"
   homepage "https://kapeli.com/dash"
 
   auto_updates true
@@ -19,4 +19,8 @@ cask "dash4" do
     "~/Library/Logs/Dash",
     "~/Library/Preferences/com.kapeli.dashdoc.plist",
   ]
+
+  caveats do
+    discontinued
+  end
 end
