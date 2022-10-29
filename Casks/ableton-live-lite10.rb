@@ -3,7 +3,6 @@ cask "ableton-live-lite10" do
   sha256 "14cd6fc64dd674584d50abebe2a475c6c5754d9e35c9a82aeb28a17ccb4ac84c"
 
   url "https://cdn-downloads.ableton.com/channels/#{version}/ableton_live_lite_#{version}_64.dmg"
-  appcast "https://www.ableton.com/en/release-notes/live-#{version.major}/"
   name "Ableton Live Lite"
   desc "Sound and music editor"
   homepage "https://www.ableton.com/en/products/live-lite/"
@@ -24,4 +23,8 @@ cask "ableton-live-lite10" do
     "~/Library/Preferences/com.ableton.live.plist*",
     "~/Music/Ableton",
   ]
+
+  caveats do
+    discontinued
+  end
 end
