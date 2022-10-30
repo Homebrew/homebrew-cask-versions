@@ -20,4 +20,8 @@ cask "keyboard-maestro8" do
     "~/Library/Preferences/com.stairways.keyboardmaestro.plist",
     "~/Library/Saved Application State/com.stairways.keyboardmaestro.editor.savedState",
   ]
+
+  caveats do
+    discontinued
+  end
 end
