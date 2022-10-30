@@ -17,4 +17,8 @@ cask "iterm2-legacy" do
   app "iTerm.app"
 
   zap trash: "~/Library/Preferences/com.googlecode.iterm2.plist"
+
+  caveats do
+    discontinued
+  end
 end
