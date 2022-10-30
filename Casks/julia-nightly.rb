@@ -1,14 +1,16 @@
 cask "julia-nightly" do
+  arch arm: "aarch64", intel: "x86_64"
+
   version "1.9"
   sha256 :no_check
 
-  url "https://julialangnightlies-s3.julialang.org/bin/mac/x64/julia-latest-mac64.dmg"
+  url "https://julialangnightlies-s3.julialang.org/bin/macos/#{arch}/julia-latest-macos-#{arch}.dmg"
   name "Julia"
   desc "Programming language for technical computing"
   homepage "https://julialang.org/"
 
   livecheck do
-    skip "unversioned URL"
+    skip "No reliable version info"
   end
 
   app "Julia-#{version}.app"
