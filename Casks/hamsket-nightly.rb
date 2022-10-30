@@ -1,13 +1,17 @@
 cask "hamsket-nightly" do
-  version :latest
-  sha256 :no_check
+  version "0.6.5"
+  sha256 "58d967060ff0a25dc35df3d22d58ef4c63142af9014b8fcb4aad3d7b906862ff"
 
-  url "https://github.com/TheGoddessInari/hamsket/releases" do |page|
-    "https://github.com#{page[%r{href="([^"]+nightly/Hamsket-.*.dmg)"}, 1]}"
-  end
+  url "https://github.com/TheGoddessInari/hamsket/releases/download/nightly/Hamsket-#{version}.dmg"
   name "Hamsket"
   desc "Free and Open Source messaging and emailing app"
   homepage "https://github.com/TheGoddessInari/hamsket"
+
+  livecheck do
+    url "https://github.com/TheGoddessInari/hamsket/releases/expanded_assets/nightly"
+    regex(/href=.*?Hamsket-(\d+(?:\.\d+)+)\.dmg/i)
+    strategy :page_match
+  end
 
   app "Hamsket.app"
 
