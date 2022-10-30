@@ -5,6 +5,7 @@ cask "iterm2-legacy" do
 
   url "https://iterm2.com/downloads/stable/iTerm2-#{version.dots_to_underscores}.zip"
   name "iTerm2"
+  desc "Terminal emulator as alternative to Apple's Terminal app"
   homepage "https://www.iterm2.com/"
 
   auto_updates true
@@ -17,4 +18,8 @@ cask "iterm2-legacy" do
   app "iTerm.app"
 
   zap trash: "~/Library/Preferences/com.googlecode.iterm2.plist"
+
+  caveats do
+    discontinued
+  end
 end
