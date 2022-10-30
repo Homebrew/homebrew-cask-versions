@@ -1,13 +1,16 @@
 cask "gpg-suite-nightly" do
-  version :latest
-  sha256 :no_check
+  version "3136n"
+  sha256 "1435dfbaee643b7c95926583dfc66eb1856a358174ff12de790e3e61ef7638dc"
 
-  url "https://releases.gpgtools.org/nightlies/" do |page|
-    page[/<td class='filename'><a href='(.*)'>/, 1]
-  end
+  url "https://releases.gpgtools.org/nightlies/GPG_Suite-#{version}.dmg"
   name "GPG Suite Nightly"
   desc "Tools to protect your emails and files"
   homepage "https://gpgtools.org/"
+
+  livecheck do
+    url "https://releases.gpgtools.org/nightlies/"
+    regex(/href=.*?GPG_Suite-([0-9a-z]+)\.dmg/i)
+  end
 
   conflicts_with cask: "gpg-suite"
 
