@@ -22,4 +22,8 @@ cask "hancom-word-2014" do
     "/private/var/db/receipts/com.hancom.office.hwp.mac.general.bom",
     "/private/var/db/receipts/com.hancom.office.hwp.mac.general.plist",
   ]
+
+  caveats do
+    discontinued
+  end
 end
