@@ -5,6 +5,7 @@ cask "keyboard-maestro8" do
   url "https://files.stairways.com/keyboardmaestro-#{version.no_dots}.zip",
       verified: "files.stairways.com/"
   name "Keyboard Maestro"
+  desc "Automation software"
   homepage "https://www.keyboardmaestro.com/main/"
 
   app "Keyboard Maestro.app"
