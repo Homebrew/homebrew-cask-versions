@@ -8,6 +8,11 @@ cask "macfuse-dev" do
   desc "File system integration"
   homepage "https://osxfuse.github.io/"
 
+  livecheck do
+    url "https://osxfuse.github.io/releases/DeveloperRelease.plist"
+    regex(/macfuse[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
+  end
+
   conflicts_with cask: "macfuse"
 
   pkg "Extras/macFUSE #{version}.pkg"
