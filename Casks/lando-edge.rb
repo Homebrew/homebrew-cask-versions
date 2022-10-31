@@ -11,6 +11,12 @@ cask "lando-edge" do
   desc "Local development environment and DevOps tool built on Docker"
   homepage "https://docs.lando.dev/"
 
+  livecheck do
+    url "https://github.com/lando/lando/releases?q=prerelease%3Atrue&expanded=true"
+    regex(%r{href=["']?[^"' >]*?/tag/\D*?(\d+(?:\.\d+)+)[^"' >]*?["' >]}i)
+    strategy :page_match
+  end
+
   conflicts_with cask: "lando"
   depends_on cask: "docker"
 
