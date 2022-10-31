@@ -1,15 +1,16 @@
 cask "lilypond-dev" do
-  version "2.23.6-1"
-  sha256 "69684c8d000046dc5fe19938ced8bbbb0bdea2775f3b5cb3747194505afbc8ea"
+  version "2.23.80"
+  sha256 "57949cba6b7af33c11d7cb3f89d45a03123e48a42cb8fd47b00f7c15260c0a0a"
 
-  url "https://lilypond.org/downloads/binaries/darwin-x86/lilypond-#{version}.darwin-x86.tar.bz2"
+  url "https://gitlab.com/lilypond/lilypond/-/releases/v#{version}/downloads/lilypond-#{version}-darwin-x86_64.tar.gz",
+      verified: "gitlab.com/lilypond/lilypond"
   name "LilyPond"
   desc "Music engraving program"
   homepage "https://lilypond.org/"
 
   livecheck do
     url "https://lilypond.org/development.html"
-    regex(%r{href=.*?/lilypond[._-]v?(\d+(?:\.\d+)*(?:-\d+)?)\.darwin[._-]x86\.tar\.bz2}i)
+    regex(%r{href=.*?/lilypond[._-]v?(\d+(?:\.\d+)*(?:-\d+)?)[._-]darwin[._-]x86_64\.t}i)
   end
 
   conflicts_with cask: "lilypond"
