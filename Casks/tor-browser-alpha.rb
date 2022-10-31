@@ -1,8 +1,8 @@
 cask "tor-browser-alpha" do
-  version "12.0a3"
-  sha256 "a6efe45833c4c60c459c2a54d3e39ba069dfc9493c38afe79bcc4e4040189949"
+  version "12.0a4"
+  sha256 "0ff0badfaab6ec797b80998c933205f5d1083828ff08bf190780c16ab71a76bf"
 
-  url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-osx64_en-US.dmg"
+  url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-osx64_ALL.dmg"
   name "Tor Browser"
   desc "Web browser focusing on security"
   homepage "https://www.torproject.org/"
