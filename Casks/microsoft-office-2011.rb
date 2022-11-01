@@ -75,4 +75,8 @@ cask "microsoft-office-2011" do
         "~/Documents/Microsoft-Benutzerdaten",
         "~/Documents/Microsoft ユーザー データ",
       ]
+
+  caveats do
+    discontinued
+  end
 end
