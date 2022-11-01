@@ -5,6 +5,7 @@ cask "miniconda2" do
   url "https://repo.continuum.io/miniconda/Miniconda2-latest-MacOSX-x86_64.sh",
       verified: "repo.continuum.io/miniconda/"
   name "Continuum Analytics Miniconda"
+  desc "Minimal installer for conda"
   homepage "https://www.anaconda.com/what-is-anaconda/"
 
   container type: :naked
@@ -22,7 +23,8 @@ cask "miniconda2" do
   uninstall delete: "#{HOMEBREW_PREFIX}/miniconda2"
 
   caveats do
-    path_environment_variable "#{HOMEBREW_PREFIX}/miniconda2/bin"
+    discontinued
     files_in_usr_local
+    path_environment_variable "#{HOMEBREW_PREFIX}/miniconda2/bin"
   end
 end
