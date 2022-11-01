@@ -43,6 +43,7 @@ cask "microsoft-office-2016" do
               "/Applications/OneDrive.app",
             ],
             launchctl: [
+              "com.microsoft.autoupdate.helper",
               "com.microsoft.OneDriveStandaloneUpdater",
               "com.microsoft.OneDriveStandaloneUpdaterDaemon",
               "com.microsoft.OneDriveUpdaterDaemon",
