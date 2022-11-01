@@ -8,8 +8,9 @@ cask "mongodb-compass-beta" do
   homepage "https://www.mongodb.com/try/download/compass"
 
   livecheck do
-    url "https://github.com/mongodb-js/compass"
-    regex(/^v?(\d+(?:\.\d+)+[._-]beta\.\d+)$/i)
+    url "https://github.com/mongodb-js/compass/releases?q=prerelease%3Atrue&expanded=true"
+    regex(%r{href=["']?[^"' >]*?/tag/\D*?(\d+(?:\.\d+)+-beta\.\d)[^"' >]*?["' >]}i)
+    strategy :page_match
   end
 
   app "MongoDB Compass Beta.app"
