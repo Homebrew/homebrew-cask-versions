@@ -14,6 +14,7 @@ cask "microsoft-office-2011" do
 
   url "https://officecdn.microsoft.com/pr/MacOffice#{version}/#{language}/MicrosoftOffice#{version}.dmg"
   name "Microsoft Office 2011"
+  desc "Office suite"
   homepage "https://www.microsoft.com/mac"
 
   if language == "ja-JP"
