@@ -4,7 +4,6 @@ cask "microsoft-office-2016" do
 
   url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_#{version}_Installer.pkg",
       verified: "officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/"
-  appcast "https://docs.microsoft.com/en-us/officeupdates/release-notes-office-2016-mac/"
   name "Microsoft Office"
   desc "Office suite"
   homepage "https://products.office.com/mac/microsoft-office-for-mac/"
@@ -104,4 +103,8 @@ cask "microsoft-office-2016" do
         "com.microsoft.update.agent",
       ],
       pkgutil:   "com.microsoft.package.Microsoft_AutoUpdate.app"
+
+  caveats do
+    discontinued
+  end
 end
