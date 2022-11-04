@@ -5,7 +5,6 @@ cask "openzfs-dev" do
     pkg "OpenZFSonOsX-#{version.csv.first}-Catalina-10.15.pkg"
   end
   on_arm do
-    depends_on macos: ">= :monterey"
     version "2.1.6rc4,401"
     sha256 "948066fc6a59cff326d552952c31653f877ea947d2b00a691e982eda40742d91"
     pkg "OpenZFSonOsX-#{version.csv.first}-Monterey-12-arm64.pkg"
