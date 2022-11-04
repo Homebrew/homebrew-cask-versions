@@ -1,8 +1,11 @@
 cask "azure-data-studio-insiders" do
-  version "1.40.0"
-  sha256 "d4c46777507066dcc6b940446dc3c57e1935629cd74f0e06d005abc298e93b49"
+  arch arm: "-arm64"
 
-  url "https://azuredatastudio-update.azurewebsites.net/#{version}/darwin/insider",
+  version "1.40.0"
+  sha256 arm:   "6520f0ad98c0918568af6d4d4b8c24ca91aa71f572ac7f90fcfe01f46f11254a",
+         intel: "7a630a5940db05f588cf46fa7be7bfb83e50230c51173f20d29c23c2636e6dc0"
+
+  url "https://azuredatastudio-update.azurewebsites.net/#{version}/darwin#{arch}/insider",
       verified: "azuredatastudio-update.azurewebsites.net"
   name "Azure Data Studio - Insiders"
   desc "Data management tool that enables working with SQL Server"
