@@ -1,9 +1,9 @@
 cask "dropbox-beta" do
   arch arm: "&arch=arm64"
 
-  version "161.3.4836"
-  sha256 arm:   "a9436d8305313c8db6bddeb81a9be590f24e23dc17b8e5c5e7b38c615a5dade0",
-         intel: "ea587eb2fb3c0d0da37ac99311601e0688b6ac3cd62795cb93aa756902ae067c"
+  version "161.3.4890"
+  sha256 arm:   "da6d18bf790ad3865d91401ba26ea8e13075cc2581dd50dd8822a6dc8a876c94",
+         intel: "944d0cb6ea2b8cab0815addbf7f45725586f351c68c0bd47a4386790adc8a6b0"
 
   url "https://www.dropbox.com/download?build=#{version}&plat=mac&type=full#{arch}",
       verified: "dropbox.com/"
@@ -30,22 +30,38 @@ cask "dropbox-beta" do
 
   zap trash: [
     "~/.dropbox",
+    "~/Library/Application Scripts/*.com.getdropbox.dropbox.sync",
+    "~/Library/Application Scripts/com.dropbox.alternatenotificationservice",
+    "~/Library/Application Scripts/com.dropbox.client.crashpad",
     "~/Library/Application Scripts/com.dropbox.foldertagger",
+    "~/Library/Application Scripts/com.getdropbox.dropbox.fileprovider",
     "~/Library/Application Scripts/com.getdropbox.dropbox.garcon",
+    "~/Library/Application Scripts/com.getdropbox.dropbox.TransferExtension",
     "~/Library/Application Support/Dropbox",
+    "~/Library/Application Support/DropboxElectron",
+    "~/Library/Application Support/FileProvider/com.getdropbox.dropbox.fileprovider",
     "~/Library/Caches/CloudKit/com.apple.bird/iCloud.com.getdropbox.Dropbox",
     "~/Library/Caches/com.dropbox.DropboxMacUpdate",
     "~/Library/Caches/com.getdropbox.dropbox",
     "~/Library/Caches/com.getdropbox.DropboxMetaInstaller",
     "~/Library/Caches/com.plausiblelabs.crashreporter.data/com.dropbox.DropboxMacUpdate",
+    "~/Library/CloudStorage/Dropbox",
     "~/Library/Containers/com.dropbox.activityprovider",
+    "~/Library/Containers/com.dropbox.alternatenotificationservice",
     "~/Library/Containers/com.dropbox.foldertagger",
+    "~/Library/Containers/com.getdropbox.dropbox.fileprovider",
     "~/Library/Containers/com.getdropbox.dropbox.garcon",
+    "~/Library/Containers/com.getdropbox.dropbox.TransferExtension",
     "~/Library/Dropbox",
+    "~/Library/Dropbox/DropboxMacUpdate.app/Contents/MacOS/DropboxMacUpdate",
+    "~/Library/Group Containers/*.com.getdropbox.dropbox.sync",
     "~/Library/Group Containers/com.dropbox.client.crashpad",
     "~/Library/Group Containers/com.getdropbox.dropbox.garcon",
+    "~/Library/HTTPStorages/com.dropbox.DropboxMacUpdate",
+    "~/Library/HTTPStorages/com.getdropbox.dropbox",
     "~/Library/LaunchAgents/com.dropbox.DropboxMacUpdate.agent.plist",
     "~/Library/Logs/Dropbox_debug.log",
+    "~/Library/Preferences/com.apple.FileProvider/com.getdropbox.dropbox.fileprovider",
     "~/Library/Preferences/com.dropbox.DropboxMacUpdate.plist",
     "~/Library/Preferences/com.dropbox.DropboxMonitor.plist",
     "~/Library/Preferences/com.dropbox.tungsten.helper.plist",
