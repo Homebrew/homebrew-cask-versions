@@ -1,9 +1,9 @@
 cask "obs-beta" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "28.1.0-rc1"
-  sha256 arm:   "d86037a28b32a45537cf4aa546c66eaec1388a821bf098060183c99ea97e625a",
-         intel: "93dd46eefde5304eb4f2f133586d5832b02d499dac8903704984cef61b68885a"
+  version "28.1.2"
+  sha256 arm:   "c0dfee808b58cff1b9de16d28f524195805cbf09cabfa0c023fb6270b10aef3f",
+         intel: "cf5edb7a6e27c142e70f7daf05a48d59ad377b6aed285b0f9e4ef58bdaad2674"
 
   url "https://github.com/obsproject/obs-studio/releases/download/#{version}/obs-studio-#{version}-macos-#{arch}.dmg",
       verified: "github.com/obsproject/obs-studio/"
@@ -11,10 +11,16 @@ cask "obs-beta" do
   desc "Open-source software for live streaming and screen recording"
   homepage "https://obsproject.com/forum/list/test-builds.20/"
 
+  # We use the first matching tag on the releases page, as a version with an
+  # unstable suffix (e.g., `1.2.3-beta1`) would be erroneously treated as
+  # newer than a subsequent stable version (e.g., `1.2.3`) due to how `Version`
+  # comparison works.
   livecheck do
-    url "https://github.com/obsproject/obs-studio/releases?q=prerelease%3Atrue"
+    url "https://github.com/obsproject/obs-studio/releases"
     regex(%r{href=["']?[^"' >]*?/tag/v?(\d+(?:\.\d+)+[^"' >]*)["' >]}i)
-    strategy :page_match
+    strategy :page_match do |page, regex|
+      page[regex, 1]
+    end
   end
 
   auto_updates true
