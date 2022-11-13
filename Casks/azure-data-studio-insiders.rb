@@ -1,9 +1,9 @@
 cask "azure-data-studio-insiders" do
   arch arm: "-arm64"
 
-  version "1.40.0"
-  sha256 arm:   "6520f0ad98c0918568af6d4d4b8c24ca91aa71f572ac7f90fcfe01f46f11254a",
-         intel: "7a630a5940db05f588cf46fa7be7bfb83e50230c51173f20d29c23c2636e6dc0"
+  version "1.41.0"
+  sha256 arm:   "9c621fbc13dfed72477463485ad74a9d1dd31e084d54116b3bc8ff615edd5a32",
+         intel: "686f0142423466741c1610e227324aa6b389c5f2f16aa9f08923207b986e88d3"
 
   url "https://azuredatastudio-update.azurewebsites.net/#{version}/darwin#{arch}/insider",
       verified: "azuredatastudio-update.azurewebsites.net"
