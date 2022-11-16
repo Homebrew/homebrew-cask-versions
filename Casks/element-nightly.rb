@@ -8,7 +8,7 @@ cask "element-nightly" do
     desc "Matrix collaboration client"
     homepage "https://element.io/get-started"
   
-    auto_updates true
+    auto_updates false
   
     app "Element Nightly.app"
   
