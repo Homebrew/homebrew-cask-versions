@@ -8,11 +8,6 @@ cask "element-nightly" do
     desc "Matrix collaboration client"
     homepage "https://element.io/get-started"
   
-    livecheck do
-      url :url
-      strategy :extract_plist
-    end
-  
     auto_updates true
   
     app "Element Nightly.app"
