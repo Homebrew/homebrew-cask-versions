@@ -4,6 +4,7 @@ cask "omnigraffle6" do
 
   url "https://downloads.omnigroup.com/software/MacOSX/10.10/OmniGraffle-#{version}.dmg"
   name "OmniGraffle 6"
+  desc "Visual communication software"
   homepage "https://www.omnigroup.com/omnigraffle/"
 
   app "OmniGraffle.app"
@@ -16,4 +17,8 @@ cask "omnigraffle6" do
     "~/Library/Preferences/com.omnigroup.OmniGraffle6.plist",
     "~/Library/Saved Application State/com.omnigroup.OmniGraffle6.savedState",
   ]
+
+  caveats do
+    discontinued
+  end
 end
