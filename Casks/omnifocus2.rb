@@ -9,8 +9,8 @@ cask "omnifocus2" do
     url "https://downloads.omnigroup.com/software/MacOSX/10.12/OmniFocus-#{version}.dmg"
   end
 
-  appcast "https://update.omnigroup.com/appcast/com.omnigroup.OmniFocus#{version.major}"
   name "OmniFocus"
+  desc "Scheduling application focusing on organization"
   homepage "https://www.omnigroup.com/omnifocus/"
 
   app "OmniFocus.app"
@@ -26,4 +26,8 @@ cask "omnifocus2" do
     "~/Library/Group Containers/34YW5XSRB7.com.omnigroup.OmniFocus",
     "~/Library/Saved Application State/com.omnigroup.OmniFocus#{version}.savedState",
   ]
+
+  caveats do
+    discontinued
+  end
 end
