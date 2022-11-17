@@ -25,4 +25,8 @@ cask "omniplan3" do
     "~/Library/Containers/com.omnigroup.OmniPlan#{version.major}",
     "~/Library/Preferences/com.omnigroup.OmniPlan#{version.major}.plist",
   ]
+
+  caveats do
+    discontinued
+  end
 end
