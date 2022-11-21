@@ -1,10 +1,8 @@
 cask "google-chrome-dev" do
-  arch arm: "universal/"
-
   version "109.0.5414.10"
   sha256 :no_check
 
-  url "https://dl.google.com/chrome/mac/#{arch}dev/googlechromedev.dmg"
+  url "https://dl.google.com/chrome/mac/universal/dev/googlechromedev.dmg"
   name "Google Chrome Dev"
   desc "Web browser"
   homepage "https://www.google.com/chrome/dev/"
