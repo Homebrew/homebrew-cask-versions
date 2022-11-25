@@ -1,9 +1,9 @@
 cask "appcode-eap" do
   arch arm: "-aarch64"
 
-  version "2022.3,223.7571.46"
-  sha256 arm:   "7e13f16aad1078ed6efba5a31cd4eda702938aedd837a60d610bc29f773e3cbe",
-         intel: "8524c91b9be77dcc1433190240e9ff3a6914eaf109f66fa02b526fc9fc0b2d61"
+  version "2022.3,223.7571.113"
+  sha256 arm:   "fc132e01e1e3006f5d2540ea07f35fa32ed3b0c0044c69f53c0fd1e42e3801e1",
+         intel: "083992bf49c06760e0ead30f24e96db0785c5ce519ec22c92b4a59f6d06331a5"
 
   url "https://download.jetbrains.com/objc/AppCode-#{version.csv.second}#{arch}.dmg"
   name "AppCode EAP"
