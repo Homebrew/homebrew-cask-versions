@@ -12,6 +12,7 @@ cask "monal-beta" do
     regex(/^(\d+)$/i)
   end
 
+  conflicts_with cask: "monal"
   depends_on macos: ">= :catalina"
 
   app "Monal.app"
