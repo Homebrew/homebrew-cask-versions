@@ -1,18 +1,22 @@
-cask "transmission-nightly" do
-  version :latest
-  sha256 :no_check
+cask "transmission-beta" do
+  version "4.0.0-beta.2"
+  sha256 "dd9a7358be34ed28a397742d983eb5be851b103c4204b775a120a478ef7a967c"
 
-  url "https://build.transmissionbt.com/job/trunk-mac/lastSuccessfulBuild/artifact/release/" do |page|
-    file_path = page[/href="([^"]+.dmg)"/, 1]
-    URI.join(page.url, file_path)
-  end
+  url "https://github.com/transmission/transmission/releases/download/#{version}/Transmission-#{version}.dmg",
+      verified: "github.com/transmission/transmission/releases/"
   name "Transmission"
   desc "Open-source BitTorrent client"
   homepage "https://transmissionbt.com/"
 
+  livecheck do
+    url :url
+    regex(/^(\d+(?:\.\d+)+[_-]beta\.\d+)$/i)
+  end
+
+  auto_updates true
   conflicts_with cask: [
     "transmission",
-    "homebrew/cask-versions/transmission-beta",
+    "homebrew/cask-versions/transmission-nightly",
   ]
 
   app "Transmission.app"
