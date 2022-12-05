@@ -4,6 +4,7 @@ cask "quicktime-player7" do
 
   url "https://support.apple.com/downloads/DL923/en_US/QuickTimePlayer#{version}_SnowLeopard.dmg"
   name "QuickTime Player 7"
+  desc "Video player"
   homepage "https://support.apple.com/kb/dl923"
 
   pkg "QuickTimePlayer#{version}_SnowLeopard.pkg"
