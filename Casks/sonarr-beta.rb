@@ -1,11 +1,16 @@
 cask "sonarr-beta" do
-  version "3.0.3.907"
-  sha256 "91c1cf79666afb22bf489e60a4f2b09a1db5aa5b3afba40e2812799e163ad13b"
+  version "3.0.9.1555"
+  sha256 "50ede276cd42c41b9a3f66ca2495b16b0f99b4b773615ab602f069acf10c5a04"
 
-  url "https://download.sonarr.tv/v#{version.major}/phantom-develop/#{version}/Sonarr.phantom-develop.#{version}.macos.zip"
-  appcast "https://download.sonarr.tv/v#{version.major}/phantom-develop/"
-  name "sonarr-beta"
+  url "https://download.sonarr.tv/v#{version.major}/develop/#{version}/Sonarr.develop.#{version}.macos.zip"
+  name "Sonarr Beta"
+  desc "PVR for Usenet and BitTorrent users"
   homepage "https://sonarr.tv/"
+
+  livecheck do
+    url "https://download.sonarr.tv/v3/develop/"
+    regex(%r{href=["']?v?(\d+(?:\.\d+)+)/?["' >]}i)
+  end
 
   conflicts_with cask: "sonarr"
   depends_on cask: "mono-mdk"
