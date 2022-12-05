@@ -8,6 +8,11 @@ cask "pgadmin3" do
   name "pgAdmin"
   homepage "https://www.pgadmin.org/"
 
+  livecheck do
+    url "https://pgadmin-archive.postgresql.org/pgadmin3/index.html"
+    regex(%r{href=["']?v?(\d+(?:\.\d+)+)(?:/index.html)/?["' >]}i)
+  end
+
   app "pgAdmin3.app"
 
   zap trash: [
