@@ -1,6 +1,6 @@
 cask "olympus" do
-  version "2551"
-  sha256 "f4f6c77b1c8c03089c0f65fe46b8659a7615a387100dca6b02a8ee427337b8cf"
+  version "2681"
+  sha256 "16cc22b55771a4ee74af77a8817ccb079ee030e8be48fd7f8e3a741c7756dfc5"
 
   url "https://dev.azure.com/EverestAPI/Olympus/_apis/build/builds/#{version}/artifacts?artifactName=macos.main&$format=zip",
       verified: "dev.azure.com/EverestAPI/Olympus"
@@ -9,7 +9,12 @@ cask "olympus" do
   homepage "https://everestapi.github.io/"
 
   livecheck do
-    skip "No version information available"
+    url "https://dev.azure.com/EverestAPI/Olympus/_apis/build/builds"
+    strategy :page_match do |page|
+      JSON.parse(page)["value"].map do |build|
+        build["id"].to_s if build["sourceBranch"] == "refs/heads/stable"
+      end.compact
+    end
   end
 
   container nested: "macos.main/dist.zip"
