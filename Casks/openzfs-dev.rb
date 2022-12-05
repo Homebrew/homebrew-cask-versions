@@ -36,6 +36,7 @@ cask "openzfs-dev" do
 
       download_id = Homebrew::Livecheck::Strategy::PageMatch
                     .find_versions(url: post_url, regex: download_id_regex)[:matches].values.first
+      next if download_id.blank?
 
       "#{version},#{download_id}"
     end
