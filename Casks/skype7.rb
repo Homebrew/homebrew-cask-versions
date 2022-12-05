@@ -19,4 +19,8 @@ cask "skype7" do
     "~/Library/Preferences/com.skype.skypewifi.plist",
     "~/Library/Saved Application State/com.skype.skype.savedState",
   ]
+
+  caveats do
+    discontinued
+  end
 end
