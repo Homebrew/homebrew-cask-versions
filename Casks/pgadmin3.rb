@@ -6,7 +6,13 @@ cask "pgadmin3" do
   url "https://ftp.postgresql.org/pub/pgadmin/pgadmin3/v#{version}/osx/pgadmin3-#{version}.dmg",
       verified: "ftp.postgresql.org/pub/pgadmin/pgadmin3/"
   name "pgAdmin"
+  desc "Administration and development platform for PostgreSQL"
   homepage "https://www.pgadmin.org/"
+
+  livecheck do
+    url "https://pgadmin-archive.postgresql.org/pgadmin3/index.html"
+    regex(%r{href=["']?v?(\d+(?:\.\d+)+)(?:/index.html)/?["' >]}i)
+  end
 
   app "pgAdmin3.app"
 
