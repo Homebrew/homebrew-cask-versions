@@ -8,11 +8,8 @@ cask "smcfancontrol-beta" do
   homepage "https://github.com/hholtmann/smcFanControl"
 
   livecheck do
-    url "https://github.com/hholtmann/smcFanControl/releases/"
-    regex(/smcFanControl[._-](\d+(?:.\d+)*)\.zip/i)
-    strategy :page_match do |page, regex|
-      page.scan(regex).map { |match| match.first.tr("_", ".") }
-    end
+    url :url
+    regex(/^v?(\d+(?:\.\d+)+)[^ß]?/i)
   end
 
   conflicts_with cask: "smcfancontrol"
