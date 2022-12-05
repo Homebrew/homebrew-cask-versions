@@ -1,6 +1,6 @@
 cask "emacs-nightly" do
-  version "2022-12-02_00-09-38,7d6f9753ade57821f5c409bcdeea700be8e53a74"
-  sha256 "a2ffdab435a6ceb2f64cd338336b187a7e787f709fd7f12077e7f3ad234b984d"
+  version "2022-12-05_00-10-06,4fa37dc426184811e39ce113f6af7f5b308f116b"
+  sha256 "9b44602bb452ffaf963d9ef48f3f09bc0adf624369814d0369448fd1fee6a72e"
 
   url "https://emacsformacosx.com/emacs-builds/Emacs-#{version.csv.first}-#{version.csv.second}-universal.dmg"
   name "Emacs"
