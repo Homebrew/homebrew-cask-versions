@@ -8,11 +8,6 @@ cask "soulver2" do
   desc "Text editor and calculator"
   homepage "https://soulver.app/"
 
-  livecheck do
-    url :url
-    strategy :extract_plist
-  end
-
   auto_updates true
 
   app "Soulver #{version.major}.app"
@@ -22,4 +17,8 @@ cask "soulver2" do
     "~/Library/Autosave Information/Unsaved Soulver Document*",
     "~/Library/Preferences/com.acqualia.soulver.plist",
   ]
+
+  caveats do
+    discontinued
+  end
 end
