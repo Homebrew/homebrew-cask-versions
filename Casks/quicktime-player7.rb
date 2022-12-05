@@ -9,4 +9,8 @@ cask "quicktime-player7" do
   pkg "QuickTimePlayer#{version}_SnowLeopard.pkg"
 
   uninstall pkgutil: "com.apple.pkg.QuickTimePlayer#{version}_SnowLeopard"
+
+  caveats do
+    discontinued
+  end
 end
