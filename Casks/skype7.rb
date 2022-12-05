@@ -4,6 +4,7 @@ cask "skype7" do
 
   url "https://download.skype.com/macosx/bf9ccdd6b5b079049ff5a87419033ce3/Skype_#{version}.dmg"
   name "Skype"
+  desc "Video chat, voice call and instant messaging application"
   homepage "https://www.skype.com/en/get-skype/"
 
   auto_updates true
