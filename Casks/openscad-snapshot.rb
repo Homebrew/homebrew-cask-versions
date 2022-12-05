@@ -4,6 +4,7 @@ cask "openscad-snapshot" do
 
   url "https://files.openscad.org/snapshots/OpenSCAD-#{version}.dmg"
   name "OpenSCAD"
+  desc "Programmable solid 3D CAD modeller"
   homepage "https://www.openscad.org/downloads.html#snapshots"
 
   livecheck do
