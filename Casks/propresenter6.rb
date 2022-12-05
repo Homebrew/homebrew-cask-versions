@@ -26,4 +26,8 @@ cask "propresenter6" do
         "~/Library/Caches/KSCrashReports",
         "~/Library/Caches/Sessions",
       ]
+
+  caveats do
+    discontinued
+  end
 end
