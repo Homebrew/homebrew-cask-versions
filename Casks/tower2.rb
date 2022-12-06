@@ -4,8 +4,8 @@ cask "tower2" do
 
   url "https://fournova-app-updates.s3.amazonaws.com/apps/tower#{version.major}-mac/#{version.split("-").last.tr(",", "-")}/Tower-#{version.major}-#{version.csv.first}.zip",
       verified: "fournova-app-updates.s3.amazonaws.com/"
-  appcast "https://updates.fournova.com/updates/tower#{version.major}-mac/stable"
   name "Tower"
+  desc "Git client focusing on power and productivity"
   homepage "https://www.git-tower.com/"
 
   app "Tower.app"
@@ -16,4 +16,8 @@ cask "tower2" do
     "~/Library/Caches/com.fournova.Tower#{version.major}",
     "~/Library/Preferences/com.fournova.Tower#{version.major}.plist",
   ]
+
+  caveats do
+    discontinued
+  end
 end
