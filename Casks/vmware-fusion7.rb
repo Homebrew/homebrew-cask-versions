@@ -4,6 +4,7 @@ cask "vmware-fusion7" do
 
   url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-#{version}.dmg"
   name "VMware Fusion"
+  desc "Create, manage, and run virtual machines"
   homepage "https://www.vmware.com/products/fusion.html"
 
   app "VMware Fusion.app"
@@ -24,4 +25,8 @@ cask "vmware-fusion7" do
     "~/Library/Logs/VMware",
     "~/Library/Logs/VMware Fusion",
   ]
+
+  caveats do
+    discontinued
+  end
 end
