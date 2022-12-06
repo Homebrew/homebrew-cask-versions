@@ -8,9 +8,12 @@ cask "affinity-designer-beta" do
   desc "Photo editing and graphic design software"
   homepage "https://affinity.serif.com/en-us/"
 
+  # The link below is the new URL for v2 beta releases
+  # url "https://forum.affinity.serif.com/index.php?/forum/15-designer-beta-on-macos/"
+  # regex(/Designer.*?\|\s\s(\d+(?:\.\d+)+)/i)
+
   livecheck do
-    url "https://forum.affinity.serif.com/index.php?/topic/83296-affinity-range-mac-beta-release-notifications/"
-    regex(/Designer.*?\|\s\s(\d+(?:\.\d+)+)/i)
+    skip "Beta information for v2 is not yet available"
   end
 
   app "Affinity Designer Beta.app"
