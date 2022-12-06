@@ -8,15 +8,11 @@ cask "zulu7" do
   desc "OpenJDK distribution from Azul"
   homepage "https://www.azul.com/products/core/"
 
-  livecheck do
-    url "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=#{version.major}&bundle_type=jdk&javafx=false&ext=dmg&os=macos&arch=x86"
-    regex(/zulu(\d+(?:\.\d+)*-.*?)-jdk(\d+(?:\.\d+)+)-macosx_x64\.dmg/i)
-    strategy :page_match do |page, regex|
-      page.scan(regex).map { |match| "#{match[1]},#{match[0]}" }
-    end
-  end
-
   pkg "Double-Click to Install Azul Zulu JDK #{version.major}.pkg"
 
   uninstall pkgutil: "com.azulsystems.zulu.#{version.major}"
+
+  caveats do
+    discontinued
+  end
 end
