@@ -8,9 +8,12 @@ cask "affinity-photo-beta" do
   desc "Professional image editing software"
   homepage "https://affinity.serif.com/en-us/photo/"
 
+  # The link below is the new URL for v2 beta releases
+  # url "https://forum.affinity.serif.com/index.php?/forum/19-photo-beta-on-macos/"
+  # regex(/Photo.*?\|\s\s(\d+(?:\.\d+)+)/i)
+
   livecheck do
-    url "https://forum.affinity.serif.com/index.php?/topic/83296-affinity-range-mac-beta-release-notifications/"
-    regex(/Photo.*?\|\s\s(\d+(?:\.\d+)+)/i)
+    skip "Beta information for v2 is not yet available"
   end
 
   app "Affinity Photo Beta.app"
