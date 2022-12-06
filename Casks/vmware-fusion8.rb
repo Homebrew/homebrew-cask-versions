@@ -4,6 +4,7 @@ cask "vmware-fusion8" do
 
   url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-#{version}.dmg"
   name "VMware Fusion"
+  desc "Create, manage, and run virtual machines"
   homepage "https://www.vmware.com/products/fusion.html"
 
   auto_updates true
@@ -68,4 +69,8 @@ cask "vmware-fusion8" do
     "~/Library/Saved Application State/com.vmware.fusion.savedState",
     "~/Library/WebKit/com.vmware.fusion",
   ]
+
+  caveats do
+    discontinued
+  end
 end
