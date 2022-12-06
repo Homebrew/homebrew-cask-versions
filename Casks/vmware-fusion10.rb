@@ -3,8 +3,8 @@ cask "vmware-fusion10" do
   sha256 "b3d647dd74bd2c61bc1443a2f7d27e69a6d3fb01304306ef50af2db859440f2b"
 
   url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-#{version}.dmg"
-  appcast "https://softwareupdate.vmware.com/cds/vmw-desktop/fusion.xml"
   name "VMware Fusion"
+  desc "Create, manage, and run virtual machines"
   homepage "https://www.vmware.com/products/fusion.html"
 
   auto_updates true
@@ -73,6 +73,7 @@ cask "vmware-fusion10" do
   ]
 
   caveats do
+    discontinued
     kext
   end
 end
