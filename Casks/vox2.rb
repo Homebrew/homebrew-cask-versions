@@ -5,6 +5,7 @@ cask "vox2" do
   url "https://cloud.coppertino.com/vox/downloads/Vox_#{version}.zip",
       verified: "cloud.coppertino.com/vox/"
   name "VOX"
+  desc "Music player for high resoluion (Hi-Res) music through the external sources"
   homepage "https://vox.rocks/mac-music-player/old-versions"
 
   app "VOX.app"
@@ -13,4 +14,8 @@ cask "vox2" do
     "~/Library/Containers/com.coppertino.Vox",
     "~/Library/Preferences/com.coppertino.Vox.plist",
   ]
+
+  caveats do
+    discontinued
+  end
 end
