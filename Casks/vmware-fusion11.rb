@@ -3,7 +3,6 @@ cask "vmware-fusion11" do
   sha256 "c7d58ca44510de6c1ddffe86129ed19982114e742d71e7d81e4a5882036e06e3"
 
   url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-#{version}.dmg"
-  appcast "https://softwareupdate.vmware.com/cds/vmw-desktop/fusion.xml"
   name "VMware Fusion"
   desc "App to run other operating systems without rebooting"
   homepage "https://www.vmware.com/products/fusion.html"
@@ -77,6 +76,7 @@ cask "vmware-fusion11" do
   ]
 
   caveats do
+    discontinued
     kext
   end
 end
