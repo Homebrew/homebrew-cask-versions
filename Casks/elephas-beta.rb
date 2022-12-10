@@ -1,15 +1,19 @@
 cask "elephas-beta" do
-  version :latest
+  version "4.4"
   sha256 :no_check
 
-  version_suffix = "beta"
-
-  url "https://elephas.app/downloads/Elephas_#{version_suffix}.dmg"
-  name "elephas"
+  url "https://elephas.app/downloads/Elephas_beta.dmg"
+  name "Elephas"
   desc "Personal AI Writing Assistant"
   homepage "https://elephas.app/"
 
+  livecheck do
+    url :url
+    strategy :extract_plist
+  end
+
   conflicts_with cask: "elephas"
+  depends_on macos: ">= :catalina"
 
   app "Elephas.app"
 
