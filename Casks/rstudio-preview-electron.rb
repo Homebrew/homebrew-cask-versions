@@ -1,6 +1,6 @@
 cask "rstudio-preview-electron" do
-  version "2022.07.2,576"
-  sha256 "ad3681003bbb243b800b55aafee7fcfbff2dbdb71fc0eba1cb21317bb9a608e3"
+  version "2022.12.0,353"
+  sha256 "fd4bebb5b030c81c0b0dbdd782960c564a0eb037e243435a8265fcbcb03563b5"
 
   url "https://s3.amazonaws.com/rstudio-ide-build/electron/macos/RStudio-#{version.csv.first}-#{version.csv.second}.dmg",
       verified: "s3.amazonaws.com/rstudio-ide-build/"
