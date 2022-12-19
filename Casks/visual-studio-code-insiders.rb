@@ -1,10 +1,10 @@
 cask "visual-studio-code-insiders" do
-  arch arm: "darwin-arm64", intel: "darwin"
+  arch arm: "-arm64"
 
   version :latest
   sha256 :no_check
 
-  url "https://code.visualstudio.com/sha/download?build=insider&os=#{arch}"
+  url "https://code.visualstudio.com/sha/download?build=insider&os=darwin#{arch}"
   name "Microsoft Visual Studio Code"
   name "Visual Studio Code Insiders"
   desc "Code editor"
