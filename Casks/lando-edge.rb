@@ -12,9 +12,8 @@ cask "lando-edge" do
   homepage "https://docs.lando.dev/"
 
   livecheck do
-    url "https://github.com/lando/lando/releases?q=prerelease%3Atrue&expanded=true"
-    regex(%r{href=["']?[^"' >]*?/tag/\D*?(\d+(?:\.\d+)+)[^"' >]*?["' >]}i)
-    strategy :page_match
+    url :stable
+    regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
   conflicts_with cask: "lando"
