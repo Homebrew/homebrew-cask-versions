@@ -1,8 +1,9 @@
 cask "safari-technology-preview" do
-  if MacOS.version <= :monterey
+  on_monterey :or_older do
     version "160,032-13309-20221213-7EFE8FB7-39FF-44BB-B1E4-7394A1C1A821"
     sha256 "6179932f99524ef5cdbf80ccd2243d3d93c9aac1c4066c91f505ad10a449fb7d"
-  else
+  end
+  on_ventura :or_newer do
     version "160,032-13301-20221213-4525DA9A-DDC3-477A-9FF5-384F3D2486DD"
     sha256 "56adbbfc838800a053bb3c8d194dc672b534d840c99c6dcee9e93e0cd4df19bf"
   end
