@@ -1,14 +1,24 @@
 cask "vmware-fusion12" do
-  if MacOS.version <= :catalina
+  on_catalina :or_older do
     version "12.1.2,17964953"
     sha256 "873049d4080168b56085c5b67be1d4eeb14debc0e6cf176dbd52c78518d0b883"
 
     url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-#{version.csv.first}-#{version.csv.second}.dmg"
-  else
+
+    caveats do
+      discontinued
+      kext
+    end
+  end
+  on_big_sur :or_newer do
     version "12.2.4,20071091"
     sha256 "0b0516f4d5f70e759ae08a40d2e14f487c0b66d84ee467e38972ad013e1f6c7f"
 
     url "https://download3.vmware.com/software/FUS-#{version.csv.first.no_dots}/VMware-Fusion-#{version.csv.first}-#{version.csv.second}_x86.dmg"
+
+    caveats do
+      discontinued
+    end
   end
 
   name "VMware Fusion"
@@ -87,9 +97,4 @@ cask "vmware-fusion12" do
     "~/Library/Saved Application State/com.vmware.fusion.savedState",
     "~/Library/WebKit/com.vmware.fusion",
   ]
-
-  caveats do
-    discontinued
-    kext if MacOS.version == :catalina
-  end
 end
