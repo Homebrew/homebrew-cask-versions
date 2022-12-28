@@ -1,20 +1,26 @@
 cask "little-snitch4" do
-  if MacOS.version <= :mojave
+  on_mojave :or_older do
     version "4.5.2"
     sha256 "52116bb4e5186fed441c7cab835b4dd822243248f402334b486f0c7b20062c13"
-  else
+
+    livecheck do
+      skip "Legacy version"
+    end
+  end
+  on_catalina :or_newer do
     version "4.6.1"
     sha256 "bb4c609b0a0c353d42f99f00513cb653acdf6d8c857930f146475ed89a46ff82"
+
+    livecheck do
+      url "https://www.obdev.at/products/littlesnitch/releasenotes#{version.major}.html"
+      regex(/Little\sSnitch\s(\d+(?:\.\d+)+)/i)
+    end
   end
+
   url "https://www.obdev.at/downloads/littlesnitch/legacy/LittleSnitch-#{version}.dmg"
   name "Little Snitch"
   desc "Host-based application firewall"
   homepage "https://www.obdev.at/products/littlesnitch/index.html"
-
-  livecheck do
-    url "https://www.obdev.at/products/littlesnitch/releasenotes#{version.major}.html"
-    regex(/Little\sSnitch\s(\d+(?:\.\d+)+)/i)
-  end
 
   auto_updates true
   depends_on macos: [
