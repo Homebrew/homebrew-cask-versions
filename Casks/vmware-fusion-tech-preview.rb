@@ -93,7 +93,9 @@ cask "vmware-fusion-tech-preview" do
     "~/Library/WebKit/com.vmware.fusion",
   ]
 
-  caveats do
-    kext if MacOS.version == :catalina
+  on_catalina do
+    caveats do
+      kext
+    end
   end
 end
