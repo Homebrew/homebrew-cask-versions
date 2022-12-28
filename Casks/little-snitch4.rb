@@ -30,7 +30,6 @@ cask "little-snitch4" do
     :mojave,
     :catalina,
   ]
-
   container type: :naked
 
   installer manual: "LittleSnitch-#{version}.dmg"
