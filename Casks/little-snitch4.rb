@@ -7,7 +7,7 @@ cask "little-snitch4" do
       skip "Legacy version"
     end
   end
-  on_catalina do
+  on_catalina :or_newer do
     version "4.6.1"
     sha256 "bb4c609b0a0c353d42f99f00513cb653acdf6d8c857930f146475ed89a46ff82"
 
