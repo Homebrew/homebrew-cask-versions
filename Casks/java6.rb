@@ -8,11 +8,12 @@ cask "java6" do
   desc "Legacy runtime for the Java programming language"
   homepage "https://support.apple.com/kb/DL1572"
 
-  if MacOS.version <= :mojave
+  on_mojave :or_older do
     pkg "JavaForOSX.pkg"
 
     uninstall pkgutil: "com.apple.pkg.JavaForMacOSX107"
-  else
+  end
+  on_catalina :or_newer do
     artifact "JavaForOSX/JavaForOSX.pkg/Payload/Library/Java/JavaVirtualMachines/1.6.0.jdk",
              target: "/Library/Java/JavaVirtualMachines/1.6.0.jdk"
 
