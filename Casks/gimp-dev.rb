@@ -1,9 +1,9 @@
 cask "gimp-dev" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "2.99.14"
-  sha256 arm:   "2c23f9d1706514f4017ed2f90531931bfeedaacbef84e29e59c4d490e196c796",
-         intel: "cc3cb7e63aaa16bfb51eaa553d2466fa2935e7282378b50c9e9156d4f2dab3f8"
+  version "2.99.14-1"
+  sha256 arm:   "c9d934cf88ec6be7453bfde2e284a6e0a0d98de4a2e4af74f0a736bcfd5ab8ff",
+         intel: "7db834058f8763d1a8e8a12a5d74718b0577499dc88a33fb2321de39effacf01"
 
   url "https://download.gimp.org/pub/gimp/v#{version.major_minor}/osx/gimp-#{version}-#{arch}.dmg"
   name "GIMP development version"
@@ -13,7 +13,7 @@ cask "gimp-dev" do
   livecheck do
     url "https://www.gimp.org/downloads/devel/"
     strategy :page_match
-    regex(%r{href=.*?/gimp[._-]v?(\d+(?:\.\d+)+)[._-]#{arch}\.dmg}i)
+    regex(%r{href=.*?/gimp[._-]v?(\d+(?:[.-]\d+)+)[._-]#{arch}\.dmg}i)
   end
 
   conflicts_with cask: "gimp"
