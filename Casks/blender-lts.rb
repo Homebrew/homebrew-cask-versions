@@ -1,9 +1,9 @@
 cask "blender-lts" do
   arch arm: "arm64", intel: "x64"
 
-  version "3.3.1"
-  sha256 arm:   "e4a19540ad98222ebb23115fb1fdac04ba04501f4d8aa3d8b82c61d8757e1cd6",
-         intel: "6af68af6d43ac184ff0899d0ced2fc29006984fffee6a805825d7e67c48ee23f"
+  version "3.3.2"
+  sha256 arm:   "f6c78ecab6d870846c8a57809f015f79dd3e6bc2828746dd2426046b900da7a1",
+         intel: "12d118cb10a27a037f8a154cedc8a4729714c392f5be7b670070ffebe11cb9e7"
 
   url "https://download.blender.org/release/Blender#{version.major_minor}/blender-#{version}-macos-#{arch}.dmg"
   name "Blender"
@@ -15,7 +15,7 @@ cask "blender-lts" do
   # changes to this setup.
   livecheck do
     url "https://www.blender.org/download/"
-    regex(%r{href=.*?/blender[._-]v?(\d+(?:\.\d+)+)-macOS-#{arch}\.dmg}i)
+    regex(%r{href=.*?/blender[._-]v?(\d+(?:\.\d+)+)-macos-#{arch}\.dmg}i)
     strategy :page_match do |page, regex|
       # Match major/minor versions from LTS "download" page URLs
       lts_page = Homebrew::Livecheck::Strategy.page_content("https://www.blender.org/download/lts/")
@@ -28,6 +28,14 @@ cask "blender-lts" do
                           .map { |v| Version.new(v) }
       next if lts_versions.blank?
 
+      version_page = Homebrew::Livecheck::Strategy.page_content("https://www.blender.org/download/lts/#{lts_versions.max}/")
+      next [] if version_page[:content].blank?
+
+      # If the version page has a download link, return it as the livecheck version
+      matched_versions = version_page[:content].scan(regex).flatten
+      next matched_versions if matched_versions.present?
+
+      # If the version page doesn't have a download link, check the download page
       # Ensure we only match LTS versions on the download page
       page.scan(regex)
           .flatten
