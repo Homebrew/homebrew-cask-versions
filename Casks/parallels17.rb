@@ -1,6 +1,6 @@
 cask "parallels17" do
-  version "17.1.6-51584"
-  sha256 "e059b9ebb667201f0040eee789f076a0560f08d6722c35beba32d9f24bd08245"
+  version "17.1.5-51577"
+  sha256 "8f28996c13f5d24be8383b7edad2da5950ba540c0168751e3f15806a6e861eb9"
 
   url "https://download.parallels.com/desktop/v#{version.major}/#{version}/ParallelsDesktop-#{version}.dmg"
   name "Parallels Desktop"
@@ -43,6 +43,7 @@ cask "parallels17" do
   end
 
   uninstall delete: [
+              "/Library/Preferences/Parallels",
               "/usr/local/bin/prl_convert",
               "/usr/local/bin/prl_disk_tool",
               "/usr/local/bin/prl_perf_ctl",
@@ -50,37 +51,37 @@ cask "parallels17" do
               "/usr/local/bin/prlctl",
               "/usr/local/bin/prlexec",
               "/usr/local/bin/prlsrvctl",
-              "/Library/Preferences/Parallels",
             ],
             signal: ["TERM", "com.parallels.desktop.console"]
 
   zap trash: [
-    "~/.parallels_settings",
-    "~/Applications (Parallels)",
-    "~/Library/Application Scripts/*.com.parallels.Desktop",
-    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.parallels.desktop.console.sfl*",
-    "~/Library/Application Scripts/com.parallels.desktop*",
-    "~/Library/Caches/com.apple.helpd/Generated/com.parallels.desktop.console.help*",
-    "~/Library/Caches/com.parallels.desktop.console",
-    "~/Library/Caches/Parallels Software/Parallels Desktop",
-    "~/Library/Containers/com.parallels.desktop*",
-    "~/Library/Group Containers/*.com.parallels.Desktop",
-    "~/Library/Logs/parallels.log",
-    "~/Library/Parallels/Applications Menus",
-    "~/Library/Parallels/Parallels Desktop",
-    "~/Library/Preferences/com.parallels.desktop.console.LSSharedFileList.plist",
-    "~/Library/Preferences/com.parallels.desktop.console.plist",
-    "~/Library/Preferences/com.parallels.Parallels Desktop Statistics.plist",
-    "~/Library/Preferences/com.parallels.Parallels Desktop Events.plist",
-    "~/Library/Preferences/com.parallels.Parallels Desktop.plist",
-    "~/Library/Preferences/com.parallels.Parallels.plist",
-    "~/Library/Preferences/com.parallels.PDInfo.plist",
-    "~/Library/Preferences/Parallels",
-    "~/Library/Saved Application State/com.parallels.desktop.console.savedState",
-  ], rmdir: [
-    "/Users/Shared/Parallels",
-    "~/Library/Caches/Parallels Software",
-    "~/Library/Parallels",
-    "~/Parallels",
-  ]
+        "~/.parallels_settings",
+        "~/Applications (Parallels)",
+        "~/Library/Application Scripts/*.com.parallels.Desktop",
+        "~/Library/Application Scripts/com.parallels.desktop*",
+        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.parallels.desktop.console.sfl*",
+        "~/Library/Caches/com.apple.helpd/Generated/com.parallels.desktop.console.help*",
+        "~/Library/Caches/com.parallels.desktop.console",
+        "~/Library/Caches/Parallels Software/Parallels Desktop",
+        "~/Library/Containers/com.parallels.desktop*",
+        "~/Library/Group Containers/*.com.parallels.Desktop",
+        "~/Library/Logs/parallels.log",
+        "~/Library/Parallels/Applications Menus",
+        "~/Library/Parallels/Parallels Desktop",
+        "~/Library/Preferences/com.parallels.desktop.console.LSSharedFileList.plist",
+        "~/Library/Preferences/com.parallels.desktop.console.plist",
+        "~/Library/Preferences/com.parallels.Parallels Desktop Events.plist",
+        "~/Library/Preferences/com.parallels.Parallels Desktop Statistics.plist",
+        "~/Library/Preferences/com.parallels.Parallels Desktop.plist",
+        "~/Library/Preferences/com.parallels.Parallels.plist",
+        "~/Library/Preferences/com.parallels.PDInfo.plist",
+        "~/Library/Preferences/Parallels",
+        "~/Library/Saved Application State/com.parallels.desktop.console.savedState",
+      ],
+      rmdir: [
+        "/Users/Shared/Parallels",
+        "~/Library/Caches/Parallels Software",
+        "~/Library/Parallels",
+        "~/Parallels",
+      ]
 end
