@@ -43,6 +43,7 @@ cask "parallels17" do
   end
 
   uninstall delete: [
+              "/Library/Preferences/Parallels",
               "/usr/local/bin/prl_convert",
               "/usr/local/bin/prl_disk_tool",
               "/usr/local/bin/prl_perf_ctl",
@@ -50,7 +51,6 @@ cask "parallels17" do
               "/usr/local/bin/prlctl",
               "/usr/local/bin/prlexec",
               "/usr/local/bin/prlsrvctl",
-              "/Library/Preferences/Parallels",
             ],
             signal: ["TERM", "com.parallels.desktop.console"]
 
@@ -58,8 +58,8 @@ cask "parallels17" do
     "~/.parallels_settings",
     "~/Applications (Parallels)",
     "~/Library/Application Scripts/*.com.parallels.Desktop",
-    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.parallels.desktop.console.sfl*",
     "~/Library/Application Scripts/com.parallels.desktop*",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.parallels.desktop.console.sfl*",
     "~/Library/Caches/com.apple.helpd/Generated/com.parallels.desktop.console.help*",
     "~/Library/Caches/com.parallels.desktop.console",
     "~/Library/Caches/Parallels Software/Parallels Desktop",
@@ -70,14 +70,15 @@ cask "parallels17" do
     "~/Library/Parallels/Parallels Desktop",
     "~/Library/Preferences/com.parallels.desktop.console.LSSharedFileList.plist",
     "~/Library/Preferences/com.parallels.desktop.console.plist",
-    "~/Library/Preferences/com.parallels.Parallels Desktop Statistics.plist",
     "~/Library/Preferences/com.parallels.Parallels Desktop Events.plist",
+    "~/Library/Preferences/com.parallels.Parallels Desktop Statistics.plist",
     "~/Library/Preferences/com.parallels.Parallels Desktop.plist",
     "~/Library/Preferences/com.parallels.Parallels.plist",
     "~/Library/Preferences/com.parallels.PDInfo.plist",
     "~/Library/Preferences/Parallels",
     "~/Library/Saved Application State/com.parallels.desktop.console.savedState",
-  ], rmdir: [
+  ],
+      rmdir: [
     "/Users/Shared/Parallels",
     "~/Library/Caches/Parallels Software",
     "~/Library/Parallels",
