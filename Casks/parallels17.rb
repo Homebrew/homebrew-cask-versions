@@ -79,9 +79,9 @@ cask "parallels17" do
     "~/Library/Saved Application State/com.parallels.desktop.console.savedState",
   ],
       rmdir: [
-    "/Users/Shared/Parallels",
-    "~/Library/Caches/Parallels Software",
-    "~/Library/Parallels",
-    "~/Parallels",
-  ]
+        "/Users/Shared/Parallels",
+        "~/Library/Caches/Parallels Software",
+        "~/Library/Parallels",
+        "~/Parallels",
+      ]
 end
