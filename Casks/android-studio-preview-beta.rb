@@ -16,6 +16,7 @@ cask "android-studio-preview-beta" do
     regex(%r{href=.*?/android[._-]studio[._-]v?(\d+(?:\.\d+)+)[._-]#{arch}\.zip(.*\n*\s*.*)(Beta|RC)}i)
   end
 
+  auto_updates true
   conflicts_with cask: "android-studio"
 
   app "Android Studio.app"
