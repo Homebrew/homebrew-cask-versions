@@ -27,6 +27,9 @@ cask "virtualbox-beta" do
     # usual unstable version directories (e.g., 7.0.0_BETA3). At the moment,
     # we would have to check both the highest unstable and stable version
     # directories for an ARM64 file to find the newest version from each.
+    livecheck do
+      skip "No reliable way to get version information"
+    end
   end
 
   name "Oracle VirtualBox"
