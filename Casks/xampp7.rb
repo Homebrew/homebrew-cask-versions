@@ -9,8 +9,8 @@ cask "xampp7" do
   homepage "https://www.apachefriends.org/index.html"
 
   livecheck do
-    url "https://www.apachefriends.org/download.html"
-    regex(%r{href=.*?/xampp[._-]osx[._-]v?(7(?:\.\d+)*-\d+)[._-]installer\.dmg}i)
+    url "https://sourceforge.net/projects/xampp/rss?path=/XAMPP%20Mac%20OS%20X"
+    regex(/xampp[._-]osx[._-]v?(7(?:\.\d+)*-\d+)[._-]installer\.dmg/i)
   end
 
   conflicts_with cask: "xampp"
