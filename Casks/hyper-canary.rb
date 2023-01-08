@@ -1,9 +1,9 @@
 cask "hyper-canary" do
   arch arm: "arm64", intel: "x64"
 
-  version "4.0.0-canary.1"
-  sha256 arm:   "f69bfd7f10afba50723ae4511ea64f0a737896bb7b9872fd3e390998299b5113",
-         intel: "b44cfe2acd5d7020a5e721b57ec04267628c1eb2009f3db25a6c1dc05f16abda"
+  version "4.0.0-canary.2"
+  sha256 arm:   "9dfa8623aa2d1f2cb3ff5f386501a067b6e9c221a331dc9cc1a8798094852f60",
+         intel: "7c2c5d97793f2dca328742b8c7f6e43253aae888c9880a7e5fb894cf6470ab97"
 
   url "https://github.com/vercel/hyper/releases/download/v#{version}/Hyper-#{version}-mac-#{arch}.zip",
       verified: "github.com/vercel/hyper/"
