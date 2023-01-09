@@ -1,16 +1,20 @@
 cask "transmission-beta" do
-  version "4.0.0-beta.2"
-  sha256 "dd9a7358be34ed28a397742d983eb5be851b103c4204b775a120a478ef7a967c"
+  version "4.0.0-beta.3,r634b1e8fc1"
+  sha256 "729d7f276894b0e90a8f0fef843cda5b65a5fe855155429989631825bc1e4b3f"
 
-  url "https://github.com/transmission/transmission/releases/download/#{version}/Transmission-#{version}.dmg",
+  url "https://github.com/transmission/transmission/releases/download/#{version.csv.first}/Transmission-#{version.csv.first}%2B#{version.csv.second}.dmg",
       verified: "github.com/transmission/transmission/releases/"
   name "Transmission"
   desc "Open-source BitTorrent client"
   homepage "https://transmissionbt.com/"
 
   livecheck do
-    url :url
-    regex(/^(\d+(?:\.\d+)+[_-]beta\.\d+)$/i)
+    url "https://transmissionbt.com/download"
+    strategy :page_match do |page|
+      page.scan(/[Tt]ransmission-(\d+(?:\.\d+)+[_-]beta\.\d+(?:\+r?[a-f0-9]+)?)\.dmg/).map do |match|
+        match&.first&.gsub(/\+/, ",")
+      end
+    end
   end
 
   auto_updates true
