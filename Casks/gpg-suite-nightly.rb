@@ -1,6 +1,6 @@
 cask "gpg-suite-nightly" do
-  version "3236n"
-  sha256 "612bd3416db10f016be7615c45edf1ff48f36beae46bc17ee3ee65ba6c6fe7fb"
+  version "3237n"
+  sha256 "7a09a05b15af01877f47ce1f1067f6cdbe8b2ffae4cf3f271b8a7fef95c5ac9d"
 
   url "https://releases.gpgtools.org/nightlies/GPG_Suite-#{version}.dmg"
   name "GPG Suite Nightly"
