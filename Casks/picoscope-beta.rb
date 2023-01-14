@@ -1,18 +1,18 @@
 cask "picoscope-beta" do
-  version "7.0.114.13320"
-  sha256 "2d98c2fe3a7744391b72cb7a37be9199e643368fae7b15faa9154d6dcc4cc952"
+  version "7.0.116.13710"
+  sha256 "8d1a56b294955b0bc266cc39b3fe40e7f6ab06f32d7f10d1fc65f9a1036507dc"
 
-  url "https://oem.picotech.com/software/p#{version.major}beta/PicoScope_#{version.major}_TnM_Early_Access_#{version}.pkg"
+  url "https://oem.picotech.com/software/p#{version.major}beta/PicoScope_#{version}_TnM.pkg"
   name "PicoScope beta"
   desc "Test and measurement oscilloscope software for PicoScope oscilloscops"
   homepage "https://www.picotech.com/"
 
   livecheck do
     url "https://oem.picotech.com/p#{version.major}beta/download/"
-    regex(%r{href=.*?/PicoScope_(?:\d)_TnM_Early_Access[._-]v?(\d+(?:\.\d+)+)\.pkg}i)
+    regex(%r{href=.*?/PicoScope[._-]v?(\d+(?:\.\d+)+)[._-]TnM\.pkg}i)
   end
 
-  pkg "PicoScope_#{version.major}_TnM_Early_Access_#{version}.pkg"
+  pkg "PicoScope_#{version}_TnM.pkg"
 
   uninstall pkgutil: "com.picotech.picoscope#{version.major}tnmbeta"
 end
