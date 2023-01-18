@@ -9,7 +9,9 @@ cask "whatsapp-beta" do
 
   livecheck do
     url "https://web.whatsapp.com/desktop-beta/mac/releases"
-    regex(/release[._-](\d+(?:\.\d+)+)\.zip/i)
+    strategy :page_match do |page|
+      JSON.parse(page)["name"]
+    end
   end
 
   auto_updates true
