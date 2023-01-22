@@ -13,6 +13,8 @@ cask "openra-playtest" do
     regex(/^playtest[._-]v?(\d+(?:[.-]\d+)*)$/i)
   end
 
+  conflicts_with cask: "openra"
+
   app "OpenRA - Dune 2000.app"
   app "OpenRA - Red Alert.app"
   app "OpenRA - Tiberian Dawn.app"
