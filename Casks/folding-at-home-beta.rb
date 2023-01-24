@@ -14,19 +14,16 @@ cask "folding-at-home-beta" do
 
   conflicts_with cask: "folding-at-home"
   depends_on macos: ">= :high_sierra"
-  depends_on arch: [:arm64, :x86_64]
 
   pkg "fah-client_#{version}_universal.pkg"
 
   uninstall launchctl: "org.foldingathome.fahclient",
             pkgutil:   "org.foldingathome.fahclient.*"
 
-  zap trash: "/Library/Application Support/FAHClient"
-
   caveats do
     <<~EOS
 
-      Please open https://app.foldingathome.org in a browser other than Safari.
+      Please open the Web Control app https://app.foldingathome.org in a browser other than Safari.
 
       Safari will not allow unencrypted connections from an https page.
 
