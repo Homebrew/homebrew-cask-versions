@@ -19,16 +19,4 @@ cask "folding-at-home-beta" do
 
   uninstall launchctl: "org.foldingathome.fahclient",
             pkgutil:   "org.foldingathome.fahclient.*"
-
-  caveats do
-    <<~EOS
-
-      Please open the Web Control app https://app.foldingathome.org in a browser other than Safari.
-
-      Safari will not allow unencrypted connections from an https page.
-
-      Install will fail if Safari seems to be your only browser.
-
-    EOS
-  end
 end
