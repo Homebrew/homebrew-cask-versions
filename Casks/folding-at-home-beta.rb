@@ -18,5 +18,7 @@ cask "folding-at-home-beta" do
   pkg "fah-client_#{version}_universal.pkg"
 
   uninstall launchctl: "org.foldingathome.fahclient",
-            pkgutil:   "org.foldingathome.fahclient.*"
+            pkgutil:   "org.foldingathome.fahclient.pkg"
+
+  zap trash: "/Library/Application Support/FAHClient"
 end
