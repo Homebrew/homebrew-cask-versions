@@ -15,7 +15,10 @@ cask "whatsapp-beta" do
   end
 
   auto_updates true
-  conflicts_with cask: "whatsapp"
+  conflicts_with cask: [
+    "whatsapp",
+    "whatsapp-alpha",
+  ]
 
   app "WhatsApp.app"
 
