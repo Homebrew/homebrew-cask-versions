@@ -1,9 +1,9 @@
-cask "whatsapp-native" do
+cask "whatsapp-alpha" do
   version "2.23.1.75"
   sha256 :no_check
 
   url "https://web.whatsapp.com/desktop/mac_native/release/"
-  name "WhatsApp Beta"
+  name "WhatsApp Alpha"
   desc "Native desktop client for WhatsApp"
   homepage "https://faq.whatsapp.com/451924530376167/?cms_platform=web"
 
