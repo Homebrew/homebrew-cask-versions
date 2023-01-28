@@ -9,7 +9,10 @@ cask "monofocus" do
 
   livecheck do
     url :url
-    strategy :extract_plist
+    regex(/^v?(\d+(?:\.\d+)+\S*)/i)
+    strategy :extract_plist do |items, regex|
+      items["com.zbudniewek.WorkingOn"]&.short_version&.scan(regex)&.map { |match| match[0] }
+    end
   end
 
   depends_on macos: ">= :catalina"
