@@ -4,8 +4,15 @@ cask "monofocus" do
 
   url "https://updates.monofocus.app/MonoFocus.latest.dmg"
   name "MonoFocus"
-  desc "Keep all tasks from your todo apps in one place and one focused on your menu bar"
+  desc "Keep all tasks from your todo apps on your menu bar"
   homepage "https://monofocus.app/"
+
+  livecheck do
+    url :url
+    strategy :extract_plist
+  end
+
+  depends_on macos: ">= :catalina"
 
   app "MonoFocus.app"
 end
