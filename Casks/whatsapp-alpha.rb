@@ -8,9 +8,8 @@ cask "whatsapp-alpha" do
   homepage "https://faq.whatsapp.com/451924530376167/?cms_platform=web"
 
   livecheck do
-    url :url
-    strategy :header_match
-    regex(/WhatsApp[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
+    url "https://web.whatsapp.com/desktop/mac_native/updates/?branch=relbranch&configuration=Beta"
+    strategy :sparkle
   end
 
   auto_updates true
