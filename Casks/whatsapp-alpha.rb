@@ -1,16 +1,17 @@
 cask "whatsapp-alpha" do
-  version "2.23.1.75"
-  sha256 :no_check
+  version "2.23.2.75"
+  sha256 "1556bb52cab0f88d4c24ab177129da4e9ba168a9707d92a1e2574e00360a58d4"
 
-  url "https://web.whatsapp.com/desktop/mac_native/release/"
+  url "https://web.whatsapp.com/desktop/mac_native/release/?version=#{version}&extension=zip&configuration=Beta&branch=relbranch"
   name "WhatsApp Alpha"
   desc "Native desktop client for WhatsApp"
   homepage "https://faq.whatsapp.com/451924530376167/?cms_platform=web"
 
   livecheck do
-    url :url
-    strategy :header_match
-    regex(/WhatsApp[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
+    url "https://web.whatsapp.com/desktop/mac_native/updates/?branch=relbranch&configuration=Beta"
+    strategy :sparkle do |item|
+      item["url"][/\?version=v?(\d+(?:\.\d+)+)[ "&]/i, 1]
+    end
   end
 
   auto_updates true
