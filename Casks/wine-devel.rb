@@ -1,6 +1,6 @@
 cask "wine-devel" do
-  version "7.21"
-  sha256 "6a1ae7abd60715666d54cd668834b5406d523ea85570baf8168c0ecb3e47f36c"
+  version "8.0"
+  sha256 "9866ea3e8642570cf2ef759d602b685fab70052b7f44749079220f831c8da1a2"
 
   # Current winehq packages are deprecated and these are packages from
   # the new maintainers that will eventually be pushed to Winehq.
