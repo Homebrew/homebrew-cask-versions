@@ -9,7 +9,10 @@ cask "dolphin-dev" do
   desc "Emulator to play GameCube and Wii games"
   homepage "https://dolphin-emu.org/"
 
-  conflicts_with cask: "dolphin"
+  conflicts_with cask: [
+    "dolphin",
+    "homebrew/cask-versions/dolphin-beta",
+  ]
 
   app "Dolphin.app"
   app "Dolphin Updater.app"
