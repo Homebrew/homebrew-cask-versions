@@ -1,17 +1,17 @@
-cask "dolphin-dev" do
+cask "dolphin-beta" do
   version :latest
   sha256 :no_check
 
-  url "https://dolphin-emu.org/download/list/master/1/" do |page|
+  url "https://dolphin-emu.org/download/" do |page|
     page[/href="([^"]+\.dmg)"/, 1]
   end
-  name "Dolphin Dev"
+  name "Dolphin Beta"
   desc "Emulator to play GameCube and Wii games"
   homepage "https://dolphin-emu.org/"
 
   conflicts_with cask: [
     "dolphin",
-    "homebrew/cask-versions/dolphin-beta",
+    "homebrew/cask-versions/dolphin-dev",
   ]
 
   app "Dolphin.app"
