@@ -1,9 +1,9 @@
 cask "java-beta" do
   arch arm: "aarch64", intel: "x64"
 
-  version "20,32"
-  sha256 arm:   "843455b131af9cf05708ad77fdafde30038af82b187f5e6e5b5bd0cf59f890c1",
-         intel: "5711830113cd7c1cac88c8a2a9b3fa7084944e8b38af29774bdc1c8f771c136f"
+  version "20,34"
+  sha256 arm:   "bda8b11b5dda18506b09fe3053c18b8a683e6234aea6e9f0d42f2ec6d8379c27",
+         intel: "a52630fed1b280549cad84169ce861de931eb6c7b4299359ec45e0194388c46c"
 
   url "https://download.java.net/java/early_access/jdk#{version.major}/#{version.csv.second}/GPL/openjdk-#{version.csv.first}-ea+#{version.csv.second}_macos-#{arch}_bin.tar.gz"
   name "OpenJDK Early Access Java Development Kit"
