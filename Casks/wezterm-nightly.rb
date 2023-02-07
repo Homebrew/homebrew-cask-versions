@@ -30,9 +30,5 @@ cask "wezterm-nightly" do
     end
   end
 
-  zap trash: [
-    "~/.config/wezterm/",
-    "~/.wezterm.lua",
-    "~/Library/Saved Application State/com.github.wez.wezterm.savedState",
-  ]
+  zap trash: "~/Library/Saved Application State/com.github.wez.wezterm.savedState"
 end
