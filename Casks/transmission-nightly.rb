@@ -10,10 +10,7 @@ cask "transmission-nightly" do
   desc "Open-source BitTorrent client"
   homepage "https://transmissionbt.com/"
 
-  conflicts_with cask: [
-    "transmission",
-    "homebrew/cask-versions/transmission-beta",
-  ]
+  conflicts_with cask: "transmission"
 
   app "Transmission.app"
 
