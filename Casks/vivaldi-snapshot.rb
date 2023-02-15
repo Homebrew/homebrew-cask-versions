@@ -1,6 +1,6 @@
 cask "vivaldi-snapshot" do
-  version "5.7.2921.29"
-  sha256 "aaab83e10382939f2e7e45843c8a1a570cc75d7168864b9310fb8378f7f3f91e"
+  version "5.7.2921.45"
+  sha256 "8a6058c57d115a88cb0d5faa9a11e02586fe61ef69adbb245151aabd7eee4b66"
 
   url "https://downloads.vivaldi.com/snapshot/Vivaldi.#{version}.universal.dmg"
   name "Vivaldi"
