@@ -12,6 +12,9 @@ cask "microsoft-office-2016" do
   conflicts_with cask: %w[
     microsoft-excel
     microsoft-office
+    microsoft-office-businesspro
+    microsoft-onenote
+    microsoft-outlook
     microsoft-powerpoint
     microsoft-word
     onedrive
