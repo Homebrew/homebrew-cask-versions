@@ -8,10 +8,12 @@ cask "parallels14" do
   homepage "https://www.parallels.com/products/desktop/"
 
   livecheck do
-    url "https://kb.parallels.com/en/124521"
-    regex(/(v?\d+(?:\.\d+)+\s*\(\d+\)|\(v?\d+(?:\.\d+)+-\d+\))/i)
-    strategy :page_match do |page, regex|
-      page.scan(regex).map { |match| match.first.strip.tr("()", "").gsub(/\s+/, "-") }
+    url "https://kb.parallels.com/124521"
+    strategy :page_match do |page|
+      match = page.match(/(\d+(?:\.\d+)+)(?:\s*|&nbsp;)\((\d+)\)/i)
+      next if match.blank?
+
+      "#{match[1]}-#{match[2]}"
     end
   end
 
