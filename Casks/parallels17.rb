@@ -8,8 +8,13 @@ cask "parallels17" do
   homepage "https://www.parallels.com/products/desktop/"
 
   livecheck do
-    url "https://www.parallels.com/directdownload/pd#{version.major}/image/"
-    strategy :header_match
+    url "https://kb.parallels.com/125552"
+    strategy :page_match do |page|
+      match = page.match(/(\d+(?:\.\d+)+)&nbsp;\((\d+)\)/i)
+      next if match.blank?
+
+      "#{match[1]}-#{match[2]}"
+    end
   end
 
   auto_updates true
