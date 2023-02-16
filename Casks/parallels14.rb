@@ -10,7 +10,7 @@ cask "parallels14" do
   livecheck do
     url "https://kb.parallels.com/124521"
     strategy :page_match do |page|
-      match = page.match(/(\d+(?:\.\d+)+)&nbsp;\((\d+)\)/i)
+      match = page.match(/(\d+(?:\.\d+)+)(?:\s*|&nbsp;)\((\d+)\)/i)
       next if match.blank?
 
       "#{match[1]}-#{match[2]}"
