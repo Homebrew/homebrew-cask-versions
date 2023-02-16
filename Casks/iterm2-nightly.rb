@@ -13,10 +13,10 @@ cask "iterm2-nightly" do
     strategy :header_match
   end
 
-  conflicts_with cask: [
-    "iterm2",
-    "iterm2-beta",
-    "iterm2-legacy",
+  conflicts_with cask: %w[
+    iterm2
+    iterm2-beta
+    iterm2-legacy
   ]
   depends_on macos: ">= :mojave"
 
