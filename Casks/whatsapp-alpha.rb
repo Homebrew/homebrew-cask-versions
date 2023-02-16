@@ -15,9 +15,9 @@ cask "whatsapp-alpha" do
   end
 
   auto_updates true
-  conflicts_with cask: [
-    "whatsapp",
-    "whatsapp-beta",
+  conflicts_with cask: %w[
+    whatsapp
+    whatsapp-beta
   ]
   depends_on macos: ">= :big_sur"
 
