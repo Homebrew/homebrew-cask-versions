@@ -1,7 +1,7 @@
 cask "iterm2-nightly" do
   # NOTE: "2" is not a version number, but an intrinsic part of the product name
-  version "3_5_20230214"
-  sha256 "cd2319d5e595c0d113f7721c804f7bc91dc7d15928fec91ab42d731ddf7ffea9"
+  version "3_5_20230216"
+  sha256 "8a134636aabef0147d989c1e2622b81e04c54739f1a34c78499be073f7e8dbfb"
 
   url "https://www.iterm2.com/nightly/iTerm2-#{version}-nightly.zip"
   name "iTerm2"
@@ -13,10 +13,10 @@ cask "iterm2-nightly" do
     strategy :header_match
   end
 
-  conflicts_with cask: [
-    "iterm2",
-    "iterm2-beta",
-    "iterm2-legacy",
+  conflicts_with cask: %w[
+    iterm2
+    iterm2-beta
+    iterm2-legacy
   ]
   depends_on macos: ">= :mojave"
 
@@ -24,9 +24,9 @@ cask "iterm2-nightly" do
 
   zap trash: [
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.googlecode.iterm2.sfl*",
-    "~/Library/Caches/com.googlecode.iterm2",
     "~/Library/Application Support/iTerm",
     "~/Library/Application Support/iTerm2",
+    "~/Library/Caches/com.googlecode.iterm2",
     "~/Library/Preferences/com.googlecode.iterm2.plist",
     "~/Library/Saved Application State/com.googlecode.iterm2.savedState",
   ]
