@@ -8,7 +8,7 @@ cask "parallels12" do
   homepage "https://www.parallels.com/products/desktop/"
 
   livecheck do
-    url "https://kb.parallels.com/en/123948"
+    url "https://kb.parallels.com/123948"
     strategy :page_match do |page|
       match = page.match(/(\d+(?:\.\d+)+)&nbsp;\((\d+)\)/i)
       next if match.blank?
