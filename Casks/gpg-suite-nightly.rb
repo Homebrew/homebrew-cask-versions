@@ -12,7 +12,13 @@ cask "gpg-suite-nightly" do
     regex(/href=.*?GPG_Suite-([0-9a-z]+)\.dmg/i)
   end
 
-  conflicts_with cask: "gpg-suite"
+  auto_updates true
+  conflicts_with cask: %w[
+    gpg-suite
+    gpg-suite-no-mail
+    gpg-suite-pinentry
+  ], formula: "gpg"
+  depends_on macos: ">= :mojave"
 
   pkg "Install.pkg"
 
