@@ -1,7 +1,7 @@
 cask "iterm2-nightly" do
   # NOTE: "2" is not a version number, but an intrinsic part of the product name
-  version "3_5_20230216"
-  sha256 "8a134636aabef0147d989c1e2622b81e04c54739f1a34c78499be073f7e8dbfb"
+  version "3_5_20230217"
+  sha256 "980e1ae17a6df7fd93d55f8241ab04fd9f2f894224c8e766e9faba2f5e06c3a3"
 
   url "https://www.iterm2.com/nightly/iTerm2-#{version}-nightly.zip"
   name "iTerm2"
@@ -13,10 +13,10 @@ cask "iterm2-nightly" do
     strategy :header_match
   end
 
-  conflicts_with cask: %w[
-    iterm2
-    iterm2-beta
-    iterm2-legacy
+  conflicts_with cask: [
+    "iterm2",
+    "iterm2-beta",
+    "iterm2-legacy",
   ]
   depends_on macos: ">= :mojave"
 
