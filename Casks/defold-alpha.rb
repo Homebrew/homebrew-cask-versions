@@ -1,6 +1,6 @@
 cask "defold-alpha" do
-  version "1.4.3,3f6473cdb8a5b741fd8268ff6a3b9c34c7300d34"
-  sha256 "7a456c744991e7a88b042ab7c3b33e14f744558d3752df13dcaf14e4153181d6"
+  version "1.4.3,28312323a00e664d10f25f6a57b89ebfa9c09e04"
+  sha256 "e7c43ed9b5eeda4e1bb3a5f40453ac8bb9aaa5ac42c5f2d98243b967b9ea5f0d"
 
   url "https://d.defold.com/archive/alpha/#{version.csv.second}/alpha/editor2/Defold-x86_64-macos.dmg"
   name "Defold"
@@ -18,9 +18,9 @@ cask "defold-alpha" do
     end
   end
 
-  conflicts_with cask: %w[
-    defold
-    defold-beta
+  conflicts_with cask: [
+    "defold",
+    "defold-beta",
   ]
 
   app "Defold.app"
