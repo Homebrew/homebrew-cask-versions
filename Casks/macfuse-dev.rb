@@ -1,6 +1,6 @@
 cask "macfuse-dev" do
-  version "4.4.1"
-  sha256 "2a2d0f37ec5fcff547c5efa7d08539103a0b46bc16080c2b41a7e749f6e65c61"
+  version "4.4.2"
+  sha256 "0e59f6cc796cd69fbc5779bc5b5081f7cd8e41beecc75c02fc0d2ccb8758b9cb"
 
   url "https://github.com/osxfuse/osxfuse/releases/download/macfuse-#{version}/macfuse-#{version}.dmg",
       verified: "github.com/osxfuse/osxfuse/"
@@ -13,7 +13,9 @@ cask "macfuse-dev" do
     regex(/macfuse[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
   end
 
+  auto_updates true
   conflicts_with cask: "macfuse"
+  depends_on macos: ">= :sierra"
 
   pkg "Extras/macFUSE #{version}.pkg"
 
@@ -25,6 +27,8 @@ cask "macfuse-dev" do
     "io.macfuse.installer.components.core",
     "io.macfuse.installer.components.preferencepane",
   ]
+
+  zap trash: "/Library/PreferencePanes/macFUSE.prefPane"
 
   caveats do
     kext
