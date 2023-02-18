@@ -13,7 +13,9 @@ cask "macfuse-dev" do
     regex(/macfuse[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
   end
 
+  auto_updates true
   conflicts_with cask: "macfuse"
+  depends_on macos: ">= :sierra"
 
   pkg "Extras/macFUSE #{version}.pkg"
 
@@ -25,6 +27,8 @@ cask "macfuse-dev" do
     "io.macfuse.installer.components.core",
     "io.macfuse.installer.components.preferencepane",
   ]
+
+  zap trash: "/Library/PreferencePanes/macFUSE.prefPane"
 
   caveats do
     kext
