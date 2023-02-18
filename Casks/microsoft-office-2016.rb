@@ -9,15 +9,15 @@ cask "microsoft-office-2016" do
   homepage "https://products.office.com/mac/microsoft-office-for-mac/"
 
   auto_updates true
-  conflicts_with cask: %w[
-    microsoft-excel
-    microsoft-office
-    microsoft-office-businesspro
-    microsoft-onenote
-    microsoft-outlook
-    microsoft-powerpoint
-    microsoft-word
-    onedrive
+  conflicts_with cask: [
+    "microsoft-excel",
+    "microsoft-office",
+    "microsoft-office-businesspro",
+    "microsoft-onenote",
+    "microsoft-outlook",
+    "microsoft-powerpoint",
+    "microsoft-word",
+    "onedrive",
   ]
   depends_on macos: ">= :sierra"
 
