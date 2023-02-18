@@ -1,6 +1,8 @@
 cask "emacs-nightly" do
-  version "2023-02-15_00-09-15,51e3f91f50da43f18706410bf6cd096684379daa"
-  sha256 "12751cd87830b3f57df14e91b56520bfd72ab9ccf0fdd5095ad76e1132236020"
+  arch arm: "arm64-11", intel: "x86_64-10_11"
+
+  version "2023-02-18_00-09-15,1298d1db189bf434e54a792d3a6746237881f251"
+  sha256 "c788e57e2b9727de380c5642f97a9b0ba6e87d2385b09d236ff231ababb04c37"
 
   url "https://emacsformacosx.com/emacs-builds/Emacs-#{version.csv.first}-#{version.csv.second}-universal.dmg"
   name "Emacs"
@@ -25,10 +27,16 @@ cask "emacs-nightly" do
                  formula: "emacs"
 
   app "Emacs.app"
-  binary "#{appdir}/Emacs.app/Contents/MacOS/Emacs", target: "emacs"
-  binary "#{appdir}/Emacs.app/Contents/MacOS/bin/ebrowse"
-  binary "#{appdir}/Emacs.app/Contents/MacOS/bin/emacsclient"
-  binary "#{appdir}/Emacs.app/Contents/MacOS/bin/etags"
+  binary "#{appdir}/Emacs.app/Contents/MacOS/Emacs-#{arch}", target: "emacs"
+  binary "#{appdir}/Emacs.app/Contents/MacOS/bin-#{arch}/ctags"
+  binary "#{appdir}/Emacs.app/Contents/MacOS/bin-#{arch}/ebrowse"
+  binary "#{appdir}/Emacs.app/Contents/MacOS/bin-#{arch}/emacsclient"
+  binary "#{appdir}/Emacs.app/Contents/MacOS/bin-#{arch}/etags"
+  manpage "#{appdir}/Emacs.app/Contents/Resources/man/man1/ctags.1.gz"
+  manpage "#{appdir}/Emacs.app/Contents/Resources/man/man1/ebrowse.1.gz"
+  manpage "#{appdir}/Emacs.app/Contents/Resources/man/man1/emacs.1.gz"
+  manpage "#{appdir}/Emacs.app/Contents/Resources/man/man1/emacsclient.1.gz"
+  manpage "#{appdir}/Emacs.app/Contents/Resources/man/man1/etags.1.gz"
 
   zap trash: [
     "~/Library/Caches/org.gnu.Emacs",
