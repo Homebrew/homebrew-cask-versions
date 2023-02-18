@@ -18,9 +18,9 @@ cask "defold-alpha" do
     end
   end
 
-  conflicts_with cask: %w[
-    defold
-    defold-beta
+  conflicts_with cask: [
+    "defold",
+    "defold-beta",
   ]
 
   app "Defold.app"
