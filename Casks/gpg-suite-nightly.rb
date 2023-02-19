@@ -13,10 +13,10 @@ cask "gpg-suite-nightly" do
   end
 
   auto_updates true
-  conflicts_with cask: %w[
-    gpg-suite
-    gpg-suite-no-mail
-    gpg-suite-pinentry
+  conflicts_with cask: [
+    "gpg-suite",
+    "gpg-suite-no-mail",
+    "gpg-suite-pinentry",
   ], formula: "gpg"
   depends_on macos: ">= :mojave"
 
