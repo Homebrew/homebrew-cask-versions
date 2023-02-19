@@ -1,5 +1,5 @@
 cask "whatsapp-beta" do
-  version "2.2308.2"
+  version "2.2308.5"
   sha256 :no_check
 
   url "https://web.whatsapp.com/desktop-beta/mac/files/WhatsApp-beta.dmg"
@@ -15,9 +15,9 @@ cask "whatsapp-beta" do
   end
 
   auto_updates true
-  conflicts_with cask: %w[
-    whatsapp
-    whatsapp-alpha
+  conflicts_with cask: [
+    "whatsapp",
+    "whatsapp-alpha",
   ]
 
   app "WhatsApp.app"
