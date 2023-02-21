@@ -1,5 +1,5 @@
 cask "whatsapp-beta" do
-  version "2.2308.5"
+  version "2.2310.0"
   sha256 :no_check
 
   url "https://web.whatsapp.com/desktop-beta/mac/files/WhatsApp-beta.dmg"
