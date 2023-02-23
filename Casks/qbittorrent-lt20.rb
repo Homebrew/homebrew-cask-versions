@@ -5,13 +5,13 @@ cask "qbittorrent-lt20" do
   url "https://downloads.sourceforge.net/qbittorrent/qbittorrent-mac/qbittorrent-#{version}/qbittorrent-#{version}_lt20.dmg",
       verified: "sourceforge.net/qbittorrent/"
   name "qBittorrent"
-  desc "Edition of qBitorrent that is based on libtorrent-rasterbar 2.0.x series"
+  desc "Edition of qBitorrent based on libtorrent-rasterbar 2.0.x"
   homepage "https://www.qbittorrent.org/"
 
   livecheck do
     url "https://sourceforge.net/projects/qbittorrent/rss?path=/qbittorrent-mac"
     strategy :page_match
-    regex(/qbittorrent-(\d+(?:\.\d+)+)_lt20\.dmg/i)
+    regex(/qbittorrent[._-]v?(\d+(?:\.\d+)+)[._-]lt20\.dmg/i)
   end
 
   conflicts_with cask: "qbittorrent"
