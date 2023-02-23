@@ -3,7 +3,7 @@ cask "sourcetree-beta" do
   sha256 "c94496ca30687cbac876474412334a438ecbfee57d911625c520600b5c8ee37f"
 
   url "https://product-downloads.atlassian.com/software/sourcetree/beta/Sourcetree_#{version.csv.first}_#{version.csv.second}.zip",
-      verified: "product-downloads.atlassian.com/software/sourcetree/"
+      verified: "product-downloads.atlassian.com/software/sourcetree/beta/"
   name "Atlassian Sourctree"
   desc "Graphical client for Git version control"
   homepage "https://www.sourcetreeapp.com/"
