@@ -1,9 +1,9 @@
 cask "clashx-pro" do
-  version "1.96.2.1"
-  sha256 "ec88bef259597515163fe8745a6daf96125b677a265284c0f959980a755474d3"
+  version "1.97.0.4"
+  sha256 "0b97a6cad65ecca41b1aec2e50a19bd305641d4219447fe337e74cd2c09f672b"
 
-  url "https://appcenter.vercel.app/clashx/clashx-pro/#{version}",
-      verified: "appcenter.vercel.app/clashx"
+  url "https://appcenter.clashx.workers.dev/api/1cd052f7-e118-4d13-87fb-35176f9702c1/#{version}",
+      verified: "appcenter.clashx.workers.dev/api/1cd052f7-e118-4d13-87fb-35176f9702c1/"
   name "ClashX Pro"
   desc "Rule-based custom proxy with GUI based on clash"
   homepage "https://github.com/yichengchen/clashX"
