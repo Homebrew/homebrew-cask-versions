@@ -1,15 +1,15 @@
 cask "mumble-snapshot" do
-  version "1.4.0_2021-09-04_g37ee67716"
-  sha256 "d66818e6e7f6775da70fc5fbafbe81a9f77b4a95282c3e3dfff65aca4db6cfb7"
+  version "1.5.517"
+  sha256 "203daacd76b810c3a51c706e0082516435b6d86d4740eb15c9720b55a16e2bc1"
 
-  url "https://dl.mumble.info/snapshot/mumble_client-#{version.tr("_", "~")}~snapshot.dmg"
+  url "https://dl.mumble.info/snapshot/mumble_client-#{version}.x64.dmg"
   name "Mumble Snapshot"
   desc "Open-source, low-latency, high quality voice chat software for gaming"
   homepage "https://mumble.info/"
 
   livecheck do
     url "https://dl.mumble.info/latest/snapshot/client-macos-x64"
-    regex(/mumble[._-]client[._-](.*)~snapshot\.dmg/i)
+    regex(/mumble[._-]client[._-](.+?)(?:\.x64|~snapshot)?\.dmg/i)
     strategy :header_match do |headers, regex|
       headers["content-disposition"][regex, 1].tr("~", "_")
     end
