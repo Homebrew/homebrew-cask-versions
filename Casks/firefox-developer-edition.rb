@@ -23,6 +23,9 @@ cask "firefox-developer-edition" do
   language "fr" do
     "fr"
   end
+  language "it" do
+    "it"
+  end
   language "nl" do
     "nl"
   end
