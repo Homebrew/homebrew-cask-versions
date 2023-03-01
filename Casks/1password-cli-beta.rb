@@ -3,7 +3,7 @@ cask "1password-cli-beta" do
   sha256 "71627c25089d714550bdc79c3d62947c9a8f52bfead5db364416de8a2f4b1c4e"
 
   url "https://cache.agilebits.com/dist/1P/op2/pkg/v#{version}/op_apple_universal_v#{version}.pkg",
-      verified: "https://cache.agilebits.com/dist/1P/op2/pkg/"
+      verified: "cache.agilebits.com/dist/1P/op2/pkg/"
   name "1Password CLI"
   desc "Command-line helper for the 1Password password manager"
   homepage "https://developer.1password.com/docs/cli"
