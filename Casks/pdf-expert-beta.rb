@@ -2,7 +2,7 @@ cask "pdf-expert-beta" do
   version "3.0.36,902"
   sha256 "47ab7309f26dab88c7c978faf3e67d3180bb479abb328fefc1a4de5616a085c7"
 
-  url "https://downloads.pdfexpert.com/pem3/versions/#{version.csv.second}/PDFExpert.zip"
+  url "https://downloads.pdfexpert.com/pem#{version.major}/versions/#{version.csv.second}/PDFExpert.zip"
   name "PDF Expert"
   desc "PDF reader, editor and annotator"
   homepage "https://pdfexpert.com/"
