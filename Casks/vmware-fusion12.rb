@@ -38,7 +38,6 @@ cask "vmware-fusion12" do
   depends_on macos: ">= :catalina"
 
   app "VMware Fusion.app"
-  binary "#{appdir}/VMware Fusion.app/Contents/Library/VMware OVF Tool/ovftool"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vkd/bin/vctl"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmnet-bridge"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmnet-cfgcli"
@@ -50,6 +49,7 @@ cask "vmware-fusion12" do
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmrest"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmrun"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmss2core"
+  binary "#{appdir}/VMware Fusion.app/Contents/Library/VMware OVF Tool/ovftool"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmware-aewp"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmware-authd"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmware-cloneBootCamp"
@@ -84,24 +84,24 @@ cask "vmware-fusion12" do
     "/Library/Logs/VMware",
     "/Library/Preferences/VMware Fusion",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.vmware.fusion.sfl*",
-    "~/Library/Application Support/VMware Fusion",
     "~/Library/Application Support/VMware Fusion Applications Menu",
+    "~/Library/Application Support/VMware Fusion",
     "~/Library/Caches/com.vmware.fusion",
-    "~/Library/Logs/VMware Fusion",
     "~/Library/Logs/VMware Fusion Applications Menu",
+    "~/Library/Logs/VMware Fusion",
     "~/Library/Logs/VMware Graphics Service.log",
     "~/Library/Logs/VMware",
-    "~/Library/Preferences/VMware Fusion",
+    "~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist",
+    "~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist.lockfile",
     "~/Library/Preferences/com.vmware.fusion.plist",
     "~/Library/Preferences/com.vmware.fusion.plist.lockfile",
-    "~/Library/Preferences/com.vmware.fusionApplicationsMenu.plist",
     "~/Library/Preferences/com.vmware.fusionApplicationsMenu.helper.plist",
+    "~/Library/Preferences/com.vmware.fusionApplicationsMenu.plist",
     "~/Library/Preferences/com.vmware.fusionDaemon.plist",
     "~/Library/Preferences/com.vmware.fusionDaemon.plist.lockfile",
     "~/Library/Preferences/com.vmware.fusionStartMenu.plist",
     "~/Library/Preferences/com.vmware.fusionStartMenu.plist.lockfile",
-    "~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist",
-    "~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist.lockfile",
+    "~/Library/Preferences/VMware Fusion",
     "~/Library/Saved Application State/com.vmware.fusion.savedState",
     "~/Library/WebKit/com.vmware.fusion",
   ]
