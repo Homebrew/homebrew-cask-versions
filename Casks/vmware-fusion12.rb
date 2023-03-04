@@ -11,8 +11,8 @@ cask "vmware-fusion12" do
     end
   end
   on_big_sur :or_newer do
-    version "12.2.4,20071091"
-    sha256 "0b0516f4d5f70e759ae08a40d2e14f487c0b66d84ee467e38972ad013e1f6c7f"
+    version "12.2.5,20904517"
+    sha256 "403d14e7609f1863bd46617c90f2e3642f6b68ed387c1b7f8c62722d580c633c"
 
     url "https://download3.vmware.com/software/FUS-#{version.csv.first.no_dots}/VMware-Fusion-#{version.csv.first}-#{version.csv.second}_x86.dmg"
 
