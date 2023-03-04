@@ -32,7 +32,6 @@ cask "vmware-fusion12" do
     "vmware-fusion8",
     "vmware-fusion10",
     "vmware-fusion11",
-    "vmware-fusion12",
     "vmware-fusion-tech-preview"
   ]
   depends_on macos: ">= :catalina"
