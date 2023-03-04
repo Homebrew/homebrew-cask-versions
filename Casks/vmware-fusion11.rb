@@ -8,6 +8,14 @@ cask "vmware-fusion11" do
   homepage "https://www.vmware.com/products/fusion.html"
 
   auto_updates true
+  conflicts_with cask: [
+    "vmware-fusion",
+    "vmware-fusion7",
+    "vmware-fusion8",
+    "vmware-fusion10",
+    "vmware-fusion12",
+    "vmware-fusion-tech-preview"
+  ]
   depends_on macos: ">= :mojave"
 
   app "VMware Fusion.app"
