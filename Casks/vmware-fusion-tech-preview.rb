@@ -15,13 +15,13 @@ cask "vmware-fusion-tech-preview" do
   end
 
   auto_updates true
-  conflicts_with cask: [
-    "vmware-fusion",
-    "vmware-fusion7",
-    "vmware-fusion8",
-    "vmware-fusion10",
-    "vmware-fusion11",
-    "vmware-fusion12",
+  conflicts_with cask: %w[
+    vmware-fusion
+    vmware-fusion7
+    vmware-fusion8
+    vmware-fusion10
+    vmware-fusion11
+    vmware-fusion12
   ]
   depends_on macos: ">= :catalina"
 
