@@ -15,14 +15,6 @@ cask "vmware-fusion-tech-preview" do
   end
 
   auto_updates true
-  conflicts_with cask: [
-    "vmware-fusion",
-    "vmware-fusion7",
-    "vmware-fusion8",
-    "vmware-fusion10",
-    "vmware-fusion11",
-    "vmware-fusion12",
-  ]
   depends_on macos: ">= :catalina"
 
   app "VMware Fusion Tech Preview.app"
@@ -85,16 +77,16 @@ cask "vmware-fusion-tech-preview" do
     "~/Library/Logs/VMware Fusion",
     "~/Library/Logs/VMware Graphics Service.log",
     "~/Library/Logs/VMware",
-    "~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist.lockfile",
     "~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist",
-    "~/Library/Preferences/com.vmware.fusion.plist.lockfile",
+    "~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist.lockfile",
     "~/Library/Preferences/com.vmware.fusion.plist",
+    "~/Library/Preferences/com.vmware.fusion.plist.lockfile",
     "~/Library/Preferences/com.vmware.fusionApplicationsMenu.helper.plist",
     "~/Library/Preferences/com.vmware.fusionApplicationsMenu.plist",
-    "~/Library/Preferences/com.vmware.fusionDaemon.plist.lockfile",
     "~/Library/Preferences/com.vmware.fusionDaemon.plist",
-    "~/Library/Preferences/com.vmware.fusionStartMenu.plist.lockfile",
+    "~/Library/Preferences/com.vmware.fusionDaemon.plist.lockfile",
     "~/Library/Preferences/com.vmware.fusionStartMenu.plist",
+    "~/Library/Preferences/com.vmware.fusionStartMenu.plist.lockfile",
     "~/Library/Preferences/VMware Fusion",
     "~/Library/Saved Application State/com.vmware.fusion.savedState",
     "~/Library/WebKit/com.vmware.fusion",
