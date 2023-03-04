@@ -7,13 +7,13 @@ cask "vmware-fusion7" do
   desc "Create, manage, and run virtual machines"
   homepage "https://www.vmware.com/products/fusion.html"
 
-  conflicts_with cask: [
-    "vmware-fusion",
-    "vmware-fusion8",
-    "vmware-fusion10",
-    "vmware-fusion11",
-    "vmware-fusion12",
-    "vmware-fusion-tech-preview"
+  conflicts_with cask: %w[
+    vmware-fusion
+    vmware-fusion8
+    vmware-fusion10
+    vmware-fusion11
+    vmware-fusion12
+    vmware-fusion-tech-preview
   ]
 
   app "VMware Fusion.app"
