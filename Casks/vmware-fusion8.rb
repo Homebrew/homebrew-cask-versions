@@ -8,13 +8,13 @@ cask "vmware-fusion8" do
   homepage "https://www.vmware.com/products/fusion.html"
 
   auto_updates true
-  conflicts_with cask: [
-    "vmware-fusion",
-    "vmware-fusion7",
-    "vmware-fusion10",
-    "vmware-fusion11",
-    "vmware-fusion12",
-    "vmware-fusion-tech-preview"
+  conflicts_with cask: %w[
+    vmware-fusion
+    vmware-fusion7
+    vmware-fusion10
+    vmware-fusion11
+    vmware-fusion12
+    vmware-fusion-tech-preview
   ]
 
   app "VMware Fusion.app"
