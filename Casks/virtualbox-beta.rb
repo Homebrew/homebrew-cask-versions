@@ -1,4 +1,19 @@
 cask "virtualbox-beta" do
+  on_arm do
+    version "7.0.6_BETA4-155176"
+    sha256 "0f3c380155a2bf8582058b1d7ae073a7fa76f9c1843f7e78c3dfe6cdcefe73bd"
+    url "https://download.virtualbox.org/virtualbox/7.0.6/VirtualBox-7.0.6_BETA4-155176-macOSArm64.dmg"
+
+    # TODO: Add a `livecheck` block if/when ARM64 dmg files are stored in a
+    # predictable directory on download.virtualbox.org. ARM64 files are
+    # currently shoehorned into stable version directories instead of the
+    # usual unstable version directories (e.g., 7.0.0_BETA3). At the moment,
+    # we would have to check both the highest unstable and stable version
+    # directories for an ARM64 file to find the newest version from each.
+    livecheck do
+      skip "No reliable way to get version information"
+    end
+  end
   on_intel do
     version "7.0.0_BETA3,153829"
     sha256 "a97ad4e37f975ec3ec093a1dfc58f456cac2066f27ccc743a523a261235785b0"
@@ -14,21 +29,6 @@ cask "virtualbox-beta" do
         dir_page = Homebrew::Livecheck::Strategy.page_content("https://download.virtualbox.org/virtualbox/#{page.strip}/")
         dir_page[:content]&.scan(regex)&.map { |match| "#{match[0]},#{match[1]}" }
       end
-    end
-  end
-  on_arm do
-    version "7.0.6_BETA4-155176"
-    sha256 "0f3c380155a2bf8582058b1d7ae073a7fa76f9c1843f7e78c3dfe6cdcefe73bd"
-    url "https://download.virtualbox.org/virtualbox/7.0.6/VirtualBox-7.0.6_BETA4-155176-macOSArm64.dmg"
-
-    # TODO: Add a `livecheck` block if/when ARM64 dmg files are stored in a
-    # predictable directory on download.virtualbox.org. ARM64 files are
-    # currently shoehorned into stable version directories instead of the
-    # usual unstable version directories (e.g., 7.0.0_BETA3). At the moment,
-    # we would have to check both the highest unstable and stable version
-    # directories for an ARM64 file to find the newest version from each.
-    livecheck do
-      skip "No reliable way to get version information"
     end
   end
 
