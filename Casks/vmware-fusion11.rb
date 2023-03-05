@@ -8,9 +8,18 @@ cask "vmware-fusion11" do
   homepage "https://www.vmware.com/products/fusion.html"
 
   auto_updates true
+  conflicts_with cask: %w[
+    vmware-fusion
+    vmware-fusion7
+    vmware-fusion8
+    vmware-fusion10
+    vmware-fusion12
+    vmware-fusion-tech-preview
+  ]
   depends_on macos: ">= :mojave"
 
   app "VMware Fusion.app"
+  binary "#{appdir}/VMware Fusion.app/Contents/Library/vkd/bin/vctl"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmnet-bridge"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmnet-cfgcli"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmnet-cli"
@@ -18,9 +27,10 @@ cask "vmware-fusion11" do
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmnet-natd"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmnet-netifup"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmnet-sniffer"
-  binary "#{appdir}/VMware Fusion.app/Contents/Library/vmrun"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmrest"
+  binary "#{appdir}/VMware Fusion.app/Contents/Library/vmrun"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmss2core"
+  binary "#{appdir}/VMware Fusion.app/Contents/Library/VMware OVF Tool/ovftool"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmware-aewp"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmware-authd"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmware-cloneBootCamp"
@@ -35,8 +45,6 @@ cask "vmware-fusion11" do
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmware-vmx"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmware-vmx-debug"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmware-vmx-stats"
-  binary "#{appdir}/VMware Fusion.app/Contents/Library/VMware OVF Tool/ovftool"
-  binary "#{appdir}/VMware Fusion.app/Contents/Library/vkd/bin/vctl"
 
   postflight do
     system_command "#{appdir}/VMware Fusion.app/Contents/Library/Initialize VMware Fusion.tool",
@@ -62,15 +70,15 @@ cask "vmware-fusion11" do
     "~/Library/Logs/VMware Fusion",
     "~/Library/Logs/VMware Graphics Service.log",
     "~/Library/Logs/VMware",
-    "~/Library/Preferences/VMware Fusion",
+    "~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist",
+    "~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist.lockfile",
     "~/Library/Preferences/com.vmware.fusion.plist",
     "~/Library/Preferences/com.vmware.fusion.plist.lockfile",
     "~/Library/Preferences/com.vmware.fusionDaemon.plist",
     "~/Library/Preferences/com.vmware.fusionDaemon.plist.lockfile",
     "~/Library/Preferences/com.vmware.fusionStartMenu.plist",
     "~/Library/Preferences/com.vmware.fusionStartMenu.plist.lockfile",
-    "~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist",
-    "~/Library/Preferences/com.vmware.fusion.LSSharedFileList.plist.lockfile",
+    "~/Library/Preferences/VMware Fusion",
     "~/Library/Saved Application State/com.vmware.fusion.savedState",
     "~/Library/WebKit/com.vmware.fusion",
   ]
