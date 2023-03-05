@@ -7,6 +7,15 @@ cask "vmware-fusion7" do
   desc "Create, manage, and run virtual machines"
   homepage "https://www.vmware.com/products/fusion.html"
 
+  conflicts_with cask: %w[
+    vmware-fusion
+    vmware-fusion8
+    vmware-fusion10
+    vmware-fusion11
+    vmware-fusion12
+    vmware-fusion-tech-preview
+  ]
+
   app "VMware Fusion.app"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmnet-cfgcli"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vmnet-cli"
