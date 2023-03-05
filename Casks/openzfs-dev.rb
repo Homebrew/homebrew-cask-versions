@@ -1,9 +1,4 @@
 cask "openzfs-dev" do
-  on_intel do
-    arch intel: "Catalina-10.15"
-    version "2.1.6rc7,420"
-    sha256 "6570087af4cda8efd47473c341852d10583e2357f221986745e9d7a407c111c4"
-  end
   on_arm do
     on_monterey :or_older do
       arch arm: "Monterey-12-arm64"
@@ -15,6 +10,11 @@ cask "openzfs-dev" do
       version "2.1.6rc7,421"
       sha256 "8b29505e2f6a28a305fd5a0bebfbbe71c49a2f9158ca304327c7780ab1e4186c"
     end
+  end
+  on_intel do
+    arch intel: "Catalina-10.15"
+    version "2.1.6rc7,420"
+    sha256 "6570087af4cda8efd47473c341852d10583e2357f221986745e9d7a407c111c4"
   end
 
   url "https://openzfsonosx.org/forum/download/file.php?id=#{version.csv.second}"
