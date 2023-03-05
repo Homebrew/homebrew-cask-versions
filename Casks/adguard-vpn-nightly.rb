@@ -1,5 +1,5 @@
 cask "adguard-vpn-nightly" do
-  version "2.0.2.318"
+  version "2.1.0.328"
   sha256 :no_check
 
   url "https://static.adguard-vpn.com/mac/nightly/AdGuardVPN.dmg"
