@@ -1,11 +1,11 @@
 cask "safari-technology-preview" do
   on_monterey :or_older do
-    version "164,032-53003-20230221-7D8A058C-D80B-45DB-972D-33C"
-    sha256 "078f0291ae8fdb96c01cf67a6f4bc0ac83dbf4c36070d7fc4ac182587ce4ab40"
+    version "165,032-56901-20230308-3829621E-9E59-4A60-B4BE-EF700F92063B"
+    sha256 "7841336996a19b65b58c3fbc7c9ecd9ff43d106cdd3efde8cd0d94f9c319e2ce"
   end
   on_ventura :or_newer do
-    version "164,032-53005-20230221-426C62F5-55E0-43DF-AC6D-22F5D5C9B22D"
-    sha256 "60d9d3258be4f61d998b4ee54874437a8c74c82e22a0d924498b770e05924ab0"
+    version "165,032-56900-20230308-F5872099-3AB9-4EBC-B12A-FB4AEF24A74"
+    sha256 "20fccc02d45e31b637a7ca01f5a01eaeab73e1c1a8bf5150f108ca905a38aece"
   end
 
   url "https://secure-appldnld.apple.com/STP/#{version.csv.second}/SafariTechnologyPreview.dmg"
@@ -36,21 +36,14 @@ cask "safari-technology-preview" do
             delete:    "/Applications/Safari Technology Preview.app"
 
   zap trash: [
-    "~/Library/Application Scripts/com.apple.SafariTechnologyPreview.CacheDeleteExtension",
-    "~/Library/Application Scripts/com.apple.SafariTechnologyPreview.DiagnosticExtension",
-    "~/Library/Application Scripts/com.apple.SafariTechnologyPreview",
+    "~/Library/Application Scripts/com.apple.SafariTechnologyPreview*",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.apple.safaritechnologypreview.sfl*",
     "~/Library/Caches/com.apple.SafariTechnologyPreview",
-    "~/Library/Containers/com.apple.SafariTechnologyPreview.CacheDeleteExtension",
-    "~/Library/Containers/com.apple.SafariTechnologyPreview.DiagnosticExtension",
-    "~/Library/Containers/com.apple.SafariTechnologyPreview",
-    "~/Library/Preferences/com.apple.SafariTechnologyPreview.plist",
-    "~/Library/Preferences/com.apple.SafariTechnologyPreview.SandboxBroker.plist",
+    "~/Library/Containers/com.apple.SafariTechnologyPreview*",
+    "~/Library/Preferences/com.apple.SafariTechnologyPreview*",
     "~/Library/SafariTechnologyPreview",
     "~/Library/Saved Application State/com.apple.SafariTechnologyPreview.savedState",
-    "~/Library/SyncedPreferences/com.apple.SafariTechnologyPreview-com.apple.Safari.UserRequests.plist",
-    "~/Library/SyncedPreferences/com.apple.SafariTechnologyPreview-com.apple.Safari.WebFeedSubscriptions.plist",
-    "~/Library/SyncedPreferences/com.apple.SafariTechnologyPreview.plist",
+    "~/Library/SyncedPreferences/com.apple.SafariTechnologyPreview*",
     "~/Library/WebKit/com.apple.SafariTechnologyPreview",
   ]
 end
