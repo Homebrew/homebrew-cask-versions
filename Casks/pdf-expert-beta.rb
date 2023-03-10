@@ -8,7 +8,7 @@ cask "pdf-expert-beta" do
   homepage "https://pdfexpert.com/"
 
   livecheck do
-    url "https://d1ke680phyeohy.cloudfront.net/beta/appcast.xml"
+    url "https://downloads.pdfexpert.com/pem#{version.major}/beta/appcast.xml"
     strategy :sparkle
   end
 
