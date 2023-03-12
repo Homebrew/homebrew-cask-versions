@@ -37,7 +37,7 @@ cask "cleanmymac3" do
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.macpaw.cleanmymac#{version.major}.scheduler.sfl*",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.macpaw.cleanmymac#{version.major}.sfl*",
     "~/Library/Caches/CleanMyMac #{version.major}",
-    "~/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMInde#{version.major}File/com.macpaw.CleanMyMac#{version.major}.help*",
+    "~/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndeXFile/com.macpaw.CleanMyMac#{version.major}.help*",
     "~/Library/Caches/com.macpaw.CleanMyMac#{version.major}",
     "~/Library/Caches/com.macpaw.CleanMyMac#{version.major}.HealthMonitor",
     "~/Library/Caches/com.macpaw.CleanMyMac#{version.major}.KnowledgeBase",
