@@ -5,7 +5,7 @@ cask "azure-data-studio-insiders" do
   sha256 :no_check
 
   url "https://azuredatastudio-update.azurewebsites.net/latest/darwin#{arch}/insider",
-      verified: "azuredatastudio-update.azurewebsites.net"
+      verified: "azuredatastudio-update.azurewebsites.net/latest/"
   name "Azure Data Studio - Insiders"
   desc "Data management tool that enables working with SQL Server"
   homepage "https://docs.microsoft.com/en-us/sql/azure-data-studio/"
