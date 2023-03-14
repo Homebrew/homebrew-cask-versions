@@ -10,8 +10,8 @@ cask "inso-beta" do
 
   livecheck do
     url "https://github.com/Kong/insomnia/releases?q=prerelease%3Atrue+Inso+CLI"
-    regex(%r{href=["']?[^"' >]*?/tag/lib%40([^"' >]+?)["' >]}i)
     strategy :page_match
+    regex(%r{href=["']?[^"' >]*?/tag/lib%40([^"' >]+?)["' >]}i)
   end
 
   conflicts_with cask: "inso"
