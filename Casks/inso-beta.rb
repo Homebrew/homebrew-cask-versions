@@ -17,4 +17,6 @@ cask "inso-beta" do
   conflicts_with cask: "inso"
 
   binary "inso"
+
+  # No zap stanza required
 end
