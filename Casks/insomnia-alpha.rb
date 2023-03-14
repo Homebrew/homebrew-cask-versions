@@ -10,8 +10,8 @@ cask "insomnia-alpha" do
 
   livecheck do
     url "https://github.com/Kong/insomnia/releases"
-    regex(%r{href=["']?[^"' >]*?/tag/core%40(\d+(?:\.\d+)+[._-](?:alpha|beta)[._-]?\d*)["' >]}i)
     strategy :page_match
+    regex(%r{href=["']?[^"' >]*?/tag/core%40(\d+(?:\.\d+)+[._-](?:alpha|beta)[._-]?\d*)["' >]}i)
   end
 
   auto_updates true
