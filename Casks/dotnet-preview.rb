@@ -32,7 +32,7 @@ cask "dotnet-preview" do
   ], formula: "dotnet"
   depends_on macos: ">= :mojave"
 
-  pkg "dotnet-runtime-#{version.csv[0]}-osx-#{arch}.pkg"
+  pkg "dotnet-runtime-#{version.csv.first}-osx-#{arch}.pkg"
   binary "/usr/local/share/dotnet/dotnet"
 
   uninstall pkgutil: "com.microsoft.dotnet.*",
