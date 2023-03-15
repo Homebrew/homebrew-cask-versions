@@ -6,11 +6,11 @@ cask "dotnet-sdk-preview" do
     sha256 "e6ce9caf13bc7770b34e5aec38150db1836b6e3b9e137729a050d5e37c2a7e45"
   end
   on_intel do
-    version "8.0.100-preview.1.23115.2,993e8460-176f-4669-9337-b4725c355146,f903c2ff758fee42121da67772dfd0c5"
-    sha256 "14c99125c3862ef2fad7de863b1f3a98738ae1220d3e6acaaee579ab8ef514e3"
+    version "8.0.100-preview.2.23157.25,d22c5e44-5ddc-41c2-bc23-cc7cbf7bed72,25e24c6de0c41648965533073cfba2c2"
+    sha256 "29a7257a16a5cdaa2e7dd7da4a496e18f4bada93927da048b1bb5ae96ade7e7f"
   end
 
-  url "https://download.visualstudio.microsoft.com/download/pr/#{version.csv[1]}/#{version.csv[2]}/dotnet-sdk-#{version.csv[0]}-osx-#{arch}.pkg"
+  url "https://download.visualstudio.microsoft.com/download/pr/#{version.csv.second}/#{version.csv.third}/dotnet-sdk-#{version.csv.first}-osx-#{arch}.pkg"
   name ".NET SDK"
   desc "Developer platform"
   homepage "https://www.microsoft.com/net/core#macos"
