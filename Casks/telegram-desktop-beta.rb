@@ -10,8 +10,8 @@ cask "telegram-desktop-beta" do
 
   livecheck do
     url "https://telegram.org/dl/desktop/mac?beta=1"
-    strategy :header_match
     regex(/tsetup[._-]v?(\d+(?:\.\d+)+)[._-]beta\.dmg/i)
+    strategy :header_match
   end
 
   auto_updates true
