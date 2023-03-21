@@ -10,8 +10,8 @@ cask "utm-beta" do
 
   livecheck do
     url "https://github.com/utmapp/UTM/releases?q=prerelease%3Atrue&expanded=true"
-    strategy :page_match
     regex(%r{href=["']?[^"' >]*?/tag/\D*?(\d+(?:\.\d+)+)[^"' >]*?["' >]}i)
+    strategy :page_match
   end
 
   conflicts_with cask: "utm"
