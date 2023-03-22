@@ -3,9 +3,9 @@ cask "microsoft-edge-dev" do
                                intel: "C1297A47-86C4-4C1F-97FA-950631F94777"
   linkid = on_arch_conditional arm: "2099619", intel: "2069340"
 
-  version "112.0.1722.11"
-  sha256 arm:   "d8794d469d38af6c816292d7e9443b18da78612695c93a83a76299055e42dea1",
-         intel: "3acd794605801b71cc57f6f2768526eb12508505c91833348e10c63b2e1ec6ef"
+  version "112.0.1722.15"
+  sha256 arm:   "728587529fd214582cb9e1e6347b434b48a1580c5b1e253bdb1bf23ed5678bf7",
+         intel: "fdaab99674ce33a6d9202ecfc04659b21b5084a99f45c726da2208ad62af659c"
 
   url "https://officecdn-microsoft-com.akamaized.net/pr/#{folder}/MacAutoupdate/MicrosoftEdgeDev-#{version}.pkg",
       verified: "officecdn-microsoft-com.akamaized.net/"
