@@ -13,7 +13,6 @@ cask "gimp-dev" do
   livecheck do
     url "https://www.gimp.org/downloads/devel/"
     regex(%r{href=.*?/gimp[._-]v?(\d+(?:[.-]\d+)+)[._-]#{arch}\.dmg}i)
-    strategy :page_match
   end
 
   conflicts_with cask: "gimp"
