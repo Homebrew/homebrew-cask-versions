@@ -1,8 +1,8 @@
 cask "sonos-s1-controller" do
-  version "57.14-37030"
-  sha256 "23bfafa620393fa9c8d8c318962a277b31af2acd4ed95ac6e49e6994914fa1c5"
+  version "57.15-39070"
+  sha256 "ac2bec77c3769a40e07093fa3b43bb6f357c2d8dabcfecabe37f9ad506d1327d"
 
-  url "https://update-software.sonos.com/software/oxmdyztc/Sonos_#{version}.dmg"
+  url "https://update-software.sonos.com/software/vghahcgk/Sonos_#{version}.dmg"
   name "Sonos S1"
   desc "Controller for Gen 1 Sonos products"
   homepage "https://www.sonos.com/"
