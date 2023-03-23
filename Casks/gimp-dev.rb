@@ -12,7 +12,6 @@ cask "gimp-dev" do
 
   livecheck do
     url "https://www.gimp.org/downloads/devel/"
-    strategy :page_match
     regex(%r{href=.*?/gimp[._-]v?(\d+(?:[.-]\d+)+)[._-]#{arch}\.dmg}i)
   end
 

@@ -7,15 +7,15 @@ cask "github-beta" do
          intel: "451a31deb64a0033d6aaebf4b2c627ff214084faf64caa63d14f9262bc2821d5"
 
   url "https://desktop.githubusercontent.com/github-desktop/releases/#{version}/GitHubDesktop-#{arch}.zip",
-      verified: "desktop.githubusercontent.com/github-desktop/"
+      verified: "desktop.githubusercontent.com/github-desktop/releases/"
   name "GitHub Desktop"
   desc "Desktop client for GitHub repositories"
   homepage "https://desktop.github.com/"
 
   livecheck do
     url "https://central.github.com/deployments/desktop/desktop/latest/#{platform}?env=beta"
-    strategy :header_match
     regex(%r{(\d+(?:\.\d+)[^/]*)/GitHubDesktop[._-]#{arch}\.zip}i)
+    strategy :header_match
   end
 
   auto_updates true
