@@ -1,6 +1,6 @@
 cask "1password-cli-beta" do
-  version "2.15.0-beta.03"
-  sha256 "71627c25089d714550bdc79c3d62947c9a8f52bfead5db364416de8a2f4b1c4e"
+  version "2.16.0-beta.01"
+  sha256 "e3f7e4105eaa3210df39720ed802e9e9ae32186035f72f43f899a8c55d14442a"
 
   url "https://cache.agilebits.com/dist/1P/op2/pkg/v#{version}/op_apple_universal_v#{version}.pkg",
       verified: "cache.agilebits.com/dist/1P/op2/pkg/"
