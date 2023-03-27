@@ -2,6 +2,17 @@ cask "vmware-fusion-tech-preview" do
   version "20486664"
   sha256 "8c74005d88edb0e37d2ac3517f4e72ce85613abb2dfaaea78fe3db8d2c7b17fd"
 
+  on_intel do
+    binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vkd/bin/vctl"
+    binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmrest"
+    binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/VMware OVF Tool/ovftool"
+  end
+  on_catalina do
+    caveats do
+      kext
+    end
+  end
+
   url "https://download3.vmware.com/software/FUS-PUBTP-22H2/VMware-Fusion-e.x.p-#{version}_universal.dmg"
   name "VMware Fusion Tech Preview"
   desc "Create, manage, and run virtual machines"
@@ -50,12 +61,6 @@ cask "vmware-fusion-tech-preview" do
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmware-vmx-debug"
   binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmware-vmx-stats"
 
-  on_intel do
-    binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vkd/bin/vctl"
-    binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vmrest"
-    binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/VMware OVF Tool/ovftool"
-  end
-
   postflight do
     system_command "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/Initialize VMware Fusion.tool",
                    args: ["set"],
@@ -99,10 +104,4 @@ cask "vmware-fusion-tech-preview" do
     "~/Library/Saved Application State/com.vmware.fusion.savedState",
     "~/Library/WebKit/com.vmware.fusion",
   ]
-
-  on_catalina do
-    caveats do
-      kext
-    end
-  end
 end
