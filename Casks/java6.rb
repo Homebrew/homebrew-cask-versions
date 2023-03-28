@@ -16,7 +16,7 @@ cask "java6" do
     end
   end
 
-  url "https://updates.cdn-apple.com/#{version.csv.first}/cert/#{version.csv.second}/JavaForOSX.dmg",
+  url "https://updates.cdn-apple.com/#{version.csv.second}/cert/#{version.csv.third}/JavaForOSX.dmg",
       verified: "updates.cdn-apple.com/"
   name "Apple Java 6 Standard Edition Development Kit"
   desc "Legacy runtime for the Java programming language"
