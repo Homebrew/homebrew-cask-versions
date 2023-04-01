@@ -81,6 +81,7 @@ cask "firefox-esr" do
   conflicts_with cask: [
     "firefox",
     "firefox-beta",
+    "firefox-cn",
   ]
   depends_on macos: ">= :sierra"
 
