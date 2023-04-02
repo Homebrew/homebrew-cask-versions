@@ -17,8 +17,8 @@ cask "libreoffice-still" do
     regex(/LibreOffice\s+v?(\d+(?:\.\d+)+)(?:\s+\((?:\d+(?:-\d+)+)\))?\s*-\s*Still\s+Branch/i)
   end
 
-  conflicts_with cask: "libreoffice"
-  depends_on macos: ">= :high_sierra"
+  conflicts_with cask: ["libreoffice", "libreoffice-language-pack"]
+  depends_on macos: ">= :sierra"
 
   app "LibreOffice.app"
   binary "#{appdir}/LibreOffice.app/Contents/MacOS/gengal"
