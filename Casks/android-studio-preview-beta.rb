@@ -19,7 +19,8 @@ cask "android-studio-preview-beta" do
   auto_updates true
   conflicts_with cask: "android-studio-preview-canary"
 
-  app "Android Studio Preview.app"
+  # Renamed for consistency; name changes between beta and RC versions
+  app "Android Studio.app", target: "Android Studio Preview.app"
 
   zap trash: [
         "~/.android",
