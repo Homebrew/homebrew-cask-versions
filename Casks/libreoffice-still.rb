@@ -2,9 +2,9 @@ cask "libreoffice-still" do
   arch arm: "aarch64", intel: "x86-64"
   folder = on_arch_conditional arm: "aarch64", intel: "x86_64"
 
-  version "7.4.5"
-  sha256 arm:   "4bc396e74ed4408b0eb69583f87a59121f69d4748ab671fcffb4f9c4b763b75f",
-         intel: "d16986c9891eec65785c828415160a186afa02f2ce8c4032752553a4a95e9f71"
+  version "7.4.6"
+  sha256 arm:   "544ae8ffb3a562d3b2f3fcfcdba1c727c55eb30137423250845f7ac2b566ae65",
+         intel: "85bef614c4ce863b20325d2896b8c4f9d3227c718e57172930eb742317a020db"
 
   url "https://download.documentfoundation.org/libreoffice/stable/#{version}/mac/#{folder}/LibreOffice_#{version}_MacOS_#{arch}.dmg",
       verified: "download.documentfoundation.org/libreoffice/stable/"
@@ -17,8 +17,8 @@ cask "libreoffice-still" do
     regex(/LibreOffice\s+v?(\d+(?:\.\d+)+)(?:\s+\((?:\d+(?:-\d+)+)\))?\s*-\s*Still\s+Branch/i)
   end
 
-  conflicts_with cask: "libreoffice"
-  depends_on macos: ">= :high_sierra"
+  conflicts_with cask: ["libreoffice", "libreoffice-language-pack"]
+  depends_on macos: ">= :sierra"
 
   app "LibreOffice.app"
   binary "#{appdir}/LibreOffice.app/Contents/MacOS/gengal"
