@@ -14,7 +14,7 @@ cask "godot3" do
   end
 
   app "Godot.app"
-  binary "#{appdir}/Godot.app/Contents/MacOS/Godot", target: "godot3"
+  binary "#{appdir}/Godot.app/Contents/MacOS/Godot", target: "godot"
 
   uninstall quit: "org.godotengine.godot"
 
