@@ -803,7 +803,6 @@ cask "libreoffice-still-language-pack" do
     cask "libreoffice-still"
   end
 
-  conflicts_with cask: ["libreoffice", "libreoffice-language-pack"]
   depends_on cask: "libreoffice-still"
   depends_on macos: ">= :sierra"
 
@@ -845,6 +844,8 @@ cask "libreoffice-still-language-pack" do
   # and that for this cask it is indeed this simple.
   # See https://github.com/Homebrew/homebrew-cask/pull/52893
   uninstall delete: ["#{staged_path}/#{token}", "#{staged_path}/SilentInstall.sh"]
+
+  # No zap stanza required
 
   caveats <<~EOS
     #{token} cannot be upgraded, use brew reinstall --cask #{token} instead
