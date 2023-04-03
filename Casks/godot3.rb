@@ -13,6 +13,8 @@ cask "godot3" do
     regex(/^v?(3(?:\.\d+)+)[._-]stable$/i)
   end
 
+  conflicts_with cask: "godot"
+
   app "Godot.app"
   binary "#{appdir}/Godot.app/Contents/MacOS/Godot", target: "godot"
 
