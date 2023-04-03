@@ -803,7 +803,6 @@ cask "libreoffice-still-language-pack" do
     cask "libreoffice-still"
   end
 
-  conflicts_with cask: ["libreoffice", "libreoffice-language-pack"]
   depends_on cask: "libreoffice-still"
   depends_on macos: ">= :sierra"
 
