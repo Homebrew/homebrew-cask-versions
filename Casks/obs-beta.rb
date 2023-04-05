@@ -1,6 +1,5 @@
 cask "obs-beta" do
   arch arm: "arm64", intel: "x86_64"
-  livecheck_folder = on_arch_conditional arm: "_arm64"
 
   version "29.1.0-beta2"
   sha256 arm:   "b8dbbfc8a5e3b41eb13c13f0e309575f2a94649e65ee197abef390dae8f1c25a",
@@ -12,7 +11,7 @@ cask "obs-beta" do
   homepage "https://obsproject.com/forum/list/test-builds.20/"
 
   livecheck do
-    url "https://obsproject.com/osx_update/updates#{livecheck_folder}_v2.xml"
+    url "https://obsproject.com/osx_update/updates_#{arch}_v2.xml"
     regex(/obs[._-]studio[._-](\d+(?:[.-]\d+)+(?:-beta)\d+)[._-]macos/i)
     strategy :sparkle do |item|
       item.url[regex, 1]
