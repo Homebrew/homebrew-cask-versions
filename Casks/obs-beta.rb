@@ -1,9 +1,9 @@
 cask "obs-beta" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "29.0.2"
-  sha256 arm:   "8092dd2945114fc017c12d2670d97e7a518aab42f405fbad26bc2e227c1a156c",
-         intel: "9d49e6bf4eafa7ca885043888b1292dba70a6958240a7fe9fbf144716f77c14e"
+  version "29.1.0-beta2"
+  sha256 arm:   "b8dbbfc8a5e3b41eb13c13f0e309575f2a94649e65ee197abef390dae8f1c25a",
+         intel: "6d56f6bb0cd0f758e422fc1841c5a6eba11434ecd05cfae593d25c33b29edc1b"
 
   url "https://github.com/obsproject/obs-studio/releases/download/#{version}/obs-studio-#{version}-macos-#{arch}.dmg",
       verified: "github.com/obsproject/obs-studio/"
