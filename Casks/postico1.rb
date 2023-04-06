@@ -14,8 +14,7 @@ cask "postico1" do
 
   conflicts_with cask: "postico"
 
-  # Rename to prevent confusion with main postico cask
-  app "Postico.app", target: "Postico #{version.major}.app"
+  app "Postico.app"
 
   zap trash: [
     "~/Library/Application Scripts/at.eggerapps.Postico",
