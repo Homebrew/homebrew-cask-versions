@@ -3,7 +3,7 @@ cask "postico1" do
   sha256 "8adcbe10a1a077739e56d5c2795b763d9e1c546b773c65fcfd9eb03e0edad8d7"
 
   url "https://downloads.eggerapps.at/postico/postico-#{version.csv.second}.zip"
-  name "Postico"
+  name "Postico 1"
   desc "GUI client for PostgreSQL databases"
   homepage "https://eggerapps.at/postico/v1.php"
 
