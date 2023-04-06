@@ -20,7 +20,7 @@ cask "obs-beta" do
 
   auto_updates true
   conflicts_with cask: "obs"
-  depends_on macos: ">= :catalina"
+  depends_on macos: ">= :big_sur"
 
   app "OBS.app"
 
