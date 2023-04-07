@@ -3,9 +3,9 @@ cask "microsoft-edge-dev" do
                                intel: "C1297A47-86C4-4C1F-97FA-950631F94777"
   linkid = on_arch_conditional arm: "2099619", intel: "2069340"
 
-  version "112.0.1722.31"
-  sha256 arm:   "86301040c5cba89cfc4152215516d72aa1dfd2796dca5644b12cdd84d346bb83",
-         intel: "e8b3498eb13f41a57d48847638afa6b15883d7abd9ce0e370b3b1b598adec94a"
+  version "113.0.1774.3"
+  sha256 arm:   "3578a050c98c132c04a218f78066f02b683e3056dafca350f1771d40706f1df3",
+         intel: "c822a18acdc78f4d7996af25c04f643aa55adaf84c13e4b5cd3b261bcc56b2f4"
 
   url "https://officecdn-microsoft-com.akamaized.net/pr/#{folder}/MacAutoupdate/MicrosoftEdgeDev-#{version}.pkg",
       verified: "officecdn-microsoft-com.akamaized.net/"
@@ -29,7 +29,8 @@ cask "microsoft-edge-dev" do
         },
       ]
 
-  uninstall pkgutil: "com.microsoft.edgemac.Dev"
+  uninstall launchctl: "com.microsoft.EdgeUpdater.update.system",
+            pkgutil:   "com.microsoft.edgemac.Dev"
 
   zap trash: [
         "~/Library/Application Support/Microsoft Edge Dev",
