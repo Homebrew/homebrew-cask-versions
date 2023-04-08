@@ -29,7 +29,11 @@ cask "microsoft-edge-dev" do
         },
       ]
 
-  uninstall launchctl: "com.microsoft.EdgeUpdater.update.system",
+  uninstall launchctl: [
+              "com.microsoft.EdgeUpdater.update-internal.*.system",
+              "com.microsoft.EdgeUpdater.update.system",
+              "com.microsoft.EdgeUpdater.wake.*.system",
+            ],
             pkgutil:   "com.microsoft.edgemac.Dev"
 
   zap trash: [
