@@ -20,7 +20,7 @@ cask "temurin19" do
     end
   end
 
-  pkg "OpenJDK19-jdk_#{arch}_mac_hotspot_#{version.csv.first}_#{version.csv.second.major}.pkg"
+  pkg "OpenJDK19U-jdk_#{arch}_mac_hotspot_#{version.csv.first}_#{version.csv.second.major}.pkg"
 
   uninstall pkgutil: "net.temurin.19.jdk"
 
