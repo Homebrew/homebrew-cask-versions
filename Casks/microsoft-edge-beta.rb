@@ -3,9 +3,9 @@ cask "microsoft-edge-beta" do
                                intel: "C1297A47-86C4-4C1F-97FA-950631F94777"
   linkid = on_arch_conditional arm: "2099618", intel: "2069439"
 
-  version "112.0.1722.33"
-  sha256 arm:   "ae3e81e640d40575c6cb3f98e3dc209962695481d620ab97e106e974f34214f5",
-         intel: "18901acd26d8f5616ffcfe3df04f3bfb0d4f2f62f4d4a6a53736bf6973473ba1"
+  version "112.0.1722.39"
+  sha256 arm:   "89d196782170be4d82c1deff07d4f0bf319225c95613d18db8ea1168c4f5476b",
+         intel: "846d5d4e378b96b7a573f9bfc553cf754a9a80cd599c58d16c0b25497e8984bf"
 
   url "https://officecdn-microsoft-com.akamaized.net/pr/#{folder}/MacAutoupdate/MicrosoftEdgeBeta-#{version}.pkg",
       verified: "officecdn-microsoft-com.akamaized.net/"
@@ -30,14 +30,17 @@ cask "microsoft-edge-beta" do
         },
       ]
 
-  uninstall pkgutil: "com.microsoft.edgemac.Beta",
-            quit:    "com.microsoft.autoupdate2"
+  uninstall launchctl: "application.chainapp.*",
+            pkgutil:   [
+              "com.microsoft.edgemac.Beta",
+              "com.microsoft.package.Microsoft_AutoUpdate.app",
+            ],
+            quit:      "com.microsoft.autoupdate2"
 
   zap trash: [
-        "~/Library/Application Support/Microsoft Edge Beta",
-        "~/Library/Caches/Microsoft Edge Beta",
-        "~/Library/Preferences/com.microsoft.edgemac.Beta.plist",
-        "~/Library/Saved Application State/com.microsoft.edgemac.Beta.savedState",
-      ],
-      rmdir: "/Library/Application Support/Microsoft"
+    "~/Library/Application Support/Microsoft Edge Beta",
+    "~/Library/Caches/Microsoft Edge Beta",
+    "~/Library/Preferences/com.microsoft.edgemac.Beta.plist",
+    "~/Library/Saved Application State/com.microsoft.edgemac.Beta.savedState",
+  ]
 end
