@@ -2,6 +2,7 @@ cask "virtualbox-beta" do
   on_arm do
     version "7.0.6_BETA4-155176"
     sha256 "0f3c380155a2bf8582058b1d7ae073a7fa76f9c1843f7e78c3dfe6cdcefe73bd"
+
     url "https://download.virtualbox.org/virtualbox/7.0.6/VirtualBox-7.0.6_BETA4-155176-macOSArm64.dmg"
 
     # TODO: Add a `livecheck` block if/when ARM64 dmg files are stored in a
@@ -17,6 +18,7 @@ cask "virtualbox-beta" do
   on_intel do
     version "7.0.0_BETA3,153829"
     sha256 "a97ad4e37f975ec3ec093a1dfc58f456cac2066f27ccc743a523a261235785b0"
+
     url "https://download.virtualbox.org/virtualbox/#{version.csv.first}/VirtualBox-#{version.csv.first}-#{version.csv.second}-OSX.dmg"
 
     # `LATEST-BETA.TXT` contains version text (e.g., `1.2.3_BETA4\n`) that
