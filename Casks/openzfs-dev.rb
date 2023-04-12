@@ -13,6 +13,7 @@ cask "openzfs-dev" do
   end
   on_intel do
     arch intel: "Catalina-10.15"
+
     version "2.1.6rc7,420"
     sha256 "6570087af4cda8efd47473c341852d10583e2357f221986745e9d7a407c111c4"
   end
