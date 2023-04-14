@@ -1,6 +1,6 @@
 cask "opera-beta" do
-  version "98.0.4759.1"
-  sha256 "78158159918185d89592370b748f2c1a19e65d822dab3a0cc6af79402f46a604"
+  version "98.0.4759.3"
+  sha256 "90d44238f2561740b7b3463fee980dd19ec3c0d8dbd053a18785e1e37616a0e6"
 
   url "https://get.geo.opera.com/pub/opera-beta/#{version}/mac/Opera_beta_#{version}_Setup.dmg"
   name "Opera Beta"
@@ -15,4 +15,10 @@ cask "opera-beta" do
   auto_updates true
 
   app "Opera Beta.app"
+
+  zap trash: [
+    "~/Library/Application Support/com.operasoftware.OperaNext",
+    "~/Library/Caches/com.operasoftware.OperaNext",
+    "~/Library/Preferences/com.operasoftware.OperaNext.plist",
+  ]
 end
