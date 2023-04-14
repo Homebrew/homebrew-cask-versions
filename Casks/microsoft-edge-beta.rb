@@ -30,7 +30,12 @@ cask "microsoft-edge-beta" do
         },
       ]
 
-  uninstall launchctl: "application.chainapp.*",
+  uninstall launchctl: [
+              "application.chainapp.*",
+              "com.microsoft.EdgeUpdater.update-internal.109.0.1518.89.system",
+              "com.microsoft.EdgeUpdater.update.system",
+              "com.microsoft.EdgeUpdater.wake.109.0.1518.89.system",
+            ],
             pkgutil:   [
               "com.microsoft.edgemac.Beta",
               "com.microsoft.package.Microsoft_AutoUpdate.app",
