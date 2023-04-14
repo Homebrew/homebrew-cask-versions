@@ -1,9 +1,9 @@
 cask "obs-beta" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "29.1.0-beta3"
-  sha256 arm:   "45619a09200265894f4c79b6985317469e0c027d851b1e90b55aab5a3794ebf2",
-         intel: "2862d561f378cac7d69d6cbb1d8707541e9c523d53b1c363c9d4bd56dd101301"
+  version "29.1.0-beta4"
+  sha256 arm:   "0bfe1084f7af73fd89befe497db6aa78754ad5e7769acc98e2293ccf385fb4df",
+         intel: "8127aa5b610620e78d41ffd0a643277668018018544a7d2a5758dffe82d456ee"
 
   url "https://cdn-fastly.obsproject.com/downloads/obs-studio-#{version}-macos-#{arch}.dmg"
   name "OBS"
