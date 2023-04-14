@@ -15,4 +15,10 @@ cask "opera-beta" do
   auto_updates true
 
   app "Opera Beta.app"
+
+  zap trash: [
+    "~/Library/Application Support/com.operasoftware.OperaNext",
+    "~/Library/Caches/com.operasoftware.OperaNext",
+    "~/Library/Preferences/com.operasoftware.OperaNext.plist",
+  ]
 end
