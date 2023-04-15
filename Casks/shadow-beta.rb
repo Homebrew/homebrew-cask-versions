@@ -15,7 +15,7 @@ cask "shadow-beta" do
     strategy :electron_builder
   end
 
-  app "Shadow Beta.app"
+  app "Shadow PC Beta.app"
 
   zap trash: [
     "~/Library/Preferences/com.electron.shadow-beta.plist",
