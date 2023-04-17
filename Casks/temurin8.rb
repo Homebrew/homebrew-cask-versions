@@ -24,4 +24,6 @@ cask "temurin8" do
   pkg "OpenJDK#{version.csv.first}U-jdk_x64_mac_hotspot_#{version.csv.first}u#{version.csv.second}b#{version.csv.third}.pkg"
 
   uninstall pkgutil: "net.temurin.#{version.csv.first}.jdk"
+
+  # No zap stanza required
 end
