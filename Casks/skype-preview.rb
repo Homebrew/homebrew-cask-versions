@@ -17,4 +17,12 @@ cask "skype-preview" do
   conflicts_with cask: "skype"
 
   app "Skype.app"
+
+  zap trash: [
+    "~/Library/Application Support/Microsoft/Skype for Desktop",
+    "~/Library/Caches/com.skype.s4l",
+    "~/Library/Caches/com.skype.s4l.ShipIt",
+    "~/Library/HTTPStorages/com.skype.s4l",
+    "~/Library/Preferences/com.skype.s4l.plist",
+  ]
 end
