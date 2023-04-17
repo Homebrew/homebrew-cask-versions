@@ -21,7 +21,7 @@ cask "typora-dev" do
 
   auto_updates true
   conflicts_with cask: "typora"
-  depends_on macos: ">= :high_sierra"
+  depends_on macos: ">= :catalina"
 
   app "Typora.app"
 
