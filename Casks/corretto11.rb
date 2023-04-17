@@ -19,4 +19,5 @@ cask "corretto11" do
   pkg "amazon-corretto-#{version}-macosx-#{arch}.pkg"
 
   uninstall pkgutil: "com.amazon.corretto.#{version.major}"
+  # No zap stanza required
 end
