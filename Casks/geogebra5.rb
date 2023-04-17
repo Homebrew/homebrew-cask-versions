@@ -19,4 +19,6 @@ cask "geogebra5" do
 
   uninstall quit:       "org.geogebra#{version.major}.mac",
             login_item: "Geogebra"
+
+  zap trash: "~/Library/Saved Application State/org.geogebra5.mac.savedState"
 end
