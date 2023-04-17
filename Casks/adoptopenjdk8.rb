@@ -12,6 +12,8 @@ cask "adoptopenjdk8" do
 
   uninstall pkgutil: "net.adoptopenjdk.#{version.csv.first}.jdk"
 
+  # No zap stanza required
+
   caveats do
     discontinued
 
