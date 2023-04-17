@@ -23,4 +23,6 @@ cask "zulu13" do
   pkg "Double-Click to Install Azul Zulu JDK #{version.major}.pkg"
 
   uninstall pkgutil: "com.azulsystems.zulu.#{version.major}"
+
+  zap trash: "~/Library/Saved Application State/com.azul.zulu.#{version.major}*.java.savedState"
 end
