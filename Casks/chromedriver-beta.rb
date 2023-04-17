@@ -16,4 +16,6 @@ cask "chromedriver-beta" do
   conflicts_with cask: "chromedriver"
 
   binary "chromedriver"
+
+  # No zap stanza required
 end
