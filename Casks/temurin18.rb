@@ -18,4 +18,6 @@ cask "temurin18" do
   caveats do
     discontinued
   end
+
+  # No zap stanza required
 end
