@@ -12,6 +12,8 @@ cask "zulu7" do
 
   uninstall pkgutil: "com.azulsystems.zulu.#{version.major}"
 
+  zap trash: "~/Library/Saved Application State/com.azul.zulu.#{version.major}*.java.savedState"
+
   caveats do
     discontinued
   end
