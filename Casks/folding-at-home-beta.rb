@@ -1,6 +1,6 @@
 cask "folding-at-home-beta" do
-  version "8.1.17"
-  sha256 "2be555a26633c28053ea1feee9c34e875324e4c1c06628bf6705e39bc2c8f928"
+  version "8.1.18"
+  sha256 "0988a513d13e6d888508f758e8a0a1e4ec942d6305879557c57244098e8bad3d"
 
   url "https://download.foldingathome.org/releases/beta/fah-client/macos-12-universal/release/fah-client_#{version}_universal.pkg"
   name "Folding@home Client Beta"
