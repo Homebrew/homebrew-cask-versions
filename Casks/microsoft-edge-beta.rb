@@ -3,9 +3,9 @@ cask "microsoft-edge-beta" do
                                intel: "C1297A47-86C4-4C1F-97FA-950631F94777"
   linkid = on_arch_conditional arm: "2099618", intel: "2069439"
 
-  version "113.0.1774.9"
-  sha256 arm:   "f2263867a44886de143a86fd5bb9ac4e8d67c6bba96ed73ccb9d0e85af3235ed",
-         intel: "74458704a3e1916580f7b2343a6980323d5ef993d3386170221d10bf12fe2584"
+  version "113.0.1774.15"
+  sha256 arm:   "6a4d6eab3894e35344b7dac1534d881c367241db9f3b68f07dc68d534d3f76d3",
+         intel: "f05d109fbd6bca55b86c2370bf4073427f8c25278914c8e5e976498527711a85"
 
   url "https://officecdn-microsoft-com.akamaized.net/pr/#{folder}/MacAutoupdate/MicrosoftEdgeBeta-#{version}.pkg",
       verified: "officecdn-microsoft-com.akamaized.net/"
