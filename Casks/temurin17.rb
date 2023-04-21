@@ -2,9 +2,6 @@ cask "temurin17" do
   arch arm: "aarch64", intel: "x64"
 
   version "17.0.7,7"
-  # sha 256 of .pkg binaries, eg:
-  #   shasum -a 256 OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.7_7.pkg
-  #   shasum -a 256 OpenJDK17U-jdk_x64_mac_hotspot_17.0.7_7.pkg
   sha256 arm:   "9605fd0146fa0498435697c6e08b7d66a5ac937768131b0b55dd182f096b3ebe",
          intel: "52d5f3fd46dc75c2b1078edb04e2c91d706287a616e6949bde28c3f1676d2551"
 
