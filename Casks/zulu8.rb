@@ -2,9 +2,9 @@ cask "zulu8" do
   arch arm: "aarch64", intel: "x64"
   choice = on_arch_conditional arm: "arm", intel: "x86"
 
-  version "8.0.362,8.68.0.21-ca"
-  sha256 arm:   "5932b9152fe8264470f6d2645e2133d78b52db6b2fd1db8f2d6334639d46e4d0",
-         intel: "2075fbd37c322e3ab1ef0f7ab149c0285ef531277ad05c10a8be5b57ac0bbbd5"
+  version "8.0.372,8.70.0.23-ca"
+  sha256 arm:   "931e247b3f7dddc4d7865d5fdb302f8f17321b76cd60120ddb23d407658053cc",
+         intel: "1987b0b71db22fd917ba6da7cb3619a4faf65388b4a6f830c3f3075703dae8a2"
 
   url "https://cdn.azul.com/zulu/bin/zulu#{version.csv.second}-jdk#{version.csv.first}-macosx_#{arch}.dmg",
       referer: "https://www.azul.com/downloads/zulu/zulu-mac/"
