@@ -24,4 +24,6 @@ cask "semeru-jdk17-open" do
   pkg "ibm-semeru-open-jdk_#{arch}_mac_#{version.csv.first.tr("+", "_")}_#{version.csv.second}.pkg"
 
   uninstall pkgutil: "net.ibm-semeru-open.#{version.major}.jdk"
+
+  # No zap stanza required
 end

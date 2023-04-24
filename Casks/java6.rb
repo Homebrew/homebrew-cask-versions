@@ -22,6 +22,8 @@ cask "java6" do
   desc "Legacy runtime for the Java programming language"
   homepage "https://support.apple.com/kb/DL1572"
 
+  zap trash: "~/Library/Application Support/java"
+
   caveats do
     discontinued
   end
