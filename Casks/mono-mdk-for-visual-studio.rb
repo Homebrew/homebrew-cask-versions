@@ -29,6 +29,12 @@ cask "mono-mdk-for-visual-studio" do
               "/Library/Frameworks/Mono.framework",
             ]
 
+  zap trash:  [
+        "~/.mono",
+        "~/Library/Caches/com.xamarin.fontconfig",
+      ],
+      delete: "~/Library/Preferences/mono-sgen64.plist"
+
   caveats <<~EOS
     This is a version specific for Visual Studio users. This cask should follow the specific Visual Studio channel/branch maintained by mono developers.
 
