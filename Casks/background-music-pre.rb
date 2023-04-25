@@ -29,9 +29,4 @@ cask "background-music-pre" do
             },
             launchctl: "com.bearisdriving.BGM.XPCHelper",
             pkgutil:   "com.bearisdriving.BGM"
-
-  zap trash: [
-    "/Library/LaunchDaemons/com.bearisdriving.BGM.XPCHelper.plist",
-    "~/Library/Preferences/com.bearisdriving.BGM.App.plist",
-  ]
 end
