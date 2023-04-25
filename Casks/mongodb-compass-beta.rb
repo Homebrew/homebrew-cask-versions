@@ -14,4 +14,11 @@ cask "mongodb-compass-beta" do
   end
 
   app "MongoDB Compass Beta.app"
+
+  zap trash: [
+    "~/.mongodb",
+    "~/Library/Application Support/MongoDB Compass Beta",
+    "~/Library/Preferences/com.mongodb.compass.beta.plist",
+    "~/Library/Saved Application State/com.mongodb.compass.beta.savedState",
+  ]
 end

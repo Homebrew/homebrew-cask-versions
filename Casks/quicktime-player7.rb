@@ -11,6 +11,8 @@ cask "quicktime-player7" do
 
   uninstall pkgutil: "com.apple.pkg.QuickTimePlayer#{version}_SnowLeopard"
 
+  # No zap stanza required
+
   caveats do
     discontinued
   end

@@ -15,4 +15,9 @@ cask "opera-crypto-developer" do
   auto_updates true
 
   app "Opera Crypto.app"
+
+  zap trash: [
+    "~/Library/Application Support/com.operasoftware.OperaCrypto",
+    "~/Library/Caches/com.operasoftware.OperaCrypto",
+  ]
 end

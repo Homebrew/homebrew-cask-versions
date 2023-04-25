@@ -23,4 +23,10 @@ cask "qt-creator-dev" do
   end
 
   app "Qt Creator.app"
+
+  zap trash: [
+    "~/Library/Preferences/com.qtproject.QtCreator.plist",
+    "~/Library/Preferences/org.qt-project.qtcreator.plist",
+    "~/Library/Saved Application State/org.qt-project.qtcreator.savedState",
+  ]
 end

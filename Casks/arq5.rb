@@ -12,6 +12,17 @@ cask "arq5" do
 
   app "Arq.app"
 
+  zap trash: [
+    "/Library/Application Support/ArqAgent*",
+    "~/Library/Application Support/Arq*",
+    "~/Library/Arq*",
+    "~/Library/Caches/com.haystacksoftware.ArqAgent",
+    "~/Library/HTTPStorages/com.haystacksoftware.ArqAgent",
+    "~/Library/Logs/Arq*",
+    "~/Library/Preferences/com.haystacksoftware.Arq*.plist",
+    "~/Library/Saved Application State/com.haystacksoftware.Arq.savedState",
+  ]
+
   caveats do
     discontinued
   end
