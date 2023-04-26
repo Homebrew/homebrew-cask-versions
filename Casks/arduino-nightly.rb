@@ -11,6 +11,12 @@ cask "arduino-nightly" do
 
   app "Arduino.app"
 
+  zap trash: [
+    "~/Documents/Arduino",
+    "~/Library/Arduino15",
+    "~/Library/Saved Application State/cc.arduino.Arduino.savedState",
+  ]
+
   caveats do
     discontinued
   end
