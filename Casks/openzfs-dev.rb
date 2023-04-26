@@ -65,6 +65,8 @@ cask "openzfs-dev" do
               "org.openzfsonosx.zpool-import-all",
             ]
 
+  # No zap stanza required
+
   caveats do
     kext
   end

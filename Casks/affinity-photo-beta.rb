@@ -17,4 +17,16 @@ cask "affinity-photo-beta" do
   end
 
   app "Affinity Photo Beta.app"
+
+  zap trash: [
+    "~/Library/Application Scripts/6LVTQB9699.com.seriflabs.beta",
+    "~/Library/Application Support/Affinity Photo Beta",
+    "~/Library/Caches/com.apple.helpd/Generated/com.seriflabs.affinityphoto.beta.help*1.10.5",
+    "~/Library/Caches/com.seriflabs.affinityphoto.beta",
+    "~/Library/Group Containers/6LVTQB9699.com.seriflabs.beta",
+    "~/Library/HTTPStorages/com.seriflabs.affinityphoto.beta",
+    "~/Library/Mobile Documents/iCloud~com~seriflabs~affinityphoto/",
+    "~/Library/Preferences/com.seriflabs.affinityphoto.beta.plist",
+    "~/Library/Saved Application State/com.seriflabs.affinityphoto.beta.savedState",
+  ]
 end

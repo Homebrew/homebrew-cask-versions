@@ -17,4 +17,14 @@ cask "affinity-designer-beta" do
   end
 
   app "Affinity Designer Beta.app"
+
+  zap trash: [
+    "~/Library/Application Scripts/6LVTQB9699.com.seriflabs.beta",
+    "~/Library/Application Support/Affinity Designer Beta",
+    "~/Library/Caches/com.apple.helpd/Generated/com.seriflabs.affinitydesigner.beta.help*1.10.5",
+    "~/Library/Group Containers/*.seriflabs.beta/appinfo/com.seriflabs.affinitydesigner.beta.appinfo",
+    "~/Library/Group Containers/6LVTQB9699.com.seriflabs.beta",
+    "~/Library/Preferences/com.seriflabs.affinitydesigner.beta.plist",
+    "~/Library/Saved Application State/com.seriflabs.affinitydesigner.beta.savedState",
+  ]
 end
