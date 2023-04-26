@@ -16,4 +16,11 @@ cask "navicat-premium15" do
   depends_on macos: ">= :mojave"
 
   app "Navicat Premium.app"
+
+  zap trash: [
+    "~/Library/Application Support/PremiumSoft CyberTech/Navicat CC/Navicat Premium",
+    "~/Library/Caches/com.apple.helpd/Generated/Navicat Help*#{version}",
+    "~/Library/Preferences/com.prect.NavicatPremium#{version.major}.plist",
+    "~/Library/Saved Application State/com.prect.NavicatPremium#{version.major}.savedState",
+  ]
 end
