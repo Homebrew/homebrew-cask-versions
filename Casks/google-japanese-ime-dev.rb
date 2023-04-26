@@ -10,10 +10,18 @@ cask "google-japanese-ime-dev" do
 
   pkg "GoogleJapaneseInput.pkg"
 
-  uninstall pkgutil:   "com.google.pkg.GoogleJapaneseInput",
+  uninstall pkgutil:   [
+              "com.google.pkg.GoogleJapaneseInput",
+              "com.google.pkg.Keystone",
+            ],
             launchctl: [
               "com.google.inputmethod.Japanese.Converter",
               "com.google.inputmethod.Japanese.Renderer",
+              "com.google.keystone.agent",
+              "com.google.keystone.daemon",
+              "com.google.keystone.system.agent",
+              "com.google.keystone.system.xpcservice",
+              "com.google.keystone.xpcservice",
             ]
 
   zap trash: [
