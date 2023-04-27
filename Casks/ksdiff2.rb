@@ -17,6 +17,8 @@ cask "ksdiff2" do
 
   uninstall pkgutil: "com.blackpixel.kaleidoscope.ksdiff.installer.pkg"
 
+  # No zap stanza required
+
   caveats do
     discontinued
   end

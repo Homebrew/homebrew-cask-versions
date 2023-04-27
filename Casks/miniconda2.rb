@@ -6,7 +6,7 @@ cask "miniconda2" do
       verified: "repo.continuum.io/miniconda/"
   name "Continuum Analytics Miniconda"
   desc "Minimal installer for conda"
-  homepage "https://www.anaconda.com/what-is-anaconda/"
+  homepage "https://www.anaconda.com/"
 
   container type: :naked
 
@@ -21,6 +21,12 @@ cask "miniconda2" do
   end
 
   uninstall delete: "#{HOMEBREW_PREFIX}/miniconda2"
+
+  zap trash: [
+    "~/.conda",
+    "~/.condarc",
+    "~/.continuum",
+  ]
 
   caveats do
     discontinued

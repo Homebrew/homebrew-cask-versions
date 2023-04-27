@@ -6,7 +6,7 @@ cask "anaconda2" do
       verified: "repo.continuum.io/archive/"
   name "Continuum Analytics Anaconda2"
   desc "Data science platform"
-  homepage "https://www.anaconda.com/what-is-anaconda/"
+  homepage "https://www.anaconda.com/"
 
   container type: :naked
 
@@ -23,6 +23,12 @@ cask "anaconda2" do
   uninstall delete: [
     "#{HOMEBREW_PREFIX}/anaconda2",
     "/Applications/Anaconda-Navigator.app",
+  ]
+
+  zap trash: [
+    "~/.anaconda",
+    "~/.conda",
+    "~/.condarc",
   ]
 
   caveats do

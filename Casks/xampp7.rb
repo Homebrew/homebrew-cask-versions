@@ -28,4 +28,6 @@ cask "xampp7" do
               sudo:       true,
             },
             delete: "/Applications/XAMPP/"
+
+  zap trash: "~/Library/Saved Application State/com.bitnami.manager.savedState"
 end
