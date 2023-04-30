@@ -1,6 +1,6 @@
 cask "defold-alpha" do
-  version "1.4.6,7a44007404d16ebc0249bf8bedded1cf89f3f346"
-  sha256 "07f7714092899a4930ee8a19247d673fd4bcde355e315471f360c61f89bfad3c"
+  version "1.4.6,20495b7c5d186b71c0be8b52a2e32933728bf268"
+  sha256 "f11d2930ffa06d59e21ff6a41ad4526eded48d0b76988f5c69401a3f138a6248"
 
   url "https://d.defold.com/archive/alpha/#{version.csv.second}/alpha/editor2/Defold-x86_64-macos.dmg"
   name "Defold"
