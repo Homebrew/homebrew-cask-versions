@@ -1,11 +1,11 @@
 cask "openzfs-dev" do
   on_arm do
-    depends_on macos: ">= :ventura"
+    on_ventura :or_newer do
+      arch arm: "Ventura-13-arm64"
 
-    arch arm: "Ventura-13-arm64"
-
-    version "2.1.99,459"
-    sha256 "b2a4917f159f13caeb52aed70598afe8aca7a5ba9ae9b8650c73fa26f39546e6"
+      version "2.1.99,459"
+      sha256 "b2a4917f159f13caeb52aed70598afe8aca7a5ba9ae9b8650c73fa26f39546e6"
+    end
   end
   on_intel do
     arch intel: "Catalina-10.15"
