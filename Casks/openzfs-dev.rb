@@ -1,21 +1,17 @@
 cask "openzfs-dev" do
   on_arm do
-    on_monterey :or_older do
-      arch arm: "Monterey-12-arm64"
-      version "2.1.6rc7,422"
-      sha256 "14e4bc3ff6fe8d3ad7ecc6674630d76a26d8e71c005331676b725ee76d968b66"
-    end
-    on_ventura :or_newer do
-      arch arm: "Ventura-13-arm64"
-      version "2.1.6rc7,421"
-      sha256 "8b29505e2f6a28a305fd5a0bebfbbe71c49a2f9158ca304327c7780ab1e4186c"
-    end
+    depends_on macos: ">= :ventura"
+
+    arch arm: "Ventura-13-arm64"
+
+    version "2.1.99,459"
+    sha256 "b2a4917f159f13caeb52aed70598afe8aca7a5ba9ae9b8650c73fa26f39546e6"
   end
   on_intel do
     arch intel: "Catalina-10.15"
 
-    version "2.1.6rc7,420"
-    sha256 "6570087af4cda8efd47473c341852d10583e2357f221986745e9d7a407c111c4"
+    version "2.1.99,458"
+    sha256 "5a5f5b79ed4cc14337c99169effe58ecb0989b888b619a0ef1e69b68e8f8b32e"
   end
 
   url "https://openzfsonosx.org/forum/download/file.php?id=#{version.csv.second}"
