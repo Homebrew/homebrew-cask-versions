@@ -1,9 +1,9 @@
 cask "obs-beta" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "29.1.0-beta4"
-  sha256 arm:   "0bfe1084f7af73fd89befe497db6aa78754ad5e7769acc98e2293ccf385fb4df",
-         intel: "8127aa5b610620e78d41ffd0a643277668018018544a7d2a5758dffe82d456ee"
+  version "29.1.0-rc1"
+  sha256 arm:   "b2251b616f7d7ecb47544f82dfd02cdf10b1ec3b5b417c7d2acc51fb8ea7b000",
+         intel: "4f816233a6146c2e4075f44502f32b568a0b4c672168a41a2f193aed7f2b0164"
 
   url "https://cdn-fastly.obsproject.com/downloads/obs-studio-#{version}-macos-#{arch}.dmg"
   name "OBS"
@@ -12,9 +12,9 @@ cask "obs-beta" do
 
   livecheck do
     url "https://obsproject.com/osx_update/updates_#{arch}_v2.xml"
-    regex(/obs[._-]studio[._-](\d+(?:[.-]\d+)+(?:-beta)\d+)[._-]macos/i)
-    strategy :sparkle do |item|
-      item.url[regex, 1]
+    regex(/obs[._-]studio[._-](\d+(?:[.-]\d+)+(?:(?:-beta)|(?:-rc))\d+)[._-]macos/i)
+    strategy :sparkle do |items, regex|
+      items.find { |item| item.channel == "beta" }&.url&.scan(regex)&.flatten
     end
   end
 
