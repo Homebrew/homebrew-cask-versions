@@ -2,9 +2,9 @@ cask "brave-browser-beta" do
   arch arm: "arm64", intel: "x64"
   folder = on_arch_conditional arm: "beta-arm64", intel: "beta"
 
-  version "1.52.78.0,152.78"
-  sha256 arm:   "0c6dd7c743a2ad85e9fe5c369aaa6641d7528db121d2e8f4d10feb8f481098b7",
-         intel: "ff653d272c8959e882506d020f80d3a63c5326d91cd7e0be31d0608d5c16ec98"
+  version "1.52.84.0,152.84"
+  sha256 arm:   "b1445ee99096cdb81500d3bbb526e755b2aa78c55de0ce879ffd1a79a5cd5d37",
+         intel: "ed27d5b89cbb4a1a20b512d5132321a33175f24f32292a16f3b3ab90121ab8f5"
 
   url "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/#{folder}/#{version.csv.second}/Brave-Browser-Beta-#{arch}.dmg",
       verified: "updates-cdn.bravesoftware.com/sparkle/Brave-Browser/"
