@@ -1,9 +1,9 @@
 cask "virtualbox-beta" do
   on_arm do
-    version "7.0.6_BETA4-155176"
-    sha256 "0f3c380155a2bf8582058b1d7ae073a7fa76f9c1843f7e78c3dfe6cdcefe73bd"
+    version "7.0.8_BETA4-156879"
+    sha256 "7c24aa0d40ae65cde24d1fba5a2c2fe49a6f6c7d42b01cf3169a7e3459b80b8d"
 
-    url "https://download.virtualbox.org/virtualbox/7.0.6/VirtualBox-7.0.6_BETA4-155176-macOSArm64.dmg"
+    url "https://download.virtualbox.org/virtualbox/7.0.8/VirtualBox-#{version}-macOSArm64.dmg"
 
     # TODO: Add a `livecheck` block if/when ARM64 dmg files are stored in a
     # predictable directory on download.virtualbox.org. ARM64 files are
