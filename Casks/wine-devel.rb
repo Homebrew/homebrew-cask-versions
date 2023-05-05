@@ -1,11 +1,11 @@
 cask "wine-devel" do
-  version "8.5"
-  sha256 "26d6222b5bdbef78d79fbfbe9e39ddea7c7c87793f8d73b804422f0d17fb39be"
+  version "8.7"
+  sha256 "fffa2dd4b78b53ec96fccf7698e7a7f8d547de661d4ef0de79e5c1f9689dcbde"
 
   # Current winehq packages are deprecated and these are packages from
   # the new maintainers that will eventually be pushed to Winehq.
   # See https://www.winehq.org/pipermail/wine-devel/2021-July/191504.html
-  url "https://github.com/Gcenx/macOS_Wine_builds/releases/download/#{version}/wine-devel-#{version}-osx64.tar.xz",
+  url "https://github.com/Gcenx/macOS_Wine_builds/releases/download/#{version}/wine-devel-#{version}-osx86.tar.xz",
       verified: "github.com/Gcenx/macOS_Wine_builds/"
   name "WineHQ-devel"
   desc "Compatibility layer to run Windows applications"
