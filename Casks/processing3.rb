@@ -10,10 +10,9 @@ cask "processing3" do
 
   livecheck do
     url :url
-    regex(%r{href=.*?tree/processing[._-](\d+)[._-]v?(\d+(?:\.\d+)+)}i)
-    strategy :github_latest do |page|
-      page.scan(regex)
-          .map { |match| "#{match[1]},#{match[0]}" }
+    regex(/^processing[._-](\d+(?:\.\d+)*)[@_-](3(?:\.\d+)+)$/i)
+    strategy :github_latest do |json, regex|
+      json["tag_name"]&.scan(regex)&.map { |match| "#{match[1]},#{match[0]}" }
     end
   end
 
