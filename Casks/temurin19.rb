@@ -13,10 +13,9 @@ cask "temurin19" do
 
   livecheck do
     url :url
-    regex(/jdk[._-](\d+(?:\.\d+)+)[+._-](\d+)/i)
-    strategy :github_latest do |page|
-      page.scan(regex)
-          .map { |match| "#{match[0]},#{match[1]}" }
+    regex(/^jdk[._-](\d+(?:\.\d+)*)\+(\d+)$/i)
+    strategy :github_latest do |json, regex|
+      json["tag_name"]&.scan(regex)&.map { |match| "#{match[0]},#{match[1]}" }
     end
   end
 
