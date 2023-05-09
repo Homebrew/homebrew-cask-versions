@@ -5,13 +5,11 @@ cask "db-browser-for-sqlite-nightly" do
   sha256 :no_check
 
   url "https://nightlies.sqlitebrowser.org/latest/DB.Browser.for.SQLite-#{arch}.dmg"
-  name "DB Browser for SQLite"
+  name "DB Browser for SQLite Nightly"
   desc "Database browser for SQLite"
   homepage "https://sqlitebrowser.org/"
 
-  conflicts_with cask: "db-browser-for-sqlite"
-
-  app "DB Browser for SQLite.app"
+  app "DB Browser for SQLite Nightly.app"
 
   zap trash: [
     "~/Library/Preferences/com.sqlitebrowser.sqlitebrowser.plist",
