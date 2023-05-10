@@ -7,12 +7,20 @@ cask "1password-nightly" do
   url do
     require "open-uri"
     base_url = "https://app-updates.agilebits.com/product_history/OPM8"
-    latest_build_info = URI(base_url).open do |io|
-      match = io.read.scan(%r{<a href="[^"]*/1Password-(\d+\.\d+\.\d+-\d+\.NIGHTLY)-\$(?:ARCH)\.zip"}i).flatten.first
-      next if match.nil?
+    latest_build_info =
+      URI(base_url).open do |io|
+        match =
+          io
+            .read
+            .scan(
+              %r{<a href="[^"]*/1Password-(\d+\.\d+\.\d+-\d+\.NIGHTLY)-\$(?:ARCH)\.zip"}i
+            )
+            .flatten
+            .first
+        next if match.nil?
 
-      match
-    end
+        match
+      end
     next if latest_build_info.nil?
 
     version = latest_build_info.match(/(\d+\.\d+\.\d+-\d+\.NIGHTLY)/)[0]
@@ -30,16 +38,25 @@ cask "1password-nightly" do
   end
 
   auto_updates true
-  conflicts_with cask: ["1password", "homebrew/cask-versions/1password-beta"]
+  conflicts_with cask: %w[1password homebrew/cask-versions/1password-beta]
   depends_on macos: ">= :high_sierra"
 
   app "1Password.app"
 
-  # zap trash: [
-  #   "~/Library/Application Scripts/2BUA8C4S2C.com.1password*",
-  #   "~/Library/Application Support/1Password",
-  #   "~/Library/Group Containers/2BUA8C4S2C.com.1password",
-  #   "~/Library/Preferences/com.1password.1password.plist",
-  #   "~/Library/Saved Application State/com.1password.1password.savedState",
-  # ]
+  zap trash: [
+        "~/Library/Application Scripts/2BUA8C4S2C.com.1password",
+        "~/Library/Application Scripts/2BUA8C4S2C.com.1password.browser-helper",
+        "~/Library/Application Scripts/com.1password.1password-launcher",
+        "~/Library/Application Scripts/com.1password.browser-support",
+        "~/Library/Application Support/1Password",
+        "~/Library/Application Support/CrashReporter/1Password*.plist",
+        "~/Library/Containers/2BUA8C4S2C.com.1password.browser-helper",
+        "~/Library/Containers/com.1password.1password-launcher",
+        "~/Library/Containers/com.1password.browser-support",
+        "~/Library/Group Containers/*.com.1password",
+        "~/Library/Group Containers/*.com.agilebits",
+        "~/Library/Logs/DiagnosticReports/1Password*",
+        "~/Library/Preferences/*1password.plist",
+        "~/Library/Saved Application State/com.1password.1password.savedState"
+      ]
 end
