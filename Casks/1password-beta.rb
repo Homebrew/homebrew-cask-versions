@@ -12,11 +12,13 @@ cask "1password-beta" do
 
   livecheck do
     url "https://app-updates.agilebits.com/product_history/OPM#{version.major}"
-    regex(%r{href=.*?/1Password[._-]?v?(\d+(?:.\d+)*(?:[._-]BETA))[._-]?\$ARCH\.zip}i)
+    regex(
+      %r{href=.*?/1Password[._-]?v?(\d+(?:.\d+)*(?:[._-]BETA))[._-]?\$ARCH\.zip}i,
+    )
   end
 
   auto_updates true
-  conflicts_with cask: "1password"
+  conflicts_with cask: %w[1password homebrew/cask-versions/1password-nightly]
   depends_on macos: ">= :high_sierra"
 
   app "1Password.app"
