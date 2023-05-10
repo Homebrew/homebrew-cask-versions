@@ -30,13 +30,6 @@ cask "1password-nightly" do
   desc "Password manager that keeps all passwords secure behind one password"
   homepage "https://1password.com/"
 
-  livecheck do
-    url "https://app-updates.agilebits.com/product_history/OPM8"
-    strategy :page_match
-    regex(/1Password-(\d+(?:\.\d+)*-\d+\.NIGHTLY)-#{arch}\.zip/i)
-  end
-
-  auto_updates true
   conflicts_with cask: %w[1password homebrew/cask-versions/1password-beta]
   depends_on macos: ">= :high_sierra"
 
