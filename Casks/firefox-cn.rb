@@ -1,5 +1,5 @@
 cask "firefox-cn" do
-  version "112.0"
+  version "113.0"
   sha256 :no_check # patch versions use the same URL
 
   url "https://download-ssl.firefox.com.cn/releases/firefox/#{version}/zh-CN/Firefox-latest.dmg"
