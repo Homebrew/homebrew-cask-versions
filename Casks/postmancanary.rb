@@ -1,4 +1,4 @@
-cask "postman-canary" do
+cask "postmancanary" do
   arch arm: "osx_arm64", intel: "osx64"
 
   version "10.13.7-canary230510-0719"
@@ -26,7 +26,5 @@ cask "postman-canary" do
 
   app "PostmanCanary.app"
 
-  zap trash: [
-    "~/Library/Application Support/PostmanCanary",
-  ]
+  zap trash: "~/Library/Application Support/PostmanCanary"
 end
