@@ -27,14 +27,6 @@ cask "postman-canary" do
   app "PostmanCanary.app"
 
   zap trash: [
-    # "~/Library/Application Support/com.postmanlabs.mac.ShipIt",
     "~/Library/Application Support/PostmanCanary",
-    # "~/Library/Caches/com.postmanlabs.mac.ShipIt",
-    # "~/Library/Caches/com.postmanlabs.mac",
-    # "~/Library/Caches/PostmanCanary",
-    # "~/Library/HTTPStorages/com.postmanlabs.mac",
-    # "~/Library/Preferences/ByHost/com.postmanlabs.mac.ShipIt.*.plist",
-    # "~/Library/Preferences/com.postmanlabs.mac.plist",
-    # "~/Library/Saved Application State/com.postmanlabs.mac.savedState",
   ]
 end
