@@ -11,8 +11,8 @@ cask "mixxx-snapshot" do
   homepage "https://www.mixxx.org/"
 
   livecheck do
-    url "https://www.mixxx.org/download/"
-    regex(%r{href=["']?https://downloads\.mixxx\.org/snapshots/main/mixxx[._-]v?(\S+)[._-]macos(?:intel|arm)\.dmg}i)
+    url "https://mixxx.org/download/"
+    regex(%r{href=.*?/snapshots/main/mixxx[._-]v?(.+)[._-]macosintel\.dmg}i)
   end
 
   conflicts_with cask: "mixxx"
