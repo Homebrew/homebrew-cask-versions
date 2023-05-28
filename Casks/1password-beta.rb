@@ -7,7 +7,7 @@ cask "1password-beta" do
 
   url "https://downloads.1password.com/mac/1Password-#{version}-#{arch}.zip"
   name "1Password"
-  desc "Password manager that keeps all passwords secure behind one password"
+  desc "Password manager"
   homepage "https://1password.com/"
 
   livecheck do
@@ -16,7 +16,10 @@ cask "1password-beta" do
   end
 
   auto_updates true
-  conflicts_with cask: "1password"
+  conflicts_with cask: [
+    "1password",
+    "1password-nightly",
+  ]
   depends_on macos: ">= :high_sierra"
 
   app "1Password.app"
