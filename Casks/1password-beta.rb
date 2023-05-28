@@ -1,24 +1,25 @@
 cask "1password-beta" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "8.10.6-20.BETA"
-  sha256 arm:   "5e9553e727e8e8792f6e6656ca83cb0fbfccdc5acd20a79ceb2b78e746cf5314",
-         intel: "d8b6e1e563e1040271bd9ec9f3f0c35c31e437c4e1e7de51740fd2e03c22dfed"
+  version "8.10.7-36.BETA"
+  sha256 arm:   "e92327b2f36cecfe96e69e2423a97b8382facc9e02328b4e900b415d8f67c9dd",
+         intel: "5e94eeea408c9b788a38e35428cbe82a480e85113f5c4e7e58b1c7194096bf53"
 
   url "https://downloads.1password.com/mac/1Password-#{version}-#{arch}.zip"
   name "1Password"
-  desc "Password manager that keeps all passwords secure behind one password"
+  desc "Password manager"
   homepage "https://1password.com/"
 
   livecheck do
     url "https://app-updates.agilebits.com/product_history/OPM#{version.major}"
-    regex(
-      %r{href=.*?/1Password[._-]?v?(\d+(?:.\d+)*(?:[._-]BETA))[._-]?\$ARCH\.zip}i,
-    )
+    regex(%r{href=.*?/1Password[._-]?v?(\d+(?:.\d+)*(?:[._-]BETA))[._-]?\$ARCH\.zip}i)
   end
 
   auto_updates true
-  conflicts_with cask: %w[1password homebrew/cask-versions/1password-nightly]
+  conflicts_with cask: [
+    "1password",
+    "1password-nightly",
+  ]
   depends_on macos: ">= :high_sierra"
 
   app "1Password.app"
