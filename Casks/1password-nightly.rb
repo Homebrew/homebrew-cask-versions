@@ -4,33 +4,15 @@ cask "1password-nightly" do
   version :latest
   sha256 :no_check
 
-  url do
-    require "open-uri"
-    base_url = "https://app-updates.agilebits.com/product_history/OPM8"
-    latest_build_info =
-      URI(base_url).open do |io|
-        match =
-          io
-          .read
-          .scan(
-            %r{<a href="[^"]*/1Password-(\d+\.\d+\.\d+-\d+\.NIGHTLY)-\$(?:ARCH)\.zip"}i,
-          )
-          .flatten
-          .first
-        next if match.nil?
-
-        match
-      end
-    next if latest_build_info.nil?
-
-    version = latest_build_info.match(/(\d+\.\d+\.\d+-\d+\.NIGHTLY)/)[0]
-    "https://downloads.1password.com/mac/1Password-#{version}-#{arch}.zip"
-  end
+  url "https://c.1password.com/dist/1P/mac8/1Password-latest.NIGHTLY-#{arch}.zip"
   name "1Password Nightly"
-  desc "Password manager that keeps all passwords secure behind one password"
+  desc "Password manager"
   homepage "https://1password.com/"
 
-  conflicts_with cask: %w[1password homebrew/cask-versions/1password-beta]
+  conflicts_with cask: [
+    "1password",
+    "1password-beta",
+  ]
   depends_on macos: ">= :high_sierra"
 
   app "1Password.app"
