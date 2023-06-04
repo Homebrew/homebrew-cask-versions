@@ -9,7 +9,7 @@ cask "xmind23" do
 
   conflicts_with cask: [
     "homebrew/cask/xmind",
-    "xmind8"
+    "xmind8",
   ]
 
   app "Xmind.app"
