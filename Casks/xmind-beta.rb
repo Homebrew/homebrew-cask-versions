@@ -7,6 +7,10 @@ cask "xmind-beta" do
   desc "Mind mapping and brainstorming tool"
   homepage "https://www.xmind.net/"
 
+  livecheck do
+    skip "No reliable version info"
+  end
+
   conflicts_with cask: [
     "homebrew/cask/xmind",
     "xmind8",
