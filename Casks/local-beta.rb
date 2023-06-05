@@ -3,7 +3,7 @@ cask "local-beta" do
 
   version "7.0.0,6382"
   sha256  arm:   "da19fd151d36b065bc1cc6c3088456e202c529db75239918b829677e9401119d",
-          intel: "18d46b3ee9e6a6a87dee542c6cc7621cc66f80a3f13cca0b715d04276a4b4862"
+          intel: "3277e5a6dd0fd1038ca7953fc208fc6299237fbd9d7d35823031aeaea24f1122"
 
   url "https://cdn.localwp.com/releases-beta/#{version.csv.first}+local-beta-#{version.csv.second}/local-beta-#{version.csv.first}-b#{version.csv.second}-mac#{arch}.dmg"
   name "Local Beta"
