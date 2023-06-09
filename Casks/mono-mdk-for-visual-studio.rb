@@ -1,6 +1,6 @@
 cask "mono-mdk-for-visual-studio" do
-  version "6.12.0.182"
-  sha256 "515b25097a53e8f5bf15585e5cc3e646b3a92e114e57bad2fd63370031931c1f"
+  version "6.12.0.188"
+  sha256 "07cdd4e5e72b562892960b7fc73af470db7a4ffc2f68bb834eb3d0a874bbd12c"
 
   url "https://download.mono-project.com/archive/#{version.major_minor_patch}/macos-10-universal/MonoFramework-MDK-#{version}.macos10.xamarin.universal.pkg"
   name "Mono"
@@ -10,8 +10,8 @@ cask "mono-mdk-for-visual-studio" do
   # The stable version is that listed on the download page. See:
   #   https://github.com/Homebrew/homebrew-cask-versions/pull/12974
   livecheck do
-    url "https://www.mono-project.com/download/vs/#download-mac"
-    regex(/MonoFramework-MDK-(\d+(?:\.\d+)+).macos10.xamarin.universal\.pkg/i)
+    url "https://software.xamarin.com/Service/Updates?v=2&m=d98c8b75-1a66-41bd-aa2f-9fca3bdb9c5d&pv964ebddd-1ffe-47e7-8128-5ce17ffffb05=516010000"
+    regex(/monoframework-mdk-(\d+(?:\.\d+)+).macos10.xamarin.universal\.pkg/i)
   end
 
   conflicts_with cask:    "mono-mdk",
