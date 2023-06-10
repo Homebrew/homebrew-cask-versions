@@ -7,10 +7,8 @@ cask "mono-mdk-for-visual-studio" do
   desc "Open source implementation of Microsoft's .NET Framework"
   homepage "https://www.mono-project.com/"
 
-  # The stable version is that listed on the download page. See:
-  #   https://github.com/Homebrew/homebrew-cask-versions/pull/12974
   livecheck do
-    url "https://software.xamarin.com/Service/Updates?v=2&m=d98c8b75-1a66-41bd-aa2f-9fca3bdb9c5d&pv964ebddd-1ffe-47e7-8128-5ce17ffffb05=516010000"
+    url "https://software.xamarin.com/Service/Updates?v=2&pv964ebddd-1ffe-47e7-8128-5ce17ffffb05=1"
     regex(/monoframework-mdk-(\d+(?:\.\d+)+).macos10.xamarin.universal\.pkg/i)
   end
 
