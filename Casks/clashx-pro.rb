@@ -1,6 +1,6 @@
 cask "clashx-pro" do
-  version "1.116.1.1"
-  sha256 "8d561c80d4f8d197d47a9429b0ae1ebc804ce63bdb8af363ddfa1c874097e6a0"
+  version "1.116.2.1"
+  sha256 "54211f52fec0ea761f865e04d7d82582162108e40c0d32fd0161c844b2e5796b"
 
   url "https://appcenter.clashx.workers.dev/api/1cd052f7-e118-4d13-87fb-35176f9702c1/#{version}",
       verified: "appcenter.clashx.workers.dev/api/1cd052f7-e118-4d13-87fb-35176f9702c1/"
