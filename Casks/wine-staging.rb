@@ -1,11 +1,11 @@
 cask "wine-staging" do
-  version "8.7"
-  sha256 "c63c637facbcf5689cd2622e79b7e777aa70824cb5add2627e7f12498d214141"
+  version "8.10"
+  sha256 "4a29553703133095b1ef84cbf840bb227a7b5c0e9c747ee6ac7721599176e33e"
 
   # Current winehq packages are deprecated and these are packages from
   # the new maintainers that will eventually be pushed to Winehq.
   # See https://www.winehq.org/pipermail/wine-devel/2021-July/191504.html
-  url "https://github.com/Gcenx/macOS_Wine_builds/releases/download/#{version}/wine-staging-#{version}-osx64.tar.xz",
+  url "https://github.com/Gcenx/macOS_Wine_builds/releases/download/#{version}/wine-staging-#{version}-osx86.tar.xz",
       verified: "github.com/Gcenx/macOS_Wine_builds/"
   name "WineHQ-staging"
   desc "Compatibility layer to run Windows applications"
