@@ -1,6 +1,6 @@
 cask "discord-ptb" do
-  version "0.0.73"
-  sha256 "5723eddd177805475aac4c552ceb3bfac1196ea3b2c5fce0d8e36a676ffd341b"
+  version "0.0.74"
+  sha256 "e079c8595e87e077f26551fbf6a42f0db62078b346d671a94b5715f87f3580e9"
 
   url "https://dl-ptb.discordapp.net/apps/osx/#{version}/DiscordPTB.dmg",
       verified: "dl-ptb.discordapp.net/apps/osx/"
