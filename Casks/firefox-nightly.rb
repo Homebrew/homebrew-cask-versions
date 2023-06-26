@@ -86,7 +86,7 @@ cask "firefox-nightly" do
   desc "Web browser"
   homepage "https://www.mozilla.org/firefox/channel/desktop/#nightly"
 
-  depends_on macos: ">= :sierra"
+  depends_on macos: ">= :catalina"
 
   app "Firefox Nightly.app"
 
