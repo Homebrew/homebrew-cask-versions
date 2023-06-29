@@ -20,7 +20,7 @@ cask "android-studio-preview-beta" do
   conflicts_with cask: "android-studio-preview-canary"
 
   # Renamed for consistency; name changes between beta and RC versions
-  app "Android Studio Preview.app"
+  app "Android Studio.app", target: "Android Studio Preview.app"
 
   zap trash: [
         "~/.android",
