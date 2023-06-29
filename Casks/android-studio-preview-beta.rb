@@ -1,9 +1,9 @@
 cask "android-studio-preview-beta" do
   arch arm: "mac_arm", intel: "mac"
 
-  version "2022.3.1.16"
-  sha256 arm:   "e5a9bc0466fc8668dd3f7d7742bf44a0410a50c614da0bf2447fae6a28afbe06",
-         intel: "9efe6f8f8b55189b457478ccfc71c343886c4df7449dc9956ff650113d3d35c5"
+  version "2022.3.1.17"
+  sha256 arm:   "b4cc0fe436a0b876169c5bcf530f8492f4ebe6474189a4d90d3828f1dacaff29",
+         intel: "2d2ee57eed08a0d50a0606569d0527047ad5291fcddf4249f280c6bb66fa0911"
 
   url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-#{version}-#{arch}.zip",
       verified: "dl.google.com/dl/android/studio/"
@@ -20,7 +20,7 @@ cask "android-studio-preview-beta" do
   conflicts_with cask: "android-studio-preview-canary"
 
   # Renamed for consistency; name changes between beta and RC versions
-  app "Android Studio Preview.app"
+  app "Android Studio.app", target: "Android Studio Preview.app"
 
   zap trash: [
         "~/.android",
