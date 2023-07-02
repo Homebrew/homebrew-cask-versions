@@ -22,7 +22,7 @@ cask "blender-lts" do
       next if lts_page[:content].blank?
 
       lts_versions =
-        lts_page[:content].scan(%r{href=["'].*/download/lts/(\d+(?:[.-]\d+)+)/["' >]}i)
+        lts_page[:content].scan(%r{href=["'].*/download/(?:lts|releases)/(\d+(?:[.-]\d+)+)/["' >]}i)
                           .flatten
                           .uniq
                           .map { |v| Version.new(v) }
