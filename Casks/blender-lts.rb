@@ -1,9 +1,9 @@
 cask "blender-lts" do
   arch arm: "arm64", intel: "x64"
 
-  version "3.3.8"
-  sha256 arm:   "c42ab21bfe0baa267e0453b256824b3da68edd6c57683ca570c7372720106110",
-         intel: "19fffcf276a7fc7cbff317cba8c4cbadc7437c0e5352ace090fa8792344b87da"
+  version "3.6.0"
+  sha256 arm:   "ab4e1793343b3d22d7481d30d7f2817b7eb19c9dbdc505db3765336545746e63",
+         intel: "9534dd39b764e11314da968043a982b5259741ecac55432c86aae3976defc183"
 
   url "https://download.blender.org/release/Blender#{version.major_minor}/blender-#{version}-macos-#{arch}.dmg"
   name "Blender"
@@ -22,7 +22,7 @@ cask "blender-lts" do
       next if lts_page[:content].blank?
 
       lts_versions =
-        lts_page[:content].scan(%r{href=["'].*/download/lts/(\d+(?:[.-]\d+)+)/["' >]}i)
+        lts_page[:content].scan(%r{href=["'].*/download/(?:lts|releases)/(\d+(?:[.-]\d+)+)/["' >]}i)
                           .flatten
                           .uniq
                           .map { |v| Version.new(v) }
