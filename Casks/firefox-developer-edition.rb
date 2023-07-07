@@ -56,7 +56,7 @@ cask "firefox-developer-edition" do
   desc "Web browser"
   homepage "https://www.mozilla.org/firefox/developer/"
 
-  depends_on macos: ">= :sierra"
+  depends_on macos: ">= :catalina"
 
   app "Firefox Developer Edition.app"
 
