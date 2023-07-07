@@ -79,7 +79,7 @@ cask "firefox-beta" do
     "firefox-cn",
     "firefox-esr",
   ]
-  depends_on macos: ">= :sierra"
+  depends_on macos: ">= :catalina"
 
   app "Firefox.app"
 
