@@ -1,5 +1,5 @@
 cask "google-chrome-canary" do
-  version "117.0.5876.0"
+  version "117.0.5877.0"
   sha256 :no_check
 
   url "https://dl.google.com/chrome/mac/universal/canary/googlechromecanary.dmg"
@@ -13,7 +13,7 @@ cask "google-chrome-canary" do
   end
 
   auto_updates true
-  depends_on macos: ">= :el_capitan"
+  depends_on macos: ">= :catalina"
 
   app "Google Chrome Canary.app"
 
