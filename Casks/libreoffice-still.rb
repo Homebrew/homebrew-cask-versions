@@ -9,7 +9,7 @@ cask "libreoffice-still" do
   url "https://download.documentfoundation.org/libreoffice/stable/#{version}/mac/#{folder}/LibreOffice_#{version}_MacOS_#{arch}.dmg",
       verified: "download.documentfoundation.org/libreoffice/stable/"
   name "LibreOffice Still"
-  desc "Free cross-platform office suite"
+  desc "Free cross-platform office suite, stable version recommended for enterprises"
   homepage "https://www.libreoffice.org/"
 
   livecheck do
