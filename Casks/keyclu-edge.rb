@@ -1,4 +1,4 @@
-cask "keyclu" do
+cask "keyclu-edge" do
   version "0.5"
   sha256 "2c8af7320b0e2143669d54c8beb691c2a2ff003d86296a4c94a335484ccef7d0"
 
