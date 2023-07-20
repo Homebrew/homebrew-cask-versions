@@ -12,11 +12,13 @@ cask "graalvm-jdk17" do
   homepage "https://www.graalvm.org/"
 
   livecheck do
-    url "https://docs.oracle.com/en/graalvm/jdk/17/docs/release-notes/"
-    regex(/Oracle GraalVM for JDK\s+(\d+(?:\.\d+)+)/)
+    url "https://www.oracle.com/java/technologies/downloads/"
+    regex(/graalvm\s+for\s+jdk\s+(17(?:\.\d+)+)/i)
   end
 
   artifact "graalvm-jdk-#{version}+9.1", target: "/Library/Java/JavaVirtualMachines/graalvm-#{version.major}.jdk"
+
+  # No zap stanza required
 
   caveats do
     license "https://www.oracle.com/downloads/licenses/graal-free-license.html"
