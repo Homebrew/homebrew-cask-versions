@@ -1,6 +1,6 @@
 cask "inso-beta" do
-  version "3.19.0-beta.5"
-  sha256 "9da6d39500d4010233c01492abded5443d566df91f9681c41e89cd85e143b9bb"
+  version "3.19.0-beta.7"
+  sha256 "533e69df9793f01faa7661086e177d43833e7046659442e3adf84e6a8a95df9d"
 
   url "https://github.com/Kong/insomnia/releases/download/lib%40#{version}/inso-macos-#{version}.zip",
       verified: "github.com/Kong/insomnia/"
