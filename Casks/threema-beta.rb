@@ -6,13 +6,13 @@ cask "threema-beta" do
          intel: "1f20ae86c78c65be029e17c0e07a3c07cc9a780f4376f451f39fbdcd10f3ec48"
 
   url "https://releases.threema.ch/desktop/#{version}/threema-desktop-v#{version}-macos-#{arch}.dmg"
-  name "Threema Desktop 2.0 Beta"
+  name "Threema"
   desc "End-to-end encrypted instant messaging application"
   homepage "https://threema.ch/download-md"
 
   livecheck do
     url "https://threema.ch/en/download-md"
-    regex(/(2.0-beta\s*\d+(?:)+)/i)
+    regex(/href=.*?threema[._-]desktop[._-]v?(\d+(?:(?:[.-]|(beta))+\d+)+)[._-]macos[._-]#{arch}\.dmg/i)
   end
 
   app "Threema Beta.app"
