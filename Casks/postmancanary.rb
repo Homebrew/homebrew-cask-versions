@@ -1,9 +1,9 @@
 cask "postmancanary" do
   arch arm: "osx_arm64", intel: "osx64"
 
-  version "10.15.6-canary230706-1055"
-  sha256 arm:   "13598e5fb621228a49f2734216590ddd14ca8e017256ec57034edef7f57ba139",
-         intel: "70e02988ffa7df4814570d0d41f87f79eb0ace679c112a111d7b9aea3ae6f30d"
+  version "10.16.4-canary230725-1322"
+  sha256 arm:   "4150fef30bbc8848b32cff51ec80946e15d08b619dd282debb57b6f3cb68eedb",
+         intel: "e0f6141ff4d4309f55bd2228ca1296205d445f5dd240222a4ed663f4e25667f9"
 
   url "https://dl.pstmn.io/download/version/#{version}/#{arch}",
       verified: "dl.pstmn.io/download/version/"
