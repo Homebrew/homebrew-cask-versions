@@ -1,6 +1,6 @@
 cask "openra-playtest" do
-  version "20230218"
-  sha256 "61f2457b2ef12818c86f584eadaf2bd788004440b1cefa4f2a22d45afcb71085"
+  version "20230801"
+  sha256 "ff1c466d176cf828de042dc7ab461f647d983da6da2326f8602a25ecc845d7ce"
 
   url "https://github.com/OpenRA/OpenRA/releases/download/playtest-#{version}/OpenRA-playtest-#{version}.dmg",
       verified: "github.com/OpenRA/OpenRA/"
