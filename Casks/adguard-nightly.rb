@@ -22,6 +22,7 @@ cask "adguard-nightly" do
             launchctl: [
               "com.adguard.mac.adguard.pac",
               "com.adguard.mac.adguard.tun-helper",
+              "com.adguard.mac.adguard.xpcgate2",
             ],
             delete:    [
               "/Library/com.adguard.mac.adguard.pac",
