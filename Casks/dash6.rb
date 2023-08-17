@@ -1,5 +1,5 @@
 cask "dash6" do
-  version "6.4.3,1012"
+  version "6.4.3"
   sha256 "647c1bf186d7a0c598390a64e2ec504f37c4475e02ca1f3c45164e29fa410283"
 
   url "https://kapeli.com/downloads/v#{version.major}/Dash.zip"
@@ -9,7 +9,7 @@ cask "dash6" do
 
   livecheck do
     url "https://kapeli.com/Dash6.xml"
-    strategy :sparkle
+    strategy :sparkle, &:short_version
   end
 
   auto_updates true
