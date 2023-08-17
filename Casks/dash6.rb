@@ -1,0 +1,29 @@
+cask "dash6" do
+  version "6.4.3,1012"
+  sha256 "647c1bf186d7a0c598390a64e2ec504f37c4475e02ca1f3c45164e29fa410283"
+
+  url "https://kapeli.com/downloads/v#{version.major}/Dash.zip"
+  name "Dash"
+  desc "API documentation browser and code snippet manager"
+  homepage "https://kapeli.com/dash"
+
+  auto_updates true
+
+  app "Dash.app"
+
+  zap trash: [
+    "~/Library/Application Support/Dash",
+    "~/Library/Application Support/com.kapeli.dashdoc",
+    "~/Library/Caches/com.kapeli.dashdoc",
+    "~/Library/Cookies/com.kapeli.dashdoc.binarycookies",
+    "~/Library/HTTPStorages/com.kapeli.dashdoc.binarycookies",
+    "~/Library/Logs/Dash",
+    "~/Library/Preferences/com.kapeli.dashdoc.plist",
+    "~/Library/Saved Application State/com.kapeli.dashdoc.savedState",
+    "~/Library/WebKit/com.kapeli.dashdoc",
+  ]
+
+  caveats do
+    discontinued
+  end
+end
