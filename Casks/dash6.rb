@@ -7,7 +7,13 @@ cask "dash6" do
   desc "API documentation browser and code snippet manager"
   homepage "https://kapeli.com/dash"
 
+  livecheck do
+    url "https://kapeli.com/Dash6.xml"
+    strategy :sparkle
+  end
+
   auto_updates true
+  conflicts_with cask: "dash"
 
   app "Dash.app"
 
@@ -22,8 +28,4 @@ cask "dash6" do
     "~/Library/Saved Application State/com.kapeli.dashdoc.savedState",
     "~/Library/WebKit/com.kapeli.dashdoc",
   ]
-
-  caveats do
-    discontinued
-  end
 end
