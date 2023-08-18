@@ -1,6 +1,6 @@
 cask "discord-development" do
-  version "0.0.8784"
-  sha256 "806e91fe72007c73c5a8c9eb953b3117e337b255905738bc937775091aeab3a2"
+  version "0.0.8788"
+  sha256 "6059389af7f94315a999194fd904d9ea08e3578284ed131acb23480eb0f9a831"
 
   url "https://dl-development.discordapp.net/apps/osx/#{version}/DiscordDevelopment.dmg",
       verified: "dl-development.discordapp.net/"
