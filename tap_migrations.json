@@ -1,3 +1,4 @@
 {
-  "java11": "homebrew/core"
+  "java11": "homebrew/core",
+  "sublime-text3": "homebrew/cask"
 }
