@@ -25,6 +25,7 @@ cask "parallels17" do
     "homebrew/cask-versions/parallels14",
     "homebrew/cask-versions/parallels15",
     "homebrew/cask-versions/parallels16",
+    "homebrew/cask-versions/parallels18",
   ]
   depends_on macos: ">= :high_sierra"
 
