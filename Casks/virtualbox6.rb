@@ -1,19 +1,17 @@
 cask "virtualbox6" do
-  version "6.1.46,158378"
-  sha256 "de90e9d563bacf4293c30608cc901775d11edac22640e95ce2ecba28259fdbec"
+  version "6.1.46,a,158378"
+  sha256 "4b1ec10982660a2a6e0718f183a9e68278e1a28ef3104ffa989e676e676f5fd0"
 
-  url "https://download.virtualbox.org/virtualbox/#{version.csv.first}/VirtualBox-#{version.csv.first}-#{version.csv.second}-OSX.dmg"
+  url "https://download.virtualbox.org/virtualbox/#{version.csv.first}/VirtualBox-#{version.csv.first}#{version.csv.second}-#{version.csv.third}-OSX.dmg"
   name "Oracle VirtualBox"
   desc "Virtualizer for x86 hardware"
   homepage "https://www.virtualbox.org/"
 
   livecheck do
     url "https://www.virtualbox.org/wiki/Download_Old_Builds_6_1"
-    strategy :page_match do |page|
-      match = page.match(/href=.*?VirtualBox-(\d+(?:\.\d+)+)-(\d+)-OSX.dmg/)
-      next if match.blank?
-
-      "#{match[1]},#{match[2]}"
+    regex(/href=.*?VirtualBox-(\d+(?:\.\d+)+)(\w+)?-(\d+)-OSX.dmg/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| "#{match[0]},#{match[1]},#{match[2]}" }
     end
   end
 

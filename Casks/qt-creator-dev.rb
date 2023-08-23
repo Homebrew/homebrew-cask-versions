@@ -9,7 +9,8 @@ cask "qt-creator-dev" do
 
   livecheck do
     url "https://download.qt.io/development_releases/qtcreator/"
-    strategy :page_match do |page|
+    regex(%r{href=["']?v?(\d+(?:\.\d+)+[._-](?:alpha|beta|rc)\d*)/?["' >]}i)
+    strategy :page_match do |page, regex|
       versions = page.scan(%r{href=["']?v?(\d+(?:\.\d+)+)/?["' >]}i).flatten.uniq.sort_by { |v| Version.new(v) }
       newest_major_minor = versions.last
       next if newest_major_minor.blank?
@@ -18,7 +19,7 @@ cask "qt-creator-dev" do
       version_page = Homebrew::Livecheck::Strategy.page_content(URI.join(@url, "#{newest_major_minor}/").to_s)
       next if version_page[:content].blank?
 
-      version_page[:content].scan(%r{href=["']?v?(\d+(?:\.\d+)+[._-](?:alpha|beta|rc)\d*)/?["' >]}i).map(&:first)
+      version_page[:content].scan(regex).map(&:first)
     end
   end
 
