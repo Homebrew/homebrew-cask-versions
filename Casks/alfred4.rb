@@ -9,11 +9,12 @@ cask "alfred4" do
 
   livecheck do
     url "https://www.alfredapp.com/app/update#{version.major}/general.xml"
-    strategy :page_match do |page|
-      match = page.match(/Alfred[._-]v?(\d(?:\.\d+)+)[._-](\d+)\.t/i)
-      next if match.blank?
+    strategy :xml do |xml|
+      build = xml.elements["//key[text()='build']"].next_element.text
+      version = xml.elements["//key[text()='version']"].next_element.text
+      next if build.blank? || version.blank?
 
-      "#{match[1]},#{match[2]}"
+      "#{version},#{build}"
     end
   end
 

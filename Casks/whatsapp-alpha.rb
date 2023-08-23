@@ -9,8 +9,9 @@ cask "whatsapp-alpha" do
 
   livecheck do
     url "https://web.whatsapp.com/desktop/mac_native/updates/?branch=relbranch&configuration=Beta"
-    strategy :sparkle do |item|
-      item["url"][/\?version=v?(\d+(?:\.\d+)+)[ "&]/i, 1]
+    regex(/version=v?(\d+(?:\.\d+)+)/i)
+    strategy :sparkle do |item, regex|
+      item.url.scan(regex).map(&:first)
     end
   end
 
