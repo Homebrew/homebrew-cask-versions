@@ -25,13 +25,19 @@ cask "whatsapp-alpha" do
   app "WhatsApp.app"
 
   zap trash: [
-    "~/Library/Application Support/WhatsApp",
-    "~/Library/Application Support/WhatsApp.ShipIt",
-    "~/Library/Caches/WhatsApp",
-    "~/Library/Caches/WhatsApp.ShipIt",
-    "~/Library/Preferences/ByHost/WhatsApp.ShipIt.*.plist",
-    "~/Library/Preferences/WhatsApp.plist",
-    "~/Library/Preferences/WhatsApp-Helper.plist",
-    "~/Library/Saved Application State/WhatsApp.savedState",
+    "~/Library/Application Scripts/net.whatsapp.WhatsApp",
+    "~/Library/Application Scripts/net.whatsapp.WhatsApp.Intents",
+    "~/Library/Application Scripts/net.whatsapp.WhatsApp.IntentsUI",
+    "~/Library/Application Scripts/net.whatsapp.WhatsApp.ServiceExtension",
+    "~/Library/Caches/net.whatsapp.WhatsApp",
+    "~/Library/Containers/net.whatsapp.WhatsApp",
+    "~/Library/Containers/net.whatsapp.WhatsApp.Intents",
+    "~/Library/Containers/net.whatsapp.WhatsApp.ServiceExtension",
+    "~/Library/Group Containers/group.com.facebook.family",
+    "~/Library/Group Containers/group.net.whatsapp.family",
+    "~/Library/Group Containers/group.net.whatsapp.WhatsApp.private",
+    "~/Library/Group Containers/group.net.whatsapp.WhatsApp.shared",
+    "~/Library/Group Containers/group.net.whatsapp.WhatsAppSMB.shared",
+    "~/Library/Saved Application State/net.whatsapp.WhatsApp.savedState",
   ]
 end
