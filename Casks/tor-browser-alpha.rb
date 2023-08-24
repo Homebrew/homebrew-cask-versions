@@ -1,15 +1,15 @@
 cask "tor-browser-alpha" do
-  version "13.0a2"
-  sha256 "ed5bbd0d9184df6c99af1e3d8ad4868011a220ebf3bb5b4e4c1f77eb42e81550"
+  version "13.0a3"
+  sha256 "5275fe2d58c68d537f7b5d646c107c661fd6abd3746854bb173221bf3bfb29fc"
 
-  url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-macos_ALL.dmg"
+  url "https://dist.torproject.org/torbrowser/#{version}/tor-browser-macos-#{version}.dmg"
   name "Tor Browser"
   desc "Web browser focusing on security"
   homepage "https://www.torproject.org/"
 
   livecheck do
     url "https://www.torproject.org/download/alpha/"
-    regex(%r{href=.*?/TorBrowser[._-]v?(\d+(?:.\d+)*)[._-]macos[._-]ALL\.dmg}i)
+    regex(%r{href=.*?/tor[._-]browser[._-]macos[._-]v?(\d+(?:.\d+)*)\.dmg}i)
   end
 
   auto_updates true
