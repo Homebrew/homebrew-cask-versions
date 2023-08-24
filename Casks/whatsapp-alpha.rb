@@ -33,7 +33,6 @@ cask "whatsapp-alpha" do
     "~/Library/Containers/net.whatsapp.WhatsApp",
     "~/Library/Containers/net.whatsapp.WhatsApp.Intents",
     "~/Library/Containers/net.whatsapp.WhatsApp.ServiceExtension",
-    "~/Library/Group Containers/group.com.facebook.family",
     "~/Library/Group Containers/group.net.whatsapp.family",
     "~/Library/Group Containers/group.net.whatsapp.WhatsApp.private",
     "~/Library/Group Containers/group.net.whatsapp.WhatsApp.shared",
