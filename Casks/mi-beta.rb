@@ -13,6 +13,7 @@ cask "mi-beta" do
   end
 
   conflicts_with cask: "mi"
+  depends_on macos: ">= :high_sierra"
 
   app "mi.app"
 
