@@ -1,6 +1,6 @@
-cask "whatsapp-beta" do
+cask "whatsapp-legacy" do
   version "2.2336.4"
-  sha256 :no_check
+  sha256 "6ed914264fbd86234bda89524cc814a1f3682e7962eb69b34396dcde383ee69f"
 
   url "https://web.whatsapp.com/desktop-beta/mac/files/WhatsApp-beta.dmg"
   name "WhatsApp Beta"
