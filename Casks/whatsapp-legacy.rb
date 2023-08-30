@@ -1,14 +1,14 @@
 cask "whatsapp-legacy" do
-  version "2.2336.4"
-  sha256 "6ed914264fbd86234bda89524cc814a1f3682e7962eb69b34396dcde383ee69f"
+  version "2.2335.9"
+  sha256 "0ad4f59a11bb6e40156596833e7f7298f27566d402252013433ef4b0226adc23"
 
-  url "https://web.whatsapp.com/desktop-beta/mac/files/WhatsApp-beta.dmg"
+  url "https://web.whatsapp.com/desktop/mac/files/release-#{version}.zip"
   name "WhatsApp Beta"
   desc "Desktop client for WhatsApp"
   homepage "https://www.whatsapp.com/"
 
   livecheck do
-    url "https://web.whatsapp.com/desktop-beta/mac/releases"
+    url "https://web.whatsapp.com/desktop/mac/releases"
     strategy :page_match do |page|
       JSON.parse(page)["name"]
     end
