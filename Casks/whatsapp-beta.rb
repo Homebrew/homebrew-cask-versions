@@ -16,7 +16,10 @@ cask "whatsapp-beta" do
   end
 
   auto_updates true
-  conflicts_with cask: "whatsapp"
+  conflicts_with cask: [
+    "whatsapp",
+    "whatsapp-legacy",
+  ]
   depends_on macos: ">= :big_sur"
 
   app "WhatsApp.app"
