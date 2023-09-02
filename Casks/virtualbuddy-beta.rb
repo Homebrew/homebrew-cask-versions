@@ -7,11 +7,11 @@ cask "virtualbuddy-beta" do
   desc "Virtualization tool"
   homepage "https://github.com/insidegui/VirtualBuddy"
 
-  conflicts_with cask: "virtualbuddy"
-
   livecheck do
     skip "No reliable way to get version info"
   end
+
+  conflicts_with cask: "virtualbuddy"
 
   depends_on arch: :arm64
   depends_on macos: ">= :monterey"
