@@ -2,9 +2,9 @@ cask "github-beta" do
   arch arm: "arm64", intel: "x64"
   platform = on_arch_conditional arm: "darwin-arm64", intel: "darwin"
 
-  version "3.2.10-beta2-21f3d0e5"
-  sha256 arm:   "95def40dabe9e9c517e9ca5fcf26c6e4d88277406e7b72592b3afa10b137b7be",
-         intel: "79c9b0cf979707582859ee04090588dc7559c1088563b810e0108e8df50e2b13"
+  version "3.3.2-beta1-22aaf636"
+  sha256 arm:   "332499c3993923ca7fdff536dc5971bb3cf3b45c9022dcad31be206596c832e8",
+         intel: "be05c79bda276e3c9f98bb1951bc5d6a09f0d0d8dd779d148de383f8d4c358a4"
 
   url "https://desktop.githubusercontent.com/github-desktop/releases/#{version}/GitHubDesktop-#{arch}.zip",
       verified: "desktop.githubusercontent.com/github-desktop/releases/"
