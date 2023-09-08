@@ -6,7 +6,7 @@ cask "virtualbox-beta" do
     sha256 "c027d5d1e2b67dbecf4ae03b237d75519ad56c896f2f8ef8148054ce541f6d76"
   end
   on_intel do
-    version "7.0.11-1588139"
+    version "7.0.11-158813"
     sha256 "a2e0052f938bc4ee1ce08b8df70b539fe9a347ef8575c55d20918aef04a19bf3"
   end
 
