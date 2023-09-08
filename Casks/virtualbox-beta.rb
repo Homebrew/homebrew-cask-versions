@@ -1,42 +1,29 @@
 cask "virtualbox-beta" do
+  arch arm: "macOSArm64", intel: "OSX"
+
   on_arm do
-    version "7.0.8_BETA4-156879"
-    sha256 "7c24aa0d40ae65cde24d1fba5a2c2fe49a6f6c7d42b01cf3169a7e3459b80b8d"
-
-    url "https://download.virtualbox.org/virtualbox/7.0.8/VirtualBox-#{version}-macOSArm64.dmg"
-
-    # TODO: Add a `livecheck` block if/when ARM64 dmg files are stored in a
-    # predictable directory on download.virtualbox.org. ARM64 files are
-    # currently shoehorned into stable version directories instead of the
-    # usual unstable version directories (e.g., 7.0.0_BETA3). At the moment,
-    # we would have to check both the highest unstable and stable version
-    # directories for an ARM64 file to find the newest version from each.
-    livecheck do
-      skip "No reliable way to get version information"
-    end
+    version "7.0.11_BETA4-158798"
+    sha256 "c027d5d1e2b67dbecf4ae03b237d75519ad56c896f2f8ef8148054ce541f6d76"
   end
   on_intel do
-    version "7.0.0_BETA3,153829"
-    sha256 "a97ad4e37f975ec3ec093a1dfc58f456cac2066f27ccc743a523a261235785b0"
-
-    url "https://download.virtualbox.org/virtualbox/#{version.csv.first}/VirtualBox-#{version.csv.first}-#{version.csv.second}-OSX.dmg"
-
-    # `LATEST-BETA.TXT` contains version text (e.g., `1.2.3_BETA4\n`) that
-    # should correspond to a related directory where we can identify all the
-    # version parts from a filename.
-    livecheck do
-      url "https://download.virtualbox.org/virtualbox/LATEST-BETA.TXT"
-      regex(/href=.*?VirtualBox[._-]v?(\d+(?:\.\d+)+[._-][^._-]+?)[._-](\d+)[._-]OSX\.dmg/i)
-      strategy :page_match do |page, regex|
-        dir_page = Homebrew::Livecheck::Strategy.page_content("https://download.virtualbox.org/virtualbox/#{page.strip}/")
-        dir_page[:content]&.scan(regex)&.map { |match| "#{match[0]},#{match[1]}" }
-      end
-    end
+    version "7.0.11-158813"
+    sha256 "a2e0052f938bc4ee1ce08b8df70b539fe9a347ef8575c55d20918aef04a19bf3"
   end
 
+  url "https://www.virtualbox.org/download/testcase/VirtualBox-#{version}-#{arch}.dmg"
   name "Oracle VirtualBox"
   desc "Virtualizer for x86 and arm64 hardware"
   homepage "https://www.virtualbox.org/wiki/Testbuilds"
+
+  # TODO: Add a `livecheck` block if/when ARM64 dmg files are stored in a
+  # predictable directory on download.virtualbox.org. ARM64 files are
+  # currently shoehorned into stable version directories instead of the
+  # usual unstable version directories (e.g., 7.0.0_BETA3). At the moment,
+  # we would have to check both the highest unstable and stable version
+  # directories for an ARM64 file to find the newest version from each.
+  livecheck do
+    skip "No reliable way to get version information"
+  end
 
   conflicts_with cask: "virtualbox"
 
