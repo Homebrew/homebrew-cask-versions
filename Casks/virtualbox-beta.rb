@@ -15,14 +15,9 @@ cask "virtualbox-beta" do
   desc "Virtualizer for x86 and arm64 hardware"
   homepage "https://www.virtualbox.org/wiki/Testbuilds"
 
-  # TODO: Add a `livecheck` block if/when ARM64 dmg files are stored in a
-  # predictable directory on download.virtualbox.org. ARM64 files are
-  # currently shoehorned into stable version directories instead of the
-  # usual unstable version directories (e.g., 7.0.0_BETA3). At the moment,
-  # we would have to check both the highest unstable and stable version
-  # directories for an ARM64 file to find the newest version from each.
   livecheck do
-    skip "No reliable way to get version information"
+    url :homepage
+    regex(/href=.*?VirtualBox[._-]v?(\d+(?:[.-]\d+)+.*?)[._-]#{arch}\.dmg(?!.+?development)/i)
   end
 
   conflicts_with cask: "virtualbox"
