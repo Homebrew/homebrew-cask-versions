@@ -17,7 +17,7 @@ cask "virtualbox-beta" do
 
   livecheck do
     url :homepage
-    regex(/VirtualBox[._-]v?(\d+(?:.)+)[._-]#{arch}.dmg(?!.+development)/i)
+    regex(/href=.*?VirtualBox[._-]v?(\d+(?:[.-]\d+)+.*?)[._-]#{arch}\.dmg(?!.+?development)/i)
   end
 
   conflicts_with cask: "virtualbox"
