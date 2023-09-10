@@ -8,7 +8,7 @@ cask "playcover-community-beta" do
   homepage "https://github.com/PlayCover/PlayCover"
 
   livecheck do
-    url "https://api.github.com/repos/PlayCover/PlayCover/releases"
+    url :url
     regex(/(\d+(?:\.\d+)+[._-]beta(\.\d+)?)/i)
   end
 
