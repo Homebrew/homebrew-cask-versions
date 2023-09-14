@@ -21,6 +21,7 @@ cask "virtualbox-beta" do
   end
 
   conflicts_with cask: "virtualbox"
+  depends_on macos: ">= :catalina"
 
   pkg "VirtualBox.pkg",
       choices: [
