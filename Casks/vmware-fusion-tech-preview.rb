@@ -1,6 +1,6 @@
 cask "vmware-fusion-tech-preview" do
-  version "20486664"
-  sha256 "8c74005d88edb0e37d2ac3517f4e72ce85613abb2dfaaea78fe3db8d2c7b17fd"
+  version "22068932"
+  sha256 "0be8da472b15477168fb97ad27902b09313c03ca45330e438ae8cf91609d3234"
 
   on_intel do
     binary "#{appdir}/VMware Fusion Tech Preview.app/Contents/Library/vkd/bin/vctl"
@@ -13,13 +13,13 @@ cask "vmware-fusion-tech-preview" do
     end
   end
 
-  url "https://download3.vmware.com/software/FUS-PUBTP-22H2/VMware-Fusion-e.x.p-#{version}_universal.dmg"
+  url "https://download3.vmware.com/software/FUS-TP2023/VMware-Fusion-e.x.p-#{version}_universal.dmg"
   name "VMware Fusion Tech Preview"
   desc "Create, manage, and run virtual machines"
   homepage "https://blogs.vmware.com/teamfusion/tech-preview"
 
   livecheck do
-    url "https://customerconnect.vmware.com/channel/public/api/v1.0/dlg/beta/header?locale=en_US&downloadGroup=FUS-PUBTP-22H2"
+    url "https://customerconnect.vmware.com/channel/public/api/v1.0/dlg/beta/header?locale=en_US&downloadGroup=FUS-TP2023"
     strategy :page_match do |page|
       JSON.parse(page)["buildNumber"]
     end
