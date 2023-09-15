@@ -1,5 +1,5 @@
 cask "google-chrome-dev" do
-  version "118.0.5993.3"
+  version "118.0.5993.11"
   sha256 :no_check
 
   url "https://dl.google.com/chrome/mac/universal/dev/googlechromedev.dmg"
