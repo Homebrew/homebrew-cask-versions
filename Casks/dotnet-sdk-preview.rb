@@ -2,12 +2,12 @@ cask "dotnet-sdk-preview" do
   arch arm: "arm64", intel: "x64"
 
   on_arm do
-    version "8.0.100-rc.1.23455.8,ba6a5740-80e6-4e04-b0a9-efd8c9be47a4,5717bbfe8433f568eb2d00cccfd9ce8d"
-    sha256 "12c738f5eb4979625a582f10fbdb6f86c779ecef77d4d319734bf2730e18dc79"
+    version "8.0.100-rc.1.23463.5,030ab62d-61c2-4f8f-bcec-ee45837f7df0,f69ba0e33588a4fa6a41e7b56cd52654"
+    sha256 "f30cc0fd0ab9a3864c05befaf0d5b58bbe4169c15c5b3e35a14ce3e684d01e79"
   end
   on_intel do
-    version "8.0.100-rc.1.23455.8,b3ff305d-4ba2-4af6-b738-a649150b34b8,269c95893779d176550832a43cb180d8"
-    sha256 "4373a54b1ac61bf08dddfd276a9dd45a3874856c486c7eb2d8d13a74dd8e51c7"
+    version "8.0.100-rc.1.23463.5,a1c8239d-f1fd-4b47-be6b-e07217068e46,78337c7ab38ad4cf0f4ed2db5f7ebe66"
+    sha256 "29d9f6b0263f7df03f5d3d37e54345bd8cb89ad711a7dba32e691f86af8d62c7"
   end
 
   url "https://download.visualstudio.microsoft.com/download/pr/#{version.csv.second}/#{version.csv.third}/dotnet-sdk-#{version.csv.first}-osx-#{arch}.pkg"
