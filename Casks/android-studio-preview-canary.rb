@@ -1,9 +1,9 @@
 cask "android-studio-preview-canary" do
   arch arm: "mac_arm", intel: "mac"
 
-  version "2023.2.1.4"
-  sha256 arm:   "042373a46757d808116708a495271c5b813f813938243458c8533928dca0c07b",
-         intel: "117f989db1f0ace20ef486914735a4911b219e30ee83556b44852c53dd231678"
+  version "2023.2.1.5"
+  sha256 arm:   "ba15d23c796648e3d3de5ccc21071d2e8316d55da27e5d3aa69260d3c072bc03",
+         intel: "407f4f09e45dcbdceaa576689fc939d29923fec39b16826841e6d222bf3c5f1e"
 
   url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-#{version}-#{arch}.zip",
       verified: "dl.google.com/dl/android/studio/"
