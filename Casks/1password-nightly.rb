@@ -13,7 +13,7 @@ cask "1password-nightly" do
     "1password",
     "1password-beta",
   ]
-  depends_on macos: ">= :high_sierra"
+  depends_on macos: ">= :catalina"
 
   app "1Password.app"
 

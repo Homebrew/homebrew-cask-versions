@@ -13,7 +13,7 @@ cask "monal-beta" do
   end
 
   conflicts_with cask: "monal"
-  depends_on macos: ">= :catalina"
+  depends_on macos: ">= :big_sur"
 
   app "Monal.app"
 

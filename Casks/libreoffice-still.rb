@@ -18,7 +18,7 @@ cask "libreoffice-still" do
   end
 
   conflicts_with cask: "libreoffice"
-  depends_on macos: ">= :mojave"
+  depends_on macos: ">= :big_sur"
 
   app "LibreOffice.app"
   binary "#{appdir}/LibreOffice.app/Contents/MacOS/gengal"

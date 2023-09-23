@@ -8,6 +8,8 @@ cask "deadbeef-nightly" do
   desc "Modular audio player"
   homepage "https://deadbeef.sourceforge.io/"
 
+  depends_on macos: ">= :high_sierra"
+
   app "DeaDBeeF.app"
 
   zap trash: [

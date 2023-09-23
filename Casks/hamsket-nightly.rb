@@ -13,6 +13,8 @@ cask "hamsket-nightly" do
     strategy :page_match
   end
 
+  depends_on macos: ">= :high_sierra"
+
   app "Hamsket.app"
 
   zap trash: [

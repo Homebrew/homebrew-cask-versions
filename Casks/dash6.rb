@@ -14,6 +14,7 @@ cask "dash6" do
 
   auto_updates true
   conflicts_with cask: "dash"
+  depends_on macos: ">= :high_sierra"
 
   app "Dash.app"
 

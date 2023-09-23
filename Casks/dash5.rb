@@ -8,6 +8,7 @@ cask "dash5" do
   homepage "https://kapeli.com/dash"
 
   auto_updates true
+  depends_on macos: ">= :mojave"
 
   app "Dash.app"
 

@@ -9,7 +9,7 @@ cask "rstudio-daily" do
   homepage "https://dailies.rstudio.com/"
 
   conflicts_with cask: "rstudio"
-  depends_on macos: ">= :big_sur"
+  depends_on macos: ">= :high_sierra"
 
   app "RStudio.app"
 

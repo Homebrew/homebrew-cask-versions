@@ -18,7 +18,7 @@ cask "omniplan3" do
 
   auto_updates true
   conflicts_with cask: "omniplan"
-  depends_on macos: ">= :high_sierra"
+  depends_on macos: ">= :mojave"
 
   app "OmniPlan.app"
 

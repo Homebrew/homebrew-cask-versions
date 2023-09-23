@@ -11,6 +11,7 @@ cask "transmission-nightly" do
   homepage "https://transmissionbt.com/"
 
   conflicts_with cask: "transmission"
+  depends_on macos: ">= :mojave"
 
   app "Transmission.app"
 
