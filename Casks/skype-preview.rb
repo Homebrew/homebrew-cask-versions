@@ -1,6 +1,6 @@
 cask "skype-preview" do
-  version "8.104.76.205"
-  sha256 "f3176dd7bdf3d8b8c96642f42242c027b814ce86a223f4a9b6ad1890916acd73"
+  version "8.105.76.205"
+  sha256 "d3083be699d1c1f70d65fe2f6fffb77bd676f0e778f9f4745b79eda1f2a903c8"
 
   url "https://endpoint920510.azureedge.net/s4l/s4l/download/mac/Skype-#{version}.dmg",
       verified: "endpoint920510.azureedge.net/s4l/s4l/download/mac/"
@@ -15,6 +15,7 @@ cask "skype-preview" do
 
   auto_updates true
   conflicts_with cask: "skype"
+  depends_on macos: ">= :high_sierra"
 
   app "Skype.app"
 
