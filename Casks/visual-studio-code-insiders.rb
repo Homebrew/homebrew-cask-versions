@@ -10,6 +10,8 @@ cask "visual-studio-code-insiders" do
   desc "Code editor"
   homepage "https://code.visualstudio.com/insiders"
 
+  depends_on macos: ">= :high_sierra"
+
   app "Visual Studio Code - Insiders.app"
   binary "#{appdir}/Visual Studio Code - Insiders.app/Contents/Resources/app/bin/code", target: "code-insiders"
 

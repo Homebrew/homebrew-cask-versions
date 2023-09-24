@@ -16,6 +16,8 @@ cask "omnifocus2" do
   desc "Scheduling application focusing on organization"
   homepage "https://www.omnigroup.com/omnifocus/"
 
+  depends_on macos: ">= :sierra"
+
   app "OmniFocus.app"
 
   uninstall quit: "com.omnigroup.OmniFocus#{version.major}"

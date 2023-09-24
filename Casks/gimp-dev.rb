@@ -16,6 +16,7 @@ cask "gimp-dev" do
   end
 
   conflicts_with cask: "gimp"
+  depends_on macos: ">= :high_sierra"
 
   app "GIMP.app"
   binary "#{appdir}/GIMP.app/Contents/MacOS/gimp"

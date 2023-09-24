@@ -57,6 +57,7 @@ cask "thunderbird-beta" do
   homepage "https://www.thunderbird.net/en-US/thunderbird/beta/all/"
 
   conflicts_with cask: "thunderbird"
+  depends_on macos: ">= :catalina"
 
   app "Thunderbird.app"
 

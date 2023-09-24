@@ -14,6 +14,7 @@ cask "discord-ptb" do
   end
 
   auto_updates true
+  depends_on macos: ">= :high_sierra"
 
   app "Discord PTB.app"
 

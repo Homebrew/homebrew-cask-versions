@@ -8,6 +8,8 @@ cask "element-nightly" do
   desc "Matrix collaboration client"
   homepage "https://element.io/get-started"
 
+  depends_on macos: ">= :high_sierra"
+
   app "Element Nightly.app"
 
   zap trash: [

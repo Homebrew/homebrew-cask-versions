@@ -34,7 +34,7 @@ cask "vmware-fusion12" do
     vmware-fusion11
     vmware-fusion-tech-preview
   ]
-  depends_on macos: ">= :catalina"
+  depends_on macos: ">= :big_sur"
 
   app "VMware Fusion.app"
   binary "#{appdir}/VMware Fusion.app/Contents/Library/vkd/bin/vctl"

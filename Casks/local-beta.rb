@@ -21,6 +21,8 @@ cask "local-beta" do
     end
   end
 
+  depends_on macos: ">= :high_sierra"
+
   app "Local Beta.app"
 
   zap trash: [

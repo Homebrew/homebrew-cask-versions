@@ -10,6 +10,8 @@ cask "azure-data-studio-insiders" do
   desc "Data management tool that enables working with SQL Server"
   homepage "https://docs.microsoft.com/en-us/sql/azure-data-studio/"
 
+  depends_on macos: ">= :high_sierra"
+
   app "Azure Data Studio - Insiders.app"
   binary "#{appdir}/Azure Data Studio - Insiders.app/Contents/Resources/app/bin/code",
          target: "azuredatastudio-insiders"

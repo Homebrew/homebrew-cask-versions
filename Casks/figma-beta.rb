@@ -17,6 +17,8 @@ cask "figma-beta" do
     end
   end
 
+  depends_on macos: ">= :sierra"
+
   app "Figma Beta.app"
 
   zap trash: [

@@ -24,6 +24,8 @@ cask "thunderbird-daily" do
   desc "Customizable email client"
   homepage "https://www.mozilla.org/en-US/thunderbird/channel/"
 
+  depends_on macos: ">= :catalina"
+
   app "Thunderbird Daily.app"
 
   zap trash: [

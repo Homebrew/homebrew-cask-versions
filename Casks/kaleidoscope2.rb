@@ -17,7 +17,7 @@ cask "kaleidoscope2" do
 
   auto_updates true
   conflicts_with cask: "kaleidoscope"
-  depends_on macos: ">= :high_sierra"
+  depends_on macos: ">= :sierra"
 
   app "Kaleidoscope.app"
   binary "#{appdir}/Kaleidoscope.app/Contents/Resources/bin/ksdiff"

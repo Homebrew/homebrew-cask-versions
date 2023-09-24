@@ -23,6 +23,8 @@ cask "qt-creator-dev" do
     end
   end
 
+  depends_on macos: ">= :catalina"
+
   app "Qt Creator.app"
 
   zap trash: [

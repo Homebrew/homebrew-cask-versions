@@ -15,6 +15,8 @@ cask "threema-beta" do
     regex(/href=.*?threema[._-]desktop[._-]v?(\d+(?:(?:[.-]|(beta))+\d+)+)[._-]macos[._-]#{arch}\.dmg/i)
   end
 
+  depends_on macos: ">= :high_sierra"
+
   app "Threema Beta.app"
 
   zap trash: [

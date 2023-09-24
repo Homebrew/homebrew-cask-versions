@@ -13,6 +13,8 @@ cask "mongodb-compass-beta" do
     strategy :page_match
   end
 
+  depends_on macos: ">= :high_sierra"
+
   app "MongoDB Compass Beta.app"
 
   zap trash: [

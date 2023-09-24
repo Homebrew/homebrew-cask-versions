@@ -12,6 +12,8 @@ cask "vscodium-insiders" do
   desc "Code editor"
   homepage "https://vscodium.com/"
 
+  depends_on macos: ">= :high_sierra"
+
   app "VSCodium - Insiders.app"
   binary "#{appdir}/VSCodium - Insiders.app/Contents/Resources/app/bin/codium-insiders", target: "codium-insiders"
 

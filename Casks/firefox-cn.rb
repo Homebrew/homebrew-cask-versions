@@ -19,7 +19,7 @@ cask "firefox-cn" do
     firefox-developer-edition
     firefox-esr
   ]
-  depends_on macos: ">= :sierra"
+  depends_on macos: ">= :catalina"
 
   app "Firefox.app"
 

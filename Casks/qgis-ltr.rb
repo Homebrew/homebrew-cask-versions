@@ -15,6 +15,8 @@ cask "qgis-ltr" do
     end
   end
 
+  depends_on macos: ">= :high_sierra"
+
   app "QGIS-LTR.app"
 
   zap trash: [

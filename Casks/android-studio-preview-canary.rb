@@ -18,6 +18,7 @@ cask "android-studio-preview-canary" do
 
   auto_updates true
   conflicts_with cask: "android-studio-preview-beta"
+  depends_on macos: ">= :high_sierra"
 
   app "Android Studio Preview.app"
 
