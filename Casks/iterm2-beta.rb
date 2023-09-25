@@ -19,7 +19,7 @@ cask "iterm2-beta" do
     "iterm2-legacy",
     "iterm2-nightly",
   ]
-  depends_on macos: ">= :catalina"
+  depends_on macos: ">= :sonoma"
 
   app "iTerm.app"
 
