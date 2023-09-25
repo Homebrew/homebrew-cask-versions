@@ -3,8 +3,8 @@ cask "whatsapp-legacy" do
   sha256 "2f4d1be14f61daf8b64715f0751d0e460fafd22de486184ced8da37f62bf48a2"
 
   url "https://web.whatsapp.com/desktop/mac/files/release-#{version}.zip"
-  name "WhatsApp Beta"
-  desc "Desktop client for WhatsApp"
+  name "WhatsApp Legacy"
+  desc "Legacy desktop client for WhatsApp"
   homepage "https://www.whatsapp.com/"
 
   livecheck do
@@ -17,7 +17,7 @@ cask "whatsapp-legacy" do
   auto_updates true
   conflicts_with cask: [
     "whatsapp",
-    "whatsapp-alpha",
+    "whatsapp-beta",
   ]
 
   app "WhatsApp.app"
