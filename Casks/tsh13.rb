@@ -13,8 +13,8 @@ cask "tsh13" do
     regex(/tsh[._-]v?(13(?:\.\d+)+)\.pkg/i)
   end
 
-  conflicts_with formula: "teleport",
-                 cask:    "tsh"
+  conflicts_with cask:    "tsh",
+                 formula: "teleport"
 
   pkg "tsh-#{version}.pkg"
 
