@@ -1,6 +1,6 @@
 cask "tsh13" do
-  version "13.3.8"
-  sha256 "c4678ce55cf030388363d7e12780e6b79e54b89e2e9d0b0635959a41c3ab7931"
+  version "13.4.0"
+  sha256 "4d6d27492bf7ddf6a5ef3482dee404a9dfc060b3f06a161dca4d9a2471d57b63"
 
   url "https://cdn.teleport.dev/tsh-#{version}.pkg",
       verified: "cdn.teleport.dev/"
@@ -10,7 +10,7 @@ cask "tsh13" do
 
   livecheck do
     url "https://goteleport.com/download/"
-    regex(/tsh[._-]v?(\d+(?:\.\d+)+)\.pkg/i)
+    regex(/tsh[._-]v?(13(?:\.\d+)+)\.pkg/i)
   end
 
   conflicts_with formula: "teleport",
