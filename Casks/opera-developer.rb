@@ -1,6 +1,6 @@
 cask "opera-developer" do
-  version "103.0.4928.0"
-  sha256 "1034d3ddd6c0cc9d86ba6f229075ae6b6f20ac1c6090645691ef6c61dccdf796"
+  version "104.0.4934.0"
+  sha256 "ff547676dd964a4bec792488236b9d9e76fac76a6b27f9a7608b596fd28435a9"
 
   url "https://get.geo.opera.com/pub/opera-developer/#{version}/mac/Opera_Developer_#{version}_Setup.dmg"
   name "Opera Developer"
