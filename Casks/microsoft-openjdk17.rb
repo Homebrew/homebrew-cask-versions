@@ -1,4 +1,4 @@
-cask "microsoft-openjdk" do
+cask "microsoft-openjdk17" do
   arch arm: "aarch64", intel: "x64"
 
   version "17.0.8.1"
