@@ -16,4 +16,6 @@ cask "dropbox-dash" do
   depends_on macos: ">= :catalina"
 
   app "Dropbox Dash.app"
+
+  zap trash: "~/Library/Preferences/io.hypertools.Dropbox-Dash.plist"
 end
