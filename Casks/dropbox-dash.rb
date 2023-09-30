@@ -19,5 +19,8 @@ cask "dropbox-dash" do
 
   uninstall quit: "io.hypertools.Dropbox-Dash"
 
-  zap trash: "~/Library/Preferences/io.hypertools.Dropbox-Dash.plist"
+  zap trash: [
+    "~/Library/Preferences/io.hypertools.Dropbox-Dash.plist",
+    "~/Library/Application Support/Dropbox Dash",
+  ]
 end
