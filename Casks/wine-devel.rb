@@ -33,7 +33,6 @@ cask "wine-devel" do
   binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/wineboot"
   binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/winecfg"
   binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/wineconsole"
-  binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/winedbg"
   binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/winefile"
   binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/winemine"
   binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/winepath"
