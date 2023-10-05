@@ -2,12 +2,12 @@ cask "virtualbox-beta" do
   arch arm: "macOSArm64", intel: "OSX"
 
   on_arm do
-    version "7.0.11_BETA4-159210"
-    sha256 "9fc7e99562ee7daa56f4b1d4e1d6342a5dd174a5b7e03d34e6d256b6166854e6"
+    version "7.0.11_BETA4-159359"
+    sha256 "91011fa897fb821e7d02d2a67314d7d6ac65d1a395492d4a95751157aa7fb906"
   end
   on_intel do
-    version "7.0.11-159210"
-    sha256 "8746981e18f979e39cc76957b0c9cac9ec27bbc7c77b8789f0d72b28f318b909"
+    version "7.0.11-159359"
+    sha256 "e0ed3e602642120fdcacf1f951dee1b578cd92a9257a3d71bc5b875b4ee31e53"
   end
 
   url "https://www.virtualbox.org/download/testcase/VirtualBox-#{version}-#{arch}.dmg"
