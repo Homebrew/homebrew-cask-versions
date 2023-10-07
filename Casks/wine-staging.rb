@@ -33,7 +33,6 @@ cask "wine-staging" do
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/wineboot"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/winecfg"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/wineconsole"
-  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/winedbg"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/winefile"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/winemine"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/winepath"
