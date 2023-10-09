@@ -13,7 +13,15 @@ cask "wine-staging" do
 
   livecheck do
     url :url
-    strategy :github_latest
+    regex(/^wine-staging[._-]v?(\d+(?:\.\d+)+).*?\.t/i)
+    strategy :github_latest do |json, regex|
+      json["assets"]&.map do |asset|
+        match = asset["name"]&.match(regex)
+        next if match.blank?
+
+        match[1]
+      end
+    end
   end
 
   conflicts_with cask: [
