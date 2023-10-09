@@ -1,11 +1,11 @@
 cask "wine-staging" do
-  version "8.10"
-  sha256 "4a29553703133095b1ef84cbf840bb227a7b5c0e9c747ee6ac7721599176e33e"
+  version "8.17.1"
+  sha256 "aa971d9e80d18c65b70d0e863880069a37a1ebd1f15d1e7236aaee830fa88dcb"
 
   # Current winehq packages are deprecated and these are packages from
   # the new maintainers that will eventually be pushed to Winehq.
   # See https://www.winehq.org/pipermail/wine-devel/2021-July/191504.html
-  url "https://github.com/Gcenx/macOS_Wine_builds/releases/download/#{version}/wine-staging-#{version}-osx86.tar.xz",
+  url "https://github.com/Gcenx/macOS_Wine_builds/releases/download/#{version.major_minor}/wine-staging-#{version}-osx64.tar.xz",
       verified: "github.com/Gcenx/macOS_Wine_builds/"
   name "WineHQ-staging"
   desc "Compatibility layer to run Windows applications"
@@ -13,7 +13,15 @@ cask "wine-staging" do
 
   livecheck do
     url :url
-    strategy :github_latest
+    regex(/^wine-staging[._-]v?(\d+(?:\.\d+)+).*?\.t/i)
+    strategy :github_latest do |json, regex|
+      json["assets"]&.map do |asset|
+        match = asset["name"]&.match(regex)
+        next if match.blank?
+
+        match[1]
+      end
+    end
   end
 
   conflicts_with cask: [
@@ -33,7 +41,6 @@ cask "wine-staging" do
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/wineboot"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/winecfg"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/wineconsole"
-  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/winedbg"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/winefile"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/winemine"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/winepath"
