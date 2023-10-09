@@ -1,5 +1,5 @@
 cask "adguard-nightly" do
-  version "2.12.1.1396"
+  version "2.12.1.1398"
   sha256 :no_check
 
   url "https://static.adguard.com/mac/nightly/AdGuard.dmg"
