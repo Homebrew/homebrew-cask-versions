@@ -1,9 +1,9 @@
 cask "defold-beta" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "1.6.0,0c82b0d465fc3fa12afe7b67f65f3f1c7c221182"
-  sha256 arm:   "235da3fab53e49c402afb08e6f0e4bd9430ed354545643c61afb69def2be9a73",
-         intel: "5359612ae38417bafe1b64dc31cadb5518dfee678b9e5e8d71588df81669d907"
+  version "1.6.1,1d6568311bbf02f2e0c834809708a654d7b73561"
+  sha256 arm:   "86bcf14c6e242dd9152fc395f5920ef9ebd0e9a29ebe7363078a52822742372b",
+         intel: "22c5a7d848e92432b414447f8c78babc21ba4a4ad1d692af73c5fe79b99c74e8"
 
   url "https://d.defold.com/archive/beta/#{version.csv.second}/beta/editor2/Defold-#{arch}-macos.dmg"
   name "Defold"
