@@ -1,8 +1,11 @@
 cask "defold-beta" do
-  version "1.6.0,0c82b0d465fc3fa12afe7b67f65f3f1c7c221182"
-  sha256 "5359612ae38417bafe1b64dc31cadb5518dfee678b9e5e8d71588df81669d907"
+  arch arm: "arm64", intel: "x86_64"
 
-  url "https://d.defold.com/archive/beta/#{version.csv.second}/beta/editor2/Defold-x86_64-macos.dmg"
+  version "1.6.0,0c82b0d465fc3fa12afe7b67f65f3f1c7c221182"
+  sha256 arm:   "235da3fab53e49c402afb08e6f0e4bd9430ed354545643c61afb69def2be9a73",
+         intel: "5359612ae38417bafe1b64dc31cadb5518dfee678b9e5e8d71588df81669d907"
+
+  url "https://d.defold.com/archive/beta/#{version.csv.second}/beta/editor2/Defold-#{arch}-macos.dmg"
   name "Defold"
   desc "Game engine for development of desktop, mobile and web games"
   homepage "https://defold.com/"
