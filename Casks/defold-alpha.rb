@@ -10,10 +10,21 @@ cask "defold-alpha" do
   desc "Game engine for development of desktop, mobile and web games"
   homepage "https://defold.com/"
 
+  # The `GithubReleases` strategy omits releases marked as pre-release, so we
+  # have to use a `strategy` block to work with unstable versions.
   livecheck do
-    url "https://github.com/defold/defold/releases"
-    regex(%r{href=.*?/tag/v?(\d+(?:\.\d+)+)[._-]alpha["' >]}i)
-    strategy :page_match
+    url :url
+    regex(/^v?(\d+(?:\.\d+)+)[._-]alpha$/i)
+    strategy :github_releases do |json, regex|
+      json.map do |release|
+        next if release["draft"]
+
+        match = release["tag_name"]&.match(regex)
+        next if match.blank?
+
+        match[1]
+      end
+    end
   end
 
   auto_updates true
