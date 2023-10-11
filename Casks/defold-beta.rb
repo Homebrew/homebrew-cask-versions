@@ -1,26 +1,33 @@
 cask "defold-beta" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "1.6.1,1d6568311bbf02f2e0c834809708a654d7b73561"
-  sha256 arm:   "86bcf14c6e242dd9152fc395f5920ef9ebd0e9a29ebe7363078a52822742372b",
-         intel: "22c5a7d848e92432b414447f8c78babc21ba4a4ad1d692af73c5fe79b99c74e8"
+  version "1.6.1"
+  sha256 :no_check # required as upstream package is updated in-place
 
-  url "https://d.defold.com/archive/beta/#{version.csv.second}/beta/editor2/Defold-#{arch}-macos.dmg"
+  url "https://github.com/defold/defold/releases/download/#{version}-beta/Defold-#{arch}-macos.dmg",
+      verified: "github.com/defold/defold/"
   name "Defold"
   desc "Game engine for development of desktop, mobile and web games"
   homepage "https://defold.com/"
 
+  # The `GithubReleases` strategy omits releases marked as pre-release, so we
+  # have to use a `strategy` block to work with unstable versions.
   livecheck do
-    url "https://d.defold.com/beta/info.json"
-    strategy :page_match do |page|
-      version = JSON.parse(page)["version"]
-      sha1 = JSON.parse(page)["sha1"]
-      next if version.blank? || sha1.blank?
+    url :url
+    regex(/^v?(\d+(?:\.\d+)+)[._-]beta$/i)
+    strategy :github_releases do |json, regex|
+      json.map do |release|
+        next if release["draft"]
 
-      "#{version},#{sha1}"
+        match = release["tag_name"]&.match(regex)
+        next if match.blank?
+
+        match[1]
+      end
     end
   end
 
+  auto_updates true
   conflicts_with cask: [
     "defold",
     "defold-alpha",
