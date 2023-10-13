@@ -4,7 +4,7 @@ cask "zotero-beta" do
 
   url "https://download.zotero.org/client/beta/#{version.csv.first}%2B#{version.csv.second}/Zotero-#{version.csv.first}%2B#{version.csv.second}.dmg"
   name "Zotero Beta"
-  desc "Reference manager"
+  desc "Collect, organize, cite, and share research sources"
   homepage "https://www.zotero.org/"
 
   livecheck do
@@ -18,6 +18,7 @@ cask "zotero-beta" do
 
   auto_updates true
   conflicts_with cask: "zotero"
+  depends_on macos: ">= :sierra"
 
   app "Zotero.app"
 
