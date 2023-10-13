@@ -17,6 +17,7 @@ cask "zotero-beta" do
   end
 
   auto_updates true
+  conflicts_with cask: "zotero"
 
   app "Zotero.app"
 
