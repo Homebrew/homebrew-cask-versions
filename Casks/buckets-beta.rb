@@ -1,8 +1,11 @@
 cask "buckets-beta" do
-  version "0.71.1"
-  sha256 "d3d4e9db840f9a99e82ecfa6faa8bf9d9625139fa83341c7bdc61929a49d72b5"
+  arch arm: "arm64", intel: "amd64"
 
-  url "https://github.com/buckets/desktop-beta/releases/download/v#{version}/Buckets-Beta-#{version}.dmg",
+  version "0.72.1"
+  sha256 arm:   "8849085fd49616291766a40b1fb0de6b9e4d32d4446da95735c9bb3681836681",
+         intel: "bc098b54193cde68542ae3522f4b5e3fad4dffd0c8cd6a4e6803feedc80ede8a"
+
+  url "https://github.com/buckets/desktop-beta/releases/download/v#{version}/Buckets-Beta-#{arch}-#{version}.dmg",
       verified: "github.com/buckets/desktop-beta/"
   name "Buckets Beta"
   desc "Budgeting tool"
