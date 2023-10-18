@@ -2,7 +2,7 @@ cask "tor-browser-alpha" do
   version "13.0a6"
   sha256 "df49a1c2abb18451da4ff601f40d7e498da0c0f09fc402e72b8e22328fabae19"
 
-  url "https://dist.torproject.org/torbrowser/#{version}/tor-browser-macos-#{version}.dmg"
+  url "https://archive.torproject.org/tor-package-archive/torbrowser/#{version}/tor-browser-macos-#{version}.dmg"
   name "Tor Browser"
   desc "Web browser focusing on security"
   homepage "https://www.torproject.org/"
