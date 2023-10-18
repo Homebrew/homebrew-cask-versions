@@ -8,6 +8,11 @@ cask "anaconda2" do
   desc "Data science platform"
   homepage "https://www.anaconda.com/"
 
+  livecheck do
+    url "https://repo.anaconda.com/archive/"
+    regex(/href=.*?Anaconda2[._-]v?(\d+(?:\.\d+)+)-MacOSX-x86_64\.sh/i)
+  end
+
   container type: :naked
 
   installer script: {
