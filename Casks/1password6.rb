@@ -7,6 +7,11 @@ cask "1password6" do
   desc "Password manager that keeps all passwords secure behind one password"
   homepage "https://1password.com/"
 
+  livecheck do
+    url "https://app-updates.agilebits.com/product_history/OPM4"
+    regex(%r{href=.*?/1Password-(\d+(?:\.\d+)+)\.pkg}i)
+  end
+
   auto_updates true
 
   app "1Password #{version.major}.app"
