@@ -17,9 +17,12 @@ cask "android-studio-preview-beta" do
   end
 
   auto_updates true
-  conflicts_with cask: "android-studio-preview-canary"
+  conflicts_with cask: [
+    "android-studio",
+    "android-studio-preview-canary",
+  ]
 
-  app "Android Studio Preview.app"
+  app "Android Studio.app"
 
   zap trash: [
         "~/.android",
