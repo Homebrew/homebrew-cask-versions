@@ -8,7 +8,7 @@ project.
 After you install Homebrew, run the following command:
 
 ```sh
-brew tap homebrew/cask-versions
+brew tap Homebrew/homebrew-cask-versions
 ```
 
 You can now install alternate versions of Casks.
@@ -23,7 +23,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Acceptable Casks
 
-`homebrew/cask-versions` is not intended to be used for all and any old versions you personally require. Casks submitted here should be expected to be used by a reasonable number of people and supported by contributors long-term.
+`Homebrew/homebrew-cask-versions` is not intended to be used for all and any old versions you personally require. Casks submitted here should be expected to be used by a reasonable number of people and supported by contributors long-term.
 
 You may wish to consider hosting your own [tap](https://github.com/Homebrew/brew/blob/master/docs/How-to-Create-and-Maintain-a-Tap.md) for casks you wish to personally support that do not meet the above standards.
 
