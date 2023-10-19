@@ -1,6 +1,6 @@
 cask "safari-technology-preview" do
-  version "180,042-66978-20231004-0A8305D2-6F99-466B-B90C-FA86F119C4BF"
-  sha256 "842ce8958b2249b53269e5361017f5440f49c6ede85937ea391a91104596be70"
+  version "181,042-79404-20231017-2D68863A-A5E5-4DA6-8465-2DA9FB562316"
+  sha256 "63c33e8fc0fedb2bb5c5a53496a9f77be4ab1157fec883bed3ffba62e2628caf"
 
   url "https://secure-appldnld.apple.com/STP/#{version.csv.second}/SafariTechnologyPreview.dmg"
   name "Safari Technology Preview"
