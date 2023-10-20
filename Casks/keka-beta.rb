@@ -1,8 +1,8 @@
 cask "keka-beta" do
-  version "1.2.62-beta.2"
-  sha256 "fe351b39ac0b1ed6d4c79bd6beb97b9d9698202fba3bdcd2a75cb3c4c6f5eb31"
+  version "1.4.0-dev.r5279"
+  sha256 "9d83ccef7c5f815f1ef91464370734acec20834b4af82e21f9f8f4e38eba1958"
 
-  url "https://github.com/aonez/Keka/releases/download/v#{version}/Keka-#{version}.dmg",
+  url "https://github.com/aonez/Keka/releases/download/v#{version}/Keka-v#{version}.7z",
       verified: "github.com/aonez/Keka/"
   name "Keka"
   desc "File archiver"
@@ -10,7 +10,7 @@ cask "keka-beta" do
 
   livecheck do
     url :url
-    regex(/^v?((?:\d+(?:\.\d+)+)-(?:beta|dev)(?:\.(\d+))?)?/i)
+    regex(/^v?((?:\d+(?:\.\d+)+)-(?:beta|dev)(?:\.\w?\d+)?)?/i)
   end
 
   auto_updates true
