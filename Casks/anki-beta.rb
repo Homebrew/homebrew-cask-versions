@@ -1,18 +1,29 @@
 cask "anki-beta" do
   arch arm: "apple", intel: "intel"
 
-  version "2.1.66+beta1_46915605"
-  sha256 arm:   "ede7a97f4e5b1aa03d6e834020909061d8f8afcee0cbc3a17034dc1de1d3e884",
-         intel: "4ad62b8c275f93032ba5fdf85a05afb15b11cace5ea6c6712261477d93542a3d"
+  version "23.10,rc1"
+  sha256 arm:   "ba305ead0f62d06beea022e0d0b2f49ac9e19264e5a2b06162e997d0580019fd",
+         intel: "752a2594409af21bd963f259d162d474a966631bc26eaa4ef239f3e104ae4b31"
 
-  url "https://apps.ankiweb.net/downloads/beta/anki-#{version}-mac-#{arch}-qt6.dmg"
+  url "https://github.com/ankitects/anki/releases/download/#{version.delete(",")}/anki-#{version.csv.first}-mac-#{arch}-qt6.dmg",
+      verified: "github.com/ankitects/anki/"
   name "Anki Beta"
   desc "Memory training application"
   homepage "https://apps.ankiweb.net/"
 
   livecheck do
-    url "https://apps.ankiweb.net/downloads/beta/"
-    regex(/title=["']?anki[._-]?(\d+\.\d+.\d+\+(?:beta|rc)\d+_[a-f0-9]+)-mac(?:-#{arch})?(?:-qt\d+)?\.dmg["'\s>]/i)
+    url "https://github.com/ankitects/anki/releases"
+    regex(/(\d+(?:\.\d+)+)((?:beta|rc)(?:\w*))/i)
+    strategy :github_releases do |json, regex|
+      json.map do |release|
+        next unless release["prerelease"]
+
+        match = release["tag_name"]&.match(regex)
+        next if match.blank?
+
+        "#{match[1]},#{match[2]}"
+      end
+    end
   end
 
   conflicts_with cask: "anki"
