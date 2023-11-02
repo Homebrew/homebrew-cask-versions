@@ -9,7 +9,19 @@ cask "google-chrome-canary" do
 
   livecheck do
     url "https://chromiumdash.appspot.com/fetch_releases?channel=Canary&platform=Mac"
-    regex(/"version":\s*"v?(\d+(?:\.\d+)+)"/i)
+    strategy :page_match do |page|
+      current_version = page.match(/"version":\s*"v?(\d+(?:\.\d+)+)"/i)
+      previous_version = page.match(/"previous_version":\s*"v?(\d+(?:\.\d+)+)"/i)
+
+      # Throttle updates to every 5th release.
+      version = if current_version[1].tr(".", "").to_i >= previous_version[1].tr(".", "").to_i + 50
+        current_version[1]
+      else
+        previous_version[1]
+      end
+
+      version.to_s
+    end
   end
 
   auto_updates true
