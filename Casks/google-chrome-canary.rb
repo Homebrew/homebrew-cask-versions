@@ -7,6 +7,9 @@ cask "google-chrome-canary" do
   desc "Web browser"
   homepage "https://www.google.com/chrome/canary/"
 
+  # Canary releases are frequent, so this `strategy` block throttles livecheck
+  # to every fifth release. Ideally this should be handled outside of livecheck
+  # but this is an interim workaround.
   livecheck do
     url "https://chromiumdash.appspot.com/fetch_releases?channel=Canary&platform=Mac"
     strategy :page_match do |page|
