@@ -12,18 +12,20 @@ cask "google-chrome-canary" do
   # but this is an interim workaround.
   livecheck do
     url "https://chromiumdash.appspot.com/fetch_releases?channel=Canary&platform=Mac"
-    strategy :page_match do |page|
-      current_version = page.match(/"version":\s*"v?(\d+(?:\.\d+)+)"/i)
-      previous_version = page.match(/"previous_version":\s*"v?(\d+(?:\.\d+)+)"/i)
+    strategy :json do |json|
+      versions = json.map { |item| item["version"] }
+                     .compact
+                     .uniq
+                     .sort_by { |v| Version.new(v) }
+                     .reverse
+      current_pos = versions.index(version)
 
-      # Throttle updates to every 5th release.
-      version = if current_version[1].tr(".", "").to_i >= previous_version[1].tr(".", "").to_i + 50
-        current_version[1]
-      else
-        previous_version[1]
-      end
+      # Fall back to the newest version if the current version isn't found
+      next versions.first if current_pos.blank?
 
-      version.to_s
+      # Return the newest version if there have been five or more releases
+      # since the version in the cask.
+      (current_pos >= 5) ? versions.first : version
     end
   end
 
