@@ -15,7 +15,7 @@ cask "libreoffice-still" do
   # Check the "slightly older" version listed at:
   #    https://www.libreoffice.org/download/download-libreoffice/
   livecheck do
-    skip "No version information vailable"
+    skip "No version information available"
   end
 
   conflicts_with cask: "libreoffice"
