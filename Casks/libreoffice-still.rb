@@ -12,9 +12,10 @@ cask "libreoffice-still" do
   desc "Free cross-platform office suite, stable version recommended for enterprises"
   homepage "https://www.libreoffice.org/"
 
+  # Check the "slightly older" version listed at:
+  #    https://www.libreoffice.org/download/download-libreoffice/
   livecheck do
-    url "https://www.libreoffice.org/download/release-notes/"
-    regex(/LibreOffice\s+v?(\d+(?:\.\d+)+)(?:\s+\((?:\d+(?:-\d+)+)\))?\s*-\s*Still\s+Branch/i)
+    skip "No version information vailable"
   end
 
   conflicts_with cask: "libreoffice"
