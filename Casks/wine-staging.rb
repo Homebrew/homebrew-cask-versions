@@ -28,6 +28,7 @@ cask "wine-staging" do
     "wine-stable",
     "wine-devel",
   ]
+  depends_on cask: "gstreamer-runtime"
 
   app "Wine Staging.app"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/start/bin/appdb"
