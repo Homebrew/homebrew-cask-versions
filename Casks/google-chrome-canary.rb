@@ -13,7 +13,6 @@ cask "google-chrome-canary" do
   #   regex(/"version":\s*"v?(\d+(?:\.\d+)+)"/i)
   # end
 
-  auto_updates true
   depends_on macos: ">= :catalina"
 
   app "Google Chrome Canary.app"
