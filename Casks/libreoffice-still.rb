@@ -12,10 +12,18 @@ cask "libreoffice-still" do
   desc "Free cross-platform office suite, stable version recommended for enterprises"
   homepage "https://www.libreoffice.org/"
 
-  # Check the "slightly older" version listed at:
-  #    https://www.libreoffice.org/download/download-libreoffice/
+  # LibreOffice "still" releases are the stable versions with a lower
+  # major/minor.
   livecheck do
-    skip "No version information available"
+    url "https://download.documentfoundation.org/libreoffice/stable/"
+    regex(%r{href=["']v?(\d+(?:\.\d+)+)/?["' >]}i)
+    strategy :page_match do |page, regex|
+      versions = page.scan(regex).map(&:first)
+      uniq_major_minor = versions.map { |version| Version.new(version).major_minor }.uniq.sort.reverse
+      next if uniq_major_minor.length < 2
+
+      versions.select { |version| Version.new(version).major_minor == uniq_major_minor[1] }
+    end
   end
 
   conflicts_with cask: "libreoffice"
