@@ -1,5 +1,5 @@
 cask "google-chrome-canary" do
-  version "121.0.6101.0"
+  version :latest
   sha256 :no_check
 
   url "https://dl.google.com/chrome/mac/universal/canary/googlechromecanary.dmg"
@@ -7,27 +7,11 @@ cask "google-chrome-canary" do
   desc "Web browser"
   homepage "https://www.google.com/chrome/canary/"
 
-  # Canary releases are frequent, so this `strategy` block throttles livecheck
-  # to every fifth release. Ideally this should be handled outside of livecheck
-  # but this is an interim workaround.
-  livecheck do
-    url "https://chromiumdash.appspot.com/fetch_releases?channel=Canary&platform=Mac"
-    strategy :json do |json|
-      versions = json.map { |item| item["version"] }
-                     .compact
-                     .uniq
-                     .sort_by { |v| Version.new(v) }
-                     .reverse
-      current_pos = versions.index(version)
-
-      # Fall back to the newest version if the current version isn't found
-      next versions.first if current_pos.blank?
-
-      # Return the newest version if there have been five or more releases
-      # since the version in the cask.
-      (current_pos >= 5) ? versions.first : version
-    end
-  end
+  # Canary releases are frequent, so we use version :latest.
+  # livecheck do
+  #   url "https://chromiumdash.appspot.com/fetch_releases?channel=Canary&platform=Mac"
+  #   regex(/"version":\s*"v?(\d+(?:\.\d+)+)"/i)
+  # end
 
   auto_updates true
   depends_on macos: ">= :catalina"
