@@ -20,9 +20,10 @@ cask "azure-data-studio-insiders" do
     "~/.azuredatastudio-insiders",
     "~/Library/Application Support/Azure Data Studio",
     "~/Library/Application Support/azuredatastudio",
-    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.azuredatastudio.oss.insiders.sfl2",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.azuredatastudio.oss.insiders.sfl*",
     "~/Library/Caches/com.azuredatastudio.oss.insiders",
     "~/Library/Caches/com.azuredatastudio.oss.insiders.ShipIt",
+    "~/Library/Preferences/com.azuredatastudio.oss.helper.plist",
     "~/Library/Preferences/com.azuredatastudio.oss.insiders.plist",
     "~/Library/Saved Application State/com.azuredatastudio.oss.insiders.savedState",
   ]
