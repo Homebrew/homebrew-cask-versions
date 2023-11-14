@@ -13,7 +13,7 @@ cask "sourcetree-beta" do
     strategy :sparkle
   end
 
-  depends_on macos: ">= :mojave"
+  depends_on macos: ">= :catalina"
 
   app "Sourcetree-Beta.app"
   binary "#{appdir}/Sourcetree-Beta.app/Contents/Resources/stree", target: "stree-beta"
@@ -22,7 +22,7 @@ cask "sourcetree-beta" do
             quit:      "com.torusknot.SourceTreeNotMAS"
 
   zap trash: [
-    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.torusknot.sourcetreenotmas.sfl2",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.torusknot.sourcetreenotmas.sfl*",
     "~/Library/Application Support/SourceTree",
     "~/Library/Caches/com.torusknot.SourceTreeNotMAS",
     "~/Library/Preferences/com.torusknot.SourceTreeNotMAS.LSSharedFileList.plist",
