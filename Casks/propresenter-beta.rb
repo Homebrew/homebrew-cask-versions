@@ -1,11 +1,11 @@
 cask "propresenter-beta" do
-  version "7.15,118423564"
-  sha256 "18b1bd4a16a8cd83a39f6f170990d649c25aef99b38631290e29a531d049b511"
+  version "7.15,118423567"
+  sha256 "70e71ec898d16bf54852470255ae31f4edb095fa5441cf5fb2602486853e35de"
 
   url "https://renewedvision.com/downloads/propresenter/mac/ProPresenter_#{version.csv.first}_#{version.csv.second}.zip"
   name "ProPresenter"
   desc "Presentation and production application for live events"
-  homepage "https://www.renewedvision.com/propresenter.php"
+  homepage "https://renewedvision.com/propresenter/"
 
   livecheck do
     url "https://api.renewedvision.com/v1/pro/upgrade?platform=macos&osVersion=#{MacOS.full_version}&appVersion=0&buildNumber=0&includeNotes=0&channel=beta"
@@ -20,7 +20,7 @@ cask "propresenter-beta" do
 
   auto_updates true
   conflicts_with cask: "propresenter"
-  depends_on macos: ">= :big_sur"
+  depends_on macos: ">= :monterey"
 
   app "ProPresenter.app"
 
