@@ -1,4 +1,5 @@
 cask "sublime-text-dev" do
+  # NOTE: The first digit of the build number is the major version.
   version "4165"
   sha256 "a5f7bb6c081b9fedf8df133469430ae78afdf70bb268a0022e3b8bb20ed359f9"
 
@@ -13,7 +14,10 @@ cask "sublime-text-dev" do
   end
 
   auto_updates true
-  conflicts_with cask: "sublime-text"
+  conflicts_with cask: [
+    "sublime-text",
+    "sublime-text3",
+  ]
 
   app "Sublime Text.app"
   binary "#{appdir}/Sublime Text.app/Contents/SharedSupport/bin/subl"
