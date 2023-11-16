@@ -18,7 +18,7 @@ cask "sublime-text-dev" do
     "sublime-text",
     "sublime-text3",
   ]
-  
+
   app "Sublime Text.app"
   binary "#{appdir}/Sublime Text.app/Contents/SharedSupport/bin/subl"
 
