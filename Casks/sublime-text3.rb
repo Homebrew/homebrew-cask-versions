@@ -9,8 +9,8 @@ cask "sublime-text3" do
 
   auto_updates true
   conflicts_with cask: [
-    'sublime-text',
-    'sublime-text-dev',
+    "sublime-text",
+    "sublime-text-dev",
   ]
 
   app "Sublime Text.app"
