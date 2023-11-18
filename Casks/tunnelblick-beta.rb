@@ -9,10 +9,19 @@ cask "tunnelblick-beta" do
   homepage "https://www.tunnelblick.net/"
 
   livecheck do
-    url "https://github.com/Tunnelblick/Tunnelblick/releases"
-    regex(/Tunnelblick\s+?(\d+(?:\.\d+)*beta(?:\d+)[a-z]?)\s+?\(build\s+?(\d+)/i)
-    strategy :page_match do |page, regex|
-      page.scan(regex).map { |match| "#{match[0]},#{match[1]}" }
+    url :url
+    regex(/^Tunnelblick[._-]v?(\d+(?:\.\d+)+[._-]?beta\d+[a-z]?)[._-]build[._-](\d+)\.(?:dmg|pkg)$/i)
+    strategy :github_releases do |json, regex|
+      json.map do |release|
+        next if release["draft"]
+
+        release["assets"]&.map do |asset|
+          match = asset["name"]&.match(regex)
+          next if match.blank?
+
+          "#{match[1]},#{match[2]}"
+        end
+      end.flatten
     end
   end
 
