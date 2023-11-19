@@ -9,9 +9,18 @@ cask "mullvadvpn-beta" do
   homepage "https://mullvad.net/"
 
   livecheck do
-    url "https://github.com/mullvad/mullvadvpn-app/releases"
-    regex(%r{href=["']?[^"' >]*?/tag/v?(\d+(?:\.\d+)+[._-]beta\d*)["' >]}i)
-    strategy :page_match
+    url :url
+    regex(/^v?(\d+(?:\.\d+)+[._-]beta\d*)$/i)
+    strategy :github_releases do |json, regex|
+      json.map do |release|
+        next if release["draft"]
+
+        match = release["tag_name"]&.match(regex)
+        next if match.blank?
+
+        match[1]
+      end
+    end
   end
 
   conflicts_with cask: "mullvadvpn"
