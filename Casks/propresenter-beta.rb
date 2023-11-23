@@ -1,26 +1,46 @@
 cask "propresenter-beta" do
-  version "7.15,118423567"
-  sha256 "70e71ec898d16bf54852470255ae31f4edb095fa5441cf5fb2602486853e35de"
+  on_big_sur :or_older do
+    version "7.14.1,118358275"
+    sha256 "266bfffd2753f460f9a22e834aed502c73bed2bf51747238fe4831c9048993db"
+
+    livecheck do
+      url "https://api.renewedvision.com/v1/pro/upgrade?platform=macos&osVersion=11.0&appVersion=0&buildNumber=0&includeNotes=0&channel=beta"
+      strategy :json do |json|
+        json["upgrades"]&.map do |item|
+          next if item["version"].blank? || item["buildNumber"].blank?
+
+          "#{item["version"]},#{item["buildNumber"]}"
+        end
+      end
+    end
+
+    depends_on macos: ">= :big_sur"
+  end
+  on_monterey :or_newer do
+    version "7.15,118423570"
+    sha256 "f3a47287ef17cfa92b8c86c4ccfb844d14c4d30d3330be9e28f562fe9762304c"
+
+    livecheck do
+      url "https://api.renewedvision.com/v1/pro/upgrade?platform=macos&osVersion=#{MacOS.full_version}&appVersion=0&buildNumber=0&includeNotes=0&channel=beta"
+      strategy :json do |json|
+        json["upgrades"]&.map do |item|
+          next if item["version"].blank? || item["buildNumber"].blank?
+
+          "#{item["version"]},#{item["buildNumber"]}"
+        end
+      end
+    end
+
+    depends_on macos: ">= :monterey"
+  end
 
   url "https://renewedvision.com/downloads/propresenter/mac/ProPresenter_#{version.csv.first}_#{version.csv.second}.zip"
   name "ProPresenter"
   desc "Presentation and production application for live events"
   homepage "https://renewedvision.com/propresenter/"
 
-  livecheck do
-    url "https://api.renewedvision.com/v1/pro/upgrade?platform=macos&osVersion=#{MacOS.full_version}&appVersion=0&buildNumber=0&includeNotes=0&channel=beta"
-    regex(%r{/ProPresenter_(\d+(?:\.\d+)+)_(\d+)\.zip}i)
-    strategy :page_match do |page, regex|
-      match = page.match(regex)
-      next if match.blank?
-
-      "#{match[1]},#{match[2]}"
-    end
-  end
-
   auto_updates true
   conflicts_with cask: "propresenter"
-  depends_on macos: ">= :monterey"
 
   app "ProPresenter.app"
 
