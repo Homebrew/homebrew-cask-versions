@@ -13,6 +13,8 @@ cask "propresenter-beta" do
         "#{match[1]},#{match[2]}"
       end
     end
+
+    depends_on macos: ">= :big_sur"
   end
   on_monterey :or_newer do
     version "7.15,118423570"
@@ -28,6 +30,8 @@ cask "propresenter-beta" do
         "#{match[1]},#{match[2]}"
       end
     end
+
+    depends_on macos: ">= :monterey"
   end
 
   url "https://renewedvision.com/downloads/propresenter/mac/ProPresenter_#{version.csv.first}_#{version.csv.second}.zip"
@@ -37,7 +41,6 @@ cask "propresenter-beta" do
 
   auto_updates true
   conflicts_with cask: "propresenter"
-  depends_on macos: ">= :monterey"
 
   app "ProPresenter.app"
 
