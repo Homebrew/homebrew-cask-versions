@@ -5,12 +5,12 @@ cask "propresenter-beta" do
 
     livecheck do
       url "https://api.renewedvision.com/v1/pro/upgrade?platform=macos&osVersion=11.0&appVersion=0&buildNumber=0&includeNotes=0&channel=beta"
-      regex(%r{/ProPresenter_(\d+(?:\.\d+)+)_(\d+)\.zip}i)
-      strategy :page_match do |page, regex|
-        match = page.match(regex)
-        next if match.blank?
+      strategy :json do |json|
+        json["upgrades"]&.map do |item|
+          next if item["version"].blank? || item["buildNumber"].blank?
 
-        "#{match[1]},#{match[2]}"
+          "#{item["version"]},#{item["buildNumber"]}"
+        end
       end
     end
 
@@ -22,12 +22,12 @@ cask "propresenter-beta" do
 
     livecheck do
       url "https://api.renewedvision.com/v1/pro/upgrade?platform=macos&osVersion=#{MacOS.full_version}&appVersion=0&buildNumber=0&includeNotes=0&channel=beta"
-      regex(%r{/ProPresenter_(\d+(?:\.\d+)+)_(\d+)\.zip}i)
-      strategy :page_match do |page, regex|
-        match = page.match(regex)
-        next if match.blank?
+      strategy :json do |json|
+        json["upgrades"]&.map do |item|
+          next if item["version"].blank? || item["buildNumber"].blank?
 
-        "#{match[1]},#{match[2]}"
+          "#{item["version"]},#{item["buildNumber"]}"
+        end
       end
     end
 
