@@ -54,12 +54,13 @@ cask "thunderbird-beta" do
   url "https://download.mozilla.org/?product=thunderbird-beta-latest-SSL&os=osx&lang=#{language}",
       verified: "download.mozilla.org/"
   name "Mozilla Thunderbird"
+  desc "Customizable email client"
   homepage "https://www.thunderbird.net/en-US/thunderbird/beta/all/"
 
   conflicts_with cask: "thunderbird"
   depends_on macos: ">= :catalina"
 
-  app "Thunderbird.app"
+  app "Thunderbird Beta.app"
 
   zap trash: [
     "~/Library/Thunderbird",
