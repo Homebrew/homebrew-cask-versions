@@ -1,8 +1,8 @@
 cask "geogebra5" do
-  version "5.2.806.0"
-  sha256 "5f79c6c8f538257a590f6ffeef75b0ba9664969a43e628a2e76c6b2087b1f860"
+  version "5.2.813.0"
+  sha256 "c273986527e8f49d8721564a4371f5cdd26851413fa750dc2dfb1c3586e15e54"
 
-  url "https://download.geogebra.org/installers/#{version.major_minor}/GeoGebra-MacOS-Installer-withJava-#{version.dots_to_hyphens}-x64.zip"
+  url "https://download.geogebra.org/installers/#{version.major_minor}/GeoGebra-MacOS-Installer-withJava-#{version.dots_to_hyphens}.zip"
   name "GeoGebra"
   desc "Solve, save and share math problems, graph functions, etc"
   homepage "https://www.geogebra.org/"
