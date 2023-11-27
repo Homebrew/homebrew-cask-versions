@@ -5,18 +5,32 @@ cask "kaleidoscope2" do
   url "https://updates.kaleidoscope.app/v#{version.major}/prod/Kaleidoscope-#{version.tr(",", "-")}.app.zip"
   name "Kaleidoscope v2"
   desc "Spot and merge differences in text and image files or folders"
-  homepage "https://www.kaleidoscope.app/"
+  homepage "https://kaleidoscope.app/"
 
+  # Upstream also includes the newest version across all major versions, so we
+  # have to omit items with a different major version.
   livecheck do
     url "https://updates.kaleidoscope.app/v#{version.major}/prod/appcast"
-    regex(/Kaleidoscope-(\d+(?:\.\d+)+)-(\d+)-(\w+(?:-\d+)*)\.app\.zip/i)
-    strategy :page_match do |page, regex|
-      page.scan(regex).map { |match| "#{match[0]},#{match[1]},#{match[2]}" }
+    regex(/Kaleidoscope[._-]v?(\d+(?:\.\d+)+)-(\d+)-(\w+(?:-\d+)*)\.app\.zip/i)
+    strategy :sparkle do |items, regex|
+      items.map do |item|
+        next if item.short_version&.split(".")&.first != version.major
+
+        match = item.url.match(regex)
+        next if match.blank?
+
+        "#{match[1]},#{match[2]},#{match[3]}"
+      end
     end
   end
 
   auto_updates true
-  conflicts_with cask: "kaleidoscope"
+  conflicts_with cask: [
+    "kaleidoscope",
+    "ksdiff",
+    "homebrew/cask-versions/kaleidoscope3",
+    "homebrew/cask-versions/ksdiff2",
+  ]
   depends_on macos: ">= :sierra"
 
   app "Kaleidoscope.app"
