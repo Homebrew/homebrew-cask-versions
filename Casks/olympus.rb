@@ -10,10 +10,10 @@ cask "olympus" do
 
   livecheck do
     url "https://dev.azure.com/EverestAPI/Olympus/_apis/build/builds"
-    strategy :page_match do |page|
-      JSON.parse(page)["value"].map do |build|
+    strategy :json do |json|
+      json["value"]&.map do |build|
         build["id"].to_s if build["sourceBranch"] == "refs/heads/stable"
-      end.compact
+      end
     end
   end
 
