@@ -20,8 +20,8 @@ cask "vmware-fusion-tech-preview" do
 
   livecheck do
     url "https://customerconnect.vmware.com/channel/public/api/v1.0/dlg/beta/header?locale=en_US&downloadGroup=FUS-TP2023"
-    strategy :page_match do |page|
-      JSON.parse(page)["buildNumber"]
+    strategy :json do |json|
+      json["buildNumber"]
     end
   end
 
