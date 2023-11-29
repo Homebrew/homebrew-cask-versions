@@ -12,8 +12,8 @@ cask "figma-beta" do
 
   livecheck do
     url "https://desktop.figma.com/#{arch}/beta/RELEASE.json"
-    strategy :page_match do |page|
-      JSON.parse(page)["version"]
+    strategy :json do |json|
+      json["version"]
     end
   end
 
