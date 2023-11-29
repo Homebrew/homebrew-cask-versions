@@ -10,9 +10,9 @@ cask "carbon-copy-cloner5" do
 
   livecheck do
     url "https://bombich.com/software/updates/ccc.php?os_major=11&os_minor=6&os_bugfix=0&ccc=6000&beta=0&locale=en"
-    strategy :page_match do |page|
-      version = JSON.parse(page)["stable"]["version"]
-      build = JSON.parse(page)["stable"]["build"]
+    strategy :json do |json|
+      version = json.dig("stable", "version")
+      build = json.dig("stable", "build")
       next if version.blank? || build.blank?
 
       "#{version}.#{build}"
