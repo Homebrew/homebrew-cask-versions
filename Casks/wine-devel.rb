@@ -1,6 +1,6 @@
 cask "wine-devel" do
-  version "8.21"
-  sha256 "d7b6eacb017d2bdfed30e539c95cb857c5d1c0c47136c102d8adc674d0dd4f58"
+  version "9.0-rc1"
+  sha256 "cfe7d521163a64dbe856d812681e02bd449151380484285c820f4025e76a8c43"
 
   # Current winehq packages are deprecated and these are packages from
   # the new maintainers that will eventually be pushed to Winehq.
@@ -14,6 +14,7 @@ cask "wine-devel" do
   livecheck do
     url :url
     strategy :github_latest
+    regex(/^v?((?:\d+(?:\.\d+)+)(?:-RC\d)?)$/i)
   end
 
   conflicts_with cask: [
