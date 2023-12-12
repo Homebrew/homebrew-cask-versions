@@ -1,26 +1,31 @@
 cask "microsoft-edge-dev" do
-  folder = on_arch_conditional arm:   "03adf619-38c6-4249-95ff-4a01c0ffc962",
-                               intel: "C1297A47-86C4-4C1F-97FA-950631F94777"
   linkid = on_arch_conditional arm: "2099619", intel: "2069340"
 
-  version "120.0.2186.2"
-  sha256 arm:   "9ca964a1cd9fae78265b05313b0000a07a40ea72e9dfeaf515f0e17c0975c1e0",
-         intel: "b738e5b1c7c860714969be75edc0ebbd481116d9613c56c8bd7816eefced2316"
+  on_arm do
+    version "121.0.2256.2,52018ef5-3768-4c00-8c87-f098905c9c9f"
+    sha256 "1eb948cbc460eae26fe736064315c7a5d312274b1a63d209b6c5d86bb52c759b"
+  end
+  on_intel do
+    version "121.0.2256.2,77be7808-cae5-4257-b2f1-af6bf1e061d3"
+    sha256 "3eb8229a62749e94d5f57f9014bcd4ad888079ef3e5abdb20329404bd788667a"
+  end
 
-  url "https://officecdn-microsoft-com.akamaized.net/pr/#{folder}/MacAutoupdate/MicrosoftEdgeDev-#{version}.pkg",
-      verified: "officecdn-microsoft-com.akamaized.net/"
+  url "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/#{version.csv.second}/MicrosoftEdgeDev-#{version.csv.first}.pkg"
   name "Microsoft Edge Dev"
   desc "Multi-platform web browser"
-  homepage "https://www.microsoftedgeinsider.com/"
+  homepage "https://www.microsoft.com/en-us/edge/download/insider?form="
 
   livecheck do
     url "https://go.microsoft.com/fwlink/?linkid=#{linkid}"
-    strategy :header_match
+    regex(%r{/([^/]+)/MicrosoftEdgeDev[._-]v?(\d+(?:\.\d+)+)\.pkg}i)
+    strategy :header_match do |headers, regex|
+      headers["location"].scan(regex).map { |match| "#{match[1]},#{match[0]}" }
+    end
   end
 
   auto_updates true
 
-  pkg "MicrosoftEdgeDev-#{version}.pkg",
+  pkg "MicrosoftEdgeDev-#{version.csv.first}.pkg",
       choices: [
         {
           "choiceIdentifier" => "com.microsoft.package.Microsoft_AutoUpdate.app", # Office16_all_autoupdate.pkg
@@ -29,12 +34,12 @@ cask "microsoft-edge-dev" do
         },
       ]
 
-  uninstall launchctl: [
+  uninstall pkgutil:   "com.microsoft.edgemac.Dev",
+            launchctl: [
               "com.microsoft.EdgeUpdater.update-internal.109.0.1518.89.system",
               "com.microsoft.EdgeUpdater.update.system",
               "com.microsoft.EdgeUpdater.wake.109.0.1518.89.system",
-            ],
-            pkgutil:   "com.microsoft.edgemac.Dev"
+            ]
 
   zap trash: [
     "~/Library/Application Support/Microsoft Edge Dev",
