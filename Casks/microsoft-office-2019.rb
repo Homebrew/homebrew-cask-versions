@@ -7,6 +7,8 @@ cask "microsoft-office-2019" do
   desc "Office suite"
   homepage "https://www.microsoft.com/en-us/microsoft-365/mac/microsoft-365-for-mac/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   auto_updates true
   conflicts_with cask: %w[
     microsoft-excel
@@ -102,8 +104,4 @@ cask "microsoft-office-2019" do
         "com.microsoft.update.agent",
       ],
       pkgutil:   "com.microsoft.package.Microsoft_AutoUpdate.app"
-
-  caveats do
-    discontinued
-  end
 end
