@@ -7,6 +7,8 @@ cask "intellij-idea19" do
   desc "IDE for JVM languages"
   homepage "https://www.jetbrains.com/idea/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   auto_updates true
 
   app "IntelliJ IDEA.app"
@@ -28,8 +30,4 @@ cask "intellij-idea19" do
     "~/Library/Preferences/IntelliJIdea#{version.major_minor}",
     "~/Library/Saved Application State/com.jetbrains.intellij.savedState",
   ]
-
-  caveats do
-    discontinued
-  end
 end
