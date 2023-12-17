@@ -7,6 +7,8 @@ cask "vmware-fusion11" do
   desc "App to run other operating systems without rebooting"
   homepage "https://www.vmware.com/products/fusion.html"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   auto_updates true
   conflicts_with cask: %w[
     vmware-fusion
@@ -84,7 +86,6 @@ cask "vmware-fusion11" do
   ]
 
   caveats do
-    discontinued
     kext
   end
 end
