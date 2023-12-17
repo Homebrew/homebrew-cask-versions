@@ -8,6 +8,8 @@ cask "microsoft-office-2016" do
   desc "Office suite"
   homepage "https://products.office.com/mac/microsoft-office-for-mac/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   auto_updates true
   conflicts_with cask: %w[
     microsoft-excel
@@ -105,8 +107,4 @@ cask "microsoft-office-2016" do
         "com.microsoft.update.agent",
       ],
       pkgutil:   "com.microsoft.package.Microsoft_AutoUpdate.app"
-
-  caveats do
-    discontinued
-  end
 end
