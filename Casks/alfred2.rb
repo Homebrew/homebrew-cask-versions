@@ -7,6 +7,8 @@ cask "alfred2" do
   desc "Application launcher and productivity software"
   homepage "https://www.alfredapp.com/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   auto_updates true
 
   app "Alfred 2.app"
@@ -21,8 +23,4 @@ cask "alfred2" do
     "~/Library/Preferences/com.runningwithcrayons.Alfred-Preferences.plist",
     "~/Library/Saved Application State/com.runningwithcrayons.Alfred-Preferences.savedState",
   ]
-
-  caveats do
-    discontinued
-  end
 end
