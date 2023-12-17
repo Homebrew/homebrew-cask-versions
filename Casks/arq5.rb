@@ -7,6 +7,8 @@ cask "arq5" do
   desc "Multi-cloud backup application"
   homepage "https://www.arqbackup.com/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   auto_updates true
   conflicts_with cask: "arq"
 
@@ -22,8 +24,4 @@ cask "arq5" do
     "~/Library/Preferences/com.haystacksoftware.Arq*.plist",
     "~/Library/Saved Application State/com.haystacksoftware.Arq.savedState",
   ]
-
-  caveats do
-    discontinued
-  end
 end
