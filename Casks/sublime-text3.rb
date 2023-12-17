@@ -7,6 +7,8 @@ cask "sublime-text3" do
   desc "Text editor for code, markup and prose"
   homepage "https://www.sublimetext.com/3"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   auto_updates true
   conflicts_with cask: [
     "sublime-text",
@@ -26,8 +28,4 @@ cask "sublime-text3" do
     "~/Library/Preferences/com.sublimetext.#{version.major}.plist",
     "~/Library/Saved Application State/com.sublimetext.#{version.major}.savedState",
   ]
-
-  caveats do
-    discontinued
-  end
 end
