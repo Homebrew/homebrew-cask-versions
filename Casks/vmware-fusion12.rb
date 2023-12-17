@@ -6,7 +6,6 @@ cask "vmware-fusion12" do
     url "https://download3.vmware.com/software/fusion/file/VMware-Fusion-#{version.csv.first}-#{version.csv.second}.dmg"
 
     caveats do
-      discontinued
       kext
     end
   end
@@ -15,15 +14,13 @@ cask "vmware-fusion12" do
     sha256 "403d14e7609f1863bd46617c90f2e3642f6b68ed387c1b7f8c62722d580c633c"
 
     url "https://download3.vmware.com/software/FUS-#{version.csv.first.no_dots}/VMware-Fusion-#{version.csv.first}-#{version.csv.second}_x86.dmg"
-
-    caveats do
-      discontinued
-    end
   end
 
   name "VMware Fusion"
   desc "Create, manage, and run virtual machines"
   homepage "https://www.vmware.com/products/fusion.html"
+
+  deprecate! date: "2023-12-17", because: :discontinued
 
   auto_updates true
   conflicts_with cask: %w[
