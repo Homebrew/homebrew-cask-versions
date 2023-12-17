@@ -7,6 +7,8 @@ cask "sublime-text2" do
   desc "Text editor for code, markup and prose"
   homepage "https://www.sublimetext.com/2"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   app "Sublime Text 2.app"
   binary "#{appdir}/Sublime Text 2.app/Contents/SharedSupport/bin/subl"
 
@@ -16,8 +18,4 @@ cask "sublime-text2" do
     "~/Library/Caches/com.sublimetext.2",
     "~/Library/Saved Application State/com.sublimetext.2.savedState",
   ]
-
-  caveats do
-    discontinued
-  end
 end
