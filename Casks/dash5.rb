@@ -7,6 +7,8 @@ cask "dash5" do
   desc "API documentation browser and code snippet manager"
   homepage "https://kapeli.com/dash"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   auto_updates true
   depends_on macos: ">= :mojave"
 
@@ -23,8 +25,4 @@ cask "dash5" do
     "~/Library/Saved Application State/com.kapeli.dashdoc.savedState",
     "~/Library/WebKit/com.kapeli.dashdoc",
   ]
-
-  caveats do
-    discontinued
-  end
 end
