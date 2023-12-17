@@ -8,6 +8,8 @@ cask "iterm2-legacy" do
   desc "Terminal emulator as alternative to Apple's Terminal app"
   homepage "https://www.iterm2.com/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   auto_updates true
   conflicts_with cask: [
     "iterm2",
@@ -18,8 +20,4 @@ cask "iterm2-legacy" do
   app "iTerm.app"
 
   zap trash: "~/Library/Preferences/com.googlecode.iterm2.plist"
-
-  caveats do
-    discontinued
-  end
 end
