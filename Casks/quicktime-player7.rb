@@ -7,13 +7,11 @@ cask "quicktime-player7" do
   desc "Video player"
   homepage "https://support.apple.com/kb/dl923"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   pkg "QuickTimePlayer#{version}_SnowLeopard.pkg"
 
   uninstall pkgutil: "com.apple.pkg.QuickTimePlayer#{version}_SnowLeopard"
 
   # No zap stanza required
-
-  caveats do
-    discontinued
-  end
 end
