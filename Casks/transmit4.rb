@@ -7,14 +7,12 @@ cask "transmit4" do
   desc "File transfer application"
   homepage "https://panic.com/transmit/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   app "Transmit.app"
 
   zap trash: [
     "~/Library/Preferences/com.panic.Transmit.plist",
     "~/Library/Application Support/Transmit",
   ]
-
-  caveats do
-    discontinued
-  end
 end
