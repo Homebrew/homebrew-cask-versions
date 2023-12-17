@@ -16,6 +16,8 @@ cask "omniplan3" do
   desc "Project planning and management software"
   homepage "https://www.omnigroup.com/omniplan/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   auto_updates true
   conflicts_with cask: "omniplan"
   depends_on macos: ">= :mojave"
@@ -28,8 +30,4 @@ cask "omniplan3" do
     "~/Library/Containers/com.omnigroup.OmniPlan#{version.major}",
     "~/Library/Preferences/com.omnigroup.OmniPlan#{version.major}.plist",
   ]
-
-  caveats do
-    discontinued
-  end
 end
