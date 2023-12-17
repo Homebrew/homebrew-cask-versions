@@ -7,6 +7,8 @@ cask "calibre4" do
   desc "E-books management software"
   homepage "https://calibre-ebook.com/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   conflicts_with cask: "calibre"
   depends_on macos: ">= :mojave"
 
@@ -39,8 +41,4 @@ cask "calibre4" do
     "~/Library/Saved Application State/com.calibre-ebook.ebook-viewer.savedState",
     "~/Library/Saved Application State/net.kovidgoyal.calibre.savedState",
   ]
-
-  caveats do
-    discontinued
-  end
 end
