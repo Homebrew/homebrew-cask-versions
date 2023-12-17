@@ -8,6 +8,8 @@ cask "soulver2" do
   desc "Text editor and calculator"
   homepage "https://soulver.app/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   auto_updates true
   depends_on macos: ">= :high_sierra"
 
@@ -18,8 +20,4 @@ cask "soulver2" do
     "~/Library/Autosave Information/Unsaved Soulver Document*",
     "~/Library/Preferences/com.acqualia.soulver.plist",
   ]
-
-  caveats do
-    discontinued
-  end
 end
