@@ -8,6 +8,8 @@ cask "papers3" do
   desc "Reference management software for researchers"
   homepage "https://support.papersapp.com/support/solutions/articles/30000031865-existing-papers-3-users-accessing-papers-3-program-files-for-additional-device-installs"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   app "Papers.app"
 
   uninstall login_item: "Citations"
@@ -19,8 +21,4 @@ cask "papers3" do
     "~/Library/Preferences/com.mekentosj.Citations.plist",
     "~/Library/Preferences/com.mekentosj.papers#{version.major}",
   ]
-
-  caveats do
-    discontinued
-  end
 end
