@@ -7,6 +7,8 @@ cask "skype7" do
   desc "Video chat, voice call and instant messaging application"
   homepage "https://www.skype.com/en/get-skype/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   auto_updates true
   conflicts_with cask: "skype"
 
@@ -20,8 +22,4 @@ cask "skype7" do
     "~/Library/Preferences/com.skype.skypewifi.plist",
     "~/Library/Saved Application State/com.skype.skype.savedState",
   ]
-
-  caveats do
-    discontinued
-  end
 end
