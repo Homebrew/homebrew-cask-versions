@@ -11,13 +11,11 @@ cask "zulu13" do
   desc "OpenJDK distribution from Azul"
   homepage "https://www.azul.com/products/core/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   pkg "Double-Click to Install Azul Zulu JDK #{version.major}.pkg"
 
   uninstall pkgutil: "com.azulsystems.zulu.#{version.major}"
 
   zap trash: "~/Library/Saved Application State/com.azul.zulu.#{version.major}*.java.savedState"
-
-  caveats do
-    discontinued
-  end
 end
