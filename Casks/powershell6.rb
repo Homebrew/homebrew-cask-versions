@@ -7,6 +7,8 @@ cask "powershell6" do
   desc "Command-line shell and scripting language"
   homepage "https://github.com/PowerShell/PowerShell"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   conflicts_with cask: "powershell"
   depends_on macos: ">= :high_sierra"
 
@@ -25,8 +27,4 @@ cask "powershell6" do
         "~/.local/share",
         "~/.local",
       ]
-
-  caveats do
-    discontinued
-  end
 end
