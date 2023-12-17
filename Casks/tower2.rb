@@ -8,6 +8,8 @@ cask "tower2" do
   desc "Git client focusing on power and productivity"
   homepage "https://www.git-tower.com/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   app "Tower.app"
   binary "#{appdir}/Tower.app/Contents/MacOS/gittower"
 
@@ -16,8 +18,4 @@ cask "tower2" do
     "~/Library/Caches/com.fournova.Tower#{version.major}",
     "~/Library/Preferences/com.fournova.Tower#{version.major}.plist",
   ]
-
-  caveats do
-    discontinued
-  end
 end
