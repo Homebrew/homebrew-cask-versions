@@ -8,6 +8,8 @@ cask "anaconda2" do
   desc "Data science platform"
   homepage "https://www.anaconda.com/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   container type: :naked
 
   installer script: {
@@ -32,7 +34,6 @@ cask "anaconda2" do
   ]
 
   caveats do
-    discontinued
     files_in_usr_local
     path_environment_variable "#{HOMEBREW_PREFIX}/anaconda2/bin"
   end
