@@ -8,6 +8,8 @@ cask "hancom-word-2014" do
   desc "Word processor"
   homepage "https://office.hancom.com/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   pkg "HwpMac2014VP_Home.pkg"
 
   uninstall quit:    "com.hancom.office.hwp.mac.general",
@@ -22,8 +24,4 @@ cask "hancom-word-2014" do
     "/private/var/db/receipts/com.hancom.office.hwp.mac.general.bom",
     "/private/var/db/receipts/com.hancom.office.hwp.mac.general.plist",
   ]
-
-  caveats do
-    discontinued
-  end
 end
