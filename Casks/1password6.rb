@@ -7,6 +7,8 @@ cask "1password6" do
   desc "Password manager that keeps all passwords secure behind one password"
   homepage "https://1password.com/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   auto_updates true
 
   app "1Password #{version.major}.app"
@@ -17,8 +19,4 @@ cask "1password6" do
     "~/Library/Containers/com.agilebits.onepassword-osx",
     "~/Library/Group Containers/2BUA8C4S2C.com.agilebits",
   ]
-
-  caveats do
-    discontinued
-  end
 end
