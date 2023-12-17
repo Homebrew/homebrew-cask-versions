@@ -7,6 +7,8 @@ cask "omnigraffle6" do
   desc "Visual communication software"
   homepage "https://www.omnigroup.com/omnigraffle/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   app "OmniGraffle.app"
 
   zap trash: [
@@ -17,8 +19,4 @@ cask "omnigraffle6" do
     "~/Library/Preferences/com.omnigroup.OmniGraffle6.plist",
     "~/Library/Saved Application State/com.omnigroup.OmniGraffle6.savedState",
   ]
-
-  caveats do
-    discontinued
-  end
 end
