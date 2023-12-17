@@ -8,6 +8,8 @@ cask "intellij-idea-ce19" do
   desc "IDE for Java development - community edition"
   homepage "https://www.jetbrains.com/idea/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   auto_updates true
   conflicts_with cask: "intellij-idea-ce"
 
@@ -30,8 +32,4 @@ cask "intellij-idea-ce19" do
     "~/Library/Preferences/com.jetbrains.intellij.ce.plist",
     "~/Library/Saved Application State/com.jetbrains.intellij.ce.savedState",
   ]
-
-  caveats do
-    discontinued
-  end
 end
