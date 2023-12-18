@@ -8,6 +8,8 @@ cask "adoptopenjdk8" do
   desc "Prebuilt OpenJDK binaries"
   homepage "https://adoptopenjdk.net/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   pkg "OpenJDK#{version.csv.first}U-jdk_x64_mac_hotspot_#{version.csv.first}u#{version.csv.second}#{version.csv.third}.pkg"
 
   uninstall pkgutil: "net.adoptopenjdk.#{version.csv.first}.jdk"
@@ -15,8 +17,6 @@ cask "adoptopenjdk8" do
   # No zap stanza required
 
   caveats do
-    discontinued
-
     <<~EOS
       Temurin is the official successor to this software:
 

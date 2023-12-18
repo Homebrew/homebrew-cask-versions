@@ -7,6 +7,8 @@ cask "vmware-fusion7" do
   desc "Create, manage, and run virtual machines"
   homepage "https://www.vmware.com/products/fusion.html"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   conflicts_with cask: %w[
     vmware-fusion
     vmware-fusion8
@@ -34,8 +36,4 @@ cask "vmware-fusion7" do
     "~/Library/Logs/VMware",
     "~/Library/Logs/VMware Fusion",
   ]
-
-  caveats do
-    discontinued
-  end
 end

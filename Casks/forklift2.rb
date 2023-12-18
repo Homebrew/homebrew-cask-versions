@@ -7,6 +7,8 @@ cask "forklift2" do
   desc "Finder replacement and FTP, SFTP, WebDAV and Amazon s3 client"
   homepage "https://www.binarynights.com/forklift/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   conflicts_with cask: "forklift"
 
   app "ForkLift.app"
@@ -15,8 +17,4 @@ cask "forklift2" do
     "~/Library/Preferences/com.binarynights.ForkLift#{version.major}.plist",
     "~/Library/Caches/com.binarynights.ForkLift#{version.major}",
   ]
-
-  caveats do
-    discontinued
-  end
 end

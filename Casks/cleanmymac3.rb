@@ -8,6 +8,8 @@ cask "cleanmymac3" do
   desc "Tool to remove unnecessary files and folders from disk"
   homepage "https://macpaw.com/cleanmymac"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   app "CleanMyMac #{version.major}.app"
 
   uninstall delete:     [
@@ -61,8 +63,4 @@ cask "cleanmymac3" do
     "~/Library/WebKit/com.macpaw.CleanMyMac#{version.major}",
     "~/Pictures/Photos Library.photoslibrary/private/com.macpaw.CleanMyMac#{version.major}",
   ]
-
-  caveats do
-    discontinued
-  end
 end

@@ -7,14 +7,12 @@ cask "ableton-live-suite9" do
   desc "Sound and music editor"
   homepage "https://www.ableton.com/en/live/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   app "Ableton Live #{version.major} Suite.app"
 
   zap trash: [
     "~/Library/*/*[Aa]bleton*",
     "~/Music/Ableton/Factory Packs",
   ]
-
-  caveats do
-    discontinued
-  end
 end

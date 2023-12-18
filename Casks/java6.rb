@@ -22,9 +22,7 @@ cask "java6" do
   desc "Legacy runtime for the Java programming language"
   homepage "https://support.apple.com/kb/DL1572"
 
-  zap trash: "~/Library/Application Support/java"
+  deprecate! date: "2023-12-17", because: :discontinued
 
-  caveats do
-    discontinued
-  end
+  zap trash: "~/Library/Application Support/java"
 end

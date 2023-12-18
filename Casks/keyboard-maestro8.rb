@@ -8,6 +8,8 @@ cask "keyboard-maestro8" do
   desc "Automation software"
   homepage "https://www.keyboardmaestro.com/main/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   app "Keyboard Maestro.app"
 
   zap trash: [
@@ -21,8 +23,4 @@ cask "keyboard-maestro8" do
     "~/Library/Preferences/com.stairways.keyboardmaestro.plist",
     "~/Library/Saved Application State/com.stairways.keyboardmaestro.editor.savedState",
   ]
-
-  caveats do
-    discontinued
-  end
 end

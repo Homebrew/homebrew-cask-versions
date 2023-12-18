@@ -7,6 +7,8 @@ cask "dash2" do
   desc "API documentation browser and code snippet manager"
   homepage "https://kapeli.com/dash"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   app "Dash.app"
 
   zap trash: [
@@ -14,8 +16,4 @@ cask "dash2" do
     "~/Library/Preferences/com.kapeli.dash.plist",
     "~/Library/Preferences/com.kapeli.dashdoc.plist",
   ]
-
-  caveats do
-    discontinued
-  end
 end

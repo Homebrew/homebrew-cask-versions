@@ -16,6 +16,8 @@ cask "omnifocus2" do
   desc "Scheduling application focusing on organization"
   homepage "https://www.omnigroup.com/omnifocus/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   depends_on macos: ">= :sierra"
 
   app "OmniFocus.app"
@@ -31,8 +33,4 @@ cask "omnifocus2" do
     "~/Library/Group Containers/34YW5XSRB7.com.omnigroup.OmniFocus",
     "~/Library/Saved Application State/com.omnigroup.OmniFocus#{version}.savedState",
   ]
-
-  caveats do
-    discontinued
-  end
 end

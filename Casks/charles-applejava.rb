@@ -7,14 +7,12 @@ cask "charles-applejava" do
   desc "Web debugging Proxy application"
   homepage "https://www.charlesproxy.com/previous-release/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   app "Charles.app"
 
   zap trash: [
     "~/Library/Application Support/Charles",
     "~/Library/Preferences/com.xk72.charles.config",
   ]
-
-  caveats do
-    discontinued
-  end
 end

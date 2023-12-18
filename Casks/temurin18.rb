@@ -11,13 +11,11 @@ cask "temurin18" do
   desc "JDK from the Eclipse Foundation (Adoptium)"
   homepage "https://adoptium.net/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   pkg "OpenJDK#{version.major}U-jdk_#{arch}_mac_hotspot_#{version.csv.first}_#{version.csv.second.major}.pkg"
 
   uninstall pkgutil: "net.temurin.#{version.major}.jdk"
-
-  caveats do
-    discontinued
-  end
 
   # No zap stanza required
 end

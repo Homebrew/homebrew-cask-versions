@@ -8,6 +8,8 @@ cask "atom-nightly" do
   desc "Cross-platform text editor"
   homepage "https://atom.io/nightly"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   app "Atom Nightly.app"
   binary "#{appdir}/Atom Nightly.app/Contents/Resources/app/apm/bin/apm", target: "apm-nightly"
   binary "#{appdir}/Atom Nightly.app/Contents/Resources/app/atom.sh", target: "atom-nightly"
@@ -26,8 +28,4 @@ cask "atom-nightly" do
     "~/Library/Preferences/com.github.atom.plist",
     "~/Library/Saved Application State/com.github.atom.savedState",
   ]
-
-  caveats do
-    discontinued
-  end
 end

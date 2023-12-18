@@ -8,6 +8,8 @@ cask "miniconda2" do
   desc "Minimal installer for conda"
   homepage "https://www.anaconda.com/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   container type: :naked
 
   installer script: {
@@ -29,7 +31,6 @@ cask "miniconda2" do
   ]
 
   caveats do
-    discontinued
     files_in_usr_local
     path_environment_variable "#{HOMEBREW_PREFIX}/miniconda2/bin"
   end

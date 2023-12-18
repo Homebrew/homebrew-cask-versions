@@ -7,6 +7,8 @@ cask "ableton-live-suite10" do
   desc "Sound and music editor"
   homepage "https://www.ableton.com/en/live/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   auto_updates true
   depends_on macos: ">= :el_capitan"
 
@@ -29,8 +31,4 @@ cask "ableton-live-suite10" do
     "~/Documents/Max [0-9]",
     "/Users/Shared/Max [0-9]",
   ]
-
-  caveats do
-    discontinued
-  end
 end

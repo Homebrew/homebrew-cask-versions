@@ -7,6 +7,8 @@ cask "xmind8" do
   desc "Mind mapping and brainstorming tool"
   homepage "https://www.xmind.net/xmind8-pro/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   conflicts_with cask: "xmind"
 
   app "XMind.app"
@@ -15,8 +17,4 @@ cask "xmind8" do
     "~/Library/XMind",
     "~/Library/Saved Application State/org.xmind.cathy.application.savedState",
   ]
-
-  caveats do
-    discontinued
-  end
 end

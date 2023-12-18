@@ -7,6 +7,8 @@ cask "forklift3" do
   desc "Finder replacement and FTP, SFTP, WebDAV and Amazon s3 client"
   homepage "https://binarynights.com/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   auto_updates true
   conflicts_with cask: "forklift"
   depends_on macos: ">= :sierra"
@@ -34,8 +36,4 @@ cask "forklift3" do
     "~/Library/Preferences/com.binarynights.ForkLiftMini.plist",
     "~/Library/Saved Application State/com.binarynights.ForkLift-#{version.major}.savedState",
   ]
-
-  caveats do
-    discontinued
-  end
 end

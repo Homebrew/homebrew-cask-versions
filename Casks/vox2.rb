@@ -8,14 +8,12 @@ cask "vox2" do
   desc "Music player for high resoluion (Hi-Res) music through the external sources"
   homepage "https://vox.rocks/mac-music-player/old-versions"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   app "VOX.app"
 
   zap trash: [
     "~/Library/Containers/com.coppertino.Vox",
     "~/Library/Preferences/com.coppertino.Vox.plist",
   ]
-
-  caveats do
-    discontinued
-  end
 end

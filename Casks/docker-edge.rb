@@ -8,6 +8,8 @@ cask "docker-edge" do
   desc "App to build and share containerized applications and microservices"
   homepage "https://www.docker.com/products/docker-desktop"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   auto_updates true
   depends_on macos: ">= :mojave"
 
@@ -54,7 +56,6 @@ cask "docker-edge" do
       ]
 
   caveats do
-    discontinued
     <<~EOS
       Starting with Docker Desktop 3.0.0, Stable and Edge releases
       are combined into a single, cumulative release stream.

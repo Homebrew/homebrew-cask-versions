@@ -7,6 +7,8 @@ cask "processing2" do
   desc "Flexible software sketchbook and a language for learning how to code"
   homepage "https://processing.org/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   conflicts_with cask: [
     "processing",
     "processing3",
@@ -17,8 +19,4 @@ cask "processing2" do
   uninstall quit: "org.processing.app"
 
   zap trash: "~/Library/Processing/preferences.txt"
-
-  caveats do
-    discontinued
-  end
 end

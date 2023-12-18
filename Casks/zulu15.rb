@@ -11,6 +11,8 @@ cask "zulu15" do
   desc "Zulu OpenJDK 15"
   homepage "https://www.azul.com/products/core/"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   depends_on macos: ">= :sierra"
 
   pkg "Double-Click to Install Azul Zulu JDK #{version.major}.pkg"
@@ -18,8 +20,4 @@ cask "zulu15" do
   uninstall pkgutil: "com.azulsystems.zulu.#{version.major}"
 
   zap trash: "~/Library/Saved Application State/com.azul.zulu.#{version.major}*.java.savedState"
-
-  caveats do
-    discontinued
-  end
 end

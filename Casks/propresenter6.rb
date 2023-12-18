@@ -7,6 +7,8 @@ cask "propresenter6" do
   desc "Presentation and production application for live events"
   homepage "https://www.renewedvision.com/propresenter.php"
 
+  deprecate! date: "2023-12-17", because: :discontinued
+
   depends_on macos: ">= :high_sierra"
 
   app "ProPresenter #{version.major}.app"
@@ -26,8 +28,4 @@ cask "propresenter6" do
         "~/Library/Caches/KSCrashReports",
         "~/Library/Caches/Sessions",
       ]
-
-  caveats do
-    discontinued
-  end
 end
