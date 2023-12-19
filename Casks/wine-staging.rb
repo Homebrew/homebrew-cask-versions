@@ -22,16 +22,18 @@ cask "wine-staging" do
     "wine-devel",
   ]
   depends_on cask: "gstreamer-runtime"
+  depends_on macos: ">= :catalina"
 
   app "Wine Staging.app"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/start/bin/appdb"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/start/bin/winehelp"
+  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/msidb"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/msiexec"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/notepad"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/regedit"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/regsvr32"
-  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/wine"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/wine64"
+  binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/wine64-preloader"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/wineboot"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/winecfg"
   binary "#{appdir}/Wine Staging.app/Contents/Resources/wine/bin/wineconsole"
