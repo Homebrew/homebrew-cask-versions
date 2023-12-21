@@ -8,10 +8,10 @@ cask "safari-technology-preview" do
     sha256 "a965db0da7e208f7f4e7d5e6384c007d2ec1d245c4fc0162ba3a7005b85b5f7b"
   end
 
-  url "https://secure-appldnld.apple.com/STP/#{version.csv.second}/SafariTechnologyPreview.dmg"
+  url "https://secure-appldnld.apple.com/STP/#{version.csv.second}/Safari%20Technology%20Preview.dmg"
   name "Safari Technology Preview"
   desc "Web browser"
-  homepage "https://developer.apple.com/safari/download/"
+  homepage "https://developer.apple.com/safari/resources/"
 
   livecheck do
     url :homepage
