@@ -16,7 +16,7 @@ cask "safari-technology-preview" do
   livecheck do
     url :homepage
     regex(%r{
-      href=.*?/(\h+(?:-\h+)*)/SafariTechnologyPreview\.dmg
+      href=.*?/(\h+(?:-\h+)*)/Safari%20Technology%20Preview\.dmg
       .*?macOS(?:\s|&nbsp;)*#{Regexp.escape(MacOS.version.to_s)}[\s.<]
     }ix)
     strategy :page_match do |page, regex|
