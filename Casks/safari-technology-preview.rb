@@ -1,11 +1,11 @@
 cask "safari-technology-preview" do
   on_ventura :or_older do
-    version "185,"
-    sha256 "b3762454597c1bd7ece748880d4247a73f3c3b879b9023d6c2e444c2889e28f4"
+    version "185,052-23415-2023-12-20-B7B4E6CA-D827-4658-BC35-C600CB1C7ED3"
+    sha256 "d955cbdb35e4efb1d9aa7c92145ba73036c5a7cd4c56526d967c12af6a2a4cb2"
   end
   on_sonoma :or_newer do
-    version "184,052-11119-20231207-9003934B-B9D7-452E-B9FD-973765493B8E"
-    sha256 "a54a38ff88db45fa219dfc306a472b59f3c7da8c2eed451eb04f5c27bf364679"
+    version "185,052-23687-2023-12-20-2A3F9120-DC7C-4616-A557-4E860178CCE1"
+    sha256 "a965db0da7e208f7f4e7d5e6384c007d2ec1d245c4fc0162ba3a7005b85b5f7b"
   end
 
   url "https://secure-appldnld.apple.com/STP/#{version.csv.second}/SafariTechnologyPreview.dmg"
