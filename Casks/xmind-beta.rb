@@ -1,6 +1,6 @@
 cask "xmind-beta" do
-  version "24.01.08392,202312042218"
-  sha256 "4763b9bf2141a6b5dbaf4fcf16aca85190c4ffe13cee5f425c0e9bccf111ae84"
+  version "24.03.04745,202312271818"
+  sha256 "174137137de58b3ef542d8bcd8dd65b4211ddb59b7510f128a0468f12a7d0e57"
 
   url "https://dl3.xmind.net/Xmind-for-macOS-#{version.csv.first}-beta-#{version.csv.second}.dmg"
   name "XMind"
