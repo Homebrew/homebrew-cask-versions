@@ -1,6 +1,6 @@
 cask "olympus" do
-  version "3728"
-  sha256 "19c524ef9015ea6c046717438a7e9f7210725d4847c8834dbdc4e3f2065c853a"
+  version "3813"
+  sha256 "0fc4b4b01677ce5477472de9e4b10da9ae54306c06ce804de91d181e8d236280"
 
   url "https://dev.azure.com/EverestAPI/Olympus/_apis/build/builds/#{version}/artifacts?artifactName=macos.main&$format=zip",
       verified: "dev.azure.com/EverestAPI/Olympus/_apis/build/builds/"
