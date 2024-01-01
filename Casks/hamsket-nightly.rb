@@ -7,11 +7,7 @@ cask "hamsket-nightly" do
   desc "Free and Open Source messaging and emailing app"
   homepage "https://github.com/TheGoddessInari/hamsket"
 
-  livecheck do
-    url "https://github.com/TheGoddessInari/hamsket/releases/expanded_assets/nightly"
-    regex(/href=.*?Hamsket-(\d+(?:\.\d+)+)\.dmg/i)
-    strategy :page_match
-  end
+  deprecate! date: "2024-01-01", because: :discontinued
 
   depends_on macos: ">= :high_sierra"
 
