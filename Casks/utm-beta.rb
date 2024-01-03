@@ -1,6 +1,6 @@
 cask "utm-beta" do
-  version "4.4.3"
-  sha256 "5351c1f2e3fc3b31d7f0bcc113cbbb6120c8e2f958f6f94c444f8923ec7daef9"
+  version "4.4.5"
+  sha256 "16520f496a98d95d5a91dfc89d2e813c405f73ca68989f238039ecef0bda3a6f"
 
   url "https://github.com/utmapp/UTM/releases/download/v#{version}/UTM.dmg",
       verified: "github.com/utmapp/UTM/"
@@ -8,11 +8,8 @@ cask "utm-beta" do
   desc "Virtual machines UI using QEMU"
   homepage "https://mac.getutm.app/"
 
-  livecheck do
-    url "https://github.com/utmapp/UTM/releases?q=prerelease%3Atrue&expanded=true"
-    regex(%r{href=["']?[^"' >]*?/tag/\D*?(\d+(?:\.\d+)+)[^"' >]*?["' >]}i)
-    strategy :page_match
-  end
+  # Use the default livecheck strategy to return the "latest" release
+  # regardless of how it is tagged. https://github.com/Homebrew/homebrew-cask-versions/pull/18839#issuecomment-1874765632
 
   conflicts_with cask: "utm"
   depends_on macos: ">= :big_sur"
