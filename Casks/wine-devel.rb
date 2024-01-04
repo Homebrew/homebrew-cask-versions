@@ -32,6 +32,8 @@ cask "wine-devel" do
   binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/notepad"
   binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/regedit"
   binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/regsvr32"
+  binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/wine"
+  binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/wine-preloader"
   binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/wine64"
   binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/wine64-preloader"
   binary "#{appdir}/Wine Devel.app/Contents/Resources/wine/bin/wineboot"
