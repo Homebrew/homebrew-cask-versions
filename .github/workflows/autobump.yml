@@ -18,6 +18,7 @@ env:
     brave-browser-dev
     brave-browser-nightly
     defold-alpha
+    discord-canary
     dropbox-beta
     emacs-nightly
     google-chrome-beta
@@ -30,12 +31,14 @@ env:
     mongodb-compass-beta
     openscad-snapshot
     openshot-video-editor-daily
+    opera-beta
     opera-developer
     signal-beta
     sketch-beta
+    slack-beta
+    termius-beta
     vivaldi-snapshot
     vscodium-insiders
-    whatsapp-alpha
     whatsapp-beta
 
 permissions:
