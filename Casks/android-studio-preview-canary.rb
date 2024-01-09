@@ -5,15 +5,15 @@ cask "android-studio-preview-canary" do
   sha256 arm:   "418a487eeb25fd8f29d9bf031eb20e1b16437c68ddbe7eecc7676515d2cd8912",
          intel: "94f4cca568c749a648985ce3c8a90a1dba845ef03ae3f7e936f6a80c357d9035"
 
-  url "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-#{version}-#{arch}.zip",
-      verified: "dl.google.com/dl/android/studio/"
+  url "https://redirector.gvt1.com/edgedl/android/studio/install/#{version}/android-studio-#{version}-#{arch}.dmg",
+      verified: "redirector.gvt1.com/edgedl/android/studio/install/"
   name "Android Studio Preview (Canary)"
   desc "Tools for building Android applications"
   homepage "https://developer.android.com/studio/preview/"
 
   livecheck do
     url :homepage
-    regex(%r{href=.*?/android[._-]studio[._-]v?(\d+(?:\.\d+)+)[._-]#{arch}\.zip}i)
+    regex(%r{href=.*?/android[._-]studio[._-]v?(\d+(?:\.\d+)+)[._-]#{arch}\.dmg}i)
   end
 
   auto_updates true
