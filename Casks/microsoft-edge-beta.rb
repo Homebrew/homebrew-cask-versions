@@ -1,27 +1,31 @@
 cask "microsoft-edge-beta" do
-  folder = on_arch_conditional arm:   "03adf619-38c6-4249-95ff-4a01c0ffc962",
-                               intel: "C1297A47-86C4-4C1F-97FA-950631F94777"
   linkid = on_arch_conditional arm: "2099618", intel: "2069439"
 
-  version "121.0.2277.4"
-  sha256 arm:   "b15e62bd34ccc8131a5178fc9a45a9d28c75e25b9ca297edbb3e31402a81963d",
-         intel: "f0608ee610b12c9506c801b09e9c6251610e6c4d8275f9b2703bddbd514d75af"
+  on_arm do
+    version "121.0.2277.49,5b441837-1f3a-489c-bcde-340f16d74792"
+    sha256 "05b803fe611fb1db608f1602b9ed228504f0f73530ded71bc40bd4974c7d365a"
+  end
+  on_intel do
+    version "121.0.2277.49,1de99b32-8e73-41f6-8b5f-e117c2ca3b2a"
+    sha256 "5c93c7a5a43a22e68fac143de83caf9896b898100a2678dc3b3bf5888f15e140"
+  end
 
-  url "https://officecdn-microsoft-com.akamaized.net/pr/#{folder}/MacAutoupdate/MicrosoftEdgeBeta-#{version}.pkg",
-      verified: "officecdn-microsoft-com.akamaized.net/"
+  url "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/#{version.csv.second}/MicrosoftEdgeBeta-#{version.csv.first}.pkg"
   name "Microsoft Edge Beta"
   desc "Multi-platform web browser"
-  homepage "https://www.microsoftedgeinsider.com/"
+  homepage "https://www.microsoft.com/en-us/edge/download/insider?form="
 
   livecheck do
     url "https://go.microsoft.com/fwlink/?linkid=#{linkid}"
-    strategy :header_match
+    regex(%r{/([^/]+)/MicrosoftEdgeBeta[._-]v?(\d+(?:\.\d+)+)\.pkg}i)
+    strategy :header_match do |headers, regex|
+      headers["location"].scan(regex).map { |match| "#{match[1]},#{match[0]}" }
+    end
   end
 
   auto_updates true
-  depends_on cask: "microsoft-auto-update"
 
-  pkg "MicrosoftEdgeBeta-#{version}.pkg",
+  pkg "MicrosoftEdgeBeta-#{version.csv.first}.pkg",
       choices: [
         {
           "choiceIdentifier" => "com.microsoft.package.Microsoft_AutoUpdate.app", # Office16_all_autoupdate.pkg
@@ -30,17 +34,12 @@ cask "microsoft-edge-beta" do
         },
       ]
 
-  uninstall launchctl: [
-              "application.chainapp.*",
+  uninstall pkgutil:   "com.microsoft.edgemac.Beta",
+            launchctl: [
               "com.microsoft.EdgeUpdater.update-internal.109.0.1518.89.system",
               "com.microsoft.EdgeUpdater.update.system",
               "com.microsoft.EdgeUpdater.wake.109.0.1518.89.system",
-            ],
-            pkgutil:   [
-              "com.microsoft.edgemac.Beta",
-              "com.microsoft.package.Microsoft_AutoUpdate.app",
-            ],
-            quit:      "com.microsoft.autoupdate2"
+            ]
 
   zap trash: [
     "~/Library/Application Support/Microsoft Edge Beta",
