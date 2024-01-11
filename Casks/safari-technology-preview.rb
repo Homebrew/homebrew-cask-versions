@@ -1,14 +1,14 @@
 cask "safari-technology-preview" do
   on_ventura :or_older do
-    version "185,052-23415-2023-12-20-B7B4E6CA-D827-4658-BC35-C600CB1C7ED3"
-    sha256 "d955cbdb35e4efb1d9aa7c92145ba73036c5a7cd4c56526d967c12af6a2a4cb2"
+    version "186,052-32269-20240110-58C89A2C-9547-42D2-85BB-9B64123D4123"
+    sha256 "dc79e349c563dce7abd1761a4914084b10fd4573c7b45cabc00ec3f93a8fa7a1"
   end
   on_sonoma :or_newer do
-    version "185,052-23687-2023-12-20-2A3F9120-DC7C-4616-A557-4E860178CCE1"
-    sha256 "a965db0da7e208f7f4e7d5e6384c007d2ec1d245c4fc0162ba3a7005b85b5f7b"
+    version "186,052-32265-20240110-35302061-1A35-4DB6-AEAF-727130B629BB"
+    sha256 "fc6330e4f0c5f817a627ef9ba5db679d7c4c9308ef6f324b4840895bf9fde984"
   end
 
-  url "https://secure-appldnld.apple.com/STP/#{version.csv.second}/Safari%20Technology%20Preview.dmg"
+  url "https://secure-appldnld.apple.com/STP/#{version.csv.second}/SafariTechnologyPreview.dmg"
   name "Safari Technology Preview"
   desc "Web browser"
   homepage "https://developer.apple.com/safari/resources/"
@@ -16,7 +16,7 @@ cask "safari-technology-preview" do
   livecheck do
     url :homepage
     regex(%r{
-      href=.*?/(\h+(?:-\h+)*)/Safari%20Technology%20Preview\.dmg
+      href=.*?/(\h+(?:-\h+)*)/Safari(?:%20)?Technology(?:%20)?Preview\.dmg
       .*?macOS(?:\s|&nbsp;)*#{Regexp.escape(MacOS.version.to_s)}[\s.<]
     }ix)
     strategy :page_match do |page, regex|
