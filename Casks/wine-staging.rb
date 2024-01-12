@@ -1,6 +1,6 @@
 cask "wine-staging" do
-  version "9.0-rc3"
-  sha256 "f5a002ca2b70534f032d770523844771ec43aae5ffda3ad6aeebe2a8ecd2e6e9"
+  version "9.0-rc4"
+  sha256 "23031cc0927ae92b54660296d576c77c76835e27cee9a215b0452d3eea097a3d"
 
   # Current winehq packages are deprecated and these are packages from
   # the new maintainers that will eventually be pushed to Winehq.
