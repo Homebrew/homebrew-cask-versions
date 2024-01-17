@@ -1,6 +1,6 @@
 cask "qbittorrent-lt20" do
-  version "4.6.2"
-  sha256 "d554d18a5512ecd46a4a03f86d18872789f655997abddca1c0e8797e6de2ca94"
+  version "4.6.3"
+  sha256 "d822814442b3fb02f09add007a1bbc5681c81f7ad81f6000fdaa00d02ee376b9"
 
   url "https://downloads.sourceforge.net/qbittorrent/qbittorrent-mac/qbittorrent-#{version}/qbittorrent-#{version}_lt20.dmg",
       verified: "downloads.sourceforge.net/qbittorrent/qbittorrent-mac/"
