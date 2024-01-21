@@ -92,9 +92,9 @@ cask "firefox-nightly" do
 
   zap trash: [
         "/Library/Logs/DiagnosticReports/firefox_*",
-        "~/Library/Application Support/Firefox",
         "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.firefox.sfl*",
         "~/Library/Application Support/CrashReporter/firefox_*",
+        "~/Library/Application Support/Firefox",
         "~/Library/Caches/Firefox",
         "~/Library/Caches/Mozilla/updates/Applications/Firefox",
         "~/Library/Caches/org.mozilla.firefox",
