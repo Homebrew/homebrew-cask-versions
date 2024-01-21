@@ -29,11 +29,11 @@ cask "vmware-fusion7" do
     set_ownership "#{appdir}/VMware Fusion.app"
   end
 
+  # NOTE: '~/Library/Application Support/VMware Fusion' is not safe
+  # to delete. In older versions, VM images were located there.
   zap trash: [
-    # NOTE: '~/Library/Application Support/VMware Fusion' is not safe
-    # to delete. In older versions, VM images were located there.
     "~/Library/Caches/com.vmware.fusion",
-    "~/Library/Logs/VMware",
     "~/Library/Logs/VMware Fusion",
+    "~/Library/Logs/VMware",
   ]
 end
