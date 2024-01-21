@@ -12,7 +12,7 @@ cask "transmit4" do
   app "Transmit.app"
 
   zap trash: [
-    "~/Library/Preferences/com.panic.Transmit.plist",
     "~/Library/Application Support/Transmit",
+    "~/Library/Preferences/com.panic.Transmit.plist",
   ]
 end
