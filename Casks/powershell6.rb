@@ -24,7 +24,7 @@ cask "powershell6" do
       rmdir: [
         "~/.cache",
         "~/.config",
-        "~/.local/share",
         "~/.local",
+        "~/.local/share",
       ]
 end

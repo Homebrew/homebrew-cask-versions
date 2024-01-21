@@ -51,8 +51,8 @@ cask "docker-edge" do
         "~/Library/Saved Application State/com.electron.docker-frontend.savedState",
       ],
       rmdir: [
-        "~/Library/Caches/KSCrashReports",
         "~/Library/Caches/com.plausiblelabs.crashreporter.data",
+        "~/Library/Caches/KSCrashReports",
       ]
 
   caveats do
