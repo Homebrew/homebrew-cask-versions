@@ -25,9 +25,9 @@ cask "adguard-nightly" do
               "com.adguard.mac.adguard.xpcgate2",
             ],
             delete:    [
-              "/Library/com.adguard.mac.adguard.pac",
               "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard",
               "/Library/Application Support/com.adguard.Adguard",
+              "/Library/com.adguard.mac.adguard.pac",
             ],
             rmdir:     "/Library/Application Support/AdGuard Software"
 
