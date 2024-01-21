@@ -19,9 +19,9 @@ cask "hancom-word-2014" do
             ]
 
   zap trash: [
-    "~/Library/Caches/com.hancom.office.hwp.mac.general",
-    "~/Library/Preferences/com.hancom.office.hwp.mac.general.plist",
     "/private/var/db/receipts/com.hancom.office.hwp.mac.general.bom",
     "/private/var/db/receipts/com.hancom.office.hwp.mac.general.plist",
+    "~/Library/Caches/com.hancom.office.hwp.mac.general",
+    "~/Library/Preferences/com.hancom.office.hwp.mac.general.plist",
   ]
 end
