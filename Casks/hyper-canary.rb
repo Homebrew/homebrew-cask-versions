@@ -24,12 +24,12 @@ cask "hyper-canary" do
   binary "#{appdir}/Hyper.app/Contents/Resources/bin/hyper"
 
   zap trash: [
-    "~/.hyper_plugins",
     "~/.hyper.js",
+    "~/.hyper_plugins",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.zeit.hyper.sfl*",
     "~/Library/Application Support/Hyper",
-    "~/Library/Caches/co.zeit.hyper.ShipIt",
     "~/Library/Caches/co.zeit.hyper",
+    "~/Library/Caches/co.zeit.hyper.ShipIt",
     "~/Library/Cookies/co.zeit.hyper.binarycookies",
     "~/Library/Logs/Hyper",
     "~/Library/Preferences/ByHost/co.zeit.hyper.ShipIt.*.plist",
