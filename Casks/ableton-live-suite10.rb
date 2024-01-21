@@ -18,10 +18,10 @@ cask "ableton-live-suite10" do
 
   zap trash: [
     "/Library/Logs/DiagnosticReports/Max_*.*_resource.diag",
+    "~/Library/Application Support/Ableton",
     "~/Library/Application Support/CrashReporter/Ableton *_*.plist",
     "~/Library/Application Support/CrashReporter/Live_*.plist",
     "~/Library/Application Support/CrashReporter/Max_*.plist",
-    "~/Library/Application Support/Ableton",
     "~/Library/Application Support/Cycling '74",
     "~/Library/Caches/Ableton",
     "~/Library/Preferences/Ableton",
