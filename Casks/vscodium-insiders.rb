@@ -17,8 +17,6 @@ cask "vscodium-insiders" do
   app "VSCodium - Insiders.app"
   binary "#{appdir}/VSCodium - Insiders.app/Contents/Resources/app/bin/codium-insiders", target: "codium-insiders"
 
-  uninstall quit: "com.vscodium.VSCodiumInsiders"
-
   zap trash: [
     "~/.vscodium-insiders",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.vscodium.vscodiuminsiders.sfl*",
