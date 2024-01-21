@@ -32,10 +32,10 @@ cask "mullvadvpn-beta" do
             launchctl: "net.mullvad.daemon"
 
   zap trash: [
-    "~/Library/Application Support/Mullvad VPN",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.mullvad.vpn.sfl*",
+    "~/Library/Application Support/Mullvad VPN",
     "~/Library/Logs/Mullvad VPN",
-    "~/Library/Preferences/net.mullvad.vpn.plist",
     "~/Library/Preferences/net.mullvad.vpn.helper.plist",
+    "~/Library/Preferences/net.mullvad.vpn.plist",
   ]
 end
