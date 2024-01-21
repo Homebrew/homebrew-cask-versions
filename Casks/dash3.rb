@@ -14,8 +14,8 @@ cask "dash3" do
   app "Dash.app"
 
   zap trash: [
-    "~/Library/Application Support/Dash",
     "~/Library/Application Support/com.kapeli.dashdoc",
+    "~/Library/Application Support/Dash",
     "~/Library/Preferences/com.kapeli.dash.plist",
     "~/Library/Preferences/com.kapeli.dashdoc.plist",
   ]
