@@ -62,6 +62,12 @@ cask "parallels14" do
   end
 
   uninstall delete: [
+    "/Applications/Parallels Desktop.app",
+    "/Applications/Parallels Desktop.app/Contents/Applications/Parallels Link.app",
+    "/Applications/Parallels Desktop.app/Contents/Applications/Parallels Mounter.app",
+    "/Applications/Parallels Desktop.app/Contents/Applications/Parallels Technical Data Reporter.app",
+    "/Applications/Parallels Desktop.app/Contents/MacOS/Parallels Service.app",
+    "/Applications/Parallels Desktop.app/Contents/MacOS/Parallels VM.app",
     "/usr/local/bin/prl_convert",
     "/usr/local/bin/prl_disk_tool",
     "/usr/local/bin/prl_perf_ctl",
@@ -69,12 +75,6 @@ cask "parallels14" do
     "/usr/local/bin/prlctl",
     "/usr/local/bin/prlexec",
     "/usr/local/bin/prlsrvctl",
-    "/Applications/Parallels Desktop.app",
-    "/Applications/Parallels Desktop.app/Contents/Applications/Parallels Link.app",
-    "/Applications/Parallels Desktop.app/Contents/Applications/Parallels Mounter.app",
-    "/Applications/Parallels Desktop.app/Contents/Applications/Parallels Technical Data Reporter.app",
-    "/Applications/Parallels Desktop.app/Contents/MacOS/Parallels Service.app",
-    "/Applications/Parallels Desktop.app/Contents/MacOS/Parallels VM.app",
   ]
 
   zap trash: [

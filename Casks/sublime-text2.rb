@@ -14,8 +14,8 @@ cask "sublime-text2" do
 
   zap trash: [
     "~/Library/Application Support/Sublime Text 2",
-    "~/Library/Preferences/com.sublimetext.2.plist",
     "~/Library/Caches/com.sublimetext.2",
+    "~/Library/Preferences/com.sublimetext.2.plist",
     "~/Library/Saved Application State/com.sublimetext.2.savedState",
   ]
 end

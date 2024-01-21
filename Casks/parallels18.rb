@@ -47,6 +47,7 @@ cask "parallels18" do
   end
 
   uninstall delete: [
+              "/Library/Preferences/Parallels",
               "/usr/local/bin/prl_convert",
               "/usr/local/bin/prl_disk_tool",
               "/usr/local/bin/prl_perf_ctl",
@@ -54,7 +55,6 @@ cask "parallels18" do
               "/usr/local/bin/prlctl",
               "/usr/local/bin/prlexec",
               "/usr/local/bin/prlsrvctl",
-              "/Library/Preferences/Parallels",
             ],
             signal: ["TERM", "com.parallels.desktop.console"]
 

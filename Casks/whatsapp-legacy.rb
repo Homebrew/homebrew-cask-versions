@@ -28,8 +28,8 @@ cask "whatsapp-legacy" do
     "~/Library/Caches/WhatsApp",
     "~/Library/Caches/WhatsApp.ShipIt",
     "~/Library/Preferences/ByHost/WhatsApp.ShipIt.*.plist",
-    "~/Library/Preferences/WhatsApp.plist",
     "~/Library/Preferences/WhatsApp-Helper.plist",
+    "~/Library/Preferences/WhatsApp.plist",
     "~/Library/Saved Application State/WhatsApp.savedState",
   ]
 end

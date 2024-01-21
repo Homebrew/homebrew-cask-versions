@@ -17,9 +17,9 @@ cask "ableton-live-lite10" do
   uninstall quit: "com.ableton.live"
 
   zap trash: [
+    "~/Library/Application Support/Ableton",
     "~/Library/Application Support/CrashReporter/Ableton *_*.plist",
     "~/Library/Application Support/CrashReporter/Live_*.plist",
-    "~/Library/Application Support/Ableton",
     "~/Library/Caches/Ableton",
     "~/Library/Preferences/Ableton",
     "~/Library/Preferences/com.ableton.live.plist*",

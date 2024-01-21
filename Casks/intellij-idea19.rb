@@ -23,10 +23,10 @@ cask "intellij-idea19" do
   end
 
   zap trash: [
-    "~/Library/Preferences/com.jetbrains.intellij.plist",
+    "~/Library/Application Support/IntelliJIdea#{version.major_minor}",
     "~/Library/Caches/IntelliJIdea#{version.major_minor}",
     "~/Library/Logs/IntelliJIdea#{version.major_minor}",
-    "~/Library/Application Support/IntelliJIdea#{version.major_minor}",
+    "~/Library/Preferences/com.jetbrains.intellij.plist",
     "~/Library/Preferences/IntelliJIdea#{version.major_minor}",
     "~/Library/Saved Application State/com.jetbrains.intellij.savedState",
   ]

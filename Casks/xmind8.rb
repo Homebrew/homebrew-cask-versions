@@ -14,7 +14,7 @@ cask "xmind8" do
   app "XMind.app"
 
   zap trash: [
-    "~/Library/XMind",
     "~/Library/Saved Application State/org.xmind.cathy.application.savedState",
+    "~/Library/XMind",
   ]
 end

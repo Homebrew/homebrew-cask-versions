@@ -25,12 +25,12 @@ cask "omnifocus2" do
   uninstall quit: "com.omnigroup.OmniFocus#{version.major}"
 
   zap trash: [
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.omnigroup.omnifocus#{version}.sfl*",
+    "~/Library/Caches/Metadata/com.omnigroup.OmniFocus#{version}",
     "~/Library/Containers/com.omnigroup.OmniFocus#{version}",
+    "~/Library/Group Containers/34YW5XSRB7.com.omnigroup.OmniFocus",
     "~/Library/Preferences/com.omnigroup.OmniFocus#{version}.LSSharedFileList.plist",
     "~/Library/Preferences/com.omnigroup.OmniSoftwareUpdate.plist",
-    "~/Library/Caches/Metadata/com.omnigroup.OmniFocus#{version}",
-    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.omnigroup.omnifocus#{version}.sfl*",
-    "~/Library/Group Containers/34YW5XSRB7.com.omnigroup.OmniFocus",
     "~/Library/Saved Application State/com.omnigroup.OmniFocus#{version}.savedState",
   ]
 end

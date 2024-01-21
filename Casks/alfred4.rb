@@ -28,8 +28,8 @@ cask "alfred4" do
     "~/Library/Application Support/Alfred",
     "~/Library/Caches/com.runningwithcrayons.Alfred",
     "~/Library/Cookies/com.runningwithcrayons.Alfred.binarycookies",
-    "~/Library/Preferences/com.runningwithcrayons.Alfred.plist",
     "~/Library/Preferences/com.runningwithcrayons.Alfred-Preferences.plist",
+    "~/Library/Preferences/com.runningwithcrayons.Alfred.plist",
     "~/Library/Saved Application State/com.runningwithcrayons.Alfred-Preferences.savedState",
   ]
 end
