@@ -33,14 +33,14 @@ cask "istat-menus5" do
   zap trash: [
     "/Users/Shared/.iStatMenus",
     "~/Library/Application Support/iStat Menus",
-    "~/Library/Caches/com.bjango.istatmenus",
-    "~/Library/Caches/com.bjango.istatmenusstatus",
     "~/Library/Caches/com.bjango.iStat-Menus-Updater",
+    "~/Library/Caches/com.bjango.istatmenus",
     "~/Library/Caches/com.bjango.iStatMenusAgent",
+    "~/Library/Caches/com.bjango.istatmenusstatus",
     "~/Library/Cookies/com.bjango.iStat-Menus-Updater.binarycookies",
     "~/Library/Logs/iStat Menus",
-    "~/Library/Preferences/com.bjango.istatmenus.plist",
     "~/Library/Preferences/com.bjango.istatmenus#{version.major}.extras.plist",
+    "~/Library/Preferences/com.bjango.istatmenus.plist",
     "~/Library/Preferences/com.bjango.istatmenusstatus.plist",
   ]
 end
