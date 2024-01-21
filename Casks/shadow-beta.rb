@@ -18,7 +18,7 @@ cask "shadow-beta" do
   app "Shadow PC Beta.app"
 
   zap trash: [
-    "~/Library/Preferences/com.electron.shadow-beta.plist",
     "~/Library/Application Support/shadow-preprod",
+    "~/Library/Preferences/com.electron.shadow-beta.plist",
   ]
 end
