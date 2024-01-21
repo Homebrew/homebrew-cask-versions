@@ -28,8 +28,8 @@ cask "intellij-idea-ce19" do
     "~/Library/Application Support/IdeaIC#{version.major_minor}",
     "~/Library/Caches/IdeaIC#{version.major_minor}",
     "~/Library/Logs/IdeaIC#{version.major_minor}",
-    "~/Library/Preferences/IdeaIC#{version.major_minor}",
     "~/Library/Preferences/com.jetbrains.intellij.ce.plist",
+    "~/Library/Preferences/IdeaIC#{version.major_minor}",
     "~/Library/Saved Application State/com.jetbrains.intellij.ce.savedState",
   ]
 end
