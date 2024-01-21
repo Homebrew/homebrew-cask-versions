@@ -14,8 +14,8 @@ cask "dash4" do
   app "Dash.app"
 
   zap trash: [
-    "~/Library/Application Support/Dash",
     "~/Library/Application Support/com.kapeli.dashdoc",
+    "~/Library/Application Support/Dash",
     "~/Library/Caches/com.kapeli.dashdoc",
     "~/Library/Cookies/com.kapeli.dashdoc.binarycookies",
     "~/Library/Logs/Dash",
