@@ -1,7 +1,7 @@
 cask "safari-technology-preview" do
   on_ventura :or_older do
-    version "186,052-32269-20240110-58C89A2C-9547-42D2-85BB-9B64123D4123"
-    sha256 "dc79e349c563dce7abd1761a4914084b10fd4573c7b45cabc00ec3f93a8fa7a1"
+    version "187,052-37186-2024-01-24-9234A9F4-0D1B-4CF8-8560-2ABA2EBF6544"
+    sha256 "7e18113a55b340b2eeb1d8dea9c50d1534c7dfda42d9bcfa4ea2676b2a7c8a33"
   end
   on_sonoma :or_newer do
     version "187,052-37180-2024-01-24-DAE4FAEB-CD77-4485-8B2B-831B257469F3"
