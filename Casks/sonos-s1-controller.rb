@@ -1,6 +1,6 @@
 cask "sonos-s1-controller" do
-  version "57.19-46310,rozcvdwa"
-  sha256 "fab37ffd1c8a818375b476e398d8e46c7455b8c4fbf4c184a34de88ee2dd935e"
+  version "57.19-49220,tJiCdMg7vB"
+  sha256 "f3dcde322f2f0705ab920bbf00bf0099be92759023a460bcc75398c92504e837"
 
   url "https://update-software.sonos.com/software/#{version.csv.second}/Sonos_#{version.csv.first}.dmg"
   name "Sonos S1"
