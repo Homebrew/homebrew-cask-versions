@@ -17,13 +17,13 @@ cask "adguard-nightly" do
 
   pkg "AdGuard.pkg"
 
-  uninstall quit:      "com.adguard.mac.adguard",
-            pkgutil:   "com.adguard.mac.adguard-pkg",
-            launchctl: [
+  uninstall launchctl: [
               "com.adguard.mac.adguard.pac",
               "com.adguard.mac.adguard.tun-helper",
               "com.adguard.mac.adguard.xpcgate2",
             ],
+            quit:      "com.adguard.mac.adguard",
+            pkgutil:   "com.adguard.mac.adguard-pkg",
             delete:    [
               "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard",
               "/Library/Application Support/com.adguard.Adguard",

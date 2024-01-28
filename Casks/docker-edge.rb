@@ -15,7 +15,12 @@ cask "docker-edge" do
 
   app "Docker.app"
 
-  uninstall delete:    [
+  uninstall launchctl: [
+              "com.docker.helper",
+              "com.docker.vmnetd",
+            ],
+            quit:      "com.docker.docker",
+            delete:    [
               "/Library/PrivilegedHelperTools/com.docker.vmnetd",
               "/private/var/tmp/com.docker.vmnetd.socket",
               "/usr/local/bin/docker",
@@ -27,12 +32,7 @@ cask "docker-edge" do
               "/usr/local/bin/kubectl.docker",
               "/usr/local/bin/notary",
               "/usr/local/bin/vpnkit",
-            ],
-            launchctl: [
-              "com.docker.helper",
-              "com.docker.vmnetd",
-            ],
-            quit:      "com.docker.docker"
+            ]
 
   zap trash: [
         "/usr/local/bin/docker-compose.backup",

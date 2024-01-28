@@ -25,7 +25,17 @@ cask "microsoft-office-2016" do
 
   pkg "Microsoft_Office_#{version}_Installer.pkg"
 
-  uninstall pkgutil:   [
+  uninstall launchctl: [
+              "com.microsoft.autoupdate.helper",
+              "com.microsoft.office.licensing.helper",
+              "com.microsoft.office.licensingV2.helper",
+              "com.microsoft.OneDriveStandaloneUpdater",
+              "com.microsoft.OneDriveStandaloneUpdaterDaemon",
+              "com.microsoft.OneDriveUpdaterDaemon",
+              "com.microsoft.update.agent",
+            ],
+            quit:      "com.microsoft.autoupdate2",
+            pkgutil:   [
               "com.microsoft.OneDrive",
               "com.microsoft.package.DFonts",
               "com.microsoft.package.Fonts",
@@ -46,19 +56,15 @@ cask "microsoft-office-2016" do
               "/Applications/Microsoft PowerPoint.app",
               "/Applications/Microsoft Word.app",
               "/Applications/OneDrive.app",
-            ],
-            launchctl: [
-              "com.microsoft.autoupdate.helper",
-              "com.microsoft.office.licensing.helper",
-              "com.microsoft.office.licensingV2.helper",
-              "com.microsoft.OneDriveStandaloneUpdater",
-              "com.microsoft.OneDriveStandaloneUpdaterDaemon",
-              "com.microsoft.OneDriveUpdaterDaemon",
-              "com.microsoft.update.agent",
-            ],
-            quit:      "com.microsoft.autoupdate2"
+            ]
 
-  zap trash:     [
+  zap launchctl: [
+        "com.microsoft.autoupdate.helper",
+        "com.microsoft.autoupdate.helpertool",
+        "com.microsoft.update.agent",
+      ],
+      pkgutil:   "com.microsoft.package.Microsoft_AutoUpdate.app",
+      trash:     [
         "~/Library/Application Scripts/com.microsoft.errorreporting",
         "~/Library/Application Scripts/com.microsoft.Excel",
         "~/Library/Application Scripts/com.microsoft.Office365ServiceV2",
@@ -100,11 +106,5 @@ cask "microsoft-office-2016" do
       rmdir:     [
         "~/Library/Caches/Microsoft",
         "~/Library/Caches/Microsoft/uls",
-      ],
-      launchctl: [
-        "com.microsoft.autoupdate.helper",
-        "com.microsoft.autoupdate.helpertool",
-        "com.microsoft.update.agent",
-      ],
-      pkgutil:   "com.microsoft.package.Microsoft_AutoUpdate.app"
+      ]
 end

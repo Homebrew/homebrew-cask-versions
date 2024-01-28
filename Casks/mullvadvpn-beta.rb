@@ -27,9 +27,9 @@ cask "mullvadvpn-beta" do
 
   pkg "MullvadVPN-#{version}.pkg"
 
-  uninstall pkgutil:   "net.mullvad.vpn",
+  uninstall launchctl: "net.mullvad.daemon",
             quit:      "net.mullvad.vpn",
-            launchctl: "net.mullvad.daemon"
+            pkgutil:   "net.mullvad.vpn"
 
   zap trash: [
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.mullvad.vpn.sfl*",

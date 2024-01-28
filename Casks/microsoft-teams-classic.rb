@@ -29,11 +29,11 @@ cask "microsoft-teams-classic" do
 
   pkg "Teams_osx.pkg"
 
-  uninstall pkgutil:   [
+  uninstall launchctl: "com.microsoft.teams.TeamsUpdaterDaemon",
+            pkgutil:   [
               "com.microsoft.MSTeamsAudioDevice",
               "com.microsoft.teams",
             ],
-            launchctl: "com.microsoft.teams.TeamsUpdaterDaemon",
             delete:    [
               "/Applications/Microsoft Teams classic.app",
               "/Library/Logs/Microsoft/Teams",

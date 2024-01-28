@@ -17,7 +17,11 @@ cask "google-chrome-dev" do
 
   app "Google Chrome Dev.app"
 
-  zap trash:     [
+  zap launchctl: [
+        "com.google.keystone.agent",
+        "com.google.keystone.daemon",
+      ],
+      trash:     [
         "/Library/Caches/com.google.SoftwareUpdate.*",
         "/Library/Google/Google Chrome Brand.plist",
         "/Library/Google/GoogleSoftwareUpdate",
@@ -46,9 +50,5 @@ cask "google-chrome-dev" do
         "~/Library/Application Support/Google",
         "~/Library/Caches/Google",
         "~/Library/Google",
-      ],
-      launchctl: [
-        "com.google.keystone.agent",
-        "com.google.keystone.daemon",
       ]
 end

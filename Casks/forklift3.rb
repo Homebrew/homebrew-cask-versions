@@ -15,15 +15,15 @@ cask "forklift3" do
 
   app "ForkLift.app"
 
-  uninstall delete:    "/Library/PrivilegedHelperTools/com.binarynights.ForkLiftHelper",
-            launchctl: [
+  uninstall launchctl: [
               "com.binarynights.ForkLiftHelper",
               "com.binarynights.ForkLiftMini",
             ],
             quit:      [
               "com.binarynights.ForkLift-#{version.major}",
               "com.binarynights.ForkLiftMini",
-            ]
+            ],
+            delete:    "/Library/PrivilegedHelperTools/com.binarynights.ForkLiftHelper"
 
   zap trash: [
     "~/Library/Application Support/ForkLift",

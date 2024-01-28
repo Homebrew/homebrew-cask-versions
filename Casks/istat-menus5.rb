@@ -15,8 +15,7 @@ cask "istat-menus5" do
 
   app "iStat Menus.app"
 
-  uninstall delete:    "/Library/Application Support/iStat Menus #{version.major}",
-            launchctl: [
+  uninstall launchctl: [
               "com.bjango.istatmenusagent",
               "com.bjango.istatmenusdaemon",
               "com.bjango.istatmenusnotifications",
@@ -28,7 +27,8 @@ cask "istat-menus5" do
               ["TERM", "com.bjango.istatmenusstatus"],
               ["TERM", "com.bjango.istatmenus"],
               ["HUP", "com.bjango.istatmenus"],
-            ]
+            ],
+            delete:    "/Library/Application Support/iStat Menus #{version.major}"
 
   zap trash: [
     "/Users/Shared/.iStatMenus",
