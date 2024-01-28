@@ -17,7 +17,11 @@ cask "google-chrome-canary" do
 
   app "Google Chrome Canary.app"
 
-  zap trash:     [
+  zap launchctl: [
+        "com.google.keystone.agent",
+        "com.google.keystone.daemon",
+      ],
+      trash:     [
         "/Library/Caches/com.google.SoftwareUpdate.*",
         "/Library/Google/Google Chrome Brand.plist",
         "/Library/Google/GoogleSoftwareUpdate",
@@ -46,9 +50,5 @@ cask "google-chrome-canary" do
         "~/Library/Application Support/Google",
         "~/Library/Caches/Google",
         "~/Library/Google",
-      ],
-      launchctl: [
-        "com.google.keystone.agent",
-        "com.google.keystone.daemon",
       ]
 end

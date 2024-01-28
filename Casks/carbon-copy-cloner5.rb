@@ -24,11 +24,11 @@ cask "carbon-copy-cloner5" do
 
   app "Carbon Copy Cloner.app"
 
-  uninstall login_item: "CCC User Agent",
-            quit:       [
+  uninstall quit:       [
               "com.bombich.ccc",
               "com.bombich.cccuseragent",
-            ]
+            ],
+            login_item: "CCC User Agent"
 
   zap trash: [
     "/Library/LaunchDaemons/com.bombich.ccchelper.plist",

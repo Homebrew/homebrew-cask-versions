@@ -51,7 +51,8 @@ cask "parallels15" do
     set_ownership "#{appdir}/Parallels Desktop.app"
   end
 
-  uninstall delete: [
+  uninstall signal: ["TERM", "com.parallels.desktop.console"],
+            delete: [
               "/usr/local/bin/prl_convert",
               "/usr/local/bin/prl_disk_tool",
               "/usr/local/bin/prl_perf_ctl",
@@ -59,8 +60,7 @@ cask "parallels15" do
               "/usr/local/bin/prlctl",
               "/usr/local/bin/prlexec",
               "/usr/local/bin/prlsrvctl",
-            ],
-            signal: ["TERM", "com.parallels.desktop.console"]
+            ]
 
   zap trash: [
     "~/.parallels_settings",
