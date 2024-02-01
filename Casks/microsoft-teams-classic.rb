@@ -1,6 +1,6 @@
 cask "microsoft-teams-classic" do
-  version "1.7.00.151"
-  sha256 "6877a6762ca6219b0c69b70a3154956d8947943a4ab931fbec83d9a88630dc6c"
+  version "1.7.00.1859"
+  sha256 "2e9f9aaf210c3b950808a3991858b8dd5e15c7776a1369d491f944d5e58bda2e"
 
   url "https://statics.teams.cdn.office.net/production-osx/#{version}/Teams_osx.pkg",
       verified: "statics.teams.cdn.office.net/production-osx/"
