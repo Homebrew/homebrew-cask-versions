@@ -33,13 +33,13 @@ See [this pull request for exist-db-nightly](https://github.com/Homebrew/homebre
 Example ([exist-db-nightly.rb](https://github.com/Homebrew/homebrew-cask-versions/blob/16b3bab91ab5b9a69ef7c456441b0e0fced56516/Casks/exist-db-nightly.rb#L6#L14)):
 
 ```ruby
-  url do
-    require "open-uri"
-    base_url = "http://static.adamretter.org.uk/exist-nightly"
-    builds_url = "#{base_url}/table.html"
-    latest_build_filename = URI(builds_url).open do |io|
-      io.read.scan(%r{<tr>.*?<td>(.*?)</td>.*?<a href="([^\"]+)">dmg}m).max[1]
-    end
-    "#{base_url}/#{latest_build_filename}"
+url do
+  require "open-uri"
+  base_url = "http://static.adamretter.org.uk/exist-nightly"
+  builds_url = "#{base_url}/table.html"
+  latest_build_filename = URI(builds_url).open do |io|
+    io.read.scan(%r{<tr>.*?<td>(.*?)</td>.*?<a href="([^\"]+)">dmg}m).max[1]
   end
+  "#{base_url}/#{latest_build_filename}"
+end
 ```
