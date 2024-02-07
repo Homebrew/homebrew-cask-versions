@@ -18,7 +18,7 @@ cask "android-studio-preview-beta" do
 
   auto_updates true
 
-  app "Android Studio Preview.app", target: "Android Studio Preview Beta.app"
+  app "Android Studio.app", target: "Android Studio Preview Beta.app"
 
   zap trash: [
         "~/.android",
