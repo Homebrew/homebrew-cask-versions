@@ -1,9 +1,9 @@
 cask "vscodium-insiders" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.85.0.23310-insider"
-  sha256 arm:   "a0f0915b0eeed74d4fc17b2dbfcef40665d234c8777a2a67c35f30e99e734f5f",
-         intel: "fd6b0e6c6037f89f624580f7f6178761f608d8f5305cc52b6f025c309f06ee24"
+  version "1.86.0.24038-insider"
+  sha256 arm:   "eb3d842297373b4b7a9f95e52969251206ee61589db43f58b2961f024452e056",
+         intel: "0a44da8c57683ac1ae59fb6d1b16ae09378ed7f11c131268f26e568ffde7118d"
 
   url "https://github.com/VSCodium/vscodium-insiders/releases/download/#{version}/VSCodium.#{arch}.#{version}.dmg",
       verified: "github.com/VSCodium/vscodium-insiders/"
