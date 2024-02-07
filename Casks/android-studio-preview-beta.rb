@@ -1,9 +1,9 @@
 cask "android-studio-preview-beta" do
   arch arm: "mac_arm", intel: "mac"
 
-  version "2023.2.1.20"
-  sha256 arm:   "fde85c1aad1852322dc61de383ce691df936b73237513159831f3f16eebabf27",
-         intel: "a55342150f9c0f7695b19567a80f2fe3bbe80e55cdebf33c50db4f10df473097"
+  version "2023.2.1.21"
+  sha256 arm:   "ef9431beef0aee330ae589bb343e9224ac16545aecff549440f4a535690dffd3",
+         intel: "7a3fba705027dd6e857ced6aba313050283a0c892e178499f8da0583e57b2f93"
 
   url "https://redirector.gvt1.com/edgedl/android/studio/install/#{version}/android-studio-#{version}-#{arch}.dmg",
       verified: "redirector.gvt1.com/edgedl/android/studio/install/"
@@ -18,7 +18,7 @@ cask "android-studio-preview-beta" do
 
   auto_updates true
 
-  app "Android Studio Preview.app", target: "Android Studio Preview Beta.app"
+  app "Android Studio.app", target: "Android Studio Preview Beta.app"
 
   zap trash: [
         "~/.android",
