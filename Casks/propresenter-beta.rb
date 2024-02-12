@@ -17,8 +17,8 @@ cask "propresenter-beta" do
     depends_on macos: ">= :big_sur"
   end
   on_monterey :or_newer do
-    version "7.16,118489098"
-    sha256 "8e22c921c6395ca90535692ffc64535506bba1757f5dbd2588eb89c2acb678c5"
+    version "7.16,118489099"
+    sha256 "49aa3a698849bbde593acb33560cb2abef8eab659f53be73db49e5ab29102293"
 
     livecheck do
       url "https://api.renewedvision.com/v1/pro/upgrade?platform=macos&osVersion=#{MacOS.full_version}&appVersion=0&buildNumber=0&includeNotes=0&channel=beta"
