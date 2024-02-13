@@ -13,33 +13,105 @@ on:
 env:
   CASKS: >
     1password-beta
+    1password-cli1
+    adguard-vpn-nightly
+    android-studio-preview-beta
     android-studio-preview-canary
+    blender-lts
     brave-browser-beta
     brave-browser-dev
     brave-browser-nightly
+    buckets-beta
+    chromedriver-beta
+    corretto11
+    corretto17
+    corretto8
     defold-alpha
+    defold-beta
     discord-canary
+    discord-development
+    discord-ptb
+    dotnet-preview
+    dotnet-sdk-preview
     dropbox-beta
+    elephas-beta
     emacs-nightly
+    figma-beta
+    firefox-esr
+    folding-at-home-beta
+    geogebra5
+    github-beta
     google-chrome-beta
     google-chrome-canary
     google-chrome-dev
+    gpg-suite-nightly
+    inso-beta
+    insomnia-alpha
     iterm2-nightly
+    java-beta
+    lando-edge
+    libreoffice-still
+    local-beta
+    macfuse-dev
     macloggerdx-beta
     microsoft-edge-beta
     microsoft-edge-dev
+    microsoft-openjdk11
+    microsoft-openjdk17
+    microsoft-teams-classic
+    mixxx-snapshot
+    monal-beta
     mongodb-compass-beta
+    obs-beta
+    olympus
+    openemu-experimental
     openscad-snapshot
     openshot-video-editor-daily
     opera-beta
     opera-developer
+    pdf-expert-beta
+    playcover-community-beta
+    postmancanary
+    powershell-preview
+    propresenter-beta
+    qbittorrent-lt20
+    qgis-ltr
+    royal-tsx-beta
+    safari-technology-preview
+    semeru-jdk11-open
+    semeru-jdk17-open
+    semeru-jdk8-open
+    shadow-beta
     signal-beta
     sketch-beta
+    skype-preview
     slack-beta
+    sonos-s1-controller
+    sourcetree-beta
+    telegram-desktop-beta
+    temurin11
+    temurin17
+    temurin21
+    temurin8
     termius-beta
+    threema-beta
+    tor-browser-alpha
+    tsh13
+    tunnelblick-beta
+    typora-dev
+    virtualbox-beta
     vivaldi-snapshot
     vscodium-insiders
     whatsapp-beta
+    whatsapp-legacy
+    wine-devel
+    wine-staging
+    xmind-beta
+    zotero-beta
+    zulu11
+    zulu17
+    zulu21
+    zulu8
 
 permissions:
   contents: read
