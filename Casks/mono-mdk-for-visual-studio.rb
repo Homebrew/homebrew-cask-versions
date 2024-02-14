@@ -1,6 +1,6 @@
 cask "mono-mdk-for-visual-studio" do
-  version "6.12.0.205"
-  sha256 "c56f386eeff8e28898313fea97e09af078f8fcefaeb7af1bf69e4261f643cd88"
+  version "6.12.0.206"
+  sha256 "80b0dbfa59ba9ed76dbf1393998e6a2ed2d1ccc8f5850c7a46fbe31a2aea88d8"
 
   url "https://download.mono-project.com/archive/#{version.major_minor_patch}/macos-10-universal/MonoFramework-MDK-#{version}.macos10.xamarin.universal.pkg"
   name "Mono"
