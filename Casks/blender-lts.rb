@@ -1,9 +1,9 @@
 cask "blender-lts" do
   arch arm: "arm64", intel: "x64"
 
-  version "3.6.8"
-  sha256 arm:   "f56d5d3c20cff354491c99c18da807b7bcf315a0c66eeec085d750e9414a3222",
-         intel: "1bf37344f4e49c54ea799194caa20b87f0dda92a558e7ea5c49f5df67e7120a1"
+  version "3.6.9"
+  sha256 arm:   "ebe1c3ea901be2c6f9e40e7dec77a0640cbd6167b8cefa07757bf02c5f02c98c",
+         intel: "528619f0c221edd63888a19741783efc31aa07894a4935fdf278363505a10c54"
 
   url "https://download.blender.org/release/Blender#{version.major_minor}/blender-#{version}-macos-#{arch}.dmg"
   name "Blender"
