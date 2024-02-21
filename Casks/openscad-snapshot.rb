@@ -15,6 +15,7 @@ cask "openscad-snapshot" do
   conflicts_with cask: "openscad"
 
   app "OpenSCAD.app"
+  binary "#{appdir}/OpenSCAD.app/Contents/MacOS/OpenSCAD", target: "openscad"
 
   zap trash: [
     "~/Library/Caches/org.openscad.OpenSCAD",
