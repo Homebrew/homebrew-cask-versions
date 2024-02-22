@@ -19,6 +19,7 @@ cask "android-studio-preview-beta" do
   auto_updates true
 
   app "Android Studio.app", target: "Android Studio Preview Beta.app"
+  binary "#{appdir}/Android Studio Preview Beta.app/Contents/MacOS/studio", target: "studio-beta"
 
   zap trash: [
         "~/.android",
