@@ -19,6 +19,7 @@ cask "android-studio-preview-canary" do
   auto_updates true
 
   app "Android Studio Preview.app", target: "Android Studio Preview Canary.app"
+  binary "#{appdir}/Android Studio Preview Canary.app/Contents/MacOS/studio", target: "studio-canary"
 
   zap trash: [
         "~/.android",
