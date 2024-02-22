@@ -1,6 +1,6 @@
 cask "zed-preview" do
-  version "0.123.2"
-  sha256 "d6a73b4723c12bb803dd3e85d98b2fd52084cf48f502b9a6f3c3afe25991f821"
+  version "0.124.1"
+  sha256 "ea1ab466ca68d21957f323bf366ce76538f0ed997c0f24ec239fd70d49416472"
 
   url "https://zed.dev/api/releases/preview/#{version}/Zed.dmg"
   name "Zed Preview"
