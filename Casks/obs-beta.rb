@@ -2,9 +2,9 @@ cask "obs-beta" do
   arch arm: "apple", intel: "intel"
   livecheck_folder = on_arch_conditional arm: "arm64", intel: "x86_64"
 
-  version "30.1.0-beta2"
-  sha256 arm:   "747031f856c8f614427dd8fba0d69c34d71d079fbdbc6d45790cbc2f11edd0bc",
-         intel: "a475c7974c55eb05c252d0d960ab5c5db3eff0614f522474821df00910a1cc49"
+  version "30.1.0-beta3"
+  sha256 arm:   "799a75e08f23a5e93005332bd2966e4531df7e8e34d6fceca16b55bbfa2d9135",
+         intel: "fc83d5c6f0126fe7c930be3a403c7b13f5cfdd2b830245f620d0b2a78e7e99c5"
 
   url "https://cdn-fastly.obsproject.com/downloads/obs-studio-#{version}-macos-#{arch}.dmg"
   name "OBS"
