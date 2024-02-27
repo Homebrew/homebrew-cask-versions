@@ -17,7 +17,7 @@ cask "zed-preview" do
   depends_on macos: ">= :catalina"
 
   app "Zed Preview.app"
-  binary "#{appdir}/Zed Preview.app/Contents/MacOS/cli", target: "zed"
+  binary "#{appdir}/Zed Preview.app/Contents/MacOS/cli", target: "zed-preview"
 
   zap trash: [
     "~/.config/Zed",
