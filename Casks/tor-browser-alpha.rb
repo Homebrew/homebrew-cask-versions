@@ -13,10 +13,9 @@ cask "tor-browser-alpha" do
   end
 
   auto_updates true
-  conflicts_with cask: "tor-browser"
   depends_on macos: ">= :sierra"
 
-  app "Tor Browser.app"
+  app "Tor Browser Alpha.app"
 
   zap trash: [
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.tor browser.sfl*",
