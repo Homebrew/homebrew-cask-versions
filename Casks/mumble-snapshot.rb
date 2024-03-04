@@ -1,6 +1,6 @@
 cask "mumble-snapshot" do
-  version "1.5.517"
-  sha256 "203daacd76b810c3a51c706e0082516435b6d86d4740eb15c9720b55a16e2bc1"
+  version "1.5.613"
+  sha256 "c7db7c6a2f62cb79338f08b207646e9618537f1cfc6fba9e3554e8cd39bff0f9"
 
   url "https://dl.mumble.info/snapshot/mumble_client-#{version}.x64.dmg"
   name "Mumble Snapshot"
