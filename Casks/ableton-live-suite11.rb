@@ -6,14 +6,19 @@ cask "ableton-live-suite11" do
   name "Ableton Live Suite"
   desc "Sound and music editor"
   homepage "https://www.ableton.com/en/live/"
+
   livecheck do
     url "https://www.ableton.com/en/release-notes/live-#{version.major}/"
     regex(/(\d+(?:\.\d+)+)\s*Release\s*Notes/i)
   end
+
   auto_updates true
   depends_on macos: ">= :high_sierra"
+
   app "Ableton Live #{version.major} Suite.app"
+
   uninstall quit: "com.ableton.live"
+
   zap trash: [
     "/Library/Logs/DiagnosticReports/Max_*.*_resource.diag",
     "~/Library/Application Support/Ableton",
