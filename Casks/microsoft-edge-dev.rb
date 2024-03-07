@@ -2,12 +2,12 @@ cask "microsoft-edge-dev" do
   linkid = on_arch_conditional arm: "2099619", intel: "2069340"
 
   on_arm do
-    version "123.0.2420.10,0d0dca5c-3e6e-4188-94c0-495e964e959a"
-    sha256 "b4a45187224b876eaebc45504fa73cd8e74fe5b56cd9bd167efdb5fa5e7030ae"
+    version "124.0.2438.2,6c83470b-9d2a-4673-a7a9-a31e679f5916"
+    sha256 "2646036c679497f24bf5550580322ae1f3929ad9bab5c637b34371e05df2b205"
   end
   on_intel do
-    version "123.0.2420.10,f7fd15cc-551c-42ef-8d0d-e3f35f47a5f5"
-    sha256 "f197691e8fc97a27a53ae1914eb4a97493ad31d7ebebca952f23bd512c5f38a7"
+    version "124.0.2438.2,3e09050a-bddc-40e0-be03-fa2cfa3212ea"
+    sha256 "b91545b1cc6acb84f7affecfc59167e14d679709abc57e29fd725d5a46103570"
   end
 
   url "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/#{version.csv.second}/MicrosoftEdgeDev-#{version.csv.first}.pkg"
@@ -38,6 +38,7 @@ cask "microsoft-edge-dev" do
               "com.microsoft.EdgeUpdater.update-internal.109.0.1518.89.system",
               "com.microsoft.EdgeUpdater.update.system",
               "com.microsoft.EdgeUpdater.wake.109.0.1518.89.system",
+              "com.microsoft.EdgeUpdater.wake.system",
             ],
             pkgutil:   "com.microsoft.edgemac.Dev"
 
