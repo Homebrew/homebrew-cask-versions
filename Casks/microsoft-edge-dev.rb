@@ -38,6 +38,7 @@ cask "microsoft-edge-dev" do
               "com.microsoft.EdgeUpdater.update-internal.109.0.1518.89.system",
               "com.microsoft.EdgeUpdater.update.system",
               "com.microsoft.EdgeUpdater.wake.109.0.1518.89.system",
+              "com.microsoft.EdgeUpdater.wake.system",
             ],
             pkgutil:   "com.microsoft.edgemac.Dev"
 
