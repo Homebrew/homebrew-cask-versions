@@ -1,11 +1,15 @@
 cask "safari-technology-preview" do
-  on_ventura do
+  on_ventura :or_older do
     version "190,052-60097-20240306-3AFB286B-60B0-4A35-B3C1-4A3980C950E4"
     sha256 "9b9b6e10b1b836263a18c9b9c79c76c04202dd0321e9e92a6d3a035b51600d4e"
+
+    depends_on macos: :ventura
   end
   on_sonoma :or_newer do
     version "190,052-60096-20240306-D7F49226-65E4-4804-B8FA-D0C672DEAFD1"
     sha256 "226337589817418cb788e809206956ac007086f2604ca006345ce184f14eb35f"
+
+    depends_on macos: :sonoma
   end
 
   url "https://secure-appldnld.apple.com/STP/#{version.csv.second}/SafariTechnologyPreview.dmg"
@@ -27,7 +31,6 @@ cask "safari-technology-preview" do
   end
 
   auto_updates true
-  depends_on macos: ">= :ventura"
 
   pkg "Safari Technology Preview.pkg"
 
