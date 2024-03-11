@@ -1,5 +1,5 @@
 cask "adguard-nightly" do
-  version "2.13.3.1512"
+  version "2.14.0.1566"
   sha256 :no_check
 
   url "https://static.adguard.com/mac/nightly/AdGuard.dmg"
@@ -18,6 +18,7 @@ cask "adguard-nightly" do
   pkg "AdGuard.pkg"
 
   uninstall launchctl: [
+              "com.adguard.mac.adguard.helper",
               "com.adguard.mac.adguard.pac",
               "com.adguard.mac.adguard.tun-helper",
               "com.adguard.mac.adguard.xpcgate2",
