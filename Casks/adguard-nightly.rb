@@ -21,6 +21,7 @@ cask "adguard-nightly" do
               "com.adguard.mac.adguard.pac",
               "com.adguard.mac.adguard.tun-helper",
               "com.adguard.mac.adguard.xpcgate2",
+              "com.adguard.mac.adguard.helper",
             ],
             quit:      "com.adguard.mac.adguard",
             pkgutil:   "com.adguard.mac.adguard-pkg",
