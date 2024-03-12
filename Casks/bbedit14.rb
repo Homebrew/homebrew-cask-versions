@@ -10,7 +10,7 @@ cask "bbedit14" do
 
   livecheck do
     url "https://versioncheck.barebones.com/BBEdit.xml"
-    regex(/BBEdit[._-]v?(14(?:\.\d+)+)\.dmg/i)
+    regex(/BBEdit[._-]v?(#{version.major}(?:\.\d+)+)\.dmg/i)
   end
 
   auto_updates true
