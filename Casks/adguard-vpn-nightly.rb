@@ -1,5 +1,5 @@
 cask "adguard-vpn-nightly" do
-  version "2.3.0.573"
+  version "2.3.0.577"
   sha256 :no_check
 
   url "https://static.adguard-vpn.com/mac/nightly/AdGuardVPN.dmg"
@@ -17,7 +17,10 @@ cask "adguard-vpn-nightly" do
 
   pkg "AdGuard VPN.pkg"
 
-  uninstall launchctl: "com.adguard.mac.vpn.tun-helper",
+  uninstall launchctl: [
+              "com.adguard.mac.vpn.tun-helper",
+              "com.adguard.mac.vpn.vpn_helper",
+            ],
             quit:      "com.adguard.mac.vpn",
             pkgutil:   "com.adguard.mac.vpn-pkg",
             delete:    [
