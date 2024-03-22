@@ -1,15 +1,18 @@
 cask "zed-preview" do
-  version "0.127.3"
-  sha256 "80004a201fcc03d702af72554059318729deb11e8994e4c764599e7294e5279f"
+  arch arm: "aarch64", intel: "x86_64"
 
-  url "https://zed.dev/api/releases/preview/#{version}/Zed.dmg"
+  version "0.128.1"
+  sha256 arm:   "ce30f3ea631d813b4791d8038f635864863d356fcb4921d96c5f77f82cf8af5d",
+         intel: "c45ef6e04786632dbf885276a34f850653ed99a6414b4f6ad378eb53b9367cfc"
+
+  url "https://zed.dev/api/releases/preview/#{version}/Zed-#{arch}.dmg"
   name "Zed Preview"
   desc "Multiplayer code editor"
   homepage "https://zed.dev/"
 
   livecheck do
     url "https://zed.dev/releases/preview"
-    regex(%r{href=.*?/preview/(\d+(?:\.\d+)+)/Zed.dmg}i)
+    regex(%r{href=.*?/preview/(\d+(?:\.\d+)+)/Zed(?:-aarch64)?\.dmg}i)
   end
 
   auto_updates true
