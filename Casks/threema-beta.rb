@@ -1,9 +1,9 @@
 cask "threema-beta" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.0-beta29"
-  sha256 arm:   "d23ce19756b426957767a9f305e5b35415bdcd0c4eec13bcde45d587c39c25fa",
-         intel: "6f41d5b051043327f9844faa636602e6fe0b17207ce91f55cd67728b057415e1"
+  version "2.0-beta30"
+  sha256 arm:   "3fd3d93b5b1ed1196079b75157f8a743d432a11944193723eb0ddfe835afa6d3",
+         intel: "0c0f300de509e2b6cdf41ab898f0d8ec9798436221c7909af0b0822a1ffe2571"
 
   url "https://releases.threema.ch/desktop/#{version}/threema-desktop-v#{version}-macos-#{arch}.dmg"
   name "Threema"
