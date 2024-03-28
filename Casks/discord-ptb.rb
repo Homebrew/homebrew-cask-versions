@@ -20,6 +20,7 @@ cask "discord-ptb" do
 
   zap trash: [
     "~/Library/Application Support/com.hnc.DiscordPTB.ShipIt",
+    "~/Library/Application Support/discordptb",
     "~/Library/Caches/com.hnc.DiscordPTB",
     "~/Library/Preferences/com.hnc.DiscordPTB.plist",
     "~/Library/Saved Application State/com.hnc.DiscordPTB.savedState",
