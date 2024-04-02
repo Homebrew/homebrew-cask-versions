@@ -22,9 +22,13 @@ cask "zed-preview" do
   binary "#{appdir}/Zed Preview.app/Contents/MacOS/cli", target: "zed-preview"
 
   zap trash: [
-    "~/.config/Zed",
+    "~/.config/zed",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/dev.zed.zed-preview.sfl*",
     "~/Library/Application Support/Zed",
+    "~/Library/Caches/dev.zed.Zed-Preview",
+    "~/Library/HTTPStorages/dev.zed.Zed-Preview",
     "~/Library/Logs/Zed",
-    "~/Library/Saved Application State/dev.zed.Zed.savedState",
+    "~/Library/Preferences/dev.zed.Zed-Preview.plist",
+    "~/Library/Saved Application State/dev.zed.Zed-Preview.savedState",
   ]
 end
