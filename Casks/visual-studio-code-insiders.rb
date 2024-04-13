@@ -22,6 +22,8 @@ cask "visual-studio-code-insiders" do
     "~/Library/Caches/Code - Insiders",
     "~/Library/Caches/com.microsoft.VSCodeInsiders",
     "~/Library/Caches/com.microsoft.VSCodeInsiders.ShipIt",
+    "~/Library/HTTPStorages/com.microsoft.VSCodeInsiders",
+    "~/Library/Preferences/ByHost/com.microsoft.VSCodeInsiders.ShipIt.*.plist",
     "~/Library/Preferences/com.microsoft.VSCodeInsiders.helper.plist",
     "~/Library/Preferences/com.microsoft.VSCodeInsiders.plist",
     "~/Library/Saved Application State/com.microsoft.VSCodeInsiders.savedState",
