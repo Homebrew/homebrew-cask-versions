@@ -4,7 +4,7 @@ cask "google-chrome-canary" do
 
   url "https://dl.google.com/chrome/mac/universal/canary/googlechromecanary.dmg"
   name "Google Chrome Canary"
-  desc "Web browser"
+  desc "Experimental version of Google Chrome for developers, updated nightly"
   homepage "https://www.google.com/chrome/canary/"
 
   # Canary releases are frequent, so we use version :latest.
