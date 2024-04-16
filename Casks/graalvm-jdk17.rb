@@ -16,7 +16,7 @@ cask "graalvm-jdk17" do
     regex(/graalvm\s+for\s+jdk\s+(17(?:\.\d+)+)/i)
   end
 
-  artifact "graalvm-jdk-#{version}+11.1", target: "/Library/Java/JavaVirtualMachines/graalvm-#{version.major}.jdk"
+  artifact "graalvm-jdk-#{version}+7.1", target: "/Library/Java/JavaVirtualMachines/graalvm-#{version.major}.jdk"
 
   # No zap stanza required
 
