@@ -22,7 +22,7 @@ cask "intellij-idea-eap" do
   auto_updates true
   depends_on macos: ">= :high_sierra"
 
-  app "IntelliJ IDEA #{version.csv.first} EAP.app"
+  app "IntelliJ IDEA.app", target: "IntelliJ IDEA #{version.csv.first} EAP.app"
 
   uninstall_postflight do
     ENV["PATH"].split(File::PATH_SEPARATOR).map { |path| File.join(path, "idea") }.each do |path|
