@@ -2,8 +2,8 @@ cask "temurin11" do
   arch arm: "aarch64", intel: "x64"
 
   on_arm do
-    version "11.0.22,7.1"
-    sha256 "d8cb97e4cc5c2622f99ab544bbf45ab8283ab61858612632fc914d9e811bd06b"
+    version "11.0.23,9"
+    sha256 "aa4e2d475b62c879293d95a6093c8290d05caff60c5df385525083118b61dbe8"
   end
   on_intel do
     version "11.0.22,7"
