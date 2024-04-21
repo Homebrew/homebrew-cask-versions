@@ -6,8 +6,8 @@ cask "temurin11" do
     sha256 "aa4e2d475b62c879293d95a6093c8290d05caff60c5df385525083118b61dbe8"
   end
   on_intel do
-    version "11.0.22,7"
-    sha256 "3371ded240428b9607736ce5f62531798e133703d53e09af0375101140d3be9b"
+    version "11.0.23,9"
+    sha256 "daa238fe952045f54c03671c766c34498ee718aeb11c4a82b70801863abb1b62"
   end
 
   url "https://github.com/adoptium/temurin#{version.major}-binaries/releases/download/jdk-#{version.csv.first}%2B#{version.csv.second}/OpenJDK#{version.major}U-jdk_#{arch}_mac_hotspot_#{version.csv.first}_#{version.csv.second.major}.pkg",
