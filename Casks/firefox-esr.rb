@@ -218,6 +218,7 @@ cask "firefox-esr" do
     strategy :header_match
   end
 
+  auto_updates true
   conflicts_with cask: [
     "firefox",
     "firefox-beta",

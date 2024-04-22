@@ -59,6 +59,7 @@ cask "firefox-developer-edition" do
   desc "Web browser"
   homepage "https://www.mozilla.org/firefox/developer/"
 
+  auto_updates true
   depends_on macos: ">= :catalina"
 
   app "Firefox Developer Edition.app"

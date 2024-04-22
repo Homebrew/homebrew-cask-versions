@@ -86,6 +86,7 @@ cask "firefox-nightly" do
   desc "Web browser"
   homepage "https://www.mozilla.org/firefox/channel/desktop/#nightly"
 
+  auto_updates true
   depends_on macos: ">= :catalina"
 
   app "Firefox Nightly.app"
