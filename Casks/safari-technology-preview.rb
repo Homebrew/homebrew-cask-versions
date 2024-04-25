@@ -18,8 +18,8 @@ cask "safari-technology-preview" do
     end
   end
   on_sonoma :or_newer do
-    version "192,052-85601-20240410-20FEFD95-2F36-449B-866D-179778EC29BD"
-    sha256 "f501ef4e98d6dafafb5bd62bf6b5b353bb14754d928b55699a191a51b3b26f51"
+    version "193,052-88763-20240424-6C822EBC-3B0C-4BAA-8004-10D95319E259"
+    sha256 "41e63d01eee76f08bdd717af75d9cf4c04100e1b5f160bd2d141b37e6bae07cd"
 
     livecheck do
       url :homepage
