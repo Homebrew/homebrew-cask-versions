@@ -1,9 +1,9 @@
 cask "local-beta" do
   arch arm: "-arm64"
 
-  version "9.0.1,6672"
-  sha256  arm:   "9e5d1de0ef2f9f6a3a3a42a27b7f4cb9eb495fab76fb9d360da430f2cb9daf60",
-          intel: "340a452b08a598eb795ae35439af8587b130ba56855d1e0a187d9edfefb15e1d"
+  version "9.0.2,6675"
+  sha256  arm:   "b14d4d5566dde86776411d9ed7dfc96283348742335c86ab67595c8a45431582",
+          intel: "edaa4be8b8bda2475e1b0609b33469d8d1c3b6c1c672e5a5fc9de6369665e3cf"
 
   url "https://cdn.localwp.com/releases-beta/#{version.csv.first}+local-beta-#{version.csv.second}/local-beta-#{version.csv.first}-b#{version.csv.second}-mac#{arch}.dmg"
   name "Local Beta"
