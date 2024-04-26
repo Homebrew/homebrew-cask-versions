@@ -2,12 +2,12 @@ cask "microsoft-edge-dev" do
   linkid = on_arch_conditional arm: "2099619", intel: "2069340"
 
   on_arm do
-    version "125.0.2518.0,77201878-7c86-4da6-a7a9-27aaf1b161a1"
-    sha256 "746a9a89a856f905c2a2fc6f3995f69c59de5ebce769aae0fcda6124cdf20c9a"
+    version "125.0.2535.6,dee68e88-1ed2-4f37-9d5c-b1ed6474272a"
+    sha256 "91c2d7e743279ead53ae7578e75cc1a82ea5865503ec066b5f5389858d69fe13"
   end
   on_intel do
-    version "125.0.2518.0,977ac752-c50a-4baf-8213-193b27de998d"
-    sha256 "2104d32e88375eae70fe0f6fc2041e013081f0e89f9c977de6964ef5511e1f68"
+    version "125.0.2535.6,bb064c6f-3b92-4f58-ad52-58831e23bcd2"
+    sha256 "03d776505b33a5b2b669772008a363b4f08497e651bd30c4da73c7206f2bc30b"
   end
 
   url "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/#{version.csv.second}/MicrosoftEdgeDev-#{version.csv.first}.pkg"
