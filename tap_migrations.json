@@ -1,3 +1,4 @@
 {
+  "figma-beta": "homebrew/cask/figma@beta",
   "java11": "homebrew/core"
 }
