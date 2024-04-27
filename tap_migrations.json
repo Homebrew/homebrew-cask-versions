@@ -1,4 +1,12 @@
 {
+  "brave-browser-beta": "homebrew/cask/brave-browser@beta",
+  "brave-browser-dev": "homebrew/cask/brave-browser@dev",
+  "brave-browser-nightly": "homebrew/cask/brave-browser@nightly",
   "figma-beta": "homebrew/cask/figma@beta",
-  "java11": "homebrew/core"
+  "google-chrome-beta": "homebrew/cask/google-chrome@beta",
+  "google-chrome-canary": "homebrew/cask/google-chrome@canary",
+  "google-chrome-dev": "homebrew/cask/google-chrome@dev",
+  "java11": "homebrew/core",
+  "microsoft-edge-beta": "homebrew/cask/microsoft-edge@beta",
+  "microsoft-edge-dev": "homebrew/cask/microsoft-edge@dev"
 }
