@@ -8,5 +8,6 @@
   "google-chrome-dev": "homebrew/cask/google-chrome@dev",
   "java11": "homebrew/core",
   "microsoft-edge-beta": "homebrew/cask/microsoft-edge@beta",
-  "microsoft-edge-dev": "homebrew/cask/microsoft-edge@dev"
+  "microsoft-edge-dev": "homebrew/cask/microsoft-edge@dev",
+  "mono-mdk-for-visual-studio": "homebrew/cask/mono-mdk-for-visual-studio"
 }
