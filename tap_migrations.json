@@ -1,6 +1,11 @@
 {
   "adguard-nightly": "homebrew/cask/adguard@nightly",
   "adguard-vpn-nightly": "homebrew/cask/adguard-vpn@nightly",
+  "1password-beta": "homebrew/cask/1password@beta",
+  "1password-cli-beta": "homebrew/cask/1password-cli@beta",
+  "1password-cli1": "homebrew/cask/1password-cli@1",
+  "1password-nightly": "homebrew/cask/1password@nightly",
+  "1password7": "homebrew/cask/1password@7",
   "brave-browser-beta": "homebrew/cask/brave-browser@beta",
   "brave-browser-dev": "homebrew/cask/brave-browser@dev",
   "brave-browser-nightly": "homebrew/cask/brave-browser@nightly",
