@@ -1,6 +1,6 @@
 cask "sourcetree-beta" do
-  version "4.2.7b17,262"
-  sha256 "fe9f2e03bd250b8bce477050531f5a86d4fbd6cd555ec6809dfa4d54af784b6d"
+  version "4.2.8b18,264"
+  sha256 "5018989f77db0212095c86518de2d11ad460eebeba0ee5fff08f4e88ec42e555"
 
   url "https://product-downloads.atlassian.com/software/sourcetree/beta/Sourcetree_#{version.csv.first}_#{version.csv.second}.zip",
       verified: "product-downloads.atlassian.com/software/sourcetree/beta/"
