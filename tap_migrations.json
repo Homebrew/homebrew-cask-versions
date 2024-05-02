@@ -139,6 +139,7 @@
   "qt-creator-dev": "homebrew/cask/qt-creator@dev",
   "reflector2": "homebrew/cask/reflector@2",
   "royal-tsx-beta": "homebrew/cask/royal-tsx@beta",
+  "rstudio-daily": "homebrew/cask/rstudio@daily",
   "safari-technology-preview": "homebrew/cask/safari-technology-preview",
   "shadow-beta": "homebrew/cask/shadow@beta",
   "signal-beta": "homebrew/cask/signal@beta",
