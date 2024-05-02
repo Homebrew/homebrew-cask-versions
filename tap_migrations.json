@@ -90,6 +90,7 @@
   "libreoffice-still-language-pack": "homebrew/cask/libreoffice-still-language-pack",
   "little-snitch4": "homebrew/cask/little-snitch@4",
   "local-beta": "homebrew/cask/local@beta",
+  "macfuse-dev": "homebrew/cask/macfuse@dev",
   "macloggerdx-beta": "homebrew/cask/macloggerdx@beta",
   "mailmate-beta": "homebrew/cask/mailmate@beta",
   "mi-beta": "homebrew/cask/mi@beta",
