@@ -107,6 +107,7 @@
   "navicat-premium15": "homebrew/cask/navicat-premium@15",
   "netnewswire-beta": "homebrew/cask/netnewswire@beta",
   "obs-beta": "homebrew/cask/obs@beta",
+  "olympus": "homebrew/cask/olympus",
   "omegat-latest": "homebrew/cask/omegat@latest",
   "openemu-experimental": "homebrew/cask/openemu@experimental",
   "openra-playtest": "homebrew/cask/openra-playtest",
